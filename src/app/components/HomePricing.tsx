@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 
 const allPrices: Record<number, [number, number, number, number]> = {
@@ -16,10 +16,10 @@ const allPrices: Record<number, [number, number, number, number]> = {
 };
 
 const planDefs = [
-  { name: "1 Month",   badge: null,          slug: "1-month"   },
-  { name: "3 Months",  badge: null,          slug: "3-months"  },
-  { name: "6 Months",  badge: "Popular",     slug: "6-months"  },
-  { name: "12 Months", badge: "Best Value",  slug: "12-months" },
+  { name: "1 Month",   badge: null,         slug: "1-month"   },
+  { name: "3 Months",  badge: null,         slug: "3-months"  },
+  { name: "6 Months",  badge: "Popular",    slug: "6-months"  },
+  { name: "12 Months", badge: "Best Value", slug: "12-months" },
 ];
 
 const planFeatures = [
@@ -42,6 +42,17 @@ function getHref(n: number, slug: string): string {
 export default function HomePricing() {
   const [selected, setSelected] = useState(1);
   const prices = allPrices[selected];
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  function handleSelect(n: number) {
+    setSelected(n);
+    requestAnimationFrame(() => {
+      const btn = scrollRef.current?.querySelector<HTMLElement>(`[data-n="${n}"]`);
+      btn?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    });
+  }
+
+  const connLabel = `${selected} Connection${selected > 1 ? "s" : ""}`;
 
   return (
     <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
@@ -62,25 +73,26 @@ export default function HomePricing() {
           All plans include 25,000+ channels, 4K streaming, and 24/7 Canadian support. Pay via Interac e-Transfer.
         </p>
 
-        {/* Connection selector */}
+        {/* Connection selector — horizontally scrollable, starts from left */}
         <div
+          ref={scrollRef}
           style={{
             overflowX: "auto",
-            WebkitOverflowScrolling: "touch" as React.CSSProperties["WebkitOverflowScrolling"],
+            WebkitOverflowScrolling: "touch",
             display: "flex",
             gap: 10,
             marginBottom: 40,
             paddingBottom: 6,
-            scrollbarWidth: "none" as React.CSSProperties["scrollbarWidth"],
-            justifyContent: "center",
-          }}
+            scrollbarWidth: "none",
+          } as React.CSSProperties}
         >
           {Array.from({ length: 10 }, (_, i) => i + 1).map((n) => {
             const active = n === selected;
             return (
               <button
                 key={n}
-                onClick={() => setSelected(n)}
+                data-n={n}
+                onClick={() => handleSelect(n)}
                 style={{
                   flexShrink: 0,
                   padding: "9px 18px",
@@ -102,7 +114,7 @@ export default function HomePricing() {
           })}
         </div>
 
-        {/* Plan cards — same design as before, now dynamic */}
+        {/* Plan cards */}
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
           {planDefs.map((plan, i) => (
             <div
@@ -136,14 +148,38 @@ export default function HomePricing() {
                   {plan.badge}
                 </span>
               )}
-              <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 8, color: "#fff" }}>{plan.name}</div>
-              <div style={{ fontSize: 36, fontWeight: 900, color: "#E53935", marginBottom: 20 }}>${prices[i]}</div>
+              <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 6, color: "#fff" }}>{plan.name}</div>
+              {/* Price + connection count */}
+              <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 20 }}>
+                <span style={{ fontSize: 36, fontWeight: 900, color: "#E53935" }}>${prices[i]}</span>
+                <span style={{ fontSize: 12, color: "#6b7280" }}>/ {connLabel}</span>
+              </div>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
                 {planFeatures.map((f) => (
                   <li key={f} style={{ fontSize: 13, color: "#9ca3af", marginBottom: 6, display: "flex", alignItems: "center", gap: 6, textAlign: "left" }}>
                     <span style={{ color: "#E53935", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                   </li>
                 ))}
+                {/* IBO Player bonus — 1-year only */}
+                {plan.slug === "12-months" && (
+                  <li
+                    style={{
+                      marginTop: 10,
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 8,
+                      background: "rgba(251,191,36,0.08)",
+                      border: "1px solid rgba(251,191,36,0.35)",
+                      borderRadius: 8,
+                      padding: "7px 10px",
+                    }}
+                  >
+                    <span style={{ flexShrink: 0, fontSize: 14 }}>⭐</span>
+                    <span style={{ fontSize: 13, color: "#fbbf24", fontWeight: 600, lineHeight: 1.3 }}>
+                      IBO Player Subscription for Free
+                    </span>
+                  </li>
+                )}
               </ul>
               <Link
                 href={getHref(selected, plan.slug)}
