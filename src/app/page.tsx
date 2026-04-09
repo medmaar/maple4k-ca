@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import DeviceSelector from "./components/DeviceSelector";
 
 export const metadata: Metadata = {
   title: "Best Maple4K | #1 IPTV Subscription – 24h Free Trial",
@@ -342,7 +343,10 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 4. DEVICES ── */}
+        {/* ── 4. DEVICE SELECTOR ── */}
+        <DeviceSelector />
+
+        {/* ── 5. DEVICES MARQUEE ── */}
         <section style={{ padding: "80px 16px", background: "#0d0d0d", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
@@ -376,7 +380,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 5. CANADIAN CHANNELS ── */}
+        {/* ── 6. CANADIAN CHANNELS ── */}
         <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <p style={{ color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
@@ -412,7 +416,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 6. SPORTS ── */}
+        {/* ── 7. SPORTS ── */}
         <section style={{ padding: "80px 16px", background: "#0d0d0d", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
@@ -449,7 +453,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 7. COMPARISON TABLE ── */}
+        {/* ── 8. COMPARISON TABLE ── */}
         <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
@@ -483,7 +487,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 8. FAQ ── */}
+        {/* ── 9. FAQ ── */}
         <section style={{ padding: "80px 16px", background: "#0d0d0d" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
             <p style={{ color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
@@ -509,7 +513,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 9. CITIES ── */}
+        {/* ── 10. CITIES ── */}
         <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>

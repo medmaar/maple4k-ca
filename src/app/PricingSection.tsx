@@ -22,12 +22,25 @@ const badges: Partial<Record<Duration, string>> = {
   "1 Year":   "Best Value",
 };
 
-const orderLinks: Record<Duration, string> = {
-  "1 Month":  "/1-month",
-  "3 Months": "/3-months",
-  "6 Months": "/6-months",
-  "1 Year":   "/12-months",
+const durationSlug: Record<Duration, string> = {
+  "1 Month":  "1-month",
+  "3 Months": "3-months",
+  "6 Months": "6-months",
+  "1 Year":   "1-year",
 };
+
+function orderHref(devices: number, dur: Duration): string {
+  if (devices === 1) {
+    const oneDeviceMap: Record<Duration, string> = {
+      "1 Month":  "/pricing/1-month",
+      "3 Months": "/pricing/3-months",
+      "6 Months": "/pricing/6-months",
+      "1 Year":   "/pricing/12-months",
+    };
+    return oneDeviceMap[dur];
+  }
+  return `/pricing/${devices}-devices/${durationSlug[dur]}`;
+}
 
 const features = [
   "25,000+ Live Channels",
@@ -136,7 +149,7 @@ export default function PricingSection() {
                   ))}
                 </ul>
                 <a
-                  href={orderLinks[dur]}
+                  href={orderHref(activeDevices, dur)}
                   style={{
                     display: "block",
                     textAlign: "center",
