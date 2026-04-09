@@ -155,16 +155,11 @@ export default function HomePricing() {
                 <span style={{ fontSize: 12, color: "#6b7280" }}>/ {connLabel}</span>
               </div>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
-                {planFeatures.map((f) => (
-                  <li key={f} style={{ fontSize: 13, color: "#9ca3af", marginBottom: 6, display: "flex", alignItems: "center", gap: 6, textAlign: "left" }}>
-                    <span style={{ color: "#E53935", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
-                  </li>
-                ))}
-                {/* IBO Player bonus — 1-year only */}
+                {/* IBO Player bonus — 1-year only, shown first */}
                 {plan.slug === "12-months" && (
                   <li
                     style={{
-                      marginTop: 10,
+                      marginBottom: 10,
                       display: "flex",
                       alignItems: "center",
                       gap: 8,
@@ -180,6 +175,11 @@ export default function HomePricing() {
                     </span>
                   </li>
                 )}
+                {planFeatures.map((f) => (
+                  <li key={f} style={{ fontSize: 13, color: "#9ca3af", marginBottom: 6, display: "flex", alignItems: "center", gap: 6, textAlign: "left" }}>
+                    <span style={{ color: "#E53935", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                  </li>
+                ))}
               </ul>
               <Link
                 href={getHref(selected, plan.slug)}

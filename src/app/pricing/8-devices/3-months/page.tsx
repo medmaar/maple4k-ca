@@ -85,9 +85,9 @@ export default function Page() {
               >
                 3 Months - 8 Devices
               </h1>
-              <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginTop: 10 }}>
-                <del style={{ color: "#6b7280", fontSize: "1.1rem" }}>$384</del>
-                <span style={{ color: "#fd0322", fontWeight: 700, fontSize: "2rem" }}>$192</span>
+              <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10 }}>
+                <span style={{ color: "#fd0322", fontWeight: 800, fontSize: "2rem" }}>Price : $192</span>
+                <span style={{ background: "rgba(253,3,34,0.15)", color: "#fd0322", border: "1px solid rgba(253,3,34,0.4)", fontWeight: 700, fontSize: 12, padding: "4px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>50% OFF</span>
               </div>
             </div>
 

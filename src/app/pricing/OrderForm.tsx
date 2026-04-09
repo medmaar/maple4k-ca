@@ -115,11 +115,11 @@ export default function OrderForm({ plan, price, devices }: Props) {
           name="country"
           value={form.country}
           onChange={handleChange}
-          style={inputStyle}
+          style={{ ...inputStyle, backgroundColor: "#1a1a2e", color: "#ffffff" }}
         >
-          <option value="">Select your country</option>
+          <option value="" style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>Select your country</option>
           {countries.map((c) => (
-            <option key={c} value={c}>{c}</option>
+            <option key={c} value={c} style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>{c}</option>
           ))}
         </select>
       </div>

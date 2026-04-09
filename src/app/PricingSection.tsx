@@ -174,16 +174,11 @@ export default function PricingSection() {
                   <span style={{ fontSize: 12, color: "#6b7280" }}>/ {connLabel}</span>
                 </div>
                 <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
-                  {features.map((f) => (
-                    <li key={f} style={{ fontSize: 13, color: "#ccc", marginBottom: 6, display: "flex", alignItems: "center", gap: 8 }}>
-                      <span style={{ color: "#fd0322", fontWeight: 700 }}>✓</span> {f}
-                    </li>
-                  ))}
-                  {/* IBO Player bonus — 1 Year only */}
+                  {/* IBO Player bonus — 1 Year only, shown first */}
                   {isYear && (
                     <li
                       style={{
-                        marginTop: 10,
+                        marginBottom: 10,
                         display: "flex",
                         alignItems: "center",
                         gap: 8,
@@ -199,6 +194,11 @@ export default function PricingSection() {
                       </span>
                     </li>
                   )}
+                  {features.map((f) => (
+                    <li key={f} style={{ fontSize: 13, color: "#ccc", marginBottom: 6, display: "flex", alignItems: "center", gap: 8 }}>
+                      <span style={{ color: "#fd0322", fontWeight: 700 }}>✓</span> {f}
+                    </li>
+                  ))}
                 </ul>
                 <a
                   href={orderHref(activeDevices, dur)}
