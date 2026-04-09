@@ -3,7 +3,7 @@ import PlanOrderForm from "../../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../../PlanFAQ";
 
 export const metadata: Metadata = {
-  title: "2 Device 1 Month IPTV Plan — $18 | Maple4K Canada",
+  title: "1 Month - 2 Devices IPTV Plan — $18 | Maple4K Canada",
   description:
     "Get 2 simultaneous connections for $18. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within 24 hours.",
   alternates: { canonical: "https://maple4k.ca/pricing/2-devices/1-month" },
@@ -72,12 +72,23 @@ export default function Page() {
                   color: "#fd0322",
                 }}
               >
-                Maple4K · 2 Devices · 1 Month
+                Maple4K · 1 Month · 2 Devices
               </span>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-white">
-                2 Devices 1 Month Plan —{" "}
-                <span style={{ color: "#fd0322" }}>$18</span>
+              <h1
+                style={{
+                  fontSize: "clamp(1.6rem, 4vw, 2.8rem)",
+                  fontWeight: 800,
+                  color: "#fff",
+                  lineHeight: 1.2,
+                  whiteSpace: "nowrap",
+                }}
+              >
+                1 Month - 2 Devices
               </h1>
+              <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginTop: 10 }}>
+                <del style={{ color: "#6b7280", fontSize: "1.1rem" }}>$36</del>
+                <span style={{ color: "#fd0322", fontWeight: 700, fontSize: "2rem" }}>$18</span>
+              </div>
             </div>
 
             {/* 2. Instruction text */}
@@ -96,7 +107,7 @@ export default function Page() {
                 borderColor: "rgba(255,255,255,0.07)",
               }}
             >
-              <PlanOrderForm plan="2 Devices - 1 Month — $18" />
+              <PlanOrderForm plan="1 Month - 2 Devices — $18" />
             </div>
 
             {/* 4. FAQ */}

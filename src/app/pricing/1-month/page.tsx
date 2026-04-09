@@ -82,12 +82,23 @@ export default function Pricing1MonthPage() {
                   color: "#fd0322",
                 }}
               >
-                Maple4K · 1 Month Plan
+                Maple4K · 1 Month · 1 Device
               </span>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-white">
-                1 Month Plan —{" "}
-                <span style={{ color: "#fd0322" }}>$15 CAD</span>
+              <h1
+                style={{
+                  fontSize: "clamp(1.6rem, 4vw, 2.8rem)",
+                  fontWeight: 800,
+                  color: "#fff",
+                  lineHeight: 1.2,
+                  whiteSpace: "nowrap",
+                }}
+              >
+                1 Month - 1 Device
               </h1>
+              <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginTop: 10 }}>
+                <del style={{ color: "#6b7280", fontSize: "1.1rem" }}>$18</del>
+                <span style={{ color: "#fd0322", fontWeight: 700, fontSize: "2rem" }}>$9</span>
+              </div>
             </div>
 
             {/* 2. Instruction text */}

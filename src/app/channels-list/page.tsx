@@ -8290,7 +8290,6 @@ export default function ChannelsListPage() {
             <details
               key={cat.name}
               className="group bg-gray-900 border border-gray-800 rounded-xl overflow-hidden transition-all hover:border-red-700"
-              open={index === 0}
             >
               <summary className="flex items-center justify-between px-5 py-4 cursor-pointer select-none list-none">
                 <div className="flex items-center gap-3">
