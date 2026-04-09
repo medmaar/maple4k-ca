@@ -73,6 +73,7 @@ export default function PlanOrderForm({ plan }: Props) {
           device: form.device || "Not specified",
           plan,
           message: form.message || "—",
+          site_name: "Maple4K.ca",
         }
       );
       console.log("EmailJS success:", result);
