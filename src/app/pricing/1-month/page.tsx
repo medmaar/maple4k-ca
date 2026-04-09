@@ -82,7 +82,7 @@ export default function Pricing1MonthPage() {
                   color: "#fd0322",
                 }}
               >
-                Maple4K · 1 Month · 1 Device
+                Maple4K · 1 Month
               </span>
               <h1
                 style={{
@@ -93,7 +93,7 @@ export default function Pricing1MonthPage() {
                   whiteSpace: "nowrap",
                 }}
               >
-                1 Month - 1 Device
+                1 Month
               </h1>
               <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10 }}>
 

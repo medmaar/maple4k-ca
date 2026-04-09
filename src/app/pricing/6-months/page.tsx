@@ -82,7 +82,7 @@ export default function Pricing6MonthsPage() {
                   color: "#fd0322",
                 }}
               >
-                Maple4K · 6 Months · 1 Device
+                Maple4K · 6 Months
               </span>
               <h1
                 style={{
@@ -93,7 +93,7 @@ export default function Pricing6MonthsPage() {
                   whiteSpace: "nowrap",
                 }}
               >
-                6 Months - 1 Device
+                6 Months
               </h1>
               <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10 }}>
 
