@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import PlanOrderForm from "../pricing/PlanOrderForm";
@@ -95,7 +93,16 @@ interface PlanPageData {
                                                                                                                                                                                                                                                                                                                                                                                 },
                                                                                                                                                                                                                                                                                                                                                                                 };
 
-                                                                                                                                                                                                                                                                                                                                                                                export async function generateMetadata({ params }: { params: Promise<{ plan: string }> }): Promise<Metadata> {
+                                                                                                                                                                                                                                                                                                                                                                                export function generateStaticParams() {
+  return [
+    { plan: "1-month" },
+    { plan: "3-months" },
+    { plan: "6-months" },
+    { plan: "12-months" },
+  ];
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ plan: string }> }): Promise<Metadata> {
                                                                                                                                                                                                                                                                                                                                                                                   const { plan } = await params;
                                                                                                                                                                                                                                                                                                                                                                                     const data = planData[plan];
                                                                                                                                                                                                                                                                                                                                                                                       if (!data) return { title: "Plan Not Found" };
