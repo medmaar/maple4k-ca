@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import DeviceSelector from "./components/DeviceSelector";
+import HomePricing from "./components/HomePricing";
 
 export const metadata: Metadata = {
   title: "Best Maple4K | #1 IPTV Subscription – 24h Free Trial",
@@ -79,24 +79,6 @@ const localBusinessSchema = {
   },
   areaServed: "CA",
 };
-
-const plans = [
-  { name: "1 Month",   price: "$9",  href: "/pricing/1-month",   badge: null },
-  { name: "3 Months",  price: "$29", href: "/pricing/3-months",  badge: null },
-  { name: "6 Months",  price: "$39", href: "/pricing/6-months",  badge: "Popular" },
-  { name: "12 Months", price: "$49", href: "/pricing/12-months", badge: "Best Value" },
-];
-
-const planFeatures = [
-  "25,000+ Live Channels",
-  "120,000+ Movies & Series",
-  "4K Ultra HD Quality",
-  "NHL · TSN · Sportsnet · CTV",
-  "PPV Events Included",
-  "EPG & Catch-Up TV",
-  "All Devices Supported",
-  "24/7 Canadian Support",
-];
 
 const deviceNames = [
   "Amazon Fire Stick", "Samsung Smart TV", "LG Smart TV", "iPhone & iPad",
@@ -256,97 +238,10 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 3. PRICING PREVIEW ── */}
-        <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
-          <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-            <p style={{ textAlign: "center", color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
-              Transparent Pricing
-            </p>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, marginBottom: 12 }}>
-              Maple4K Subscription Plans
-            </h2>
-            <div style={{ textAlign: "center", marginBottom: 16 }}>
-              <span style={{ display: "inline-block", background: "#E53935", color: "#fff", fontSize: 13, fontWeight: 700, padding: "5px 18px", borderRadius: 999 }}>
-                50% OFF Today!
-              </span>
-            </div>
-            <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 48, fontSize: 15 }}>
-              All plans include 25,000+ channels, 4K streaming, and 24/7 Canadian support. Pay via Interac e-Transfer.
-            </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
-              {plans.map((plan) => (
-                <div
-                  key={plan.name}
-                  style={{
-                    background: plan.badge === "Best Value" ? "rgba(229,57,53,0.08)" : "rgba(255,255,255,0.03)",
-                    border: plan.badge === "Best Value" ? "1.5px solid rgba(229,57,53,0.5)" : "1px solid rgba(255,255,255,0.08)",
-                    borderRadius: 20,
-                    padding: "32px 24px",
-                    position: "relative",
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  {plan.badge && (
-                    <span
-                      style={{
-                        position: "absolute",
-                        top: -12,
-                        left: "50%",
-                        transform: "translateX(-50%)",
-                        background: "#E53935",
-                        color: "#fff",
-                        fontSize: 11,
-                        fontWeight: 700,
-                        padding: "4px 14px",
-                        borderRadius: 999,
-                        whiteSpace: "nowrap",
-                      }}
-                    >
-                      {plan.badge}
-                    </span>
-                  )}
-                  <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 8 }}>{plan.name}</div>
-                  <div style={{ fontSize: 36, fontWeight: 900, color: "#E53935", marginBottom: 20 }}>{plan.price}</div>
-                  <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
-                    {planFeatures.map((f) => (
-                      <li key={f} style={{ fontSize: 13, color: "#9ca3af", marginBottom: 6, display: "flex", alignItems: "center", gap: 6, textAlign: "left" }}>
-                        <span style={{ color: "#E53935", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    href={plan.href}
-                    style={{
-                      display: "block",
-                      background: plan.badge === "Best Value" ? "#E53935" : "rgba(229,57,53,0.15)",
-                      color: plan.badge === "Best Value" ? "#fff" : "#E53935",
-                      fontWeight: 700,
-                      fontSize: 14,
-                      padding: "12px 20px",
-                      borderRadius: 12,
-                      textDecoration: "none",
-                      border: plan.badge === "Best Value" ? "none" : "1px solid rgba(229,57,53,0.3)",
-                      textAlign: "center",
-                    }}
-                  >
-                    Get Started →
-                  </Link>
-                </div>
-              ))}
-            </div>
-            <div style={{ textAlign: "center", marginTop: 32 }}>
-              <Link href="/pricing" style={{ color: "#E53935", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
-                View full pricing details →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* ── 3. PRICING + CONNECTION SELECTOR ── */}
+        <HomePricing />
 
-        {/* ── 4. DEVICE SELECTOR ── */}
-        <DeviceSelector />
-
-        {/* ── 5. DEVICES MARQUEE ── */}
+        {/* ── 4. DEVICES MARQUEE ── */}
         <section style={{ padding: "80px 16px", background: "#0d0d0d", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
@@ -380,7 +275,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 6. CANADIAN CHANNELS ── */}
+        {/* ── 5. CANADIAN CHANNELS ── */}
         <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <p style={{ color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
@@ -416,7 +311,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 7. SPORTS ── */}
+        {/* ── 6. SPORTS ── */}
         <section style={{ padding: "80px 16px", background: "#0d0d0d", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
@@ -453,7 +348,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 8. COMPARISON TABLE ── */}
+        {/* ── 7. COMPARISON TABLE ── */}
         <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
@@ -487,7 +382,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 9. FAQ ── */}
+        {/* ── 8. FAQ ── */}
         <section style={{ padding: "80px 16px", background: "#0d0d0d" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
             <p style={{ color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
@@ -513,7 +408,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 10. CITIES ── */}
+        {/* ── 9. CITIES ── */}
         <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
