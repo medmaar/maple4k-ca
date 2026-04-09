@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const countries = [
   "Canada", "United States", "United Kingdom", "Australia", "France", "Germany",
@@ -28,6 +29,10 @@ export default function OrderForm({ plan, price, devices }: Props) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    emailjs.init("XgOQHE8VNnCyBYP1z");
+  }, []);
+
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
@@ -36,18 +41,15 @@ export default function OrderForm({ plan, price, devices }: Props) {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("/api/order", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          country: form.country,
-          whatsapp: form.whatsapp,
-          plan: `${plan} — ${devices} device${devices > 1 ? "s" : ""} — $${price}`,
-        }),
+      await emailjs.send("service_0e3cugb", "template_cuf7svm", {
+        from_name: form.name || "Not provided",
+        from_email: form.email || "Not provided",
+        phone: form.whatsapp || "Not provided",
+        country: form.country,
+        device: "Not specified",
+        plan: `${plan} — ${devices} device${devices > 1 ? "s" : ""} — $${price}`,
+        message: "—",
       });
-      if (!res.ok) throw new Error("Failed");
     } catch {
       // Still show success to user even if email fails
     } finally {

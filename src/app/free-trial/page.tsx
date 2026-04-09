@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PlanOrderForm from "../pricing/PlanOrderForm";
 
 export const metadata: Metadata = {
   title: "Maple4K Free Trial | Try 24 Hours Free — No Credit Card",
@@ -63,6 +64,19 @@ export default function FreeTrialPage() {
           <p className="text-gray-400 text-sm">
             Fast activation · Human support · No obligation
           </p>
+        </div>
+      </section>
+
+      {/* Request Form */}
+      <section className="py-16 px-4">
+        <div className="max-w-xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-2">
+            Request Your <span className="text-red-500">Free Trial</span>
+          </h2>
+          <p className="text-center text-gray-400 mb-8 text-sm">
+            Fill out the form below and we&apos;ll activate your 24-hour trial within minutes.
+          </p>
+          <PlanOrderForm plan="Free Trial" />
         </div>
       </section>
 
