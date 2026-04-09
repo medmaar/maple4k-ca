@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const plans = [
   { devices: 1,  prices: { "1 Month": 9,   "3 Months": 29,  "6 Months": 39,  "1 Year": 49  } },
@@ -43,6 +43,17 @@ const features = [
 export default function PricingSection() {
   const [activeDevices, setActiveDevices] = useState(1);
   const plan = plans.find((p) => p.devices === activeDevices)!;
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  function handleSelect(n: number) {
+    setActiveDevices(n);
+    requestAnimationFrame(() => {
+      const btn = scrollRef.current?.querySelector<HTMLElement>(`[data-n="${n}"]`);
+      btn?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    });
+  }
+
+  const connLabel = `${activeDevices} Connection${activeDevices > 1 ? "s" : ""}`;
 
   return (
     <section id="pricing-section" style={{ background: "#10131E", color: "#fff", padding: "60px 16px" }}>
@@ -63,27 +74,45 @@ export default function PricingSection() {
           No contracts. No hidden fees. Instant activation after you order.
         </p>
 
-        {/* Device tabs */}
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 8, marginBottom: 36 }}>
-          {plans.map((p) => (
-            <button
-              key={p.devices}
-              onClick={() => setActiveDevices(p.devices)}
-              style={{
-                padding: "8px 18px",
-                borderRadius: 999,
-                border: activeDevices === p.devices ? "none" : "1px solid #333",
-                background: activeDevices === p.devices ? "#fd0322" : "transparent",
-                color: "#fff",
-                fontWeight: 600,
-                fontSize: 14,
-                cursor: "pointer",
-                transition: "all .2s",
-              }}
-            >
-              {p.devices} {p.devices === 1 ? "Device" : "Devices"}
-            </button>
-          ))}
+        {/* Connection selector — horizontally scrollable, starts from left */}
+        <div
+          ref={scrollRef}
+          style={{
+            overflowX: "auto",
+            WebkitOverflowScrolling: "touch",
+            display: "flex",
+            gap: 8,
+            marginBottom: 36,
+            paddingBottom: 6,
+            scrollbarWidth: "none",
+          } as React.CSSProperties}
+        >
+          {plans.map((p) => {
+            const active = activeDevices === p.devices;
+            return (
+              <button
+                key={p.devices}
+                data-n={p.devices}
+                onClick={() => handleSelect(p.devices)}
+                style={{
+                  flexShrink: 0,
+                  padding: "8px 18px",
+                  borderRadius: 999,
+                  border: active ? "none" : "1px solid #333",
+                  background: active ? "#fd0322" : "transparent",
+                  color: "#fff",
+                  fontWeight: 600,
+                  fontSize: 14,
+                  cursor: "pointer",
+                  opacity: active ? 1 : 0.4,
+                  transition: "all .2s",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                {p.devices} Connection{p.devices > 1 ? "s" : ""}
+              </button>
+            );
+          })}
         </div>
 
         {/* Price cards */}
@@ -92,6 +121,7 @@ export default function PricingSection() {
             const price = plan.prices[dur];
             const badge = badges[dur];
             const isPopular = dur === "6 Months";
+            const isYear = dur === "1 Year";
             return (
               <div
                 key={dur}
@@ -125,15 +155,37 @@ export default function PricingSection() {
                   </span>
                 )}
                 <p style={{ fontSize: 14, color: "#aaa", marginBottom: 4 }}>{dur}</p>
-                <p style={{ fontSize: "clamp(2rem,5vw,2.6rem)", fontWeight: 800, margin: "4px 0 16px" }}>
-                  ${price}
-                </p>
+                {/* Price + connection count */}
+                <div style={{ display: "flex", alignItems: "baseline", gap: 8, margin: "4px 0 16px" }}>
+                  <span style={{ fontSize: "clamp(2rem,5vw,2.6rem)", fontWeight: 800 }}>${price}</span>
+                  <span style={{ fontSize: 12, color: "#6b7280" }}>/ {connLabel}</span>
+                </div>
                 <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
                   {features.map((f) => (
                     <li key={f} style={{ fontSize: 13, color: "#ccc", marginBottom: 6, display: "flex", alignItems: "center", gap: 8 }}>
                       <span style={{ color: "#fd0322", fontWeight: 700 }}>✓</span> {f}
                     </li>
                   ))}
+                  {/* IBO Player bonus — 1 Year only */}
+                  {isYear && (
+                    <li
+                      style={{
+                        marginTop: 10,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 8,
+                        background: "rgba(251,191,36,0.08)",
+                        border: "1px solid rgba(251,191,36,0.35)",
+                        borderRadius: 8,
+                        padding: "7px 10px",
+                      }}
+                    >
+                      <span style={{ flexShrink: 0, fontSize: 14 }}>⭐</span>
+                      <span style={{ fontSize: 13, color: "#fbbf24", fontWeight: 600, lineHeight: 1.3 }}>
+                        IBO Player Subscription for Free
+                      </span>
+                    </li>
+                  )}
                 </ul>
                 <a
                   href={orderLinks[dur]}
