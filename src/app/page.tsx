@@ -5,17 +5,17 @@ import HomePricing from "./components/HomePricing";
 export const metadata: Metadata = {
   title: "Best Maple4K | #1 IPTV Subscription – 24h Free Trial",
   description:
-    "Canada's best IPTV service in 2026. 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet & more. Free 24h trial. Starting at $19 CAD/month.",
+    "Canada's best IPTV service in 2026. 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet & more. Free 24h trial. Starting at $9/month.",
   keywords:
     "Maple4K, best Maple4K, IPTV subscription Canada, Canadian IPTV, IPTV free trial Canada, Maple4K cheap, best IPTV subscription Canada",
   alternates: { canonical: "https://maple4k.ca" },
   openGraph: {
     title: "Best Maple4K | #1 IPTV Subscription – 24h Free Trial",
     description:
-      "Canada's best IPTV service in 2026. 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet & more. Free 24h trial. Starting at $19 CAD/month.",
+      "Canada's best IPTV service in 2026. 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet & more. Free 24h trial. Starting at $9/month.",
     url: "https://maple4k.ca",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -23,27 +23,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is IPTV and how does it work in Canada?",
-    a: "IPTV (Internet Protocol Television) delivers live TV channels and on-demand content over your internet connection instead of cable or satellite. In Canada, Maple4KTV provides 25,000+ live channels and 120,000+ movies and series streamed directly to your device in 4K quality.",
+    a: "IPTV (Internet Protocol Television) delivers live TV channels and on-demand content over your internet connection instead of cable or satellite. In Canada, Maple4K provides 25,000+ live channels and 120,000+ movies and series streamed directly to your device in 4K quality.",
   },
   {
     q: "Is IPTV legal in Canada in 2026?",
-    a: "IPTV technology is legal in Canada. Maple4KTV complies with Canadian broadcasting regulations and provides access to publicly available streams. Users are responsible for ensuring they have the right to view content in their jurisdiction.",
+    a: "IPTV technology is legal in Canada. Maple4K complies with Canadian broadcasting regulations and provides access to publicly available streams. Users are responsible for ensuring they have the right to view content in their jurisdiction.",
   },
   {
     q: "How much does IPTV cost compared to cable in Canada?",
-    a: "Maple4KTV plans start at $19 CAD/month — compared to $80–$150/month for cable. A 12-month plan costs just $79 CAD total, saving you over $900/year versus Bell or Rogers.",
+    a: "Maple4K plans start at $9/month — compared to $80–$150/month for cable. A 12-month plan costs just $49 total, saving you over $900/year versus Bell or Rogers.",
   },
   {
     q: "Can I get a free IPTV trial in Canada?",
-    a: "Yes! Maple4KTV offers a free 24-hour trial with no credit card required. Contact us via WhatsApp or email to activate your trial instantly.",
+    a: "Yes! Maple4K offers a free 24-hour trial with no credit card required. Contact us via WhatsApp or email to activate your trial instantly.",
   },
   {
-    q: "What devices work with Maple4KTV?",
-    a: "Maple4KTV works on Amazon Firestick, Samsung & LG Smart TVs, Android TV boxes, Android phones, iPhones, iPads, Apple TV, MAG boxes, Windows PCs, and Macs. Any device with an IPTV player app is compatible.",
+    q: "What devices work with Maple4K?",
+    a: "Maple4K works on Amazon Firestick, Samsung & LG Smart TVs, Android TV boxes, Android phones, iPhones, iPads, Apple TV, MAG boxes, Windows PCs, and Macs. Any device with an IPTV player app is compatible.",
   },
   {
     q: "Do I need a VPN for IPTV in Canada?",
-    a: "No VPN is required to use Maple4KTV in Canada. Our servers are optimized for Canadian connections and deliver fast, stable streams without any additional software.",
+    a: "No VPN is required to use Maple4K in Canada. Our servers are optimized for Canadian connections and deliver fast, stable streams without any additional software.",
   },
   {
     q: "What Canadian sports channels are included?",
@@ -68,7 +68,7 @@ const faqSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Maple4KTV",
+  name: "Maple4K",
   url: "https://maple4k.ca",
   email: "help@maple4k.ca",
   description:
@@ -102,7 +102,7 @@ const cities = [
 ];
 
 const comparison = [
-  { feature: "Price/month", us: "$19 CAD", cable: "$80–$150", other: "$15–$25" },
+  { feature: "Price/month", us: "$9", cable: "$80–$150", other: "$15–$25" },
   { feature: "Live Channels", us: "25,000+", cable: "150–500", other: "5,000–15,000" },
   { feature: "4K Streaming", us: "✓", cable: "Limited", other: "Varies" },
   { feature: "Contracts", us: "None", cable: "1–2 years", other: "Varies" },
@@ -285,7 +285,7 @@ export default function HomePage() {
               All Your Favourite Canadian Channels
             </h2>
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 40, fontSize: 15, maxWidth: 620, margin: "0 auto 40px" }}>
-              Maple4KTV Maple4K includes every major Canadian network — no blackouts on NHL, CFL, or NBA games.
+              Maple4K includes every major Canadian network — no blackouts on NHL, CFL, or NBA games.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", marginBottom: 32 }}>
               {["CBC", "CTV", "Global", "City TV", "CP24", "TSN 1", "TSN 2", "TSN 3", "TSN 4", "TSN 5", "Sportsnet", "Sportsnet ONE", "Sportsnet West", "Sportsnet Pacific", "RDS", "TVA Sports", "TVA", "Canal Vie"].map((ch) => (
@@ -352,17 +352,17 @@ export default function HomePage() {
         <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
-              Maple4KTV vs Cable vs Other IPTV
+              Maple4K vs Cable vs Other IPTV
             </h2>
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 48, fontSize: 15 }}>
-              See why Canadian IPTV subscribers are switching to Maple4KTV.
+              See why Canadian IPTV subscribers are switching to Maple4K.
             </p>
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
                 <thead>
                   <tr>
                     <th style={{ textAlign: "left", padding: "14px 16px", color: "#6b7280", fontWeight: 600, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>Feature</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#E53935", fontWeight: 700, borderBottom: "1px solid rgba(229,57,53,0.3)", background: "rgba(229,57,53,0.06)" }}>Maple4KTV</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#E53935", fontWeight: 700, borderBottom: "1px solid rgba(229,57,53,0.3)", background: "rgba(229,57,53,0.06)" }}>Maple4K</th>
                     <th style={{ textAlign: "center", padding: "14px 16px", color: "#6b7280", fontWeight: 600, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>Cable</th>
                     <th style={{ textAlign: "center", padding: "14px 16px", color: "#6b7280", fontWeight: 600, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>Other IPTV</th>
                   </tr>
@@ -461,7 +461,7 @@ export default function HomePage() {
               Start Streaming Today
             </h2>
             <p style={{ color: "#9ca3af", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
-              Join thousands of Canadians who switched from cable to Maple4KTV. Try free for 24 hours — no credit card required.
+              Join thousands of Canadians who switched from cable to Maple4K. Try free for 24 hours — no credit card required.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link

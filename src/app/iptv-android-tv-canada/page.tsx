@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best IPTV for Android TV in Canada 2026 | Maple4KTV",
+  title: "Best IPTV for Android TV in Canada 2026 | Maple4K",
   description:
-    "Install IPTV on your Android TV box in Canada. Maple4KTV offers 25,000+ channels in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
+    "Install IPTV on your Android TV box in Canada. Maple4K offers 25,000+ channels in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
   alternates: { canonical: "https://maple4k.ca/iptv-android-tv-canada" },
   openGraph: {
-    title: "Best IPTV for Android TV in Canada 2026 | Maple4KTV",
+    title: "Best IPTV for Android TV in Canada 2026 | Maple4K",
     description:
-      "Install IPTV on your Android TV box in Canada. Maple4KTV offers 25,000+ channels in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
+      "Install IPTV on your Android TV box in Canada. Maple4K offers 25,000+ channels in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
     url: "https://maple4k.ca/iptv-android-tv-canada",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
 };
 
@@ -33,7 +33,7 @@ const jsonLd = {
     {
       "@type": "HowToStep",
       name: "Enter Credentials",
-      text: "Input the server URL, username, and password provided by Maple4KTV after purchase.",
+      text: "Input the server URL, username, and password provided by Maple4K after purchase.",
     },
     {
       "@type": "HowToStep",
@@ -47,7 +47,7 @@ const steps = [
   {
     num: "1",
     title: "Download IPTV Player",
-    desc: "Open the Google Play Store on your Android TV and download IPTV Smarters Pro or TiviMate. Both apps are free to install and work seamlessly with Maple4KTV.",
+    desc: "Open the Google Play Store on your Android TV and download IPTV Smarters Pro or TiviMate. Both apps are free to install and work seamlessly with Maple4K.",
   },
   {
     num: "2",
@@ -57,7 +57,7 @@ const steps = [
   {
     num: "3",
     title: "Enter Credentials",
-    desc: "Input the server URL, username, and password provided by Maple4KTV in your welcome email after purchase. Your channels will begin loading immediately.",
+    desc: "Input the server URL, username, and password provided by Maple4K in your welcome email after purchase. Your channels will begin loading immediately.",
   },
   {
     num: "4",
@@ -118,7 +118,7 @@ export default function IPTVAndroidTVCanadaPage() {
                 marginBottom: 36,
               }}
             >
-              Maple4KTV is the best Maple4K service for Android TV, Google TV, and
+              Maple4K is the best Maple4K service for Android TV, Google TV, and
               Android boxes. Whether you own a Nvidia Shield, Chromecast with Google TV, or any
               Android box, you get 25,000+ live channels and 120,000+ movies in true 4K HDR —
               set up in minutes straight from the Play Store.
@@ -193,18 +193,18 @@ export default function IPTVAndroidTVCanadaPage() {
           </div>
         </section>
 
-        {/* Why Maple4KTV */}
+        {/* Why Maple4K */}
         <section style={{ padding: "60px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
               style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
             >
-              Why Maple4KTV Is the Best IPTV for Android TV
+              Why Maple4K Is the Best IPTV for Android TV
             </h2>
             <p style={{ color: "#aaa", lineHeight: 1.75, marginBottom: 28 }}>
               Android TV offers unmatched flexibility for Maple4K. Unlike closed platforms,
               Android TV lets you choose your preferred player, customize your EPG, and
-              sideload apps freely. Maple4KTV is built to harness that flexibility fully.
+              sideload apps freely. Maple4K is built to harness that flexibility fully.
             </p>
             <div
               style={{
@@ -337,7 +337,7 @@ export default function IPTVAndroidTVCanadaPage() {
               Canadian Channels on Your Android TV
             </h2>
             <p style={{ color: "#aaa", lineHeight: 1.75, marginBottom: 16 }}>
-              Maple4KTV gives your Android TV full access to Canada's biggest channels.
+              Maple4K gives your Android TV full access to Canada's biggest channels.
               Watch every NHL game live on TSN and Sportsnet with our sports-optimized low-delay
               streams. Stay informed with CBC News Network and CTV News. Enjoy primetime
               entertainment on Global, City TV, and specialty channels across every genre.
@@ -398,10 +398,10 @@ export default function IPTVAndroidTVCanadaPage() {
               }}
             >
               {[
-                { period: "1 Month", price: "$19 CAD" },
-                { period: "3 Months", price: "$29 CAD" },
-                { period: "6 Months", price: "$49 CAD" },
-                { period: "12 Months", price: "$79 CAD" },
+                { period: "1 Month", price: "$9" },
+                { period: "3 Months", price: "$29" },
+                { period: "6 Months", price: "$49" },
+                { period: "12 Months", price: "$49" },
               ].map((plan) => (
                 <div
                   key={plan.period}
@@ -452,7 +452,7 @@ export default function IPTVAndroidTVCanadaPage() {
             <p
               style={{ color: "#ccc", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
             >
-              Try Maple4KTV free for 24 hours — no credit card required. Need help? Contact
+              Try Maple4K free for 24 hours — no credit card required. Need help? Contact
               us at{" "}
               <a
                 href="mailto:help@maple4k.ca"

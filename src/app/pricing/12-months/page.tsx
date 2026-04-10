@@ -3,9 +3,9 @@ import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 
 export const metadata: Metadata = {
-  title: "1 Year IPTV Plan — $100 CAD | Maple4KTV Canada",
+  title: "1 Year IPTV Plan — $49 | Maple4K",
   description:
-    "Get a full year of IPTV in Canada for $100 CAD. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. Best value. Login credentials sent within 24 hours.",
+    "Get a full year of IPTV in Canada for $49. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. Best value. Login credentials sent within 24 hours.",
   keywords:
     "Maple4K 1 year, IPTV annual plan Canada, IPTV 12 months Canada, best value Maple4K",
   alternates: { canonical: "https://maple4k.ca/pricing/12-months" },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "What is included in the 1-year IPTV plan?",
-    a: "The 1-year plan gives you a full 12 months of access to 25,000+ live channels (TSN, Sportsnet, CBC, CTV, Global, RDS, TVA and hundreds more), 120,000+ movies and series on demand, 4K Ultra HD streaming, EPG, and 7-day catch-up TV — all for $100 CAD.",
+    a: "The 1-year plan gives you a full 12 months of access to 25,000+ live channels (TSN, Sportsnet, CBC, CTV, Global, RDS, TVA and hundreds more), 120,000+ movies and series on demand, 4K Ultra HD streaming, EPG, and 7-day catch-up TV — all for $49.",
   },
   {
     q: "How do I receive my login credentials after ordering?",
@@ -120,7 +120,7 @@ export default function Pricing12MonthsPage() {
                 borderColor: "rgba(255,255,255,0.07)",
               }}
             >
-              <PlanOrderForm plan="1 Year Plan — $100 CAD" />
+              <PlanOrderForm plan="1 Year Plan — $49" />
             </div>
 
             {/* 4. FAQ */}

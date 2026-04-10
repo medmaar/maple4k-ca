@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV for Samsung & LG Smart TV in Canada 2026 | Maple4KTV",
+  title: "IPTV for Samsung & LG Smart TV in Canada 2026 | Maple4K",
   description:
-    "Install Maple4KTV IPTV on your Samsung or LG Smart TV in Canada. 25,000+ live channels, NHL, TSN, CTV in 4K. Easy setup in minutes. From $19 CAD/month.",
+    "Install Maple4K IPTV on your Samsung or LG Smart TV in Canada. 25,000+ live channels, NHL, TSN, CTV in 4K. Easy setup in minutes. From $9/month.",
   keywords: "IPTV Samsung TV Canada, IPTV LG Smart TV Canada, Smart TV Maple4K",
   alternates: { canonical: "https://maple4k.ca/iptv-smart-tv-canada" },
   openGraph: {
-    title: "IPTV for Samsung & LG Smart TV in Canada 2026 | Maple4KTV",
-    description: "Install Maple4KTV IPTV on your Samsung or LG Smart TV in Canada. 25,000+ live channels, NHL, TSN, CTV in 4K. Easy setup in minutes. From $19 CAD/month.",
+    title: "IPTV for Samsung & LG Smart TV in Canada 2026 | Maple4K",
+    description: "Install Maple4K IPTV on your Samsung or LG Smart TV in Canada. 25,000+ live channels, NHL, TSN, CTV in 4K. Easy setup in minutes. From $9/month.",
     url: "https://maple4k.ca/iptv-smart-tv-canada",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -21,11 +21,11 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Set Up IPTV on Samsung or LG Smart TV in Canada",
-  description: "Install Maple4KTV IPTV on your Smart TV in under 5 minutes.",
+  description: "Install Maple4K IPTV on your Smart TV in under 5 minutes.",
   step: [
     { "@type": "HowToStep", name: "Open Smart Hub", text: "Press the Home button on your Samsung or LG remote and open the app store (Samsung Apps or LG Content Store)." },
     { "@type": "HowToStep", name: "Download IPTV app", text: "Search for 'IPTV Smarters' or 'Smart IPTV' and install it on your Smart TV." },
-    { "@type": "HowToStep", name: "Enter credentials", text: "Open the app and enter the server URL, username, and password that Maple4KTV sends to your email." },
+    { "@type": "HowToStep", name: "Enter credentials", text: "Open the app and enter the server URL, username, and password that Maple4K sends to your email." },
     { "@type": "HowToStep", name: "Start streaming", text: "Browse 25,000+ channels, Canadian sports, and 120,000+ on-demand titles in 4K." },
   ],
 };
@@ -46,7 +46,7 @@ export default function IPTVSmartTVCanadaPage() {
               <span style={{ color: "#E53935" }}>in Canada 2026</span>
             </h1>
             <p style={{ color: "#9ca3af", fontSize: 17, lineHeight: 1.7, maxWidth: 680, marginBottom: 36 }}>
-              Maple4KTV works seamlessly on Samsung and LG Smart TVs across Canada. Get 25,000+ live channels including CBC, CTV, TSN, and Sportsnet in stunning 4K quality — all without a cable subscription.
+              Maple4K works seamlessly on Samsung and LG Smart TVs across Canada. Get 25,000+ live channels including CBC, CTV, TSN, and Sportsnet in stunning 4K quality — all without a cable subscription.
             </p>
             <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Get Your Maple4K Plan →
@@ -54,11 +54,11 @@ export default function IPTVSmartTVCanadaPage() {
           </div>
         </section>
 
-        {/* Why Maple4KTV */}
+        {/* Why Maple4K */}
         <section style={{ padding: "60px 16px", background: "#0d0d0d" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32 }}>
-              Why Maple4KTV Works Great on Smart TV
+              Why Maple4K Works Great on Smart TV
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 20 }}>
               {[
@@ -84,7 +84,7 @@ export default function IPTVSmartTVCanadaPage() {
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               {[
-                { n: "01", title: "Subscribe to Maple4KTV", desc: "Choose a plan on our pricing page — starting at $19 CAD/month. Pay securely via Interac e-Transfer." },
+                { n: "01", title: "Subscribe to Maple4K", desc: "Choose a plan on our pricing page — starting at $9/month. Pay securely via Interac e-Transfer." },
                 { n: "02", title: "Receive Your Credentials", desc: "We'll email you a server URL, username, and password within 5 minutes of your order." },
                 { n: "03", title: "Install IPTV App on Smart TV", desc: "Open the Samsung Apps or LG Content Store and download 'Smart IPTV' or 'IPTV Smarters'." },
                 { n: "04", title: "Enter Your Login Details", desc: "Open the app, input your server URL and credentials, then load your channel list." },
@@ -109,7 +109,7 @@ export default function IPTVSmartTVCanadaPage() {
               Ready to Cut the Cable?
             </h2>
             <p style={{ color: "#9ca3af", marginBottom: 32, fontSize: 15 }}>
-              Get the best Maple4K service on your Smart TV. Plans start at $19 CAD/month with a free 24-hour trial.
+              Get the best Maple4K service on your Smart TV. Plans start at $9/month with a free 24-hour trial.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>

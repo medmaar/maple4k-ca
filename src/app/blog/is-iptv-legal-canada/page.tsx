@@ -2,22 +2,22 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Is IPTV Legal in Canada? (2026 Honest Answer) | Maple4KTV",
+  title: "Is IPTV Legal in Canada? (2026 Honest Answer) | Maple4K",
   description:
     "Is IPTV legal in Canada in 2026? We explain CRTC rules, legal vs illegal IPTV, and what you need to know as a Canadian consumer.",
   keywords: "is iptv legal in canada, iptv legal canada 2026, crtc iptv canada",
   alternates: { canonical: "https://maple4k.ca/blog/is-iptv-legal-canada" },
   openGraph: {
-    title: "Is IPTV Legal in Canada? (2026 Honest Answer) | Maple4KTV",
+    title: "Is IPTV Legal in Canada? (2026 Honest Answer) | Maple4K",
     description:
       "Is IPTV legal in Canada in 2026? We explain CRTC rules, legal vs illegal IPTV, and what you need to know as a Canadian consumer.",
     url: "https://maple4k.ca/blog/is-iptv-legal-canada",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Is IPTV Legal in Canada? (2026 Honest Answer) | Maple4KTV",
+    title: "Is IPTV Legal in Canada? (2026 Honest Answer) | Maple4K",
     description:
       "Is IPTV legal in Canada in 2026? We explain CRTC rules, legal vs illegal IPTV, and what you need to know as a Canadian consumer.",
   },
@@ -29,10 +29,10 @@ const articleSchema = {
   headline: "Is IPTV Legal in Canada in 2026?",
   datePublished: "2026-01-15",
   dateModified: "2026-04-01",
-  author: { "@type": "Organization", name: "Maple4KTV" },
+  author: { "@type": "Organization", name: "Maple4K" },
   publisher: {
     "@type": "Organization",
-    name: "Maple4KTV",
+    name: "Maple4K",
     url: "https://maple4k.ca",
   },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://maple4k.ca/blog/is-iptv-legal-canada" },
@@ -197,10 +197,10 @@ export default function IsIPTVLegalCanada() {
             }}
           >
             <h2 style={{ fontSize: "1.4rem", fontWeight: 700, marginBottom: 12 }}>
-              Maple4KTV Compliance Statement
+              Maple4K Compliance Statement
             </h2>
             <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              Maple4KTV complies with Canadian broadcasting regulations and provides access to
+              Maple4K complies with Canadian broadcasting regulations and provides access to
               publicly available streams. We operate transparently and encourage all subscribers to
               use our service for content they have the right to access in their jurisdiction.
               Questions? Email us at{" "}
@@ -277,7 +277,7 @@ export default function IsIPTVLegalCanada() {
                 textDecoration: "none",
               }}
             >
-              Explore Maple4KTV Maple4K Plans →
+              Explore Maple4K Plans →
             </Link>
           </div>
         </article>

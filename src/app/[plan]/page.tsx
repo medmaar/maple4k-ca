@@ -16,7 +16,7 @@ interface PlanPageData {
 
                 const planData: Record<string, PlanPageData> = {
                   "1-month": {
-                      title: "1 Month IPTV Plan — $15 | Maple4KTV Canada",
+                      title: "1 Month IPTV Plan — $15 | Maple4K",
                           description: "Get 1 month of IPTV in Canada for $15. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Login credentials sent within 5 minutes.",
                               keywords: "Maple4K 1 month, IPTV monthly plan Canada, IPTV $15 Canada, month to month Maple4K",
                                   canonical: "https://maple4k.ca/1-month",
@@ -35,7 +35,7 @@ interface PlanPageData {
                                                                                                       ],
                                                                                                         },
                                                                                                           "3-months": {
-                                                                                                              title: "3 Month IPTV Plan — $29 | Maple4KTV Canada",
+                                                                                                              title: "3 Month IPTV Plan — $29 | Maple4K",
                                                                                                                   description: "Get 3 months of IPTV in Canada for $29. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Login credentials sent within 5 minutes.",
                                                                                                                       keywords: "Maple4K 3 months, IPTV quarterly plan Canada, IPTV $29 Canada, 3 month Maple4K",
                                                                                                                           canonical: "https://maple4k.ca/3-months",
@@ -54,7 +54,7 @@ interface PlanPageData {
                                                                                                                                                                                               ],
                                                                                                                                                                                                 },
                                                                                                                                                                                                   "6-months": {
-                                                                                                                                                                                                      title: "6 Month IPTV Plan — $39 | Maple4KTV Canada",
+                                                                                                                                                                                                      title: "6 Month IPTV Plan — $39 | Maple4K",
                                                                                                                                                                                                           description: "Get 6 months of IPTV in Canada for $39. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Login credentials sent within 5 minutes.",
                                                                                                                                                                                                               keywords: "Maple4K 6 months, IPTV semi-annual plan Canada, IPTV $39 Canada, 6 month Maple4K",
                                                                                                                                                                                                                   canonical: "https://maple4k.ca/6-months",
@@ -73,7 +73,7 @@ interface PlanPageData {
                                                                                                                                                                                                                                                                                       ],
                                                                                                                                                                                                                                                                                         },
                                                                                                                                                                                                                                                                                           "12-months": {
-                                                                                                                                                                                                                                                                                              title: "12 Month IPTV Plan — $49 | Maple4KTV Canada",
+                                                                                                                                                                                                                                                                                              title: "12 Month IPTV Plan — $49 | Maple4K",
                                                                                                                                                                                                                                                                                                   description: "Get 12 months of IPTV in Canada for $49. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Login credentials sent within 5 minutes.",
                                                                                                                                                                                                                                                                                                       keywords: "Maple4K 12 months, IPTV annual plan Canada, IPTV $49 Canada, yearly Maple4K",
                                                                                                                                                                                                                                                                                                           canonical: "https://maple4k.ca/12-months",

@@ -11,7 +11,7 @@ const channels = [
     name: "WhatsApp",
     desc: "Fastest response. Chat with our team directly — typically under 5 minutes.",
     action: "Message on WhatsApp",
-    href: "https://wa.me/17828026280?text=Hi%20Maple4KTV%2C%20I%27m%20interested%20in%20your%20service.",
+    href: "https://wa.me/17828026280?text=Hi%20Maple4K%2C%20I%27m%20interested%20in%20your%20service.",
     bg: "bg-[#25D366]",
     detail: "+1 (782) 802-6280",
   },

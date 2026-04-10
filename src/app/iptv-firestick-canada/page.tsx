@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IPTV on Amazon Firestick in Canada 2026 | Maple4KTV Setup Guide",
+  title: "IPTV on Amazon Firestick in Canada 2026 | Maple4K Setup Guide",
   description:
-    "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4KTV offers 25,000+ channels, NHL, TSN & 4K quality. Free 24h trial.",
+    "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 25,000+ channels, NHL, TSN & 4K quality. Free 24h trial.",
   alternates: { canonical: "https://maple4k.ca/iptv-firestick-canada" },
   openGraph: {
-    title: "IPTV on Amazon Firestick in Canada 2026 | Maple4KTV Setup Guide",
+    title: "IPTV on Amazon Firestick in Canada 2026 | Maple4K Setup Guide",
     description:
-      "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4KTV offers 25,000+ channels, NHL, TSN & 4K quality. Free 24h trial.",
+      "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 25,000+ channels, NHL, TSN & 4K quality. Free 24h trial.",
     url: "https://maple4k.ca/iptv-firestick-canada",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
 };
 
@@ -28,12 +28,12 @@ const jsonLd = {
     {
       "@type": "HowToStep",
       name: "Install IPTV Player",
-      text: "Open Downloader and enter the URL provided by Maple4KTV to install TiviMate or IPTV Smarters Pro.",
+      text: "Open Downloader and enter the URL provided by Maple4K to install TiviMate or IPTV Smarters Pro.",
     },
     {
       "@type": "HowToStep",
       name: "Enter Your Credentials",
-      text: "Open your IPTV player and enter the server URL, username, and password sent by Maple4KTV to your email.",
+      text: "Open your IPTV player and enter the server URL, username, and password sent by Maple4K to your email.",
     },
     {
       "@type": "HowToStep",
@@ -52,12 +52,12 @@ const steps = [
   {
     num: "2",
     title: "Install IPTV Player",
-    desc: "Open Downloader, enter the URL provided by Maple4KTV, and install TiviMate or IPTV Smarters Pro — both are optimized for Firestick.",
+    desc: "Open Downloader, enter the URL provided by Maple4K, and install TiviMate or IPTV Smarters Pro — both are optimized for Firestick.",
   },
   {
     num: "3",
     title: "Enter Your Credentials",
-    desc: "Open your IPTV player and enter the server URL, username, and password from your Maple4KTV welcome email. Tap 'Connect' and your channels load in seconds.",
+    desc: "Open your IPTV player and enter the server URL, username, and password from your Maple4K welcome email. Tap 'Connect' and your channels load in seconds.",
   },
   {
     num: "4",
@@ -118,7 +118,7 @@ export default function IPTVFirestickCanadaPage() {
                 marginBottom: 36,
               }}
             >
-              Maple4KTV is the top-rated Maple4K service built for Amazon Firestick.
+              Maple4K is the top-rated Maple4K service built for Amazon Firestick.
               Connect your Firestick in under 5 minutes and unlock 25,000+ live channels,
               120,000+ movies and series, and crystal-clear 4K HDR streams — including every
               major Canadian broadcaster and sports network.
@@ -158,17 +158,17 @@ export default function IPTVFirestickCanadaPage() {
           </div>
         </section>
 
-        {/* Why Maple4KTV on Firestick */}
+        {/* Why Maple4K on Firestick */}
         <section style={{ padding: "60px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
               style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
             >
-              Why Maple4KTV Works Great on Firestick
+              Why Maple4K Works Great on Firestick
             </h2>
             <p style={{ color: "#aaa", lineHeight: 1.75, marginBottom: 28 }}>
               Millions of Canadians use Amazon Firestick as their primary streaming device.
-              Maple4KTV is engineered to take full advantage of the Firestick hardware —
+              Maple4K is engineered to take full advantage of the Firestick hardware —
               delivering reliable, high-speed Maple4K streams without complicated setup.
             </p>
             <ul
@@ -188,7 +188,7 @@ export default function IPTVFirestickCanadaPage() {
                 },
                 {
                   title: "Full TiviMate & Smarters Compatibility",
-                  desc: "Maple4KTV works perfectly with both TiviMate and IPTV Smarters Pro — the two highest-rated IPTV players on Fire TV. Full 7-day EPG guide included.",
+                  desc: "Maple4K works perfectly with both TiviMate and IPTV Smarters Pro — the two highest-rated IPTV players on Fire TV. Full 7-day EPG guide included.",
                 },
                 {
                   title: "True 4K Ultra HD Picture Quality",
@@ -318,7 +318,7 @@ export default function IPTVFirestickCanadaPage() {
               What Canadian Channels Do You Get?
             </h2>
             <p style={{ color: "#aaa", lineHeight: 1.75, marginBottom: 16 }}>
-              Maple4KTV delivers every major Canadian channel straight to your Firestick.
+              Maple4K delivers every major Canadian channel straight to your Firestick.
               Never miss a live NHL game on TSN or Sportsnet, catch the latest on CBC News
               Network, follow hit dramas on CTV and Global, or cheer on your team with RDS and
               TVA Sports. Our Maple4K library includes all regional variants of each network
@@ -380,10 +380,10 @@ export default function IPTVFirestickCanadaPage() {
               }}
             >
               {[
-                { period: "1 Month", price: "$19 CAD" },
-                { period: "3 Months", price: "$29 CAD" },
-                { period: "6 Months", price: "$49 CAD" },
-                { period: "12 Months", price: "$79 CAD" },
+                { period: "1 Month", price: "$9" },
+                { period: "3 Months", price: "$29" },
+                { period: "6 Months", price: "$49" },
+                { period: "12 Months", price: "$49" },
               ].map((plan) => (
                 <div
                   key={plan.period}
@@ -438,7 +438,7 @@ export default function IPTVFirestickCanadaPage() {
             <p
               style={{ color: "#ccc", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
             >
-              Join thousands of Canadians already enjoying Maple4KTV. Try it free for 24
+              Join thousands of Canadians already enjoying Maple4K. Try it free for 24
               hours — no credit card required. Questions? Email{" "}
               <a
                 href="mailto:help@maple4k.ca"

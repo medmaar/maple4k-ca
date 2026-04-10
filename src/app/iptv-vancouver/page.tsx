@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best IPTV Service in Vancouver 2026 | Maple4KTV – From $19 CAD",
+  title: "Best IPTV Service in Vancouver 2026 | Maple4K – From $9",
   description:
-    "Best IPTV service in Vancouver BC. Stream Canucks games, TSN, Sportsnet Pacific & 25,000+ channels in 4K. Maple4KTV. Free trial available.",
+    "Best IPTV service in Vancouver BC. Stream Canucks games, TSN, Sportsnet Pacific & 25,000+ channels in 4K. Maple4K. Free trial available.",
   alternates: { canonical: "https://maple4k.ca/iptv-vancouver" },
   openGraph: {
-    title: "Best IPTV Service in Vancouver 2026 | Maple4KTV – From $19 CAD",
+    title: "Best IPTV Service in Vancouver 2026 | Maple4K – From $9",
     description:
-      "Best IPTV service in Vancouver BC. Stream Canucks games, TSN, Sportsnet Pacific & 25,000+ channels in 4K. Maple4KTV. Free trial available.",
+      "Best IPTV service in Vancouver BC. Stream Canucks games, TSN, Sportsnet Pacific & 25,000+ channels in 4K. Maple4K. Free trial available.",
     url: "https://maple4k.ca/iptv-vancouver",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -59,7 +59,7 @@ export default function IPTVVancouverPage() {
           >
             Vancouver is one of BC&apos;s most connected cities, with widespread fibre
             internet infrastructure that&apos;s ideal for 4K IPTV streaming.
-            Maple4KTV delivers rock-solid Maple4K service to Vancouver
+            Maple4K delivers rock-solid Maple4K service to Vancouver
             households, with 25,000+ live channels and 120,000+ movies &amp; series
             — all at a fraction of the cost of cable.
           </p>
@@ -118,13 +118,13 @@ export default function IPTVVancouverPage() {
             Vancouver Channels &amp; Sports
           </h2>
           <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
-            Maple4KTV&apos;s Vancouver channel package puts the full BC broadcast
+            Maple4K&apos;s Vancouver channel package puts the full BC broadcast
             lineup at your fingertips. Stream Sportsnet Pacific for Vancouver
             Canucks coverage, plus CBC Vancouver, CTV BC, Global BC, and TSN
             for complete national sports and news.
           </p>
           <p style={{ color: "#d1d5db", lineHeight: 1.8 }}>
-            Never miss a Canucks game with Maple4KTV Maple4K. Every
+            Never miss a Canucks game with Maple4K. Every
             home and away game is available in HD and 4K, so Vancouver fans
             can follow their team wherever the season takes them. Beyond
             hockey, you get the NFL, NBA, Premier League, and hundreds of
@@ -132,7 +132,7 @@ export default function IPTVVancouverPage() {
           </p>
         </div>
 
-        {/* Why Maple4KTV Works */}
+        {/* Why Maple4K Works */}
         <div style={{ marginBottom: 48 }}>
           <h2
             style={{
@@ -142,14 +142,14 @@ export default function IPTVVancouverPage() {
               color: "#fff",
             }}
           >
-            Why Maple4KTV Works So Well in Vancouver
+            Why Maple4K Works So Well in Vancouver
           </h2>
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
             {[
               {
                 icon: "🌊",
                 title: "West Coast Server Network",
-                desc: "Maple4KTV maintains dedicated servers on the West Coast, meaning Vancouver subscribers experience ultra-low latency and minimal buffering even during peak hours.",
+                desc: "Maple4K maintains dedicated servers on the West Coast, meaning Vancouver subscribers experience ultra-low latency and minimal buffering even during peak hours.",
               },
               {
                 icon: "📶",
@@ -203,12 +203,12 @@ export default function IPTVVancouverPage() {
           </h2>
           <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
             Shaw and Telus cable TV packages in Vancouver start around $80–$130
-            per month. With Maple4KTV, you pay just $19 CAD for your first
-            month — or lock in a full year for $79 CAD total, which works out to
+            per month. With Maple4K, you pay just $9 for your first
+            month — or lock in a full year for $49 total, which works out to
             under $7/month.
           </p>
           <p style={{ color: "#d1d5db", lineHeight: 1.8 }}>
-            Vancouver residents who switch from Shaw or Telus to Maple4KTV
+            Vancouver residents who switch from Shaw or Telus to Maple4K
             Maple4K typically save over $800 per year. You get more
             channels, higher picture quality, and the freedom to watch on any
             device — no cable box required.
@@ -230,7 +230,7 @@ export default function IPTVVancouverPage() {
                 margin: 0,
               }}
             >
-              Maple4KTV Plans — Vancouver
+              Maple4K Plans — Vancouver
             </p>
             <ul
               style={{
@@ -240,10 +240,10 @@ export default function IPTVVancouverPage() {
                 lineHeight: 2,
               }}
             >
-              <li>1 Month — $19 CAD</li>
-              <li>3 Months — $29 CAD</li>
-              <li>6 Months — $49 CAD</li>
-              <li>12 Months — $79 CAD</li>
+              <li>1 Month — $9</li>
+              <li>3 Months — $29</li>
+              <li>6 Months — $49</li>
+              <li>12 Months — $49</li>
             </ul>
           </div>
         </div>
@@ -262,7 +262,7 @@ export default function IPTVVancouverPage() {
           Start Streaming in Vancouver Today
         </h2>
         <p style={{ color: "#9ca3af", marginBottom: 32 }}>
-          Plans from $19 CAD/month. Free 24h trial available. No contracts,
+          Plans from $9/month. Free 24h trial available. No contracts,
           cancel anytime.
         </p>
         <a

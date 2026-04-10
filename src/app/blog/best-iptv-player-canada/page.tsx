@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best IPTV Player for Canada 2026 – TiviMate, IPTV Smarters & More | Maple4KTV",
+  title: "Best IPTV Player for Canada 2026 – TiviMate, IPTV Smarters & More | Maple4K",
   description:
-    "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player. Works with Maple4KTV on all devices.",
+    "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player. Works with Maple4K on all devices.",
   keywords: "best IPTV player Canada, TiviMate Canada, IPTV Smarters Canada, IPTV app Canada 2026",
   alternates: { canonical: "https://maple4k.ca/blog/best-iptv-player-canada" },
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player.",
     url: "https://maple4k.ca/blog/best-iptv-player-canada",
     type: "article",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -24,10 +24,10 @@ const articleSchema = {
   description: "Compare the best IPTV player apps for Canadian users in 2026 — TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player.",
   datePublished: "2026-01-15",
   dateModified: "2026-04-01",
-  author: { "@type": "Organization", name: "Maple4KTV" },
+  author: { "@type": "Organization", name: "Maple4K" },
   publisher: {
     "@type": "Organization",
-    name: "Maple4KTV",
+    name: "Maple4K",
     url: "https://maple4k.ca",
   },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://maple4k.ca/blog/best-iptv-player-canada" },
@@ -94,10 +94,10 @@ export default function BestIPTVPlayerCanadaPage() {
         <section style={{ padding: "40px 16px 20px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
             <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
-              All four players below are fully compatible with <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>Maple4KTV Maple4K plans</Link>. They support M3U playlists and Xtream Codes — the two formats we provide. Whether you&apos;re on a Firestick, Android TV box, or iPhone, one of these will work perfectly for you.
+              All four players below are fully compatible with <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link>. They support M3U playlists and Xtream Codes — the two formats we provide. Whether you&apos;re on a Firestick, Android TV box, or iPhone, one of these will work perfectly for you.
             </p>
             <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8 }}>
-              We tested each player with a real Maple4KTV subscription, evaluating channel loading speed, EPG accuracy, UI responsiveness, and overall stability on Canadian connections.
+              We tested each player with a real Maple4K subscription, evaluating channel loading speed, EPG accuracy, UI responsiveness, and overall stability on Canadian connections.
             </p>
           </div>
         </section>
@@ -150,16 +150,16 @@ export default function BestIPTVPlayerCanadaPage() {
               Our Recommendation for Canadian IPTV Users
             </h2>
             <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
-              For most Canadians using Maple4KTV on a Firestick or Android TV box, <strong style={{ color: "#fff" }}>TiviMate</strong> is the clear winner. Its polished interface, reliable EPG, and catch-up support make it the best IPTV player experience available.
+              For most Canadians using Maple4K on a Firestick or Android TV box, <strong style={{ color: "#fff" }}>TiviMate</strong> is the clear winner. Its polished interface, reliable EPG, and catch-up support make it the best IPTV player experience available.
             </p>
             <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
-              If you&apos;re on an iPhone or Apple TV, go with <strong style={{ color: "#fff" }}>GSE Smart IPTV</strong> or <strong style={{ color: "#fff" }}>IPTV Smarters Pro</strong>. Both work flawlessly with Maple4KTV credentials.
+              If you&apos;re on an iPhone or Apple TV, go with <strong style={{ color: "#fff" }}>GSE Smart IPTV</strong> or <strong style={{ color: "#fff" }}>IPTV Smarters Pro</strong>. Both work flawlessly with Maple4K credentials.
             </p>
             <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8, marginBottom: 32 }}>
-              All players listed above are compatible with <Link href="/iptv-firestick-canada" style={{ color: "#E53935", textDecoration: "none" }}>Firestick</Link>, <Link href="/iptv-android-tv-canada" style={{ color: "#E53935", textDecoration: "none" }}>Android TV</Link>, and <Link href="/iptv-apple-tv-canada" style={{ color: "#E53935", textDecoration: "none" }}>Apple TV</Link> setups. Once you have your player, all you need is a <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none" }}>Maple4KTV Maple4K plan</Link> to get started.
+              All players listed above are compatible with <Link href="/iptv-firestick-canada" style={{ color: "#E53935", textDecoration: "none" }}>Firestick</Link>, <Link href="/iptv-android-tv-canada" style={{ color: "#E53935", textDecoration: "none" }}>Android TV</Link>, and <Link href="/iptv-apple-tv-canada" style={{ color: "#E53935", textDecoration: "none" }}>Apple TV</Link> setups. Once you have your player, all you need is a <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none" }}>Maple4K plan</Link> to get started.
             </p>
             <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
-              View Maple4KTV Maple4K Plans →
+              View Maple4K Plans →
             </Link>
           </div>
         </section>

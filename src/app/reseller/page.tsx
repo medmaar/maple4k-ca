@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV Reseller Canada 2026 | Start Your IPTV Business – Maple4KTV",
+  title: "IPTV Reseller Canada 2026 | Start Your IPTV Business – Maple4K",
   description:
-    "Become an IPTV reseller in Canada with Maple4KTV. Wholesale pricing, white-label options, and a fast reseller panel. Start your own IPTV business today.",
+    "Become an IPTV reseller in Canada with Maple4K. Wholesale pricing, white-label options, and a fast reseller panel. Start your own IPTV business today.",
   keywords: "IPTV reseller Canada, IPTV reseller program Canada 2026, start IPTV business Canada",
   alternates: { canonical: "https://maple4k.ca/reseller" },
   openGraph: {
-    title: "IPTV Reseller Canada 2026 | Start Your IPTV Business – Maple4KTV",
-    description: "Become an IPTV reseller in Canada with Maple4KTV. Wholesale pricing, white-label options, and a fast reseller panel. Start your own IPTV business today.",
+    title: "IPTV Reseller Canada 2026 | Start Your IPTV Business – Maple4K",
+    description: "Become an IPTV reseller in Canada with Maple4K. Wholesale pricing, white-label options, and a fast reseller panel. Start your own IPTV business today.",
     url: "https://maple4k.ca/reseller",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -25,7 +25,7 @@ const features = [
   },
   {
     title: "Your Own Brand",
-    desc: "White-label our service under your own brand name. Your clients see your branding, your pricing, and your identity — powered by Maple4KTV's infrastructure.",
+    desc: "White-label our service under your own brand name. Your clients see your branding, your pricing, and your identity — powered by Maple4K's infrastructure.",
     icon: "🏷️",
   },
   {
@@ -55,7 +55,7 @@ export default function ResellerPage() {
             <span style={{ color: "#E53935" }}>in Canada</span>
           </h1>
           <p style={{ color: "#9ca3af", fontSize: 18, lineHeight: 1.7, maxWidth: 640, margin: "0 auto 36px" }}>
-            Start your own IPTV business in Canada with Maple4KTV&apos;s reseller program. Wholesale pricing, white-label support, and a powerful management panel — everything you need to build a profitable IPTV business.
+            Start your own IPTV business in Canada with Maple4K&apos;s reseller program. Wholesale pricing, white-label support, and a powerful management panel — everything you need to build a profitable IPTV business.
           </p>
           <a
             href="mailto:help@maple4k.ca?subject=IPTV%20Reseller%20Inquiry"
@@ -105,7 +105,7 @@ export default function ResellerPage() {
               { n: "02", title: "Purchase Credits", desc: "Buy a credit package at wholesale rates. Credits are used to create and renew your clients' subscriptions." },
               { n: "03", title: "Access Your Panel", desc: "Log into your reseller dashboard to manage all client accounts — create, suspend, renew, and monitor in real time." },
               { n: "04", title: "Set Your Own Prices", desc: "You control your retail pricing. Sell subscriptions at whatever margin works for your business." },
-              { n: "05", title: "Scale and Earn", desc: "Grow your client base with Maple4KTV's reliable 99.9% uptime infrastructure backing your brand." },
+              { n: "05", title: "Scale and Earn", desc: "Grow your client base with Maple4K's reliable 99.9% uptime infrastructure backing your brand." },
             ].map((s) => (
               <div key={s.n} style={{ display: "flex", gap: 20, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "22px 28px" }}>
                 <span style={{ color: "#E53935", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 40 }}>{s.n}</span>
@@ -123,7 +123,7 @@ export default function ResellerPage() {
       <section style={{ padding: "80px 16px", background: "#0d0d0d" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48 }}>
-            Why Resell Maple4KTV IPTV in Canada?
+            Why Resell Maple4K IPTV in Canada?
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
             {[

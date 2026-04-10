@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | Maple4KTV",
+  title: "Disclaimer | Maple4K",
   description:
-    "Legal disclaimer for Maple4KTV. We do not host or stream any copyrighted content. All content is provided by third-party providers.",
+    "Legal disclaimer for Maple4K. We do not host or stream any copyrighted content. All content is provided by third-party providers.",
   alternates: { canonical: "https://maple4k.ca/disclaimer" },
 };
 
@@ -18,7 +18,7 @@ export default function DisclaimerPage() {
           <div className="bg-gray-900 border border-red-700 rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-white mb-4">Content Disclaimer</h2>
             <p className="text-gray-300 leading-relaxed">
-              Maple4KTV does not host or stream any copyrighted content. All content is
+              Maple4K does not host or stream any copyrighted content. All content is
               provided by third-party providers. Users are responsible for ensuring they have
               the rights to view content in their jurisdiction.
             </p>
@@ -27,7 +27,7 @@ export default function DisclaimerPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-3">Third-Party Content</h2>
             <p>
-              Maple4KTV acts solely as a reseller and intermediary for third-party IPTV
+              Maple4K acts solely as a reseller and intermediary for third-party IPTV
               services. We do not create, produce, host, store, or transmit any video content
               ourselves. All streams, channels, and on-demand content accessible through our
               platform are delivered by independent third-party servers and providers over
@@ -38,12 +38,12 @@ export default function DisclaimerPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-3">User Responsibility</h2>
             <p className="mb-3">
-              By using the Maple4KTV service, you acknowledge and agree that:
+              By using the Maple4K service, you acknowledge and agree that:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>You are solely responsible for determining the legality of accessing any content in your jurisdiction.</li>
               <li>You will not use the service to access content you are not legally permitted to view.</li>
-              <li>Maple4KTV bears no liability for any content accessed through third-party providers.</li>
+              <li>Maple4K bears no liability for any content accessed through third-party providers.</li>
               <li>Your use of the service is subject to the laws and regulations of your local jurisdiction.</li>
             </ul>
           </div>
@@ -52,7 +52,7 @@ export default function DisclaimerPage() {
             <h2 className="text-2xl font-bold text-white mb-3">No Warranties</h2>
             <p>
               The service is provided &quot;as is&quot; without warranties of any kind, express or implied.
-              Maple4KTV does not warrant that the service will be uninterrupted, error-free,
+              Maple4K does not warrant that the service will be uninterrupted, error-free,
               or free of viruses or other harmful components. We disclaim all warranties to the
               fullest extent permitted by applicable law.
             </p>
@@ -61,7 +61,7 @@ export default function DisclaimerPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-3">Limitation of Liability</h2>
             <p>
-              To the maximum extent permitted by applicable law, Maple4KTV shall not be
+              To the maximum extent permitted by applicable law, Maple4K shall not be
               liable for any indirect, incidental, special, consequential, or punitive damages
               arising from your use of, or inability to use, the service or any content
               accessed through it.

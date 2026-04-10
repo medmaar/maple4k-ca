@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Maple4K Blog 2026 | Guides, Reviews & News – Maple4KTV",
+  title: "Maple4K Blog 2026 | Guides, Reviews & News – Maple4K",
   description:
-    "Read Maple4KTV's Maple4K blog. Expert guides on setup, legality, pricing comparisons, player reviews, and the best IPTV services in Canada for 2026.",
+    "Read Maple4K's Maple4K blog. Expert guides on setup, legality, pricing comparisons, player reviews, and the best IPTV services in Canada for 2026.",
   keywords: "Maple4K blog, Maple4K guide 2026, best Maple4K review",
   alternates: { canonical: "https://maple4k.ca/blog" },
   openGraph: {
-    title: "Maple4K Blog 2026 | Guides, Reviews & News – Maple4KTV",
-    description: "Read Maple4KTV's Maple4K blog. Expert guides on setup, legality, pricing comparisons, and player reviews.",
+    title: "Maple4K Blog 2026 | Guides, Reviews & News – Maple4K",
+    description: "Read Maple4K's Maple4K blog. Expert guides on setup, legality, pricing comparisons, and player reviews.",
     url: "https://maple4k.ca/blog",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -21,7 +21,7 @@ const posts = [
   {
     slug: "best-iptv-canada-2026",
     title: "10 Best IPTV Providers in Canada for 2026 (Tested & Ranked)",
-    excerpt: "We tested and ranked the top 10 IPTV providers available in Canada for 2026. Maple4KTV takes the #1 spot — find out why.",
+    excerpt: "We tested and ranked the top 10 IPTV providers available in Canada for 2026. Maple4K takes the #1 spot — find out why.",
     date: "2026-01-10",
     readTime: "8 min read",
     tag: "Reviews",
@@ -45,7 +45,7 @@ const posts = [
   {
     slug: "best-iptv-player-canada",
     title: "Best IPTV Player Apps for Canada in 2026",
-    excerpt: "TiviMate, IPTV Smarters Pro, GSE Smart IPTV, or Perfect Player? We tested all four with a real Maple4KTV subscription.",
+    excerpt: "TiviMate, IPTV Smarters Pro, GSE Smart IPTV, or Perfect Player? We tested all four with a real Maple4K subscription.",
     date: "2026-04-01",
     readTime: "5 min read",
     tag: "Guide",
@@ -64,7 +64,7 @@ export default function BlogPage() {
       >
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <p style={{ color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
-            Maple4KTV Blog
+            Maple4K Blog
           </p>
           <h1 style={{ fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
             Maple4K Guides &amp; Reviews

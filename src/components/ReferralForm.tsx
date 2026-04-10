@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const WA_NUMBER = "17828026280";
-const WA_REFER_URL = `https://wa.me/${WA_NUMBER}?text=Hi%20Maple4KTV%2C%20I%E2%80%99m%20referring%20someone%20to%20your%20service.%20What%E2%80%99s%20the%20next%20step%3F`;
+const WA_REFER_URL = `https://wa.me/${WA_NUMBER}?text=Hi%20Maple4K%2C%20I%E2%80%99m%20referring%20someone%20to%20your%20service.%20What%E2%80%99s%20the%20next%20step%3F`;
 
 export default function ReferralForm() {
   const [yourName, setYourName] = useState("");

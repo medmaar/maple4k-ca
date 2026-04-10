@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best IPTV Service in Calgary 2026 | Maple4KTV – From $19 CAD",
+  title: "Best IPTV Service in Calgary 2026 | Maple4K – From $9",
   description:
-    "Best IPTV service in Calgary Alberta. Watch Calgary Flames on Sportsnet West, TSN, 25,000+ channels in 4K. Maple4KTV. Free 24h trial.",
+    "Best IPTV service in Calgary Alberta. Watch Calgary Flames on Sportsnet West, TSN, 25,000+ channels in 4K. Maple4K. Free 24h trial.",
   alternates: { canonical: "https://maple4k.ca/iptv-calgary" },
   openGraph: {
-    title: "Best IPTV Service in Calgary 2026 | Maple4KTV – From $19 CAD",
+    title: "Best IPTV Service in Calgary 2026 | Maple4K – From $9",
     description:
-      "Best IPTV service in Calgary Alberta. Watch Calgary Flames on Sportsnet West, TSN, 25,000+ channels in 4K. Maple4KTV. Free 24h trial.",
+      "Best IPTV service in Calgary Alberta. Watch Calgary Flames on Sportsnet West, TSN, 25,000+ channels in 4K. Maple4K. Free 24h trial.",
     url: "https://maple4k.ca/iptv-calgary",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -59,7 +59,7 @@ export default function IPTVCalgaryPage() {
           >
             Calgary is one of Canada&apos;s fastest-growing cities, backed by
             excellent internet infrastructure built for high-speed fibre
-            connections. Maple4KTV brings the best Maple4K experience
+            connections. Maple4K brings the best Maple4K experience
             to Calgary homes — 25,000+ live channels, 120,000+ on-demand
             titles, and every Calgary Flames game in 4K.
           </p>
@@ -118,10 +118,10 @@ export default function IPTVCalgaryPage() {
             Calgary Channels &amp; Sports
           </h2>
           <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
-            Maple4KTV delivers the complete Calgary broadcast package:
+            Maple4K delivers the complete Calgary broadcast package:
             Sportsnet West for Calgary Flames games, CBC Calgary, CTV Calgary,
             Global Calgary, and TSN for national sports coverage. Calgary
-            Flames fans — never miss a game with Maple4KTV Maple4K.
+            Flames fans — never miss a game with Maple4K.
             Every regular season and playoff game is streamed in HD and 4K
             quality direct to your screen.
           </p>
@@ -143,7 +143,7 @@ export default function IPTVCalgaryPage() {
               color: "#fff",
             }}
           >
-            Why Calgary Residents Choose Maple4KTV
+            Why Calgary Residents Choose Maple4K
           </h2>
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
             {[
@@ -155,7 +155,7 @@ export default function IPTVCalgaryPage() {
               {
                 icon: "🖥️",
                 title: "Reliable Alberta Server Infrastructure",
-                desc: "Maple4KTV operates dedicated infrastructure to serve Calgary and the surrounding Alberta region, ensuring consistent uptime and low-latency streams year-round.",
+                desc: "Maple4K operates dedicated infrastructure to serve Calgary and the surrounding Alberta region, ensuring consistent uptime and low-latency streams year-round.",
               },
               {
                 icon: "🎧",
@@ -205,12 +205,12 @@ export default function IPTVCalgaryPage() {
           <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
             Shaw and Telus TV packages in Calgary routinely cost $90–$140 per
             month once you add sports packs, HD fees, and equipment rental.
-            Maple4KTV gives Calgary residents access to more content for a
-            fraction of the price — starting at just $19 CAD for a full month
+            Maple4K gives Calgary residents access to more content for a
+            fraction of the price — starting at just $9 for a full month
             of Maple4K service.
           </p>
           <p style={{ color: "#d1d5db", lineHeight: 1.8 }}>
-            Switching to Maple4KTV means no contracts, no cable boxes to
+            Switching to Maple4K means no contracts, no cable boxes to
             rent, and no surprise fees. Stream on your smart TV, phone, tablet,
             Fire Stick, or Apple TV — anywhere in Calgary or on the go.
           </p>
@@ -224,7 +224,7 @@ export default function IPTVCalgaryPage() {
             }}
           >
             <p style={{ color: "#E53935", fontWeight: 700, margin: 0 }}>
-              Maple4KTV Plans — Calgary
+              Maple4K Plans — Calgary
             </p>
             <ul
               style={{
@@ -234,10 +234,10 @@ export default function IPTVCalgaryPage() {
                 lineHeight: 2,
               }}
             >
-              <li>1 Month — $19 CAD</li>
-              <li>3 Months — $29 CAD</li>
-              <li>6 Months — $49 CAD</li>
-              <li>12 Months — $79 CAD</li>
+              <li>1 Month — $9</li>
+              <li>3 Months — $29</li>
+              <li>6 Months — $49</li>
+              <li>12 Months — $49</li>
             </ul>
           </div>
         </div>
@@ -256,7 +256,7 @@ export default function IPTVCalgaryPage() {
           Start Streaming in Calgary Today
         </h2>
         <p style={{ color: "#9ca3af", marginBottom: 32 }}>
-          Plans from $19 CAD/month. Free 24h trial available. Watch every
+          Plans from $9/month. Free 24h trial available. Watch every
           Calgary Flames game in 4K.
         </p>
         <a

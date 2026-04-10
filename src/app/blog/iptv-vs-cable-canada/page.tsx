@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV vs Cable Canada 2026: Which Is Better? Full Comparison | Maple4KTV",
+  title: "IPTV vs Cable Canada 2026: Which Is Better? Full Comparison | Maple4K",
   description:
     "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility to help you decide which is better in 2026.",
   keywords:
     "IPTV vs cable Canada, IPTV vs cable TV Canada, is IPTV better than cable Canada, IPTV or cable Canada 2026",
   alternates: { canonical: "https://maple4k.ca/blog/iptv-vs-cable-canada" },
   openGraph: {
-    title: "IPTV vs Cable Canada 2026: Which Is Better? Full Comparison | Maple4KTV",
+    title: "IPTV vs Cable Canada 2026: Which Is Better? Full Comparison | Maple4K",
     description:
       "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility to help you decide which is better in 2026.",
     url: "https://maple4k.ca/blog/iptv-vs-cable-canada",
     type: "article",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -27,18 +27,18 @@ const articleSchema = {
     "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility.",
   datePublished: "2026-02-20",
   dateModified: "2026-04-01",
-  author: { "@type": "Organization", name: "Maple4KTV" },
+  author: { "@type": "Organization", name: "Maple4K" },
   publisher: {
     "@type": "Organization",
-    name: "Maple4KTV",
+    name: "Maple4K",
     url: "https://maple4k.ca",
   },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://maple4k.ca/blog/iptv-vs-cable-canada" },
 };
 
 const comparison = [
-  { feature: "Monthly Cost (entry)",     iptv: "$9 CAD",             cable: "$80–$100 CAD",       winner: "iptv" },
-  { feature: "Monthly Cost (full pkg)",  iptv: "$9–$45 CAD",         cable: "$120–$200 CAD",      winner: "iptv" },
+  { feature: "Monthly Cost (entry)",     iptv: "$9",             cable: "$80–$100",       winner: "iptv" },
+  { feature: "Monthly Cost (full pkg)",  iptv: "$9–$45",         cable: "$120–$200",      winner: "iptv" },
   { feature: "Channel Count",           iptv: "25,000+",             cable: "200–500",            winner: "iptv" },
   { feature: "4K Channels",             iptv: "Yes — many",          cable: "Limited (extra cost)",winner: "iptv" },
   { feature: "Contract Required",       iptv: "No",                  cable: "Yes — 1–2 years",    winner: "iptv" },
@@ -117,7 +117,7 @@ export default function IPTVvsCableCanada() {
             </div>
 
             <div style={{ background: "#052e16", borderRadius: 16, padding: 24, border: "1px solid #166534", marginBottom: 16 }}>
-              <h3 style={{ fontWeight: 700, fontSize: 19, marginBottom: 16, color: "#4ade80" }}>Maple4KTV Maple4K</h3>
+              <h3 style={{ fontWeight: 700, fontSize: 19, marginBottom: 16, color: "#4ade80" }}>Maple4K</h3>
               <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 14, color: "#d1d5db" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #166534", paddingBottom: 8 }}><span>1 Month (1 device)</span><span style={{ fontWeight: 700 }}>$9</span></div>
                 <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #166534", paddingBottom: 8 }}><span>6 Months (1 device)</span><span style={{ fontWeight: 700 }}>$39 ($6.50/mo)</span></div>
@@ -129,7 +129,7 @@ export default function IPTVvsCableCanada() {
             </div>
 
             <p style={{ color: "#d1d5db", fontSize: 14, lineHeight: 1.75 }}>
-              View all <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>Maple4KTV Maple4K plans</Link> with full pricing details.
+              View all <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link> with full pricing details.
             </p>
           </section>
 
@@ -176,7 +176,7 @@ export default function IPTVvsCableCanada() {
             <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>Channel Selection: IPTV Wins Decisively</h2>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
               A typical Bell or Rogers cable package includes 200–500 channels depending on your tier.
-              A premium IPTV service like Maple4KTV includes 25,000+ channels from around
+              A premium IPTV service like Maple4K includes 25,000+ channels from around
               the world — including everything in the cable package plus thousands more.
             </p>
             <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
@@ -203,7 +203,7 @@ export default function IPTVvsCableCanada() {
               susceptible to congestion during peak hours.
             </p>
             <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              However, premium IPTV providers like Maple4KTV achieve 99.9% uptime using
+              However, premium IPTV providers like Maple4K achieve 99.9% uptime using
               Canadian server infrastructure designed to handle demand spikes. For the vast majority of
               users, the reliability difference is imperceptible.
             </p>
@@ -226,13 +226,13 @@ export default function IPTVvsCableCanada() {
           {/* CTA */}
           <div style={{ background: "#111827", border: "1px solid #dc2626", borderRadius: 16, padding: 32, textAlign: "center", marginBottom: 48 }}>
             <h2 style={{ fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, marginBottom: 16 }}>Ready to Switch from Cable to IPTV?</h2>
-            <p style={{ color: "#d1d5db", marginBottom: 24 }}>Try Maple4KTV free for 24 hours — no credit card required.</p>
+            <p style={{ color: "#d1d5db", marginBottom: 24 }}>Try Maple4K free for 24 hours — no credit card required.</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "center" }}>
               <Link href="/free-trial" style={{ background: "#dc2626", color: "#fff", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
                 Get Free Trial
               </Link>
               <Link href="/pricing" style={{ border: "1px solid #dc2626", color: "#f87171", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
-                View Maple4KTV Maple4K Plans
+                View Maple4K Plans
               </Link>
             </div>
           </div>

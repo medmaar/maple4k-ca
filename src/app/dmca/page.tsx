@@ -18,7 +18,7 @@ export default function DMCAPage() {
         <div className="bg-gray-900 border border-red-700 rounded-2xl p-8 mb-10">
           <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-3">Legal Disclaimer</p>
           <p className="text-gray-300 leading-relaxed">
-            Maple4KTV is a reseller of third-party IPTV services. We do not host, store, or transmit
+            Maple4K is a reseller of third-party IPTV services. We do not host, store, or transmit
             any video content. All streams are provided by independent third-party servers. If you believe
             your copyrighted content is being accessed through our platform, please contact us at{" "}
             <a href="mailto:help@maple4k.ca" className="text-red-400 hover:underline">
@@ -61,7 +61,7 @@ export default function DMCAPage() {
             <h2 className="text-2xl font-bold text-white mb-3">DMCA Agent Contact</h2>
             <p className="mb-2">Please send all DMCA notices to our designated agent:</p>
             <div className="bg-gray-900 rounded-xl p-6 border border-gray-800">
-              <p className="font-bold text-white">Maple4KTV — DMCA Agent</p>
+              <p className="font-bold text-white">Maple4K — DMCA Agent</p>
               <p>Email: <a href="mailto:help@maple4k.ca" className="text-red-400 hover:underline">help@maple4k.ca</a></p>
               <p className="text-gray-400 text-sm mt-2">Please include "DMCA Notice" in the subject line.</p>
             </div>

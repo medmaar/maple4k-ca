@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4KTV",
+  title: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4K",
   description:
-    "Use Maple4KTV IPTV on Apple TV, iPhone, and iPad in Canada. 25,000+ live channels, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $19 CAD/month.",
+    "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 25,000+ live channels, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $9/month.",
   keywords: "IPTV Apple TV Canada, IPTV iPhone Canada, IPTV iPad Canada 2026",
   alternates: { canonical: "https://maple4k.ca/iptv-apple-tv-canada" },
   openGraph: {
-    title: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4KTV",
-    description: "Use Maple4KTV IPTV on Apple TV, iPhone, and iPad in Canada. 25,000+ live channels, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $19 CAD/month.",
+    title: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4K",
+    description: "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 25,000+ live channels, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $9/month.",
     url: "https://maple4k.ca/iptv-apple-tv-canada",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -21,10 +21,10 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Set Up IPTV on Apple TV or iPhone in Canada",
-  description: "Install Maple4KTV on your Apple TV or iPhone in under 5 minutes.",
+  description: "Install Maple4K on your Apple TV or iPhone in under 5 minutes.",
   step: [
     { "@type": "HowToStep", name: "Download IPTV app", text: "Open the App Store on your Apple TV or iPhone and download 'IPTV Smarters Pro' or 'GSE Smart IPTV'." },
-    { "@type": "HowToStep", name: "Get your credentials", text: "After subscribing to Maple4KTV, receive your server URL, username, and password by email within 5 minutes." },
+    { "@type": "HowToStep", name: "Get your credentials", text: "After subscribing to Maple4K, receive your server URL, username, and password by email within 5 minutes." },
     { "@type": "HowToStep", name: "Add your playlist", text: "Open the app, select 'Add via URL' and enter your M3U playlist URL or Xtream Codes credentials." },
     { "@type": "HowToStep", name: "Start streaming", text: "Browse and stream 25,000+ live channels and 120,000+ on-demand titles on your Apple device." },
   ],
@@ -45,7 +45,7 @@ export default function IPTVAppleTVCanadaPage() {
               <span style={{ color: "#E53935" }}>in Canada 2026</span>
             </h1>
             <p style={{ color: "#9ca3af", fontSize: 17, lineHeight: 1.7, maxWidth: 680, marginBottom: 36 }}>
-              Maple4KTV is fully compatible with all Apple devices in Canada — Apple TV (4th gen and later), iPhone, and iPad. Stream 25,000+ live channels including CBC, TSN, and Sportsnet in 4K without a cable subscription.
+              Maple4K is fully compatible with all Apple devices in Canada — Apple TV (4th gen and later), iPhone, and iPad. Stream 25,000+ live channels including CBC, TSN, and Sportsnet in 4K without a cable subscription.
             </p>
             <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Get Your Maple4K Plan →
@@ -56,7 +56,7 @@ export default function IPTVAppleTVCanadaPage() {
         <section style={{ padding: "60px 16px", background: "#0d0d0d" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32 }}>
-              Why Maple4KTV Works Great on Apple Devices
+              Why Maple4K Works Great on Apple Devices
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 20 }}>
               {[
@@ -81,7 +81,7 @@ export default function IPTVAppleTVCanadaPage() {
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               {[
-                { n: "01", title: "Choose a Maple4KTV Plan", desc: "Select a plan from $19 CAD/month on our pricing page. Pay via Interac e-Transfer or other accepted methods." },
+                { n: "01", title: "Choose a Maple4K Plan", desc: "Select a plan from $9/month on our pricing page. Pay via Interac e-Transfer or other accepted methods." },
                 { n: "02", title: "Receive Your Login Details", desc: "Within 5 minutes, we'll email your server URL, username, and password." },
                 { n: "03", title: "Download an IPTV App", desc: "On your Apple TV or iPhone, download 'IPTV Smarters Pro' or 'GSE Smart IPTV' from the App Store." },
                 { n: "04", title: "Enter Your Credentials", desc: "Open the app and enter your Xtream Codes or M3U URL. Your channel list loads automatically." },
@@ -103,7 +103,7 @@ export default function IPTVAppleTVCanadaPage() {
           <div style={{ maxWidth: 600, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 16 }}>Start Streaming on Your Apple Device</h2>
             <p style={{ color: "#9ca3af", marginBottom: 32, fontSize: 15 }}>
-              Best Maple4K service for Apple TV, iPhone, and iPad. Plans from $19 CAD/month.
+              Best Maple4K service for Apple TV, iPhone, and iPad. Plans from $9/month.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>View Maple4K Plans →</Link>

@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Maple4K: Top Services Reviewed & Compared | Maple4KTV",
+  title: "Best Maple4K: Top Services Reviewed & Compared | Maple4K",
   description:
     "Looking for the best IPTV service in Canada for 2026? We reviewed and compared the top Canadian IPTV providers on channels, price, reliability and support.",
   keywords:
     "best Maple4K, top Maple4K, Maple4K review, best IPTV service Canada",
   alternates: { canonical: "https://maple4k.ca/blog/best-iptv-canada-2026" },
   openGraph: {
-    title: "Best Maple4K: Top Services Reviewed & Compared | Maple4KTV",
+    title: "Best Maple4K: Top Services Reviewed & Compared | Maple4K",
     description:
       "We reviewed and compared the top Canadian IPTV providers on channels, price, reliability and support.",
     url: "https://maple4k.ca/blog/best-iptv-canada-2026",
     type: "article",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -27,10 +27,10 @@ const articleSchema = {
     "We reviewed and compared the top Canadian IPTV providers on channels, price, reliability and support.",
   datePublished: "2026-01-10",
   dateModified: "2026-04-01",
-  author: { "@type": "Organization", name: "Maple4KTV" },
+  author: { "@type": "Organization", name: "Maple4K" },
   publisher: {
     "@type": "Organization",
-    name: "Maple4KTV",
+    name: "Maple4K",
     url: "https://maple4k.ca",
   },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://maple4k.ca/blog/best-iptv-canada-2026" },
@@ -45,7 +45,7 @@ const faqSchema = {
       name: "What is the best IPTV service in Canada for 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Maple4KTV is rated the best IPTV service in Canada for 2026 based on channel count (25,000+), Canadian content coverage, 4K quality, uptime (99.9%), and 24/7 Canadian support. Plans start at $9 CAD/month.",
+        text: "Maple4K is rated the best IPTV service in Canada for 2026 based on channel count (25,000+), Canadian content coverage, 4K quality, uptime (99.9%), and 24/7 Canadian support. Plans start at $9/month.",
       },
     },
     {
@@ -53,7 +53,7 @@ const faqSchema = {
       name: "How much does the best IPTV in Canada cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The best IPTV services in Canada start at $9–$15 CAD per month for a single device. Annual plans reduce the cost significantly — Maple4KTV offers 12 months for $49 CAD for one device.",
+        text: "The best IPTV services in Canada start at $9–$15 per month for a single device. Annual plans reduce the cost significantly — Maple4K offers 12 months for $49 for one device.",
       },
     },
     {
@@ -86,7 +86,7 @@ const faqSchema = {
 const services = [
   {
     rank: 1,
-    name: "Maple4KTV",
+    name: "Maple4K",
     channels: "25,000+",
     price: "$9/mo",
     uptime: "99.9%",
@@ -165,7 +165,7 @@ export default function BestIPTVCanada2026() {
               <li><strong>Uptime and reliability</strong> — Look for services with a proven 99%+ uptime, especially for live sports.</li>
               <li><strong>4K and HD quality</strong> — The best services offer 4K on key channels and HD on everything else.</li>
               <li><strong>Canadian support</strong> — A support team available in your time zone, in English and French, is invaluable.</li>
-              <li><strong>Honest pricing</strong> — Transparent CAD pricing with no hidden fees or forced annual commitments.</li>
+              <li><strong>Honest pricing</strong> — Transparent pricing with no hidden fees or forced annual commitments.</li>
             </ul>
           </section>
 
@@ -206,16 +206,16 @@ export default function BestIPTVCanada2026() {
           {/* #1 Review */}
           <section style={{ marginBottom: 48 }}>
             <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>
-              #1 Maple4KTV — <span style={{ color: "#ef4444" }}>Best Overall</span>
+              #1 Maple4K — <span style={{ color: "#ef4444" }}>Best Overall</span>
             </h2>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
               After testing every major IPTV provider available to Canadian subscribers in 2026,
-              <strong> Maple4KTV</strong> stands out as the clear leader. Here&apos;s why:
+              <strong> Maple4K</strong> stands out as the clear leader. Here&apos;s why:
             </p>
 
             <h3 style={{ fontSize: "clamp(18px, 2.5vw, 24px)", fontWeight: 700, marginBottom: 12, marginTop: 32 }}>Channel Selection</h3>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              With over 25,000 live channels, Maple4KTV covers every Canadian network
+              With over 25,000 live channels, Maple4K covers every Canadian network
               without exception. TSN 1–5, Sportsnet (East, West, Pacific, Ontario, 360), CBC, CBC News,
               CTV, CTV2, CTV News Channel, Global, Citytv, City News — they&apos;re all here. Regional
               channels including CHCH Hamilton, CP24, and French-language networks like TVA, V, and
@@ -229,7 +229,7 @@ export default function BestIPTVCanada2026() {
 
             <h3 style={{ fontSize: "clamp(18px, 2.5vw, 24px)", fontWeight: 700, marginBottom: 12, marginTop: 32 }}>Sports Coverage</h3>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              For Canadian sports fans, this is where Maple4KTV truly shines. Every NHL
+              For Canadian sports fans, this is where Maple4K truly shines. Every NHL
               game is covered — including all 7 Canadian teams (Maple Leafs, Canadiens, Canucks, Oilers,
               Flames, Senators, Jets) — via TSN and Sportsnet. The service also includes:
             </p>
@@ -254,12 +254,12 @@ export default function BestIPTVCanada2026() {
 
             <h3 style={{ fontSize: "clamp(18px, 2.5vw, 24px)", fontWeight: 700, marginBottom: 12, marginTop: 32 }}>Pricing</h3>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              See all <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>Maple4KTV Maple4K plans</Link> — pricing is transparent and all in Canadian dollars:
+              See all <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link> — pricing is transparent and all in Canadian dollars:
             </p>
             <ul style={{ paddingLeft: 24, color: "#d1d5db", lineHeight: 2, marginBottom: 16 }}>
-              <li>1 Month: $9 CAD (1 device)</li>
-              <li>6 Months: $39 CAD (1 device) — best per-month value at $6.50/mo</li>
-              <li>12 Months: $49 CAD (1 device) — best annual value at $4.08/mo</li>
+              <li>1 Month: $9 (1 device)</li>
+              <li>6 Months: $39 (1 device) — best per-month value at $6.50/mo</li>
+              <li>12 Months: $49 (1 device) — best annual value at $4.08/mo</li>
               <li>Multi-device plans available for 2–5 simultaneous connections</li>
             </ul>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
@@ -301,7 +301,7 @@ export default function BestIPTVCanada2026() {
           <section style={{ marginBottom: 48, background: "#111827", borderRadius: 16, padding: 32, border: "1px solid #dc2626" }}>
             <h2 style={{ fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, marginBottom: 16 }}>Our Verdict for 2026</h2>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              For Canadians looking for the best IPTV experience in 2026, <strong>Maple4KTV</strong> is the
+              For Canadians looking for the best IPTV experience in 2026, <strong>Maple4K</strong> is the
               definitive choice. It offers the most complete Canadian channel lineup, the highest reliability,
               the best picture quality, and genuine Canadian customer support — all at prices that make
               cable TV look absurd.
@@ -315,7 +315,7 @@ export default function BestIPTVCanada2026() {
                 Get Free Trial
               </Link>
               <Link href="/pricing" style={{ border: "1px solid #dc2626", color: "#f87171", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
-                View Maple4KTV Maple4K Plans
+                View Maple4K Plans
               </Link>
             </div>
           </section>

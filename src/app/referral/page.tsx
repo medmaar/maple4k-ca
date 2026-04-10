@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import ReferralForm from "../../components/ReferralForm";
 
 export const metadata: Metadata = {
-  title: "Referral Program | Maple4KTV — Refer a Friend, Get +1 Year Free",
+  title: "Referral Program | Maple4K — Refer a Friend, Get +1 Year Free",
   description:
-    "Refer a friend to Maple4KTV and earn +1 free year of service. No limits — every successful referral adds 12 months to your account.",
+    "Refer a friend to Maple4K and earn +1 free year of service. No limits — every successful referral adds 12 months to your account.",
   keywords:
-    "Maple4KTV referral, refer a friend IPTV, Maple4K free year, IPTV affiliate Canada",
+    "Maple4K referral, refer a friend IPTV, Maple4K free year, IPTV affiliate Canada",
   alternates: { canonical: "https://maple4k.ca/referral" },
 };
 
@@ -21,7 +21,7 @@ const steps = [
     number: "02",
     title: "Friend Subscribes",
     description:
-      "Your friend signs up and purchases at least a 12-month subscription to Maple4KTV.",
+      "Your friend signs up and purchases at least a 12-month subscription to Maple4K.",
   },
   {
     number: "03",
@@ -47,9 +47,9 @@ const rewardCards = [
 ];
 
 const rules = [
-  "The referred person must purchase at least a 1-year Maple4KTV subscription.",
+  "The referred person must purchase at least a 1-year Maple4K subscription.",
   "Your bonus is added after payment verification is completed.",
-  "The referred person must be a new customer who has never used Maple4KTV before.",
+  "The referred person must be a new customer who has never used Maple4K before.",
   "Referrals are unlimited — each successful referral gives you +12 more months.",
 ];
 
@@ -67,7 +67,7 @@ export default function ReferralPage() {
             <span className="text-red-500">Get +1 Year Free</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Share Maple4KTV with people you know and earn free subscription time when they join.
+            Share Maple4K with people you know and earn free subscription time when they join.
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
             <span className="flex items-center gap-2">
@@ -168,7 +168,7 @@ export default function ReferralPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Not a Customer Yet?</h2>
           <p className="text-gray-300 mb-8">
-            Try Maple4KTV free for 24 hours — no credit card required. Then start referring and earn free years.
+            Try Maple4K free for 24 hours — no credit card required. Then start referring and earn free years.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

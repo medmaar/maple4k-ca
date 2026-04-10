@@ -7,7 +7,7 @@ import FloatingContact from "../components/FloatingContact";
 export const metadata: Metadata = {
     metadataBase: new URL("https://maple4k.ca"),
     icons: { icon: "/favicon.svg" },
-    title: "Best Maple4K | #1 IPTV Subscription in Canada | Maple4KTV",
+    title: "Best Maple4K | #1 IPTV Subscription in Canada | Maple4K",
     description:
           "Best IPTV service in Canada for 2026. Get 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Try free for 24 hours at maple4k.ca!",
     keywords:

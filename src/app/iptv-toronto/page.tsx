@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best IPTV Service in Toronto 2026 | Maple4KTV – From $19 CAD",
+  title: "Best IPTV Service in Toronto 2026 | Maple4K – From $9",
   description:
-    "Maple4KTV is the best IPTV service in Toronto. 25,000+ live channels, NHL Maple Leafs, TSN, Sportsnet & CBC in 4K. Free 24h trial. From $19 CAD/month.",
+    "Maple4K is the best IPTV service in Toronto. 25,000+ live channels, NHL Maple Leafs, TSN, Sportsnet & CBC in 4K. Free 24h trial. From $9/month.",
   alternates: { canonical: "https://maple4k.ca/iptv-toronto" },
   openGraph: {
-    title: "Best IPTV Service in Toronto 2026 | Maple4KTV – From $19 CAD",
+    title: "Best IPTV Service in Toronto 2026 | Maple4K – From $9",
     description:
-      "Maple4KTV is the best IPTV service in Toronto. 25,000+ live channels, NHL Maple Leafs, TSN, Sportsnet & CBC in 4K. Free 24h trial. From $19 CAD/month.",
+      "Maple4K is the best IPTV service in Toronto. 25,000+ live channels, NHL Maple Leafs, TSN, Sportsnet & CBC in 4K. Free 24h trial. From $9/month.",
     url: "https://maple4k.ca/iptv-toronto",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -59,7 +59,7 @@ export default function IPTVTorontoPage() {
           >
             Toronto is Canada&apos;s largest city and has some of the fastest internet
             speeds in the country — making it perfect for 4K IPTV streaming.
-            Maple4KTV serves thousands of Toronto subscribers with reliable,
+            Maple4K serves thousands of Toronto subscribers with reliable,
             high-speed Maple4K streams delivering 25,000+ live channels and
             120,000+ movies &amp; series.
           </p>
@@ -118,14 +118,14 @@ export default function IPTVTorontoPage() {
             What Canadian Channels Do You Get in Toronto?
           </h2>
           <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
-            Maple4KTV&apos;s Toronto channel lineup covers everything locals love.
+            Maple4K&apos;s Toronto channel lineup covers everything locals love.
             You get CBC Toronto, CTV Toronto, Sportsnet Ontario, TSN, Global
             Toronto, CP24, and City TV — all in crisp HD and 4K quality.
             Toronto Maple Leafs fans get every game in HD and 4K on Sportsnet
             and TSN, so you&apos;ll never miss a faceoff at Scotiabank Arena.
           </p>
           <p style={{ color: "#d1d5db", lineHeight: 1.8 }}>
-            Beyond local Toronto channels, Maple4KTV gives you access to
+            Beyond local Toronto channels, Maple4K gives you access to
             25,000+ live channels from across Canada and around the world —
             including international sports, news, entertainment, kids&apos; content,
             and on-demand libraries with 120,000+ movies &amp; series.
@@ -142,7 +142,7 @@ export default function IPTVTorontoPage() {
               color: "#fff",
             }}
           >
-            Why Maple4KTV is the #1 IPTV Choice in Toronto
+            Why Maple4K is the #1 IPTV Choice in Toronto
           </h2>
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
             {[
@@ -209,14 +209,14 @@ export default function IPTVTorontoPage() {
           </h2>
           <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
             Bell and Rogers cable packages in Toronto typically run $90–$150 per
-            month — before taxes, equipment fees, and add-ons. Maple4KTV
-            starts at just $19 CAD/month, with longer plans dropping the cost
+            month — before taxes, equipment fees, and add-ons. Maple4K
+            starts at just $9/month, with longer plans dropping the cost
             even further: 3 months for $29, 6 months for $49, or a full year for
-            $79 CAD.
+            $49.
           </p>
           <p style={{ color: "#d1d5db", lineHeight: 1.8 }}>
             Toronto residents save an average of $900/year by switching to IPTV
-            Canada with Maple4KTV. You get more channels, better picture
+            Canada with Maple4K. You get more channels, better picture
             quality, and the flexibility to cancel anytime — without a two-year
             contract locking you in.
           </p>
@@ -237,7 +237,7 @@ export default function IPTVTorontoPage() {
                 margin: 0,
               }}
             >
-              Maple4KTV Plans — Toronto
+              Maple4K Plans — Toronto
             </p>
             <ul
               style={{
@@ -247,10 +247,10 @@ export default function IPTVTorontoPage() {
                 lineHeight: 2,
               }}
             >
-              <li>1 Month — $19 CAD</li>
-              <li>3 Months — $29 CAD</li>
-              <li>6 Months — $49 CAD</li>
-              <li>12 Months — $79 CAD</li>
+              <li>1 Month — $9</li>
+              <li>3 Months — $29</li>
+              <li>6 Months — $49</li>
+              <li>12 Months — $49</li>
             </ul>
           </div>
         </div>
@@ -271,7 +271,7 @@ export default function IPTVTorontoPage() {
           Start Streaming in Toronto Today
         </h2>
         <p style={{ color: "#9ca3af", marginBottom: 32 }}>
-          Plans from $19 CAD/month. Free 24h trial available. No contracts, no
+          Plans from $9/month. Free 24h trial available. No contracts, no
           hidden fees — just great TV for Toronto.
         </p>
         <a

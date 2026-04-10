@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best IPTV Service in Ottawa 2026 | Maple4KTV – From $19 CAD",
+  title: "Best IPTV Service in Ottawa 2026 | Maple4K – From $9",
   description:
-    "Best IPTV service in Ottawa Ontario. Stream Ottawa Senators, TSN, Sportsnet, CBC, CTV in 4K. Maple4KTV. Free 24h trial available.",
+    "Best IPTV service in Ottawa Ontario. Stream Ottawa Senators, TSN, Sportsnet, CBC, CTV in 4K. Maple4K. Free 24h trial available.",
   alternates: { canonical: "https://maple4k.ca/iptv-ottawa" },
   openGraph: {
-    title: "Best IPTV Service in Ottawa 2026 | Maple4KTV – From $19 CAD",
+    title: "Best IPTV Service in Ottawa 2026 | Maple4K – From $9",
     description:
-      "Best IPTV service in Ottawa Ontario. Stream Ottawa Senators, TSN, Sportsnet, CBC, CTV in 4K. Maple4KTV. Free 24h trial available.",
+      "Best IPTV service in Ottawa Ontario. Stream Ottawa Senators, TSN, Sportsnet, CBC, CTV in 4K. Maple4K. Free 24h trial available.",
     url: "https://maple4k.ca/iptv-ottawa",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -59,7 +59,7 @@ export default function IPTVOttawaPage() {
           >
             Ottawa — Canada&apos;s capital city — has a growing population of IPTV
             subscribers looking for more value than traditional cable offers.
-            Maple4KTV provides fast, reliable Maple4K service
+            Maple4K provides fast, reliable Maple4K service
             throughout the Ottawa-Gatineau region, with 25,000+ live channels
             and 120,000+ on-demand titles available instantly.
           </p>
@@ -118,14 +118,14 @@ export default function IPTVOttawaPage() {
             Ottawa Channels &amp; Sports
           </h2>
           <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
-            Maple4KTV serves Ottawa subscribers with a full local and
+            Maple4K serves Ottawa subscribers with a full local and
             national channel lineup. You get CBC Ottawa, CTV Ottawa, Global,
             TSN, and Sportsnet — plus RDS for French-language viewers on the
             Gatineau side of the river. Watch Ottawa Senators games live in 4K
             — every single game of the season, regular season and playoffs.
           </p>
           <p style={{ color: "#d1d5db", lineHeight: 1.8 }}>
-            Ottawa is home to passionate Senators fans, and Maple4KTV makes
+            Ottawa is home to passionate Senators fans, and Maple4K makes
             sure no one misses a shift. Our Maple4K streams deliver every
             game on TSN and Sportsnet in crisp HD and 4K, with rock-solid
             stability even during high-traffic playoff evenings.
@@ -146,7 +146,7 @@ export default function IPTVOttawaPage() {
           </h2>
           <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
             The Ottawa-Gatineau region is uniquely bilingual, spanning both
-            Ontario and Quebec. Maple4KTV Maple4K covers both sides
+            Ontario and Quebec. Maple4K covers both sides
             of the river with a comprehensive channel package that includes
             French-language Quebec channels for Gatineau viewers — RDS, TVA,
             V Télé, Canal D, and TFO — alongside the full English-language
@@ -173,12 +173,12 @@ export default function IPTVOttawaPage() {
           </h2>
           <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
             Bell and Rogers dominate the Ottawa cable market with packages that
-            typically run $90–$150 per month before add-ons. Maple4KTV
+            typically run $90–$150 per month before add-ons. Maple4K
             gives Ottawa residents the same channels — and thousands more —
-            starting at just $19 CAD/month with no annual contract required.
+            starting at just $9/month with no annual contract required.
           </p>
           <p style={{ color: "#d1d5db", lineHeight: 1.8 }}>
-            Ottawa subscribers who make the switch to Maple4KTV IPTV
+            Ottawa subscribers who make the switch to Maple4K IPTV
             Canada save hundreds of dollars per year. Choose the plan that
             works best for your household — monthly flexibility or a discounted
             long-term plan.
@@ -193,7 +193,7 @@ export default function IPTVOttawaPage() {
             }}
           >
             <p style={{ color: "#E53935", fontWeight: 700, margin: 0 }}>
-              Maple4KTV Plans — Ottawa
+              Maple4K Plans — Ottawa
             </p>
             <ul
               style={{
@@ -203,10 +203,10 @@ export default function IPTVOttawaPage() {
                 lineHeight: 2,
               }}
             >
-              <li>1 Month — $19 CAD</li>
-              <li>3 Months — $29 CAD</li>
-              <li>6 Months — $49 CAD</li>
-              <li>12 Months — $79 CAD</li>
+              <li>1 Month — $9</li>
+              <li>3 Months — $29</li>
+              <li>6 Months — $49</li>
+              <li>12 Months — $49</li>
             </ul>
           </div>
         </div>
@@ -225,7 +225,7 @@ export default function IPTVOttawaPage() {
           Start Streaming in Ottawa Today
         </h2>
         <p style={{ color: "#9ca3af", marginBottom: 32 }}>
-          Plans from $19 CAD/month. Free 24h trial available. Serving Ottawa
+          Plans from $9/month. Free 24h trial available. Serving Ottawa
           and Gatineau in English and French.
         </p>
         <a

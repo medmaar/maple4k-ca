@@ -3,24 +3,24 @@ import PricingSection from "../PricingSection";
 import FaqAccordion from "../components/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "Maple4K Pricing 2026 | Plans from $19 CAD/month – Maple4KTV",
+  title: "Maple4K Pricing 2026 | Plans from $9/month – Maple4K",
   description:
     "Compare Maple4K subscription plans. 1, 3, 6 & 12-month options. 25,000+ channels, 4K streaming, Interac e-Transfer accepted. Free 24h trial available.",
   keywords:
     "Maple4K pricing, Maple4K plans, IPTV subscription price Canada, cheap Maple4K",
   alternates: { canonical: "https://maple4k.ca/pricing" },
   openGraph: {
-    title: "Maple4K Pricing 2026 | Plans from $19 CAD/month – Maple4KTV",
+    title: "Maple4K Pricing 2026 | Plans from $9/month – Maple4K",
     description:
       "Compare Maple4K subscription plans. 1, 3, 6 & 12-month options. 25,000+ channels, 4K streaming, Interac e-Transfer accepted. Free 24h trial available.",
     url: "https://maple4k.ca/pricing",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
     locale: "en_CA",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Maple4K Pricing 2026 | Plans from $19 CAD/month – Maple4KTV",
+    title: "Maple4K Pricing 2026 | Plans from $9/month – Maple4K",
     description:
       "Compare Maple4K subscription plans. 1, 3, 6 & 12-month options. 25,000+ channels, 4K streaming, Interac e-Transfer accepted. Free 24h trial available.",
   },

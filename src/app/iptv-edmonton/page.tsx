@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best IPTV Service in Edmonton 2026 | Maple4KTV – From $19 CAD",
+  title: "Best IPTV Service in Edmonton 2026 | Maple4K – From $9",
   description:
-    "Maple4KTV is the best IPTV service in Edmonton. 25,000+ live channels, NHL Oilers, TSN, Sportsnet & CBC in 4K. Free 24h trial. From $19 CAD/month.",
+    "Maple4K is the best IPTV service in Edmonton. 25,000+ live channels, NHL Oilers, TSN, Sportsnet & CBC in 4K. Free 24h trial. From $9/month.",
   keywords: "IPTV Edmonton, best IPTV Edmonton 2026, IPTV service Edmonton Alberta, Edmonton IPTV subscription",
   alternates: { canonical: "https://maple4k.ca/iptv-edmonton" },
   openGraph: {
-    title: "Best IPTV Service in Edmonton 2026 | Maple4KTV – From $19 CAD",
+    title: "Best IPTV Service in Edmonton 2026 | Maple4K – From $9",
     description:
-      "Maple4KTV is the best IPTV service in Edmonton. 25,000+ live channels, NHL Oilers, TSN, Sportsnet & CBC in 4K. Free 24h trial. From $19 CAD/month.",
+      "Maple4K is the best IPTV service in Edmonton. 25,000+ live channels, NHL Oilers, TSN, Sportsnet & CBC in 4K. Free 24h trial. From $9/month.",
     url: "https://maple4k.ca/iptv-edmonton",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -66,7 +66,7 @@ export default function IPTVEdmontonPage() {
               marginBottom: 36,
             }}
           >
-            Maple4KTV delivers the best Maple4K experience to Edmonton residents. Stream 25,000+ live channels
+            Maple4K delivers the best Maple4K experience to Edmonton residents. Stream 25,000+ live channels
             including every Edmonton Oilers game on Sportsnet and TSN, CBC, CTV, and 120,000+ movies &amp; series — all in
             4K without a cable subscription.
           </p>
@@ -106,7 +106,7 @@ export default function IPTVEdmontonPage() {
         </div>
       </section>
 
-      {/* Why Maple4KTV in Edmonton */}
+      {/* Why Maple4K in Edmonton */}
       <section style={{ padding: "60px 16px", background: "#0d0d0d" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <h2
@@ -116,10 +116,10 @@ export default function IPTVEdmontonPage() {
               marginBottom: 16,
             }}
           >
-            Why Edmonton Residents Choose Maple4KTV
+            Why Edmonton Residents Choose Maple4K
           </h2>
           <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.7, marginBottom: 36 }}>
-            Edmonton is one of Canada&apos;s fastest-growing cities, and Maple4KTV&apos;s servers are
+            Edmonton is one of Canada&apos;s fastest-growing cities, and Maple4K&apos;s servers are
             optimized to deliver fast, buffer-free IPTV streams across Edmonton and the greater Alberta region.
             Whether you&apos;re in downtown Edmonton, St. Albert, Sherwood Park, or Spruce Grove, our IPTV
             Canada service delivers the same reliable 4K quality.
@@ -146,7 +146,7 @@ export default function IPTVEdmontonPage() {
               },
               {
                 title: "Save $1,000+/year vs Cable",
-                desc: "Edmonton cable bills average $100–$150/month. Maple4KTV Maple4K starts at just $19 CAD/month.",
+                desc: "Edmonton cable bills average $100–$150/month. Maple4K starts at just $9/month.",
               },
             ].map((f) => (
               <div
@@ -188,7 +188,7 @@ export default function IPTVEdmontonPage() {
             What Canadian Channels Do You Get in Edmonton?
           </h2>
           <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.7, marginBottom: 32 }}>
-            Maple4KTV Maple4K gives Edmonton viewers access to every major Canadian broadcast and sports network:
+            Maple4K gives Edmonton viewers access to every major Canadian broadcast and sports network:
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 32 }}>
             {[
@@ -266,10 +266,10 @@ export default function IPTVEdmontonPage() {
             }}
           >
             {[
-              { name: "1 Month", price: "$19 CAD", href: "/pricing/1-month" },
-              { name: "3 Months", price: "$29 CAD", href: "/pricing/3-months" },
-              { name: "6 Months", price: "$49 CAD", href: "/pricing/6-months" },
-              { name: "12 Months", price: "$79 CAD", href: "/pricing/12-months", best: true },
+              { name: "1 Month", price: "$9", href: "/pricing/1-month" },
+              { name: "3 Months", price: "$29", href: "/pricing/3-months" },
+              { name: "6 Months", price: "$49", href: "/pricing/6-months" },
+              { name: "12 Months", price: "$49", href: "/pricing/12-months", best: true },
             ].map((plan) => (
               <Link
                 key={plan.name}
@@ -338,7 +338,7 @@ export default function IPTVEdmontonPage() {
             Start Streaming in Edmonton Today
           </h2>
           <p style={{ color: "#9ca3af", marginBottom: 32, fontSize: 15, lineHeight: 1.7 }}>
-            Join Edmonton residents who&apos;ve switched from cable to Maple4KTV. Try free for 24 hours —
+            Join Edmonton residents who&apos;ve switched from cable to Maple4K. Try free for 24 hours —
             no credit card required.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>

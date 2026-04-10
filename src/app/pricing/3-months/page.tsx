@@ -3,7 +3,7 @@ import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 
 export const metadata: Metadata = {
-  title: "3 Months - 1 Device IPTV Plan — $29 | Maple4K Canada",
+  title: "3 Months IPTV Plan — $29 | Maple4K",
   description:
     "Get 3 months of IPTV in Canada for $29. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Login credentials sent within 24 hours.",
   keywords:

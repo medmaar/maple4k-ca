@@ -9,14 +9,14 @@ function OrderContent() {
   const price = params.get("price") || "9";
 
   const whatsappMsg = encodeURIComponent(
-    `Hi Maple4KTV, I'd like to order the ${duration} plan for ${devices} device${Number(devices) > 1 ? "s" : ""} at $${price} CAD.`
+    `Hi Maple4K, I'd like to order the ${duration} plan for ${devices} device${Number(devices) > 1 ? "s" : ""} at $${price}.`
   );
   const emailSubject = encodeURIComponent(`Maple4K Order - ${duration} / ${devices} Device${Number(devices) > 1 ? "s" : ""}`);
   const emailBody = encodeURIComponent(
-    `Hi,\n\nI'd like to purchase the following plan:\n\n- Duration: ${duration}\n- Devices: ${devices}\n- Price: $${price} CAD\n\nPlease send me payment instructions.\n\nThank you!`
+    `Hi,\n\nI'd like to purchase the following plan:\n\n- Duration: ${duration}\n- Devices: ${devices}\n- Price: $${price}\n\nPlease send me payment instructions.\n\nThank you!`
   );
   const telegramMsg = encodeURIComponent(
-    `Hi Maple4KTV, I want to order the ${duration} plan for ${devices} device${Number(devices) > 1 ? "s" : ""} at $${price} CAD.`
+    `Hi Maple4K, I want to order the ${duration} plan for ${devices} device${Number(devices) > 1 ? "s" : ""} at $${price}.`
   );
 
   return (

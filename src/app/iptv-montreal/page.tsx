@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best IPTV Service in Montreal / Montréal 2026 | Maple4KTV",
+  title: "Best IPTV Service in Montreal / Montréal 2026 | Maple4K",
   description:
-    "Meilleur service IPTV à Montréal. Maple4KTV offers English and French channels — RDS, TVA, V, Sportsnet, TSN, CBC. 25,000+ channels. Free trial.",
+    "Meilleur service IPTV à Montréal. Maple4K offers English and French channels — RDS, TVA, V, Sportsnet, TSN, CBC. 25,000+ channels. Free trial.",
   alternates: { canonical: "https://maple4k.ca/iptv-montreal" },
   openGraph: {
-    title: "Best IPTV Service in Montreal / Montréal 2026 | Maple4KTV",
+    title: "Best IPTV Service in Montreal / Montréal 2026 | Maple4K",
     description:
-      "Meilleur service IPTV à Montréal. Maple4KTV offers English and French channels — RDS, TVA, V, Sportsnet, TSN, CBC. 25,000+ channels. Free trial.",
+      "Meilleur service IPTV à Montréal. Maple4K offers English and French channels — RDS, TVA, V, Sportsnet, TSN, CBC. 25,000+ channels. Free trial.",
     url: "https://maple4k.ca/iptv-montreal",
     type: "website",
-    siteName: "Maple4KTV",
+    siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -57,10 +57,10 @@ export default function IPTVMontrealPage() {
               lineHeight: 1.7,
             }}
           >
-            Montreal is Canada&apos;s most bilingual city — and Maple4KTV covers
+            Montreal is Canada&apos;s most bilingual city — and Maple4K covers
             both languages perfectly with a massive selection of French and
             English channels. Whether you&apos;re watching RDS for the Canadiens or
-            TSN for the big playoff game, Maple4KTV Maple4K has you
+            TSN for the big playoff game, Maple4K has you
             covered with 25,000+ live channels and 120,000+ movies &amp; series.
           </p>
           <div
@@ -118,7 +118,7 @@ export default function IPTVMontrealPage() {
             French &amp; English Channels for Montreal
           </h2>
           <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 12 }}>
-            Maple4KTV delivers the most complete bilingual channel lineup
+            Maple4K delivers the most complete bilingual channel lineup
             available in Montreal. Your subscription includes:
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }}>
@@ -214,7 +214,7 @@ export default function IPTVMontrealPage() {
               color: "#fff",
             }}
           >
-            Why Maple4KTV is Montreal&apos;s Best IPTV Service
+            Why Maple4K is Montreal&apos;s Best IPTV Service
           </h2>
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
             {[
@@ -276,11 +276,11 @@ export default function IPTVMontrealPage() {
           <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
             Vidéotron TV packages in Montreal typically cost $80–$140 per month,
             and that&apos;s before optional add-on packs for sports or international
-            content. Maple4KTV gives you more channels — including all the
-            French and English content you want — starting at just $19 CAD/month.
+            content. Maple4K gives you more channels — including all the
+            French and English content you want — starting at just $9/month.
           </p>
           <p style={{ color: "#d1d5db", lineHeight: 1.8 }}>
-            Montreal subscribers who switch to Maple4KTV Maple4K save
+            Montreal subscribers who switch to Maple4K save
             hundreds of dollars every year, with no long-term contracts and no
             equipment to rent. Stream on your smart TV, laptop, smartphone, or
             tablet — any device, anywhere.
@@ -301,7 +301,7 @@ export default function IPTVMontrealPage() {
                 margin: 0,
               }}
             >
-              Maple4KTV Plans — Montreal / Montréal
+              Maple4K Plans — Montreal / Montréal
             </p>
             <ul
               style={{
@@ -311,10 +311,10 @@ export default function IPTVMontrealPage() {
                 lineHeight: 2,
               }}
             >
-              <li>1 Month — $19 CAD</li>
-              <li>3 Months — $29 CAD</li>
-              <li>6 Months — $49 CAD</li>
-              <li>12 Months — $79 CAD</li>
+              <li>1 Month — $9</li>
+              <li>3 Months — $29</li>
+              <li>6 Months — $49</li>
+              <li>12 Months — $49</li>
             </ul>
           </div>
         </div>
@@ -333,7 +333,7 @@ export default function IPTVMontrealPage() {
           Start Streaming in Montreal Today
         </h2>
         <p style={{ color: "#9ca3af", marginBottom: 32 }}>
-          Plans from $19 CAD/month. Free 24h trial available. Bilingual support
+          Plans from $9/month. Free 24h trial available. Bilingual support
           en français et en anglais.
         </p>
         <a

@@ -92,7 +92,7 @@ export default function Footer() {
               <Link href="/disclaimer" className="text-gray-400 hover:text-white text-sm transition-colors">Disclaimer</Link>
             </div>
             <p className="text-gray-600 text-xs leading-relaxed mb-2">
-              Maple4KTV does not host or stream any copyrighted content. All content is
+              Maple4K does not host or stream any copyrighted content. All content is
               provided by third-party providers.
             </p>
             <Link href="/disclaimer" className="text-xs text-red-500 hover:text-red-400 transition-colors">
@@ -107,7 +107,7 @@ export default function Footer() {
           className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 border-t"
           style={{ borderColor: "rgba(255,255,255,0.06)" }}
         >
-          <p className="text-gray-600 text-xs">© 2026 Maple4KTV. All rights reserved.</p>
+          <p className="text-gray-600 text-xs">© 2026 Maple4K. All rights reserved.</p>
           <p className="text-gray-700 text-xs">help@maple4k.ca</p>
         </div>
 
