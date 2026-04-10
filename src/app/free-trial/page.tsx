@@ -3,12 +3,12 @@ import PlanOrderForm from "../pricing/PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../pricing/PlanFAQ";
 
 export const metadata: Metadata = {
-  title: "Free Trial — Maple4K | Activate in 5 Minutes",
+  title: { absolute: "Free IPTV Trial Canada — Test Maple4K Risk-Free | Maple4K" },
   description:
-    "Get a free 5-minute Maple4K trial. Access 25,000+ live channels, NHL, TSN, CTV and 120,000+ movies with no credit card required. Instant activation.",
+    "Get a free Maple4K IPTV trial in Canada. No credit card required. Access 25,000+ live channels, NHL, TSN, CTV and 120,000+ movies. Activate in under 5 minutes.",
   keywords:
-    "Maple4K free trial, free Maple4K, IPTV trial Canada, try Maple4K",
-  alternates: { canonical: "https://www.maple4k.ca/free-trial" },
+    "free IPTV trial Canada, Maple4K free trial, try IPTV Canada, free IPTV Canada no credit card",
+  alternates: { canonical: "https://maple4k.ca/free-trial" },
 };
 
 const faqItems: FaqItem[] = [

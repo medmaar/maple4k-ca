@@ -3,9 +3,9 @@ import PlanOrderForm from "../../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../../PlanFAQ";
 
 export const metadata: Metadata = {
-  title: "3 Months - 8 Devices IPTV Plan — $92 | Maple4K",
+  title: { absolute: "8 Connections IPTV Canada 3 Months — $192 | Maple4K" },
   description:
-    "Get 8 simultaneous connections for $92. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within 5 minutes.",
+    "Get 8 simultaneous connections for $192. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within 5 minutes.",
   alternates: { canonical: "https://maple4k.ca/pricing/8-devices/3-months" },
 };
 
@@ -46,12 +46,31 @@ const faqSchema = {
   })),
 };
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Maple4K 3 Months IPTV Plan — 8 Devices",
+  description: "3 Months of IPTV access for 8 simultaneous connections. 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
+  brand: { "@type": "Brand", name: "Maple4K" },
+  offers: {
+    "@type": "Offer",
+    price: "192.00",
+    priceCurrency: "CAD",
+    availability: "https://schema.org/InStock",
+    url: "https://maple4k.ca/pricing/8-devices/3-months",
+  },
+};
+
 export default function Page() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
       <main style={{ background: "#10131E", color: "#fff", minHeight: "100vh" }}>
         <section
@@ -86,9 +105,17 @@ export default function Page() {
                 3 Months - 8 Devices
               </h1>
               <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10 }}>
-                <span style={{ color: "#fd0322", fontWeight: 800, fontSize: "2rem" }}>Price : $92</span>
+                <span style={{ color: "#fd0322", fontWeight: 800, fontSize: "2rem" }}>Price : $192</span>
                 <span style={{ background: "rgba(253,3,34,0.15)", color: "#fd0322", border: "1px solid rgba(253,3,34,0.4)", fontWeight: 700, fontSize: 12, padding: "4px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>50% OFF</span>
               </div>
+            </div>
+
+            {/* 2. Instruction text */}
+            <div className="mb-10">
+              <p className="text-gray-300 text-base">Fill out the form below to place your order.</p>
+              <p className="text-gray-400 text-sm mt-1">
+                We&apos;ll send your login credentials to your email within 5 minutes.
+              </p>
             </div>
 
             {/* 3. Order Form */}
@@ -99,7 +126,7 @@ export default function Page() {
                 borderColor: "rgba(255,255,255,0.07)",
               }}
             >
-              <PlanOrderForm plan="3 Months - 8 Devices — $92" />
+              <PlanOrderForm plan="3 Months - 8 Devices — $192" />
             </div>
 
             {/* 4. FAQ */}

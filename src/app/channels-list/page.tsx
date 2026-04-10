@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Maple4K Channel List 2026 | 25,000+ Live Channels",
+  title: { absolute: "IPTV Channels Canada — 25,000+ Live Channels | Maple4K" },
   description:
-    "Full Maple4K channel list for 2026. Browse 25,000+ live channels including TSN, Sportsnet, CBC, CTV, NHL, NFL, NBA, and thousands of international channels.",
+    "Full Maple4K IPTV channel list for Canada 2026. Browse 25,000+ live channels including TSN, Sportsnet, CBC, CTV, RDS, TVA, NHL, NFL, NBA, and thousands of international channels.",
   keywords:
-    "Maple4K channel list, Maple4K channels, Canadian IPTV channels, TSN Maple4K, Sportsnet Maple4K",
-  alternates: { canonical: "https://www.maple4k.ca/channels-list" },
+    "IPTV channels Canada, Maple4K channel list, Canadian IPTV channels, TSN IPTV, Sportsnet IPTV Canada",
+  alternates: { canonical: "https://maple4k.ca/channels-list" },
 };
 
 const categories = [  {

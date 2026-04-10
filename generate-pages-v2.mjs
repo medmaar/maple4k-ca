@@ -41,9 +41,9 @@ import PlanOrderForm from "../../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../../PlanFAQ";
 
 export const metadata: Metadata = {
-  title: "${dur.label} - ${devLabel} IPTV Plan — $${price} | Maple4K Canada",
+  title: { absolute: "${n} Connections IPTV Canada ${dur.label} — \$${price} | Maple4K" },
   description:
-    "Get ${n} simultaneous connections for $${price}. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within 24 hours.",
+    "Get ${n} simultaneous connections for \$${price}. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within 5 minutes.",
   alternates: { canonical: "${canonical}" },
 };
 
@@ -54,7 +54,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "How do I receive my login credentials after ordering?",
-    a: "After placing your order our team will send your login credentials directly to your email within 24 hours. Check your spam folder if you don't see it.",
+    a: "After placing your order our team will send your login credentials directly to your email within 5 minutes. Check your spam folder if you don't see it.",
   },
   {
     q: "Which devices are compatible?",
@@ -84,12 +84,31 @@ const faqSchema = {
   })),
 };
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Maple4K ${dur.label} IPTV Plan — ${devLabel}",
+  description: "${dur.label} of IPTV access for ${n} simultaneous connections. 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
+  brand: { "@type": "Brand", name: "Maple4K" },
+  offers: {
+    "@type": "Offer",
+    price: "${price}.00",
+    priceCurrency: "CAD",
+    availability: "https://schema.org/InStock",
+    url: "${canonical}",
+  },
+};
+
 export default function Page() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
       <main style={{ background: "#10131E", color: "#fff", minHeight: "100vh" }}>
         <section
@@ -133,7 +152,7 @@ export default function Page() {
             <div className="mb-10">
               <p className="text-gray-300 text-base">Fill out the form below to place your order.</p>
               <p className="text-gray-400 text-sm mt-1">
-                We&apos;ll send your login credentials to your email within 24 hours.
+                We&apos;ll send your login credentials to your email within 5 minutes.
               </p>
             </div>
 

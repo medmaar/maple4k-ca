@@ -3,11 +3,11 @@ import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 
 export const metadata: Metadata = {
-  title: "6 Months IPTV Plan — $39 | Maple4K",
+  title: { absolute: "6 Month IPTV Canada — $39 | Maple4K" },
   description:
-    "Get 6 months of IPTV in Canada for $39. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. Save vs monthly. Login credentials sent within 5 minutes.",
+    "Get 6 months of IPTV in Canada for only $39. 25,000+ live channels, 4K quality, NHL, TSN, CTV included. Save vs monthly. Login credentials sent within 5 minutes.",
   keywords:
-    "Maple4K 6 months, IPTV 6 month plan Canada, best IPTV plan Canada, IPTV semi-annual Canada",
+    "IPTV 6 months Canada, Maple4K 6 months, best IPTV plan Canada, 6 month IPTV Canada $39",
   alternates: { canonical: "https://maple4k.ca/pricing/6-months" },
 };
 
@@ -56,12 +56,31 @@ const faqSchema = {
   })),
 };
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Maple4K 6 Month IPTV Plan",
+  description: "6 months of IPTV access to 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
+  brand: { "@type": "Brand", name: "Maple4K" },
+  offers: {
+    "@type": "Offer",
+    price: "39.00",
+    priceCurrency: "CAD",
+    availability: "https://schema.org/InStock",
+    url: "https://maple4k.ca/pricing/6-months",
+  },
+};
+
 export default function Pricing6MonthsPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
       <main style={{ background: "#10131E", color: "#fff", minHeight: "100vh" }}>
         <section

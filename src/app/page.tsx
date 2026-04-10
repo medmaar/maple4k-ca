@@ -3,19 +3,20 @@ import Link from "next/link";
 import HomePricing from "./components/HomePricing";
 
 export const metadata: Metadata = {
-  title: "Best Maple4K | #1 IPTV Subscription – 24h Free Trial",
+  title: { absolute: "Best IPTV Canada 2026 — 4K Streaming from $9 | Maple4K" },
   description:
-    "Canada's best IPTV service in 2026. 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet & more. Free 24h trial. Starting at $9/month.",
+    "Canada's #1 IPTV service in 2026. Stream 25,000+ live channels and 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Plans from $9/month. Free trial — no credit card.",
   keywords:
-    "Maple4K, best Maple4K, IPTV subscription Canada, Canadian IPTV, IPTV free trial Canada, Maple4K cheap, best IPTV subscription Canada",
+    "best IPTV Canada 2026, Maple4K, IPTV subscription Canada, Canadian IPTV, IPTV free trial Canada, cheap IPTV Canada, best IPTV service Canada",
   alternates: { canonical: "https://maple4k.ca" },
   openGraph: {
-    title: "Best Maple4K | #1 IPTV Subscription – 24h Free Trial",
+    title: "Best IPTV Canada 2026 — 4K Streaming from $9 | Maple4K",
     description:
-      "Canada's best IPTV service in 2026. 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet & more. Free 24h trial. Starting at $9/month.",
+      "Canada's #1 IPTV service in 2026. Stream 25,000+ live channels and 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Plans from $9/month.",
     url: "https://maple4k.ca",
     type: "website",
     siteName: "Maple4K",
+    locale: "en_CA",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -65,19 +66,23 @@ const faqSchema = {
   })),
 };
 
-const localBusinessSchema = {
+const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "Organization",
   name: "Maple4K",
   url: "https://maple4k.ca",
+  logo: "https://maple4k.ca/favicon.svg",
   email: "help@maple4k.ca",
   description:
     "Canada's #1 IPTV subscription service. 25,000+ live channels, 120,000+ movies & series in 4K.",
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "CA",
-  },
   areaServed: "CA",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Maple4K",
+  url: "https://maple4k.ca",
 };
 
 const deviceNames = [
@@ -106,7 +111,7 @@ const comparison = [
   { feature: "Live Channels", us: "25,000+", cable: "150–500", other: "5,000–15,000" },
   { feature: "4K Streaming", us: "✓", cable: "Limited", other: "Varies" },
   { feature: "Contracts", us: "None", cable: "1–2 years", other: "Varies" },
-  { feature: "Free Trial", us: "24h free trial", cable: "×", other: "Rarely" },
+  { feature: "Free Trial", us: "Free 5-min trial", cable: "×", other: "Rarely" },
   { feature: "Canadian Support", us: "24/7", cable: "Business hours", other: "×" },
   { feature: "Devices", us: "All devices", cable: "1–2 boxes", other: "Limited" },
 ];
@@ -120,7 +125,11 @@ export default function HomePage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
       <main style={{ background: "#0a0a0a", color: "#fff" }}>
         {/* ── 1. HERO ── */}
@@ -158,8 +167,8 @@ export default function HomePage() {
                 marginBottom: 24,
               }}
             >
-              Canada&apos;s Best IPTV<br />
-              <span style={{ color: "#E53935" }}>Service 2026</span>
+              Best IPTV Service<br />
+              <span style={{ color: "#E53935" }}>in Canada 2026</span>
             </h1>
             <p
               style={{
@@ -203,11 +212,11 @@ export default function HomePage() {
                   display: "inline-block",
                 }}
               >
-                Try 24h Free
+                Try Free Trial
               </Link>
             </div>
             <p style={{ color: "#6b7280", fontSize: 13 }}>
-              ✓ Free 24h Trial &nbsp;&nbsp; ✓ No Contracts &nbsp;&nbsp; ✓ Interac e-Transfer Accepted
+              ✓ Free Trial &nbsp;&nbsp; ✓ No Contracts &nbsp;&nbsp; ✓ Interac e-Transfer Accepted
             </p>
           </div>
         </section>

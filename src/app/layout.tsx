@@ -7,13 +7,22 @@ import FloatingContact from "../components/FloatingContact";
 export const metadata: Metadata = {
     metadataBase: new URL("https://maple4k.ca"),
     icons: { icon: "/favicon.svg" },
-    title: "Best Maple4K | #1 IPTV Subscription in Canada | Maple4K",
+    title: {
+        default: "Best IPTV Canada 2026 | Maple4K",
+        template: "%s | Maple4K IPTV Canada",
+    },
     description:
-          "Best IPTV service in Canada for 2026. Get 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Try free for 5 minutes at maple4k.ca!",
+        "Best IPTV service in Canada 2026. 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Plans from $9. Try free — no credit card.",
     keywords:
-          "Maple4K, best Maple4K, IPTV subscription Canada, IPTV service Canada, Canadian IPTV",
+        "Maple4K, best IPTV Canada, IPTV subscription Canada, IPTV service Canada, Canadian IPTV 2026",
+    openGraph: {
+        siteName: "Maple4K",
+        locale: "en_CA",
+        type: "website",
+    },
+    twitter: { card: "summary_large_image" },
     verification: {
-          google: "NPe9mnD6fyjcZMDzlkDeeJ9xsSMileOAckN4P0zXxVw",
+        google: "NPe9mnD6fyjcZMDzlkDeeJ9xsSMileOAckN4P0zXxVw",
     },
 };
 
