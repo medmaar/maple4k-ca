@@ -101,7 +101,7 @@ export default function ResellerPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {[
-              { n: "01", title: "Contact Us to Apply", desc: "Email help@maple4k.ca with your reseller inquiry. We'll respond within 24 hours with pricing and details." },
+              { n: "01", title: "Contact Us to Apply", desc: "Email help@maple4k.ca with your reseller inquiry. We'll respond within 5 minutes with pricing and details." },
               { n: "02", title: "Purchase Credits", desc: "Buy a credit package at wholesale rates. Credits are used to create and renew your clients' subscriptions." },
               { n: "03", title: "Access Your Panel", desc: "Log into your reseller dashboard to manage all client accounts — create, suspend, renew, and monitor in real time." },
               { n: "04", title: "Set Your Own Prices", desc: "You control your retail pricing. Sell subscriptions at whatever margin works for your business." },
@@ -165,7 +165,7 @@ export default function ResellerPage() {
             </Link>
           </div>
           <p style={{ color: "#4b5563", fontSize: 13, marginTop: 20 }}>
-            help@maple4k.ca · Respond within 24 hours
+            help@maple4k.ca · Respond within 5 minutes
           </p>
         </div>
       </section>

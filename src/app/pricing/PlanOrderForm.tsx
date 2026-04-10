@@ -100,6 +100,21 @@ export default function PlanOrderForm({ plan }: Props) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
 
+      {/* Order instructions */}
+      <div style={{ marginBottom: 8, paddingBottom: 16, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+        <h2 style={{ fontSize: "1.1rem", fontWeight: 700, color: "#fff", marginBottom: 6 }}>
+          Place Your Order
+        </h2>
+        <p style={{ fontSize: 13, color: "#9ca3af", marginBottom: 12 }}>
+          Please complete the form below. Make sure your details are correct so we can contact you without delay.
+        </p>
+        <ol style={{ paddingLeft: 18, margin: 0, display: "flex", flexDirection: "column", gap: 6 }}>
+          <li style={{ fontSize: 13, color: "#9ca3af" }}>Enter your first and last name</li>
+          <li style={{ fontSize: 13, color: "#9ca3af" }}>Add your email or WhatsApp number — depending on how you prefer to be contacted</li>
+          <li style={{ fontSize: 13, color: "#9ca3af" }}>Submit the form — we will contact you within 5 minutes</li>
+        </ol>
+      </div>
+
       {/* Success banner */}
       {status === "success" && (
         <div

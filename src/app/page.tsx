@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Can I get a free IPTV trial in Canada?",
-    a: "Yes! Maple4K offers a free 24-hour trial with no credit card required. Contact us via WhatsApp or email to activate your trial instantly.",
+    a: "Yes! Maple4K offers a free 5-minute trial with no credit card required. Contact us via WhatsApp or email to activate your trial instantly.",
   },
   {
     q: "What devices work with Maple4K?",
@@ -461,7 +461,7 @@ export default function HomePage() {
               Start Streaming Today
             </h2>
             <p style={{ color: "#9ca3af", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
-              Join thousands of Canadians who switched from cable to Maple4K. Try free for 24 hours — no credit card required.
+              Join thousands of Canadians who switched from cable to Maple4K. Try free for 5 minutes — no credit card required.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link

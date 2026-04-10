@@ -3,9 +3,9 @@ import PlanOrderForm from "../pricing/PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../pricing/PlanFAQ";
 
 export const metadata: Metadata = {
-  title: "Free Trial — Maple4K | Try 24 Hours Free",
+  title: "Free Trial — Maple4K | Activate in 5 Minutes",
   description:
-    "Get a free 24-hour Maple4K trial. Access 25,000+ live channels, NHL, TSN, CTV and 120,000+ movies with no credit card required. Instant activation.",
+    "Get a free 5-minute Maple4K trial. Access 25,000+ live channels, NHL, TSN, CTV and 120,000+ movies with no credit card required. Instant activation.",
   keywords:
     "Maple4K free trial, free Maple4K, IPTV trial Canada, try Maple4K",
   alternates: { canonical: "https://www.maple4k.ca/free-trial" },
@@ -18,14 +18,14 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Does the free trial include all channels?",
-    a: "Yes. Your 24-hour trial gives you full access to all 25,000+ live channels, 120,000+ VOD titles, and all sports packages — no restrictions.",
+    a: "Yes. Your 5-minute trial gives you full access to all 25,000+ live channels, 120,000+ VOD titles, and all sports packages — no restrictions.",
   },
   {
     q: "How many devices can I use during the trial?",
     a: "Your trial includes one simultaneous connection. If you want to test on multiple devices, let us know and we can arrange that.",
   },
   {
-    q: "What happens after 24 hours?",
+    q: "What happens after 5 minutes?",
     a: "Your trial simply stops. There are no charges, no cancellation required. If you'd like to continue, contact us to choose a plan.",
   },
   {
@@ -83,7 +83,7 @@ export default function FreeTrialPage() {
                 Free Trial — Maple4K
               </h1>
               <p className="text-gray-400 text-sm mt-3">
-                24-hour full access. Fill out the form and we&apos;ll activate your trial within minutes.
+                5-minute full access. Fill out the form and we&apos;ll activate your trial within minutes.
               </p>
             </div>
 

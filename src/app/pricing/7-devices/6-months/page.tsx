@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../../PlanFAQ";
 export const metadata: Metadata = {
   title: "6 Months - 7 Devices IPTV Plan — $245 | Maple4K",
   description:
-    "Get 7 simultaneous connections for $245. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within 24 hours.",
+    "Get 7 simultaneous connections for $245. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within 5 minutes.",
   alternates: { canonical: "https://maple4k.ca/pricing/7-devices/6-months" },
 };
 
@@ -16,7 +16,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "How do I receive my login credentials after ordering?",
-    a: "After placing your order our team will send your login credentials directly to your email within 24 hours. Check your spam folder if you don't see it.",
+    a: "After placing your order our team will send your login credentials directly to your email within 5 minutes. Check your spam folder if you don't see it.",
   },
   {
     q: "Which devices are compatible?",
@@ -89,14 +89,6 @@ export default function Page() {
                 <span style={{ color: "#fd0322", fontWeight: 800, fontSize: "2rem" }}>Price : $245</span>
                 <span style={{ background: "rgba(253,3,34,0.15)", color: "#fd0322", border: "1px solid rgba(253,3,34,0.4)", fontWeight: 700, fontSize: 12, padding: "4px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>50% OFF</span>
               </div>
-            </div>
-
-            {/* 2. Instruction text */}
-            <div className="mb-10">
-              <p className="text-gray-300 text-base">Fill out the form below to place your order.</p>
-              <p className="text-gray-400 text-sm mt-1">
-                We&apos;ll send your login credentials to your email within 24 hours.
-              </p>
             </div>
 
             {/* 3. Order Form */}

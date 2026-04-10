@@ -338,7 +338,7 @@ export default function IPTVEdmontonPage() {
             Start Streaming in Edmonton Today
           </h2>
           <p style={{ color: "#9ca3af", marginBottom: 32, fontSize: 15, lineHeight: 1.7 }}>
-            Join Edmonton residents who&apos;ve switched from cable to Maple4K. Try free for 24 hours —
+            Join Edmonton residents who&apos;ve switched from cable to Maple4K. Try free for 5 minutes —
             no credit card required.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     icons: { icon: "/favicon.svg" },
     title: "Best Maple4K | #1 IPTV Subscription in Canada | Maple4K",
     description:
-          "Best IPTV service in Canada for 2026. Get 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Try free for 24 hours at maple4k.ca!",
+          "Best IPTV service in Canada for 2026. Get 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Try free for 5 minutes at maple4k.ca!",
     keywords:
           "Maple4K, best Maple4K, IPTV subscription Canada, IPTV service Canada, Canadian IPTV",
     verification: {

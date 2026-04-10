@@ -14,7 +14,7 @@ const steps = [
     step: "1",
     title: "Get Your IPTV Subscription",
     detail: [
-      "Before installing anything, you need an active IPTV subscription. Contact IPTV Subscription Canada via WhatsApp, Telegram, or email to get started with a free 24-hour trial or a paid plan.",
+      "Before installing anything, you need an active IPTV subscription. Contact IPTV Subscription Canada via WhatsApp, Telegram, or email to get started with a free 5-minute trial or a paid plan.",
       "Within a few minutes you'll receive: a server URL (M3U or Xtream Codes), a username, and a password. Keep these handy — you'll need them in Step 5.",
     ],
   },
@@ -59,7 +59,7 @@ const steps = [
     title: "Set Up Your EPG (Program Guide)",
     detail: [
       "In the app settings, look for EPG or Program Guide settings.",
-      "The EPG URL will be provided with your subscription. Paste it in and set the refresh interval to every 24 hours.",
+      "The EPG URL will be provided with your subscription. Paste it in and set the refresh interval to every 5 minutes.",
       "Once loaded, you'll see a full TV guide for all channels — just like cable TV.",
     ],
   },
@@ -184,7 +184,7 @@ export default function IPTVFirestickBlogPost() {
         <div className="bg-gray-900 border border-red-600 rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Ready to Set Up IPTV on Your Fire Stick?</h2>
           <p className="text-gray-300 mb-6">
-            Start with a free 24-hour trial. No credit card. Our team will send your credentials
+            Start with a free 5-minute trial. No credit card. Our team will send your credentials
             within minutes and walk you through setup if needed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

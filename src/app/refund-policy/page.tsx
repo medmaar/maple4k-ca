@@ -18,7 +18,7 @@ export default function RefundPolicyPage() {
           <h2 className="text-lg font-bold text-white mb-2">Summary</h2>
           <p className="text-gray-300 text-sm leading-relaxed">
             Due to the instant digital nature of our service, we do not offer refunds once a subscription
-            has been activated. To protect you before purchase, we offer a <strong>free 24-hour trial with
+            has been activated. To protect you before purchase, we offer a <strong>free 5-minute trial with
             no credit card required</strong>. Please use the trial to verify compatibility before subscribing.
           </p>
         </div>
@@ -36,7 +36,7 @@ export default function RefundPolicyPage() {
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-3">2. Free Trial — Try Before You Buy</h2>
-            <p className="mb-3">We strongly encourage all new customers to use our free 24-hour trial before purchasing a subscription. The trial:</p>
+            <p className="mb-3">We strongly encourage all new customers to use our free 5-minute trial before purchasing a subscription. The trial:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Requires no credit card</li>
               <li>Gives full access to all 25,000+ channels and 120,000+ VOD titles</li>

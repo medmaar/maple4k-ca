@@ -8334,7 +8334,7 @@ export default function ChannelsListPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Access All 25,000+ Channels</h2>
           <p className="text-gray-300 mb-8">
-            Every plan includes the full channel list. Try it free for 24 hours — no credit card required.
+            Every plan includes the full channel list. Try it free for 5 minutes — no credit card required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/free-trial" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">

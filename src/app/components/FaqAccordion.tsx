@@ -24,7 +24,7 @@ const items = [
   },
   {
     q: "Do you offer a free trial?",
-    a: "Yes! We offer a 24-hour free trial so you can test all 25,000+ channels and 120,000+ VOD titles completely risk-free before subscribing. No credit card required.",
+    a: "Yes! We offer a 5-minute free trial so you can test all 25,000+ channels and 120,000+ VOD titles completely risk-free before subscribing. No credit card required.",
   },
 ];
 

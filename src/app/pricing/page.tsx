@@ -120,7 +120,7 @@ export default function PricingPage() {
       >
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-extrabold text-white mb-4">
-            Not Sure Yet? Try Free for 24 Hours
+            Not Sure Yet? Try Free for 5 Minutes
           </h2>
           <p className="text-gray-400 mb-8 text-sm">
             No credit card required. Test every channel, every feature, on any device.

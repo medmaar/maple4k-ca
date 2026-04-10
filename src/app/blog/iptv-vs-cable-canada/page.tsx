@@ -226,7 +226,7 @@ export default function IPTVvsCableCanada() {
           {/* CTA */}
           <div style={{ background: "#111827", border: "1px solid #dc2626", borderRadius: 16, padding: 32, textAlign: "center", marginBottom: 48 }}>
             <h2 style={{ fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, marginBottom: 16 }}>Ready to Switch from Cable to IPTV?</h2>
-            <p style={{ color: "#d1d5db", marginBottom: 24 }}>Try Maple4K free for 24 hours — no credit card required.</p>
+            <p style={{ color: "#d1d5db", marginBottom: 24 }}>Try Maple4K free for 5 minutes — no credit card required.</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "center" }}>
               <Link href="/free-trial" style={{ background: "#dc2626", color: "#fff", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
                 Get Free Trial

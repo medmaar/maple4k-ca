@@ -168,7 +168,7 @@ export default function ReferralPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Not a Customer Yet?</h2>
           <p className="text-gray-300 mb-8">
-            Try Maple4K free for 24 hours — no credit card required. Then start referring and earn free years.
+            Try Maple4K free for 5 minutes — no credit card required. Then start referring and earn free years.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

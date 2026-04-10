@@ -109,7 +109,7 @@ export default function IPTVSmartTVCanadaPage() {
               Ready to Cut the Cable?
             </h2>
             <p style={{ color: "#9ca3af", marginBottom: 32, fontSize: 15 }}>
-              Get the best Maple4K service on your Smart TV. Plans start at $9/month with a free 24-hour trial.
+              Get the best Maple4K service on your Smart TV. Plans start at $9/month with a free 5-minute trial.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>

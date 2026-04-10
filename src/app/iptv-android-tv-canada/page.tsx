@@ -452,7 +452,7 @@ export default function IPTVAndroidTVCanadaPage() {
             <p
               style={{ color: "#ccc", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
             >
-              Try Maple4K free for 24 hours — no credit card required. Need help? Contact
+              Try Maple4K free for 5 minutes — no credit card required. Need help? Contact
               us at{" "}
               <a
                 href="mailto:help@maple4k.ca"
