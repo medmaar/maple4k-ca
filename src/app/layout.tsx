@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
     twitter: { card: "summary_large_image" },
     verification: {
-        google: "NPe9mnD6fyjcZMDzlkDeeJ9xsSMileOAckN4P0zXxVw",
+        google: "jQXDgMZI_-Pq-46kEnWXh7ja47F2Is-yNCu1klKviq8",
     },
 };
 
