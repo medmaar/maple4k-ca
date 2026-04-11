@@ -14,7 +14,7 @@ const steps = [
     step: "1",
     title: "Choose a Plan",
     desc: "Pick the subscription duration and number of devices that suits your household. All plans include every channel — no tiered content.",
-    detail: "Plans start at $9/month for 1 device. Multi-device plans are available for families. Start with a free 5-minute trial if you want to test first.",
+    detail: "Plans start at $9/month for 1 device. Multi-device plans are available for families. Start with a free 2-hour trial if you want to test first.",
     cta: { label: "View Plans", href: "/pricing" },
   },
   {

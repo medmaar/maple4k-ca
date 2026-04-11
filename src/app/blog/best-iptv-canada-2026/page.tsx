@@ -307,7 +307,7 @@ export default function BestIPTVCanada2026() {
               cable TV look absurd.
             </p>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 24 }}>
-              Start with a free 5-minute trial to verify it works perfectly on your devices before subscribing.
+              Start with a free 2-hour trial to verify it works perfectly on your devices before subscribing.
               No credit card is required.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>

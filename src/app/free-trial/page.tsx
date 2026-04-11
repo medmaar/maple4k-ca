@@ -18,14 +18,14 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Does the free trial include all channels?",
-    a: "Yes. Your 5-minute trial gives you full access to all 25,000+ live channels, 120,000+ VOD titles, and all sports packages — no restrictions.",
+    a: "Yes. Your 2-hour trial gives you full access to all 25,000+ live channels, 120,000+ VOD titles, and all sports packages — no restrictions.",
   },
   {
     q: "How many devices can I use during the trial?",
     a: "Your trial includes one simultaneous connection. If you want to test on multiple devices, let us know and we can arrange that.",
   },
   {
-    q: "What happens after 5 minutes?",
+    q: "What happens after 2 hours?",
     a: "Your trial simply stops. There are no charges, no cancellation required. If you'd like to continue, contact us to choose a plan.",
   },
   {

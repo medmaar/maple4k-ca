@@ -103,7 +103,7 @@ export default function IPTVMagBoxCanadaPage() {
           <div style={{ maxWidth: 600, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 16 }}>Ready to Set Up Your MAG Box?</h2>
             <p style={{ color: "#9ca3af", marginBottom: 32, fontSize: 15 }}>
-              Best Maple4K service for MAG boxes. Plans from $9/month with free 5-minute trial.
+              Best Maple4K service for MAG boxes. Plans from $9/month with free 2-hour trial.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>View Maple4K Plans →</Link>
