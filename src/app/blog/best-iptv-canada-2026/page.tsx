@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Maple4K: Top Services Reviewed & Compared | Maple4K",
+  title: "Best IPTV Canada 2026: Top Services Reviewed | Maple4K",
   description:
-    "Looking for the best IPTV service in Canada for 2026? We reviewed and compared the top Canadian IPTV providers on channels, price, reliability and support.",
+    "Looking for the best IPTV service in Canada for 2026? We reviewed and compared the top Canadian 4K IPTV providers on channels, price, reliability and support.",
   keywords:
-    "best Maple4K, top Maple4K, Maple4K review, best IPTV service Canada",
+    "best IPTV Canada 2026, top IPTV Canada, Maple4K review, best IPTV service Canada",
   alternates: { canonical: "https://maple4k.ca/blog/best-iptv-canada-2026" },
   openGraph: {
-    title: "Best Maple4K: Top Services Reviewed & Compared | Maple4K",
+    title: "Best IPTV Canada 2026: Top Services Reviewed | Maple4K",
     description:
-      "We reviewed and compared the top Canadian IPTV providers on channels, price, reliability and support.",
+      "We reviewed and compared the top Canadian 4K IPTV providers on channels, price, reliability and support.",
     url: "https://maple4k.ca/blog/best-iptv-canada-2026",
     type: "article",
     siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best IPTV Canada 2026" }],
   },
   twitter: { card: "summary_large_image" },
 };

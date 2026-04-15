@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Service in Montreal 2026 — 4K Streaming from $9 | Maple4K" },
+  title: { absolute: "IPTV Montreal | Maple4K – Best 4K IPTV Canada" },
   description:
     "Maple4K is Montreal's best IPTV service. Stream Canadiens, RDS, TVA Sports, TSN, CBC, and 25,000+ channels in 4K. Plans from $9. Free trial available.",
   keywords:
     "IPTV Montreal, best IPTV Montreal, IPTV service Montreal, Maple4K Montreal, IPTV Canada Montreal, IPTV Quebec",
   alternates: { canonical: "https://maple4k.ca/iptv-montreal" },
   openGraph: {
-    title: "Best IPTV Service in Montreal 2026 — 4K Streaming from $9 | Maple4K",
+    title: "IPTV Montreal | Maple4K – Best 4K IPTV Canada",
     description:
       "Maple4K is Montreal's best IPTV service. Stream Canadiens, RDS, TVA Sports and 25,000+ channels in 4K. Plans from $9.",
     url: "https://maple4k.ca/iptv-montreal",
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Montreal" }],
   },
   twitter: { card: "summary_large_image" },
 };

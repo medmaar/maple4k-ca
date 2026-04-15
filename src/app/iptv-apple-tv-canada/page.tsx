@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     url: "https://maple4k.ca/iptv-apple-tv-canada",
     type: "website",
     siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Apple TV Canada" }],
   },
   twitter: { card: "summary_large_image" },
 };

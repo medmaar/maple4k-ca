@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IPTV on Amazon Firestick in Canada 2026 | Maple4K Setup Guide",
+  title: "IPTV Firestick Canada | Maple4K – Best 4K IPTV Canada",
   description:
     "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 25,000+ channels, NHL, TSN & 4K quality. Free 24h trial.",
   alternates: { canonical: "https://maple4k.ca/iptv-firestick-canada" },
   openGraph: {
-    title: "IPTV on Amazon Firestick in Canada 2026 | Maple4K Setup Guide",
+    title: "IPTV Firestick Canada | Maple4K – Best 4K IPTV Canada",
     description:
       "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 25,000+ channels, NHL, TSN & 4K quality. Free 24h trial.",
     url: "https://maple4k.ca/iptv-firestick-canada",
     type: "website",
     siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Firestick Canada" }],
   },
 };
 
@@ -96,7 +98,7 @@ export default function IPTVFirestickCanadaPage() {
                 marginBottom: 20,
               }}
             >
-              IPTV CANADA · MAPLESTREAMTV
+              IPTV CANADA · MAPLE4K
             </span>
             <h1
               style={{

@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   keywords:
     "free IPTV trial Canada, Maple4K free trial, try IPTV Canada, free IPTV Canada no credit card",
   alternates: { canonical: "https://maple4k.ca/free-trial" },
+  openGraph: {
+    title: "Free IPTV Trial Canada — Test Maple4K Risk-Free | Maple4K",
+    description: "Get a free Maple4K IPTV trial in Canada. No credit card required. Access 25,000+ live channels, NHL, TSN, CTV and 120,000+ movies.",
+    url: "https://maple4k.ca/free-trial",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K Free IPTV Trial Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const faqItems: FaqItem[] = [

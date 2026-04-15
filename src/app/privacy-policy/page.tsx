@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | IPTV Subscription Canada",
-  description: "Privacy policy for IPTV Subscription Canada. Learn how we collect, use, and protect your personal information.",
-  alternates: { canonical: "https://www.maple4k.ca/privacy-policy" },
+  title: "Privacy Policy | Maple4K – Best 4K IPTV Canada",
+  description: "Privacy policy for Maple4K, Canada's best 4K IPTV service. Learn how we collect, use, and protect your personal information.",
+  alternates: { canonical: "https://maple4k.ca/privacy-policy" },
+  openGraph: {
+    title: "Privacy Policy | Maple4K – Best 4K IPTV Canada",
+    description: "Privacy policy for Maple4K, Canada's best 4K IPTV service. Learn how we collect, use, and protect your personal information.",
+    url: "https://maple4k.ca/privacy-policy",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function PrivacyPolicyPage() {

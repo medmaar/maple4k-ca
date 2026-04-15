@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | IPTV Subscription Canada",
-  description: "Terms of service for IPTV Subscription Canada. Read our terms before using our IPTV service.",
-  alternates: { canonical: "https://www.maple4k.ca/terms-of-service" },
+  title: "Terms of Service | Maple4K – Best 4K IPTV Canada",
+  description: "Terms of service for Maple4K, Canada's leading 4K IPTV provider. Read our terms before using our IPTV service.",
+  alternates: { canonical: "https://maple4k.ca/terms-of-service" },
+  openGraph: {
+    title: "Terms of Service | Maple4K – Best 4K IPTV Canada",
+    description: "Terms of service for Maple4K, Canada's leading 4K IPTV provider. Read our terms before using our IPTV service.",
+    url: "https://maple4k.ca/terms-of-service",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function TermsOfServicePage() {

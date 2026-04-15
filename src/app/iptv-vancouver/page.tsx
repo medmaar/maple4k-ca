@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Service in Vancouver 2026 — 4K Streaming from $9 | Maple4K" },
+  title: { absolute: "IPTV Vancouver | Maple4K – Best 4K IPTV Canada" },
   description:
     "Maple4K is Vancouver's best IPTV service. Stream Canucks, Whitecaps, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
   keywords:
     "IPTV Vancouver, best IPTV Vancouver, IPTV service Vancouver, Maple4K Vancouver, IPTV Canada Vancouver",
   alternates: { canonical: "https://maple4k.ca/iptv-vancouver" },
   openGraph: {
-    title: "Best IPTV Service in Vancouver 2026 — 4K Streaming from $9 | Maple4K",
+    title: "IPTV Vancouver | Maple4K – Best 4K IPTV Canada",
     description:
       "Maple4K is Vancouver's best IPTV service. Stream Canucks, Whitecaps, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",
     url: "https://maple4k.ca/iptv-vancouver",
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Vancouver" }],
   },
   twitter: { card: "summary_large_image" },
 };

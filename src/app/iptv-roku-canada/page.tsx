@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IPTV Roku Canada 2026 | Best IPTV for Roku Streaming Stick",
+  title: "IPTV Roku Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on Roku in Canada. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy channel store setup. Try free today.",
+    "Stream IPTV on Roku in Canada with Maple4K. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy private channel setup. Free trial available.",
   keywords:
     "IPTV Roku Canada, Roku Maple4K, best IPTV for Roku Canada, Roku streaming Maple4K",
-  alternates: { canonical: "https://www.maple4k.ca/iptv-roku-canada" },
+  alternates: { canonical: "https://maple4k.ca/iptv-roku-canada" },
+  openGraph: {
+    title: "IPTV Roku Canada | Maple4K – Best 4K IPTV Canada",
+    description: "Stream IPTV on Roku in Canada with Maple4K. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy private channel setup. Free trial available.",
+    url: "https://maple4k.ca/iptv-roku-canada",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const steps = [

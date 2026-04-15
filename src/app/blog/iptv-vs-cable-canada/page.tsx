@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV vs Cable Canada 2026: Which Is Better? Full Comparison | Maple4K",
+  title: "IPTV vs Cable Canada 2026 | Maple4K – Best 4K IPTV Canada",
   description:
-    "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility to help you decide which is better in 2026.",
+    "IPTV vs cable TV in Canada — we compare price, channels, 4K picture quality, contracts, and flexibility to help you decide which is better in 2026.",
   keywords:
     "IPTV vs cable Canada, IPTV vs cable TV Canada, is IPTV better than cable Canada, IPTV or cable Canada 2026",
   alternates: { canonical: "https://maple4k.ca/blog/iptv-vs-cable-canada" },
   openGraph: {
-    title: "IPTV vs Cable Canada 2026: Which Is Better? Full Comparison | Maple4K",
+    title: "IPTV vs Cable Canada 2026 | Maple4K – Best 4K IPTV Canada",
     description:
-      "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility to help you decide which is better in 2026.",
+      "IPTV vs cable TV in Canada — we compare price, channels, 4K picture quality, contracts, and flexibility to help you decide which is better in 2026.",
     url: "https://maple4k.ca/blog/iptv-vs-cable-canada",
     type: "article",
     siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "IPTV vs Cable Canada – Maple4K" }],
   },
   twitter: { card: "summary_large_image" },
 };

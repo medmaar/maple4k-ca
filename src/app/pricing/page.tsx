@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     siteName: "Maple4K",
     locale: "en_CA",
     type: "website",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Pricing Canada" }],
   },
   twitter: {
     card: "summary_large_image",

@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     url: "https://maple4k.ca/iptv-android-tv-canada",
     type: "website",
     siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Android TV Canada" }],
   },
 };
 
@@ -96,7 +98,7 @@ export default function IPTVAndroidTVCanadaPage() {
                 marginBottom: 20,
               }}
             >
-              IPTV CANADA · MAPLESTREAMTV
+              IPTV CANADA · MAPLE4K
             </span>
             <h1
               style={{

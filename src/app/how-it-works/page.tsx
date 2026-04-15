@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How IPTV Works in Canada | Setup Guide — IPTV Subscription Canada",
+  title: "How IPTV Works in Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Learn how IPTV works in Canada. Simple 3-step setup, compatible devices, internet requirements, and everything you need to start streaming today.",
+    "Learn how Maple4K IPTV works in Canada. Simple 3-step setup, compatible devices, internet requirements — everything you need to start 4K streaming today.",
   keywords:
     "how does IPTV work Canada, how to set up Maple4K, IPTV setup Canada, IPTV explained Canada",
-  alternates: { canonical: "https://www.maple4k.ca/how-it-works" },
+  alternates: { canonical: "https://maple4k.ca/how-it-works" },
+  openGraph: {
+    title: "How IPTV Works in Canada | Maple4K – Best 4K IPTV Canada",
+    description: "Learn how Maple4K IPTV works in Canada. Simple 3-step setup, compatible devices, internet requirements — everything you need to start 4K streaming today.",
+    url: "https://maple4k.ca/how-it-works",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const steps = [

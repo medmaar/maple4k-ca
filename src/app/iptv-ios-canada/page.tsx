@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IPTV iPhone iPad Canada 2026 | Best IPTV for iOS Devices",
+  title: "IPTV iPhone & iPad Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on iPhone or iPad in Canada. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Try free today.",
+    "Stream IPTV on iPhone or iPad in Canada with Maple4K. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free trial available.",
   keywords:
     "IPTV iPhone Canada, IPTV iPad Canada, IPTV iOS Canada, best IPTV for iPhone Canada, IPTV app Canada iOS",
-  alternates: { canonical: "https://www.maple4k.ca/iptv-ios-canada" },
+  alternates: { canonical: "https://maple4k.ca/iptv-ios-canada" },
+  openGraph: {
+    title: "IPTV iPhone & iPad Canada | Maple4K – Best 4K IPTV Canada",
+    description: "Stream IPTV on iPhone or iPad in Canada with Maple4K. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free trial available.",
+    url: "https://maple4k.ca/iptv-ios-canada",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const steps = [

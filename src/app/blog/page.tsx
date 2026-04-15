@@ -2,17 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Maple4K Blog 2026 | Guides, Reviews & News – Maple4K",
+  title: "Maple4K Blog | IPTV Guides, Reviews & News – Canada",
   description:
-    "Read Maple4K's Maple4K blog. Expert guides on setup, legality, pricing comparisons, player reviews, and the best IPTV services in Canada for 2026.",
-  keywords: "Maple4K blog, Maple4K guide 2026, best Maple4K review",
+    "Read Maple4K's IPTV blog. Expert guides on setup, legality, pricing comparisons, player reviews, and the best 4K IPTV services in Canada for 2026.",
+  keywords: "Maple4K blog, IPTV guide Canada 2026, best IPTV Canada review",
   alternates: { canonical: "https://maple4k.ca/blog" },
   openGraph: {
-    title: "Maple4K Blog 2026 | Guides, Reviews & News – Maple4K",
-    description: "Read Maple4K's Maple4K blog. Expert guides on setup, legality, pricing comparisons, and player reviews.",
+    title: "Maple4K Blog | IPTV Guides, Reviews & News – Canada",
+    description: "Read Maple4K's IPTV blog. Expert guides on setup, legality, pricing comparisons, and player reviews for the best 4K IPTV in Canada.",
     url: "https://maple4k.ca/blog",
     type: "website",
     siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Blog Canada" }],
   },
   twitter: { card: "summary_large_image" },
 };

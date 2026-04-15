@@ -1,10 +1,20 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DMCA Policy | IPTV Subscription Canada",
+  title: "DMCA Policy | Maple4K – Best 4K IPTV Canada",
   description:
-    "DMCA policy for IPTV Subscription Canada. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
-  alternates: { canonical: "https://www.maple4k.ca/dmca" },
+    "DMCA policy for Maple4K, Canada's top 4K IPTV service. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
+  alternates: { canonical: "https://maple4k.ca/dmca" },
+  openGraph: {
+    title: "DMCA Policy | Maple4K – Best 4K IPTV Canada",
+    description: "DMCA policy for Maple4K, Canada's top 4K IPTV service. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
+    url: "https://maple4k.ca/dmca",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function DMCAPage() {

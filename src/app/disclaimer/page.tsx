@@ -1,10 +1,20 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | Maple4K",
+  title: "Disclaimer | Maple4K – Best 4K IPTV Canada",
   description:
-    "Legal disclaimer for Maple4K. We do not host or stream any copyrighted content. All content is provided by third-party providers.",
+    "Legal disclaimer for Maple4K, Canada's best 4K IPTV service. We do not host or stream any copyrighted content. All content is provided by third-party providers.",
   alternates: { canonical: "https://maple4k.ca/disclaimer" },
+  openGraph: {
+    title: "Disclaimer | Maple4K – Best 4K IPTV Canada",
+    description: "Legal disclaimer for Maple4K, Canada's best 4K IPTV service. We do not host or stream any copyrighted content.",
+    url: "https://maple4k.ca/disclaimer",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function DisclaimerPage() {

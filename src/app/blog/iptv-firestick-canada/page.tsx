@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How to Install IPTV on Firestick Canada 2026 — Step by Step Guide",
+  title: "Install IPTV on Firestick Canada 2026 | Maple4K – Best 4K IPTV Canada",
   description:
-    "Complete guide to installing IPTV on Amazon Fire Stick in Canada. Works on Fire Stick 4K, Lite, and all Fire TV devices. Easy step-by-step setup.",
+    "Complete guide to installing Maple4K IPTV on Amazon Fire Stick in Canada. Works on Fire Stick 4K, Lite, and all Fire TV devices. Easy step-by-step setup.",
   keywords:
     "IPTV Firestick Canada, install IPTV Fire Stick Canada, how to set up IPTV Firestick Canada, IPTV Fire TV Canada",
-  alternates: { canonical: "https://www.maple4k.ca/blog/iptv-firestick-canada" },
+  alternates: { canonical: "https://maple4k.ca/blog/iptv-firestick-canada" },
+  openGraph: {
+    title: "Install IPTV on Firestick Canada 2026 | Maple4K – Best 4K IPTV Canada",
+    description: "Complete guide to installing Maple4K IPTV on Amazon Fire Stick in Canada. Works on Fire Stick 4K, Lite, and all Fire TV devices. Easy step-by-step setup.",
+    url: "https://maple4k.ca/blog/iptv-firestick-canada",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const steps = [

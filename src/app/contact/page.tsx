@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | IPTV Subscription Canada — 24/7 Canadian Support",
-  description: "Contact IPTV Subscription Canada via WhatsApp, Telegram, or email. Our Canadian support team is available 24/7 in English and French.",
-  alternates: { canonical: "https://www.maple4k.ca/contact" },
+  title: "Contact | Maple4K – Best 4K IPTV Canada",
+  description: "Contact Maple4K via WhatsApp, Telegram, or email. Canada's best 4K IPTV support team is available 24/7 in English and French.",
+  alternates: { canonical: "https://maple4k.ca/contact" },
+  openGraph: {
+    title: "Contact | Maple4K – Best 4K IPTV Canada",
+    description: "Contact Maple4K via WhatsApp, Telegram, or email. Canada's best 4K IPTV support team is available 24/7 in English and French.",
+    url: "https://maple4k.ca/contact",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const channels = [

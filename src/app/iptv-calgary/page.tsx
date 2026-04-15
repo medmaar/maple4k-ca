@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Service in Calgary 2026 — 4K Streaming from $9 | Maple4K" },
+  title: { absolute: "IPTV Calgary | Maple4K – Best 4K IPTV Canada" },
   description:
     "Maple4K is Calgary's best IPTV service. Stream Flames, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
   keywords:
     "IPTV Calgary, best IPTV Calgary, IPTV service Calgary, Maple4K Calgary, IPTV Canada Calgary, IPTV Alberta",
   alternates: { canonical: "https://maple4k.ca/iptv-calgary" },
   openGraph: {
-    title: "Best IPTV Service in Calgary 2026 — 4K Streaming from $9 | Maple4K",
+    title: "IPTV Calgary | Maple4K – Best 4K IPTV Canada",
     description:
       "Maple4K is Calgary's best IPTV service. Stream Flames, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",
     url: "https://maple4k.ca/iptv-calgary",
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Calgary" }],
   },
   twitter: { card: "summary_large_image" },
 };

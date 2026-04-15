@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IPTV Samsung TV Canada 2026 | Best IPTV for Samsung Smart TV",
+  title: "IPTV Samsung TV Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on your Samsung Smart TV in Canada. 25,000+ channels, 4K quality, NHL, TSN and more. Easy setup with Tizen OS. Try free today.",
+    "Stream IPTV on your Samsung Smart TV in Canada with Maple4K. 25,000+ channels, 4K quality, NHL, TSN and more. Easy Tizen OS setup. Free trial available.",
   keywords:
     "IPTV Samsung TV Canada, IPTV Samsung Smart TV Canada, Samsung TV Maple4K, best IPTV Samsung Canada",
-  alternates: { canonical: "https://www.maple4k.ca/iptv-samsung-tv-canada" },
+  alternates: { canonical: "https://maple4k.ca/iptv-samsung-tv-canada" },
+  openGraph: {
+    title: "IPTV Samsung TV Canada | Maple4K – Best 4K IPTV Canada",
+    description: "Stream IPTV on your Samsung Smart TV in Canada with Maple4K. 25,000+ channels, 4K quality, NHL, TSN and more. Easy Tizen OS setup. Free trial available.",
+    url: "https://maple4k.ca/iptv-samsung-tv-canada",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const steps = [

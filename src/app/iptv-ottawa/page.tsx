@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Service in Ottawa 2026 — 4K Streaming from $9 | Maple4K" },
+  title: { absolute: "IPTV Ottawa | Maple4K – Best 4K IPTV Canada" },
   description:
     "Maple4K is Ottawa's best IPTV service. Stream Senators, TSN, Sportsnet, CBC, CPAC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
   keywords:
     "IPTV Ottawa, best IPTV Ottawa, IPTV service Ottawa, Maple4K Ottawa, IPTV Canada Ottawa, IPTV Ontario Ottawa",
   alternates: { canonical: "https://maple4k.ca/iptv-ottawa" },
   openGraph: {
-    title: "Best IPTV Service in Ottawa 2026 — 4K Streaming from $9 | Maple4K",
+    title: "IPTV Ottawa | Maple4K – Best 4K IPTV Canada",
     description:
       "Maple4K is Ottawa's best IPTV service. Stream Senators, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9.",
     url: "https://maple4k.ca/iptv-ottawa",
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Ottawa" }],
   },
   twitter: { card: "summary_large_image" },
 };

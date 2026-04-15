@@ -2,17 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best IPTV Player for Canada 2026 – TiviMate, IPTV Smarters & More | Maple4K",
+  title: "Best IPTV Player Canada 2026 | Maple4K – Best 4K IPTV Canada",
   description:
     "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player. Works with Maple4K on all devices.",
   keywords: "best IPTV player Canada, TiviMate Canada, IPTV Smarters Canada, IPTV app Canada 2026",
   alternates: { canonical: "https://maple4k.ca/blog/best-iptv-player-canada" },
   openGraph: {
-    title: "Best IPTV Player for Canada 2026 – TiviMate, IPTV Smarters & More",
+    title: "Best IPTV Player Canada 2026 | Maple4K – Best 4K IPTV Canada",
     description: "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player.",
     url: "https://maple4k.ca/blog/best-iptv-player-canada",
     type: "article",
     siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Best IPTV Player Canada – Maple4K" }],
   },
   twitter: { card: "summary_large_image" },
 };
