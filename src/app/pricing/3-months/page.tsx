@@ -131,7 +131,7 @@ export default function Pricing3MonthsPage() {
             </div>
 
             {/* 4. FAQ */}
-            <div>
+            <div style={{ background: "#1A3D45", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", marginBottom: 32 }}>
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
                 style={{ color: "#F96E5B" }}

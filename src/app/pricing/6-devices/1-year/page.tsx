@@ -112,8 +112,8 @@ export default function Page() {
 
             {/* 2. Instruction text */}
             <div className="mb-10">
-              <p className="text-gray-300 text-base">Fill out the form below to place your order.</p>
-              <p className="text-gray-400 text-sm mt-1">
+              <p style={{ color: "#000000", fontSize: 15 }}>Fill out the form below to place your order.</p>
+              <p style={{ color: "#000000", fontSize: 13, marginTop: 4 }}>
                 We&apos;ll send your login credentials to your email within 5 minutes.
               </p>
             </div>
@@ -130,7 +130,7 @@ export default function Page() {
             </div>
 
             {/* 4. FAQ */}
-            <div>
+            <div style={{ background: "#1A3D45", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", marginBottom: 32 }}>
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
                 style={{ color: "#F96E5B" }}
