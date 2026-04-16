@@ -98,9 +98,9 @@ export default function FreeTrialPage() {
             <div
               className="rounded-3xl p-6 md:p-8 border mb-16"
               style={{
-                background: "#ffffff",
-                borderColor: "rgba(63,154,174,0.2)",
-                boxShadow: "0 4px 24px rgba(63,154,174,0.1)",
+                background: "#1A3D45",
+                borderColor: "rgba(121,201,197,0.2)",
+                boxShadow: "0 8px 32px rgba(26,61,69,0.25)",
               }}
             >
               <PlanOrderForm plan="Free Trial" />
