@@ -225,32 +225,38 @@ export default function HomePage() {
         </section>
 
         {/* ── 2. STATS BAR ── */}
-        <section style={{ background: "#E8F4F5", padding: "0 16px 48px" }}>
+        <section style={{
+          background: "#3F9AAE",
+          padding: "32px 16px",
+        }}>
           <div
             style={{
               maxWidth: 960,
               margin: "0 auto",
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
-              gap: 16,
+              gap: 0,
               textAlign: "center",
             }}
           >
             {[
-              { val: "25,000+", label: "Live Channels", icon: "📺" },
-              { val: "True 4K", label: "HDR10 & Dolby Vision", icon: "🎯" },
-              { val: "Zero Buffer", label: "H.265 Smart Codec", icon: "⚡" },
-              { val: "24/7", label: "Canadian Support", icon: "🍁" },
-            ].map((s) => (
+              { val: "25,000+", label: "Live Channels" },
+              { val: "True 4K", label: "HDR10 & Dolby Vision" },
+              { val: "No Buffering", label: "Ultra-fast Streams" },
+              { val: "24/7", label: "Canadian Support" },
+            ].map((s, i) => (
               <div key={s.val} style={{
-                background: "#3F9AAE",
-                borderRadius: 16,
-                padding: "24px 16px",
-                boxShadow: "0 4px 20px rgba(63,154,174,0.25)",
+                padding: "8px 16px",
+                borderRight: i < 3 ? "1px solid rgba(255,255,255,0.2)" : "none",
+                animation: `statPop 0.5s ease ${i * 0.12}s both`,
               }}>
-                <div style={{ fontSize: 22, marginBottom: 6 }}>{s.icon}</div>
-                <div style={{ fontSize: 22, fontWeight: 900, color: "#fff" }}>{s.val}</div>
-                <div style={{ fontSize: 12, color: "rgba(255,255,255,0.85)", marginTop: 4 }}>{s.label}</div>
+                <div style={{
+                  fontSize: 30,
+                  fontWeight: 900,
+                  color: "#fff",
+                  letterSpacing: "-0.5px",
+                }}>{s.val}</div>
+                <div style={{ fontSize: 13, color: "rgba(255,255,255,0.85)", marginTop: 4 }}>{s.label}</div>
               </div>
             ))}
           </div>
