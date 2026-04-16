@@ -141,7 +141,7 @@ export default function HomePage() {
             padding: "110px 16px 100px",
             textAlign: "center",
             overflow: "hidden",
-            minHeight: 540,
+            minHeight: "100vh",
             display: "flex",
             alignItems: "center",
           }}
