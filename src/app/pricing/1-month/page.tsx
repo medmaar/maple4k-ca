@@ -82,12 +82,12 @@ export default function Pricing1MonthPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
-      <main style={{ background: "#10131E", color: "#fff", minHeight: "100vh" }}>
+      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
         <section
           className="py-20 px-4"
           style={{
             background:
-              "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(253,3,34,0.13) 0%, transparent 65%), #10131E",
+              "transparent",
           }}
         >
           <div className="max-w-2xl mx-auto">
@@ -96,9 +96,9 @@ export default function Pricing1MonthPage() {
               <span
                 className="inline-block text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5"
                 style={{
-                  background: "rgba(253,3,34,0.12)",
-                  border: "1px solid rgba(253,3,34,0.28)",
-                  color: "#fd0322",
+                  background: "rgba(249,110,91,0.12)",
+                  border: "1px solid rgba(249,110,91,0.35)",
+                  color: "#F96E5B",
                 }}
               >
                 Maple4K · 1 Month
@@ -116,9 +116,9 @@ export default function Pricing1MonthPage() {
               </h1>
               <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10 }}>
 
-                <span style={{ color: "#fd0322", fontWeight: 800, fontSize: "2rem" }}>Price : $9</span>
+                <span style={{ color: "#F96E5B", fontWeight: 800, fontSize: "2rem" }}>Price : $9</span>
 
-                <span style={{ background: "rgba(253,3,34,0.15)", color: "#fd0322", border: "1px solid rgba(253,3,34,0.4)", fontWeight: 700, fontSize: 12, padding: "4px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>50% OFF</span>
+                <span style={{ background: "rgba(253,3,34,0.15)", color: "#F96E5B", border: "1px solid rgba(253,3,34,0.4)", fontWeight: 700, fontSize: 12, padding: "4px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>50% OFF</span>
 
               </div>
             </div>
@@ -127,8 +127,8 @@ export default function Pricing1MonthPage() {
             <div
               className="rounded-3xl p-6 md:p-8 border mb-16"
               style={{
-                background: "rgba(255,255,255,0.03)",
-                borderColor: "rgba(255,255,255,0.07)",
+                background: "#1A3D45",
+                borderColor: "rgba(121,201,197,0.2)", boxShadow: "0 8px 32px rgba(26,61,69,0.25)",
               }}
             >
               <PlanOrderForm plan="1 Month Plan — $9" />
@@ -138,11 +138,11 @@ export default function Pricing1MonthPage() {
             <div>
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
-                style={{ color: "#fd0322" }}
+                style={{ color: "#F96E5B" }}
               >
                 FAQ
               </p>
-              <h2 className="text-2xl font-extrabold text-white mb-6">
+              <h2 style={{ color: "#ffffff", fontSize: "1.4rem", fontWeight: 800, marginBottom: 24 }}>
                 Frequently Asked Questions
               </h2>
               <PlanFAQ items={faqItems} />
