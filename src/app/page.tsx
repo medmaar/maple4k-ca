@@ -225,26 +225,32 @@ export default function HomePage() {
         </section>
 
         {/* ── 2. STATS BAR ── */}
-        <section style={{ background: "#3F9AAE", borderTop: "none", borderBottom: "none", padding: "28px 16px" }}>
+        <section style={{ background: "#E8F4F5", padding: "0 16px 48px" }}>
           <div
             style={{
               maxWidth: 960,
               margin: "0 auto",
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
-              gap: 24,
+              gap: 16,
               textAlign: "center",
             }}
           >
             {[
-              { val: "25,000+", label: "Live Channels" },
-              { val: "4K HDR10", label: "& Dolby Vision" },
-              { val: "H.265/HEVC", label: "Codec" },
-              { val: "24/7", label: "Canadian Support" },
+              { val: "25,000+", label: "Live Channels", icon: "📺" },
+              { val: "True 4K", label: "HDR10 & Dolby Vision", icon: "🎯" },
+              { val: "Zero Buffer", label: "H.265 Smart Codec", icon: "⚡" },
+              { val: "24/7", label: "Canadian Support", icon: "🍁" },
             ].map((s) => (
-              <div key={s.val}>
-                <div style={{ fontSize: 28, fontWeight: 900, color: "#E8F4F5" }}>{s.val}</div>
-                <div style={{ fontSize: 13, color: "rgba(255,255,255,0.9)", marginTop: 4 }}>{s.label}</div>
+              <div key={s.val} style={{
+                background: "#3F9AAE",
+                borderRadius: 16,
+                padding: "24px 16px",
+                boxShadow: "0 4px 20px rgba(63,154,174,0.25)",
+              }}>
+                <div style={{ fontSize: 22, marginBottom: 6 }}>{s.icon}</div>
+                <div style={{ fontSize: 22, fontWeight: 900, color: "#fff" }}>{s.val}</div>
+                <div style={{ fontSize: 12, color: "rgba(255,255,255,0.85)", marginTop: 4 }}>{s.label}</div>
               </div>
             ))}
           </div>
