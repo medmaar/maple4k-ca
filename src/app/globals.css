@@ -57,115 +57,91 @@ body {
 }
 
 @keyframes fadeSlideUp {
-  from { opacity: 0; transform: translateY(18px); }
+  from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes fadeSlideIn {
-  from { opacity: 0; transform: translateX(-16px); }
+@keyframes ripple {
+  to { transform: scale(2.5); opacity: 0; }
+}
+
+@keyframes floatOrb {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(20px, -15px) scale(1.05); }
+  66%       { transform: translate(-10px, 10px) scale(0.97); }
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-28px); }
   to   { opacity: 1; transform: translateX(0); }
 }
 
-@keyframes gentleFloat {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-6px); }
+@keyframes bounceIn {
+  0%   { transform: scale(0.85); opacity: 0; }
+  60%  { transform: scale(1.06); opacity: 1; }
+  100% { transform: scale(1); }
 }
 
-@keyframes softPulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(249,110,91,0); }
-  50%       { box-shadow: 0 0 0 8px rgba(249,110,91,0.12); }
+/* ── SCROLL REVEAL ── */
+.ma-init {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
 }
-
-@keyframes shimmer {
-  0%   { background-position: -200% center; }
-  100% { background-position: 200% center; }
+.ma-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
-
-@keyframes breathe {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50%       { transform: scale(1.03); opacity: 0.92; }
-}
-
-@keyframes slideInUp {
-  from { opacity: 0; transform: translateY(32px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes popIn {
-  0%   { transform: scale(0.9); opacity: 0; }
-  70%  { transform: scale(1.04); }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-/* ── PAGE ENTRANCE ANIMATIONS ── */
-main > * {
-  animation: slideInUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-main > *:nth-child(1) { animation-delay: 0.05s; }
-main > *:nth-child(2) { animation-delay: 0.12s; }
-main > *:nth-child(3) { animation-delay: 0.19s; }
-main > *:nth-child(4) { animation-delay: 0.26s; }
-main > *:nth-child(5) { animation-delay: 0.33s; }
-main > *:nth-child(6) { animation-delay: 0.40s; }
-main > *:nth-child(n+7) { animation-delay: 0.46s; }
 
 .animate-fade-slide {
   animation: fadeSlideUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-/* ── BUTTON ANIMATIONS ── */
-a, button {
-  transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+/* ── MARQUEE ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 28s linear infinite; }
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
 }
 
-/* Coral buttons → dark teal on hover */
-a[style*="background: \"#F96E5B\""],
-a[style*='background: "#F96E5B"'],
-button[style*="background: \"#F96E5B\""],
-button[style*='background: "#F96E5B"'] {
-  transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+/* ── BUTTONS — springy hover ── */
+a, button {
+  transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
+              background 0.22s ease,
+              color 0.22s ease,
+              box-shadow 0.28s ease !important;
+  position: relative;
 }
 a[style*="#F96E5B"]:hover,
 button[style*="#F96E5B"]:hover {
   background: #1A3D45 !important;
   color: #ffffff !important;
-  transform: translateY(-3px) scale(1.02) !important;
-  box-shadow: 0 10px 28px rgba(26,61,69,0.35) !important;
+  transform: translateY(-4px) scale(1.04) !important;
+  box-shadow: 0 14px 32px rgba(26,61,69,0.3) !important;
 }
-
-/* Teal/dark buttons → coral on hover */
 a[style*="#1A3D45"]:hover,
 button[style*="#1A3D45"]:hover {
   background: #F96E5B !important;
   color: #ffffff !important;
-  transform: translateY(-3px) scale(1.02) !important;
-  box-shadow: 0 10px 28px rgba(249,110,91,0.35) !important;
+  transform: translateY(-4px) scale(1.04) !important;
+  box-shadow: 0 14px 32px rgba(249,110,91,0.35) !important;
 }
+nav a:hover { transform: translateY(-2px) !important; }
 
-/* Nav links hover */
-nav a:hover {
-  transform: translateY(-1px) !important;
-  letter-spacing: 0.02em;
-}
-
-/* ── CARD HOVER ANIMATIONS ── */
-div[style*="borderRadius: 20"],
-div[style*="borderRadius: 24"],
-div[style*="borderRadius: 16"] {
-  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
-              box-shadow 0.35s ease !important;
-}
-div[style*="borderRadius: 20"]:hover,
-div[style*="borderRadius: 24"]:hover,
-div[style*="borderRadius: 16"]:hover {
-  transform: translateY(-5px) !important;
-  box-shadow: 0 20px 48px rgba(26,61,69,0.18) !important;
-}
-
-/* ── LINK HOVER UNDERLINE SLIDE ── */
+/* ── UNDERLINE ANIMATION ── */
 nav a, footer a {
   position: relative;
-  overflow: hidden;
 }
 nav a::after, footer a::after {
   content: '';
@@ -174,75 +150,64 @@ nav a::after, footer a::after {
   width: 0; height: 2px;
   background: #F96E5B;
   border-radius: 2px;
-  transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-nav a:hover::after, footer a:hover::after {
-  width: 100%;
-}
+nav a:hover::after, footer a:hover::after { width: 100%; }
 
-/* ── FREE TRIAL CTA PULSE ── */
+/* ── FREE TRIAL PULSE ── */
 a[href="/free-trial"] {
   animation: softPulse 3.2s ease-in-out infinite;
 }
-a[href="/free-trial"]:hover {
-  animation: none !important;
+a[href="/free-trial"]:hover { animation: none !important; }
+
+@keyframes softPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(249,110,91,0); }
+  50%       { box-shadow: 0 0 0 10px rgba(249,110,91,0.15); }
 }
 
-/* ── IMAGE HOVER ZOOM ── */
-img {
-  transition: transform 0.5s ease !important;
-}
-img:hover {
-  transform: scale(1.03) !important;
-}
-
-/* ── MARQUEE SPEED ── */
-.animate-marquee {
-  animation: marquee 28s linear infinite;
-}
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: marquee 35s linear infinite;
-}
-
-/* ── CHANNEL / DEVICE PILLS HOVER ── */
+/* ── CHANNEL PILLS ── */
 span[style*="borderRadius: 8"]:hover,
-span[style*="borderRadius: 14"]:hover,
 div[style*="borderRadius: 14"]:hover {
   background: #3F9AAE !important;
   color: #fff !important;
-  transform: scale(1.05) translateY(-2px) !important;
-  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
-  cursor: default;
+  transform: scale(1.06) translateY(-2px) !important;
+  transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
 }
 
-/* ── PRICING CARD HOVER ── */
-div[style*="borderRadius: 20"][style*="#1A3D45"]:hover,
-div[style*="borderRadius: 20"][style*="#3F9AAE"]:hover,
-div[style*="borderRadius: 20"][style*="#F96E5B"]:hover {
-  transform: translateY(-8px) scale(1.02) !important;
-  box-shadow: 0 24px 52px rgba(26,61,69,0.3) !important;
-}
-
-/* ── CITY LINK HOVER ── */
+/* ── CITY LINKS ── */
 a[href*="/iptv-"]:hover {
   background: #3F9AAE !important;
   color: #fff !important;
-  transform: translateY(-3px) scale(1.04) !important;
+  transform: translateY(-4px) scale(1.05) !important;
 }
 
-/* ── FOCUS RING ── */
+/* ── INPUT FOCUS ── */
 input:focus, select:focus, textarea:focus {
   outline: 2px solid #79C9C5 !important;
   outline-offset: 2px;
-  transition: outline 0.2s ease !important;
+  transform: scale(1.01);
+  transition: all 0.25s ease !important;
 }
 
-/* ── SMOOTH SCROLLING ── */
-html {
-  scroll-behavior: smooth;
+/* ── HERO GRADIENT ANIMATION ── */
+main > section:first-child::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(249,110,91,0.06), rgba(63,154,174,0.06), rgba(121,201,197,0.06));
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+  pointer-events: none;
+  z-index: 0;
 }
+
+/* ── SMOOTH SCROLL ── */
+html { scroll-behavior: smooth; }
+
+/* ── PAGE LOAD BOUNCE ── */
+nav {
+  animation: fadeSlideUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 
 /* react-phone-number-input dark theme */
 .phone-input-wrapper .PhoneInput {

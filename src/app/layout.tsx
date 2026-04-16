@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import Footer from "../components/Footer";
 import FloatingContact from "../components/FloatingContact";
 
+import Animations from "./components/Animations";
+
 export const metadata: Metadata = {
     metadataBase: new URL("https://maple4k.ca"),
     icons: { icon: "/favicon.svg" },
@@ -45,6 +47,7 @@ export default function RootLayout({
                         <div className="flex-1">{children}</div>
                         <Footer />
                         <FloatingContact />
+                        <Animations />
                 </body>
           </html>
         );
