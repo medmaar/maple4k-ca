@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function TermsOfServicePage() {
   return (
-    <main className="min-h-screen" style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className2=" py-20 px-4">
+    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Terms of Service</h1>
         <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
