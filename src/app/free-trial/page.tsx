@@ -107,14 +107,14 @@ export default function FreeTrialPage() {
             </div>
 
             {/* FAQ */}
-            <div>
+            <div style={{ background: "#1A3D45", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)" }}>
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
                 style={{ color: "#F96E5B" }}
               >
                 FAQ
               </p>
-              <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#000000", marginBottom: 24 }}>
+              <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#ffffff", marginBottom: 24 }}>
                 Frequently Asked Questions
               </h2>
               <PlanFAQ items={faqItems} />

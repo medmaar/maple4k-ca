@@ -20,8 +20,8 @@ export default function PlanFAQ({ items }: Props) {
           key={i}
           className="rounded-2xl border overflow-hidden"
           style={{
-            borderColor: open === i ? "rgba(253,3,34,0.38)" : "rgba(255,255,255,0.07)",
-            background: open === i ? "rgba(253,3,34,0.05)" : "rgba(255,255,255,0.03)",
+            borderColor: open === i ? "rgba(121,201,197,0.5)" : "rgba(255,255,255,0.1)",
+            background: open === i ? "rgba(121,201,197,0.08)" : "rgba(255,255,255,0.05)",
             transition: "border-color 0.2s, background 0.2s",
           }}
         >
@@ -30,11 +30,12 @@ export default function PlanFAQ({ items }: Props) {
             onClick={() => setOpen(open === i ? null : i)}
             aria-expanded={open === i}
           >
-            <span className="font-semibold text-white text-sm leading-snug">{item.q}</span>
+            <span className="font-semibold text-sm leading-snug" style={{ color: "#ffffff" }}>{item.q}</span>
             <span
-              className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-white text-lg font-bold"
+              className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-lg font-bold"
               style={{
-                background: open === i ? "#fd0322" : "rgba(255,255,255,0.08)",
+                color: "#ffffff",
+                background: open === i ? "#F96E5B" : "rgba(255,255,255,0.12)",
                 transform: open === i ? "rotate(45deg)" : "rotate(0deg)",
                 transition: "transform 0.25s, background 0.2s",
               }}
@@ -49,7 +50,7 @@ export default function PlanFAQ({ items }: Props) {
               transition: "max-height 0.3s ease",
             }}
           >
-            <p className="text-gray-400 text-sm leading-relaxed px-5 pb-5">{item.a}</p>
+            <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, lineHeight: 1.7, padding: "0 20px 20px" }}>{item.a}</p>
           </div>
         </div>
       ))}
