@@ -179,7 +179,7 @@ export default function PlanOrderForm({ plan }: Props) {
       <div>
         <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
           Phone / WhatsApp
-          <span (style={{ color:"rgba(255,255,255,0.4)", fontSize:11, marginLeft:6 }})>(optional)</span>
+          <span style={{ color:"rgba(255,255,255,0.4)", fontSize:11, marginLeft:6 }}>(optional)</span>
         </label>
         <div className="phone-input-wrapper">
           <PhoneInput
@@ -227,7 +227,7 @@ export default function PlanOrderForm({ plan }: Props) {
       <div>
         <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
           Notes / Message
-          <span (style={{ color:"rgba(255,255,255,0.4)", fontSize:11, marginLeft:6 }})>(optional)</span>
+          <span style={{ color:"rgba(255,255,255,0.4)", fontSize:11, marginLeft:6 }}>(optional)</span>
         </label>
         <textarea
           name="message"
