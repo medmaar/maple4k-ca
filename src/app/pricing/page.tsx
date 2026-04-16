@@ -3,27 +3,27 @@ import PricingSection from "../PricingSection";
 import FaqAccordion from "../components/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Subscription Canada — Plans from $9 | Maple4K" },
+  title: { absolute: "4K IPTV Plans Canada — H.265/HEVC from $9 | Maple4K" },
   description:
-    "Compare Maple4K IPTV plans for Canada. 1, 3, 6 & 12-month options starting at $9. 25,000+ live channels, 4K streaming, NHL, TSN, CTV included. No contracts.",
+    "Compare Maple4K premium 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from $9. 25,000+ live channels, no contracts.",
   keywords:
-    "Maple4K pricing, Maple4K plans, IPTV subscription price Canada, cheap IPTV Canada 2026",
+    "Maple4K pricing, 4K IPTV plans Canada, H.265 HEVC IPTV Canada, HDR IPTV subscription 2026",
   alternates: { canonical: "https://maple4k.ca/pricing" },
   openGraph: {
-    title: "IPTV Subscription Canada — Plans from $9 | Maple4K",
+    title: "4K IPTV Plans Canada — H.265/HEVC from $9 | Maple4K",
     description:
-      "Compare Maple4K IPTV plans for Canada. 1, 3, 6 & 12-month options starting at $9. 25,000+ live channels, 4K streaming, NHL, TSN, CTV included.",
+      "Compare Maple4K premium 4K IPTV plans. H.265/HEVC, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from $9. 25,000+ live channels included.",
     url: "https://maple4k.ca/pricing",
     siteName: "Maple4K",
     locale: "en_CA",
     type: "website",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Pricing Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K 4K IPTV Pricing Canada" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "IPTV Subscription Canada — Plans from $9 | Maple4K",
+    title: "4K IPTV Plans Canada — H.265/HEVC from $9 | Maple4K",
     description:
-      "Compare Maple4K IPTV plans for Canada. 1, 3, 6 & 12-month options starting at $9. 25,000+ live channels, 4K streaming included.",
+      "Compare Maple4K 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. From $9/month, no contracts.",
   },
 };
 
@@ -47,11 +47,11 @@ export default function PricingPage() {
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">
             Maple4K{" "}
-            <span style={{ color: "#fd0322" }}>Subscription Plans 2026</span>
+            <span style={{ color: "#fd0322" }}>Premium 4K Plans 2026</span>
           </h1>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
-            Transparent pricing with no hidden fees. All plans include 25,000+ channels,
-            120,000+ movies &amp; series, and 24/7 Canadian support.
+            No hidden fees. Every plan streams in True 4K Ultra HD with H.265/HEVC encoding,
+            HDR10 &amp; Dolby Vision support, and 24/7 Canadian support.
           </p>
           <div className="flex flex-wrap justify-center gap-5 text-sm text-gray-400">
             {["No contracts", "Instant activation", "Cancel anytime", "24h free trial available"].map(
@@ -76,20 +76,20 @@ export default function PricingPage() {
           </p>
           <h2 className="text-3xl font-extrabold text-center text-white mb-12">
             Every Plan Includes{" "}
-            <span style={{ color: "#fd0322" }}>Everything</span>
+            <span style={{ color: "#fd0322" }}>Premium 4K</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               "25,000+ Live TV Channels",
               "120,000+ Movies & Series (VOD)",
-              "4K Ultra HD & HD Quality",
-              "NHL, NFL, NBA, MLB, UFC",
+              "True 4K Ultra HD — H.265/HEVC Encoded",
+              "HDR10 & Dolby Vision Support",
+              "NHL, NFL, NBA, MLB, UFC, CFL",
               "TSN, Sportsnet, CBC, CTV, Global",
-              "PPV Events Included",
-              "Electronic Program Guide (EPG)",
-              "Catch-Up TV (7 days)",
-              "All Devices: Fire Stick, Smart TV, iOS, Android",
-              "Anti-Freeze Technology",
+              "PPV Events Included — No Extra Cost",
+              "Full EPG + Catch-Up TV (7 days)",
+              "TiviMate & IBO Player Compatible",
+              "All Devices: Fire TV, Smart TV, iOS, Android",
               "99.9% Uptime Guarantee",
               "24/7 Canadian Support",
             ].map((feature) => (
@@ -121,10 +121,10 @@ export default function PricingPage() {
       >
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-extrabold text-white mb-4">
-            Not Sure Yet? Try Free for 5 Minutes
+            Not Sure Yet? Try the Full 4K Experience Free
           </h2>
           <p className="text-gray-400 mb-8 text-sm">
-            No credit card required. Test every channel, every feature, on any device.
+            No credit card required. Test True 4K H.265 streams, HDR rendering, and every channel on your own hardware.
           </p>
           <a
             href="/free-trial"

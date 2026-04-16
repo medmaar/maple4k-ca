@@ -3,57 +3,57 @@ import Link from "next/link";
 import HomePricing from "./components/HomePricing";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Canada 2026 — 4K Streaming from $9 | Maple4K" },
+  title: { absolute: "True 4K Ultra HD IPTV Canada 2026 — H.265/HEVC Streams | Maple4K" },
   description:
-    "Canada's #1 IPTV service in 2026. Stream 25,000+ live channels and 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Plans from $9/month. Free trial — no credit card.",
+    "Canada's premium 4K IPTV service. H.265/HEVC encoded streams with HDR10 & Dolby Vision support. 25,000+ live channels, 120,000+ titles — at the resolution your display deserves. From $9/month.",
   keywords:
-    "best IPTV Canada 2026, Maple4K, IPTV subscription Canada, Canadian IPTV, IPTV free trial Canada, cheap IPTV Canada, best IPTV service Canada",
+    "4K IPTV Canada, Ultra HD IPTV Canada, H.265 HEVC IPTV, HDR IPTV Canada, Maple4K, 4K streaming Canada 2026, Dolby Vision IPTV",
   alternates: { canonical: "https://maple4k.ca" },
   openGraph: {
-    title: "Best IPTV Canada 2026 — 4K Streaming from $9 | Maple4K",
+    title: "True 4K Ultra HD IPTV Canada 2026 — H.265/HEVC Streams | Maple4K",
     description:
-      "Canada's #1 IPTV service in 2026. Stream 25,000+ live channels and 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Plans from $9/month.",
+      "Canada's premium 4K IPTV service. H.265/HEVC encoded with HDR10 & Dolby Vision. 25,000+ live channels, 120,000+ titles at resolutions your screen deserves.",
     url: "https://maple4k.ca",
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Canada's Premium 4K IPTV" }],
   },
   twitter: { card: "summary_large_image" },
 };
 
 const faqs = [
   {
-    q: "What is IPTV and how does it work in Canada?",
-    a: "IPTV (Internet Protocol Television) delivers live TV channels and on-demand content over your internet connection instead of cable or satellite. In Canada, Maple4K provides 25,000+ live channels and 120,000+ movies and series streamed directly to your device in 4K quality.",
+    q: "What video quality does Maple4K deliver?",
+    a: "Maple4K delivers True 4K Ultra HD at 3840×2160 resolution, encoded in H.265/HEVC for maximum picture clarity at lower bitrates. HDR10 and Dolby Vision are fully supported on compatible displays and IPTV players, delivering the same peak brightness and colour depth you'd expect from 4K Blu-ray.",
   },
   {
-    q: "Is IPTV legal in Canada in 2026?",
-    a: "IPTV technology is legal in Canada. Maple4K complies with Canadian broadcasting regulations and provides access to publicly available streams. Users are responsible for ensuring they have the right to view content in their jurisdiction.",
+    q: "What internet speed do I need for 4K IPTV streaming?",
+    a: "A stable 25 Mbps connection handles butter-smooth 4K H.265 streams. Most Canadian fibre and cable plans at 75 Mbps+ run multiple simultaneous 4K streams with zero buffering. HD fallback is automatic on slower connections, and our servers prioritize low-latency Canadian routes.",
   },
   {
-    q: "How much does IPTV cost compared to cable in Canada?",
-    a: "Maple4K plans start at $9/month — compared to $80–$150/month for cable. A 12-month plan costs just $49 total, saving you over $900/year versus Bell or Rogers.",
+    q: "Does Maple4K support HDR — HDR10 or Dolby Vision?",
+    a: "Yes. Where broadcasters provide HDR feeds, Maple4K streams in HDR10 and Dolby Vision. Pair it with an Apple TV 4K, Samsung QLED, or LG OLED and your display's full HDR capability engages automatically — peak brightness, wide colour gamut, no manual configuration required.",
   },
   {
-    q: "Can I get a free IPTV trial in Canada?",
-    a: "Yes! Maple4K offers a free 2-hour trial with no credit card required. Contact us via WhatsApp or email to activate your trial instantly.",
+    q: "What codec does Maple4K use — H.264 or H.265?",
+    a: "All streams use H.265/HEVC encoding — the codec that delivers twice the picture quality of H.264 at the same bitrate. Sharper 4K, less buffering on shared connections, smaller data usage. Legacy H.264 fallback ensures compatibility with older devices that don't support hardware HEVC decoding.",
   },
   {
-    q: "What devices work with Maple4K?",
-    a: "Maple4K works on Amazon Firestick, Samsung & LG Smart TVs, Android TV boxes, Android phones, iPhones, iPads, Apple TV, MAG boxes, Windows PCs, and Macs. Any device with an IPTV player app is compatible.",
+    q: "Which IPTV player works best for 4K H.265 streams?",
+    a: "TiviMate on Android TV and Fire TV is the top choice for hardware-accelerated 4K H.265 playback with full EPG. IBO Player (included free with 12-month plans) delivers native 4K on Android TV boxes. IPTV Smarters Pro performs excellently on iOS and Apple TV 4K using native hardware decoding.",
   },
   {
-    q: "Do I need a VPN for IPTV in Canada?",
-    a: "No VPN is required to use Maple4K in Canada. Our servers are optimized for Canadian connections and deliver fast, stable streams without any additional software.",
+    q: "Can I stream 4K on multiple TVs simultaneously?",
+    a: "Yes — multi-connection plans support 2–10 independent simultaneous streams, each capable of full 4K Ultra HD. Ideal for households with multiple 4K displays, a dedicated home theatre room, and mobile devices — all running concurrently without any quality degradation.",
   },
   {
-    q: "What Canadian sports channels are included?",
-    a: "Every plan includes TSN (all feeds), Sportsnet (all regional feeds), CBC Sports, RDS, TVA Sports, and more. Full NHL, NFL, NBA, MLB, UFC, CFL, and Premier League coverage is included with no blackouts.",
+    q: "Is IPTV legal in Canada?",
+    a: "IPTV technology is legal in Canada and is the same delivery method used by major telecoms. Maple4K operates within Canadian broadcasting standards and provides access to publicly available streams. Users are responsible for ensuring content access rights in their jurisdiction.",
   },
   {
-    q: "How do I set up IPTV on my Firestick?",
-    a: "Download IPTV Smarters Pro or TiviMate from the Amazon App Store, enter the server URL, username, and password we send you, and start streaming. Full setup takes under 5 minutes. See our Firestick setup guide for step-by-step instructions.",
+    q: "Is there a free trial to test the 4K quality?",
+    a: "Yes — Maple4K offers a free 2-hour trial with no credit card required. The trial streams at full 4K quality so you can personally validate H.265 performance, HDR rendering, and channel lineup on your own hardware before committing. Activate instantly via WhatsApp or email.",
   },
 ];
 
@@ -75,7 +75,7 @@ const organizationSchema = {
   logo: "https://maple4k.ca/favicon.svg",
   email: "help@maple4k.ca",
   description:
-    "Canada's #1 IPTV subscription service. 25,000+ live channels, 120,000+ movies & series in 4K.",
+    "Canada's premium 4K IPTV service. H.265/HEVC encoded, HDR10 & Dolby Vision supported. 25,000+ live channels, 120,000+ movies & series.",
   areaServed: "CA",
 };
 
@@ -110,11 +110,12 @@ const cities = [
 const comparison = [
   { feature: "Price/month", us: "$9", cable: "$80–$150", other: "$15–$25" },
   { feature: "Live Channels", us: "25,000+", cable: "150–500", other: "5,000–15,000" },
-  { feature: "4K Streaming", us: "✓", cable: "Limited", other: "Varies" },
+  { feature: "Max Resolution", us: "4K Ultra HD", cable: "1080i", other: "1080p" },
+  { feature: "Codec", us: "H.265/HEVC", cable: "MPEG-2/H.264", other: "H.264" },
+  { feature: "HDR Support", us: "HDR10 + Dolby Vision", cable: "×", other: "Rarely" },
   { feature: "Contracts", us: "None", cable: "1–2 years", other: "Varies" },
-  { feature: "Free Trial", us: "Free 24-hour trial", cable: "×", other: "Rarely" },
+  { feature: "Free Trial", us: "Free 2-hour trial", cable: "×", other: "Rarely" },
   { feature: "Canadian Support", us: "24/7", cable: "Business hours", other: "×" },
-  { feature: "Devices", us: "All devices", cable: "1–2 boxes", other: "Limited" },
 ];
 
 export default function HomePage() {
@@ -158,7 +159,7 @@ export default function HomePage() {
                 marginBottom: 28,
               }}
             >
-              🍁 #1 IPTV Service in Canada 2026
+              🍁 Canada's Premium 4K IPTV — 2026
             </span>
             <h1
               style={{
@@ -168,8 +169,8 @@ export default function HomePage() {
                 marginBottom: 24,
               }}
             >
-              Best IPTV Service<br />
-              <span style={{ color: "#E53935" }}>in Canada 2026</span>
+              True 4K Ultra HD<br />
+              <span style={{ color: "#E53935" }}>IPTV for Canada</span>
             </h1>
             <p
               style={{
@@ -180,8 +181,8 @@ export default function HomePage() {
                 lineHeight: 1.7,
               }}
             >
-              Stream 25,000+ live TV channels and 120,000+ movies &amp; series in 4K. NHL, TSN,
-              CTV, Sportsnet &amp; more — all in one Canadian IPTV subscription.
+              H.265/HEVC encoded streams with HDR10 &amp; Dolby Vision support. 25,000+ live
+              channels and 120,000+ movies &amp; series — at the resolution your screen was built for.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
               <Link
@@ -236,8 +237,8 @@ export default function HomePage() {
           >
             {[
               { val: "25,000+", label: "Live Channels" },
-              { val: "120,000+", label: "Movies & Series" },
-              { val: "4K Ultra HD", label: "Streaming Quality" },
+              { val: "4K HDR10", label: "& Dolby Vision" },
+              { val: "H.265/HEVC", label: "Codec" },
               { val: "24/7", label: "Canadian Support" },
             ].map((s) => (
               <div key={s.val}>
@@ -295,7 +296,7 @@ export default function HomePage() {
               All Your Favourite Canadian Channels
             </h2>
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 40, fontSize: 15, maxWidth: 620, margin: "0 auto 40px" }}>
-              Maple4K includes every major Canadian network — no blackouts on NHL, CFL, or NBA games.
+              Maple4K includes every major Canadian network in the highest available quality — no blackouts, no compression artifacts on NHL, CFL, or NBA games.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", marginBottom: 32 }}>
               {["CBC", "CTV", "Global", "City TV", "CP24", "TSN 1", "TSN 2", "TSN 3", "TSN 4", "TSN 5", "Sportsnet", "Sportsnet ONE", "Sportsnet West", "Sportsnet Pacific", "RDS", "TVA Sports", "TVA", "Canal Vie"].map((ch) => (
@@ -328,10 +329,10 @@ export default function HomePage() {
               Never Miss a Game
             </h2>
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 16, fontSize: 15 }}>
-              All PPV events included at no extra charge with your Maple4K subscription.
+              All PPV events included at no extra charge. Every game streamed at maximum broadcast quality — 4K Ultra HD where available.
             </p>
             <p style={{ textAlign: "center", color: "#4ade80", fontSize: 13, marginBottom: 44 }}>
-              ✓ No blackouts &nbsp;&nbsp; ✓ All PPV events free &nbsp;&nbsp; ✓ 4K live sports
+              ✓ No blackouts &nbsp;&nbsp; ✓ All PPV events free &nbsp;&nbsp; ✓ 4K Ultra HD live sports
             </p>
           </div>
           <div style={{ overflow: "hidden" }}>
@@ -362,10 +363,10 @@ export default function HomePage() {
         <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
-              Maple4K vs Cable vs Other IPTV
+              Maple4K vs Cable vs Generic IPTV
             </h2>
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 48, fontSize: 15 }}>
-              See why Canadian IPTV subscribers are switching to Maple4K.
+              Cable tops out at 1080i. Generic IPTV uses H.264. Maple4K streams True 4K H.265/HEVC with HDR.
             </p>
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
@@ -471,7 +472,7 @@ export default function HomePage() {
               Start Streaming Today
             </h2>
             <p style={{ color: "#9ca3af", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
-              Join thousands of Canadians who switched from cable to Maple4K. Try free for 5 minutes — no credit card required.
+              The only Canadian IPTV built around True 4K Ultra HD. H.265/HEVC encoded, HDR10 & Dolby Vision supported — at $9/month. Try free, no credit card required.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link

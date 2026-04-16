@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const words = ["LIVE TV", "SPORTS", "MOVIES", "SERIES"];
+const words = ["4K ULTRA HD", "HDR MOVIES", "LIVE SPORTS", "HEVC STREAMS"];
 
 export default function HeroSection() {
   const [index, setIndex] = useState(0);
@@ -33,14 +33,14 @@ export default function HeroSection() {
         }}
       >
         <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#fd0322] animate-pulse" />
-        #1 IPTV Service in Canada 2026
+        Canada's Premium 4K IPTV — 2026
       </div>
 
       {/* Main headline */}
       <h1 className="text-5xl md:text-[72px] font-extrabold leading-[1.04] tracking-tight text-white mb-4">
-        Canada&apos;s Best
+        Canada&apos;s Premium
         <br />
-        IPTV Service
+        4K IPTV Service
       </h1>
 
       {/* Animated rotating word */}
@@ -56,9 +56,9 @@ export default function HeroSection() {
 
       {/* Subtitle */}
       <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-        Stream 25,000+ live TV channels and 120,000+ movies &amp; series in 4K.
+        H.265/HEVC encoded. HDR10 &amp; Dolby Vision supported.
         <br className="hidden sm:block" />
-        NHL, TSN, CTV, Sportsnet &amp; more — all in one Canadian subscription.
+        25,000+ live channels and 120,000+ titles — at the resolution your display deserves.
       </p>
 
       {/* CTA buttons */}
@@ -86,8 +86,8 @@ export default function HeroSection() {
       <div className="mt-14 flex flex-wrap justify-center gap-x-10 gap-y-3 text-sm">
         {[
           { n: "25,000+", l: "Live Channels" },
-          { n: "120,000+", l: "Movies & Series" },
-          { n: "4K", l: "Ultra HD" },
+          { n: "4K HDR10", l: "& Dolby Vision" },
+          { n: "H.265", l: "HEVC Codec" },
           { n: "99.9%", l: "Uptime" },
           { n: "24/7", l: "Support" },
         ].map((s) => (

@@ -8,13 +8,13 @@ export const metadata: Metadata = {
     metadataBase: new URL("https://maple4k.ca"),
     icons: { icon: "/favicon.svg" },
     title: {
-        default: "Best IPTV Canada 2026 | Maple4K",
-        template: "%s | Maple4K IPTV Canada",
+        default: "Canada's Premium 4K IPTV | Maple4K",
+        template: "%s | Maple4K 4K IPTV Canada",
     },
     description:
-        "Best IPTV service in Canada 2026. 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Plans from $9. Try free — no credit card.",
+        "Canada's premium 4K IPTV service. H.265/HEVC encoded, HDR10 & Dolby Vision support. 25,000+ live channels, 120,000+ movies & series. Plans from $9. Try free — no credit card.",
     keywords:
-        "Maple4K, best IPTV Canada, IPTV subscription Canada, IPTV service Canada, Canadian IPTV 2026",
+        "Maple4K, 4K IPTV Canada, Ultra HD IPTV, H.265 HEVC IPTV Canada, HDR IPTV 2026, Dolby Vision IPTV Canada",
     openGraph: {
         siteName: "Maple4K",
         locale: "en_CA",

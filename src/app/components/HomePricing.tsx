@@ -25,11 +25,11 @@ const planDefs = [
 const planFeatures = [
   "25,000+ Live Channels",
   "120,000+ Movies & Series",
-  "4K Ultra HD Quality",
+  "True 4K Ultra HD — H.265/HEVC",
+  "HDR10 & Dolby Vision Support",
   "NHL · TSN · Sportsnet · CTV",
   "PPV Events Included",
   "EPG & Catch-Up TV",
-  "All Devices Supported",
   "24/7 Canadian Support",
 ];
 
@@ -70,7 +70,7 @@ export default function HomePricing() {
           </span>
         </div>
         <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 36, fontSize: 15 }}>
-          All plans include 25,000+ channels, 4K streaming, and 24/7 Canadian support. Pay via Interac e-Transfer.
+          All plans include 25,000+ channels, True 4K H.265/HEVC streaming with HDR10, and 24/7 Canadian support. Pay via Interac e-Transfer.
         </p>
 
         {/* Connection selector — horizontally scrollable, starts from left */}
