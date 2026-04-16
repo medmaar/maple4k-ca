@@ -151,7 +151,7 @@ export default function HomePage() {
             position: "absolute", inset: 0,
             backgroundImage: "url('/hero.jpg')",
             backgroundSize: "cover",
-            backgroundPosition: "center 30%",
+            backgroundPosition: "70% 30%",
             zIndex: 0,
           }} />
           {/* Dark overlay for readability */}
