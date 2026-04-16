@@ -55,7 +55,7 @@ export default function HomePricing() {
   const connLabel = `${selected} Connection${selected > 1 ? "s" : ""}`;
 
   return (
-    <section style={{ padding: "80px 16px", background: "#fff8e8" }}>
+    <section style={{ padding: "80px 16px", background: "#FFE2AF" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         {/* Header */}
         <p style={{ textAlign: "center", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>

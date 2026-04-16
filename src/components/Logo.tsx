@@ -19,7 +19,7 @@ export default function Logo({ className }: { className?: string }) {
         </svg>
       </span>
       <span style={{ fontWeight: 700, fontSize: "20px", lineHeight: 1, letterSpacing: "0.04em" }}>
-        <span style={{ color: "#1A3D45" }}>MAPLE </span>
+        <span style={{ color: "#FFE2AF" }}>MAPLE </span>
         <span className="logo-4k">4K</span>
       </span>
     </Link>

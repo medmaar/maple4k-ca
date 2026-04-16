@@ -28,20 +28,20 @@ export default function Navbar() {
     <nav
       className="sticky top-0 z-50 transition-all duration-300"
       style={{
-        background: scrolled ? "rgba(255,242,210,0.96)" : "#FFE2AF",
+        background: scrolled ? "rgba(26,61,69,0.97)" : "#1A3D45",
         backdropFilter: scrolled ? "blur(16px)" : "none",
-        borderBottom: "2px solid rgba(121,201,197,0.4)",
+        borderBottom: "2px solid rgba(121,201,197,0.25)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 h-[68px] flex items-center justify-between">
         <Logo />
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-6 text-sm font-medium" style={{ color: "#3F9AAE" }}>
+        <div className="hidden md:flex items-center gap-6 text-sm font-medium" style={{ color: "#79C9C5" }}>
           {links.map((l) => (
-            <Link key={l.href} href={l.href} className="transition-colors" style={{ color: "#3F9AAE" }}
-              onMouseEnter={e => (e.currentTarget.style.color = "#1A3D45")}
-              onMouseLeave={e => (e.currentTarget.style.color = "#3F9AAE")}
+            <Link key={l.href} href={l.href} className="transition-colors" style={{ color: "#79C9C5" }}
+              onMouseEnter={e => (e.currentTarget.style.color = "#FFE2AF")}
+              onMouseLeave={e => (e.currentTarget.style.color = "#79C9C5")}
             >
               {l.label}
             </Link>
@@ -63,9 +63,9 @@ export default function Navbar() {
           aria-label="Toggle menu"
           className="md:hidden flex flex-col justify-center gap-[5px] w-8 h-8"
         >
-          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`} style={{ background: "#1A3D45" }} />
-          <span className={`block h-0.5 rounded transition-opacity duration-300 ${open ? "opacity-0" : ""}`} style={{ background: "#1A3D45" }} />
-          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} style={{ background: "#1A3D45" }} />
+          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`} style={{ background: "#FFE2AF" }} />
+          <span className={`block h-0.5 rounded transition-opacity duration-300 ${open ? "opacity-0" : ""}`} style={{ background: "#FFE2AF" }} />
+          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} style={{ background: "#FFE2AF" }} />
         </button>
       </div>
 
@@ -73,7 +73,7 @@ export default function Navbar() {
       {open && (
         <div
           className="md:hidden border-t px-4 pb-5"
-          style={{ background: "#FFE2AF", borderColor: "rgba(121,201,197,0.4)" }}
+          style={{ background: "#1A3D45", borderColor: "rgba(121,201,197,0.25)" }}
         >
           <div className="flex flex-col gap-1 pt-3">
             {links.map((l) => (
@@ -82,7 +82,7 @@ export default function Navbar() {
                 href={l.href}
                 onClick={() => setOpen(false)}
                 className="px-3 py-3 rounded-xl text-sm font-medium transition-colors"
-                style={{ color: "#3F9AAE" }}
+                style={{ color: "#79C9C5" }}
               >
                 {l.label}
               </Link>

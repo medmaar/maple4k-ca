@@ -137,8 +137,7 @@ export default function HomePage() {
         {/* ── 1. HERO ── */}
         <section
           style={{
-            background:
-              "radial-gradient(ellipse 90% 60% at 50% 0%, rgba(121,201,197,0.3) 0%, transparent 65%), #FFE2AF",
+            background: "#FFE2AF",
             padding: "90px 16px 80px",
             textAlign: "center",
           }}
@@ -255,7 +254,7 @@ export default function HomePage() {
         <HomePricing />
 
         {/* ── 4. DEVICES MARQUEE ── */}
-        <section style={{ padding: "80px 16px", background: "#fff8e8", overflow: "hidden" }}>
+        <section style={{ padding: "80px 16px", background: "#FFE2AF", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Works on All Your Devices
@@ -289,7 +288,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 5. CANADIAN CHANNELS ── */}
-        <section style={{ padding: "80px 16px", background: "#fff8e8" }}>
+        <section style={{ padding: "80px 16px", background: "#FFE2AF" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
               Canadian Content
@@ -362,7 +361,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 7. COMPARISON TABLE ── */}
-        <section style={{ padding: "80px 16px", background: "#fff8e8" }}>
+        <section style={{ padding: "80px 16px", background: "#FFE2AF" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Maple4K vs Cable vs Generic IPTV
@@ -422,7 +421,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 9. CITIES ── */}
-        <section style={{ padding: "80px 16px", background: "#fff8e8" }}>
+        <section style={{ padding: "80px 16px", background: "#FFE2AF" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Serving Canadians Coast to Coast
@@ -466,7 +465,7 @@ export default function HomePage() {
           style={{
             padding: "80px 16px",
             textAlign: "center",
-            background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(63,154,174,0.2) 0%, transparent 70%), #FFE2AF",
+            background: "#FFE2AF",
           }}
         >
           <div style={{ maxWidth: 620, margin: "0 auto" }}>
