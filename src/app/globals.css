@@ -2,17 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --background: #FFE2AF;
+  --background: #E8F4F5;
   --foreground: #1A3D45;
   --teal: #3F9AAE;
   --mint: #79C9C5;
-  --cream: #FFE2AF;
+  --cream: #E8F4F5;
   --coral: #F96E5B;
   --dark: #1A3D45;
 }
 
 body {
-  background: #FFE2AF;
+  background: #E8F4F5;
   color: #1A3D45;
 }
 
@@ -102,7 +102,7 @@ body {
   cursor: pointer;
 }
 .phone-input-wrapper .PhoneInputCountrySelect {
-  background: #FFE2AF;
+  background: #E8F4F5;
   color: #1A3D45;
   border: none;
   outline: none;

@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-6 text-sm font-medium" style={{ color: "#79C9C5" }}>
           {links.map((l) => (
             <Link key={l.href} href={l.href} className="transition-colors" style={{ color: "#79C9C5" }}
-              onMouseEnter={e => (e.currentTarget.style.color = "#FFE2AF")}
+              onMouseEnter={e => (e.currentTarget.style.color = "#E8F4F5")}
               onMouseLeave={e => (e.currentTarget.style.color = "#79C9C5")}
             >
               {l.label}
@@ -63,9 +63,9 @@ export default function Navbar() {
           aria-label="Toggle menu"
           className="md:hidden flex flex-col justify-center gap-[5px] w-8 h-8"
         >
-          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`} style={{ background: "#FFE2AF" }} />
-          <span className={`block h-0.5 rounded transition-opacity duration-300 ${open ? "opacity-0" : ""}`} style={{ background: "#FFE2AF" }} />
-          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} style={{ background: "#FFE2AF" }} />
+          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`} style={{ background: "#E8F4F5" }} />
+          <span className={`block h-0.5 rounded transition-opacity duration-300 ${open ? "opacity-0" : ""}`} style={{ background: "#E8F4F5" }} />
+          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} style={{ background: "#E8F4F5" }} />
         </button>
       </div>
 

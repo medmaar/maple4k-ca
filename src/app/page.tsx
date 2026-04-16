@@ -133,11 +133,11 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
-      <main style={{ background: "#FFE2AF", color: "#1A3D45" }}>
+      <main style={{ background: "#E8F4F5", color: "#1A3D45" }}>
         {/* ── 1. HERO ── */}
         <section
           style={{
-            background: "#FFE2AF",
+            background: "#E8F4F5",
             padding: "90px 16px 80px",
             textAlign: "center",
           }}
@@ -243,7 +243,7 @@ export default function HomePage() {
               { val: "24/7", label: "Canadian Support" },
             ].map((s) => (
               <div key={s.val}>
-                <div style={{ fontSize: 28, fontWeight: 900, color: "#FFE2AF" }}>{s.val}</div>
+                <div style={{ fontSize: 28, fontWeight: 900, color: "#E8F4F5" }}>{s.val}</div>
                 <div style={{ fontSize: 13, color: "rgba(255,255,255,0.9)", marginTop: 4 }}>{s.label}</div>
               </div>
             ))}
@@ -254,7 +254,7 @@ export default function HomePage() {
         <HomePricing />
 
         {/* ── 4. DEVICES MARQUEE ── */}
-        <section style={{ padding: "80px 16px", background: "#FFE2AF", overflow: "hidden" }}>
+        <section style={{ padding: "80px 16px", background: "#E8F4F5", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Works on All Your Devices
@@ -288,7 +288,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 5. CANADIAN CHANNELS ── */}
-        <section style={{ padding: "80px 16px", background: "#FFE2AF" }}>
+        <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
               Canadian Content
@@ -324,7 +324,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 6. SPORTS ── */}
-        <section style={{ padding: "80px 16px", background: "#FFE2AF", overflow: "hidden" }}>
+        <section style={{ padding: "80px 16px", background: "#E8F4F5", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Never Miss a Game
@@ -361,7 +361,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 7. COMPARISON TABLE ── */}
-        <section style={{ padding: "80px 16px", background: "#FFE2AF" }}>
+        <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Maple4K vs Cable vs Generic IPTV
@@ -395,7 +395,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 8. FAQ ── */}
-        <section style={{ padding: "80px 16px", background: "#FFE2AF" }}>
+        <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
             <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48, color: "#1A3D45" }}>
@@ -421,7 +421,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 9. CITIES ── */}
-        <section style={{ padding: "80px 16px", background: "#FFE2AF" }}>
+        <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Serving Canadians Coast to Coast
@@ -465,7 +465,7 @@ export default function HomePage() {
           style={{
             padding: "80px 16px",
             textAlign: "center",
-            background: "#FFE2AF",
+            background: "#E8F4F5",
           }}
         >
           <div style={{ maxWidth: 620, margin: "0 auto" }}>

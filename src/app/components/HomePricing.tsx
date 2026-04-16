@@ -55,7 +55,7 @@ export default function HomePricing() {
   const connLabel = `${selected} Connection${selected > 1 ? "s" : ""}`;
 
   return (
-    <section style={{ padding: "80px 16px", background: "#FFE2AF" }}>
+    <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         {/* Header */}
         <p style={{ textAlign: "center", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
@@ -99,7 +99,7 @@ export default function HomePricing() {
                   borderRadius: 999,
                   border: active ? "none" : "1.5px solid #1A3D45",
                   background: active ? "#1A3D45" : "transparent",
-                  color: active ? "#FFE2AF" : "#1A3D45",
+                  color: active ? "#E8F4F5" : "#1A3D45",
                   fontWeight: 700,
                   fontSize: 13,
                   cursor: "pointer",
@@ -145,7 +145,7 @@ export default function HomePricing() {
                     top: -12,
                     left: "50%",
                     transform: "translateX(-50%)",
-                    background: "#FFE2AF",
+                    background: "#E8F4F5",
                     color: cardBg,
                     fontSize: 11,
                     fontWeight: 800,
@@ -159,7 +159,7 @@ export default function HomePricing() {
               )}
               <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 6, color: "#fff" }}>{plan.name}</div>
               <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 20 }}>
-                <span style={{ fontSize: 40, fontWeight: 900, color: "#FFE2AF" }}>${prices[i]}</span>
+                <span style={{ fontSize: 40, fontWeight: 900, color: "#E8F4F5" }}>${prices[i]}</span>
                 <span style={{ fontSize: 12, color: "rgba(255,255,255,0.7)" }}>/ {connLabel}</span>
               </div>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
@@ -184,7 +184,7 @@ export default function HomePricing() {
                 )}
                 {planFeatures.map((f) => (
                   <li key={f} style={{ fontSize: 13, color: "rgba(255,255,255,0.9)", marginBottom: 6, display: "flex", alignItems: "center", gap: 6 }}>
-                    <span style={{ color: "#FFE2AF", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                    <span style={{ color: "#E8F4F5", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                   </li>
                 ))}
               </ul>
@@ -192,7 +192,7 @@ export default function HomePricing() {
                 href={getHref(selected, plan.slug)}
                 style={{
                   display: "block",
-                  background: "#FFE2AF",
+                  background: "#E8F4F5",
                   color: cardBg,
                   fontWeight: 800,
                   fontSize: 15,
