@@ -61,13 +61,10 @@ export default function FreeTrialPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <main style={{ background: "#10131E", color: "#fff", minHeight: "100vh" }}>
+      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
         <section
           className="py-20 px-4"
-          style={{
-            background:
-              "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(253,3,34,0.13) 0%, transparent 65%), #10131E",
-          }}
+          style={{ background: "transparent" }}
         >
           <div className="max-w-2xl mx-auto">
             {/* Header */}
@@ -75,9 +72,9 @@ export default function FreeTrialPage() {
               <span
                 className="inline-block text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5"
                 style={{
-                  background: "rgba(253,3,34,0.12)",
-                  border: "1px solid rgba(253,3,34,0.28)",
-                  color: "#fd0322",
+                  background: "rgba(249,110,91,0.12)",
+                  border: "1px solid rgba(249,110,91,0.35)",
+                  color: "#F96E5B",
                 }}
               >
                 No Credit Card Required
@@ -86,13 +83,13 @@ export default function FreeTrialPage() {
                 style={{
                   fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
                   fontWeight: 800,
-                  color: "#fff",
+                  color: "#000000",
                   lineHeight: 1.2,
                 }}
               >
                 Free Trial — Maple4K
               </h1>
-              <p className="text-gray-400 text-sm mt-3">
+              <p style={{ color: "#000000", fontSize: 14, marginTop: 10 }}>
                 5-minute full access. Fill out the form and we&apos;ll activate your trial within minutes.
               </p>
             </div>
@@ -101,8 +98,9 @@ export default function FreeTrialPage() {
             <div
               className="rounded-3xl p-6 md:p-8 border mb-16"
               style={{
-                background: "rgba(255,255,255,0.03)",
-                borderColor: "rgba(255,255,255,0.07)",
+                background: "#ffffff",
+                borderColor: "rgba(63,154,174,0.2)",
+                boxShadow: "0 4px 24px rgba(63,154,174,0.1)",
               }}
             >
               <PlanOrderForm plan="Free Trial" />
@@ -112,11 +110,11 @@ export default function FreeTrialPage() {
             <div>
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
-                style={{ color: "#fd0322" }}
+                style={{ color: "#F96E5B" }}
               >
                 FAQ
               </p>
-              <h2 className="text-2xl font-extrabold text-white mb-6">
+              <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#000000", marginBottom: 24 }}>
                 Frequently Asked Questions
               </h2>
               <PlanFAQ items={faqItems} />
