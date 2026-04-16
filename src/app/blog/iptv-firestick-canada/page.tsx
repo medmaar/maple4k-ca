@@ -86,30 +86,30 @@ const steps = [
 
 export default function IPTVFirestickBlogPost() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen">
+    <main className="bg-transparent min-h-screen">
       <article className="max-w-3xl mx-auto py-16 px-4">
         {/* Header */}
         <div className="mb-4 flex items-center gap-3">
-          <span className="bg-red-600 text-white text-xs px-3 py-1 rounded-full font-bold">Setup Guide</span>
-          <span className="text-gray-500 text-sm">March 5, 2026</span>
-          <span className="text-gray-500 text-sm">5 min read</span>
+          <span className="bg-[#F96E5B] text-black text-xs px-3 py-1 rounded-full font-bold">Setup Guide</span>
+          <span className="text-[#1A3D45] text-sm">March 5, 2026</span>
+          <span className="text-[#1A3D45] text-sm">5 min read</span>
         </div>
         <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-          How to Install IPTV on <span className="text-red-500">Firestick in Canada</span> (2026 Guide)
+          How to Install IPTV on <span className="text-[#F96E5B]">Firestick in Canada</span> (2026 Guide)
         </h1>
-        <p className="text-xl text-gray-300 mb-10 leading-relaxed">
+        <p className="text-xl text-black mb-10 leading-relaxed">
           Setting up IPTV on your Amazon Fire Stick in Canada takes about 5–10 minutes and requires
           no technical knowledge. This step-by-step guide covers everything — from enabling
           sideloading to loading your full channel list in 4K.
         </p>
 
         {/* Compatibility note */}
-        <div className="bg-gray-900 border border-gray-700 rounded-2xl p-6 mb-12">
-          <h2 className="text-lg font-bold mb-3 text-white">Compatible Devices</h2>
-          <p className="text-gray-400 text-sm mb-3">This guide works for all Amazon Fire TV devices:</p>
+        <div className="bg-transparent border border-gray-700 rounded-2xl p-6 mb-12">
+          <h2 className="text-lg font-bold mb-3 text-black">Compatible Devices</h2>
+          <p className="text-black text-sm mb-3">This guide works for all Amazon Fire TV devices:</p>
           <div className="flex flex-wrap gap-2">
             {["Fire Stick (1st–4th gen)", "Fire Stick 4K", "Fire Stick 4K Max", "Fire Stick Lite", "Fire TV Cube", "Fire TV Edition Smart TVs"].map((d) => (
-              <span key={d} className="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded-full border border-gray-700">{d}</span>
+              <span key={d} className="bg-gray-800 text-black text-xs px-3 py-1 rounded-full border border-gray-700">{d}</span>
             ))}
           </div>
         </div>
@@ -117,8 +117,8 @@ export default function IPTVFirestickBlogPost() {
         {/* Requirements */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Before You Start</h2>
-          <p className="text-gray-300 leading-relaxed mb-4">Make sure you have:</p>
-          <ul className="list-disc pl-6 space-y-2 text-gray-300">
+          <p className="text-black leading-relaxed mb-4">Make sure you have:</p>
+          <ul className="list-disc pl-6 space-y-2 text-black">
             <li>Amazon Fire Stick plugged in and connected to your TV</li>
             <li>Wi-Fi internet connection (minimum 25 Mbps for HD, 50 Mbps for 4K)</li>
             <li>An active Amazon account registered on the Fire Stick</li>
@@ -129,20 +129,20 @@ export default function IPTVFirestickBlogPost() {
         {/* Steps */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-8">
-            Step-by-Step: IPTV Setup on <span className="text-red-500">Fire Stick Canada</span>
+            Step-by-Step: IPTV Setup on <span className="text-[#F96E5B]">Fire Stick Canada</span>
           </h2>
           <div className="space-y-8">
             {steps.map((s) => (
-              <div key={s.step} className="bg-gray-900 rounded-2xl p-6 border border-gray-800">
+              <div key={s.step} className="bg-transparent rounded-2xl p-6 border border-gray-800">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-red-600 rounded-full flex items-center justify-center font-extrabold text-white text-lg">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#F96E5B] rounded-full flex items-center justify-center font-extrabold text-black text-lg">
                     {s.step}
                   </div>
                   <h3 className="text-xl font-bold pt-1">{s.title}</h3>
                 </div>
                 <div className="pl-14 space-y-3">
                   {s.detail.map((line, i) => (
-                    <p key={i} className="text-gray-300 text-sm leading-relaxed">{line}</p>
+                    <p key={i} className="text-black text-sm leading-relaxed">{line}</p>
                   ))}
                 </div>
               </div>
@@ -161,11 +161,11 @@ export default function IPTVFirestickBlogPost() {
               { tip: "Restart Before Big Games", desc: "Before a major NHL game or PPV event, restart your Fire Stick (Settings > My Fire TV > Restart) to ensure maximum available memory." },
               { tip: "Use the EPG", desc: "The electronic program guide makes finding content much easier. Make sure it's loaded — see Step 6 above." },
             ].map((t) => (
-              <div key={t.tip} className="flex gap-4 bg-gray-900 rounded-xl p-5 border border-gray-800">
-                <span className="text-red-500 font-bold text-lg flex-shrink-0">→</span>
+              <div key={t.tip} className="flex gap-4 bg-transparent rounded-xl p-5 border border-gray-800">
+                <span className="text-[#F96E5B] font-bold text-lg flex-shrink-0">→</span>
                 <div>
-                  <span className="font-bold text-white">{t.tip}: </span>
-                  <span className="text-gray-400 text-sm">{t.desc}</span>
+                  <span className="font-bold text-black">{t.tip}: </span>
+                  <span className="text-black text-sm">{t.desc}</span>
                 </div>
               </div>
             ))}
@@ -182,26 +182,26 @@ export default function IPTVFirestickBlogPost() {
               { q: "Channel list won't load", a: "Double-check your server URL, username, and password. Even a single character difference will prevent connection. Contact our support team via WhatsApp for help." },
               { q: "EPG not showing program info", a: "Go to app settings and manually refresh the EPG. If it still doesn't load, try deleting and re-adding the EPG URL. Our support can provide an updated URL if needed." },
             ].map((item) => (
-              <div key={item.q} className="bg-gray-900 rounded-xl p-6 border border-gray-800">
-                <h3 className="font-bold text-lg mb-3 text-red-400">{item.q}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
+              <div key={item.q} className="bg-transparent rounded-xl p-6 border border-gray-800">
+                <h3 className="font-bold text-lg mb-3 text-[#F96E5B]">{item.q}</h3>
+                <p className="text-black text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* CTA */}
-        <div className="bg-gray-900 border border-red-600 rounded-2xl p-8 text-center">
+        <div className="bg-transparent border border-[#F96E5B] rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Ready to Set Up IPTV on Your Fire Stick?</h2>
-          <p className="text-gray-300 mb-6">
+          <p className="text-black mb-6">
             Start with a free 2-hour trial. No credit card. Our team will send your credentials
             within minutes and walk you through setup if needed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/free-trial" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-xl font-bold transition-colors">
+            <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-8 py-3 rounded-xl font-bold transition-colors">
               Get Free Trial
             </a>
-            <a href="/iptv-firestick-canada" className="border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-3 rounded-xl font-bold transition-colors">
+            <a href="/iptv-firestick-canada" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-8 py-3 rounded-xl font-bold transition-colors">
               Firestick Plans
             </a>
           </div>

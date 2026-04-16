@@ -47,11 +47,11 @@ export default function IsIPTVLegalCanada() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
+      <main style={{ background: "#E8F4F5", color: "#000000", minHeight: "100vh" }}>
         <article style={{ maxWidth: 800, margin: "0 auto", padding: "80px 16px" }}>
           <time
             dateTime="2026-01-15"
-            style={{ color: "#9ca3af", fontSize: 14, display: "block", marginBottom: 16 }}
+            style={{ color: "#000000", fontSize: 14, display: "block", marginBottom: 16 }}
           >
             January 15, 2026
           </time>
@@ -147,13 +147,13 @@ export default function IsIPTVLegalCanada() {
             </p>
             <ul style={{ color: "#d1d5db", lineHeight: 2, paddingLeft: 24, marginBottom: 16 }}>
               <li>
-                <strong style={{ color: "#fff" }}>Licensed / legitimate IPTV:</strong> Services
+                <strong style={{ color: "#000000" }}>Licensed / legitimate IPTV:</strong> Services
                 that hold the rights to the content they distribute — either directly or through
                 licensing agreements. Examples include Bell Fibe TV, Rogers Ignite, Crave, and
                 services that aggregate publicly available streams.
               </li>
               <li>
-                <strong style={{ color: "#fff" }}>Unlicensed IPTV:</strong> Services that
+                <strong style={{ color: "#000000" }}>Unlicensed IPTV:</strong> Services that
                 redistribute pay-per-view events, premium cable channels, or other proprietary
                 content without holding the necessary rights. These services operate outside the
                 law — not because they use IPTV technology, but because they distribute content
@@ -192,7 +192,7 @@ export default function IsIPTVLegalCanada() {
           <section
             style={{
               background: "#1a0505",
-              border: "1px solid #E53935",
+              border: "1px solid #F96E5B",
               borderRadius: 12,
               padding: 24,
               marginBottom: 40,
@@ -208,7 +208,7 @@ export default function IsIPTVLegalCanada() {
               Questions? Email us at{" "}
               <a
                 href="mailto:help@maple4k.ca"
-                style={{ color: "#E53935", textDecoration: "underline" }}
+                style={{ color: "#F96E5B", textDecoration: "underline" }}
               >
                 help@maple4k.ca
               </a>
@@ -243,22 +243,22 @@ export default function IsIPTVLegalCanada() {
               gap: 12,
             }}
           >
-            <p style={{ color: "#9ca3af", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
+            <p style={{ color: "#000000", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
             <Link
               href="/blog/best-iptv-canada-2026"
-              style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}
+              style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}
             >
               → Best IPTV Providers in Canada 2026 – Tested &amp; Ranked
             </Link>
             <Link
               href="/blog/best-iptv-player-canada"
-              style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}
+              style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}
             >
               → Best IPTV Player Apps for Canada in 2026
             </Link>
             <Link
               href="/iptv-firestick-canada"
-              style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}
+              style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}
             >
               → How to Set Up IPTV on Firestick in Canada
             </Link>
@@ -270,8 +270,8 @@ export default function IsIPTVLegalCanada() {
               href="/pricing"
               style={{
                 display: "inline-block",
-                background: "#E53935",
-                color: "#fff",
+                background: "#F96E5B",
+                color: "#000000",
                 fontWeight: 700,
                 fontSize: 16,
                 padding: "14px 32px",

@@ -19,15 +19,15 @@ export const metadata: Metadata = {
 
 export default function DisclaimerPage() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen py-20 px-4">
+    <main className="min-h-screen" style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className2=" py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-red-500">Disclaimer</h1>
-        <p className="text-gray-400 text-sm mb-10">Last updated: April 4, 2026</p>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Disclaimer</h1>
+        <p className="text-black text-sm mb-10">Last updated: April 4, 2026</p>
 
-        <section className="space-y-8 text-gray-300 leading-relaxed">
-          <div className="bg-gray-900 border border-red-700 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-4">Content Disclaimer</h2>
-            <p className="text-gray-300 leading-relaxed">
+        <section className="space-y-8 text-black leading-relaxed">
+          <div className="bg-transparent border border-red-700 rounded-2xl p-8">
+            <h2 className="text-2xl font-bold text-black mb-4">Content Disclaimer</h2>
+            <p className="text-black leading-relaxed">
               Maple4K does not host or stream any copyrighted content. All content is
               provided by third-party providers. Users are responsible for ensuring they have
               the rights to view content in their jurisdiction.
@@ -35,7 +35,7 @@ export default function DisclaimerPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">Third-Party Content</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">Third-Party Content</h2>
             <p>
               Maple4K acts solely as a reseller and intermediary for third-party IPTV
               services. We do not create, produce, host, store, or transmit any video content
@@ -46,7 +46,7 @@ export default function DisclaimerPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">User Responsibility</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">User Responsibility</h2>
             <p className="mb-3">
               By using the Maple4K service, you acknowledge and agree that:
             </p>
@@ -59,7 +59,7 @@ export default function DisclaimerPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">No Warranties</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">No Warranties</h2>
             <p>
               The service is provided &quot;as is&quot; without warranties of any kind, express or implied.
               Maple4K does not warrant that the service will be uninterrupted, error-free,
@@ -69,7 +69,7 @@ export default function DisclaimerPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">Limitation of Liability</h2>
             <p>
               To the maximum extent permitted by applicable law, Maple4K shall not be
               liable for any indirect, incidental, special, consequential, or punitive damages
@@ -79,16 +79,16 @@ export default function DisclaimerPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">Copyright Concerns</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">Copyright Concerns</h2>
             <p>
               If you believe that copyrighted content is being made accessible through our
               platform without authorization, please contact us immediately. We take all
               copyright concerns seriously and will forward your complaint to the appropriate
               third-party provider.
             </p>
-            <div className="mt-4 bg-gray-900 rounded-xl p-6 border border-gray-800">
-              <p>Email: <a href="mailto:help@maple4k.ca" className="text-red-400 hover:underline">help@maple4k.ca</a></p>
-              <p className="text-gray-500 text-sm mt-2">Please include &quot;Copyright Concern&quot; in the subject line.</p>
+            <div className="mt-4 bg-transparent rounded-xl p-6 border border-gray-800">
+              <p>Email: <a href="mailto:help@maple4k.ca" className="text-[#F96E5B] hover:underline">help@maple4k.ca</a></p>
+              <p className="text-[#1A3D45] text-sm mt-2">Please include &quot;Copyright Concern&quot; in the subject line.</p>
             </div>
           </div>
         </section>

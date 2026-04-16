@@ -36,26 +36,26 @@ export default function IPTVAppleTVCanadaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
+      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
         <section style={{ background: "linear-gradient(135deg, #0a0a0a 0%, #1a0505 100%)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <span style={{ display: "inline-block", background: "rgba(229,57,53,0.12)", border: "1px solid rgba(229,57,53,0.3)", color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 16px", borderRadius: 999, marginBottom: 24 }}>
+            <span style={{ display: "inline-block", background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 16px", borderRadius: 999, marginBottom: 24 }}>
               Maple4K · Apple Devices
             </span>
             <h1 style={{ fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
               IPTV on Apple TV &amp; iPhone<br />
-              <span style={{ color: "#E53935" }}>in Canada 2026</span>
+              <span style={{ color: "#F96E5B" }}>in Canada 2026</span>
             </h1>
-            <p style={{ color: "#9ca3af", fontSize: 17, lineHeight: 1.7, maxWidth: 680, marginBottom: 36 }}>
+            <p style={{ color: "#000000", fontSize: 17, lineHeight: 1.7, maxWidth: 680, marginBottom: 36 }}>
               Maple4K is fully compatible with all Apple devices in Canada — Apple TV (4th gen and later), iPhone, and iPad. Stream 25,000+ live channels including CBC, TSN, and Sportsnet in 4K without a cable subscription.
             </p>
-            <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/pricing" style={{ background: "#F96E5B", color: "#000000", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Get Your Maple4K Plan →
             </Link>
           </div>
         </section>
 
-        <section style={{ padding: "60px 16px", background: "#0d0d0d" }}>
+        <section style={{ padding: "60px 16px", background: "#E8F4F5" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32 }}>
               Why Maple4K Works Great on Apple Devices
@@ -67,16 +67,16 @@ export default function IPTVAppleTVCanadaPage() {
                 { title: "AirPlay Compatible", desc: "Start streaming on iPhone and AirPlay it directly to your Apple TV or any AirPlay-compatible TV." },
                 { title: "4K HDR Streaming", desc: "Apple TV 4K supports full 4K HDR output — perfect for watching NHL games and live sports in stunning quality." },
               ].map((f) => (
-                <div key={f.title} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: "24px 20px" }}>
-                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8, color: "#E53935" }}>{f.title}</h3>
-                  <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.6 }}>{f.desc}</p>
+                <div key={f.title} style={{ background: "rgba(255,255,255,0.8)", border: "1px solid rgba(63,154,174,0.1)", borderRadius: 16, padding: "24px 20px" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8, color: "#F96E5B" }}>{f.title}</h3>
+                  <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.6 }}>{f.desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section style={{ padding: "60px 16px", background: "#0a0a0a" }}>
+        <section style={{ padding: "60px 16px", background: "#E8F4F5" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32 }}>
               How to Set Up IPTV on Apple TV or iPhone
@@ -89,11 +89,11 @@ export default function IPTVAppleTVCanadaPage() {
                 { n: "04", title: "Enter Your Credentials", desc: "Open the app and enter your Xtream Codes or M3U URL. Your channel list loads automatically." },
                 { n: "05", title: "Watch in 4K", desc: "Enjoy 25,000+ live Canadian and international channels plus 120,000+ on-demand titles." },
               ].map((s) => (
-                <div key={s.n} style={{ display: "flex", gap: 20, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
-                  <span style={{ color: "#E53935", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 36 }}>{s.n}</span>
+                <div key={s.n} style={{ display: "flex", gap: 20, background: "rgba(255,255,255,0.8)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
+                  <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 36 }}>{s.n}</span>
                   <div>
                     <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 6 }}>{s.title}</h3>
-                    <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.6 }}>{s.desc}</p>
+                    <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.6 }}>{s.desc}</p>
                   </div>
                 </div>
               ))}
@@ -101,15 +101,15 @@ export default function IPTVAppleTVCanadaPage() {
           </div>
         </section>
 
-        <section style={{ padding: "60px 16px", background: "#0d0d0d", textAlign: "center" }}>
+        <section style={{ padding: "60px 16px", background: "#E8F4F5", textAlign: "center" }}>
           <div style={{ maxWidth: 600, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 16 }}>Start Streaming on Your Apple Device</h2>
-            <p style={{ color: "#9ca3af", marginBottom: 32, fontSize: 15 }}>
+            <p style={{ color: "#000000", marginBottom: 32, fontSize: 15 }}>
               Best Maple4K service for Apple TV, iPhone, and iPad. Plans from $9/month.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>View Maple4K Plans →</Link>
-              <Link href="/free-trial" style={{ background: "transparent", border: "2px solid rgba(229,57,53,0.4)", color: "#E53935", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>Try 24h Free</Link>
+              <Link href="/pricing" style={{ background: "#F96E5B", color: "#000000", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>View Maple4K Plans →</Link>
+              <Link href="/free-trial" style={{ background: "transparent", border: "2px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>Try 24h Free</Link>
             </div>
           </div>
         </section>

@@ -19,19 +19,19 @@ export const metadata: Metadata = {
 
 export default function DMCAPage() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen py-20 px-4">
+    <main className="min-h-screen" style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className2=" py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-red-500">DMCA Policy</h1>
-        <p className="text-gray-400 text-sm mb-8">Last updated: March 28, 2026</p>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">DMCA Policy</h1>
+        <p className="text-black text-sm mb-8">Last updated: March 28, 2026</p>
 
         {/* Legal disclaimer block */}
-        <div className="bg-gray-900 border border-red-700 rounded-2xl p-8 mb-10">
-          <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-3">Legal Disclaimer</p>
-          <p className="text-gray-300 leading-relaxed">
+        <div className="bg-transparent border border-red-700 rounded-2xl p-8 mb-10">
+          <p className="text-xs font-bold text-[#F96E5B] uppercase tracking-widest mb-3">Legal Disclaimer</p>
+          <p className="text-black leading-relaxed">
             Maple4K is a reseller of third-party IPTV services. We do not host, store, or transmit
             any video content. All streams are provided by independent third-party servers. If you believe
             your copyrighted content is being accessed through our platform, please contact us at{" "}
-            <a href="mailto:help@maple4k.ca" className="text-red-400 hover:underline">
+            <a href="mailto:help@maple4k.ca" className="text-[#F96E5B] hover:underline">
               help@maple4k.ca
             </a>{" "}
             and we will forward your request to the appropriate provider. We respond to all valid DMCA
@@ -39,9 +39,9 @@ export default function DMCAPage() {
           </p>
         </div>
 
-        <section className="space-y-8 text-gray-300 leading-relaxed">
+        <section className="space-y-8 text-black leading-relaxed">
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">Overview</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">Overview</h2>
             <p>
               IPTV Subscription Canada respects the intellectual property rights of others and
               expects users of our service to do the same. In accordance with the Digital
@@ -51,7 +51,7 @@ export default function DMCAPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">Reporting Copyright Infringement</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">Reporting Copyright Infringement</h2>
             <p className="mb-3">
               If you believe that content accessible through our service infringes your copyright,
               please send a written notice containing all of the following information to our
@@ -68,17 +68,17 @@ export default function DMCAPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">DMCA Agent Contact</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">DMCA Agent Contact</h2>
             <p className="mb-2">Please send all DMCA notices to our designated agent:</p>
-            <div className="bg-gray-900 rounded-xl p-6 border border-gray-800">
-              <p className="font-bold text-white">Maple4K — DMCA Agent</p>
-              <p>Email: <a href="mailto:help@maple4k.ca" className="text-red-400 hover:underline">help@maple4k.ca</a></p>
-              <p className="text-gray-400 text-sm mt-2">Please include "DMCA Notice" in the subject line.</p>
+            <div className="bg-transparent rounded-xl p-6 border border-gray-800">
+              <p className="font-bold text-black">Maple4K — DMCA Agent</p>
+              <p>Email: <a href="mailto:help@maple4k.ca" className="text-[#F96E5B] hover:underline">help@maple4k.ca</a></p>
+              <p className="text-black text-sm mt-2">Please include "DMCA Notice" in the subject line.</p>
             </div>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">Counter-Notification</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">Counter-Notification</h2>
             <p>
               If you believe your content was removed by mistake or misidentification, you may
               submit a counter-notification to our DMCA agent. The counter-notification must
@@ -89,7 +89,7 @@ export default function DMCAPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">Repeat Infringers</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">Repeat Infringers</h2>
             <p>
               IPTV Subscription Canada reserves the right to terminate accounts of users who
               are found to be repeat infringers of intellectual property rights.
@@ -97,7 +97,7 @@ export default function DMCAPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">Disclaimer</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">Disclaimer</h2>
             <p>
               This DMCA policy is provided for informational purposes and to comply with
               applicable law. Nothing in this policy constitutes legal advice. IPTV Subscription

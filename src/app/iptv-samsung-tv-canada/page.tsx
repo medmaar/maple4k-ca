@@ -29,25 +29,25 @@ const steps = [
 
 export default function IPTVSamsungPage() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen">
+    <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-block bg-red-600 text-white text-xs px-3 py-1 rounded-full mb-4 font-bold uppercase tracking-wider">
+          <div className="inline-block bg-[#F96E5B] text-black text-xs px-3 py-1 rounded-full mb-4 font-bold uppercase tracking-wider">
             Samsung Tizen Compatible
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-            IPTV for <span className="text-red-500">Samsung TV Canada</span>
+            IPTV for <span className="text-[#F96E5B]">Samsung TV Canada</span>
           </h1>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-black mb-8 max-w-2xl mx-auto">
             Transform your Samsung Smart TV into the ultimate entertainment system.
             Stream 25,000+ live channels and 120,000+ movies in 4K — no set-top box needed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/free-trial" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               Get Free Trial
             </a>
-            <a href="/pricing" className="border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               View Pricing
             </a>
           </div>
@@ -55,12 +55,12 @@ export default function IPTVSamsungPage() {
       </section>
 
       {/* Compatible models */}
-      <section className="py-12 px-4 bg-gray-900">
+      <section className="py-12 px-4 bg-transparent">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-xl font-bold mb-6 text-gray-300">Compatible Samsung TV Models</h2>
+          <h2 className="text-xl font-bold mb-6 text-black">Compatible Samsung TV Models</h2>
           <div className="flex flex-wrap justify-center gap-4">
             {["Samsung QLED (all years)", "Samsung Neo QLED", "Samsung Frame TV", "Samsung Crystal UHD", "Samsung 4K UHD (2018+)", "Samsung 8K Models"].map((m) => (
-              <span key={m} className="bg-gray-800 border border-gray-700 px-4 py-2 rounded-full text-sm text-gray-300">
+              <span key={m} className="bg-gray-800 border border-gray-700 px-4 py-2 rounded-full text-sm text-black">
                 {m}
               </span>
             ))}
@@ -72,20 +72,20 @@ export default function IPTVSamsungPage() {
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">
-            How to Set Up IPTV on <span className="text-red-500">Samsung Smart TV</span>
+            How to Set Up IPTV on <span className="text-[#F96E5B]">Samsung Smart TV</span>
           </h2>
-          <p className="text-center text-gray-400 mb-12">
+          <p className="text-center text-black mb-12">
             No technical knowledge needed — setup takes about 5 minutes.
           </p>
           <div className="space-y-6">
             {steps.map((s) => (
-              <div key={s.step} className="flex gap-5 bg-gray-900 rounded-2xl p-6 border border-gray-800">
-                <div className="flex-shrink-0 w-10 h-10 bg-red-600 rounded-full flex items-center justify-center font-extrabold text-white">
+              <div key={s.step} className="flex gap-5 bg-transparent rounded-2xl p-6 border border-gray-800">
+                <div className="flex-shrink-0 w-10 h-10 bg-[#F96E5B] rounded-full flex items-center justify-center font-extrabold text-black">
                   {s.step}
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">{s.title}</h3>
-                  <p className="text-gray-400 text-sm">{s.desc}</p>
+                  <p className="text-black text-sm">{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -94,10 +94,10 @@ export default function IPTVSamsungPage() {
       </section>
 
       {/* Features */}
-      <section className="py-20 px-4 bg-gray-900">
+      <section className="py-20 px-4 bg-transparent">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">
-            Why Choose Our IPTV for <span className="text-red-500">Samsung TV</span>
+            Why Choose Our IPTV for <span className="text-[#F96E5B]">Samsung TV</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
@@ -106,9 +106,9 @@ export default function IPTVSamsungPage() {
               { title: "Full Remote Control", desc: "Control everything with your Samsung remote. Voice control via Bixby also works for channel search." },
               { title: "Picture-in-Picture", desc: "Watch live TV while browsing the channel guide or VOD catalog. Samsung's split-screen mode is fully supported." },
             ].map((f) => (
-              <div key={f.title} className="bg-gray-950 rounded-2xl p-6 border border-gray-800">
+              <div key={f.title} className="bg-transparent rounded-2xl p-6 border border-gray-800">
                 <h3 className="font-bold text-lg mb-2">{f.title}</h3>
-                <p className="text-gray-400 text-sm">{f.desc}</p>
+                <p className="text-black text-sm">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -119,7 +119,7 @@ export default function IPTVSamsungPage() {
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">
-            Samsung IPTV <span className="text-red-500">FAQ</span>
+            Samsung IPTV <span className="text-[#F96E5B]">FAQ</span>
           </h2>
           <div className="space-y-6">
             {[
@@ -128,9 +128,9 @@ export default function IPTVSamsungPage() {
               { q: "Can I use IPTV on my Samsung TV and phone at the same time?", a: "Yes — with a 2-device or higher plan, you can stream on your Samsung TV and any other device simultaneously." },
               { q: "Will IPTV affect my Samsung TV's performance?", a: "Not at all. The IPTV app runs as a separate app and does not affect system performance or other Samsung features." },
             ].map((item) => (
-              <div key={item.q} className="bg-gray-900 rounded-xl p-6 border border-gray-800">
-                <h3 className="font-bold text-lg mb-3 text-red-400">{item.q}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
+              <div key={item.q} className="bg-transparent rounded-xl p-6 border border-gray-800">
+                <h3 className="font-bold text-lg mb-3 text-[#F96E5B]">{item.q}</h3>
+                <p className="text-black text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}
           </div>
@@ -141,8 +141,8 @@ export default function IPTVSamsungPage() {
       <section className="py-16 px-4 bg-gradient-to-r from-red-900 to-gray-900 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Ready for IPTV on Your Samsung TV?</h2>
-          <p className="text-gray-300 mb-8">Try it free for 5 minutes — no credit card required.</p>
-          <a href="/free-trial" className="inline-block bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors">
+          <p className="text-black mb-8">Try it free for 5 minutes — no credit card required.</p>
+          <a href="/free-trial" className="inline-block bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-10 py-4 rounded-xl font-bold text-lg transition-colors">
             Get Free Trial
           </a>
         </div>

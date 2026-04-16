@@ -56,28 +56,28 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
+    <main style={{ background: "#E8F4F5", color: "#000000", minHeight: "100vh" }}>
       <section
         style={{
-          background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(229,57,53,0.12) 0%, transparent 65%), #0a0a0a",
+          background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(249,110,91,0.12) 0%, transparent 65%), #0a0a0a",
           padding: "80px 16px 60px",
           textAlign: "center",
         }}
       >
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
-          <p style={{ color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
+          <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
             Maple4K Blog
           </p>
           <h1 style={{ fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
             Maple4K Guides &amp; Reviews
           </h1>
-          <p style={{ color: "#9ca3af", fontSize: 16, lineHeight: 1.7 }}>
+          <p style={{ color: "#000000", fontSize: 16, lineHeight: 1.7 }}>
             Expert articles on IPTV setup, legality, pricing, and the best Canadian IPTV services for 2026.
           </p>
         </div>
       </section>
 
-      <section style={{ padding: "60px 16px 100px", background: "#0a0a0a" }}>
+      <section style={{ padding: "60px 16px 100px", background: "#E8F4F5" }}>
         <div style={{ maxWidth: 860, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: 24 }}>
           {posts.map((post) => (
             <Link
@@ -97,18 +97,18 @@ export default function BlogPage() {
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-                  <span style={{ background: "rgba(229,57,53,0.12)", border: "1px solid rgba(229,57,53,0.25)", color: "#E53935", fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999 }}>
+                  <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.25)", color: "#F96E5B", fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999 }}>
                     {post.tag}
                   </span>
-                  <span style={{ color: "#6b7280", fontSize: 12 }}>{post.readTime}</span>
+                  <span style={{ color: "#000000", fontSize: 12 }}>{post.readTime}</span>
                 </div>
-                <h2 style={{ fontWeight: 800, fontSize: 18, lineHeight: 1.4, color: "#fff", marginBottom: 12 }}>
+                <h2 style={{ fontWeight: 800, fontSize: 18, lineHeight: 1.4, color: "#000000", marginBottom: 12 }}>
                   {post.title}
                 </h2>
-                <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.7, marginBottom: 16 }}>
+                <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.7, marginBottom: 16 }}>
                   {post.excerpt}
                 </p>
-                <time dateTime={post.date} style={{ color: "#6b7280", fontSize: 12 }}>
+                <time dateTime={post.date} style={{ color: "#000000", fontSize: 12 }}>
                   {new Date(post.date).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" })}
                 </time>
               </article>

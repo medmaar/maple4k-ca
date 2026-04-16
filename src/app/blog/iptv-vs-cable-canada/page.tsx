@@ -60,13 +60,13 @@ export default function IPTVvsCableCanada() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <main style={{ background: "#030712", color: "#fff", minHeight: "100vh" }}>
+      <main style={{ background: "#030712", color: "#000000", minHeight: "100vh" }}>
         <article style={{ maxWidth: 768, margin: "0 auto", padding: "64px 16px" }}>
           {/* Header */}
           <div style={{ marginBottom: 16, display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-            <span style={{ background: "#dc2626", color: "#fff", fontSize: 12, padding: "4px 12px", borderRadius: 9999, fontWeight: 700 }}>Comparison</span>
-            <time dateTime="2026-02-20" style={{ color: "#6b7280", fontSize: 14 }}>February 20, 2026</time>
-            <span style={{ color: "#6b7280", fontSize: 14 }}>6 min read</span>
+            <span style={{ background: "#dc2626", color: "#000000", fontSize: 12, padding: "4px 12px", borderRadius: 9999, fontWeight: 700 }}>Comparison</span>
+            <time dateTime="2026-02-20" style={{ color: "#000000", fontSize: 14 }}>February 20, 2026</time>
+            <span style={{ color: "#000000", fontSize: 14 }}>6 min read</span>
           </div>
           <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 900, marginBottom: 24, lineHeight: 1.2 }}>
             IPTV vs Cable Canada 2026: <span style={{ color: "#ef4444" }}>Which Is Better?</span>
@@ -79,7 +79,7 @@ export default function IPTVvsCableCanada() {
 
           {/* Quick verdict */}
           <div style={{ background: "#450a0a", border: "1px solid #dc2626", borderRadius: 16, padding: 24, marginBottom: 48 }}>
-            <p style={{ fontWeight: 700, color: "#fff", fontSize: 18, marginBottom: 8 }}>Quick Verdict</p>
+            <p style={{ fontWeight: 700, color: "#000000", fontSize: 18, marginBottom: 8 }}>Quick Verdict</p>
             <p style={{ color: "#d1d5db", fontSize: 14, lineHeight: 1.75 }}>
               For the vast majority of Canadian households, <strong>IPTV is the better choice in 2026</strong>.
               It costs 80–95% less, offers far more channels, works on any device, and requires no contract.
@@ -131,7 +131,7 @@ export default function IPTVvsCableCanada() {
             </div>
 
             <p style={{ color: "#d1d5db", fontSize: 14, lineHeight: 1.75 }}>
-              View all <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link> with full pricing details.
+              View all <Link href="/pricing" style={{ color: "#F96E5B", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link> with full pricing details.
             </p>
           </section>
 
@@ -142,10 +142,10 @@ export default function IPTVvsCableCanada() {
               <table style={{ width: "100%", fontSize: 14, borderCollapse: "collapse" }}>
                 <thead style={{ background: "#111827" }}>
                   <tr>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#9ca3af" }}>Feature</th>
+                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#000000" }}>Feature</th>
                     <th style={{ textAlign: "left", padding: "12px 16px", color: "#4ade80" }}>IPTV</th>
                     <th style={{ textAlign: "left", padding: "12px 16px", color: "#f87171" }}>Cable TV</th>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#9ca3af" }}>Winner</th>
+                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#000000" }}>Winner</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -230,7 +230,7 @@ export default function IPTVvsCableCanada() {
             <h2 style={{ fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, marginBottom: 16 }}>Ready to Switch from Cable to IPTV?</h2>
             <p style={{ color: "#d1d5db", marginBottom: 24 }}>Try Maple4K free for 5 minutes — no credit card required.</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "center" }}>
-              <Link href="/free-trial" style={{ background: "#dc2626", color: "#fff", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
+              <Link href="/free-trial" style={{ background: "#dc2626", color: "#000000", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
                 Get Free Trial
               </Link>
               <Link href="/pricing" style={{ border: "1px solid #dc2626", color: "#f87171", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
@@ -241,14 +241,14 @@ export default function IPTVvsCableCanada() {
 
           {/* Related reading */}
           <div style={{ borderTop: "1px solid #1f2937", paddingTop: 32, display: "flex", flexDirection: "column", gap: 12 }}>
-            <p style={{ color: "#9ca3af", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
-            <Link href="/blog/is-iptv-legal-canada" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <p style={{ color: "#000000", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
+            <Link href="/blog/is-iptv-legal-canada" style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}>
               → Is IPTV Legal in Canada in 2026?
             </Link>
-            <Link href="/blog/best-iptv-player-canada" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <Link href="/blog/best-iptv-player-canada" style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}>
               → Best IPTV Player Apps for Canada in 2026
             </Link>
-            <Link href="/blog/best-iptv-canada-2026" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <Link href="/blog/best-iptv-canada-2026" style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}>
               → Best IPTV Providers in Canada 2026 — Tested &amp; Ranked
             </Link>
           </div>

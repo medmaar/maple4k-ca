@@ -132,13 +132,13 @@ export default function BestIPTVCanada2026() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <main style={{ background: "#030712", color: "#fff", minHeight: "100vh" }}>
+      <main style={{ background: "#030712", color: "#000000", minHeight: "100vh" }}>
         <article style={{ maxWidth: 768, margin: "0 auto", padding: "64px 16px" }}>
           {/* Header */}
           <div style={{ marginBottom: 16, display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-            <span style={{ background: "#dc2626", color: "#fff", fontSize: 12, padding: "4px 12px", borderRadius: 9999, fontWeight: 700 }}>Reviews</span>
-            <time dateTime="2026-01-10" style={{ color: "#6b7280", fontSize: 14 }}>January 10, 2026</time>
-            <span style={{ color: "#6b7280", fontSize: 14 }}>8 min read</span>
+            <span style={{ background: "#dc2626", color: "#000000", fontSize: 12, padding: "4px 12px", borderRadius: 9999, fontWeight: 700 }}>Reviews</span>
+            <time dateTime="2026-01-10" style={{ color: "#000000", fontSize: 14 }}>January 10, 2026</time>
+            <span style={{ color: "#000000", fontSize: 14 }}>8 min read</span>
           </div>
           <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 900, marginBottom: 24, lineHeight: 1.2 }}>
             Best Maple4K: <span style={{ color: "#ef4444" }}>Top Services</span> Reviewed &amp; Compared
@@ -179,7 +179,7 @@ export default function BestIPTVCanada2026() {
                 <thead style={{ background: "#111827" }}>
                   <tr>
                     {["Rank", "Service", "Channels", "Price", "Uptime", "Support", "Free Trial", "Verdict"].map((h) => (
-                      <th key={h} style={{ textAlign: "left", padding: "12px 16px", color: "#9ca3af", fontWeight: 600 }}>{h}</th>
+                      <th key={h} style={{ textAlign: "left", padding: "12px 16px", color: "#000000", fontWeight: 600 }}>{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -194,7 +194,7 @@ export default function BestIPTVCanada2026() {
                       <td style={{ padding: "16px", color: "#d1d5db" }}>{s.support}</td>
                       <td style={{ padding: "16px", color: "#d1d5db" }}>{s.trial}</td>
                       <td style={{ padding: "16px" }}>
-                        <span style={{ background: s.verdictColor, color: "#fff", fontSize: 12, padding: "4px 8px", borderRadius: 9999, fontWeight: 700 }}>
+                        <span style={{ background: s.verdictColor, color: "#000000", fontSize: 12, padding: "4px 8px", borderRadius: 9999, fontWeight: 700 }}>
                           {s.verdict}
                         </span>
                       </td>
@@ -256,7 +256,7 @@ export default function BestIPTVCanada2026() {
 
             <h3 style={{ fontSize: "clamp(18px, 2.5vw, 24px)", fontWeight: 700, marginBottom: 12, marginTop: 32 }}>Pricing</h3>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              See all <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link> — pricing is transparent and all in Canadian dollars:
+              See all <Link href="/pricing" style={{ color: "#F96E5B", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link> — pricing is transparent and all in Canadian dollars:
             </p>
             <ul style={{ paddingLeft: 24, color: "#d1d5db", lineHeight: 2, marginBottom: 16 }}>
               <li>1 Month: $9 (1 device)</li>
@@ -313,7 +313,7 @@ export default function BestIPTVCanada2026() {
               No credit card is required.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>
-              <Link href="/free-trial" style={{ background: "#dc2626", color: "#fff", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
+              <Link href="/free-trial" style={{ background: "#dc2626", color: "#000000", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
                 Get Free Trial
               </Link>
               <Link href="/pricing" style={{ border: "1px solid #dc2626", color: "#f87171", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
@@ -329,7 +329,7 @@ export default function BestIPTVCanada2026() {
               {faqSchema.mainEntity.map((item) => (
                 <div key={item.name} style={{ background: "#111827", borderRadius: 12, padding: 24, border: "1px solid #1f2937" }}>
                   <h3 style={{ fontWeight: 700, fontSize: 17, marginBottom: 12, color: "#f87171" }}>{item.name}</h3>
-                  <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.75 }}>{item.acceptedAnswer.text}</p>
+                  <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.75 }}>{item.acceptedAnswer.text}</p>
                 </div>
               ))}
             </div>
@@ -337,14 +337,14 @@ export default function BestIPTVCanada2026() {
 
           {/* Related reading */}
           <div style={{ borderTop: "1px solid #1f2937", paddingTop: 32, display: "flex", flexDirection: "column", gap: 12 }}>
-            <p style={{ color: "#9ca3af", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
-            <Link href="/blog/is-iptv-legal-canada" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <p style={{ color: "#000000", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
+            <Link href="/blog/is-iptv-legal-canada" style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}>
               → Is IPTV Legal in Canada in 2026?
             </Link>
-            <Link href="/blog/iptv-vs-cable-canada" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <Link href="/blog/iptv-vs-cable-canada" style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}>
               → IPTV vs Cable in Canada 2026 – Is It Worth Switching?
             </Link>
-            <Link href="/blog/best-iptv-player-canada" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <Link href="/blog/best-iptv-player-canada" style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}>
               → Best IPTV Player Apps for Canada in 2026
             </Link>
           </div>

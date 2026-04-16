@@ -74,70 +74,70 @@ export default function BestIPTVPlayerCanadaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
-        <section style={{ background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(229,57,53,0.12) 0%, transparent 65%), #0a0a0a", padding: "80px 16px 60px" }}>
+      <main style={{ background: "#E8F4F5", color: "#000000", minHeight: "100vh" }}>
+        <section style={{ background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(249,110,91,0.12) 0%, transparent 65%), #0a0a0a", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
-            <p style={{ color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
+            <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
               Blog · Maple4K Guide
             </p>
             <h1 style={{ fontSize: "clamp(30px, 5vw, 50px)", fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
               Best IPTV Player Apps for Canada in 2026
             </h1>
-            <p style={{ color: "#9ca3af", fontSize: 16, lineHeight: 1.7, marginBottom: 20 }}>
+            <p style={{ color: "#000000", fontSize: 16, lineHeight: 1.7, marginBottom: 20 }}>
               Choosing the right IPTV player is essential for getting the most out of your Maple4K subscription. The player you use affects stream quality, EPG performance, and overall usability. Here&apos;s our tested breakdown of the best IPTV player apps available to Canadian users in 2026.
             </p>
-            <time dateTime="2026-04-01" style={{ color: "#6b7280", fontSize: 13 }}>
+            <time dateTime="2026-04-01" style={{ color: "#000000", fontSize: 13 }}>
               Updated April 2026
             </time>
           </div>
         </section>
 
         {/* Intro */}
-        <section style={{ padding: "40px 16px 20px", background: "#0a0a0a" }}>
+        <section style={{ padding: "40px 16px 20px", background: "#E8F4F5" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
-            <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
-              All four players below are fully compatible with <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link>. They support M3U playlists and Xtream Codes — the two formats we provide. Whether you&apos;re on a Firestick, Android TV box, or iPhone, one of these will work perfectly for you.
+            <p style={{ color: "#000000", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+              All four players below are fully compatible with <Link href="/pricing" style={{ color: "#F96E5B", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link>. They support M3U playlists and Xtream Codes — the two formats we provide. Whether you&apos;re on a Firestick, Android TV box, or iPhone, one of these will work perfectly for you.
             </p>
-            <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8 }}>
+            <p style={{ color: "#000000", fontSize: 15, lineHeight: 1.8 }}>
               We tested each player with a real Maple4K subscription, evaluating channel loading speed, EPG accuracy, UI responsiveness, and overall stability on Canadian connections.
             </p>
           </div>
         </section>
 
         {/* Player reviews */}
-        <section style={{ padding: "40px 16px 80px", background: "#0a0a0a" }}>
+        <section style={{ padding: "40px 16px 80px", background: "#E8F4F5" }}>
           <div style={{ maxWidth: 800, margin: "0 auto", display: "flex", flexDirection: "column", gap: 32 }}>
             {players.map((p, i) => (
               <div key={p.name} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "32px 28px" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 12, marginBottom: 16 }}>
                   <div>
-                    <span style={{ color: "#E53935", fontSize: 13, fontWeight: 700, marginRight: 8 }}>#{i + 1}</span>
+                    <span style={{ color: "#F96E5B", fontSize: 13, fontWeight: 700, marginRight: 8 }}>#{i + 1}</span>
                     <span style={{ fontWeight: 900, fontSize: 22 }}>{p.name}</span>
                   </div>
-                  <div style={{ background: "rgba(229,57,53,0.12)", border: "1px solid rgba(229,57,53,0.3)", borderRadius: 8, padding: "6px 14px" }}>
-                    <span style={{ color: "#E53935", fontWeight: 700, fontSize: 14 }}>{p.rating}</span>
+                  <div style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", borderRadius: 8, padding: "6px 14px" }}>
+                    <span style={{ color: "#F96E5B", fontWeight: 700, fontSize: 14 }}>{p.rating}</span>
                   </div>
                 </div>
-                <p style={{ color: "#6b7280", fontSize: 13, marginBottom: 20 }}>
-                  <strong style={{ color: "#9ca3af" }}>Platform:</strong> {p.platform}
+                <p style={{ color: "#000000", fontSize: 13, marginBottom: 20 }}>
+                  <strong style={{ color: "#000000" }}>Platform:</strong> {p.platform}
                 </p>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 20 }}>
                   <div>
                     <p style={{ color: "#4ade80", fontWeight: 700, fontSize: 13, marginBottom: 8 }}>✓ Pros</p>
                     {p.pros.map((pro) => (
-                      <p key={pro} style={{ color: "#9ca3af", fontSize: 13, marginBottom: 6 }}>· {pro}</p>
+                      <p key={pro} style={{ color: "#000000", fontSize: 13, marginBottom: 6 }}>· {pro}</p>
                     ))}
                   </div>
                   <div>
                     <p style={{ color: "#f87171", fontWeight: 700, fontSize: 13, marginBottom: 8 }}>✗ Cons</p>
                     {p.cons.map((con) => (
-                      <p key={con} style={{ color: "#9ca3af", fontSize: 13, marginBottom: 6 }}>· {con}</p>
+                      <p key={con} style={{ color: "#000000", fontSize: 13, marginBottom: 6 }}>· {con}</p>
                     ))}
                   </div>
                 </div>
-                <div style={{ background: "rgba(229,57,53,0.06)", borderRadius: 10, padding: "12px 16px" }}>
+                <div style={{ background: "rgba(249,110,91,0.06)", borderRadius: 10, padding: "12px 16px" }}>
                   <p style={{ color: "#d1d5db", fontSize: 13 }}>
-                    <strong style={{ color: "#E53935" }}>Best for:</strong> {p.bestFor}
+                    <strong style={{ color: "#F96E5B" }}>Best for:</strong> {p.bestFor}
                   </p>
                 </div>
               </div>
@@ -146,21 +146,21 @@ export default function BestIPTVPlayerCanadaPage() {
         </section>
 
         {/* Summary */}
-        <section style={{ padding: "60px 16px", background: "#0d0d0d" }}>
+        <section style={{ padding: "60px 16px", background: "#E8F4F5" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 34px)", fontWeight: 800, marginBottom: 20 }}>
               Our Recommendation for Canadian IPTV Users
             </h2>
-            <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
-              For most Canadians using Maple4K on a Firestick or Android TV box, <strong style={{ color: "#fff" }}>TiviMate</strong> is the clear winner. Its polished interface, reliable EPG, and catch-up support make it the best IPTV player experience available.
+            <p style={{ color: "#000000", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+              For most Canadians using Maple4K on a Firestick or Android TV box, <strong style={{ color: "#000000" }}>TiviMate</strong> is the clear winner. Its polished interface, reliable EPG, and catch-up support make it the best IPTV player experience available.
             </p>
-            <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
-              If you&apos;re on an iPhone or Apple TV, go with <strong style={{ color: "#fff" }}>GSE Smart IPTV</strong> or <strong style={{ color: "#fff" }}>IPTV Smarters Pro</strong>. Both work flawlessly with Maple4K credentials.
+            <p style={{ color: "#000000", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+              If you&apos;re on an iPhone or Apple TV, go with <strong style={{ color: "#000000" }}>GSE Smart IPTV</strong> or <strong style={{ color: "#000000" }}>IPTV Smarters Pro</strong>. Both work flawlessly with Maple4K credentials.
             </p>
-            <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8, marginBottom: 32 }}>
-              All players listed above are compatible with <Link href="/iptv-firestick-canada" style={{ color: "#E53935", textDecoration: "none" }}>Firestick</Link>, <Link href="/iptv-android-tv-canada" style={{ color: "#E53935", textDecoration: "none" }}>Android TV</Link>, and <Link href="/iptv-apple-tv-canada" style={{ color: "#E53935", textDecoration: "none" }}>Apple TV</Link> setups. Once you have your player, all you need is a <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none" }}>Maple4K plan</Link> to get started.
+            <p style={{ color: "#000000", fontSize: 15, lineHeight: 1.8, marginBottom: 32 }}>
+              All players listed above are compatible with <Link href="/iptv-firestick-canada" style={{ color: "#F96E5B", textDecoration: "none" }}>Firestick</Link>, <Link href="/iptv-android-tv-canada" style={{ color: "#F96E5B", textDecoration: "none" }}>Android TV</Link>, and <Link href="/iptv-apple-tv-canada" style={{ color: "#F96E5B", textDecoration: "none" }}>Apple TV</Link> setups. Once you have your player, all you need is a <Link href="/pricing" style={{ color: "#F96E5B", textDecoration: "none" }}>Maple4K plan</Link> to get started.
             </p>
-            <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/pricing" style={{ background: "#F96E5B", color: "#000000", fontWeight: 700, fontSize: 15, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               View Maple4K Plans →
             </Link>
           </div>

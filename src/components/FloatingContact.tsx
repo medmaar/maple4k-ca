@@ -70,7 +70,7 @@ export default function FloatingContact() {
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? "Close contact menu" : "Open contact menu"}
         className="w-14 h-14 rounded-full shadow-xl flex items-center justify-center transition-all duration-300 hover:brightness-110"
-        style={{ background: "#fd0322" }}
+        style={{ background: "#F96E5B" }}
       >
         {open ? (
           /* X icon */

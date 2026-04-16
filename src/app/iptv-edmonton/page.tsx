@@ -52,21 +52,21 @@ export default function IPTVEdmontonPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
+      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
         {/* Hero */}
         <section
           style={{
             background:
-              "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(229,57,53,0.15) 0%, transparent 65%), #0a0a0a",
+              "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(249,110,91,0.15) 0%, transparent 65%), #0a0a0a",
             padding: "80px 16px 60px",
           }}
         >
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <span
               style={{
-                background: "rgba(229,57,53,0.12)",
-                border: "1px solid rgba(229,57,53,0.3)",
-                color: "#E53935",
+                background: "rgba(249,110,91,0.12)",
+                border: "1px solid rgba(249,110,91,0.3)",
+                color: "#F96E5B",
                 fontSize: 12,
                 fontWeight: 700,
                 padding: "4px 14px",
@@ -104,8 +104,8 @@ export default function IPTVEdmontonPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#E53935",
-                  color: "#fff",
+                  background: "#F96E5B",
+                  color: "#000000",
                   padding: "14px 36px",
                   borderRadius: 10,
                   fontWeight: 700,
@@ -117,8 +117,8 @@ export default function IPTVEdmontonPage() {
               <a
                 href="/free-trial"
                 style={{
-                  border: "2px solid rgba(229,57,53,0.5)",
-                  color: "#E53935",
+                  border: "2px solid rgba(249,110,91,0.5)",
+                  color: "#F96E5B",
                   padding: "14px 36px",
                   borderRadius: 10,
                   fontWeight: 700,
@@ -135,7 +135,7 @@ export default function IPTVEdmontonPage() {
         <section style={{ maxWidth: 900, margin: "0 auto", padding: "60px 16px" }}>
           {/* Intro */}
           <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#000000" }}>
               IPTV Edmonton — Complete Alberta Coverage
             </h2>
             <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
@@ -155,7 +155,7 @@ export default function IPTVEdmontonPage() {
 
           {/* Features */}
           <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#000000" }}>
               Why Edmonton Subscribers Choose Maple4K
             </h2>
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
@@ -188,7 +188,7 @@ export default function IPTVEdmontonPage() {
                     gap: 16,
                     alignItems: "flex-start",
                     marginBottom: 16,
-                    background: "rgba(255,255,255,0.03)",
+                    background: "rgba(255,255,255,0.8)",
                     borderRadius: 12,
                     padding: 20,
                     border: "1px solid rgba(255,255,255,0.07)",
@@ -196,8 +196,8 @@ export default function IPTVEdmontonPage() {
                 >
                   <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon}</span>
                   <div>
-                    <p style={{ fontWeight: 700, marginBottom: 4, color: "#fff" }}>{item.title}</p>
-                    <p style={{ color: "#9ca3af", lineHeight: 1.7, margin: 0 }}>{item.desc}</p>
+                    <p style={{ fontWeight: 700, marginBottom: 4, color: "#000000" }}>{item.title}</p>
+                    <p style={{ color: "#000000", lineHeight: 1.7, margin: 0 }}>{item.desc}</p>
                   </div>
                 </li>
               ))}
@@ -206,7 +206,7 @@ export default function IPTVEdmontonPage() {
 
           {/* Pricing */}
           <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#000000" }}>
               Maple4K Pricing for Edmonton — From $9/Month
             </h2>
             <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
@@ -216,13 +216,13 @@ export default function IPTVEdmontonPage() {
             </p>
             <div
               style={{
-                background: "rgba(229,57,53,0.08)",
-                border: "1px solid rgba(229,57,53,0.3)",
+                background: "rgba(249,110,91,0.08)",
+                border: "1px solid rgba(249,110,91,0.3)",
                 borderRadius: 12,
                 padding: 20,
               }}
             >
-              <p style={{ color: "#E53935", fontWeight: 700, marginBottom: 12 }}>
+              <p style={{ color: "#F96E5B", fontWeight: 700, marginBottom: 12 }}>
                 Maple4K Plans — Available in Edmonton
               </p>
               <ul style={{ color: "#d1d5db", margin: 0, paddingLeft: 20, lineHeight: 2 }}>
@@ -236,7 +236,7 @@ export default function IPTVEdmontonPage() {
 
           {/* FAQ */}
           <div>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, color: "#fff" }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, color: "#000000" }}>
               IPTV Edmonton — Frequently Asked Questions
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -244,14 +244,14 @@ export default function IPTVEdmontonPage() {
                 <div
                   key={item.q}
                   style={{
-                    background: "rgba(255,255,255,0.03)",
-                    border: "1px solid rgba(255,255,255,0.08)",
+                    background: "rgba(255,255,255,0.8)",
+                    border: "1px solid rgba(63,154,174,0.1)",
                     borderRadius: 12,
                     padding: "20px 24px",
                   }}
                 >
-                  <p style={{ fontWeight: 700, color: "#fff", marginBottom: 8 }}>{item.q}</p>
-                  <p style={{ color: "#9ca3af", lineHeight: 1.7, margin: 0 }}>{item.a}</p>
+                  <p style={{ fontWeight: 700, color: "#000000", marginBottom: 8 }}>{item.q}</p>
+                  <p style={{ color: "#000000", lineHeight: 1.7, margin: 0 }}>{item.a}</p>
                 </div>
               ))}
             </div>
@@ -261,7 +261,7 @@ export default function IPTVEdmontonPage() {
         {/* CTA */}
         <section
           style={{
-            background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(229,57,53,0.12) 0%, transparent 70%), #111",
+            background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(249,110,91,0.12) 0%, transparent 70%), #111",
             padding: "60px 16px",
             textAlign: "center",
             borderTop: "1px solid rgba(255,255,255,0.06)",
@@ -270,14 +270,14 @@ export default function IPTVEdmontonPage() {
           <h2 style={{ fontSize: "1.8rem", fontWeight: 800, marginBottom: 16 }}>
             Start Streaming IPTV in Edmonton Today
           </h2>
-          <p style={{ color: "#9ca3af", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>
+          <p style={{ color: "#000000", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>
             Plans from $9/month. Free trial available. No contracts, no hidden fees.
           </p>
           <a
             href="/pricing"
             style={{
-              background: "#E53935",
-              color: "#fff",
+              background: "#F96E5B",
+              color: "#000000",
               padding: "16px 48px",
               borderRadius: 12,
               fontWeight: 700,

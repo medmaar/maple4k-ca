@@ -75,7 +75,7 @@ export default function IPTVFirestickCanadaPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
+      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
 
         {/* Hero */}
         <section
@@ -87,8 +87,8 @@ export default function IPTVFirestickCanadaPage() {
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <span
               style={{
-                background: "#E53935",
-                color: "#fff",
+                background: "#F96E5B",
+                color: "#000000",
                 fontSize: 12,
                 fontWeight: 700,
                 padding: "4px 14px",
@@ -109,7 +109,7 @@ export default function IPTVFirestickCanadaPage() {
               }}
             >
               IPTV on Amazon Firestick in{" "}
-              <span style={{ color: "#E53935" }}>Canada 2026</span>
+              <span style={{ color: "#F96E5B" }}>Canada 2026</span>
             </h1>
             <p
               style={{
@@ -129,8 +129,8 @@ export default function IPTVFirestickCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#E53935",
-                  color: "#fff",
+                  background: "#F96E5B",
+                  color: "#000000",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -144,8 +144,8 @@ export default function IPTVFirestickCanadaPage() {
               <a
                 href="/free-trial"
                 style={{
-                  border: "2px solid #E53935",
-                  color: "#E53935",
+                  border: "2px solid #F96E5B",
+                  color: "#F96E5B",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -164,11 +164,11 @@ export default function IPTVFirestickCanadaPage() {
         <section style={{ padding: "60px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
             >
               Why Maple4K Works Great on Firestick
             </h2>
-            <p style={{ color: "#aaa", lineHeight: 1.75, marginBottom: 28 }}>
+            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 28 }}>
               Millions of Canadians use Amazon Firestick as their primary streaming device.
               Maple4K is engineered to take full advantage of the Firestick hardware —
               delivering reliable, high-speed Maple4K streams without complicated setup.
@@ -200,7 +200,7 @@ export default function IPTVFirestickCanadaPage() {
                 <li
                   key={item.title}
                   style={{
-                    background: "#111",
+                    background: "transparent",
                     border: "1px solid #2a0a0a",
                     borderRadius: 14,
                     padding: "20px 24px",
@@ -211,7 +211,7 @@ export default function IPTVFirestickCanadaPage() {
                 >
                   <span
                     style={{
-                      background: "#E53935",
+                      background: "#F96E5B",
                       width: 10,
                       height: 10,
                       borderRadius: "50%",
@@ -221,7 +221,7 @@ export default function IPTVFirestickCanadaPage() {
                   />
                   <div>
                     <strong
-                      style={{ color: "#fff", display: "block", marginBottom: 4 }}
+                      style={{ color: "#000000", display: "block", marginBottom: 4 }}
                     >
                       {item.title}
                     </strong>
@@ -241,11 +241,11 @@ export default function IPTVFirestickCanadaPage() {
         <section style={{ padding: "60px 16px", background: "#0f0f0f" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 8 }}
+              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 8 }}
             >
               How to Set Up IPTV on Your Firestick
             </h2>
-            <p style={{ color: "#aaa", marginBottom: 36 }}>
+            <p style={{ color: "#000000", marginBottom: 36 }}>
               Four simple steps — up and streaming in under 5 minutes.
             </p>
             <ol
@@ -262,7 +262,7 @@ export default function IPTVFirestickCanadaPage() {
                 <li
                   key={s.num}
                   style={{
-                    background: "#111",
+                    background: "transparent",
                     border: "1px solid #1f1f1f",
                     borderRadius: 14,
                     padding: "22px 24px",
@@ -273,8 +273,8 @@ export default function IPTVFirestickCanadaPage() {
                 >
                   <span
                     style={{
-                      background: "#E53935",
-                      color: "#fff",
+                      background: "#F96E5B",
+                      color: "#000000",
                       fontWeight: 800,
                       fontSize: "1rem",
                       borderRadius: "50%",
@@ -291,7 +291,7 @@ export default function IPTVFirestickCanadaPage() {
                   <div>
                     <strong
                       style={{
-                        color: "#fff",
+                        color: "#000000",
                         fontSize: "1rem",
                         display: "block",
                         marginBottom: 6,
@@ -315,18 +315,18 @@ export default function IPTVFirestickCanadaPage() {
         <section style={{ padding: "60px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
             >
               What Canadian Channels Do You Get?
             </h2>
-            <p style={{ color: "#aaa", lineHeight: 1.75, marginBottom: 16 }}>
+            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 16 }}>
               Maple4K delivers every major Canadian channel straight to your Firestick.
               Never miss a live NHL game on TSN or Sportsnet, catch the latest on CBC News
               Network, follow hit dramas on CTV and Global, or cheer on your team with RDS and
               TVA Sports. Our Maple4K library includes all regional variants of each network
               so you always get your local feed.
             </p>
-            <p style={{ color: "#aaa", lineHeight: 1.75, marginBottom: 24 }}>
+            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 24 }}>
               Beyond Canadian content, the full 25,000+ channel lineup spans US, UK, European,
               Middle Eastern, and South Asian networks — plus a 120,000+ title VOD library of
               movies and series, all accessible from the Firestick remote.
@@ -351,7 +351,7 @@ export default function IPTVFirestickCanadaPage() {
                   style={{
                     background: "#1a0505",
                     border: "1px solid #3a1010",
-                    color: "#fff",
+                    color: "#000000",
                     padding: "6px 16px",
                     borderRadius: 999,
                     fontSize: "0.85rem",
@@ -369,7 +369,7 @@ export default function IPTVFirestickCanadaPage() {
         <section style={{ padding: "60px 16px", background: "#0f0f0f" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
             >
               Firestick IPTV Plans — Simple Canadian Pricing
             </h2>
@@ -390,18 +390,18 @@ export default function IPTVFirestickCanadaPage() {
                 <div
                   key={plan.period}
                   style={{
-                    background: "#111",
+                    background: "transparent",
                     border: "1px solid #2a0a0a",
                     borderRadius: 14,
                     padding: "24px 20px",
                     textAlign: "center",
                   }}
                 >
-                  <div style={{ color: "#aaa", fontSize: "0.9rem", marginBottom: 8 }}>
+                  <div style={{ color: "#000000", fontSize: "0.9rem", marginBottom: 8 }}>
                     {plan.period}
                   </div>
                   <div
-                    style={{ color: "#E53935", fontSize: "1.6rem", fontWeight: 800 }}
+                    style={{ color: "#F96E5B", fontSize: "1.6rem", fontWeight: 800 }}
                   >
                     {plan.price}
                   </div>
@@ -412,8 +412,8 @@ export default function IPTVFirestickCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#E53935",
-                  color: "#fff",
+                  background: "#F96E5B",
+                  color: "#000000",
                   padding: "14px 36px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -444,7 +444,7 @@ export default function IPTVFirestickCanadaPage() {
               hours — no credit card required. Questions? Email{" "}
               <a
                 href="mailto:help@maple4k.ca"
-                style={{ color: "#E53935", textDecoration: "none" }}
+                style={{ color: "#F96E5B", textDecoration: "none" }}
               >
                 help@maple4k.ca
               </a>
@@ -456,8 +456,8 @@ export default function IPTVFirestickCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#E53935",
-                  color: "#fff",
+                  background: "#F96E5B",
+                  color: "#000000",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -470,8 +470,8 @@ export default function IPTVFirestickCanadaPage() {
               <a
                 href="/free-trial"
                 style={{
-                  border: "2px solid #E53935",
-                  color: "#E53935",
+                  border: "2px solid #F96E5B",
+                  color: "#F96E5B",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,
