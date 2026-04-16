@@ -92,7 +92,7 @@ export default function Pricing1MonthPage() {
         >
           <div className="max-w-2xl mx-auto">
             {/* 1. Page title */}
-            <div style={{ background: "#1A3D45", borderRadius: 24, padding: "40px 32px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", marginBottom: 24, textAlign: "center" }}>
+            <div style={{ background: "#1A3D45", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", marginBottom: 24, textAlign: "center" }}>
               <span style={{ background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 20 }}>
                 Maple4K · 1 Month
               </span>
