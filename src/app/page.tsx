@@ -287,15 +287,15 @@ export default function HomePage() {
         </section>
 
         {/* ── 5. CANADIAN CHANNELS ── */}
-        <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
+        <section style={{ padding: "80px 16px", background: "#fff8e8" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
+            <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
               Canadian Content
             </p>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 16 }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 16, color: "#1A3D45" }}>
               All Your Favourite Canadian Channels
             </h2>
-            <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 40, fontSize: 15, maxWidth: 620, margin: "0 auto 40px" }}>
+            <p style={{ textAlign: "center", color: "#4a7a84", marginBottom: 40, fontSize: 15, maxWidth: 620, margin: "0 auto 40px" }}>
               Maple4K includes every major Canadian network in the highest available quality — no blackouts, no compression artifacts on NHL, CFL, or NBA games.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", marginBottom: 32 }}>
@@ -303,35 +303,35 @@ export default function HomePage() {
                 <span
                   key={ch}
                   style={{
-                    background: "rgba(255,255,255,0.05)",
-                    border: "1px solid rgba(255,255,255,0.1)",
+                    background: "rgba(63,154,174,0.08)",
+                    border: "1px solid rgba(63,154,174,0.2)",
                     borderRadius: 8,
                     padding: "8px 16px",
                     fontSize: 13,
                     fontWeight: 600,
-                    color: "#d1d5db",
+                    color: "#1A3D45",
                   }}
                 >
                   {ch}
                 </span>
               ))}
             </div>
-            <p style={{ textAlign: "center", color: "#6b7280", fontSize: 13 }}>
+            <p style={{ textAlign: "center", color: "#4a7a84", fontSize: 13 }}>
               + 25,000+ more channels from around the world
             </p>
           </div>
         </section>
 
         {/* ── 6. SPORTS ── */}
-        <section style={{ padding: "80px 16px", background: "#0d0d0d", overflow: "hidden" }}>
+        <section style={{ padding: "80px 16px", background: "#FFE2AF", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Never Miss a Game
             </h2>
-            <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 16, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#4a7a84", marginBottom: 16, fontSize: 15 }}>
               All PPV events included at no extra charge. Every game streamed at maximum broadcast quality — 4K Ultra HD where available.
             </p>
-            <p style={{ textAlign: "center", color: "#4ade80", fontSize: 13, marginBottom: 44 }}>
+            <p style={{ textAlign: "center", color: "#3F9AAE", fontSize: 13, marginBottom: 44 }}>
               ✓ No blackouts &nbsp;&nbsp; ✓ All PPV events free &nbsp;&nbsp; ✓ 4K Ultra HD live sports
             </p>
           </div>
@@ -342,11 +342,11 @@ export default function HomePage() {
                   key={i}
                   style={{
                     flexShrink: 0,
-                    background: "rgba(229,57,53,0.06)",
-                    border: "1px solid rgba(229,57,53,0.15)",
+                    background: "rgba(249,110,91,0.06)",
+                    border: "1px solid rgba(249,110,91,0.15)",
                     borderRadius: 14,
                     padding: "14px 24px",
-                    color: "#fff",
+                    color: "#1A3D45",
                     fontSize: 13,
                     fontWeight: 700,
                     whiteSpace: "nowrap",
@@ -360,31 +360,31 @@ export default function HomePage() {
         </section>
 
         {/* ── 7. COMPARISON TABLE ── */}
-        <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
+        <section style={{ padding: "80px 16px", background: "#fff8e8" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Maple4K vs Cable vs Generic IPTV
             </h2>
-            <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 48, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#4a7a84", marginBottom: 48, fontSize: 15 }}>
               Cable tops out at 1080i. Generic IPTV uses H.264. Maple4K streams True 4K H.265/HEVC with HDR.
             </p>
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
                 <thead>
                   <tr>
-                    <th style={{ textAlign: "left", padding: "14px 16px", color: "#6b7280", fontWeight: 600, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>Feature</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#E53935", fontWeight: 700, borderBottom: "1px solid rgba(229,57,53,0.3)", background: "rgba(229,57,53,0.06)" }}>Maple4K</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#6b7280", fontWeight: 600, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>Cable</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#6b7280", fontWeight: 600, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>Other IPTV</th>
+                    <th style={{ textAlign: "left", padding: "14px 16px", color: "#4a7a84", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Feature</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#F96E5B", fontWeight: 700, borderBottom: "1px solid rgba(249,110,91,0.3)", background: "rgba(249,110,91,0.06)" }}>Maple4K</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#4a7a84", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Cable</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#4a7a84", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Other IPTV</th>
                   </tr>
                 </thead>
                 <tbody>
                   {comparison.map((row, i) => (
-                    <tr key={row.feature} style={{ background: i % 2 === 0 ? "transparent" : "rgba(255,255,255,0.02)" }}>
-                      <td style={{ padding: "14px 16px", color: "#d1d5db", fontWeight: 500 }}>{row.feature}</td>
-                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#4ade80", fontWeight: 600, background: "rgba(229,57,53,0.04)" }}>{row.us}</td>
-                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#6b7280" }}>{row.cable}</td>
-                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#6b7280" }}>{row.other}</td>
+                    <tr key={row.feature} style={{ background: i % 2 === 0 ? "transparent" : "rgba(63,154,174,0.04)" }}>
+                      <td style={{ padding: "14px 16px", color: "#1A3D45", fontWeight: 500 }}>{row.feature}</td>
+                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#3F9AAE", fontWeight: 600, background: "rgba(249,110,91,0.04)" }}>{row.us}</td>
+                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#4a7a84" }}>{row.cable}</td>
+                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#4a7a84" }}>{row.other}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -394,10 +394,10 @@ export default function HomePage() {
         </section>
 
         {/* ── 8. FAQ ── */}
-        <section style={{ padding: "80px 16px", background: "#0d0d0d" }}>
+        <section style={{ padding: "80px 16px", background: "#FFE2AF" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
-            <p style={{ color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48 }}>
+            <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48, color: "#1A3D45" }}>
               Frequently Asked Questions
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -405,14 +405,14 @@ export default function HomePage() {
                 <div
                   key={faq.q}
                   style={{
-                    background: "rgba(255,255,255,0.03)",
-                    border: "1px solid rgba(255,255,255,0.08)",
+                    background: "rgba(63,154,174,0.08)",
+                    border: "1px solid rgba(63,154,174,0.2)",
                     borderRadius: 16,
                     padding: "24px 28px",
                   }}
                 >
-                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 10, color: "#fff" }}>{faq.q}</h3>
-                  <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
+                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 10, color: "#1A3D45" }}>{faq.q}</h3>
+                  <p style={{ color: "#4a7a84", fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
                 </div>
               ))}
             </div>
@@ -420,12 +420,12 @@ export default function HomePage() {
         </section>
 
         {/* ── 9. CITIES ── */}
-        <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
+        <section style={{ padding: "80px 16px", background: "#fff8e8" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Serving Canadians Coast to Coast
             </h2>
-            <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 48, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#4a7a84", marginBottom: 48, fontSize: 15 }}>
               Fast Maple4K servers optimized for every major Canadian city.
             </p>
             <div
@@ -440,13 +440,13 @@ export default function HomePage() {
                   key={city.name}
                   href={city.href}
                   style={{
-                    background: "rgba(255,255,255,0.04)",
-                    border: "1px solid rgba(255,255,255,0.08)",
+                    background: "rgba(63,154,174,0.08)",
+                    border: "1px solid rgba(63,154,174,0.2)",
                     borderRadius: 12,
                     padding: "18px 16px",
                     textAlign: "center",
                     textDecoration: "none",
-                    color: "#d1d5db",
+                    color: "#1A3D45",
                     fontSize: 14,
                     fontWeight: 600,
                     display: "block",
@@ -464,21 +464,21 @@ export default function HomePage() {
           style={{
             padding: "80px 16px",
             textAlign: "center",
-            background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(229,57,53,0.14) 0%, transparent 70%), #0d0d0d",
+            background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(63,154,174,0.2) 0%, transparent 70%), #FFE2AF",
           }}
         >
           <div style={{ maxWidth: 620, margin: "0 auto" }}>
-            <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 900, marginBottom: 16 }}>
+            <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 900, marginBottom: 16, color: "#1A3D45" }}>
               Start Streaming Today
             </h2>
-            <p style={{ color: "#9ca3af", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
+            <p style={{ color: "#4a7a84", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
               The only Canadian IPTV built around True 4K Ultra HD. H.265/HEVC encoded, HDR10 & Dolby Vision supported — at $9/month. Try free, no credit card required.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link
                 href="/free-trial"
                 style={{
-                  background: "#E53935",
+                  background: "#F96E5B",
                   color: "#fff",
                   fontWeight: 700,
                   fontSize: 16,
@@ -494,8 +494,8 @@ export default function HomePage() {
                 href="/pricing"
                 style={{
                   background: "transparent",
-                  border: "2px solid rgba(229,57,53,0.4)",
-                  color: "#E53935",
+                  border: "2px solid rgba(249,110,91,0.4)",
+                  color: "#F96E5B",
                   fontWeight: 700,
                   fontSize: 16,
                   padding: "16px 36px",
