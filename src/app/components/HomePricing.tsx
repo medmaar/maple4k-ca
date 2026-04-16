@@ -61,7 +61,7 @@ export default function HomePricing() {
         <p style={{ textAlign: "center", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
           Transparent Pricing
         </p>
-        <h2 style={{ textAlign: "center", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
+        <h2 style={{ textAlign: "center", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, marginBottom: 12, color: "#000000" }}>
           Maple4K Subscription Plans
         </h2>
         <div style={{ textAlign: "center", marginBottom: 20 }}>
@@ -69,7 +69,7 @@ export default function HomePricing() {
             50% OFF Today!
           </span>
         </div>
-        <p style={{ textAlign: "center", color: "#1A3D45", marginBottom: 36, fontSize: 15 }}>
+        <p style={{ textAlign: "center", color: "#000000", marginBottom: 36, fontSize: 15 }}>
           All plans include 25,000+ channels, True 4K H.265/HEVC streaming with HDR10, and 24/7 Canadian support. Pay via Interac e-Transfer.
         </p>
 
