@@ -11,39 +11,15 @@ export const metadata: Metadata = {
 };
 
 const steps = [
-  {
-    number: "01",
-    title: "Refer a Friend",
-    description:
-      "Share your referral with a friend who hasn't used our service before. Send them your info via WhatsApp or fill out the referral form below.",
-  },
-  {
-    number: "02",
-    title: "Friend Subscribes",
-    description:
-      "Your friend signs up and purchases at least a 12-month subscription to Maple4K.",
-  },
-  {
-    number: "03",
-    title: "You Get +1 Year FREE",
-    description:
-      "Once their payment is verified, 12 months are added to your account automatically. No cap — refer as many friends as you want!",
-  },
+  { number: "01", title: "Refer a Friend", description: "Share your referral with a friend who hasn't used our service before. Send them your info via WhatsApp or fill out the referral form below." },
+  { number: "02", title: "Friend Subscribes", description: "Your friend signs up and purchases at least a 12-month subscription to Maple4K." },
+  { number: "03", title: "You Get +1 Year FREE", description: "Once their payment is verified, 12 months are added to your account automatically. No cap — refer as many friends as you want!" },
 ];
 
 const rewardCards = [
-  {
-    title: "+1 Year Per Referral",
-    desc: "Every approved referral adds 12 free months to your subscription.",
-  },
-  {
-    title: "No Limit",
-    desc: "Refer as many people as you want. Each successful referral earns another bonus year.",
-  },
-  {
-    title: "Fast Review",
-    desc: "Our team manually reviews and approves referrals quickly.",
-  },
+  { title: "+1 Year Per Referral", desc: "Every approved referral adds 12 free months to your subscription.", bg: "#1A3D45" },
+  { title: "No Limit", desc: "Refer as many people as you want. Each successful referral earns another bonus year.", bg: "#3F9AAE" },
+  { title: "Fast Review", desc: "Our team manually reviews and approves referrals quickly.", bg: "#F96E5B" },
 ];
 
 const rules = [
@@ -55,54 +31,40 @@ const rules = [
 
 export default function ReferralPage() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen">
+    <main style={{ background: "#E8F4F5", color: "#000000", minHeight: "100vh" }}>
+
       {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
-        <div className="max-w-3xl mx-auto">
-          <span className="inline-block bg-red-600 text-white text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">
+      <section style={{ background: "#1A3D45", padding: "80px 16px", textAlign: "center" }}>
+        <div style={{ maxWidth: 720, margin: "0 auto" }}>
+          <span style={{ display: "inline-block", background: "rgba(249,110,91,0.2)", border: "1px solid rgba(249,110,91,0.5)", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 18px", borderRadius: 999, marginBottom: 24 }}>
             Referral Program
           </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-            Refer a Friend,{" "}
-            <span className="text-red-500">Get +1 Year Free</span>
+          <h1 style={{ fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 900, lineHeight: 1.1, color: "#ffffff", marginBottom: 20 }}>
+            Refer a Friend,{" "}<span style={{ color: "#F96E5B" }}>Get +1 Year Free</span>
           </h1>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p style={{ fontSize: 18, color: "rgba(255,255,255,0.8)", marginBottom: 32, lineHeight: 1.7 }}>
             Share Maple4K with people you know and earn free subscription time when they join.
           </p>
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-            <span className="flex items-center gap-2">
-              <span className="text-green-400">✓</span> Unlimited referrals
-            </span>
-            <span className="flex items-center gap-2">
-              <span className="text-green-400">✓</span> +12 months per referral
-            </span>
-            <span className="flex items-center gap-2">
-              <span className="text-green-400">✓</span> Fast review
-            </span>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 24, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
+            <span><span style={{ color: "#79C9C5" }}>✓</span> Unlimited referrals</span>
+            <span><span style={{ color: "#79C9C5" }}>✓</span> +12 months per referral</span>
+            <span><span style={{ color: "#79C9C5" }}>✓</span> Fast review</span>
           </div>
         </div>
       </section>
 
       {/* How it works */}
-      <section className="py-20 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">
-            How It <span className="text-red-500">Works</span>
-          </h2>
-          <p className="text-center text-gray-400 mb-14">
-            Three simple steps to earn free service.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section style={{ padding: "80px 16px" }}>
+        <div style={{ maxWidth: 960, margin: "0 auto" }}>
+          <p style={{ textAlign: "center", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>Simple Process</p>
+          <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#000000" }}>How It Works</h2>
+          <p style={{ textAlign: "center", color: "#000000", marginBottom: 48, fontSize: 15 }}>Three simple steps to earn free service.</p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
             {steps.map((step) => (
-              <div
-                key={step.number}
-                className="relative bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-red-700 transition-colors"
-              >
-                <div className="text-5xl font-extrabold text-red-600 opacity-30 mb-4 leading-none">
-                  {step.number}
-                </div>
-                <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{step.description}</p>
+              <div key={step.number} style={{ background: "#ffffff", border: "2px solid rgba(63,154,174,0.2)", borderRadius: 20, padding: "36px 28px", boxShadow: "0 4px 20px rgba(63,154,174,0.1)" }}>
+                <div style={{ fontSize: 52, fontWeight: 900, color: "#3F9AAE", opacity: 0.25, lineHeight: 1, marginBottom: 16 }}>{step.number}</div>
+                <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 10, color: "#000000" }}>{step.title}</h3>
+                <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.7 }}>{step.description}</p>
               </div>
             ))}
           </div>
@@ -110,20 +72,15 @@ export default function ReferralPage() {
       </section>
 
       {/* Reward cards */}
-      <section className="py-16 px-4 bg-gray-900">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Your <span className="text-red-500">Rewards</span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <section style={{ padding: "0 16px 80px" }}>
+        <div style={{ maxWidth: 960, margin: "0 auto" }}>
+          <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48, color: "#000000" }}>Your Rewards</h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 20 }}>
             {rewardCards.map((card) => (
-              <div
-                key={card.title}
-                className="bg-gray-950 border border-gray-800 rounded-2xl p-8 text-center hover:border-red-700 transition-colors"
-              >
-                <div className="text-red-500 text-4xl font-extrabold mb-3">★</div>
-                <h3 className="text-lg font-bold mb-3 text-white">{card.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{card.desc}</p>
+              <div key={card.title} style={{ background: card.bg, borderRadius: 20, padding: "36px 28px", textAlign: "center", boxShadow: "0 8px 28px rgba(0,0,0,0.15)" }}>
+                <div style={{ fontSize: 32, marginBottom: 12, color: "#fff" }}>★</div>
+                <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 10, color: "#ffffff" }}>{card.title}</h3>
+                <p style={{ color: "rgba(255,255,255,0.85)", fontSize: 14, lineHeight: 1.7 }}>{card.desc}</p>
               </div>
             ))}
           </div>
@@ -131,12 +88,10 @@ export default function ReferralPage() {
       </section>
 
       {/* Referral form */}
-      <section className="py-20 px-4">
-        <div className="max-w-xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">
-            Submit Your <span className="text-red-500">Referral</span>
-          </h2>
-          <p className="text-center text-gray-400 mb-10 text-sm">
+      <section style={{ padding: "0 16px 80px" }}>
+        <div style={{ maxWidth: 540, margin: "0 auto" }}>
+          <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 900, marginBottom: 12, color: "#000000" }}>Submit Your Referral</h2>
+          <p style={{ textAlign: "center", color: "#000000", marginBottom: 36, fontSize: 14 }}>
             Fill in your details and your friend&apos;s details below. We&apos;ll take care of the rest.
           </p>
           <ReferralForm />
@@ -144,19 +99,14 @@ export default function ReferralPage() {
       </section>
 
       {/* Rules */}
-      <section className="py-20 px-4 bg-gray-900">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Program <span className="text-red-500">Rules</span>
-          </h2>
-          <div className="space-y-4">
+      <section style={{ padding: "0 16px 80px" }}>
+        <div style={{ maxWidth: 720, margin: "0 auto" }}>
+          <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 900, marginBottom: 40, color: "#000000" }}>Program Rules</h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             {rules.map((rule, i) => (
-              <div
-                key={i}
-                className="flex items-start gap-4 bg-gray-950 border border-gray-800 rounded-xl px-6 py-5"
-              >
-                <span className="text-red-500 font-bold text-lg mt-0.5">{i + 1}.</span>
-                <p className="text-gray-300 text-sm leading-relaxed">{rule}</p>
+              <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 16, background: "#ffffff", border: "1px solid rgba(63,154,174,0.2)", borderRadius: 14, padding: "20px 24px" }}>
+                <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: 18, flexShrink: 0, lineHeight: 1.4 }}>{i + 1}.</span>
+                <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.7 }}>{rule}</p>
               </div>
             ))}
           </div>
@@ -164,28 +114,23 @@ export default function ReferralPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-gradient-to-r from-red-900 to-gray-900 text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">Not a Customer Yet?</h2>
-          <p className="text-gray-300 mb-8">
-            Try Maple4K free for 5 minutes — no credit card required. Then start referring and earn free years.
+      <section style={{ padding: "80px 16px", background: "#1A3D45", textAlign: "center" }}>
+        <div style={{ maxWidth: 620, margin: "0 auto" }}>
+          <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Not a Customer Yet?</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
+            Try Maple4K free — no credit card required. Then start referring and earn free years.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/free-trial"
-              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors"
-            >
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "center" }}>
+            <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "16px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none", boxShadow: "0 6px 20px rgba(249,110,91,0.4)" }}>
               Get Free Trial
             </a>
-            <a
-              href="/pricing"
-              className="border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors"
-            >
-              View Pricing
+            <a href="/pricing" style={{ background: "transparent", border: "2px solid #79C9C5", color: "#79C9C5", padding: "16px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
+              View Pricing →
             </a>
           </div>
         </div>
       </section>
+
     </main>
   );
 }

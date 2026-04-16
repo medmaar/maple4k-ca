@@ -137,18 +137,36 @@ export default function HomePage() {
         {/* ── 1. HERO ── */}
         <section
           style={{
-            background: "#E8F4F5",
-            padding: "90px 16px 80px",
+            position: "relative",
+            padding: "110px 16px 100px",
             textAlign: "center",
+            overflow: "hidden",
+            minHeight: 540,
+            display: "flex",
+            alignItems: "center",
           }}
         >
-          <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          {/* Background image */}
+          <div style={{
+            position: "absolute", inset: 0,
+            backgroundImage: "url('/hero.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center 30%",
+            zIndex: 0,
+          }} />
+          {/* Dark overlay for readability */}
+          <div style={{
+            position: "absolute", inset: 0,
+            background: "linear-gradient(to bottom, rgba(26,61,69,0.72) 0%, rgba(26,61,69,0.85) 100%)",
+            zIndex: 1,
+          }} />
+          <div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 2 }}>
             <span
               style={{
                 display: "inline-block",
-                background: "rgba(63,154,174,0.12)",
-                border: "1px solid rgba(63,154,174,0.35)",
-                color: "#3F9AAE",
+                background: "rgba(249,110,91,0.2)",
+                border: "1px solid rgba(249,110,91,0.6)",
+                color: "#F96E5B",
                 fontSize: 12,
                 fontWeight: 700,
                 letterSpacing: "0.1em",
@@ -166,7 +184,7 @@ export default function HomePage() {
                 fontWeight: 900,
                 lineHeight: 1.1,
                 marginBottom: 24,
-                color: "#000000",
+                color: "#ffffff",
               }}
             >
               True 4K Ultra HD<br />
@@ -175,7 +193,7 @@ export default function HomePage() {
             <p
               style={{
                 fontSize: "clamp(16px, 2vw, 20px)",
-                color: "#000000",
+                color: "rgba(255,255,255,0.88)",
                 maxWidth: 640,
                 margin: "0 auto 36px",
                 lineHeight: 1.7,
@@ -196,7 +214,7 @@ export default function HomePage() {
                   borderRadius: 14,
                   textDecoration: "none",
                   display: "inline-block",
-                  boxShadow: "0 6px 20px rgba(249,110,91,0.4)",
+                  boxShadow: "0 6px 20px rgba(249,110,91,0.5)",
                 }}
               >
                 Subscribe Now →
@@ -205,8 +223,8 @@ export default function HomePage() {
                 href="/free-trial"
                 style={{
                   background: "transparent",
-                  border: "2px solid #3F9AAE",
-                  color: "#3F9AAE",
+                  border: "2px solid #fff",
+                  color: "#fff",
                   fontWeight: 700,
                   fontSize: 17,
                   padding: "16px 36px",
@@ -218,7 +236,7 @@ export default function HomePage() {
                 Try Free Trial
               </Link>
             </div>
-            <p style={{ color: "#000000", fontSize: 13 }}>
+            <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 13 }}>
               ✓ Free Trial &nbsp;&nbsp; ✓ No Contracts &nbsp;&nbsp; ✓ Interac e-Transfer Accepted
             </p>
           </div>
