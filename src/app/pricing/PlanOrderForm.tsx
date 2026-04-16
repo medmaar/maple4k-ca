@@ -105,13 +105,13 @@ export default function PlanOrderForm({ plan }: Props) {
         <h2 style={{ fontSize: "1.1rem", fontWeight: 700, color: "#fff", marginBottom: 6 }}>
           Place Your Order
         </h2>
-        <p style={{ fontSize: 13, color: "#9ca3af", marginBottom: 12 }}>
+        <p style={{ fontSize: 13, color: "rgba(255,255,255,0.65)", marginBottom: 12 }}>
           Please complete the form below. Make sure your details are correct so we can contact you without delay.
         </p>
         <ol style={{ paddingLeft: 18, margin: 0, display: "flex", flexDirection: "column", gap: 6 }}>
-          <li style={{ fontSize: 13, color: "#9ca3af" }}>Enter your first and last name</li>
-          <li style={{ fontSize: 13, color: "#9ca3af" }}>Add your email or WhatsApp number — depending on how you prefer to be contacted</li>
-          <li style={{ fontSize: 13, color: "#9ca3af" }}>Submit the form — we will contact you within 5 minutes</li>
+          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Enter your first and last name</li>
+          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Add your email or WhatsApp number — depending on how you prefer to be contacted</li>
+          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Submit the form — we will contact you within 5 minutes</li>
         </ol>
       </div>
 
@@ -140,7 +140,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Full Name */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">
+        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
           Full Name <span style={{ color: "#fd0322" }}>*</span>
         </label>
         <input
@@ -156,7 +156,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Email */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">
+        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
           Email Address <span style={{ color: "#fd0322" }}>*</span>
         </label>
         <input
@@ -177,9 +177,9 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Phone with flag dropdown */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">
+        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
           Phone / WhatsApp
-          <span className="ml-2 text-gray-600 text-xs">(optional)</span>
+          <span (style={{ color:"rgba(255,255,255,0.4)", fontSize:11, marginLeft:6 }})>(optional)</span>
         </label>
         <div className="phone-input-wrapper">
           <PhoneInput
@@ -194,7 +194,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Country */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">Country</label>
+        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>Country</label>
         <select
           name="country"
           value={form.country}
@@ -209,7 +209,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Device Type */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">Device Type</label>
+        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>Device Type</label>
         <select
           name="device"
           value={form.device}
@@ -225,9 +225,9 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Notes */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">
+        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
           Notes / Message
-          <span className="ml-2 text-gray-600 text-xs">(optional)</span>
+          <span (style={{ color:"rgba(255,255,255,0.4)", fontSize:11, marginLeft:6 }})>(optional)</span>
         </label>
         <textarea
           name="message"
@@ -245,12 +245,12 @@ export default function PlanOrderForm({ plan }: Props) {
         type="submit"
         disabled={status === "loading"}
         className="w-full text-white py-4 rounded-2xl font-bold text-base transition-all hover:brightness-110 disabled:opacity-60"
-        style={{ background: "#fd0322" }}
+        style={{ background: "#F96E5B" }}
       >
         {status === "loading" ? "Sending…" : "Order Now →"}
       </button>
 
-      <p className="text-center text-gray-600 text-xs">
+      <p style={{ textAlign:"center", color:"rgba(255,255,255,0.55)", fontSize:12 }}>
         Secure · Login credentials sent to your email within 5 minutes
       </p>
     </form>

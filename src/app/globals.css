@@ -99,8 +99,8 @@ body {
 .phone-input-wrapper .PhoneInputCountry {
   display: flex;
   align-items: center;
-  background: rgba(63,154,174,0.08);
-  border: 1px solid rgba(63,154,174,0.25);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
   border-radius: 12px;
   padding: 0 12px;
   height: 46px;
@@ -108,8 +108,8 @@ body {
   cursor: pointer;
 }
 .phone-input-wrapper .PhoneInputCountrySelect {
-  background: #E8F4F5;
-  color: #1A3D45;
+  background: #1A3D45;
+  color: #fff;
   border: none;
   outline: none;
   cursor: pointer;
@@ -117,17 +117,20 @@ body {
 }
 .phone-input-wrapper .PhoneInputInput {
   flex: 1;
-  background: rgba(63,154,174,0.08);
-  border: 1px solid rgba(63,154,174,0.25);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
   border-radius: 12px;
   padding: 12px 16px;
-  color: #1A3D45;
+  color: #fff;
   font-size: 14px;
   outline: none;
 }
+.phone-input-wrapper .PhoneInputInput::placeholder {
+  color: rgba(255,255,255,0.35);
+}
 .phone-input-wrapper .PhoneInputInput:focus {
-  border-color: #F96E5B;
+  border-color: #79C9C5;
 }
 .phone-input-wrapper .PhoneInputCountrySelectArrow {
-  color: #3F9AAE;
+  color: rgba(255,255,255,0.5);
 }
