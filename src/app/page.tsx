@@ -133,12 +133,12 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
-      <main style={{ background: "#0a0a0a", color: "#fff" }}>
+      <main style={{ background: "#FFE2AF", color: "#1A3D45" }}>
         {/* ── 1. HERO ── */}
         <section
           style={{
             background:
-              "radial-gradient(ellipse 90% 60% at 50% 0%, rgba(229,57,53,0.18) 0%, transparent 65%), #0a0a0a",
+              "radial-gradient(ellipse 90% 60% at 50% 0%, rgba(121,201,197,0.3) 0%, transparent 65%), #FFE2AF",
             padding: "90px 16px 80px",
             textAlign: "center",
           }}
@@ -147,9 +147,9 @@ export default function HomePage() {
             <span
               style={{
                 display: "inline-block",
-                background: "rgba(229,57,53,0.12)",
-                border: "1px solid rgba(229,57,53,0.3)",
-                color: "#E53935",
+                background: "rgba(63,154,174,0.12)",
+                border: "1px solid rgba(63,154,174,0.35)",
+                color: "#3F9AAE",
                 fontSize: 12,
                 fontWeight: 700,
                 letterSpacing: "0.1em",
@@ -167,15 +167,16 @@ export default function HomePage() {
                 fontWeight: 900,
                 lineHeight: 1.1,
                 marginBottom: 24,
+                color: "#1A3D45",
               }}
             >
               True 4K Ultra HD<br />
-              <span style={{ color: "#E53935" }}>IPTV for Canada</span>
+              <span style={{ color: "#F96E5B" }}>IPTV for Canada</span>
             </h1>
             <p
               style={{
                 fontSize: "clamp(16px, 2vw, 20px)",
-                color: "#9ca3af",
+                color: "#4a7a84",
                 maxWidth: 640,
                 margin: "0 auto 36px",
                 lineHeight: 1.7,
@@ -188,7 +189,7 @@ export default function HomePage() {
               <Link
                 href="/pricing"
                 style={{
-                  background: "#E53935",
+                  background: "#F96E5B",
                   color: "#fff",
                   fontWeight: 700,
                   fontSize: 17,
@@ -196,6 +197,7 @@ export default function HomePage() {
                   borderRadius: 14,
                   textDecoration: "none",
                   display: "inline-block",
+                  boxShadow: "0 6px 20px rgba(249,110,91,0.4)",
                 }}
               >
                 Subscribe Now →
@@ -204,8 +206,8 @@ export default function HomePage() {
                 href="/free-trial"
                 style={{
                   background: "transparent",
-                  border: "2px solid rgba(229,57,53,0.5)",
-                  color: "#E53935",
+                  border: "2px solid #3F9AAE",
+                  color: "#3F9AAE",
                   fontWeight: 700,
                   fontSize: 17,
                   padding: "16px 36px",
@@ -217,14 +219,14 @@ export default function HomePage() {
                 Try Free Trial
               </Link>
             </div>
-            <p style={{ color: "#6b7280", fontSize: 13 }}>
+            <p style={{ color: "#4a7a84", fontSize: 13 }}>
               ✓ Free Trial &nbsp;&nbsp; ✓ No Contracts &nbsp;&nbsp; ✓ Interac e-Transfer Accepted
             </p>
           </div>
         </section>
 
         {/* ── 2. STATS BAR ── */}
-        <section style={{ background: "#111", borderTop: "1px solid rgba(255,255,255,0.06)", borderBottom: "1px solid rgba(255,255,255,0.06)", padding: "28px 16px" }}>
+        <section style={{ background: "#3F9AAE", borderTop: "none", borderBottom: "none", padding: "28px 16px" }}>
           <div
             style={{
               maxWidth: 960,
@@ -242,8 +244,8 @@ export default function HomePage() {
               { val: "24/7", label: "Canadian Support" },
             ].map((s) => (
               <div key={s.val}>
-                <div style={{ fontSize: 28, fontWeight: 900, color: "#E53935" }}>{s.val}</div>
-                <div style={{ fontSize: 13, color: "#6b7280", marginTop: 4 }}>{s.label}</div>
+                <div style={{ fontSize: 28, fontWeight: 900, color: "#FFE2AF" }}>{s.val}</div>
+                <div style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", marginTop: 4 }}>{s.label}</div>
               </div>
             ))}
           </div>
@@ -253,12 +255,12 @@ export default function HomePage() {
         <HomePricing />
 
         {/* ── 4. DEVICES MARQUEE ── */}
-        <section style={{ padding: "80px 16px", background: "#0d0d0d", overflow: "hidden" }}>
+        <section style={{ padding: "80px 16px", background: "#fff8e8", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Works on All Your Devices
             </h2>
-            <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 48, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#4a7a84", marginBottom: 48, fontSize: 15 }}>
               One subscription — every screen in your home.
             </p>
           </div>
@@ -269,11 +271,11 @@ export default function HomePage() {
                   key={i}
                   style={{
                     flexShrink: 0,
-                    background: "rgba(255,255,255,0.04)",
-                    border: "1px solid rgba(255,255,255,0.08)",
+                    background: "rgba(63,154,174,0.1)",
+                    border: "1px solid rgba(63,154,174,0.25)",
                     borderRadius: 14,
                     padding: "14px 24px",
-                    color: "#d1d5db",
+                    color: "#1A3D45",
                     fontSize: 13,
                     fontWeight: 600,
                     whiteSpace: "nowrap",

@@ -2,14 +2,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --background: #10131E;
-  --foreground: #ffffff;
-  --red: #fd0322;
+  --background: #FFE2AF;
+  --foreground: #1A3D45;
+  --teal: #3F9AAE;
+  --mint: #79C9C5;
+  --cream: #FFE2AF;
+  --coral: #F96E5B;
+  --dark: #1A3D45;
 }
 
 body {
-  background: #10131E;
-  color: #ffffff;
+  background: #FFE2AF;
+  color: #1A3D45;
+}
+
+/* ── LOGO ANIMATIONS ── */
+@keyframes leafSway {
+  0%   { transform: rotate(0deg) scale(1);    transform-origin: 50% 90%; }
+  20%  { transform: rotate(6deg) scale(1.04); transform-origin: 50% 90%; }
+  40%  { transform: rotate(-5deg) scale(1.02);transform-origin: 50% 90%; }
+  60%  { transform: rotate(4deg) scale(1.03); transform-origin: 50% 90%; }
+  80%  { transform: rotate(-3deg) scale(1.01);transform-origin: 50% 90%; }
+  100% { transform: rotate(0deg) scale(1);    transform-origin: 50% 90%; }
+}
+
+@keyframes fourKPump {
+  0%   { transform: scale(1);    letter-spacing: 0.04em; }
+  25%  { transform: scale(1.18); letter-spacing: 0.08em; }
+  50%  { transform: scale(1.06); letter-spacing: 0.05em; }
+  75%  { transform: scale(1.14); letter-spacing: 0.07em; }
+  100% { transform: scale(1);    letter-spacing: 0.04em; }
+}
+
+@keyframes fourKGlow {
+  0%, 100% { text-shadow: 0 0 8px rgba(249,110,91,0.6),  0 0 20px rgba(249,110,91,0.3); }
+  50%       { text-shadow: 0 0 16px rgba(249,110,91,0.9), 0 0 40px rgba(249,110,91,0.5), 0 0 60px rgba(249,110,91,0.2); }
+}
+
+.logo-leaf {
+  animation: leafSway 3.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+.logo-4k {
+  display: inline-block;
+  animation: fourKPump 1.8s ease-in-out infinite, fourKGlow 1.8s ease-in-out infinite;
+  color: #F96E5B !important;
 }
 
 @keyframes fadeSlideUp {
@@ -55,8 +93,8 @@ body {
 .phone-input-wrapper .PhoneInputCountry {
   display: flex;
   align-items: center;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(63,154,174,0.08);
+  border: 1px solid rgba(63,154,174,0.25);
   border-radius: 12px;
   padding: 0 12px;
   height: 46px;
@@ -64,8 +102,8 @@ body {
   cursor: pointer;
 }
 .phone-input-wrapper .PhoneInputCountrySelect {
-  background: #1a1d2e;
-  color: #fff;
+  background: #FFE2AF;
+  color: #1A3D45;
   border: none;
   outline: none;
   cursor: pointer;
@@ -73,17 +111,17 @@ body {
 }
 .phone-input-wrapper .PhoneInputInput {
   flex: 1;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(63,154,174,0.08);
+  border: 1px solid rgba(63,154,174,0.25);
   border-radius: 12px;
   padding: 12px 16px;
-  color: #fff;
+  color: #1A3D45;
   font-size: 14px;
   outline: none;
 }
 .phone-input-wrapper .PhoneInputInput:focus {
-  border-color: #fd0322;
+  border-color: #F96E5B;
 }
 .phone-input-wrapper .PhoneInputCountrySelectArrow {
-  color: #9ca3af;
+  color: #3F9AAE;
 }
