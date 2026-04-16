@@ -208,7 +208,6 @@ export default function HomePricing() {
             );
           })}
         </div>
-        </div>
 
         <div style={{ textAlign: "center", marginTop: 32 }}>
           <Link href="/pricing" style={{ color: "#F96E5B", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
