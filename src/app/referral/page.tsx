@@ -31,7 +31,7 @@ const rules = [
 
 export default function ReferralPage() {
   return (
-    <main style={{ background: "linear-gradient(135deg, #f96e5b 0%, #cae9ec 100%)", color: "#000000", minHeight: "100vh" }}>
+    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
 
       {/* Hero */}
       <section style={{ background: "#1A3D45", padding: "80px 16px", textAlign: "center" }}>
