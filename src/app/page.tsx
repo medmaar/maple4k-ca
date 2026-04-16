@@ -175,7 +175,7 @@ export default function HomePage() {
             <p
               style={{
                 fontSize: "clamp(16px, 2vw, 20px)",
-                color: "#4a7a84",
+                color: "#1A3D45",
                 maxWidth: 640,
                 margin: "0 auto 36px",
                 lineHeight: 1.7,
@@ -218,7 +218,7 @@ export default function HomePage() {
                 Try Free Trial
               </Link>
             </div>
-            <p style={{ color: "#4a7a84", fontSize: 13 }}>
+            <p style={{ color: "#1A3D45", fontSize: 13 }}>
               ✓ Free Trial &nbsp;&nbsp; ✓ No Contracts &nbsp;&nbsp; ✓ Interac e-Transfer Accepted
             </p>
           </div>
@@ -244,7 +244,7 @@ export default function HomePage() {
             ].map((s) => (
               <div key={s.val}>
                 <div style={{ fontSize: 28, fontWeight: 900, color: "#FFE2AF" }}>{s.val}</div>
-                <div style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", marginTop: 4 }}>{s.label}</div>
+                <div style={{ fontSize: 13, color: "rgba(255,255,255,0.9)", marginTop: 4 }}>{s.label}</div>
               </div>
             ))}
           </div>
@@ -259,7 +259,7 @@ export default function HomePage() {
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Works on All Your Devices
             </h2>
-            <p style={{ textAlign: "center", color: "#4a7a84", marginBottom: 48, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#1A3D45", marginBottom: 48, fontSize: 15 }}>
               One subscription — every screen in your home.
             </p>
           </div>
@@ -296,7 +296,7 @@ export default function HomePage() {
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 16, color: "#1A3D45" }}>
               All Your Favourite Canadian Channels
             </h2>
-            <p style={{ textAlign: "center", color: "#4a7a84", marginBottom: 40, fontSize: 15, maxWidth: 620, margin: "0 auto 40px" }}>
+            <p style={{ textAlign: "center", color: "#1A3D45", marginBottom: 40, fontSize: 15, maxWidth: 620, margin: "0 auto 40px" }}>
               Maple4K includes every major Canadian network in the highest available quality — no blackouts, no compression artifacts on NHL, CFL, or NBA games.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", marginBottom: 32 }}>
@@ -317,7 +317,7 @@ export default function HomePage() {
                 </span>
               ))}
             </div>
-            <p style={{ textAlign: "center", color: "#4a7a84", fontSize: 13 }}>
+            <p style={{ textAlign: "center", color: "#1A3D45", fontSize: 13 }}>
               + 25,000+ more channels from around the world
             </p>
           </div>
@@ -329,7 +329,7 @@ export default function HomePage() {
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Never Miss a Game
             </h2>
-            <p style={{ textAlign: "center", color: "#4a7a84", marginBottom: 16, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#1A3D45", marginBottom: 16, fontSize: 15 }}>
               All PPV events included at no extra charge. Every game streamed at maximum broadcast quality — 4K Ultra HD where available.
             </p>
             <p style={{ textAlign: "center", color: "#3F9AAE", fontSize: 13, marginBottom: 44 }}>
@@ -366,17 +366,17 @@ export default function HomePage() {
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Maple4K vs Cable vs Generic IPTV
             </h2>
-            <p style={{ textAlign: "center", color: "#4a7a84", marginBottom: 48, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#1A3D45", marginBottom: 48, fontSize: 15 }}>
               Cable tops out at 1080i. Generic IPTV uses H.264. Maple4K streams True 4K H.265/HEVC with HDR.
             </p>
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
                 <thead>
                   <tr>
-                    <th style={{ textAlign: "left", padding: "14px 16px", color: "#4a7a84", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Feature</th>
+                    <th style={{ textAlign: "left", padding: "14px 16px", color: "#1A3D45", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Feature</th>
                     <th style={{ textAlign: "center", padding: "14px 16px", color: "#F96E5B", fontWeight: 700, borderBottom: "1px solid rgba(249,110,91,0.3)", background: "rgba(249,110,91,0.06)" }}>Maple4K</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#4a7a84", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Cable</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#4a7a84", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Other IPTV</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#1A3D45", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Cable</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#1A3D45", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Other IPTV</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -384,8 +384,8 @@ export default function HomePage() {
                     <tr key={row.feature} style={{ background: i % 2 === 0 ? "transparent" : "rgba(63,154,174,0.04)" }}>
                       <td style={{ padding: "14px 16px", color: "#1A3D45", fontWeight: 500 }}>{row.feature}</td>
                       <td style={{ padding: "14px 16px", textAlign: "center", color: "#3F9AAE", fontWeight: 600, background: "rgba(249,110,91,0.04)" }}>{row.us}</td>
-                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#4a7a84" }}>{row.cable}</td>
-                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#4a7a84" }}>{row.other}</td>
+                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#1A3D45" }}>{row.cable}</td>
+                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#1A3D45" }}>{row.other}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -413,7 +413,7 @@ export default function HomePage() {
                   }}
                 >
                   <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 10, color: "#1A3D45" }}>{faq.q}</h3>
-                  <p style={{ color: "#4a7a84", fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
+                  <p style={{ color: "#1A3D45", fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
                 </div>
               ))}
             </div>
@@ -426,7 +426,7 @@ export default function HomePage() {
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1A3D45" }}>
               Serving Canadians Coast to Coast
             </h2>
-            <p style={{ textAlign: "center", color: "#4a7a84", marginBottom: 48, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#1A3D45", marginBottom: 48, fontSize: 15 }}>
               Fast Maple4K servers optimized for every major Canadian city.
             </p>
             <div
@@ -472,7 +472,7 @@ export default function HomePage() {
             <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 900, marginBottom: 16, color: "#1A3D45" }}>
               Start Streaming Today
             </h2>
-            <p style={{ color: "#4a7a84", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
+            <p style={{ color: "#1A3D45", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
               The only Canadian IPTV built around True 4K Ultra HD. H.265/HEVC encoded, HDR10 & Dolby Vision supported — at $9/month. Try free, no credit card required.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>

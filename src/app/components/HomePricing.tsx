@@ -69,7 +69,7 @@ export default function HomePricing() {
             50% OFF Today!
           </span>
         </div>
-        <p style={{ textAlign: "center", color: "#4a7a84", marginBottom: 36, fontSize: 15 }}>
+        <p style={{ textAlign: "center", color: "#1A3D45", marginBottom: 36, fontSize: 15 }}>
           All plans include 25,000+ channels, True 4K H.265/HEVC streaming with HDR10, and 24/7 Canadian support. Pay via Interac e-Transfer.
         </p>
 
@@ -97,9 +97,9 @@ export default function HomePricing() {
                   flexShrink: 0,
                   padding: "9px 18px",
                   borderRadius: 999,
-                  border: active ? "none" : "1.5px solid rgba(249,110,91,0.35)",
-                  background: active ? "#F96E5B" : "transparent",
-                  color: active ? "#fff" : "#1A3D45",
+                  border: active ? "none" : "1.5px solid #1A3D45",
+                  background: active ? "#1A3D45" : "transparent",
+                  color: active ? "#FFE2AF" : "#1A3D45",
                   fontWeight: 700,
                   fontSize: 13,
                   cursor: "pointer",
@@ -116,17 +116,26 @@ export default function HomePricing() {
 
         {/* Plan cards */}
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
-          {planDefs.map((plan, i) => (
+          {planDefs.map((plan, i) => {
+            const isBest = plan.badge === "Best Value";
+            const isPopular = plan.badge === "Popular";
+            const cardBg = isBest ? "#F96E5B" : isPopular ? "#3F9AAE" : "#1A3D45";
+            return (
             <div
               key={plan.name}
               style={{
-                background: plan.badge === "Best Value" ? "rgba(249,110,91,0.08)" : "rgba(63,154,174,0.08)",
-                border: plan.badge === "Best Value" ? "1.5px solid rgba(249,110,91,0.5)" : "1px solid rgba(63,154,174,0.2)",
+                background: cardBg,
+                border: "none",
                 borderRadius: 20,
                 padding: "32px 24px",
                 position: "relative",
                 display: "flex",
                 flexDirection: "column",
+                boxShadow: isBest
+                  ? "0 12px 40px rgba(249,110,91,0.45)"
+                  : isPopular
+                  ? "0 12px 40px rgba(63,154,174,0.45)"
+                  : "0 8px 24px rgba(26,61,69,0.3)",
               }}
             >
               {plan.badge && (
@@ -136,10 +145,10 @@ export default function HomePricing() {
                     top: -12,
                     left: "50%",
                     transform: "translateX(-50%)",
-                    background: "#F96E5B",
-                    color: "#fff",
+                    background: "#FFE2AF",
+                    color: cardBg,
                     fontSize: 11,
-                    fontWeight: 700,
+                    fontWeight: 800,
                     padding: "4px 14px",
                     borderRadius: 999,
                     whiteSpace: "nowrap",
@@ -148,14 +157,12 @@ export default function HomePricing() {
                   {plan.badge}
                 </span>
               )}
-              <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 6, color: "#1A3D45" }}>{plan.name}</div>
-              {/* Price + connection count */}
+              <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 6, color: "#fff" }}>{plan.name}</div>
               <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 20 }}>
-                <span style={{ fontSize: 36, fontWeight: 900, color: "#F96E5B" }}>${prices[i]}</span>
-                <span style={{ fontSize: 12, color: "#4a7a84" }}>/ {connLabel}</span>
+                <span style={{ fontSize: 40, fontWeight: 900, color: "#FFE2AF" }}>${prices[i]}</span>
+                <span style={{ fontSize: 12, color: "rgba(255,255,255,0.7)" }}>/ {connLabel}</span>
               </div>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
-                {/* IBO Player bonus — 1-year only, shown first */}
                 {plan.slug === "12-months" && (
                   <li
                     style={{
@@ -163,21 +170,21 @@ export default function HomePricing() {
                       display: "flex",
                       alignItems: "center",
                       gap: 8,
-                      background: "rgba(251,191,36,0.08)",
-                      border: "1px solid rgba(251,191,36,0.35)",
+                      background: "rgba(255,255,255,0.15)",
+                      border: "1px solid rgba(255,255,255,0.3)",
                       borderRadius: 8,
                       padding: "7px 10px",
                     }}
                   >
                     <span style={{ flexShrink: 0, fontSize: 14 }}>⭐</span>
-                    <span style={{ fontSize: 13, color: "#fbbf24", fontWeight: 600, lineHeight: 1.3 }}>
+                    <span style={{ fontSize: 13, color: "#fff", fontWeight: 600, lineHeight: 1.3 }}>
                       IBO Player Subscription for Free
                     </span>
                   </li>
                 )}
                 {planFeatures.map((f) => (
-                  <li key={f} style={{ fontSize: 13, color: "#4a7a84", marginBottom: 6, display: "flex", alignItems: "center", gap: 6, textAlign: "left" }}>
-                    <span style={{ color: "#F96E5B", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                  <li key={f} style={{ fontSize: 13, color: "rgba(255,255,255,0.9)", marginBottom: 6, display: "flex", alignItems: "center", gap: 6 }}>
+                    <span style={{ color: "#FFE2AF", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                   </li>
                 ))}
               </ul>
@@ -185,21 +192,22 @@ export default function HomePricing() {
                 href={getHref(selected, plan.slug)}
                 style={{
                   display: "block",
-                  background: plan.badge === "Best Value" ? "#F96E5B" : "rgba(249,110,91,0.15)",
-                  color: plan.badge === "Best Value" ? "#fff" : "#F96E5B",
-                  fontWeight: 700,
-                  fontSize: 14,
-                  padding: "12px 20px",
+                  background: "#FFE2AF",
+                  color: cardBg,
+                  fontWeight: 800,
+                  fontSize: 15,
+                  padding: "13px 20px",
                   borderRadius: 12,
                   textDecoration: "none",
-                  border: plan.badge === "Best Value" ? "none" : "1px solid rgba(249,110,91,0.3)",
                   textAlign: "center",
                 }}
               >
                 Get Started →
               </Link>
             </div>
-          ))}
+            );
+          })}
+        </div>
         </div>
 
         <div style={{ textAlign: "center", marginTop: 32 }}>
