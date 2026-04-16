@@ -82,42 +82,19 @@ export default function Page() {
         >
           <div className="max-w-2xl mx-auto">
             {/* 1. Page title */}
-            <div className="mb-8">
-              <span
-                className="inline-block text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5"
-                style={{
-                  background: "rgba(249,110,91,0.12)",
-                  border: "1px solid rgba(249,110,91,0.35)",
-                  color: "#F96E5B",
-                }}
-              >
+            <div style={{ background: "#1A3D45", borderRadius: 24, padding: "40px 32px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", marginBottom: 24, textAlign: "center" }}>
+              <span style={{ background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 20 }}>
                 Maple4K · 6 Months · 8 Devices
               </span>
-              <h1
-                style={{
-                  fontSize: "clamp(1.6rem, 4vw, 2.8rem)",
-                  fontWeight: 800,
-                  color: "#fff",
-                  lineHeight: 1.2,
-                  whiteSpace: "nowrap",
-                }}
-              >
+              <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 16 }}>
                 6 Months - 8 Devices
               </h1>
-              <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10 }}>
-                <span style={{ color: "#F96E5B", fontWeight: 800, fontSize: "2rem" }}>Price : $280</span>
-                <span style={{ background: "rgba(253,3,34,0.15)", color: "#F96E5B", border: "1px solid rgba(253,3,34,0.4)", fontWeight: 700, fontSize: 12, padding: "4px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>50% OFF</span>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, marginBottom: 16 }}>
+                <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: "2.4rem" }}>Price : $280</span>
+                <span style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>50% OFF</span>
               </div>
+              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13 }}>Fill out the form below — credentials sent within 5 minutes</p>
             </div>
-
-            {/* 2. Instruction text */}
-            <div className="mb-10">
-              <p style={{ color: "#000000", fontSize: 15 }}>Fill out the form below to place your order.</p>
-              <p style={{ color: "#000000", fontSize: 13, marginTop: 4 }}>
-                We&apos;ll send your login credentials to your email within 5 minutes.
-              </p>
-            </div>
-
             {/* 3. Order Form */}
             <div
               className="rounded-3xl p-6 md:p-8 border mb-16"
