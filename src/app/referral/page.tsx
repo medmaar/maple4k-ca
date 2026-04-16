@@ -71,22 +71,6 @@ export default function ReferralPage() {
         </div>
       </section>
 
-      {/* Reward cards */}
-      <section style={{ padding: "0 16px 80px" }}>
-        <div style={{ maxWidth: 960, margin: "0 auto" }}>
-          <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48, color: "#000000" }}>Your Rewards</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 20 }}>
-            {rewardCards.map((card) => (
-              <div key={card.title} style={{ background: card.bg, borderRadius: 20, padding: "36px 28px", textAlign: "center", boxShadow: "0 8px 28px rgba(0,0,0,0.15)" }}>
-                <div style={{ fontSize: 32, marginBottom: 12, color: "#fff" }}>★</div>
-                <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 10, color: "#ffffff" }}>{card.title}</h3>
-                <p style={{ color: "rgba(255,255,255,0.85)", fontSize: 14, lineHeight: 1.7 }}>{card.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Referral form */}
       <section style={{ padding: "0 16px 80px" }}>
         <div style={{ maxWidth: 540, margin: "0 auto" }}>

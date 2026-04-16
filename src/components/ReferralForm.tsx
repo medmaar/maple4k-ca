@@ -4,6 +4,27 @@ import { useState } from "react";
 const WA_NUMBER = "17828026280";
 const WA_REFER_URL = `https://wa.me/${WA_NUMBER}?text=Hi%20Maple4K%2C%20I%E2%80%99m%20referring%20someone%20to%20your%20service.%20What%E2%80%99s%20the%20next%20step%3F`;
 
+const inputStyle = {
+  width: "100%",
+  background: "#ffffff",
+  border: "2px solid rgba(63,154,174,0.25)",
+  borderRadius: 10,
+  padding: "12px 16px",
+  fontSize: 14,
+  color: "#000000",
+  outline: "none",
+  boxSizing: "border-box" as const,
+  fontFamily: "inherit",
+};
+
+const labelStyle = {
+  display: "block",
+  fontSize: 13,
+  fontWeight: 600,
+  color: "#000000",
+  marginBottom: 6,
+};
+
 export default function ReferralForm() {
   const [yourName, setYourName] = useState("");
   const [yourWA, setYourWA] = useState("");
@@ -18,123 +39,63 @@ export default function ReferralForm() {
       const res = await fetch("/api/referral", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          yourName,
-          yourWhatsApp: yourWA,
-          friendName,
-          friendWhatsApp: friendWA,
-        }),
+        body: JSON.stringify({ yourName, yourWhatsApp: yourWA, friendName, friendWhatsApp: friendWA }),
       });
       if (res.ok) {
         setStatus("success");
-        setYourName("");
-        setYourWA("");
-        setFriendName("");
-        setFriendWA("");
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
+        setYourName(""); setYourWA(""); setFriendName(""); setFriendWA("");
+      } else { setStatus("error"); }
+    } catch { setStatus("error"); }
   }
 
   return (
     <div>
-      <form
-        onSubmit={handleSubmit}
-        className="bg-gray-950 border border-gray-800 rounded-2xl p-8 space-y-6"
-      >
-        <div>
-          <p className="text-xs text-red-400 font-bold uppercase tracking-widest mb-4">
-            Your Details
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm text-gray-400 mb-1">Your First Name</label>
-              <input
-                type="text"
-                required
-                placeholder="John"
-                value={yourName}
-                onChange={(e) => setYourName(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-500 transition-colors"
-              />
-            </div>
-            <div>
-              <label className="block text-sm text-gray-400 mb-1">Your WhatsApp Number</label>
-              <input
-                type="tel"
-                required
-                placeholder="+1 782 000 0000"
-                value={yourWA}
-                onChange={(e) => setYourWA(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-500 transition-colors"
-              />
-            </div>
+      <form onSubmit={handleSubmit} style={{ background: "#ffffff", border: "2px solid rgba(63,154,174,0.2)", borderRadius: 20, padding: 32, boxShadow: "0 4px 24px rgba(63,154,174,0.1)" }}>
+
+        <p style={{ fontSize: 11, color: "#F96E5B", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Your Details</p>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
+          <div>
+            <label style={labelStyle}>Your First Name</label>
+            <input type="text" required placeholder="John" value={yourName} onChange={(e) => setYourName(e.target.value)} style={inputStyle} />
+          </div>
+          <div>
+            <label style={labelStyle}>Your WhatsApp Number</label>
+            <input type="tel" required placeholder="+1 782 000 0000" value={yourWA} onChange={(e) => setYourWA(e.target.value)} style={inputStyle} />
           </div>
         </div>
 
-        <div>
-          <p className="text-xs text-red-400 font-bold uppercase tracking-widest mb-4">
-            Friend&apos;s Details
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm text-gray-400 mb-1">Friend&apos;s First Name</label>
-              <input
-                type="text"
-                required
-                placeholder="Jane"
-                value={friendName}
-                onChange={(e) => setFriendName(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-500 transition-colors"
-              />
-            </div>
-            <div>
-              <label className="block text-sm text-gray-400 mb-1">Friend&apos;s WhatsApp Number</label>
-              <input
-                type="tel"
-                required
-                placeholder="+1 782 000 0000"
-                value={friendWA}
-                onChange={(e) => setFriendWA(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-500 transition-colors"
-              />
-            </div>
+        <p style={{ fontSize: 11, color: "#F96E5B", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Friend&apos;s Details</p>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 28 }}>
+          <div>
+            <label style={labelStyle}>Friend&apos;s First Name</label>
+            <input type="text" required placeholder="Jane" value={friendName} onChange={(e) => setFriendName(e.target.value)} style={inputStyle} />
+          </div>
+          <div>
+            <label style={labelStyle}>Friend&apos;s WhatsApp Number</label>
+            <input type="tel" required placeholder="+1 782 000 0000" value={friendWA} onChange={(e) => setFriendWA(e.target.value)} style={inputStyle} />
           </div>
         </div>
 
         {status === "success" ? (
-          <div className="bg-green-900 border border-green-600 rounded-xl px-6 py-4 text-green-300 text-sm font-medium text-center">
-            Referral submitted! We&apos;ll review it shortly and be in touch.
+          <div style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.3)", borderRadius: 12, padding: "16px 20px", color: "#1A3D45", fontSize: 14, fontWeight: 600, textAlign: "center" }}>
+            ✓ Referral submitted! We&apos;ll review it shortly and be in touch.
           </div>
         ) : (
-          <button
-            type="submit"
-            disabled={status === "loading"}
-            className="w-full bg-red-600 hover:bg-red-700 disabled:opacity-60 text-white py-4 rounded-xl font-bold text-lg transition-colors"
-          >
+          <button type="submit" disabled={status === "loading"} style={{ width: "100%", background: "#F96E5B", color: "#fff", padding: "16px", borderRadius: 12, fontWeight: 700, fontSize: 16, border: "none", cursor: "pointer", opacity: status === "loading" ? 0.6 : 1, fontFamily: "inherit", boxShadow: "0 4px 16px rgba(249,110,91,0.35)" }}>
             {status === "loading" ? "Submitting…" : "Submit Referral"}
           </button>
         )}
 
         {status === "error" && (
-          <p className="text-center text-red-400 text-sm">
-            Something went wrong. Please try again or use the WhatsApp button below.
+          <p style={{ textAlign: "center", color: "#F96E5B", fontSize: 13, marginTop: 12 }}>
+            Something went wrong. Please try again or use WhatsApp below.
           </p>
         )}
       </form>
 
-      {/* WhatsApp CTA */}
-      <div className="mt-6 text-center">
-        <p className="text-gray-500 text-sm mb-4">Prefer WhatsApp? Reach us directly:</p>
-        <a
-          href={WA_REFER_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#25D366] hover:brightness-110 text-gray-900 font-bold px-8 py-4 rounded-xl text-sm transition"
-        >
+      <div style={{ marginTop: 24, textAlign: "center" }}>
+        <p style={{ color: "#000000", fontSize: 13, marginBottom: 16 }}>Prefer WhatsApp? Reach us directly:</p>
+        <a href={WA_REFER_URL} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#25D366", color: "#fff", fontWeight: 700, padding: "14px 32px", borderRadius: 12, fontSize: 14, textDecoration: "none" }}>
           Refer via WhatsApp
         </a>
       </div>
