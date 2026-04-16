@@ -39,7 +39,7 @@ export default function RootLayout({
                 </head>
                 <body
                           className="min-h-full flex flex-col"
-                          style={{ fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif" }}
+                        style={{ fontFamily: "'Quicksand', sans-serif" }}
                         >
                         <Navbar />
                         <div className="flex-1">{children}</div>
