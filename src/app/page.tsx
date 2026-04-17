@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     q: "Is there a free trial to test the 4K quality?",
-    a: "Yes — Maple4K offers a free 2-hour trial with no credit card required. The trial streams at full 4K quality so you can personally validate H.265 performance, HDR rendering, and channel lineup on your own hardware before committing. Activate instantly via WhatsApp or email.",
+    a: "Yes — Maple4K offers a free 24h trial with no credit card required. The trial streams at full 4K quality so you can personally validate H.265 performance, HDR rendering, and channel lineup on your own hardware before committing. Activate instantly via WhatsApp or email.",
   },
 ];
 
@@ -114,7 +114,7 @@ const comparison = [
   { feature: "Codec", us: "H.265/HEVC", cable: "MPEG-2/H.264", other: "H.264" },
   { feature: "HDR Support", us: "HDR10 + Dolby Vision", cable: "×", other: "Rarely" },
   { feature: "Contracts", us: "None", cable: "1–2 years", other: "Varies" },
-  { feature: "Free Trial", us: "Free 2-hour trial", cable: "×", other: "Rarely" },
+  { feature: "Free Trial", us: "Free 24h trial", cable: "×", other: "Rarely" },
   { feature: "Canadian Support", us: "24/7", cable: "Business hours", other: "×" },
 ];
 

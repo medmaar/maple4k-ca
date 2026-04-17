@@ -80,7 +80,7 @@ export default function IPTVAndroidTVCanadaPage() {
         {/* Hero */}
         <section
           style={{
-            background: "linear-gradient(135deg, #0a0a0a 0%, #1a0505 100%)",
+            background: "#1A3D45",
             padding: "80px 16px 60px",
           }}
         >
@@ -161,7 +161,7 @@ export default function IPTVAndroidTVCanadaPage() {
         </section>
 
         {/* Compatible Devices */}
-        <section style={{ padding: "40px 16px", background: "#0f0f0f" }}>
+        <section style={{ padding: "40px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
             <p style={{ color: "#888", fontSize: "0.85rem", marginBottom: 16, fontWeight: 600, letterSpacing: 1 }}>
               COMPATIBLE WITH ALL ANDROID TV DEVICES
@@ -257,7 +257,7 @@ export default function IPTVAndroidTVCanadaPage() {
         </section>
 
         {/* Setup Steps */}
-        <section style={{ padding: "60px 16px", background: "#0f0f0f" }}>
+        <section style={{ padding: "60px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
               style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 8 }}
@@ -367,7 +367,7 @@ export default function IPTVAndroidTVCanadaPage() {
                 <span
                   key={ch}
                   style={{
-                    background: "#1a0505",
+                    background: "#1A3D45",
                     border: "1px solid #3a1010",
                     color: "#000000",
                     padding: "6px 16px",
@@ -384,7 +384,7 @@ export default function IPTVAndroidTVCanadaPage() {
         </section>
 
         {/* Pricing */}
-        <section style={{ padding: "60px 16px", background: "#0f0f0f" }}>
+        <section style={{ padding: "60px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
               style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
@@ -445,7 +445,7 @@ export default function IPTVAndroidTVCanadaPage() {
 
         {/* CTA */}
         <section
-          style={{ background: "#1a0505", padding: "60px 16px", textAlign: "center" }}
+          style={{ background: "#1A3D45", padding: "60px 16px", textAlign: "center" }}
         >
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
             <h2 style={{ fontSize: "2rem", fontWeight: 800, marginBottom: 12 }}>
@@ -454,7 +454,7 @@ export default function IPTVAndroidTVCanadaPage() {
             <p
               style={{ color: "#ccc", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
             >
-              Try Maple4K free for 5 minutes — no credit card required. Need help? Contact
+              Try Maple4K free for 24 hours — no credit card required. Need help? Contact
               us at{" "}
               <a
                 href="mailto:help@maple4k.ca"

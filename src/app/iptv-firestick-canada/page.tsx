@@ -80,7 +80,7 @@ export default function IPTVFirestickCanadaPage() {
         {/* Hero */}
         <section
           style={{
-            background: "linear-gradient(135deg, #0a0a0a 0%, #1a0505 100%)",
+            background: "#1A3D45",
             padding: "80px 16px 60px",
           }}
         >
@@ -238,7 +238,7 @@ export default function IPTVFirestickCanadaPage() {
         </section>
 
         {/* Setup Steps */}
-        <section style={{ padding: "60px 16px", background: "#0f0f0f" }}>
+        <section style={{ padding: "60px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
               style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 8 }}
@@ -349,7 +349,7 @@ export default function IPTVFirestickCanadaPage() {
                 <span
                   key={ch}
                   style={{
-                    background: "#1a0505",
+                    background: "#1A3D45",
                     border: "1px solid #3a1010",
                     color: "#000000",
                     padding: "6px 16px",
@@ -366,7 +366,7 @@ export default function IPTVFirestickCanadaPage() {
         </section>
 
         {/* Pricing Snapshot */}
-        <section style={{ padding: "60px 16px", background: "#0f0f0f" }}>
+        <section style={{ padding: "60px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
               style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
@@ -429,7 +429,7 @@ export default function IPTVFirestickCanadaPage() {
 
         {/* CTA */}
         <section
-          style={{ background: "#1a0505", padding: "60px 16px", textAlign: "center" }}
+          style={{ background: "#1A3D45", padding: "60px 16px", textAlign: "center" }}
         >
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
             <h2

@@ -149,7 +149,7 @@ export default function IPTVEdmontonPage() {
               Edmonton IPTV subscribers also get 25,000+ international channels, 120,000+ movies
               and series on demand, 7-day catch-up TV, and a full EPG. Maple4K works on every
               device — Firestick, Smart TV, Android, iPhone, Apple TV, and more — with instant
-              activation within 5 minutes of placing your order.
+              activation within minutes of placing your order.
             </p>
           </div>
 

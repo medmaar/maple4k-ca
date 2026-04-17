@@ -148,7 +148,7 @@ export default function IPTVOttawaPage() {
               IPTV Ottawa subscribers also benefit from Maple4K&apos;s bilingual channel lineup —
               Radio-Canada, TVA, RDS, and all French-language channels — perfect for Ottawa&apos;s
               large francophone community. 120,000+ on-demand titles, 7-day catch-up TV, and
-              instant activation within 5 minutes.
+              instant activation within minutes.
             </p>
           </div>
 

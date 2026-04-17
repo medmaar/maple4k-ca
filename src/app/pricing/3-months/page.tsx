@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "3 Month IPTV Canada — $29 | Maple4K" },
   description:
-    "Get 3 months of IPTV in Canada for only $29. 25,000+ live channels, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within 5 minutes.",
+    "Get 3 months of IPTV in Canada for only $29. 25,000+ live channels, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within minutes.",
   keywords:
     "IPTV 3 months Canada, Maple4K 3 months, IPTV quarterly Canada, 3 month IPTV Canada $29",
   alternates: { canonical: "https://maple4k.ca/pricing/3-months" },
@@ -18,7 +18,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "How do I receive my login credentials after ordering?",
-    a: "After placing your order, our team will review it and send your login credentials (server URL, username, and password) directly to your email address within 5 minutes. Check your spam folder if you don't see it.",
+    a: "After placing your order, our team will review it and send your login credentials (server URL, username, and password) directly to your email address within minutes. Check your spam folder if you don't see it.",
   },
   {
     q: "Which devices are compatible with this IPTV service?",
@@ -99,7 +99,7 @@ export default function Pricing3MonthsPage() {
                 <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: "2.4rem" }}>Price : $29</span>
                 <span style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>50% OFF</span>
               </div>
-              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13 }}>Fill out the form below — credentials sent within 5 minutes</p>
+              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13 }}>Fill out the form below — credentials sent within minutes</p>
             </div>
 
             {/* 3. Order Form */}

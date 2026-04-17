@@ -8255,20 +8255,20 @@ export default function ChannelsListPage() {
   return (
     <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 px-4 text-center">
+      <section style={{ background: "#1A3D45", padding: "64px 16px", textAlign: "center" }}>
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          <h1 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 900, marginBottom: 16, color: "#ffffff" }}>
             Maple4K <span className="text-[#F96E5B]">Channel List</span>
           </h1>
-          <p className="text-xl text-black mb-6">
+          <p style={{ fontSize: 18, color: "rgba(255,255,255,0.8)", marginBottom: 24 }}>
             25,000+ live channels across Canada, the US, UK, and worldwide.
             Every plan includes all channels below — no add-ons required.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-black">
-            <span className="flex items-center gap-2"><span className="text-green-400">✓</span> All Canadian networks</span>
-            <span className="flex items-center gap-2"><span className="text-green-400">✓</span> TSN &amp; Sportsnet</span>
-            <span className="flex items-center gap-2"><span className="text-green-400">✓</span> 4K &amp; HD quality</span>
-            <span className="flex items-center gap-2"><span className="text-green-400">✓</span> PPV included</span>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
+            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> All Canadian networks</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> TSN &amp; Sportsnet</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> 4K &amp; HD quality</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> PPV included</span>
           </div>
         </div>
       </section>
@@ -8289,7 +8289,7 @@ export default function ChannelsListPage() {
           {categories.map((cat, index) => (
             <details
               key={cat.name}
-              className="group bg-transparent border border-gray-800 rounded-xl overflow-hidden transition-all hover:border-red-700"
+              className="group bg-transparent border border-[rgba(63,154,174,0.2)] rounded-xl bg-white overflow-hidden transition-all hover:border-[#F96E5B]"
             >
               <summary className="flex items-center justify-between px-5 py-4 cursor-pointer select-none list-none">
                 <div className="flex items-center gap-3">
@@ -8334,7 +8334,7 @@ export default function ChannelsListPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Access All 25,000+ Channels</h2>
           <p className="text-black mb-8">
-            Every plan includes the full channel list. Try it free for 5 minutes — no credit card required.
+            Every plan includes the full channel list. Try it free for 24 hours — no credit card required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">

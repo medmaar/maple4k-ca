@@ -148,7 +148,7 @@ export default function IPTVMontrealPage() {
               IPTV Montreal subscribers also get 25,000+ international channels, 120,000+ movies
               and series on demand, 7-day catch-up TV, and a full EPG. Maple4K works on all
               devices — Firestick, Smart TV, Android, iOS, and more — with no contracts and
-              instant activation within 5 minutes.
+              instant activation within minutes.
             </p>
           </div>
 

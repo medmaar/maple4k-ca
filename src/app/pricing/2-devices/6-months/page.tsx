@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "2 Connections IPTV Canada 6 Months — $69 | Maple4K" },
   description:
-    "Get 2 simultaneous connections for $69. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within 5 minutes.",
+    "Get 2 simultaneous connections for $69. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within minutes.",
   alternates: { canonical: "https://maple4k.ca/pricing/2-devices/6-months" },
 };
 
@@ -16,7 +16,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "How do I receive my login credentials after ordering?",
-    a: "After placing your order our team will send your login credentials directly to your email within 5 minutes. Check your spam folder if you don't see it.",
+    a: "After placing your order our team will send your login credentials directly to your email within minutes. Check your spam folder if you don't see it.",
   },
   {
     q: "Which devices are compatible?",
@@ -93,7 +93,7 @@ export default function Page() {
                 <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: "2.4rem" }}>Price : $69</span>
                 <span style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>50% OFF</span>
               </div>
-              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13 }}>Fill out the form below — credentials sent within 5 minutes</p>
+              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13 }}>Fill out the form below — credentials sent within minutes</p>
             </div>
             {/* 3. Order Form */}
             <div

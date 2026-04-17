@@ -28,7 +28,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Does the free trial include all channels?",
-    a: "Yes. Your 2-hour trial gives you full access to all 25,000+ live channels, 120,000+ VOD titles, and all sports packages — no restrictions.",
+    a: "Yes. Your 24h trial gives you full access to all 25,000+ live channels, 120,000+ VOD titles, and all sports packages — no restrictions.",
   },
   {
     q: "How many devices can I use during the trial?",

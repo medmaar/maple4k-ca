@@ -139,7 +139,7 @@ export default function IPTVWindowsPage() {
       <section className="py-16 px-4 bg-gradient-to-r from-red-900 to-gray-900 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Start Watching IPTV on Your PC Today</h2>
-          <p className="text-black mb-8">Try it free for 5 minutes — no credit card required.</p>
+          <p className="text-black mb-8">Try it free for 24 hours — no credit card required.</p>
           <a href="/free-trial" className="inline-block bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-10 py-4 rounded-xl font-bold text-lg transition-colors">
             Get Free Trial
           </a>

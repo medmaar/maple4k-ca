@@ -18,7 +18,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "How do I receive my login credentials after ordering?",
-    a: "After placing your order, our team will review it and send your login credentials (server URL, username, and password) directly to your email address within 5 minutes. Check your spam folder if you don't see it in your inbox.",
+    a: "After placing your order, our team will review it and send your login credentials (server URL, username, and password) directly to your email address within minutes. Check your spam folder if you don't see it in your inbox.",
   },
   {
     q: "Which devices are compatible with this IPTV service?",
@@ -103,7 +103,7 @@ export default function Pricing12MonthsPage() {
                 <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: "2.4rem" }}>Price : $49</span>
                 <span style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>50% OFF</span>
               </div>
-              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13 }}>Fill out the form below — credentials sent within 5 minutes</p>
+              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13 }}>Fill out the form below — credentials sent within minutes</p>
             </div>
 
             {/* 3. Order Form */}

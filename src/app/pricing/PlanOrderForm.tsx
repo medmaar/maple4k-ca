@@ -111,7 +111,7 @@ export default function PlanOrderForm({ plan }: Props) {
         <ol style={{ paddingLeft: 18, margin: 0, display: "flex", flexDirection: "column", gap: 6 }}>
           <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Enter your first and last name</li>
           <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Add your email or WhatsApp number — depending on how you prefer to be contacted</li>
-          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Submit the form — we will contact you within 5 minutes</li>
+          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Submit the form — we will contact you within minutes</li>
         </ol>
       </div>
 
@@ -121,7 +121,7 @@ export default function PlanOrderForm({ plan }: Props) {
           className="rounded-2xl px-4 py-3 text-sm font-medium"
           style={{ background: "rgba(74,222,128,0.1)", border: "1px solid rgba(74,222,128,0.3)", color: "#4ade80" }}
         >
-          ✅ Order received! We&apos;ll contact you within 5 minutes.
+          ✅ Order received! We&apos;ll contact you within minutes.
         </div>
       )}
 
@@ -251,7 +251,7 @@ export default function PlanOrderForm({ plan }: Props) {
       </button>
 
       <p style={{ textAlign:"center", color:"rgba(255,255,255,0.55)", fontSize:12 }}>
-        Secure · Login credentials sent to your email within 5 minutes
+        Secure · Login credentials sent to your email within minutes
       </p>
     </form>
   );

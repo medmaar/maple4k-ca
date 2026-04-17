@@ -191,7 +191,7 @@ export default function IsIPTVLegalCanada() {
           {/* Section 6 */}
           <section
             style={{
-              background: "#1a0505",
+              background: "#1A3D45",
               border: "1px solid #F96E5B",
               borderRadius: 12,
               padding: 24,

@@ -26,7 +26,7 @@ const howToSchema = {
   description: "Install Maple4K on your Apple TV or iPhone in under 5 minutes.",
   step: [
     { "@type": "HowToStep", name: "Download IPTV app", text: "Open the App Store on your Apple TV or iPhone and download 'IPTV Smarters Pro' or 'GSE Smart IPTV'." },
-    { "@type": "HowToStep", name: "Get your credentials", text: "After subscribing to Maple4K, receive your server URL, username, and password by email within 5 minutes." },
+    { "@type": "HowToStep", name: "Get your credentials", text: "After subscribing to Maple4K, receive your server URL, username, and password by email within minutes." },
     { "@type": "HowToStep", name: "Add your playlist", text: "Open the app, select 'Add via URL' and enter your M3U playlist URL or Xtream Codes credentials." },
     { "@type": "HowToStep", name: "Start streaming", text: "Browse and stream 25,000+ live channels and 120,000+ on-demand titles on your Apple device." },
   ],
@@ -37,7 +37,7 @@ export default function IPTVAppleTVCanadaPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
-        <section style={{ background: "linear-gradient(135deg, #0a0a0a 0%, #1a0505 100%)", padding: "80px 16px 60px" }}>
+        <section style={{ background: "transparent", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <span style={{ display: "inline-block", background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 16px", borderRadius: 999, marginBottom: 24 }}>
               Maple4K · Apple Devices

@@ -38,7 +38,7 @@ export default function IPTVSmartTVCanadaPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
         {/* Hero */}
-        <section style={{ background: "linear-gradient(135deg, #0a0a0a 0%, #1a0505 100%)", padding: "80px 16px 60px" }}>
+        <section style={{ background: "transparent", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <span style={{ display: "inline-block", background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 16px", borderRadius: 999, marginBottom: 24 }}>
               Maple4K · Smart TV
@@ -87,7 +87,7 @@ export default function IPTVSmartTVCanadaPage() {
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               {[
                 { n: "01", title: "Subscribe to Maple4K", desc: "Choose a plan on our pricing page — starting at $9/month. Pay securely via Interac e-Transfer." },
-                { n: "02", title: "Receive Your Credentials", desc: "We'll email you a server URL, username, and password within 5 minutes of your order." },
+                { n: "02", title: "Receive Your Credentials", desc: "We'll email you a server URL, username, and password within minutes of your order." },
                 { n: "03", title: "Install IPTV App on Smart TV", desc: "Open the Samsung Apps or LG Content Store and download 'Smart IPTV' or 'IPTV Smarters'." },
                 { n: "04", title: "Enter Your Login Details", desc: "Open the app, input your server URL and credentials, then load your channel list." },
                 { n: "05", title: "Start Streaming in 4K", desc: "Enjoy 25,000+ live channels and 120,000+ on-demand titles on your big-screen Smart TV." },
@@ -111,7 +111,7 @@ export default function IPTVSmartTVCanadaPage() {
               Ready to Cut the Cable?
             </h2>
             <p style={{ color: "#000000", marginBottom: 32, fontSize: 15 }}>
-              Get the best Maple4K service on your Smart TV. Plans start at $9/month with a free 2-hour trial.
+              Get the best Maple4K service on your Smart TV. Plans start at $9/month with a free 24h trial.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/pricing" style={{ background: "#F96E5B", color: "#000000", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>
