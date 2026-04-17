@@ -119,13 +119,15 @@ export default function HomePricing() {
           {planDefs.map((plan, i) => {
             const isBest = plan.badge === "Best Value";
             const isPopular = plan.badge === "Popular";
-            const cardBg = isBest ? "#F96E5B" : isPopular ? "#3F9AAE" : "#1A3D45";
+            // Each card gets its own distinct color
+            const cardBg = isBest ? "#F96E5B" : isPopular ? "#3F9AAE" : i === 0 ? "#ffffff" : "#2d6a78";
+            const isLight = i === 0; // 1 Month card is white/light
             return (
             <div
               key={plan.name}
               style={{
                 background: cardBg,
-                border: "none",
+                border: isLight ? "2px solid rgba(63,154,174,0.3)" : "none",
                 borderRadius: 20,
                 padding: "32px 24px",
                 position: "relative",
@@ -157,10 +159,10 @@ export default function HomePricing() {
                   {plan.badge}
                 </span>
               )}
-              <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 6, color: "#fff" }}>{plan.name}</div>
+              <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 6, color: isLight ? "#1A3D45" : "#fff" }}>{plan.name}</div>
               <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 20 }}>
-                <span style={{ fontSize: 40, fontWeight: 900, color: "#E8F4F5" }}>${prices[i]}</span>
-                <span style={{ fontSize: 12, color: "rgba(255,255,255,0.7)" }}>/ {connLabel}</span>
+                <span style={{ fontSize: 40, fontWeight: 900, color: isLight ? "#F96E5B" : "#E8F4F5" }}>${prices[i]}</span>
+                <span style={{ fontSize: 12, color: isLight ? "#3F9AAE" : "rgba(255,255,255,0.7)" }}>/ {connLabel}</span>
               </div>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
                 {plan.slug === "12-months" && (
@@ -183,8 +185,8 @@ export default function HomePricing() {
                   </li>
                 )}
                 {planFeatures.map((f) => (
-                  <li key={f} style={{ fontSize: 13, color: "rgba(255,255,255,0.9)", marginBottom: 6, display: "flex", alignItems: "center", gap: 6 }}>
-                    <span style={{ color: "#E8F4F5", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                  <li key={f} style={{ fontSize: 13, color: isLight ? "#1A3D45" : "rgba(255,255,255,0.9)", marginBottom: 6, display: "flex", alignItems: "center", gap: 6 }}>
+                    <span style={{ color: isLight ? "#3F9AAE" : "#E8F4F5", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                   </li>
                 ))}
               </ul>
@@ -192,8 +194,8 @@ export default function HomePricing() {
                 href={getHref(selected, plan.slug)}
                 style={{
                   display: "block",
-                  background: "#E8F4F5",
-                  color: cardBg,
+                  background: isLight ? "#1A3D45" : "#E8F4F5",
+                  color: isLight ? "#fff" : cardBg,
                   fontWeight: 800,
                   fontSize: 15,
                   padding: "13px 20px",
