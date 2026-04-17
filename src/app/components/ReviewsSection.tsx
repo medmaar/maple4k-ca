@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
+import Image from "next/image";
 
 const trustpilotReviews = [
   { name: "James R.", flag: "🇺🇸", rating: 5, title: "Best IPTV I've tried — finally no buffering", text: "I've tried at least four different IPTV providers over the past two years, and none came close to Maple4K. With the others, activation was slow, support barely replied, and buffering during live sports was just normal. When I switched, the difference was immediate. Live sports finally run smoothly, which never happened before." },
@@ -8,7 +9,7 @@ const trustpilotReviews = [
   { name: "Lucas P.", flag: "🇫🇷", rating: 5, title: "Quality and care are far above the rest", text: "After comparing Maple4K with two other IPTV providers, the difference was obvious. The others were cheaper but unreliable and had poor support. Maple4K helped me set everything up properly and followed up to make sure it worked. The quality and customer care are far above what I experienced before." },
   { name: "Michael S.", flag: "🇺🇸", rating: 5, title: "My internet was never the problem", text: "My previous IPTV provider always blamed my internet connection whenever channels froze. With Maple4K, I realized the problem was never my internet. Streams are stable, HD quality is consistent, and live sports finally work without interruptions. Support answered my questions clearly and professionally." },
   { name: "Ethan W.", flag: "🇦🇺", rating: 5, title: "Transparent and delivers exactly what they promise", text: "What impressed me most about Maple4K is transparency. Before subscribing long-term, I asked many questions comparing them to other services I used before. Support gave honest answers without overselling. After subscribing, everything matched what they promised. No surprises, no sudden outages." },
-  { name: "Ryan B.", flag: "🇨🇦", rating: 5, title: "Fast activation and real support", text: "I switched to Maple4K after my old IPTV service failed during an important match and never replied again. Maple4K activated my service fast, and when I needed help on my Smart TV, support walked me through everything patiently. Since then, I've had no serious issues. That alone makes this service worth it." },
+  { name: "Ryan B.", flag: "🇨🇦", rating: 5, title: "Fast activation and real support", text: "I switched to Maple4K after my old IPTV service failed during an important match and never replied again. Maple4K activated my service fast, and when I needed help on my Smart TV, support walked me through everything patiently. Since then, I've had no serious issues." },
   { name: "Thomas H.", flag: "🇬🇧", rating: 5, title: "Better stability and far better support", text: "I've tried some well-known IPTV providers before, but Maple4K offers better stability and far better support. With other providers, replies were slow or generic. Maple4K support actually reads your message and gives proper help. Channels load quickly, and everything works smoothly." },
   { name: "Andrew K.", flag: "🇺🇸", rating: 5, title: "Optimized and reliable", text: "I don't usually write reviews, but Maple4K deserves one. I came from a provider that overloaded servers and ignored customers. Maple4K feels optimized and reliable. When I contacted support for advice on improving performance, they gave useful tips instead of copy-paste replies." },
   { name: "Nathan C.", flag: "🇦🇺", rating: 5, title: "Consistency that other providers can't match", text: "The biggest difference between Maple4K and other IPTV services is consistency. My previous providers were unpredictable. Maple4K has been stable since day one. Customer service even checked in after activation to make sure everything was working correctly." },
@@ -48,25 +49,25 @@ const whatsappReviews = [
 ];
 
 const googleReviews = [
-  { name: "Matthew Collins", rating: 5, text: "I've used a few IPTV services over the years and Maple4K is the first one that didn't disappoint after the first week. Channels load fast, sports are smooth, and the quality stays consistent. I had one small issue during setup and support answered quickly and fixed it right away. Overall very solid service." },
-  { name: "Daniel Thompson", rating: 5, text: "Switched from another IPTV provider that kept buffering during live games. Maple4K has been much better so far. Streams are stable and customer service actually replies when you message them. That alone makes a big difference compared to what I had before." },
-  { name: "Christopher Miller", rating: 5, text: "Activation was fast and everything worked as expected. I mainly use it for live sports and movies, and I haven't had any major problems. I contacted support once with a question and they were polite and helpful. Definitely better than my previous IPTV service." },
-  { name: "James Walker", rating: 5, text: "I was hesitant to try another IPTV service after bad experiences, but Maple4K surprised me. Picture quality is good and channels don't randomly freeze. Support helped me choose the right app for my device and stayed available until everything worked properly." },
-  { name: "Ryan Peterson", rating: 5, text: "Maple4K has been reliable so far. I tested it during busy hours and everything ran smoothly. With my old provider, weekends were always a problem. Customer support here seems organized and responsive, which is rare with IPTV services." },
+  { name: "Matthew Collins", rating: 5, text: "I've used a few IPTV services over the years and Maple4K is the first one that didn't disappoint after the first week. Channels load fast, sports are smooth, and the quality stays consistent. Had one small issue during setup and support answered quickly and fixed it right away. Very solid service." },
+  { name: "Daniel Thompson", rating: 5, text: "Switched from another IPTV provider that kept buffering during live games. Maple4K has been much better. Streams are stable and customer service actually replies when you message them. That alone makes a big difference." },
+  { name: "Christopher Miller", rating: 5, text: "Activation was fast and everything worked as expected. I mainly use it for live sports and movies, and I haven't had any major problems. Contacted support once and they were polite and helpful. Definitely better than my previous service." },
+  { name: "James Walker", rating: 5, text: "I was hesitant to try another IPTV service after bad experiences, but Maple4K surprised me. Picture quality is good and channels don't randomly freeze. Support helped me choose the right app and stayed available until everything worked." },
+  { name: "Ryan Peterson", rating: 5, text: "Maple4K has been reliable so far. Tested during busy hours and everything ran smoothly. With my old provider, weekends were always a problem. Customer support here is organized and responsive, which is rare." },
   { name: "Andrew Johnson", rating: 5, text: "What I like most is consistency. With other services, quality changes from day to day. Maple4K has stayed stable since I subscribed. Support answered my questions clearly without rushing. Overall a good experience." },
-  { name: "Liam O'Connor", rating: 5, text: "I mainly watch football and PPV events, and Maple4K handles them well. No major buffering so far. I had to ask support about channel categories and they explained it clearly. Much smoother experience than my previous IPTV provider." },
-  { name: "Michael Harris", rating: 5, text: "Setup was straightforward and quick. I contacted support just to confirm a few things and they replied faster than expected. Streams are clean and VOD works well. Feels more professional than most IPTV services I've tried." },
-  { name: "Benjamin Carter", rating: 5, text: "I tried Maple4K after a friend recommended it. Compared to my old IPTV service, this one is more stable and easier to use. Customer service didn't disappear after payment, which is something I've experienced before with other providers." },
-  { name: "Jason Reynolds", rating: 5, text: "Channels switch quickly and quality is consistent. I had one minor issue during setup on my TV and support helped me fix it in a few minutes. Overall very satisfied with the service." },
+  { name: "Liam O'Connor", rating: 5, text: "I mainly watch football and PPV events, and Maple4K handles them well. No major buffering so far. Had to ask support about channel categories and they explained it clearly. Much smoother than my previous IPTV provider." },
+  { name: "Michael Harris", rating: 5, text: "Setup was straightforward and quick. Contacted support just to confirm a few things and they replied faster than expected. Streams are clean and VOD works well. Feels more professional than most IPTV services I've tried." },
+  { name: "Benjamin Carter", rating: 5, text: "Tried Maple4K after a friend recommended it. Compared to my old IPTV service, this one is more stable and easier to use. Customer service didn't disappear after payment, which I've experienced before with other providers." },
+  { name: "Jason Reynolds", rating: 5, text: "Channels switch quickly and quality is consistent. Had one minor issue during setup on my TV and support helped me fix it in a few minutes. Overall very satisfied with the service." },
   { name: "William Anderson", rating: 5, text: "I've been using Maple4K for a few months now. Live sports are reliable and movies load without long waits. Support has been responsive every time I reached out. Definitely better than the IPTV service I used last year." },
-  { name: "Thomas Bennett", rating: 5, text: "Maple4K does what it promises. No exaggerated claims, just a stable IPTV service. I had buffering issues with my old provider almost daily. With Maple4K, that hasn't been the case so far." },
+  { name: "Thomas Bennett", rating: 5, text: "Maple4K does what it promises. No exaggerated claims, just a stable IPTV service. I had buffering issues with my old provider almost daily. With Maple4K, that hasn't been the case." },
   { name: "Lucas Martin", rating: 5, text: "Good quality streams and fast activation. Customer service was helpful when I needed guidance choosing the right app. Compared to other IPTV services I tried, Maple4K feels more organized and reliable." },
   { name: "Kevin Brooks", rating: 5, text: "I don't usually leave reviews, but Maple4K has been solid. Sports channels work well and VOD selection is good. Support replies quickly and actually tries to help instead of sending generic messages." },
   { name: "Daniel Roberts", rating: 5, text: "Switched to Maple4K after constant issues with another provider. The difference is noticeable. Better stream stability and much better support. Everything works smoothly on my devices." },
   { name: "Jonathan Lewis", rating: 5, text: "Activation was quick and support was available when I had questions. I mainly watch series and movies, and everything plays without issues. Overall a good and reliable IPTV service." },
   { name: "Steven Moore", rating: 5, text: "Maple4K has been stable during peak hours, which was my biggest problem with previous IPTV services. Customer service is responsive and professional. So far, I'm happy with my subscription." },
-  { name: "Paul Mitchell", rating: 5, text: "Channels load fast and quality stays consistent. I contacted support once and they handled it politely and efficiently. Compared to other IPTV services I've used, this one feels more trustworthy." },
-  { name: "Nathan Wilson", rating: 5, text: "I tested Maple4K alongside another IPTV provider and Maple4K clearly performed better. Less buffering and faster channel switching. Support helped me set everything up correctly from the start." },
+  { name: "Paul Mitchell", rating: 5, text: "Channels load fast and quality stays consistent. Contacted support once and they handled it politely and efficiently. Compared to other IPTV services I've used, this one feels more trustworthy." },
+  { name: "Nathan Wilson", rating: 5, text: "Tested Maple4K alongside another IPTV provider and Maple4K clearly performed better. Less buffering and faster channel switching. Support helped me set everything up correctly from the start." },
   { name: "Alex Turner", rating: 5, text: "Reliable service with good picture quality. Customer support was helpful and easy to reach when I had a setup question. Much smoother experience than my last IPTV provider." },
 ];
 
@@ -76,47 +77,72 @@ const WA_ICON = () => (
   </svg>
 );
 
-const Dots = ({ total, current, set }: { total: number; current: number; set: (n: number) => void }) => (
-  <div style={{ display: "flex", justifyContent: "center", gap: 8, marginTop: 24 }}>
-    {Array.from({ length: total }).map((_, i) => (
-      <button key={i} onClick={() => set(i)} style={{
-        width: i === current ? 24 : 10, height: 10,
-        borderRadius: 99, border: "none", cursor: "pointer",
-        background: i === current ? "#F96E5B" : "rgba(63,154,174,0.3)",
-        transition: "all 0.3s ease", padding: 0,
-        fontFamily: "inherit",
-      }} />
+function useAutoplay(total: number, interval = 5000) {
+  const [current, setCurrent] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const timer = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const next = useCallback(() => setCurrent(c => (c + 1) % total), [total]);
+  const go = useCallback((n: number) => { setCurrent(n); setPaused(true); setTimeout(() => setPaused(false), 8000); }, []);
+
+  useEffect(() => {
+    if (paused) return;
+    timer.current = setInterval(next, interval);
+    return () => { if (timer.current) clearInterval(timer.current); };
+  }, [paused, next, interval]);
+
+  return { current, go };
+}
+
+function ProgressDots({ total, current, go }: { total: number; current: number; go: (n: number) => void }) {
+  return (
+    <div style={{ display: "flex", justifyContent: "center", gap: 8, marginTop: 20 }}>
+      {Array.from({ length: total }).map((_, i) => (
+        <button key={i} onClick={() => go(i)} style={{
+          width: i === current ? 24 : 10, height: 10,
+          borderRadius: 99, border: "none", cursor: "pointer",
+          background: i === current ? "#F96E5B" : "rgba(63,154,174,0.3)",
+          transition: "all 0.4s cubic-bezier(0.34,1.56,0.64,1)", padding: 0,
+          fontFamily: "inherit",
+        }} />
+      ))}
+    </div>
+  );
+}
+
+const TP_STARS = ({ n }: { n: number }) => (
+  <div style={{ display: "flex", gap: 3, marginBottom: 14 }}>
+    {Array.from({ length: n }).map((_, i) => (
+      <div key={i} style={{ width: 28, height: 28, background: "#00b67a", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: 4 }}>
+        <span style={{ color: "#fff", fontSize: 16, lineHeight: 1 }}>★</span>
+      </div>
     ))}
   </div>
 );
 
 export default function ReviewsSection({ showHeader = true }: { showHeader?: boolean }) {
-  const [tpPage, setTpPage] = useState(0);
-  const [waPage, setWaPage] = useState(0);
-  const [gPage, setGPage] = useState(0);
+  const tp = useAutoplay(trustpilotReviews.length, 5000);
+  const wa = useAutoplay(Math.ceil(whatsappReviews.length / 2), 5000);
+  const g = useAutoplay(Math.ceil(googleReviews.length / 3), 5000);
 
-  const tpVisible = trustpilotReviews.slice(tpPage, tpPage + 1);
-  const waVisible = whatsappReviews.slice(waPage * 2, waPage * 2 + 2);
-  const gVisible = googleReviews.slice(gPage * 3, gPage * 3 + 3);
-
-  const tpTotal = trustpilotReviews.length;
-  const waTotal = Math.ceil(whatsappReviews.length / 2);
-  const gTotal = Math.ceil(googleReviews.length / 3);
+  const waVisible = whatsappReviews.slice(wa.current * 2, wa.current * 2 + 2);
+  const gVisible = googleReviews.slice(g.current * 3, g.current * 3 + 3);
+  const tpReview = trustpilotReviews[tp.current];
 
   return (
     <div>
       {showHeader && (
-        <div style={{ textAlign: "center", marginBottom: 48 }}>
-          <p style={{ color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>Verified Reviews</p>
+        <div style={{ textAlign: "center", marginBottom: 52 }}>
+          <p style={{ color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 14 }}>Verified Reviews</p>
           <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", fontWeight: 900, color: "#000000", marginBottom: 12 }}>
             What Customers Say About <span style={{ color: "#F96E5B" }}>Maple4K</span>
           </h2>
           <p style={{ color: "#000000", fontSize: 15, marginBottom: 28 }}>Real feedback from Trustpilot, WhatsApp & Google</p>
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16 }}>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 14 }}>
             {[
-              { val: "5.0 ★", label: "Trustpilot", color: "#00b67a" },
+              { val: "5.0", label: "Trustpilot", color: "#00b67a" },
               { val: "500+", label: "Customers", color: "#3F9AAE" },
-              { val: "4.9 ★", label: "Google", color: "#FBBC04" },
+              { val: "4.9★", label: "Google", color: "#FBBC04" },
               { val: "24/7", label: "Support", color: "#F96E5B" },
             ].map(s => (
               <div key={s.val} style={{ background: "#1A3D45", borderRadius: 12, padding: "12px 20px", textAlign: "center", minWidth: 90 }}>
@@ -128,30 +154,31 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
         </div>
       )}
 
-      {/* Trustpilot */}
-      <div style={{ marginBottom: 56 }}>
-        <p style={{ textAlign: "center", color: "#00b67a", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 10 }}>Maple4K · Trustpilot</p>
-        <h3 style={{ textAlign: "center", fontSize: "clamp(1.4rem, 2.5vw, 1.9rem)", fontWeight: 900, color: "#000000", marginBottom: 24 }}>Trustpilot Reviews for Maple4K IPTV</h3>
+      {/* ── TRUSTPILOT ── */}
+      <div style={{ marginBottom: 60 }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 16, marginBottom: 28 }}>
+          <Image src="/trustpilot-logo.png" alt="Trustpilot" width={140} height={36} style={{ objectFit: "contain" }} />
+        </div>
         <div style={{ maxWidth: 780, margin: "0 auto" }}>
-          {tpVisible.map((r, i) => (
-            <div key={i} style={{ background: "#ffffff", borderRadius: 20, padding: "32px 36px", boxShadow: "0 4px 24px rgba(63,154,174,0.12)", border: "1px solid rgba(63,154,174,0.15)" }}>
-              <div style={{ display: "flex", gap: 3, marginBottom: 12 }}>
-                {Array.from({ length: r.rating }).map((_, j) => <span key={j} style={{ color: "#00b67a", fontSize: 22 }}>★</span>)}
-              </div>
-              <h4 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#000000" }}>{r.title}</h4>
-              <p style={{ color: "#000000", lineHeight: 1.75, fontSize: 15, marginBottom: 20 }}>{r.text}</p>
-              <p style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 13 }}>— {r.name} {r.flag}</p>
-            </div>
-          ))}
-          <Dots total={tpTotal} current={tpPage} set={setTpPage} />
+          <div key={tp.current} style={{ background: "#ffffff", borderRadius: 20, padding: "32px 36px", boxShadow: "0 4px 28px rgba(63,154,174,0.13)", border: "1px solid rgba(63,154,174,0.15)", animation: "fadeSlideUp 0.4s ease" }}>
+            <TP_STARS n={tpReview.rating} />
+            <h4 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#000000" }}>{tpReview.title}</h4>
+            <p style={{ color: "#000000", lineHeight: 1.8, fontSize: 15, marginBottom: 20 }}>{tpReview.text}</p>
+            <p style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 13 }}>— {tpReview.name} {tpReview.flag}</p>
+          </div>
+          <ProgressDots total={trustpilotReviews.length} current={tp.current} go={tp.go} />
         </div>
       </div>
 
-      {/* WhatsApp */}
-      <div style={{ marginBottom: 56 }}>
-        <p style={{ textAlign: "center", color: "#25D366", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 10 }}>Maple4K · WhatsApp</p>
-        <h3 style={{ textAlign: "center", fontSize: "clamp(1.4rem, 2.5vw, 1.9rem)", fontWeight: 900, color: "#000000", marginBottom: 24 }}>WhatsApp Reviews for Maple4K IPTV</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20, maxWidth: 900, margin: "0 auto" }}>
+      {/* ── WHATSAPP ── */}
+      <div style={{ marginBottom: 60 }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginBottom: 28 }}>
+          <div style={{ background: "#25D366", borderRadius: 10, width: 38, height: 38, display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <WA_ICON />
+          </div>
+          <span style={{ fontWeight: 800, fontSize: 22, color: "#25D366" }}>WhatsApp</span>
+        </div>
+        <div key={wa.current} style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20, maxWidth: 900, margin: "0 auto", animation: "fadeSlideUp 0.4s ease" }}>
           {waVisible.map((r, i) => (
             <div key={i} style={{ background: "#ffffff", borderRadius: 16, padding: "24px", boxShadow: "0 4px 20px rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.15)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
@@ -160,30 +187,31 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
                 </div>
                 <span style={{ fontWeight: 700, fontSize: 14, color: "#000000" }}>WhatsApp</span>
               </div>
-              <p style={{ color: "#000000", lineHeight: 1.7, fontSize: 14, marginBottom: 14 }}>{r.text}</p>
+              <p style={{ color: "#000000", lineHeight: 1.75, fontSize: 14, marginBottom: 14 }}>{r.text}</p>
               <p style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 13 }}>— {r.name} {r.flag}</p>
             </div>
           ))}
         </div>
-        <Dots total={waTotal} current={waPage} set={setWaPage} />
+        <ProgressDots total={Math.ceil(whatsappReviews.length / 2)} current={wa.current} go={wa.go} />
       </div>
 
-      {/* Google */}
+      {/* ── GOOGLE ── */}
       <div style={{ marginBottom: 24 }}>
-        <p style={{ textAlign: "center", color: "#FBBC04", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 10 }}>Maple4K · Google</p>
-        <h3 style={{ textAlign: "center", fontSize: "clamp(1.4rem, 2.5vw, 1.9rem)", fontWeight: 900, color: "#000000", marginBottom: 24 }}>Google Reviews for Maple4K IPTV</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 28 }}>
+          <Image src="/google-reviews-logo.png" alt="Google Reviews" width={220} height={56} style={{ objectFit: "contain" }} />
+        </div>
+        <div key={g.current} style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20, animation: "fadeSlideUp 0.4s ease" }}>
           {gVisible.map((r, i) => (
             <div key={i} style={{ background: "#ffffff", borderRadius: 16, padding: "24px", boxShadow: "0 4px 20px rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.15)" }}>
               <div style={{ display: "flex", gap: 2, marginBottom: 10 }}>
-                {Array.from({ length: r.rating }).map((_, j) => <span key={j} style={{ color: "#FBBC04", fontSize: 18 }}>★</span>)}
+                {Array.from({ length: r.rating }).map((_, j) => <span key={j} style={{ color: "#FBBC04", fontSize: 20 }}>★</span>)}
               </div>
               <p style={{ fontWeight: 700, fontSize: 15, color: "#000000", marginBottom: 10 }}>{r.name}</p>
-              <p style={{ color: "#000000", lineHeight: 1.7, fontSize: 14 }}>{r.text}</p>
+              <p style={{ color: "#000000", lineHeight: 1.75, fontSize: 14 }}>{r.text}</p>
             </div>
           ))}
         </div>
-        <Dots total={gTotal} current={gPage} set={setGPage} />
+        <ProgressDots total={Math.ceil(googleReviews.length / 3)} current={g.current} go={g.go} />
       </div>
     </div>
   );
