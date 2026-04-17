@@ -8289,7 +8289,7 @@ export default function ChannelsListPage() {
           {categories.map((cat, index) => (
             <details
               key={cat.name}
-              className="group bg-transparent border border-[rgba(63,154,174,0.2)] rounded-xl bg-white overflow-hidden transition-all hover:border-[#F96E5B]"
+              className="group border border-[rgba(63,154,174,0.2)] rounded-xl overflow-hidden transition-all hover:border-[#F96E5B]" style={{ background: "#ffffff" }}
             >
               <summary className="flex items-center justify-between px-5 py-4 cursor-pointer select-none list-none">
                 <div className="flex items-center gap-3">
@@ -8312,7 +8312,7 @@ export default function ChannelsListPage() {
                   </svg>
                 </div>
               </summary>
-              <div className="px-5 pb-5 pt-2 border-t border-gray-800">
+              <div className="px-5 pb-5 pt-2 border-t" style={{ borderColor: "rgba(63,154,174,0.15)" }}>
                 <div className="flex flex-wrap gap-2">
                   {cat.channels.map((ch) => (
                     <span
@@ -8330,14 +8330,14 @@ export default function ChannelsListPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-gradient-to-r from-red-900 to-gray-900 text-center">
+      <section style={{ padding: "64px 16px", background: "#1A3D45", textAlign: "center" }}>
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">Access All 25,000+ Channels</h2>
-          <p className="text-black mb-8">
+          <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Access All 25,000+ Channels</h2>
+          <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: 32 }}>
             Every plan includes the full channel list. Try it free for 24 hours — no credit card required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
               Get Free Trial
             </a>
             <a href="/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">

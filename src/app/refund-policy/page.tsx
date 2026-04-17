@@ -24,9 +24,9 @@ export default function RefundPolicyPage() {
         <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
 
         {/* Summary box */}
-        <div className="bg-red-950 border border-[#F96E5B] rounded-2xl p-6 mb-10">
-          <h2 className="text-lg font-bold text-black mb-2">Summary</h2>
-          <p className="text-black text-sm leading-relaxed">
+        <div style={{ background: "#1A3D45", border: "1px solid rgba(121,201,197,0.3)", borderRadius: 16, padding: "24px", marginBottom: 40 }}>
+          <h2 style={{ fontSize: 18, fontWeight: 700, color: "#ffffff", marginBottom: 8 }}>Summary</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 14, lineHeight: 1.7 }}>
             Due to the instant digital nature of our service, we do not offer refunds once a subscription
             has been activated. To protect you before purchase, we offer a <strong>free 24h trial with
             no credit card required</strong>. Please use the trial to verify compatibility before subscribing.

@@ -87,11 +87,12 @@ export default function IPTVAndroidTVCanadaPage() {
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <span
               style={{
-                background: "#F96E5B",
-                color: "#000000",
-                fontSize: 12,
+                background: "rgba(249,110,91,0.18)",
+                border: "1px solid rgba(249,110,91,0.4)",
+                color: "#F96E5B",
+                fontSize: 11,
                 fontWeight: 700,
-                padding: "4px 14px",
+                padding: "5px 16px",
                 borderRadius: 999,
                 letterSpacing: 1,
                 display: "inline-block",
@@ -106,6 +107,7 @@ export default function IPTVAndroidTVCanadaPage() {
                 fontWeight: 800,
                 lineHeight: 1.15,
                 marginBottom: 20,
+                color: "#ffffff",
               }}
             >
               Best IPTV for{" "}
@@ -114,7 +116,7 @@ export default function IPTVAndroidTVCanadaPage() {
             <p
               style={{
                 fontSize: "1.15rem",
-                color: "#ccc",
+                color: "rgba(255,255,255,0.82)",
                 maxWidth: 680,
                 lineHeight: 1.75,
                 marginBottom: 36,
@@ -130,7 +132,7 @@ export default function IPTVAndroidTVCanadaPage() {
                 href="/pricing"
                 style={{
                   background: "#F96E5B",
-                  color: "#000000",
+                  color: "#ffffff",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -182,7 +184,7 @@ export default function IPTVAndroidTVCanadaPage() {
                   style={{
                     background: "#1a1a1a",
                     border: "1px solid #2a2a2a",
-                    color: "#ccc",
+                    color: "#000000",
                     padding: "6px 16px",
                     borderRadius: 999,
                     fontSize: "0.85rem",
@@ -247,7 +249,7 @@ export default function IPTVAndroidTVCanadaPage() {
                   >
                     {f.title}
                   </strong>
-                  <span style={{ color: "#999", fontSize: "0.9rem", lineHeight: 1.65 }}>
+                  <span style={{ color: "#000000", fontSize: "0.9rem", lineHeight: 1.65 }}>
                     {f.desc}
                   </span>
                 </div>
@@ -319,7 +321,7 @@ export default function IPTVAndroidTVCanadaPage() {
                       {s.title}
                     </strong>
                     <span
-                      style={{ color: "#999", fontSize: "0.92rem", lineHeight: 1.65 }}
+                      style={{ color: "#000000", fontSize: "0.92rem", lineHeight: 1.65 }}
                     >
                       {s.desc}
                     </span>
@@ -452,7 +454,7 @@ export default function IPTVAndroidTVCanadaPage() {
               Start Streaming IPTV on Android TV Today
             </h2>
             <p
-              style={{ color: "#ccc", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
+              style={{ color: "#000000", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
             >
               Try Maple4K free for 24 hours — no credit card required. Need help? Contact
               us at{" "}
@@ -471,7 +473,7 @@ export default function IPTVAndroidTVCanadaPage() {
                 href="/pricing"
                 style={{
                   background: "#F96E5B",
-                  color: "#000000",
+                  color: "#ffffff",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,

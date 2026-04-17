@@ -39,11 +39,11 @@ const features = [
 
 export default function ResellerPage() {
   return (
-    <main style={{ background: "#E8F4F5", color: "#000000", minHeight: "100vh" }}>
+    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
       {/* Hero */}
       <section
         style={{
-          background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(229,57,53,0.14) 0%, transparent 65%), #0a0a0a",
+          background: "#1A3D45",
           padding: "90px 16px 70px",
           textAlign: "center",
         }}
@@ -52,18 +52,18 @@ export default function ResellerPage() {
           <span style={{ display: "inline-block", background: "rgba(229,57,53,0.12)", border: "1px solid rgba(229,57,53,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 18px", borderRadius: 999, marginBottom: 28 }}>
             IPTV Reseller Program
           </span>
-          <h1 style={{ fontSize: "clamp(34px, 5.5vw, 58px)", fontWeight: 900, lineHeight: 1.1, marginBottom: 22 }}>
+          <h1 style={{ fontSize: "clamp(34px, 5.5vw, 58px)", fontWeight: 900, lineHeight: 1.1, marginBottom: 22, color: "#ffffff" }}>
             Become an IPTV Reseller<br />
             <span style={{ color: "#F96E5B" }}>in Canada</span>
           </h1>
-          <p style={{ color: "#000000", fontSize: 18, lineHeight: 1.7, maxWidth: 640, margin: "0 auto 36px" }}>
+          <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 18, lineHeight: 1.7, maxWidth: 640, margin: "0 auto 36px" }}>
             Start your own IPTV business in Canada with Maple4K&apos;s reseller program. Wholesale pricing, white-label support, and a powerful management panel — everything you need to build a profitable IPTV business.
           </p>
           <a
             href="mailto:help@maple4k.ca?subject=IPTV%20Reseller%20Inquiry"
             style={{
               background: "#F96E5B",
-              color: "#000000",
+              color: "#ffffff",
               fontWeight: 700,
               fontSize: 17,
               padding: "16px 36px",
@@ -85,7 +85,7 @@ export default function ResellerPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 24 }}>
             {features.map((f) => (
-              <div key={f.title} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "36px 28px", textAlign: "center" }}>
+              <div key={f.title} style={{ background: "#ffffff", border: "1px solid rgba(63,154,174,0.2)", borderRadius: 20, padding: "36px 28px", textAlign: "center" }}>
                 <div style={{ fontSize: 40, marginBottom: 16 }}>{f.icon}</div>
                 <h3 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#000000" }}>{f.title}</h3>
                 <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.7 }}>{f.desc}</p>
@@ -109,7 +109,7 @@ export default function ResellerPage() {
               { n: "04", title: "Set Your Own Prices", desc: "You control your retail pricing. Sell subscriptions at whatever margin works for your business." },
               { n: "05", title: "Scale and Earn", desc: "Grow your client base with Maple4K's reliable 99.9% uptime infrastructure backing your brand." },
             ].map((s) => (
-              <div key={s.n} style={{ display: "flex", gap: 20, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "22px 28px" }}>
+              <div key={s.n} style={{ display: "flex", gap: 20, background: "#ffffff", border: "1px solid rgba(63,154,174,0.2)", borderRadius: 14, padding: "22px 28px" }}>
                 <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 40 }}>{s.n}</span>
                 <div>
                   <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8 }}>{s.title}</h3>
@@ -134,7 +134,7 @@ export default function ResellerPage() {
               { title: "No Infrastructure Costs", desc: "We handle all servers, content, and technical support. You focus on sales and customer relationships." },
               { title: "24/7 Backend Support", desc: "Our technical team supports your infrastructure around the clock so your clients are always satisfied." },
             ].map((f) => (
-              <div key={f.title} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 16, padding: "24px 20px" }}>
+              <div key={f.title} style={{ background: "#ffffff", border: "1px solid rgba(63,154,174,0.2)", borderRadius: 16, padding: "24px 20px" }}>
                 <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#F96E5B" }}>{f.title}</h3>
                 <p style={{ color: "#000000", fontSize: 13, lineHeight: 1.6 }}>{f.desc}</p>
               </div>
@@ -144,7 +144,7 @@ export default function ResellerPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "80px 16px", textAlign: "center", background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(229,57,53,0.12) 0%, transparent 70%), #0a0a0a" }}>
+      <section style={{ padding: "80px 16px", textAlign: "center", background: "#1A3D45" }}>
         <div style={{ maxWidth: 600, margin: "0 auto" }}>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 900, marginBottom: 16 }}>
             Ready to Start Your IPTV Business?
