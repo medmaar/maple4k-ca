@@ -6,14 +6,15 @@ export default function Animations() {
     /* ── 1. SCROLL REVEAL ── */
     // Skip on channels-list page (too many elements)
     const isHeavyPage = window.location.pathname.includes('channels-list');
+    let observer: IntersectionObserver | null = null;
     
     if (!isHeavyPage) {
-      const observer = new IntersectionObserver(
+      observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.classList.add("ma-visible");
-              observer.unobserve(entry.target);
+              observer?.unobserve(entry.target);
             }
           });
         },
@@ -27,7 +28,7 @@ export default function Animations() {
         if (!el.classList.contains("ma-init")) {
           el.classList.add("ma-init");
           (el as HTMLElement).style.transitionDelay = `${(i % 8) * 0.07}s`;
-          observer.observe(el);
+          observer?.observe(el);
         }
       });
     }
@@ -130,7 +131,7 @@ export default function Animations() {
     window.addEventListener("mousemove", moveGlow);
 
     return () => {
-      if (!isHeavyPage) observer?.disconnect();
+      observer?.disconnect();
       counterObserver.disconnect();
       window.removeEventListener("mousemove", moveGlow);
       glow.remove();
