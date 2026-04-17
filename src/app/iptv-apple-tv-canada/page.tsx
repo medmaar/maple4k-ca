@@ -67,7 +67,7 @@ export default function IPTVAppleTVCanadaPage() {
                 { title: "AirPlay Compatible", desc: "Start streaming on iPhone and AirPlay it directly to your Apple TV or any AirPlay-compatible TV." },
                 { title: "4K HDR Streaming", desc: "Apple TV 4K supports full 4K HDR output — perfect for watching NHL games and live sports in stunning quality." },
               ].map((f) => (
-                <div key={f.title} style={{ background: "rgba(255,255,255,0.8)", border: "1px solid rgba(63,154,174,0.1)", borderRadius: 16, padding: "24px 20px" }}>
+                <div key={f.title} style={{ background: "#ffffff", border: "1px solid rgba(63,154,174,0.1)", borderRadius: 16, padding: "24px 20px" }}>
                   <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8, color: "#F96E5B" }}>{f.title}</h3>
                   <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.6 }}>{f.desc}</p>
                 </div>
@@ -89,7 +89,7 @@ export default function IPTVAppleTVCanadaPage() {
                 { n: "04", title: "Enter Your Credentials", desc: "Open the app and enter your Xtream Codes or M3U URL. Your channel list loads automatically." },
                 { n: "05", title: "Watch in 4K", desc: "Enjoy 25,000+ live Canadian and international channels plus 120,000+ on-demand titles." },
               ].map((s) => (
-                <div key={s.n} style={{ display: "flex", gap: 20, background: "rgba(255,255,255,0.8)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
+                <div key={s.n} style={{ display: "flex", gap: 20, background: "#ffffff", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
                   <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 36 }}>{s.n}</span>
                   <div>
                     <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 6 }}>{s.title}</h3>
@@ -110,6 +110,26 @@ export default function IPTVAppleTVCanadaPage() {
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/pricing" style={{ background: "#F96E5B", color: "#000000", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>View Maple4K Plans →</Link>
               <Link href="/free-trial" style={{ background: "transparent", border: "2px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>Try 24h Free</Link>
+            </div>
+          </div>
+        </section>
+      
+        {/* SEO Internal Links */}
+        <section style={{ padding: "48px 16px" }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <p style={{ textAlign: "center", color: "#000000", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
+              <a href="/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Toronto</a>
+              <a href="/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
+              <a href="/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Montreal</a>
+              <a href="/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Calgary</a>
+              <a href="/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
+              <a href="/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+              <a href="/pricing" style={{ background: "#F96E5B", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+              <a href="/free-trial" style={{ background: "#3F9AAE", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
+              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>Channel List</a>
             </div>
           </div>
         </section>

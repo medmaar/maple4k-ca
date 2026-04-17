@@ -57,7 +57,7 @@ export default function IPTVEdmontonPage() {
         <section
           style={{
             background:
-              "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(249,110,91,0.15) 0%, transparent 65%), #0a0a0a",
+              "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)",
             padding: "80px 16px 60px",
           }}
         >
@@ -89,7 +89,7 @@ export default function IPTVEdmontonPage() {
             </h1>
             <p
               style={{
-                color: "#d1d5db",
+                color: "#000000",
                 fontSize: "1.1rem",
                 maxWidth: 640,
                 lineHeight: 1.7,
@@ -138,14 +138,14 @@ export default function IPTVEdmontonPage() {
             <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#000000" }}>
               IPTV Edmonton — Complete Alberta Coverage
             </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
+            <p style={{ color: "#000000", lineHeight: 1.8, marginBottom: 16 }}>
               Maple4K delivers the best IPTV experience in Edmonton with all the channels
               Albertans love. You get CBC Edmonton, CTV Edmonton, Global Edmonton,
               Sportsnet West, TSN, and all regional Canadian networks in crisp HD and 4K.
               Edmonton Oilers fans get every game live on Sportsnet and TSN — no blackouts,
               no extra fees.
             </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.8 }}>
+            <p style={{ color: "#000000", lineHeight: 1.8 }}>
               Edmonton IPTV subscribers also get 25,000+ international channels, 120,000+ movies
               and series on demand, 7-day catch-up TV, and a full EPG. Maple4K works on every
               device — Firestick, Smart TV, Android, iPhone, Apple TV, and more — with instant
@@ -188,7 +188,7 @@ export default function IPTVEdmontonPage() {
                     gap: 16,
                     alignItems: "flex-start",
                     marginBottom: 16,
-                    background: "rgba(255,255,255,0.8)",
+                    background: "#ffffff",
                     borderRadius: 12,
                     padding: 20,
                     border: "1px solid rgba(255,255,255,0.07)",
@@ -209,7 +209,7 @@ export default function IPTVEdmontonPage() {
             <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#000000" }}>
               Maple4K Pricing for Edmonton — From $9/Month
             </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
+            <p style={{ color: "#000000", lineHeight: 1.8, marginBottom: 16 }}>
               Telus and Shaw TV packages in Edmonton cost $80–$130/month. Maple4K starts at
               just $9/month with no contracts and no hidden fees. Edmonton subscribers save
               an average of $900/year by switching to IPTV with Maple4K.
@@ -225,7 +225,7 @@ export default function IPTVEdmontonPage() {
               <p style={{ color: "#F96E5B", fontWeight: 700, marginBottom: 12 }}>
                 Maple4K Plans — Available in Edmonton
               </p>
-              <ul style={{ color: "#d1d5db", margin: 0, paddingLeft: 20, lineHeight: 2 }}>
+              <ul style={{ color: "#000000", margin: 0, paddingLeft: 20, lineHeight: 2 }}>
                 <li>1 Month — $9</li>
                 <li>3 Months — $29</li>
                 <li>6 Months — $39</li>
@@ -244,7 +244,7 @@ export default function IPTVEdmontonPage() {
                 <div
                   key={item.q}
                   style={{
-                    background: "rgba(255,255,255,0.8)",
+                    background: "#ffffff",
                     border: "1px solid rgba(63,154,174,0.1)",
                     borderRadius: 12,
                     padding: "20px 24px",
@@ -261,7 +261,7 @@ export default function IPTVEdmontonPage() {
         {/* CTA */}
         <section
           style={{
-            background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(249,110,91,0.12) 0%, transparent 70%), #111",
+            background: "#1A3D45",
             padding: "60px 16px",
             textAlign: "center",
             borderTop: "1px solid rgba(255,255,255,0.06)",
@@ -287,6 +287,26 @@ export default function IPTVEdmontonPage() {
           >
             View Maple4K Plans →
           </a>
+        </section>
+      
+        {/* SEO Internal Links */}
+        <section style={{ padding: "48px 16px" }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <p style={{ textAlign: "center", color: "#000000", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
+              <a href="/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Toronto</a>
+              <a href="/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
+              <a href="/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Montreal</a>
+              <a href="/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Calgary</a>
+              <a href="/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
+              <a href="/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+              <a href="/pricing" style={{ background: "#F96E5B", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+              <a href="/free-trial" style={{ background: "#3F9AAE", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
+              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>Channel List</a>
+            </div>
+          </div>
         </section>
       </main>
     </>

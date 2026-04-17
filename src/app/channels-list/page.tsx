@@ -8298,7 +8298,7 @@ export default function ChannelsListPage() {
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="bg-gray-800 border border-gray-700 text-black text-xs px-3 py-1 rounded-full font-medium">
+                  <span className="bg-white border border-[rgba(63,154,174,0.25)] text-black text-xs px-3 py-1 rounded-full font-medium">
                     {cat.count} channels
                   </span>
                   <svg
@@ -8317,7 +8317,7 @@ export default function ChannelsListPage() {
                   {cat.channels.map((ch) => (
                     <span
                       key={ch}
-                      className="bg-gray-800 border border-gray-700 hover:border-[#F96E5B] hover:text-black text-black text-xs px-3 py-1.5 rounded-lg transition-colors cursor-default"
+                      className="bg-white border border-[rgba(63,154,174,0.2)] hover:border-[#F96E5B] hover:bg-[#F96E5B] hover:text-white text-black text-xs px-3 py-1.5 rounded-lg transition-colors cursor-default"
                     >
                       {ch}
                     </span>
