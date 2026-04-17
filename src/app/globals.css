@@ -137,7 +137,7 @@ button[style*="#1A3D45"]:hover {
   transform: translateY(-4px) scale(1.04) !important;
   box-shadow: 0 14px 32px rgba(249,110,91,0.35) !important;
 }
-nav a:hover { transform: translateY(-2px) !important; }
+nav a:hover { transform: translateY(-2px) !important; background: transparent !important; box-shadow: none !important; }
 
 /* ── UNDERLINE ANIMATION ── */
 nav a, footer a {

@@ -56,28 +56,24 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <main style={{ background: "#E8F4F5", color: "#000000", minHeight: "100vh" }}>
-      <section
-        style={{
-          background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(249,110,91,0.12) 0%, transparent 65%), #0a0a0a",
-          padding: "80px 16px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ maxWidth: 700, margin: "0 auto" }}>
-          <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
-            Maple4K Blog
-          </p>
-          <h1 style={{ fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
-            Maple4K Guides &amp; Reviews
-          </h1>
-          <p style={{ color: "#000000", fontSize: 16, lineHeight: 1.7 }}>
-            Expert articles on IPTV setup, legality, pricing, and the best Canadian IPTV services for 2026.
-          </p>
+    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+      <section style={{ padding: "48px 16px 32px" }}>
+        <div style={{ maxWidth: 680, margin: "0 auto" }}>
+          <div style={{ background: "#1A3D45", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", textAlign: "center" }}>
+            <span style={{ display: "inline-block", background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, marginBottom: 20 }}>
+              Maple4K Blog
+            </span>
+            <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 16 }}>
+              Maple4K Guides &amp; Reviews
+            </h1>
+            <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 14 }}>
+              Expert articles on IPTV setup, legality, pricing, and the best Canadian IPTV services for 2026.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section style={{ padding: "60px 16px 100px", background: "#E8F4F5" }}>
+      <section style={{ padding: "60px 16px 100px", background: "transparent" }}>
         <div style={{ maxWidth: 860, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: 24 }}>
           {posts.map((post) => (
             <Link
@@ -87,7 +83,7 @@ export default function BlogPage() {
             >
               <article
                 style={{
-                  background: "rgba(255,255,255,0.03)",
+                  background: "#ffffff",
                   border: "1px solid rgba(255,255,255,0.08)",
                   borderRadius: 20,
                   padding: "28px 24px",

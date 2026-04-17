@@ -34,21 +34,23 @@ export default function ReferralPage() {
     <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section style={{ background: "#1A3D45", padding: "80px 16px", textAlign: "center" }}>
-        <div style={{ maxWidth: 720, margin: "0 auto" }}>
-          <span style={{ display: "inline-block", background: "rgba(249,110,91,0.2)", border: "1px solid rgba(249,110,91,0.5)", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 18px", borderRadius: 999, marginBottom: 24 }}>
-            Referral Program
-          </span>
-          <h1 style={{ fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 900, lineHeight: 1.1, color: "#ffffff", marginBottom: 20 }}>
-            Refer a Friend,{" "}<span style={{ color: "#F96E5B" }}>Get +1 Year Free</span>
-          </h1>
-          <p style={{ fontSize: 18, color: "rgba(255,255,255,0.8)", marginBottom: 32, lineHeight: 1.7 }}>
-            Share Maple4K with people you know and earn free subscription time when they join.
-          </p>
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 24, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
-            <span><span style={{ color: "#79C9C5" }}>✓</span> Unlimited referrals</span>
-            <span><span style={{ color: "#79C9C5" }}>✓</span> +12 months per referral</span>
-            <span><span style={{ color: "#79C9C5" }}>✓</span> Fast review</span>
+      <section style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", padding: "48px 16px 32px" }}>
+        <div style={{ maxWidth: 680, margin: "0 auto" }}>
+          <div style={{ background: "#1A3D45", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", textAlign: "center" }}>
+            <span style={{ display: "inline-block", background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, marginBottom: 20 }}>
+              Referral Program
+            </span>
+            <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 16 }}>
+              Refer a Friend, <span style={{ color: "#F96E5B" }}>Get +1 Year Free</span>
+            </h1>
+            <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13, marginBottom: 20 }}>
+              Share Maple4K with people you know and earn free subscription time when they join.
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 20, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
+              <span><span style={{ color: "#79C9C5" }}>✓</span> Unlimited referrals</span>
+              <span><span style={{ color: "#79C9C5" }}>✓</span> +12 months per referral</span>
+              <span><span style={{ color: "#79C9C5" }}>✓</span> Fast review</span>
+            </div>
           </div>
         </div>
       </section>
