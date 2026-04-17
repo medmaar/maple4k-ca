@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import HomePricing from "./components/HomePricing";
+import ReviewsSection from "./components/ReviewsSection";
 
 export const metadata: Metadata = {
   title: { absolute: "True 4K Ultra HD IPTV Canada 2026 — H.265/HEVC Streams | Maple4K" },
@@ -280,6 +281,18 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── REVIEWS ── */}
+        <section style={{ padding: "80px 16px", background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)" }}>
+          <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+            <ReviewsSection showHeader={true} />
+            <div style={{ textAlign: "center", marginTop: 40 }}>
+              <a href="/reviews" style={{ display: "inline-block", background: "#1A3D45", color: "#fff", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, textDecoration: "none" }}>
+                Read All Reviews →
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* ── 3. PRICING + CONNECTION SELECTOR ── */}
         <HomePricing />
 
@@ -486,36 +499,6 @@ export default function HomePage() {
                   🍁 {city.name}
                 </Link>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── REVIEWS TEASER ── */}
-        <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
-          <div style={{ maxWidth: 960, margin: "0 auto" }}>
-            <p style={{ textAlign: "center", color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>Verified Reviews</p>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, color: "#000000", marginBottom: 8 }}>What Canadians Say</h2>
-            <p style={{ textAlign: "center", color: "#000000", marginBottom: 36, fontSize: 15 }}>Real feedback from Trustpilot, WhatsApp & Google</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20, marginBottom: 32 }}>
-              {[
-                { name: "David L.", location: "Toronto, ON", text: "Best 4K IPTV I've tried in Canada. No buffering during Leafs playoff games. Setup took 10 minutes on my Firestick.", src: "Trustpilot" },
-                { name: "Sarah M.", location: "Vancouver, BC", text: "TSN, Sportsnet, CBC — all crystal clear. Customer support responded within minutes when I had a question.", src: "Trustpilot" },
-                { name: "Michael T.", location: "Montreal, QC", text: "RDS and TVA in perfect 4K quality as a Habs fan. No buffering during games. Highly recommend Maple4K.", src: "Google ★★★★★" },
-              ].map((r) => (
-                <div key={r.name} style={{ background: "#ffffff", borderRadius: 16, padding: "24px", border: "1px solid rgba(63,154,174,0.15)", boxShadow: "0 4px 16px rgba(63,154,174,0.1)" }}>
-                  <div style={{ display: "flex", gap: 2, marginBottom: 10 }}>
-                    {[1,2,3,4,5].map(j => <span key={j} style={{ color: "#F96E5B", fontSize: 16 }}>★</span>)}
-                  </div>
-                  <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.7, marginBottom: 14 }}>{r.text}</p>
-                  <p style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 12 }}>— {r.name} · {r.location}</p>
-                  <p style={{ color: "rgba(0,0,0,0.35)", fontSize: 11, marginTop: 4 }}>{r.src}</p>
-                </div>
-              ))}
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <a href="/reviews" style={{ display: "inline-block", background: "#1A3D45", color: "#fff", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, textDecoration: "none" }}>
-                Read All Reviews →
-              </a>
             </div>
           </div>
         </section>
