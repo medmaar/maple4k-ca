@@ -123,21 +123,31 @@ a, button {
               box-shadow 0.28s ease !important;
   position: relative;
 }
-a[style*="#F96E5B"]:hover,
+
+/* Nav and footer links — NO background change ever */
+nav a, nav a:hover, footer a, footer a:hover {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+nav a:hover { transform: translateY(-2px) !important; }
+
+/* Coral buttons → dark teal on hover */
+a:not(nav a):not(footer a)[style*="#F96E5B"]:hover,
 button[style*="#F96E5B"]:hover {
   background: #1A3D45 !important;
   color: #ffffff !important;
   transform: translateY(-4px) scale(1.04) !important;
   box-shadow: 0 14px 32px rgba(26,61,69,0.3) !important;
 }
-a[style*="#1A3D45"]:hover,
+
+/* Dark buttons → coral on hover */
+a:not(nav a):not(footer a)[style*="#1A3D45"]:hover,
 button[style*="#1A3D45"]:hover {
   background: #F96E5B !important;
   color: #ffffff !important;
   transform: translateY(-4px) scale(1.04) !important;
   box-shadow: 0 14px 32px rgba(249,110,91,0.35) !important;
 }
-nav a:hover { transform: translateY(-2px) !important; background: transparent !important; box-shadow: none !important; }
 
 /* ── UNDERLINE ANIMATION ── */
 nav a, footer a {

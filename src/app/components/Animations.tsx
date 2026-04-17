@@ -4,28 +4,33 @@ import { useEffect } from "react";
 export default function Animations() {
   useEffect(() => {
     /* ── 1. SCROLL REVEAL ── */
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("ma-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
-    );
+    // Skip on channels-list page (too many elements)
+    const isHeavyPage = window.location.pathname.includes('channels-list');
+    
+    if (!isHeavyPage) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("ma-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      );
 
-    const revealEls = document.querySelectorAll(
-      "section, h1, h2, h3, p, .plan-card, [class*='rounded-']"
-    );
-    revealEls.forEach((el, i) => {
-      if (!el.classList.contains("ma-init")) {
-        el.classList.add("ma-init");
-        (el as HTMLElement).style.transitionDelay = `${(i % 8) * 0.07}s`;
-        observer.observe(el);
-      }
-    });
+      const revealEls = document.querySelectorAll(
+        "section, h1, h2, h3, p, .plan-card, [class*='rounded-']"
+      );
+      revealEls.forEach((el, i) => {
+        if (!el.classList.contains("ma-init")) {
+          el.classList.add("ma-init");
+          (el as HTMLElement).style.transitionDelay = `${(i % 8) * 0.07}s`;
+          observer.observe(el);
+        }
+      });
+    }
 
     /* ── 2. COUNTER ANIMATION ── */
     const counterEls = document.querySelectorAll("[data-count]");
@@ -125,7 +130,7 @@ export default function Animations() {
     window.addEventListener("mousemove", moveGlow);
 
     return () => {
-      observer.disconnect();
+      if (!isHeavyPage) observer?.disconnect();
       counterObserver.disconnect();
       window.removeEventListener("mousemove", moveGlow);
       glow.remove();
