@@ -107,8 +107,8 @@ export default function Footer() {
           className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 border-t"
           style={{ borderColor: "rgba(121,201,197,0.2)" }}
         >
-          <p className="text-gray-600 text-xs">© 2026 Maple4K. All rights reserved.</p>
-          <p className="text-gray-700 text-xs">help@maple4k.ca</p>
+          <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>© 2026 Maple4K. All rights reserved.</p>
+          <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>help@maple4k.ca</p>
         </div>
 
       </div>
