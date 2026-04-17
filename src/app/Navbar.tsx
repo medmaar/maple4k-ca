@@ -6,7 +6,7 @@ import Logo from "../components/Logo";
 const links = [
   { label: "Pricing", href: "/pricing" },
   { label: "Channels", href: "/channels-list" },
-  { label: "Free Trial", href: "/free-trial" },
+  { label: "Reviews", href: "/reviews" },
   { label: "Blog", href: "/blog" },
   { label: "Referral", href: "/referral" },
   { label: "DMCA", href: "/dmca" },
