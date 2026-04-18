@@ -210,7 +210,14 @@ main > section:first-child::before {
   z-index: 0;
 }
 
-/* ── SMOOTH SCROLL ── */
+/* ── CONNECTION SELECTOR BUTTONS — no scale, just color change ── */
+button[data-n]:hover {
+  transform: none !important;
+  background: #1A3D45 !important;
+  color: #E8F4F5 !important;
+  opacity: 1 !important;
+  border-color: #1A3D45 !important;
+}
 html { scroll-behavior: smooth; }
 
 /* ── PAGE LOAD BOUNCE ── */

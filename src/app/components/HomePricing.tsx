@@ -78,11 +78,13 @@ export default function HomePricing() {
           ref={scrollRef}
           style={{
             overflowX: "auto",
+            overflowY: "visible",
             WebkitOverflowScrolling: "touch",
             display: "flex",
             gap: 10,
             marginBottom: 40,
-            paddingBottom: 6,
+            paddingBottom: 10,
+            paddingTop: 6,
             scrollbarWidth: "none",
           } as React.CSSProperties}
         >

@@ -105,11 +105,13 @@ export default function PricingSection() {
           ref={scrollRef}
           style={{
             overflowX: "auto",
+            overflowY: "visible",
             WebkitOverflowScrolling: "touch",
             display: "flex",
             gap: 8,
             marginBottom: 36,
-            paddingBottom: 6,
+            paddingBottom: 10,
+            paddingTop: 6,
             scrollbarWidth: "none",
           } as React.CSSProperties}
         >
