@@ -31,8 +31,8 @@ export default function Footer() {
             </a>
             <div className="mt-3 text-gray-500 text-sm leading-relaxed">
               <p className="text-gray-400 font-medium text-xs uppercase tracking-wider mb-1">Address</p>
-              <p>9361 Rue Lajeunesse</p>
-              <p>Montréal, QC H2M 1S5</p>
+              <p>1599 Blvd. Saint-Martin O</p>
+              <p>Laval, QC H7S 1N1</p>
               <p>Canada</p>
             </div>
           </div>
