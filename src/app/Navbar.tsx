@@ -51,8 +51,8 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <Link
           href="/free-trial"
-          className="hidden md:inline-flex items-center gap-2 text-sm font-bold text-white px-5 py-2.5 rounded-xl transition-all hover:brightness-110"
-          style={{ background: "#F96E5B", boxShadow: "0 4px 14px rgba(249,110,91,0.35)" }}
+          className="hidden md:inline-flex items-center gap-2 text-sm font-bold text-white px-6 py-2.5 rounded-xl transition-all"
+          style={{ background: "#F96E5B", boxShadow: "0 4px 18px rgba(249,110,91,0.45)", letterSpacing: "0.02em" }}
         >
           Free Trial
         </Link>

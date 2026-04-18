@@ -124,12 +124,12 @@ a, button {
   position: relative;
 }
 
-/* Nav and footer links — NO background change ever */
-nav a, nav a:hover, footer a, footer a:hover {
+/* Nav and footer links — NO background change ever (except the Free Trial CTA button) */
+nav a:not([href="/free-trial"]), nav a:not([href="/free-trial"]):hover, footer a, footer a:hover {
   background: transparent !important;
   box-shadow: none !important;
 }
-nav a:hover { transform: translateY(-2px) !important; }
+nav a:not([href="/free-trial"]):hover { transform: translateY(-2px) !important; }
 
 /* Coral buttons → dark teal on hover */
 a:not(nav a):not(footer a)[style*="#F96E5B"]:hover,
