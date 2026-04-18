@@ -76,6 +76,25 @@ const WA_ICON = () => (
   </svg>
 );
 
+
+// Map emoji flags to ISO codes for flagcdn images
+const FLAG_MAP: Record<string, string> = {
+  "🇺🇸": "us", "🇨🇦": "ca", "🇬🇧": "gb", "🇫🇷": "fr",
+  "🇦🇺": "au", "🇩🇪": "de", "🇮🇪": "ie", "🇳🇱": "nl",
+};
+const FlagImg = ({ flag }: { flag: string }) => {
+  const code = FLAG_MAP[flag];
+  if (!code) return <span>{flag}</span>;
+  return (
+    <img
+      src={`https://flagcdn.com/20x15/${code}.png`}
+      alt={code.toUpperCase()}
+      width={20}
+      height={15}
+      style={{ borderRadius: 2, display: "inline-block", verticalAlign: "middle", marginLeft: 4 }}
+    />
+  );
+};
 const TrustpilotLogo = () => (
   <svg viewBox="0 0 260 62" width="180" height="44" xmlns="http://www.w3.org/2000/svg">
     <path d="M28 0l5.5 17H52L37.5 27.5l5.5 17L28 34 13 44.5l5.5-17L4 17h18.5z" fill="#00b67a"/>
@@ -179,7 +198,7 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 14 }}>
             {[
               { val: "5.0", label: "Trustpilot", color: "#00b67a" },
-              { val: "500+", label: "Customers", color: "#3F9AAE" },
+              { val: "50,000+", label: "Customers", color: "#3F9AAE" },
               { val: "4.9★", label: "Google", color: "#FBBC04" },
               { val: "24/7", label: "Support", color: "#F96E5B" },
             ].map(s => (
@@ -203,7 +222,7 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
               <TP_STARS />
               <h4 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#000" }}>{tpReview.title}</h4>
               <p style={{ color: "#000", lineHeight: 1.8, fontSize: 15, marginBottom: 20 }}>{tpReview.text}</p>
-              <p style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 13 }}>— {tpReview.name} {tpReview.flag}</p>
+              <p style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 13 }}>— {tpReview.name} <FlagImg flag={tpReview.flag} /></p>
             </div>
           </div>
           <ProgressDots total={trustpilotReviews.length} current={tp.current} go={tp.go} />
@@ -230,7 +249,7 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
                     <span style={{ fontWeight: 700, fontSize: 14, color: "#000" }}>WhatsApp</span>
                   </div>
                   <p style={{ color: "#000", lineHeight: 1.75, fontSize: 14, marginBottom: 14 }}>{r.text}</p>
-                  <p style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 13 }}>— {r.name} {r.flag}</p>
+                  <p style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 13 }}>— {r.name} <FlagImg flag={r.flag} /></p>
                 </div>
               ))}
             </div>
