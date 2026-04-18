@@ -79,8 +79,8 @@ const WA_ICON = () => (
 
 // Map emoji flags to ISO codes for flagcdn images
 const FLAG_MAP: Record<string, string> = {
-  "🇺🇸": "us", "🇨🇦": "ca", "🇨🇦": "gb", "🇺🇸": "fr",
-  "🇺🇸": "au", "🇨🇦": "de", "🇺🇸": "ie", "🇨🇦": "nl",
+  "🇺🇸": "us",
+  "🇨🇦": "ca",
 };
 const FlagImg = ({ flag }: { flag: string }) => {
   const code = FLAG_MAP[flag];
