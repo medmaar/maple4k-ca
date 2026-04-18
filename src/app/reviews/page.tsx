@@ -3,7 +3,7 @@ import ReviewsSection from "../components/ReviewsSection";
 
 export const metadata: Metadata = {
   title: { absolute: "Maple4K Reviews — Trustpilot, WhatsApp & Google | Maple4K IPTV Canada" },
-  description: "Read verified Maple4K reviews from Trustpilot, WhatsApp, and Google. 500+ happy Canadian customers. See why Maple4K is Canada's top-rated IPTV service.",
+  description: "Read verified Maple4K reviews from Trustpilot, WhatsApp, and Google. 50,000+ happy Canadian customers. See why Maple4K is Canada's top-rated IPTV service.",
   alternates: { canonical: "https://maple4k.ca/reviews" },
 };
 
@@ -22,7 +22,7 @@ export default function ReviewsPage() {
               What Customers Say About <span style={{ color: "#F96E5B" }}>Maple4K</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 14 }}>
-              Real feedback from Trustpilot, WhatsApp & Google — 500+ happy customers across Canada and worldwide.
+              Real feedback from Trustpilot, WhatsApp & Google — 50,000+ happy customers across Canada and worldwide.
             </p>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function ReviewsPage() {
       <section style={{ padding: "60px 16px", background: "#1A3D45", textAlign: "center" }}>
         <div style={{ maxWidth: 600, margin: "0 auto" }}>
           <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 14 }}>
-            Join 500+ Happy Customers
+            Join 50,000+ Happy Customers
           </h2>
           <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: 28, fontSize: 15 }}>
             Try Maple4K free for 24 hours — no credit card required.
