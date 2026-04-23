@@ -1,313 +1,70 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Toronto | Maple4K – Best 4K IPTV Canada" },
-  description:
-    "Maple4K is Toronto's best IPTV service. Stream NHL Maple Leafs, Raptors, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
-  keywords:
-    "IPTV Toronto, best IPTV Toronto, IPTV service Toronto, Maple4K Toronto, IPTV Canada Toronto",
+  title: "4K Ultra HD IPTV Toronto | Stream Sports & Movies in 4K | Maple4K",
+  description: "Stream Toronto in stunning 4K Ultra HD with Maple4K. Watch Leafs, Raptors, Blue Jays, Reds live in 4K. H.265 codec, HDR10, 25,000+ 4K-capable channels.",
   alternates: { canonical: "https://maple4k.ca/iptv-toronto" },
-  openGraph: {
-    title: "IPTV Toronto | Maple4K – Best 4K IPTV Canada",
-    description:
-      "Maple4K is Toronto's best IPTV service. Stream NHL Maple Leafs, Raptors, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",
-    url: "https://maple4k.ca/iptv-toronto",
-    type: "website",
-    siteName: "Maple4K",
-    locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Toronto" }],
-  },
-  twitter: { card: "summary_large_image" },
 };
 
-const faqItems = [
-  {
-    q: "Is IPTV legal in Toronto?",
-    a: "IPTV technology is legal in Toronto and across Canada. Maple4K delivers streams over the internet to your device. Users in Toronto are responsible for ensuring the content they access complies with Canadian copyright law.",
-  },
-  {
-    q: "What is the best IPTV service in Toronto?",
-    a: "Maple4K is widely considered the best IPTV service in Toronto. It offers 25,000+ live channels including all local Toronto channels (CBC Toronto, CTV Toronto, CP24, City TV), complete NHL Maple Leafs coverage on TSN and Sportsnet, and 120,000+ on-demand titles — all starting at $9/month.",
-  },
-  {
-    q: "Does Maple4K work in Toronto?",
-    a: "Yes. Maple4K works perfectly in Toronto with any major internet provider including Rogers, Bell, and Fido. Our servers are optimized for Ontario connections, delivering stable 4K streams with minimal buffering even during peak hours like Leafs game nights.",
-  },
-];
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-};
-
-export default function IPTVTorontoPage() {
+export default function TorontoPage() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
-        {/* Hero */}
-        <section
-          style={{
-            background:
-              "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)",
-            padding: "80px 16px 60px",
-          }}
-        >
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <span
-              style={{
-                background: "rgba(249,110,91,0.12)",
-                border: "1px solid rgba(249,110,91,0.3)",
-                color: "#F96E5B",
-                fontSize: 12,
-                fontWeight: 700,
-                padding: "4px 14px",
-                borderRadius: 999,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-              }}
-            >
-              IPTV Toronto · Maple4K
-            </span>
-            <h1
-              style={{
-                fontSize: "clamp(2rem, 5vw, 3rem)",
-                fontWeight: 900,
-                marginTop: 20,
-                marginBottom: 16,
-              }}
-            >
-              Best IPTV Service in Toronto — 4K Streaming from $9
-            </h1>
-            <p
-              style={{
-                color: "#000000",
-                fontSize: "1.1rem",
-                maxWidth: 640,
-                lineHeight: 1.7,
-              }}
-            >
-              Toronto has some of the fastest internet in Canada — the perfect foundation
-              for 4K IPTV streaming. Maple4K serves thousands of Toronto subscribers with
-              25,000+ live channels, NHL Maple Leafs, Raptors, and 120,000+ on-demand
-              titles. IPTV Toronto has never been this affordable or reliable.
-            </p>
-            <div style={{ marginTop: 32, display: "flex", gap: 16, flexWrap: "wrap" }}>
-              <a
-                href="/pricing"
-                style={{
-                  background: "#F96E5B",
-                  color: "#000000",
-                  padding: "14px 36px",
-                  borderRadius: 10,
-                  fontWeight: 700,
-                  textDecoration: "none",
-                }}
-              >
-                View Plans →
-              </a>
-              <a
-                href="/free-trial"
-                style={{
-                  border: "2px solid rgba(249,110,91,0.5)",
-                  color: "#F96E5B",
-                  padding: "14px 36px",
-                  borderRadius: 10,
-                  fontWeight: 700,
-                  textDecoration: "none",
-                }}
-              >
-                Free Trial
-              </a>
-            </div>
-          </div>
-        </section>
+    <main className="min-h-screen bg-gray-950 text-white px-4 py-12">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
+          4K Ultra HD IPTV in Toronto — Watch Sports & Movies in Stunning Clarity
+        </h1>
+        <p className="text-xl text-gray-300 mb-8">
+          Forget cable's grainy HD. Stream everything in 4K Ultra HD — Maple Leafs games, Raptors basketball, Blue Jays baseball, and 25,000+ other channels. H.265 codec ensures smooth 4K on Toronto's Rogers/Bell internet.
+        </p>
 
-        {/* Content */}
-        <section style={{ maxWidth: 900, margin: "0 auto", padding: "60px 16px" }}>
-          {/* Intro */}
-          <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#000000" }}>
-              IPTV Toronto — Everything You Need in One Subscription
-            </h2>
-            <p style={{ color: "#000000", lineHeight: 1.8, marginBottom: 16 }}>
-              Maple4K delivers the best IPTV experience in Toronto with a channel lineup that
-              covers everything locals love. You get CBC Toronto, CTV Toronto, Sportsnet Ontario,
-              TSN, Global Toronto, CP24, and City TV — all in crisp HD and 4K quality.
-              Toronto Maple Leafs fans get every game on Sportsnet and TSN with no blackouts.
-            </p>
-            <p style={{ color: "#000000", lineHeight: 1.8 }}>
-              Beyond local Toronto channels, Maple4K gives you access to 25,000+ live channels
-              from across Canada and around the world — including international sports, news,
-              entertainment, kids&apos; content, and on-demand libraries with 120,000+ movies &amp; series.
-              IPTV Toronto subscribers also get 7-day catch-up TV and a full electronic program guide (EPG).
-            </p>
-          </div>
+        <div className="bg-gray-900 rounded-xl p-8 mb-8">
+          <h2 className="text-2xl font-bold mb-4">Why Toronto Chooses 4K IPTV</h2>
+          <ul className="space-y-3 text-gray-300">
+            <li>✓ <strong>Maple Leafs in 4K:</strong> See every skate, every pass, every goal in crystalline detail</li>
+            <li>✓ <strong>Raptors in 4K:</strong> Watch breakaways and dunks with stunning clarity</li>
+            <li>✓ <strong>Blue Jays in 4K:</strong> Baseball looks incredible in 4K — 60 FPS smooth motion</li>
+            <li>✓ <strong>4K Movies & Series:</strong> Netflix, Disney, HBO-quality streaming included</li>
+            <li>✓ <strong>15-25 Mbps:</strong> H.265 codec means smooth 4K on Toronto internet</li>
+            <li>✓ <strong>HDR10:</strong> Enhanced colors and brightness on 4K TVs (2016+)</li>
+            <li>✓ <strong>All Canadian Locals:</strong> CTV, Global, CBC in crisp HD/4K</li>
+          </ul>
+        </div>
 
-          {/* Features */}
-          <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#000000" }}>
-              Why Toronto Subscribers Choose Maple4K
-            </h2>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {[
-                {
-                  icon: "⚡",
-                  title: "Ontario-Optimized Servers",
-                  desc: "Our infrastructure is tuned for Ontario internet providers — Rogers, Bell, Fido — delivering low latency and smooth 4K playback for every Toronto subscriber.",
-                },
-                {
-                  icon: "📺",
-                  title: "25,000+ Live Channels",
-                  desc: "One Maple4K subscription unlocks the biggest IPTV channel library in Canada — sports, news, entertainment, lifestyle, and international content in one place.",
-                },
-                {
-                  icon: "🏒",
-                  title: "Full NHL Coverage — No Blackouts",
-                  desc: "Watch every Toronto Maple Leafs game live on TSN and Sportsnet in 4K. No blackouts, no extra fees. All NHL, NBA, NFL, MLB, UFC, and CFL games included.",
-                },
-                {
-                  icon: "🇨🇦",
-                  title: "Canadian Support 24/7",
-                  desc: "Our bilingual support team is available around the clock to help Toronto subscribers with setup, troubleshooting, and billing via WhatsApp or email.",
-                },
-              ].map((item) => (
-                <li
-                  key={item.title}
-                  style={{
-                    display: "flex",
-                    gap: 16,
-                    alignItems: "flex-start",
-                    marginBottom: 16,
-                    background: "#ffffff",
-                    borderRadius: 12,
-                    padding: 20,
-                    border: "1px solid rgba(255,255,255,0.07)",
-                  }}
-                >
-                  <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon}</span>
-                  <div>
-                    <p style={{ fontWeight: 700, marginBottom: 4, color: "#000000" }}>{item.title}</p>
-                    <p style={{ color: "#000000", lineHeight: 1.7, margin: 0 }}>{item.desc}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <h2 className="text-2xl font-bold mb-4 mt-8">Best 4K Devices in Toronto</h2>
+        <p className="text-gray-300 mb-4">
+          Want to stream 4K in Toronto? These devices work best:
+        </p>
+        <ul className="space-y-2 text-gray-300 mb-8">
+          <li><strong>Fire Stick 4K:</strong> $79 CAD, perfect for 4K sports</li>
+          <li><strong>Samsung/LG 4K Smart TV (2016+):</strong> Built-in app, native 4K support</li>
+          <li><strong>Android TV Box:</strong> Full H.265 support, best for living rooms</li>
+          <li><strong>Apple TV 4K:</strong> Premium 4K option, excellent reliability</li>
+        </ul>
 
-          {/* Pricing */}
-          <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#000000" }}>
-              Maple4K Pricing for Toronto — From $9/Month
-            </h2>
-            <p style={{ color: "#000000", lineHeight: 1.8, marginBottom: 16 }}>
-              Bell and Rogers cable packages in Toronto run $90–$150/month before taxes and fees.
-              Maple4K starts at just $9/month, with longer plans offering even better value.
-              Toronto subscribers save an average of $900/year by switching to IPTV.
-            </p>
-            <div
-              style={{
-                background: "rgba(249,110,91,0.08)",
-                border: "1px solid rgba(249,110,91,0.3)",
-                borderRadius: 12,
-                padding: 20,
-              }}
-            >
-              <p style={{ color: "#F96E5B", fontWeight: 700, marginBottom: 12 }}>
-                Maple4K Plans — Available in Toronto
-              </p>
-              <ul style={{ color: "#000000", margin: 0, paddingLeft: 20, lineHeight: 2 }}>
-                <li>1 Month — $9</li>
-                <li>3 Months — $29</li>
-                <li>6 Months — $39</li>
-                <li>12 Months — $49 (Best Value)</li>
-              </ul>
-            </div>
-          </div>
+        <h2 className="text-2xl font-bold mb-4">Toronto Internet Speed for 4K</h2>
+        <p className="text-gray-300 mb-4">
+          Most Toronto homes have 50+ Mbps (Rogers Ignite, Bell Fibe). That's more than enough for 4K:
+        </p>
+        <ul className="space-y-2 text-gray-300 mb-8">
+          <li>25-50 Mbps: Smooth 4K, H.265</li>
+          <li>50+ Mbps: 4K + simultaneous devices</li>
+          <li>Internet issue? Adaptive bitrate adjusts automatically</li>
+        </ul>
 
-          {/* FAQ */}
-          <div>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, color: "#000000" }}>
-              IPTV Toronto — Frequently Asked Questions
-            </h2>
-            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              {faqItems.map((item) => (
-                <div
-                  key={item.q}
-                  style={{
-                    background: "#ffffff",
-                    border: "1px solid rgba(63,154,174,0.1)",
-                    borderRadius: 12,
-                    padding: "20px 24px",
-                  }}
-                >
-                  <p style={{ fontWeight: 700, color: "#000000", marginBottom: 8 }}>{item.q}</p>
-                  <p style={{ color: "#000000", lineHeight: 1.7, margin: 0 }}>{item.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <h2 className="text-2xl font-bold mb-4">Channels You Get in Toronto</h2>
+        <ul className="space-y-2 text-gray-300 mb-8">
+          <li>✓ All TSN channels (TSN1, TSN2, TSN3, TSN4)</li>
+          <li>✓ Sportsnet, Sportsnet East, Sportsnet Ontario</li>
+          <li>✓ CTV, Global, CBC (all Canadian locals)</li>
+          <li>✓ 25,000+ other channels</li>
+          <li>✓ Sports: NHL, NBA, NFL, CFL, UEFA, Premier League</li>
+        </ul>
 
-        {/* CTA */}
-        <section
-          style={{
-            background: "#1A3D45",
-            padding: "60px 16px",
-            textAlign: "center",
-            borderTop: "1px solid rgba(255,255,255,0.06)",
-          }}
-        >
-          <h2 style={{ fontSize: "1.8rem", fontWeight: 800, marginBottom: 16 }}>
-            Start Streaming IPTV in Toronto Today
-          </h2>
-          <p style={{ color: "#000000", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>
-            Plans from $9/month. Free trial available. No contracts, no hidden fees.
-          </p>
-          <a
-            href="/pricing"
-            style={{
-              background: "#F96E5B",
-              color: "#000000",
-              padding: "16px 48px",
-              borderRadius: 12,
-              fontWeight: 700,
-              textDecoration: "none",
-              display: "inline-block",
-            }}
-          >
-            View Maple4K Plans →
-          </a>
-        </section>
-      
-        {/* SEO Internal Links */}
-        <section style={{ padding: "48px 16px" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ textAlign: "center", color: "#000000", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
-              <a href="/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Toronto</a>
-              <a href="/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
-              <a href="/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Montreal</a>
-              <a href="/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Calgary</a>
-              <a href="/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
-              <a href="/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
-            </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
-              <a href="/pricing" style={{ background: "#F96E5B", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
-              <a href="/free-trial" style={{ background: "#3F9AAE", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
-              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>Channel List</a>
-            </div>
-          </div>
-        </section>
-      </main>
-    </>
+        <Link href="/free-trial" className="inline-block bg-blue-600 text-white font-bold px-8 py-3 rounded-lg hover:bg-blue-700">
+          Try 4K Free for 24 Hours
+        </Link>
+      </div>
+    </main>
   );
 }
