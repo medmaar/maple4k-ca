@@ -177,7 +177,7 @@ export default function IPTVCalgaryPage() {
                 {
                   icon: "🇨🇦",
                   title: "Canadian Support 24/7",
-                  desc: "Our bilingual support team is available around the clock to help Calgary subscribers via WhatsApp (+1 782-802-6280) or email.",
+                  desc: "Our bilingual support team is available around the clock to help Calgary subscribers via WhatsApp (contact us via WhatsApp form) or email.",
                 },
               ].map((item) => (
                 <li

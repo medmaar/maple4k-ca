@@ -42,7 +42,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "How do I get support if something stops working?",
-    a: "Our Canadian support team is available 24/7 via WhatsApp (+1 782-802-6280) and email in English and French. Most issues are resolved within minutes, any time of day.",
+    a: "Our Canadian support team is available 24/7 via WhatsApp (contact us via WhatsApp form) and email in English and French. Most issues are resolved within minutes, any time of day.",
   },
 ];
 
