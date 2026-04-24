@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 
-const WA_NUMBER = "17828026280";
-const WA_REFER_URL = `https://wa.me/${WA_NUMBER}?text=Hi%20Maple4K%2C%20I%E2%80%99m%20referring%20someone%20to%20your%20service.%20What%E2%80%99s%20the%20next%20step%3F`;
+
+
 
 const inputStyle = {
   width: "100%",
@@ -95,7 +95,7 @@ export default function ReferralForm() {
 
       <div style={{ marginTop: 24, textAlign: "center" }}>
         <p style={{ color: "#000000", fontSize: 13, marginBottom: 16 }}>Prefer WhatsApp? Reach us directly:</p>
-        <a href={WA_REFER_URL} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#25D366", color: "#fff", fontWeight: 700, padding: "14px 32px", borderRadius: 12, fontSize: 14, textDecoration: "none" }}>
+        <a href={'/whatsapp-contact'} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#25D366", color: "#fff", fontWeight: 700, padding: "14px 32px", borderRadius: 12, fontSize: 14, textDecoration: "none" }}>
           Refer via WhatsApp
         </a>
       </div>
