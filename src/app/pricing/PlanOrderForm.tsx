@@ -45,7 +45,7 @@ export default function PlanOrderForm({ plan }: Props) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   useEffect(() => {
-    emailjs.init("XgOQHE8VNnCyBYP1z");
+    emailjs.init("BE3GO7hcQXUJAnRBV");
   }, []);
 
   function handleChange(
@@ -63,8 +63,8 @@ export default function PlanOrderForm({ plan }: Props) {
     setStatus("loading");
     try {
       const result = await emailjs.send(
-        "service_0e3cugb",
-        "template_cuf7svm",
+        "service_mq69xac",
+        "template_6gpfu3m",
         {
           from_name: form.full_name || "Not provided",
           from_email: form.email || "Not provided",

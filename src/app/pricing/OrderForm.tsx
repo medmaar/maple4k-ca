@@ -30,7 +30,7 @@ export default function OrderForm({ plan, price, devices }: Props) {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    emailjs.init("XgOQHE8VNnCyBYP1z");
+    emailjs.init("BE3GO7hcQXUJAnRBV");
   }, []);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
@@ -41,7 +41,7 @@ export default function OrderForm({ plan, price, devices }: Props) {
     e.preventDefault();
     setLoading(true);
     try {
-      await emailjs.send("service_0e3cugb", "template_cuf7svm", {
+      await emailjs.send("service_mq69xac", "template_6gpfu3m", {
         from_name: form.name || "Not provided",
         from_email: form.email || "Not provided",
         phone: form.whatsapp || "Not provided",
