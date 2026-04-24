@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const WA_URL = "https://wa.me/17828026280?text=Hi%20Maple4K%2C%20I%27m%20interested%20in%20your%20service.";
+const WA_URL = "https:///whatsapp-contact?text=Hi%20Maple4K%2C%20I%27m%20interested%20in%20your%20service.";
 const TG_URL = "https://t.me/IPTVCanadaSupport?text=Hi%20Maple4K%2C%20I%27m%20interested%20in%20your%20service.";
 const EMAIL_URL = "mailto:help@maple4k.ca?subject=I%27m%20interested%20in%20your%20service";
 
