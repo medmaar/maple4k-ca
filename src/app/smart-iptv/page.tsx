@@ -74,6 +74,47 @@ export default function SmartIPTVPage() {
           <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Get Smart IPTV Free →</a>
         </div>
       </section>
+
+      <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>What Is Smart IPTV and Why Does It Matter?</h2>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+          Smart IPTV refers to streaming live television channels directly on a Smart TV without needing an external streaming box or stick. Most modern Smart TVs — Samsung, LG, Sony, Philips, and Hisense — run either Tizen OS, webOS, or Android TV, all of which support IPTV player applications natively. For Canadian subscribers, this means you can cut cable and stream Maple4K on your existing TV without buying a Fire Stick, MAG Box, or any additional hardware.
+        </p>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 32 }}>
+          The experience on a Smart TV is indistinguishable from cable television — you browse a full EPG guide, change channels with your TV remote, and watch in True 4K Ultra HD where your TV supports it. Maple4K&apos;s streams are fully optimized for Smart TV playback with hardware-accelerated H.265/HEVC decoding on 2019+ models.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Smart IPTV Setup: Step-by-Step for Canadian Subscribers</h2>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+          Setting up Maple4K on a Smart TV takes under five minutes. On a Samsung Smart TV, go to the App Store and search for IPTV Smarters — download it, open it, and add a new user with your Maple4K Xtream Codes credentials. The same process applies to LG via the LG Content Store using Smart IPTV or IPTV Smarters Pro. On Android TV models (Sony Bravia, Philips, Hisense), install TiviMate from Google Play for the best 4K Smart IPTV performance — it supports multiple playlists, catch-up TV, and a clean remote-friendly interface.
+        </p>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 32 }}>
+          If the IPTV app isn&apos;t available in your TV&apos;s native app store — which sometimes happens on older Smart TV models — a $60 Amazon Fire Stick 4K Max plugged into your TV&apos;s HDMI port solves the problem immediately. Our Canadian support team helps every new subscriber through setup over WhatsApp, including screen-sharing guidance for Smart TV installations.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Smart IPTV vs Cable on Smart TV: A Direct Comparison</h2>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+          When Bell or Rogers provides TV service, they either ship a dedicated cable box that connects to your TV, or offer a Smart TV app of their own. Both options lock you into a subscription of $90–$130/month with a 2-year contract. With Maple4K Smart IPTV, you use the TV you already own, pay $9–$49/year total, and get 25,000+ channels instead of 250–350. The picture quality on 4K channels is often superior because Maple4K delivers true 4K H.265 rather than the compressed MPEG-2 or H.264 most cable providers use.
+        </p>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+          Beyond price and quality, Smart IPTV on Maple4K gives you access to international content unavailable on any Canadian cable package — Arabic, South Asian, Portuguese, Italian, and hundreds of other language channel groups. Canadian expats and immigrant families consistently rate this as one of Maple4K&apos;s strongest advantages.
+        </p>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 32 }}>
+          The 7-day catch-up feature lets you replay anything you missed on supported channels — useful if you work late and miss the evening news, or want to rewatch a hockey game you partially caught. Unlike cable PVR services, catch-up on Maple4K requires no additional hardware and no monthly add-on fee.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Which Smart TVs Work Best for IPTV in Canada?</h2>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 24 }}>
+          For the smoothest Smart IPTV experience in Canada, Android TV models from Sony, Philips, and Hisense lead the pack — they support TiviMate natively, have hardware H.265 4K decoding, and receive regular software updates. Samsung Tizen TVs from 2020 onwards support IPTV Smarters Pro with excellent performance. LG webOS TVs from 2019 onwards work well with Smart IPTV and IPTV Smarters. Older Smart TVs (pre-2018) may struggle with 4K H.265 decoding — we recommend pairing them with a Fire Stick 4K Max or Formuler box for the best results.
+        </p>
+
+        <div style={{ background: "#1A3D45", borderRadius: 16, padding: 32, textAlign: "center" }}>
+          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Try Maple4K Smart IPTV on Your TV — Free</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, lineHeight: 1.7 }}>24-hour free trial, no credit card. Works on every Smart TV brand sold in Canada. Setup assistance included.</p>
+          <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Smart IPTV Free →</a>
+        </div>
+      </section>
+
     </main>
   );
 }

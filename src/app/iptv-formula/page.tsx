@@ -70,6 +70,42 @@ export default function IPTVFormulaPage() {
           <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Free Trial →</a>
         </div>
       </section>
+
+      <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Why Formuler Boxes Are the Gold Standard for IPTV in Canada</h2>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+          Formuler is a Canadian-designed Android TV box brand built specifically for IPTV. Unlike generic Android boxes or Fire Sticks repurposed for streaming, Formuler devices ship with MyTVOnline 3 — a professional IPTV application that&apos;s pre-installed, regularly updated, and deeply integrated with the hardware. The result is a seamless IPTV experience that works out of the box: plug in your Formuler, enter your Maple4K portal URL, and you&apos;re watching 25,000+ channels in under three minutes.
+        </p>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 32 }}>
+          For Canadian subscribers serious about IPTV quality, a Formuler box is worth the $130–$200 investment. The hardware H.265/HEVC decoder means True 4K streams play with zero software processing overhead — no dropped frames, no stuttering during live sports, no lag when switching channels. Maple4K&apos;s streams are fully tested and optimized for all current Formuler models.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Formuler Box Models Available in Canada — Which to Choose</h2>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+          The <strong>Formuler Z10 Pro Max</strong> is the current flagship and the recommended choice for new Canadian IPTV subscribers in 2026. It runs Android 9, includes a Gigabit Ethernet port for wired connections (strongly recommended over Wi-Fi for 4K IPTV), supports Dolby Vision and HDR10+, and has 4 GB RAM — plenty for smooth 4K H.265 decoding alongside the MyTVOnline 3 app. You can find it at Canadian electronics retailers for approximately $170.
+        </p>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+          The <strong>Formuler Z8</strong> remains an excellent mid-range option. It handles Full HD and 1080p streams perfectly and manages most 4K content well, though very high-bitrate 4K channels perform better on the Z10. If you have a 1080p TV or primarily watch HD channels, the Z8 is all you need. Available for approximately $130 Canadian.
+        </p>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 32 }}>
+          The <strong>Formuler Z Alpha</strong> and <strong>Formuler GTV</strong> are newer models that run Google TV, giving you access to the full Google Play Store in addition to the built-in IPTV functionality. These are ideal if you also want Netflix, Prime Video, and Disney+ on the same device — one remote, one box, all your streaming services.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Maple4K on Formuler: Connection Options and Best Practices</h2>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+          Maple4K supports both M3U playlist format and Xtream Codes API on all Formuler boxes. We recommend using Xtream Codes for the best experience — it loads the full channel list faster, provides better EPG data, and supports catch-up TV features that M3U playlists don&apos;t always expose. Your Xtream Codes credentials arrive in your welcome email within minutes of subscribing.
+        </p>
+        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 24 }}>
+          For the best 4K performance on any Formuler box, always connect via Gigabit Ethernet if possible. A wired connection eliminates the variable latency of Wi-Fi, which is the most common cause of buffering on 4K IPTV streams. Most Formuler boxes also support 5GHz Wi-Fi if ethernet isn&apos;t practical — avoid 2.4GHz Wi-Fi for 4K streams. Maple4K&apos;s Canadian support team can help optimize your Formuler setup via WhatsApp for any router or network configuration.
+        </p>
+
+        <div style={{ background: "#1A3D45", borderRadius: 16, padding: 32, textAlign: "center" }}>
+          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Get Maple4K for Your Formuler — Free 24h Trial</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, lineHeight: 1.7 }}>No credit card. Full access on your Formuler Z8, Z10, Z Alpha, or GTV. Setup in under 3 minutes.</p>
+          <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Free Trial →</a>
+        </div>
+      </section>
+
     </main>
   );
 }
