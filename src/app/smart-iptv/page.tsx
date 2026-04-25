@@ -33,6 +33,7 @@ export default function SmartIPTVPage() {
             { brand: "Android TV Box", app: "TiviMate (recommended)", note: "Best for 4K H.265" },
             { brand: "Apple TV 4K", app: "IPTV Smarters Pro", note: "Native 4K Dolby Vision" },
             { brand: "Amazon Fire TV", app: "TiviMate / IPTV Smarters", note: "Fire OS" },
+            { brand: "Microsoft Edge Browser", app: "Web-based IPTV player", note: "Windows / Mac / Android" },
           ].map(tv => (
             <div key={tv.brand} style={{ background: "#fff", borderRadius: 14, padding: 20, border: "1px solid rgba(63,154,174,0.15)" }}>
               <p style={{ fontWeight: 700, fontSize: 15, marginBottom: 6 }}>📺 {tv.brand}</p>
