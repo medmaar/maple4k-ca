@@ -4,14 +4,14 @@ import HomePricing from "./components/HomePricing";
 import ReviewsSection from "./components/ReviewsSection";
 
 export const metadata: Metadata = {
-  title: { absolute: "True 4K Ultra HD IPTV Canada 2026 — H.265/HEVC Streams | Maple4K" },
+  title: { absolute: "Best IPTV Canada 2026 — 4K Ultra HD from $9/month | Maple4K" },
   description:
-    "Canada's premium 4K IPTV service. H.265/HEVC encoded streams with HDR10 & Dolby Vision support. 25,000+ live channels, 120,000+ titles — at the resolution your display deserves. From $9/month.",
+    "Best IPTV service in Canada 2026. 4K Ultra HD, H.265/HEVC streams. Free trial available — no credit card. 25,000+ live Canadian channels, 120,000+ on-demand titles. IPTV subscription from $9/month.",
   keywords:
-    "4K IPTV Canada, Ultra HD IPTV Canada, H.265 HEVC IPTV, HDR IPTV Canada, Maple4K, 4K streaming Canada 2026, Dolby Vision IPTV",
+    "iptv canada, best iptv canada, free trial iptv, iptv subscription, iptv service, iptv legal, best iptv in canada, smart iptv, iptv 4k, iptv canada reviews, Maple4K, 4K IPTV Canada",
   alternates: { canonical: "https://maple4k.ca" },
   openGraph: {
-    title: "True 4K Ultra HD IPTV Canada 2026 — H.265/HEVC Streams | Maple4K",
+    title: "Best IPTV Canada 2026 — 4K Ultra HD from $9/month | Maple4K",
     description:
       "Canada's premium 4K IPTV service. H.265/HEVC encoded with HDR10 & Dolby Vision. 25,000+ live channels, 120,000+ titles at resolutions your screen deserves.",
     url: "https://maple4k.ca",
@@ -177,7 +177,7 @@ export default function HomePage() {
                 marginBottom: 28,
               }}
             >
-              🍁 Canada's Premium 4K IPTV — 2026
+              🍁 Best IPTV Service in Canada — 2026
             </span>
             <h1
               style={{
@@ -188,8 +188,8 @@ export default function HomePage() {
                 color: "#ffffff",
               }}
             >
-              True 4K Ultra HD<br />
-              <span style={{ color: "#F96E5B" }}>IPTV for Canada</span>
+              #1 IPTV Canada — 4K<br />
+              <span style={{ color: "#F96E5B" }}>Subscription from $9</span>
             </h1>
             <p
               style={{
@@ -200,8 +200,7 @@ export default function HomePage() {
                 lineHeight: 1.7,
               }}
             >
-              H.265/HEVC encoded streams with HDR10 &amp; Dolby Vision support. 25,000+ live
-              channels and 120,000+ movies &amp; series — at the resolution your screen was built for.
+              Canada's best IPTV service — free trial available, no credit card required. 4K Ultra HD streams with 25,000+ live Canadian channels, 120,000+ movies &amp; series. Legal, reliable IPTV subscription from $9/month.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
               <Link

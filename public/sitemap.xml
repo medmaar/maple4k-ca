@@ -1,58 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core pages -->
-  <url><loc>https://maple4k.ca</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://maple4k.ca/pricing</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://maple4k.ca/free-trial</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://maple4k.ca</loc><lastmod>2026-04-25</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://maple4k.ca/pricing</loc><lastmod>2026-04-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://maple4k.ca/free-trial</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- NEW keyword-targeted landing pages -->
+  <url><loc>https://maple4k.ca/best-iptv-canada</loc><lastmod>2026-04-25</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://maple4k.ca/iptv-4k</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://maple4k.ca/iptv-subscription</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://maple4k.ca/smart-iptv</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://maple4k.ca/iptv-formula</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <!-- Single-device pricing plans -->
   <url><loc>https://maple4k.ca/pricing/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://maple4k.ca/pricing/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://maple4k.ca/pricing/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://maple4k.ca/pricing/12-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <!-- Multi-device: 2 devices -->
+  <!-- Multi-device plans (condensed) -->
   <url><loc>https://maple4k.ca/pricing/2-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maple4k.ca/pricing/2-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maple4k.ca/pricing/2-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://maple4k.ca/pricing/2-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <!-- Multi-device: 3 devices -->
   <url><loc>https://maple4k.ca/pricing/3-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maple4k.ca/pricing/3-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maple4k.ca/pricing/3-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://maple4k.ca/pricing/3-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <!-- Multi-device: 4 devices -->
-  <url><loc>https://maple4k.ca/pricing/4-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maple4k.ca/pricing/4-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maple4k.ca/pricing/4-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maple4k.ca/pricing/4-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <!-- Multi-device: 5 devices -->
   <url><loc>https://maple4k.ca/pricing/5-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maple4k.ca/pricing/5-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maple4k.ca/pricing/5-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://maple4k.ca/pricing/5-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <!-- Multi-device: 6 devices -->
-  <url><loc>https://maple4k.ca/pricing/6-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/6-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/6-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/6-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <!-- Multi-device: 7 devices -->
-  <url><loc>https://maple4k.ca/pricing/7-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/7-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/7-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/7-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <!-- Multi-device: 8 devices -->
-  <url><loc>https://maple4k.ca/pricing/8-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/8-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/8-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/8-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <!-- Multi-device: 9 devices -->
-  <url><loc>https://maple4k.ca/pricing/9-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/9-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/9-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/9-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <!-- Multi-device: 10 devices -->
   <url><loc>https://maple4k.ca/pricing/10-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/10-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maple4k.ca/pricing/10-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://maple4k.ca/pricing/10-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <!-- City landing pages -->
   <url><loc>https://maple4k.ca/iptv-toronto</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -80,8 +50,8 @@
   <url><loc>https://maple4k.ca/reseller</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://maple4k.ca/contact</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <!-- Blog -->
-  <url><loc>https://maple4k.ca/blog</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://maple4k.ca/blog/best-iptv-canada-2026</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maple4k.ca/blog</loc><lastmod>2026-04-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maple4k.ca/blog/best-iptv-canada-2026</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://maple4k.ca/blog/is-iptv-legal-canada</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://maple4k.ca/blog/iptv-vs-cable-canada</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://maple4k.ca/blog/best-iptv-player-canada</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
