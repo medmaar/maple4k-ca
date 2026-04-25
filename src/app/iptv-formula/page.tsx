@@ -5,13 +5,39 @@ export const metadata: Metadata = {
   keywords: "iptv formula, iptv formuler canada, formuler z8 iptv canada, formuler z10 iptv, iptv formuler box canada, best iptv formuler canada",
   alternates: { canonical: "https://maple4k.ca/iptv-formula" },
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"IPTV Formuler Canada","item":"https://maple4k.ca/iptv-formula"}
+  ]
+};
+
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What IPTV app should I use on a Formuler box in Canada?","acceptedAnswer":{"@type":"Answer","text":"For Formuler boxes in Canada, use MyTVOnline 3 — the built-in app designed specifically for IPTV. It supports Xtream Codes and M3U, full EPG, and 4K H.265 hardware playback with no extra app install."}},
+    {"@type":"Question","name":"Which Formuler box is best for IPTV in Canada in 2026?","acceptedAnswer":{"@type":"Answer","text":"The Formuler Z10 Pro Max is the top pick for Canadian IPTV in 2026. It runs Android 9, has a Gigabit ethernet port, Dolby Vision support, and hardware 4K H.265 decoding — ideal for Maple4K's 4K streams."}},
+    {"@type":"Question","name":"Is Maple4K compatible with Formuler Z8?","acceptedAnswer":{"@type":"Answer","text":"Yes — Maple4K is fully compatible with the Formuler Z8 and all Formuler models. Use MyTVOnline 3 or TiviMate on the Z8 with your Maple4K Xtream Codes credentials for 4K playback."}}
+  ]
+};
+
 export default function IPTVFormulaPage() {
   return (
     <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000", minHeight: "100vh" }}>
       <section style={{ padding: "80px 16px 60px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase" }}>IPTV Formuler · Canada · Maple4K</span>
-          <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
+          <div style={{ textAlign: "center", marginBottom: 8 }}>
+          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(63,154,174,0.25)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+            🗓 Last updated: April 2026
+          </span>
+        </div>
+            <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
             IPTV on Formuler Box Canada — <span style={{ color: "#F96E5B" }}>4K Setup Guide</span>
           </h1>
           <p style={{ fontSize: "1.1rem", lineHeight: 1.7, maxWidth: 680, marginBottom: 28 }}>

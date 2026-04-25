@@ -5,13 +5,39 @@ export const metadata: Metadata = {
   keywords: "iptv subscription, iptv subscription canada, best iptv subscription canada, iptv subscription plans, cheap iptv subscription canada, iptv subscription 2026",
   alternates: { canonical: "https://maple4k.ca/iptv-subscription" },
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"IPTV Subscription","item":"https://maple4k.ca/iptv-subscription"}
+  ]
+};
+
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How much does an IPTV subscription in Canada cost?","acceptedAnswer":{"@type":"Answer","text":"Maple4K IPTV subscriptions in Canada start at $9/month for 1 device. A 12-month IPTV subscription costs just $49 — the best value for Canadian subscribers."}},
+    {"@type":"Question","name":"What's included in a Maple4K IPTV subscription?","acceptedAnswer":{"@type":"Answer","text":"Every Maple4K IPTV subscription includes 25,000+ live channels, 120,000+ on-demand movies and series, True 4K Ultra HD quality, 7-day catch-up TV, and full EPG guide on all devices."}},
+    {"@type":"Question","name":"Can I cancel my IPTV subscription any time?","acceptedAnswer":{"@type":"Answer","text":"Yes — Maple4K has no contracts. You can subscribe month-to-month and cancel any time with no penalties or cancellation fees."}}
+  ]
+};
+
 export default function IPTVSubscriptionPage() {
   return (
     <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000", minHeight: "100vh" }}>
       <section style={{ padding: "80px 16px 60px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase" }}>IPTV Subscription Canada · Maple4K</span>
-          <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
+          <div style={{ textAlign: "center", marginBottom: 8 }}>
+          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(63,154,174,0.25)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+            🗓 Last updated: April 2026
+          </span>
+        </div>
+            <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
             IPTV Subscription Canada — <span style={{ color: "#F96E5B" }}>Plans from $9/Month</span>
           </h1>
           <p style={{ fontSize: "1.1rem", lineHeight: 1.7, maxWidth: 680, marginBottom: 32 }}>

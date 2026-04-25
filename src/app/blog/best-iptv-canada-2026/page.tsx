@@ -15,6 +15,8 @@ export const metadata: Metadata = {
       "Stream in true 4K Ultra HD. H.265 codec, HDR10, high-bitrate support. Watch sports, movies, and series in pristine quality.",
     url: "https://maple4k.ca/blog/best-iptv-canada-2026",
     type: "article",
+    publishedTime: "2026-01-15T00:00:00Z",
+    modifiedTime: "2026-04-25T00:00:00Z",
     siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image", images: ["/og-image.webp"] },
@@ -84,6 +86,17 @@ const faqSchema = {
   ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/blog"},
+    {"@type":"ListItem","position":3,"name":"Best Iptv Canada 2026","item":"https://maple4k.ca/blog/best-iptv-canada-2026"}
+  ]
+};
+
 export default function Maple4KBlogPost() {
   return (
     <main className="min-h-screen bg-gray-950 text-white px-4 py-12">
@@ -93,7 +106,9 @@ export default function Maple4KBlogPost() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script
       />
 
       <article className="max-w-3xl mx-auto">

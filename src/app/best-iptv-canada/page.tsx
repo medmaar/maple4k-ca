@@ -56,10 +56,22 @@ const providers = [
   { name: "Cable (Bell/Rogers)", quality: "1080i MPEG-2", channels: "150–500", price: "$80–$150/mo", trial: "❌", support: "✅ Slow", highlight: false },
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Best IPTV Canada","item":"https://maple4k.ca/best-iptv-canada"}
+  ]
+};
+
 export default function BestIPTVCanadaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script />
       <main style={{ background: bg, color: "#000000", minHeight: "100vh" }}>
 
         {/* Hero */}
@@ -68,6 +80,11 @@ export default function BestIPTVCanadaPage() {
             <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
               Best IPTV Canada 2026 · Maple4K
             </span>
+            <div style={{ textAlign: "center", marginBottom: 8 }}>
+          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(63,154,174,0.25)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+            🗓 Last updated: April 2026
+          </span>
+        </div>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
               Best IPTV Canada 2026 — <span style={s}>#1 Rated Service</span> from $9/Month
             </h1>

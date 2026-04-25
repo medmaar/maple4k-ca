@@ -3,17 +3,9 @@ import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer
-      className="py-16 px-4 border-t"
-      style={{ background: "#1A3D45", borderColor: "rgba(121,201,197,0.2)" }}
-    >
+    <footer className="py-16 px-4 border-t" style={{ background: "#1A3D45", borderColor: "rgba(121,201,197,0.2)" }}>
       <div className="max-w-7xl mx-auto">
-
-        {/* Brand bar — full width, logo left / contact right */}
-        <div
-          className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 pb-12 mb-12 border-b"
-          style={{ borderColor: "rgba(121,201,197,0.2)" }}
-        >
+        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 pb-12 mb-12 border-b" style={{ borderColor: "rgba(121,201,197,0.2)" }}>
           <div>
             <Logo className="mb-4" />
             <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
@@ -21,14 +13,8 @@ export default function Footer() {
               120,000+ movies &amp; series in 4K. Serving all of Canada.
             </p>
           </div>
-
           <div className="sm:text-right shrink-0">
-            <a
-              href="mailto:help@maple4k.ca"
-              className="text-sm text-gray-400 hover:text-[#79C9C5] transition-colors"
-            >
-              help@maple4k.ca
-            </a>
+            <a href="mailto:help@maple4k.ca" className="text-sm text-gray-400 hover:text-[#79C9C5] transition-colors">help@maple4k.ca</a>
             <div className="mt-3 text-gray-500 text-sm leading-relaxed">
               <p className="text-gray-400 font-medium text-xs uppercase tracking-wider mb-1">Address</p>
               <p>1599 Blvd. Saint-Martin O</p>
@@ -38,10 +24,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Links — 2×2 on mobile, 4 cols on desktop */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-
-          {/* Pages */}
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Pages</p>
             <div className="flex flex-col gap-2.5">
@@ -53,11 +36,21 @@ export default function Footer() {
               <Link href="/reseller" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Reseller</Link>
               <Link href="/referral" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Referral</Link>
               <Link href="/contact" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Contact</Link>
-              <Link href="/dmca" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">DMCA</Link>
             </div>
           </div>
 
-          {/* By Device */}
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">IPTV Services</p>
+            <div className="flex flex-col gap-2.5">
+              <Link href="/best-iptv-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Best IPTV Canada</Link>
+              <Link href="/iptv-4k" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">IPTV 4K</Link>
+              <Link href="/iptv-subscription" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">IPTV Subscription</Link>
+              <Link href="/smart-iptv" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Smart IPTV</Link>
+              <Link href="/iptv-formula" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">IPTV Formuler</Link>
+              <Link href="/free-trial" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Free IPTV Trial</Link>
+            </div>
+          </div>
+
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">By Device</p>
             <div className="flex flex-col gap-2.5">
@@ -66,10 +59,11 @@ export default function Footer() {
               <Link href="/iptv-smart-tv-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Smart TV</Link>
               <Link href="/iptv-apple-tv-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Apple TV</Link>
               <Link href="/iptv-mag-box-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">MAG Box</Link>
+              <Link href="/iptv-samsung-tv-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Samsung TV</Link>
+              <Link href="/iptv-lg-tv-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">LG TV</Link>
             </div>
           </div>
 
-          {/* By City */}
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">By City</p>
             <div className="flex flex-col gap-2.5">
@@ -82,7 +76,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Legal */}
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Legal</p>
             <div className="flex flex-col gap-2.5 mb-6">
@@ -92,25 +85,24 @@ export default function Footer() {
               <Link href="/disclaimer" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Disclaimer</Link>
             </div>
             <p className="text-gray-600 text-xs leading-relaxed mb-2">
-              Maple4K does not host or stream any copyrighted content. All content is
-              provided by third-party providers.
+              Maple4K does not host or stream any copyrighted content.
             </p>
-            <Link href="/disclaimer" className="text-xs text-[#F96E5B] hover:text-[#79C9C5] transition-colors">
-              Read Disclaimer →
-            </Link>
           </div>
-
         </div>
 
-        {/* Bottom bar */}
-        <div
-          className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 border-t"
-          style={{ borderColor: "rgba(121,201,197,0.2)" }}
-        >
+        {/* Cross-site network */}
+        <div className="py-6 mb-6 border-t border-b" style={{ borderColor: "rgba(121,201,197,0.15)" }}>
+          <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-3">Also from our network</p>
+          <div className="flex flex-wrap gap-4">
+            <a href="https://maplehd.ca" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">MapleHD — Sports IPTV Canada</a>
+            <a href="https://maplestreamtv.ca" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">MapleStreamTV — Family IPTV Canada</a>
+          </div>
+        </div>
+
+        <div className="pt-4 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>© 2026 Maple4K. All rights reserved.</p>
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>help@maple4k.ca</p>
         </div>
-
       </div>
     </footer>
   );

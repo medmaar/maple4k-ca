@@ -5,13 +5,39 @@ export const metadata: Metadata = {
   keywords: "smart iptv, smart iptv canada, iptv smart tv canada, best smart iptv canada, smart tv iptv canada, iptv samsung smart tv, iptv lg smart tv canada",
   alternates: { canonical: "https://maple4k.ca/smart-iptv" },
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Smart IPTV Canada","item":"https://maple4k.ca/smart-iptv"}
+  ]
+};
+
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is Smart IPTV and how does it work?","acceptedAnswer":{"@type":"Answer","text":"Smart IPTV refers to streaming IPTV directly on a Smart TV without an external device. Samsung, LG, Sony, and Android TV Smart TVs can run IPTV apps like IPTV Smarters Pro natively. Maple4K supports all Smart TV brands."}},
+    {"@type":"Question","name":"Does Maple4K work on Samsung Smart TV?","acceptedAnswer":{"@type":"Answer","text":"Yes — Maple4K works on Samsung Smart TVs via IPTV Smarters Pro or the Smart IPTV app from the Samsung App Store. Supports all Samsung Tizen models from 2017 onwards."}},
+    {"@type":"Question","name":"Does Maple4K work on LG Smart TV?","acceptedAnswer":{"@type":"Answer","text":"Yes — Maple4K works on all LG webOS Smart TVs. Download Smart IPTV or IPTV Smarters from the LG Content Store, enter your Maple4K credentials, and stream all 25,000+ channels."}}
+  ]
+};
+
 export default function SmartIPTVPage() {
   return (
     <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000", minHeight: "100vh" }}>
       <section style={{ padding: "80px 16px 60px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase" }}>Smart IPTV · Canada · Maple4K</span>
-          <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
+          <div style={{ textAlign: "center", marginBottom: 8 }}>
+          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(63,154,174,0.25)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+            🗓 Last updated: April 2026
+          </span>
+        </div>
+            <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
             Smart IPTV Canada — Stream on <span style={{ color: "#F96E5B" }}>Any Smart TV</span>
           </h1>
           <p style={{ fontSize: "1.1rem", lineHeight: 1.7, maxWidth: 680, marginBottom: 28 }}>

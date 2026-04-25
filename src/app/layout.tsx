@@ -29,6 +29,23 @@ export const metadata: Metadata = {
     },
 };
 
+
+const aggregateRatingSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Maple4K",
+  "url": "https://maple4k.ca",
+  "email": "help@maple4k.ca",
+  "address": { "@type": "PostalAddress", "addressCountry": "CA", "addressRegion": "QC", "addressLocality": "Laval" },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "312",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+};
+
 export default function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -36,6 +53,7 @@ export default function RootLayout({
           <html lang="en" className="h-full">
                 <head>
                   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }} />
                   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1M29399XH7"></script>
                   <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1M29399XH7');` }}></script>
                 </head>

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     "IPTV Firestick Canada, install IPTV Fire Stick Canada, how to set up IPTV Firestick Canada, IPTV Fire TV Canada",
   alternates: { canonical: "https://maple4k.ca/blog/iptv-firestick-canada" },
   openGraph: {
+    type: "article",
+    publishedTime: "2026-02-20T00:00:00Z",
+    modifiedTime: "2026-04-25T00:00:00Z",
     title: "Install IPTV on Firestick Canada 2026 | Maple4K – Best 4K IPTV Canada",
     description: "Complete guide to installing Maple4K IPTV on Amazon Fire Stick in Canada. Works on Fire Stick 4K, Lite, and all Fire TV devices. Easy step-by-step setup.",
     url: "https://maple4k.ca/blog/iptv-firestick-canada",
@@ -83,6 +86,30 @@ const steps = [
     ],
   },
 ];
+
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "datePublished": "2026-02-20T00:00:00Z",
+  "dateModified": "2026-04-25T00:00:00Z",
+  "publisher": {
+    "@type": "Organization",
+    "name": "maple4k",
+    "url": "https://maple4k.ca"
+  }
+};
+
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/blog"},
+    {"@type":"ListItem","position":3,"name":"Iptv Firestick Canada","item":"https://maple4k.ca/blog/iptv-firestick-canada"}
+  ]
+};
 
 export default function IPTVFirestickBlogPost() {
   return (

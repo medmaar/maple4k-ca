@@ -14,6 +14,8 @@ export const metadata: Metadata = {
     url: "https://maple4k.ca/blog/is-iptv-legal-canada",
     siteName: "Maple4K",
     type: "article",
+    publishedTime: "2026-03-15T00:00:00Z",
+    modifiedTime: "2026-04-25T00:00:00Z",
     locale: "en_CA",
     images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Is IPTV Legal in Canada? – Maple4K" }],
   },
@@ -40,12 +42,25 @@ const articleSchema = {
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://maple4k.ca/blog/is-iptv-legal-canada" },
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/blog"},
+    {"@type":"ListItem","position":3,"name":"Is Iptv Legal Canada","item":"https://maple4k.ca/blog/is-iptv-legal-canada"}
+  ]
+};
+
 export default function IsIPTVLegalCanada() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script
       />
       <main style={{ background: "#E8F4F5", color: "#000000", minHeight: "100vh" }}>
         <article style={{ maxWidth: 800, margin: "0 auto", padding: "80px 16px" }}>

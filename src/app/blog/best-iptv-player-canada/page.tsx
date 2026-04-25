@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     description: "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player.",
     url: "https://maple4k.ca/blog/best-iptv-player-canada",
     type: "article",
+    publishedTime: "2026-02-10T00:00:00Z",
+    modifiedTime: "2026-04-25T00:00:00Z",
     siteName: "Maple4K",
     locale: "en_CA",
     images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Best IPTV Player Canada – Maple4K" }],
@@ -70,10 +72,23 @@ const players = [
   },
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/blog"},
+    {"@type":"ListItem","position":3,"name":"Best Iptv Player Canada","item":"https://maple4k.ca/blog/best-iptv-player-canada"}
+  ]
+};
+
 export default function BestIPTVPlayerCanadaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script />
       <main style={{ background: "#E8F4F5", color: "#000000", minHeight: "100vh" }}>
         <section style={{ background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(249,110,91,0.12) 0%, transparent 65%), #0a0a0a", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>

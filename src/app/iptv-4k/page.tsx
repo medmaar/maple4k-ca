@@ -30,16 +30,33 @@ const faqSchema = {
   mainEntity: faqItems.map(item => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })),
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"IPTV 4K Canada","item":"https://maple4k.ca/iptv-4k"}
+  ]
+};
+
 export default function IPTV4KPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script />
       <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000", minHeight: "100vh" }}>
         <section style={{ padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase", letterSpacing: "0.08em" }}>
               IPTV 4K · Canada · Maple4K
             </span>
+            <div style={{ textAlign: "center", marginBottom: 8 }}>
+          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(63,154,174,0.25)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+            🗓 Last updated: April 2026
+          </span>
+        </div>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
               IPTV 4K Canada — True Ultra HD Streaming <span style={{ color: "#F96E5B" }}>Near You</span>
             </h1>
