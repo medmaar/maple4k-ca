@@ -15,8 +15,6 @@ export const metadata: Metadata = {
       "Stream in true 4K Ultra HD. H.265 codec, HDR10, high-bitrate support. Watch sports, movies, and series in pristine quality.",
     url: "https://maple4k.ca/blog/best-iptv-canada-2026",
     type: "article",
-    publishedTime: "2026-01-15T00:00:00Z",
-    modifiedTime: "2026-04-25T00:00:00Z",
     siteName: "Maple4K",
   },
   twitter: { card: "summary_large_image", images: ["/og-image.webp"] },

@@ -9,8 +9,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://maple4k.ca/blog/iptv-firestick-canada" },
   openGraph: {
     type: "article",
-    publishedTime: "2026-02-20T00:00:00Z",
-    modifiedTime: "2026-04-25T00:00:00Z",
     title: "Install IPTV on Firestick Canada 2026 | Maple4K – Best 4K IPTV Canada",
     description: "Complete guide to installing Maple4K IPTV on Amazon Fire Stick in Canada. Works on Fire Stick 4K, Lite, and all Fire TV devices. Easy step-by-step setup.",
     url: "https://maple4k.ca/blog/iptv-firestick-canada",
