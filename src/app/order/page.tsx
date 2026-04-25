@@ -117,11 +117,6 @@ function OrderContent() {
   );
 }
 
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  alternates: { canonical: "https://maple4k.ca/order" },
-  robots: { index: false, follow: true },
-};
 
 export default function OrderPage() {
   return (
