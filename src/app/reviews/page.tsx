@@ -1,6 +1,28 @@
 import type { Metadata } from "next";
 import ReviewsSection from "../components/ReviewsSection";
 
+const reviewsPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Maple4K IPTV Canada",
+  "description": "Canada's best 4K IPTV service. 25,000+ live channels, NHL, UFC, CFL. True H.265/HEVC 4K streaming from $9/month.",
+  "brand": { "@type": "Brand", "name": "Maple4K" },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "312",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "9.00",
+    "priceCurrency": "CAD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://maple4k.ca/pricing"
+  }
+};
+
 export const metadata: Metadata = {
   title: { absolute: "Maple4K Reviews — Trustpilot, WhatsApp & Google | Maple4K IPTV Canada" },
   description: "Read verified Maple4K reviews from Trustpilot, WhatsApp, and Google. 50,000+ happy Canadian customers. See why Maple4K is Canada's top-rated IPTV service.",
@@ -9,7 +31,9 @@ export const metadata: Metadata = {
 
 export default function ReviewsPage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", minHeight: "100vh", color: "#000000" }}>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsPageSchema) }} />
+      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", minHeight: "100vh", color: "#000000" }}>
 
       {/* Hero */}
       <section style={{ padding: "48px 16px 32px" }}>
@@ -54,5 +78,6 @@ export default function ReviewsPage() {
       </section>
 
     </main>
+    </>
   );
 }
