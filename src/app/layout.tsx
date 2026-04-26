@@ -44,7 +44,6 @@ const aggregateRatingSchema = {
     "bestRating": "5",
     "worstRating": "1"
   },
-  "telephone": "+1-514-000-0000",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
