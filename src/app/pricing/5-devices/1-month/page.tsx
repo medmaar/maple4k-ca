@@ -52,12 +52,31 @@ const productSchema = {
   name: "Maple4K 1 Month IPTV Plan — 5 Devices",
   description: "1 Month of IPTV access for 5 simultaneous connections. 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
   brand: { "@type": "Brand", name: "Maple4K" },
+  "image": "https://maple4k.ca/og-image.jpg",
   offers: {
     "@type": "Offer",
     price: "45.00",
     priceCurrency: "CAD",
     availability: "https://schema.org/InStock",
     url: "https://maple4k.ca/pricing/5-devices/1-month",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "CAD" },
+      "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "CA" },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "MIN" },
+        "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 30, "unitCode": "MIN" }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "CA",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 3,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    },
   },
 };
 

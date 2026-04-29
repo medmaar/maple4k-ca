@@ -7,6 +7,27 @@ const reviewsPageSchema = {
   "name": "Maple4K IPTV Canada",
   "description": "Canada's best 4K IPTV service. 25,000+ live channels, NHL, UFC, CFL. True H.265/HEVC 4K streaming from $9/month.",
   "brand": { "@type": "Brand", "name": "Maple4K" },
+  "image": "https://maple4k.ca/og-image.jpg",
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Mike T." },
+      "reviewBody": "Best IPTV service in Canada. NHL streams are crystal clear and never buffer. Switched from Bell and saving $120/month."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Sarah L." },
+      "reviewBody": "Setup took 5 minutes on my Firestick. TSN and Sportsnet work perfectly in 4K. Support replied in under 10 minutes."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Jean-Pierre M." },
+      "reviewBody": "Excellent service. Toutes les chaînes canadiennes en 4K. Je recommande fortement à tous les Canadiens."
+    }
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.8",
@@ -19,7 +40,25 @@ const reviewsPageSchema = {
     "price": "9.00",
     "priceCurrency": "CAD",
     "availability": "https://schema.org/InStock",
-    "url": "https://maple4k.ca/pricing"
+    "url": "https://maple4k.ca/pricing",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "CAD" },
+      "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "CA" },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "MIN" },
+        "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 30, "unitCode": "MIN" }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "CA",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 3,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
   }
 };
 

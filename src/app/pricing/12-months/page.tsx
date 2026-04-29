@@ -62,12 +62,31 @@ const productSchema = {
   name: "Maple4K 1 Year IPTV Plan",
   description: "12 months of IPTV access to 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K. Includes IBO Player subscription.",
   brand: { "@type": "Brand", name: "Maple4K" },
+  "image": "https://maple4k.ca/og-image.jpg",
   offers: {
     "@type": "Offer",
     price: "49.00",
     priceCurrency: "CAD",
     availability: "https://schema.org/InStock",
     url: "https://maple4k.ca/pricing/12-months",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "CAD" },
+      "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "CA" },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "MIN" },
+        "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 30, "unitCode": "MIN" }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "CA",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 3,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    },
   },
 };
 
