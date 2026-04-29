@@ -53,6 +53,19 @@ const productSchema = {
   description: "1 Year of IPTV access for 2 simultaneous connections. 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
   brand: { "@type": "Brand", name: "Maple4K" },
   "image": "https://maple4k.ca/og-image.jpg",
+  "review": {
+    "@type": "Review",
+    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    "author": { "@type": "Person", "name": "Marc D." },
+    "reviewBody": "Best IPTV service in Canada. Works perfectly on my Firestick with zero buffering. TSN and Sportsnet in 4K — incredible."
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "312",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
   offers: {
     "@type": "Offer",
     price: "89.00",
