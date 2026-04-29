@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         siteName: "Maple4K",
         locale: "en_CA",
         type: "website",
-        images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+        images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K – Canada's Best 4K IPTV Service" }],
     },
     twitter: { card: "summary_large_image" },
     verification: {
