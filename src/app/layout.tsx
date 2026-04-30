@@ -1,3 +1,6 @@
+import { Quicksand } from 'next/font/google';
+
+const quicksand = Quicksand({ subsets: ['latin'], weight: ['400','500','600','700'], display: 'swap', variable: '--font-quicksand' });
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./Navbar";
@@ -8,6 +11,7 @@ import Animations from "./components/Animations";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://maple4k.ca"),
+    alternates: { canonical: "https://maple4k.ca", languages: { "en-CA": "https://maple4k.ca", "x-default": "https://maple4k.ca" } },
     icons: { icon: "/favicon.svg" },
     title: {
         default: "Best IPTV Canada — 4K Streaming from $9 | Maple4K",
@@ -30,39 +34,6 @@ export const metadata: Metadata = {
 };
 
 
-const aggregateRatingSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Maple4K",
-  "url": "https://maple4k.ca",
-  "email": "help@maple4k.ca",
-  "address": { "@type": "PostalAddress", "addressCountry": "CA", "addressRegion": "QC", "addressLocality": "Laval" },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "312",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "00:00",
-      "closes": "23:59"
-    }
-  ],
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 45.5706,
-    "longitude": -73.7474
-  },
-  "areaServed": {
-    "@type": "Country",
-    "name": "Canada"
-  },
-  "priceRange": "$9-$100"
-};
 
 
 const sitelinksSearchSchema = {
@@ -87,7 +58,6 @@ export default function RootLayout({
           <html lang="en" className="h-full">
                 <head>
                   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }} />
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
                   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1M29399XH7"></script>
                   <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1M29399XH7');` }}></script>
