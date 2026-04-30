@@ -28,8 +28,8 @@ const articleSchema = {
   description:
     "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility.",
   datePublished: "2026-02-20",
-  dateModified: "2026-04-01",
-  author: { "@type": "Organization", name: "Maple4K" },
+  dateModified: "2026-04-30",
+  "author": { "@type": "Person", "name": "Alex Tremblay", "url": "https://maple4k.ca/about" },
   publisher: {
     "@type": "Organization",
     name: "Maple4K",
