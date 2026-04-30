@@ -90,15 +90,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Cross-site network */}
-        <div className="py-6 mb-6 border-t border-b" style={{ borderColor: "rgba(121,201,197,0.15)" }}>
-          <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-3">Also from our network</p>
-          <div className="flex flex-wrap gap-4">
-            <a href="https://maplehd.ca" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">MapleHD — Sports IPTV Canada</a>
-            <a href="https://maplestreamtv.ca" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">MapleStreamTV — Family IPTV Canada</a>
-          </div>
-        </div>
-
         <div className="pt-4 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>© 2026 Maple4K. All rights reserved.</p>
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>help@maple4k.ca</p>
