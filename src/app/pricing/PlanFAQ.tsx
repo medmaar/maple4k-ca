@@ -29,6 +29,7 @@ export default function PlanFAQ({ items }: Props) {
             className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
             onClick={() => setOpen(open === i ? null : i)}
             aria-expanded={open === i}
+            aria-label={`${open === i ? "Collapse" : "Expand"}: ${item.q}`}
           >
             <span className="font-semibold text-sm leading-snug" style={{ color: "#ffffff" }}>{item.q}</span>
             <span

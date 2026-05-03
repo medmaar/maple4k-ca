@@ -45,6 +45,8 @@ export default function FaqAccordion() {
           <button
             className="w-full flex items-center justify-between gap-4 px-5 py-5 text-left"
             onClick={() => setOpen(open === i ? null : i)}
+            aria-expanded={open === i}
+            aria-label={`${open === i ? "Collapse" : "Expand"}: ${item.q}`}
           >
             <span className="font-semibold text-white text-sm md:text-base leading-snug">
               {item.q}

@@ -34,8 +34,10 @@ const aggregateRatingSchema = {
 
 import type { Metadata } from "next";
 import Link from "next/link";
-import HomePricing from "./components/HomePricing";
-import ReviewsSection from "./components/ReviewsSection";
+import dynamic from "next/dynamic";
+
+const HomePricing = dynamic(() => import("./components/HomePricing"));
+const ReviewsSection = dynamic(() => import("./components/ReviewsSection"));
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Canada 2026 — 4K Ultra HD from $9/month | Maple4K" },
@@ -181,14 +183,19 @@ export default function HomePage() {
             alignItems: "center",
           }}
         >
-          {/* Background image */}
-          <div style={{
-            position: "absolute", inset: 0,
-            backgroundImage: "url('/hero.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "70% 30%",
-            zIndex: 0,
-          }} />
+          {/* Background image — proper <img> for LCP preload */}
+          <picture style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+            <source media="(max-width: 828px)" srcSet="/hero-mobile.webp" type="image/webp" />
+            <source media="(min-width: 829px)" srcSet="/hero-desktop.webp" type="image/webp" />
+            <img
+              src="/hero-desktop.webp"
+              alt=""
+              aria-hidden="true"
+              fetchPriority="high"
+              decoding="async"
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "70% 30%" }}
+            />
+          </picture>
           {/* Dark overlay for readability */}
           <div style={{
             position: "absolute", inset: 0,
@@ -366,7 +373,7 @@ export default function HomePage() {
         {/* ── 5. CANADIAN CHANNELS ── */}
         <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
+            <p style={{ color: "#C03D28", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
               Canadian Content
             </p>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 16, color: "#000000" }}>
@@ -473,7 +480,7 @@ export default function HomePage() {
         {/* ── 8. FAQ ── */}
         <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
-            <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
+            <p style={{ color: "#C03D28", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48, color: "#000000" }}>
               Frequently Asked Questions
             </h2>
@@ -571,8 +578,8 @@ export default function HomePage() {
                 href="/pricing"
                 style={{
                   background: "transparent",
-                  border: "2px solid rgba(249,110,91,0.4)",
-                  color: "#F96E5B",
+                  border: "2px solid rgba(192,61,40,0.5)",
+                  color: "#C03D28",
                   fontWeight: 700,
                   fontSize: 16,
                   padding: "16px 36px",

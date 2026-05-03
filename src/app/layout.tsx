@@ -55,16 +55,20 @@ export default function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
     return (
-          <html lang="en" className="h-full">
+          <html lang="en" className={`h-full ${quicksand.variable}`}>
                 <head>
                   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+                  {/* Preconnect to Google Fonts CDN */}
+                  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                  {/* Preload LCP hero image */}
+                  <link rel="preload" as="image" href="/hero-mobile.webp" media="(max-width: 828px)" type="image/webp" />
+                  <link rel="preload" as="image" href="/hero-desktop.webp" media="(min-width: 829px)" type="image/webp" />
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
-                  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1M29399XH7"></script>
-                  <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1M29399XH7');` }}></script>
+                  {/* GTM deferred — does not block rendering */}
+                  <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1M29399XH7');window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-1M29399XH7';document.head.appendChild(s);},{once:true});` }}></script>
                 </head>
                 <body
-                          className="min-h-full flex flex-col"
-                        style={{ fontFamily: "'Quicksand', sans-serif" }}
+                          className={`min-h-full flex flex-col ${quicksand.className}`}
                         >
                         <Navbar />
                         <div className="flex-1">{children}</div>

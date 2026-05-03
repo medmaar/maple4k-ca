@@ -7,6 +7,9 @@
   --mint: #79C9C5;
   --cream: #E8F4F5;
   --coral: #F96E5B;
+  /* Accessible versions for text on light backgrounds (passes WCAG AA 4.5:1) */
+  --coral-text: #C03D28;
+  --teal-text: #156B7A;
   --dark: #1A3D45;
 }
 
@@ -42,12 +45,14 @@ body {
 .logo-leaf {
   animation: leafSway 3.5s ease-in-out infinite;
   display: inline-block;
+  will-change: transform;
 }
 
 .logo-4k {
   display: inline-block;
   animation: fourKPump 1.8s ease-in-out infinite, fourKGlow 1.8s ease-in-out infinite;
   color: #F96E5B !important;
+  will-change: transform;
 }
 
 @keyframes statPop {
@@ -107,11 +112,12 @@ body {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
-.animate-marquee { animation: marquee 28s linear infinite; }
+.animate-marquee { animation: marquee 28s linear infinite; will-change: transform; }
 .marquee-track {
   display: flex;
   width: max-content;
   animation: marquee 35s linear infinite;
+  will-change: transform;
 }
 
 /* ── BUTTONS — springy hover ── */
@@ -166,6 +172,7 @@ nav a:hover::after, footer a:hover::after { width: 100%; }
 /* ── FREE TRIAL PULSE ── */
 a[href="/free-trial"] {
   animation: softPulse 3.2s ease-in-out infinite;
+  will-change: box-shadow;
 }
 a[href="/free-trial"]:hover { animation: none !important; }
 

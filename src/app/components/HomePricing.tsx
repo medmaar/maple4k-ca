@@ -58,7 +58,7 @@ export default function HomePricing() {
     <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         {/* Header */}
-        <p style={{ textAlign: "center", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
+        <p style={{ textAlign: "center", color: "#C03D28", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
           Transparent Pricing
         </p>
         <h2 style={{ textAlign: "center", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, marginBottom: 12, color: "#000000" }}>
@@ -95,6 +95,8 @@ export default function HomePricing() {
                 key={n}
                 data-n={n}
                 onClick={() => handleSelect(n)}
+                aria-label={`Select ${n} connection${n > 1 ? "s" : ""}`}
+                aria-pressed={active}
                 style={{
                   flexShrink: 0,
                   padding: "9px 18px",
@@ -214,7 +216,7 @@ export default function HomePricing() {
         </div>
 
         <div style={{ textAlign: "center", marginTop: 32 }}>
-          <Link href="/pricing" style={{ color: "#F96E5B", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+          <Link href="/pricing" style={{ color: "#C03D28", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
             View full pricing details →
           </Link>
         </div>

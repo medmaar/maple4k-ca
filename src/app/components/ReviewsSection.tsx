@@ -157,7 +157,7 @@ const slideStyle = (sliding: boolean): React.CSSProperties => ({
 const ProgressDots = ({ total, current, go }: { total: number; current: number; go: (n: number) => void }) => (
   <div style={{ display: "flex", justifyContent: "center", gap: 8, marginTop: 22 }}>
     {Array.from({ length: total }).map((_, i) => (
-      <button key={i} onClick={() => go(i)} style={{
+      <button key={i} onClick={() => go(i)} aria-label={`Go to review ${i + 1}`} style={{
         width: i === current ? 26 : 10, height: 10, borderRadius: 99,
         border: "none", cursor: "pointer", padding: 0, fontFamily: "inherit",
         background: i === current ? "#F96E5B" : "rgba(63,154,174,0.3)",
@@ -190,9 +190,9 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
     <div>
       {showHeader && (
         <div style={{ textAlign: "center", marginBottom: 52 }}>
-          <p style={{ color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 14 }}>Verified Reviews</p>
+          <p style={{ color: "#C03D28", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 14 }}>Verified Reviews</p>
           <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", fontWeight: 900, color: "#000000", marginBottom: 12 }}>
-            What Customers Say About <span style={{ color: "#F96E5B" }}>Maple4K</span>
+            What Customers Say About <span style={{ color: "#C03D28" }}>Maple4K</span>
           </h2>
           <p style={{ color: "#000000", fontSize: 15, marginBottom: 28 }}>Real feedback from Trustpilot, WhatsApp & Google</p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 14 }}>
@@ -200,7 +200,7 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
               { val: "5.0", label: "Trustpilot", color: "#00b67a" },
               { val: "50,000+", label: "Customers", color: "#3F9AAE" },
               { val: "4.9★", label: "Google", color: "#FBBC04" },
-              { val: "24/7", label: "Support", color: "#F96E5B" },
+              { val: "24/7", label: "Support", color: "#FF9F91" },
             ].map(s => (
               <div key={s.val} style={{ background: "#1A3D45", borderRadius: 12, padding: "12px 20px", textAlign: "center", minWidth: 90 }}>
                 <div style={{ fontSize: 18, fontWeight: 900, color: s.color }}>{s.val}</div>
@@ -220,7 +220,7 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
           <div style={slideStyle(tp.sliding)}>
             <div style={{ background: "#fff", borderRadius: 20, padding: "32px 36px", boxShadow: "0 4px 28px rgba(63,154,174,0.13)", border: "1px solid rgba(63,154,174,0.15)" }}>
               <TP_STARS />
-              <h4 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#000" }}>{tpReview.title}</h4>
+              <h3 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#000" }}>{tpReview.title}</h3>
               <p style={{ color: "#000", lineHeight: 1.8, fontSize: 15, marginBottom: 20 }}>{tpReview.text}</p>
               <p style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 13 }}>— {tpReview.name} <FlagImg flag={tpReview.flag} /></p>
             </div>

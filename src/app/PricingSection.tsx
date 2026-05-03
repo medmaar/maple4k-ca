@@ -122,6 +122,8 @@ export default function PricingSection() {
                 key={p.devices}
                 data-n={p.devices}
                 onClick={() => handleSelect(p.devices)}
+                aria-label={`Select ${p.devices} device${p.devices > 1 ? "s" : ""}`}
+                aria-pressed={active}
                 style={{
                   flexShrink: 0,
                   padding: "8px 18px",
