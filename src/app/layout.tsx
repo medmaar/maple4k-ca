@@ -67,12 +67,20 @@ export default function RootLayout({
                   {/* Preconnect to Google Fonts CDN */}
                   <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                   {/* Preload LCP hero image */}
-                  {/* Preload LCP hero — imagesrcset tells browser exactly which to fetch */}
                   <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp"
                     // @ts-expect-error - imagesrcset is valid HTML but not in React types yet
                     imagesrcset="/hero-mobile.webp 828w, /hero-desktop.webp 1920w"
                     imagesizes="100vw"
                   />
+                  {/* Critical above-fold CSS inlined — hero renders without waiting for CSS file */}
+                  <style dangerouslySetInnerHTML={{ __html: `
+                    *,*::before,*::after{box-sizing:border-box}
+                    html{height:100%;scroll-behavior:smooth}
+                    body{background:#E8F4F5;color:#000;margin:0;min-height:100%;display:flex;flex-direction:column}
+                    nav{position:sticky;top:0;z-index:50;background:#1A3D45;border-bottom:2px solid rgba(121,201,197,.25)}
+                    main>section:first-child{position:relative;padding:110px 16px 100px;text-align:center;overflow:hidden;min-height:600px;display:flex;align-items:center}
+                    picture{display:contents}
+                  `}} />
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
                   {/* GTM deferred — does not block rendering */}
                   <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1M29399XH7');window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-1M29399XH7';document.head.appendChild(s);},{once:true});` }}></script>

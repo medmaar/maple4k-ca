@@ -14,7 +14,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="sm:text-right shrink-0">
-            <a href="mailto:help@maple4k.ca" className="text-sm text-gray-400 hover:text-[#79C9C5] transition-colors">help@maple4k.ca</a>
+            <a href="mailto:help&#64;maple4k.ca" className="text-sm text-gray-400 hover:text-[#79C9C5] transition-colors">help&#64;maple4k.ca</a>
             <div className="mt-3 text-gray-500 text-sm leading-relaxed">
               <p className="text-gray-400 font-medium text-xs uppercase tracking-wider mb-1">Address</p>
               <p>1599 Blvd. Saint-Martin O</p>
@@ -92,7 +92,7 @@ export default function Footer() {
 
         <div className="pt-4 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>© 2026 Maple4K. All rights reserved.</p>
-          <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>help@maple4k.ca</p>
+          <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>help&#64;maple4k.ca</p>
         </div>
       </div>
     </footer>

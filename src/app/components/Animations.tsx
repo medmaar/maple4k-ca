@@ -21,10 +21,14 @@ export default function Animations() {
           { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
         );
 
+        // Skip the hero section (first section) — opacity:0 breaks LCP detection
+        const heroSection = document.querySelector("main > section:first-child");
         const revealEls = document.querySelectorAll(
           "section, h2, h3, p, .plan-card, [class*='rounded-']"
         );
         revealEls.forEach((el, i) => {
+          // Never apply ma-init to the hero section or any of its children
+          if (heroSection && (el === heroSection || heroSection.contains(el))) return;
           if (!el.classList.contains("ma-init")) {
             el.classList.add("ma-init");
             (el as HTMLElement).style.transitionDelay = `${(i % 8) * 0.07}s`;
