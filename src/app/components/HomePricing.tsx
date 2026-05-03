@@ -165,8 +165,8 @@ export default function HomePricing() {
               )}
               <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 6, color: isLight ? "#1A3D45" : "#fff" }}>{plan.name}</div>
               <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 20 }}>
-                <span style={{ fontSize: 40, fontWeight: 900, color: isLight ? "#F96E5B" : "#E8F4F5" }}>${prices[i]}</span>
-                <span style={{ fontSize: 12, color: isLight ? "#3F9AAE" : "rgba(255,255,255,0.7)" }}>/ {connLabel}</span>
+                <span style={{ fontSize: 40, fontWeight: 900, color: isLight ? "#C03D28" : "#E8F4F5" }}>${prices[i]}</span>
+                <span style={{ fontSize: 12, color: isLight ? "#156B7A" : "rgba(255,255,255,0.7)" }}>/ {connLabel}</span>
               </div>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
                 {plan.slug === "12-months" && (

@@ -178,7 +178,7 @@ export default function HomePage() {
             padding: "110px 16px 100px",
             textAlign: "center",
             overflow: "hidden",
-            minHeight: "100vh",
+            minHeight: "600px",
             display: "flex",
             alignItems: "center",
           }}
@@ -188,11 +188,11 @@ export default function HomePage() {
             <source media="(max-width: 828px)" srcSet="/hero-mobile.webp" type="image/webp" />
             <source media="(min-width: 829px)" srcSet="/hero-desktop.webp" type="image/webp" />
             <img
-              src="/hero-desktop.webp"
+              src="/hero-mobile.webp"
               alt=""
               aria-hidden="true"
               fetchPriority="high"
-              decoding="async"
+              decoding="sync"
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "70% 30%" }}
             />
           </picture>
@@ -457,7 +457,7 @@ export default function HomePage() {
                 <thead>
                   <tr>
                     <th style={{ textAlign: "left", padding: "14px 16px", color: "#000000", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Feature</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#F96E5B", fontWeight: 700, borderBottom: "1px solid rgba(249,110,91,0.3)", background: "rgba(249,110,91,0.06)" }}>Maple4K</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#C03D28", fontWeight: 700, borderBottom: "1px solid rgba(192,61,40,0.3)", background: "rgba(192,61,40,0.06)" }}>Maple4K</th>
                     <th style={{ textAlign: "center", padding: "14px 16px", color: "#000000", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Cable</th>
                     <th style={{ textAlign: "center", padding: "14px 16px", color: "#000000", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Other IPTV</th>
                   </tr>

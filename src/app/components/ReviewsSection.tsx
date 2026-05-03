@@ -77,23 +77,28 @@ const WA_ICON = () => (
 );
 
 
-// Map emoji flags to ISO codes for flagcdn images
-const FLAG_MAP: Record<string, string> = {
-  "🇺🇸": "us",
-  "🇨🇦": "ca",
-};
+// Inline SVG flags — no external network requests
 const FlagImg = ({ flag }: { flag: string }) => {
-  const code = FLAG_MAP[flag];
-  if (!code) return <span>{flag}</span>;
-  return (
-    <img
-      src={`https://flagcdn.com/20x15/${code}.png`}
-      alt={code.toUpperCase()}
-      width={20}
-      height={15}
-      style={{ borderRadius: 2, display: "inline-block", verticalAlign: "middle", marginLeft: 4 }}
-    />
+  if (flag === "🇨🇦") return (
+    <svg width="20" height="14" viewBox="0 0 20 14" style={{ display:"inline-block", verticalAlign:"middle", marginLeft:4, borderRadius:2 }} aria-label="Canada">
+      <rect width="20" height="14" fill="#FF0000"/>
+      <rect x="5" width="10" height="14" fill="#fff"/>
+      <polygon points="10,2 11,5.5 14.5,5.5 11.8,7.5 12.8,11 10,9 7.2,11 8.2,7.5 5.5,5.5 9,5.5" fill="#FF0000"/>
+    </svg>
   );
+  if (flag === "🇺🇸") return (
+    <svg width="20" height="14" viewBox="0 0 20 14" style={{ display:"inline-block", verticalAlign:"middle", marginLeft:4, borderRadius:2 }} aria-label="United States">
+      <rect width="20" height="14" fill="#B22234"/>
+      <rect y="1.08" width="20" height="1.08" fill="#fff"/>
+      <rect y="3.23" width="20" height="1.08" fill="#fff"/>
+      <rect y="5.38" width="20" height="1.08" fill="#fff"/>
+      <rect y="7.54" width="20" height="1.08" fill="#fff"/>
+      <rect y="9.69" width="20" height="1.08" fill="#fff"/>
+      <rect y="11.85" width="20" height="1.08" fill="#fff"/>
+      <rect width="8" height="7.54" fill="#3C3B6E"/>
+    </svg>
+  );
+  return <span style={{marginLeft:4}}>{flag}</span>;
 };
 const TrustpilotLogo = () => (
   <svg viewBox="0 0 260 62" width="180" height="44" xmlns="http://www.w3.org/2000/svg">

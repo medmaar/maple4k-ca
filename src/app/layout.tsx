@@ -1,13 +1,19 @@
 import { Quicksand } from 'next/font/google';
 
-const quicksand = Quicksand({ subsets: ['latin'], weight: ['400','500','600','700'], display: 'swap', variable: '--font-quicksand' });
-import type { Metadata } from "next";
+const quicksand = Quicksand({ subsets: ['latin'], weight: ['400','500','600','700'], display: 'optional', variable: '--font-quicksand', preload: true });
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "../components/Footer";
 import FloatingContact from "../components/FloatingContact";
 
 import Animations from "./components/Animations";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#1A3D45",
+};
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://maple4k.ca"),
@@ -61,8 +67,12 @@ export default function RootLayout({
                   {/* Preconnect to Google Fonts CDN */}
                   <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                   {/* Preload LCP hero image */}
-                  <link rel="preload" as="image" href="/hero-mobile.webp" media="(max-width: 828px)" type="image/webp" />
-                  <link rel="preload" as="image" href="/hero-desktop.webp" media="(min-width: 829px)" type="image/webp" />
+                  {/* Preload LCP hero — imagesrcset tells browser exactly which to fetch */}
+                  <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp"
+                    // @ts-expect-error - imagesrcset is valid HTML but not in React types yet
+                    imagesrcset="/hero-mobile.webp 828w, /hero-desktop.webp 1920w"
+                    imagesizes="100vw"
+                  />
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
                   {/* GTM deferred — does not block rendering */}
                   <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1M29399XH7');window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-1M29399XH7';document.head.appendChild(s);},{once:true});` }}></script>

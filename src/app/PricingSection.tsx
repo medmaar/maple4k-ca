@@ -85,7 +85,7 @@ export default function PricingSection() {
     <section id="pricing-section" style={{ padding: "0 16px 60px" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         {/* Header */}
-        <p style={{ textAlign: "center", color: "#F96E5B", fontWeight: 700, fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 10 }}>
+        <p style={{ textAlign: "center", color: "#C03D28", fontWeight: 700, fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 10 }}>
           PRICING PLANS
         </p>
         <h2 style={{ textAlign: "center", fontSize: "clamp(1.6rem,4vw,2.2rem)", fontWeight: 900, color: "#000000", marginBottom: 10 }}>
@@ -180,8 +180,8 @@ export default function PricingSection() {
                 )}
                 <p style={{ fontSize: 16, fontWeight: 700, color: isLight ? "#1A3D45" : "#fff", marginBottom: 6 }}>{dur}</p>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 8, margin: "4px 0 16px" }}>
-                  <span style={{ fontSize: "clamp(2rem,5vw,2.6rem)", fontWeight: 900, color: isLight ? "#F96E5B" : "#E8F4F5" }}>${price}</span>
-                  <span style={{ fontSize: 12, color: isLight ? "#3F9AAE" : "rgba(255,255,255,0.65)" }}>/ {connLabel}</span>
+                  <span style={{ fontSize: "clamp(2rem,5vw,2.6rem)", fontWeight: 900, color: isLight ? "#C03D28" : "#E8F4F5" }}>${price}</span>
+                  <span style={{ fontSize: 12, color: isLight ? "#156B7A" : "rgba(255,255,255,0.65)" }}>/ {connLabel}</span>
                 </div>
                 <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
                   {isYear && (
@@ -192,7 +192,7 @@ export default function PricingSection() {
                   )}
                   {features.map((f) => (
                     <li key={f} style={{ fontSize: 13, color: isLight ? "#1A3D45" : "rgba(255,255,255,0.9)", marginBottom: 6, display: "flex", alignItems: "center", gap: 8 }}>
-                      <span style={{ color: isLight ? "#3F9AAE" : "#E8F4F5", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                      <span style={{ color: isLight ? "#156B7A" : "#E8F4F5", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                     </li>
                   ))}
                 </ul>

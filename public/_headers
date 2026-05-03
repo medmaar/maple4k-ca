@@ -1,4 +1,4 @@
-# Static assets — 1 year cache
+# Static assets — 1 year immutable cache
 /*.js
   Cache-Control: public, max-age=31536000, immutable
 
@@ -20,15 +20,24 @@
 /*.woff2
   Cache-Control: public, max-age=31536000, immutable
 
-# HTML pages — revalidate every hour
+# HTML — revalidate hourly
 /*.html
   Cache-Control: public, max-age=3600, must-revalidate
 
+# Homepage — push hero image as early as possible via HTTP Link header
 /
   Cache-Control: public, max-age=3600, must-revalidate
+  Link: </hero-mobile.webp>; rel=preload; as=image; type="image/webp"; media="(max-width: 828px)"
+  Link: </hero-desktop.webp>; rel=preload; as=image; type="image/webp"; media="(min-width: 829px)"
 
-# Security headers
+/index.html
+  Cache-Control: public, max-age=3600, must-revalidate
+  Link: </hero-mobile.webp>; rel=preload; as=image; type="image/webp"; media="(max-width: 828px)"
+  Link: </hero-desktop.webp>; rel=preload; as=image; type="image/webp"; media="(min-width: 829px)"
+
+# Security headers on all routes
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+  X-XSS-Protection: 1; mode=block

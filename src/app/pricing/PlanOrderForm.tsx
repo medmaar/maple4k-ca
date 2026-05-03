@@ -1,8 +1,13 @@
 "use client";
-import { useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
+import { useState, useRef } from "react";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+
+// Dynamically import emailjs — only loads when form is submitted
+async function getEmailjs() {
+  const mod = await import("@emailjs/browser");
+  return mod.default;
+}
 
 const countries = [
   "Canada", "United States", "United Kingdom", "Australia", "France", "Germany",
@@ -43,10 +48,7 @@ export default function PlanOrderForm({ plan }: Props) {
   const [phone, setPhone] = useState<string | undefined>("");
   const [emailWarning, setEmailWarning] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-
-  useEffect(() => {
-    emailjs.init("BE3GO7hcQXUJAnRBV");
-  }, []);
+  const emailjsInitialized = useRef(false);
 
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -62,6 +64,11 @@ export default function PlanOrderForm({ plan }: Props) {
     e.preventDefault();
     setStatus("loading");
     try {
+      const emailjs = await getEmailjs();
+      if (!emailjsInitialized.current) {
+        emailjs.init("BE3GO7hcQXUJAnRBV");
+        emailjsInitialized.current = true;
+      }
       const result = await emailjs.send(
         "service_mq69xac",
         "template_6gpfu3m",

@@ -52,7 +52,7 @@ export default function ReferralForm() {
     <div>
       <form onSubmit={handleSubmit} style={{ background: "#ffffff", border: "2px solid rgba(63,154,174,0.2)", borderRadius: 20, padding: 32, boxShadow: "0 4px 24px rgba(63,154,174,0.1)" }}>
 
-        <p style={{ fontSize: 11, color: "#F96E5B", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Your Details</p>
+        <p style={{ fontSize: 11, color: "#C03D28", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Your Details</p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
           <div>
             <label style={labelStyle}>Your First Name</label>
@@ -64,7 +64,7 @@ export default function ReferralForm() {
           </div>
         </div>
 
-        <p style={{ fontSize: 11, color: "#F96E5B", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Friend&apos;s Details</p>
+        <p style={{ fontSize: 11, color: "#C03D28", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Friend&apos;s Details</p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 28 }}>
           <div>
             <label style={labelStyle}>Friend&apos;s First Name</label>
