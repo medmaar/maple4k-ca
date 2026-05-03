@@ -30,20 +30,5 @@
     "tailwindcss": "^4",
     "typescript": "^5",
     "wrangler": "^4.80.0"
-  },
-  "browserslist": {
-    "production": [
-      "Chrome >= 93",
-      "Firefox >= 93",
-      "Safari >= 15",
-      "Edge >= 93",
-      "not dead",
-      "not IE 11"
-    ],
-    "development": [
-      "last 1 Chrome version",
-      "last 1 Firefox version",
-      "last 1 Safari version"
-    ]
   }
 }
