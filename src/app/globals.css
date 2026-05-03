@@ -110,13 +110,12 @@ main > section:first-child > img {
   will-change: transform;
 }
 
-/* ── BUTTONS — springy hover ── */
-a, button {
+/* ── BUTTONS — springy hover (scoped to avoid layout thrash on LCP) ── */
+a:not([aria-hidden="true"]), button {
   transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
               background 0.22s ease,
               color 0.22s ease,
-              box-shadow 0.28s ease !important;
-  position: relative;
+              box-shadow 0.28s ease;
 }
 
 /* Nav and footer links — NO background change ever (except the Free Trial CTA button) */
@@ -126,23 +125,7 @@ nav a:not([href="/free-trial"]), nav a:not([href="/free-trial"]):hover, footer a
 }
 nav a:not([href="/free-trial"]):hover { transform: translateY(-2px) !important; }
 
-/* Coral buttons → dark teal on hover */
-a:not(nav a):not(footer a)[style*="#F96E5B"]:hover,
-button[style*="#F96E5B"]:hover {
-  background: #1A3D45 !important;
-  color: #ffffff !important;
-  transform: translateY(-4px) scale(1.04) !important;
-  box-shadow: 0 14px 32px rgba(26,61,69,0.3) !important;
-}
-
-/* Dark buttons → coral on hover */
-a:not(nav a):not(footer a)[style*="#1A3D45"]:hover,
-button[style*="#1A3D45"]:hover {
-  background: #F96E5B !important;
-  color: #ffffff !important;
-  transform: translateY(-4px) scale(1.04) !important;
-  box-shadow: 0 14px 32px rgba(249,110,91,0.35) !important;
-}
+/* Button hover effects handled via JS (Animations.tsx) */
 
 /* ── UNDERLINE ANIMATION ── */
 nav a, footer a {
@@ -171,21 +154,9 @@ a[href="/free-trial"]:hover { animation: none !important; }
   50%       { opacity: 0.82; }
 }
 
-/* ── CHANNEL PILLS ── */
-span[style*="borderRadius: 8"]:hover,
-div[style*="borderRadius: 14"]:hover {
-  background: #3F9AAE !important;
-  color: #fff !important;
-  transform: scale(1.06) translateY(-2px) !important;
-  transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
-}
+/* Channel pill hovers removed — use JS or class-based hover */
 
-/* ── CITY LINKS ── */
-a[href*="/iptv-"]:hover {
-  background: #3F9AAE !important;
-  color: #fff !important;
-  transform: translateY(-4px) scale(1.05) !important;
-}
+/* City link hovers removed — use class-based hover */
 
 /* ── INPUT FOCUS ── */
 input:focus, select:focus, textarea:focus {

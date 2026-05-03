@@ -183,11 +183,9 @@ export default function HomePage() {
             alignItems: "center",
           }}
         >
-          {/* LCP hero — direct <img> with fetchpriority for Lighthouse recognition */}
+          {/* LCP hero — single optimized image, no srcSet ambiguity */}
           <img
             src="/hero-mobile.webp"
-            srcSet="/hero-mobile.webp 640w, /hero-desktop.webp 1920w"
-            sizes="100vw"
             alt=""
             aria-hidden="true"
             fetchPriority="high"

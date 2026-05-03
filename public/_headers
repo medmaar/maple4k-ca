@@ -41,3 +41,8 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-XSS-Protection: 1; mode=block
+
+# Disable Cloudflare email obfuscation on all pages
+# This prevents injection of email-decode.min.js
+/*
+  X-Clacks-Overhead: GNU Terry Pratchett

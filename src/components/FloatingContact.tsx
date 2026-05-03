@@ -1,9 +1,9 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const WA_URL = "/whatsapp-contact";
 const TG_URL = "https://t.me/IPTVCanadaSupport?text=Hi%20Maple4K%2C%20I%27m%20interested%20in%20your%20service.";
-const EMAIL_URL = (() => { const u="help",d="maple4k.ca"; return `mailto:${u}@${d}?subject=I%27m%20interested%20in%20your%20service`; })();
+// email constructed client-side only (see useEffect)
 
 const contacts = [
   {
@@ -28,7 +28,7 @@ const contacts = [
   },
   {
     label: "Email",
-    href: EMAIL_URL,
+    href: "#email",
     bg: "#F5C518",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-5 h-5">
@@ -40,6 +40,12 @@ const contacts = [
 
 export default function FloatingContact() {
   const [open, setOpen] = useState(false);
+  const [emailHref, setEmailHref] = useState("#email");
+  useEffect(() => {
+    const u = "help", d = "maple4k.ca";
+    setEmailHref(`mailto:${u}@${d}?subject=I%27m%20interested%20in%20your%20service`);
+  }, []);
+
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
@@ -52,9 +58,9 @@ export default function FloatingContact() {
         {contacts.map((c) => (
           <a
             key={c.label}
-            href={c.href}
-            target={c.href.startsWith("mailto") ? undefined : "_blank"}
-            rel={c.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
+            href={c.label === "Email" ? emailHref : c.href}
+            target={c.label === "Email" || c.href.startsWith("mailto") ? undefined : "_blank"}
+            rel={c.label === "Email" || c.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
             className="flex items-center gap-2 px-4 py-2.5 rounded-full font-bold text-sm shadow-lg hover:brightness-110 transition-all"
             style={{ background: c.bg, color: c.label === "Email" ? "#111" : "#fff" }}
             onClick={() => setOpen(false)}

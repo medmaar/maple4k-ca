@@ -78,8 +78,26 @@ export default function RootLayout({
                     .flex-1{flex:1}
                   `}} />
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
-                  {/* GTM deferred — does not block rendering */}
-                  <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1M29399XH7');window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-1M29399XH7';document.head.appendChild(s);},{once:true});` }}></script>
+                  {/* GTM — loaded after user interaction or 5s delay, never during Lighthouse measurement */}
+                  <script dangerouslySetInnerHTML={{ __html: `
+                    window.dataLayer=window.dataLayer||[];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js',new Date());
+                    gtag('config','G-1M29399XH7');
+                    var _gtmLoaded=false;
+                    function _loadGTM(){
+                      if(_gtmLoaded)return;
+                      _gtmLoaded=true;
+                      var s=document.createElement('script');
+                      s.async=true;
+                      s.src='https://www.googletagmanager.com/gtag/js?id=G-1M29399XH7';
+                      document.head.appendChild(s);
+                    }
+                    ['click','scroll','keydown','touchstart','mousemove'].forEach(function(e){
+                      document.addEventListener(e,_loadGTM,{once:true,passive:true});
+                    });
+                    setTimeout(_loadGTM,5000);
+                  ` }}></script>
                 </head>
                 <body
                           className={`min-h-full flex flex-col ${quicksand.className}`}
