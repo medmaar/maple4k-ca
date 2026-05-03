@@ -69,19 +69,9 @@ body {
   to { transform: scale(2.5); opacity: 0; }
 }
 
-  33%       { transform: translate(20px, -15px) scale(1.05); }
-  66%       { transform: translate(-10px, 10px) scale(0.97); }
-}
 
-  50%       { background-position: 100% 50%; }
-}
 
-  to   { opacity: 1; transform: translateX(0); }
-}
 
-  60%  { transform: scale(1.06); opacity: 1; }
-  100% { transform: scale(1); }
-}
 
 /* ── SCROLL REVEAL ── */
 .ma-init {
@@ -92,11 +82,9 @@ body {
               transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .ma-visible {
-  will-change: auto;
-}
-.ma-visible {
   opacity: 1 !important;
   transform: translateY(0) !important;
+  will-change: auto;
 }
 
 .animate-fade-slide {
