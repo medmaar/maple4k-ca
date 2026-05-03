@@ -3,7 +3,7 @@ const aggregateRatingSchema = {
   "@type": "LocalBusiness",
   "name": "Maple4K",
   "url": "https://maple4k.ca",
-  "email": "help@maple4k.ca",
+  // email omitted to prevent Cloudflare email injection on critical path
   "address": { "@type": "PostalAddress", "addressCountry": "CA", "addressRegion": "QC", "addressLocality": "Laval" },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -110,7 +110,7 @@ const organizationSchema = {
   name: "Maple4K",
   url: "https://maple4k.ca",
   logo: "https://maple4k.ca/favicon.svg",
-  email: "help@maple4k.ca",
+  // email omitted
   description:
     "Canada's premium 4K IPTV service. H.265/HEVC encoded, HDR10 & Dolby Vision supported. 25,000+ live channels, 120,000+ movies & series.",
   areaServed: "CA",
@@ -183,19 +183,17 @@ export default function HomePage() {
             alignItems: "center",
           }}
         >
-          {/* Background image — proper <img> for LCP preload */}
-          <picture style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-            <source media="(max-width: 828px)" srcSet="/hero-mobile.webp" type="image/webp" />
-            <source media="(min-width: 829px)" srcSet="/hero-desktop.webp" type="image/webp" />
-            <img
-              src="/hero-mobile.webp"
-              alt=""
-              aria-hidden="true"
-              fetchPriority="high"
-              decoding="sync"
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "70% 30%" }}
-            />
-          </picture>
+          {/* LCP hero — direct <img> with fetchpriority for Lighthouse recognition */}
+          <img
+            src="/hero-mobile.webp"
+            srcSet="/hero-mobile.webp 640w, /hero-desktop.webp 1920w"
+            sizes="100vw"
+            alt=""
+            aria-hidden="true"
+            fetchPriority="high"
+            decoding="sync"
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "70% 30%", zIndex: 0 }}
+          />
           {/* Dark overlay for readability */}
           <div style={{
             position: "absolute", inset: 0,

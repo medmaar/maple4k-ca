@@ -74,12 +74,10 @@ body {
 
 
 
-/* ── HERO PROTECTION — never hide hero section or its children ── */
-main > section:first-child,
-main > section:first-child * {
+/* ── HERO PROTECTION — ensure LCP img is always visible ── */
+main > section:first-child > img {
   opacity: 1 !important;
   transform: none !important;
-  transition: none !important;
 }
 /* ── SCROLL REVEAL ── */
 .ma-init {

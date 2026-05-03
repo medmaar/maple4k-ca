@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const WA_URL = "/whatsapp-contact";
 const TG_URL = "https://t.me/IPTVCanadaSupport?text=Hi%20Maple4K%2C%20I%27m%20interested%20in%20your%20service.";
-const EMAIL_URL = "mailto:help%40maple4k.ca?subject=I%27m%20interested%20in%20your%20service";
+const EMAIL_URL = (() => { const u="help",d="maple4k.ca"; return `mailto:${u}@${d}?subject=I%27m%20interested%20in%20your%20service`; })();
 
 const contacts = [
   {
