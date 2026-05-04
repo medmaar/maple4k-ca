@@ -69,13 +69,25 @@ export default function Animations() {
         const buttons = document.querySelectorAll("a, button");
         buttons.forEach((btn) => {
           const el = btn as HTMLElement;
+          let rect: DOMRect | null = null;
+          let rafId: number | null = null;
+          // Cache rect on mouseenter — not during mousemove (avoids forced reflow)
+          el.addEventListener("mouseenter", () => {
+            rect = el.getBoundingClientRect();
+          });
           el.addEventListener("mousemove", (e: MouseEvent) => {
-            const rect = el.getBoundingClientRect();
-            const x = e.clientX - rect.left - rect.width / 2;
-            const y = e.clientY - rect.top - rect.height / 2;
-            el.style.transform = `translate(${x * 0.18}px, ${y * 0.18}px) scale(1.04)`;
+            if (!rect) return;
+            if (rafId) cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(() => {
+              const x = e.clientX - rect!.left - rect!.width / 2;
+              const y = e.clientY - rect!.top - rect!.height / 2;
+              el.style.transform = `translate(${x * 0.18}px, ${y * 0.18}px) scale(1.04)`;
+              rafId = null;
+            });
           });
           el.addEventListener("mouseleave", () => {
+            if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+            rect = null;
             el.style.transform = "";
             el.style.transition =
               "transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)";
@@ -116,14 +128,26 @@ export default function Animations() {
         );
         cards.forEach((card) => {
           const el = card as HTMLElement;
+          let rect: DOMRect | null = null;
+          let rafId: number | null = null;
+          // Cache rect on mouseenter to avoid forced reflow inside mousemove
+          el.addEventListener("mouseenter", () => {
+            rect = el.getBoundingClientRect();
+          });
           el.addEventListener("mousemove", (e: MouseEvent) => {
-            const rect = el.getBoundingClientRect();
-            const x = (e.clientX - rect.left) / rect.width - 0.5;
-            const y = (e.clientY - rect.top) / rect.height - 0.5;
-            el.style.transform = `perspective(600px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-6px) scale(1.02)`;
-            el.style.transition = "transform 0.15s ease";
+            if (!rect) return;
+            if (rafId) cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(() => {
+              const x = (e.clientX - rect!.left) / rect!.width - 0.5;
+              const y = (e.clientY - rect!.top) / rect!.height - 0.5;
+              el.style.transform = `perspective(600px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-6px) scale(1.02)`;
+              el.style.transition = "transform 0.15s ease";
+              rafId = null;
+            });
           });
           el.addEventListener("mouseleave", () => {
+            if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+            rect = null;
             el.style.transform = "";
             el.style.transition =
               "transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)";

@@ -183,15 +183,18 @@ export default function HomePage() {
             alignItems: "center",
           }}
         >
-          {/* LCP hero — single optimized image, no srcSet ambiguity */}
-          <img
-            src="/hero-mobile.webp"
-            alt=""
-            aria-hidden="true"
-            fetchPriority="high"
-            decoding="sync"
-            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "70% 30%", zIndex: 0 }}
-          />
+          {/* LCP hero — responsive: desktop 1920×1080, mobile 600×337 */}
+          <picture style={{ position: "absolute", inset: 0, width: "100%", height: "100%", zIndex: 0 }}>
+            <source media="(min-width: 768px)" srcSet="/hero-desktop.webp" type="image/webp" />
+            <img
+              src="/hero-mobile.webp"
+              alt=""
+              aria-hidden="true"
+              fetchPriority="high"
+              decoding="sync"
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "70% 30%", zIndex: 0 }}
+            />
+          </picture>
           {/* Dark overlay for readability */}
           <div style={{
             position: "absolute", inset: 0,

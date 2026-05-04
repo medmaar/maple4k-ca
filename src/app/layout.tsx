@@ -65,8 +65,9 @@ export default function RootLayout({
                 <head>
                   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                   {/* Preconnect to Google Fonts CDN */}
-                  {/* Preload LCP hero — matches direct <img> src exactly */}
-                  <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" />
+                  {/* Preload LCP hero — desktop gets 1920px image, mobile gets 600px */}
+                  <link rel="preload" as="image" href="/hero-desktop.webp" type="image/webp" fetchPriority="high" media="(min-width: 768px)" />
+                  <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" media="(max-width: 767px)" />
                   {/* Critical above-fold CSS inlined — hero renders without waiting for CSS file */}
                   <style dangerouslySetInnerHTML={{ __html: `
                     *,*::before,*::after{box-sizing:border-box}
@@ -74,7 +75,8 @@ export default function RootLayout({
                     body{background:#E8F4F5;color:#000;margin:0;min-height:100%;display:flex;flex-direction:column;font-family:system-ui,sans-serif}
                     nav{position:sticky;top:0;z-index:50;background:#1A3D45;border-bottom:2px solid rgba(121,201,197,.25);height:68px;display:flex;align-items:center}
                     main>section:first-child{position:relative;padding:110px 16px 100px;text-align:center;overflow:hidden;min-height:600px;display:flex;align-items:center}
-                    main>section:first-child>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 30%;z-index:0;opacity:1!important;transform:none!important}
+                    main>section:first-child picture{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+                    main>section:first-child picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 30%;z-index:0;opacity:1!important;transform:none!important}
                     .flex-1{flex:1}
                   `}} />
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
