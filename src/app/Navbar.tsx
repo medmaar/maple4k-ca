@@ -33,13 +33,13 @@ export default function Navbar() {
         borderBottom: "2px solid rgba(121,201,197,0.25)",
       }}
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-8 h-[68px] flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 h-[68px] flex items-center gap-8">
         <Logo />
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-6 text-sm font-medium" style={{ color: "#79C9C5" }}>
+        <div className="hidden md:flex items-center gap-5 text-sm font-medium flex-1 justify-center" style={{ color: "#79C9C5" }}>
           {links.map((l) => (
-            <Link key={l.href} href={l.href} className="transition-colors" style={{ color: "#79C9C5" }}
+            <Link key={l.href} href={l.href} className="transition-colors whitespace-nowrap" style={{ color: "#79C9C5" }}
               onMouseEnter={e => (e.currentTarget.style.color = "#E8F4F5")}
               onMouseLeave={e => (e.currentTarget.style.color = "#79C9C5")}
             >
@@ -51,7 +51,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <Link
           href="/free-trial"
-          className="hidden md:inline-flex items-center gap-2 text-sm font-bold text-white px-6 py-2.5 rounded-xl transition-all"
+          className="hidden md:inline-flex items-center gap-2 text-sm font-bold text-white px-6 py-2.5 rounded-xl transition-all whitespace-nowrap"
           style={{ background: "#F96E5B", boxShadow: "0 4px 18px rgba(249,110,91,0.45)", letterSpacing: "0.02em" }}
         >
           Free Trial
@@ -61,7 +61,7 @@ export default function Navbar() {
         <button
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
-          className="md:hidden flex flex-col justify-center gap-[5px] w-8 h-8"
+          className="md:hidden flex flex-col justify-center gap-[5px] w-8 h-8 ml-auto"
         >
           <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`} style={{ background: "#E8F4F5" }} />
           <span className={`block h-0.5 rounded transition-opacity duration-300 ${open ? "opacity-0" : ""}`} style={{ background: "#E8F4F5" }} />
