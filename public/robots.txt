@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /order
+Disallow: /whatsapp-contact
 Disallow: /admin
 Disallow: /api
+
 Sitemap: https://maple4k.ca/sitemap.xml
