@@ -1,6 +1,4 @@
-import { Quicksand } from 'next/font/google';
 
-const quicksand = Quicksand({ subsets: ['latin'], weight: ['400','500','600','700'], display: 'optional', variable: '--font-quicksand', preload: true });
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "./Navbar";
@@ -61,7 +59,7 @@ export default function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
     return (
-          <html lang="en" className={`h-full ${quicksand.variable}`}>
+          <html lang="en" className="h-full">
                 <head>
                   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                   {/* Preconnect to Google Fonts CDN */}
@@ -72,11 +70,9 @@ export default function RootLayout({
                   <style dangerouslySetInnerHTML={{ __html: `
                     *,*::before,*::after{box-sizing:border-box}
                     html{height:100%;scroll-behavior:smooth}
-                    body{background:#E8F4F5;color:#000;margin:0;min-height:100%;display:flex;flex-direction:column;font-family:system-ui,sans-serif}
-                    nav{position:sticky;top:0;z-index:50;background:#1A3D45;border-bottom:2px solid rgba(121,201,197,.25);height:68px;display:flex;align-items:center}
-                    main>section:first-child{position:relative;padding:110px 16px 100px;text-align:center;overflow:hidden;min-height:600px;display:flex;align-items:center}
-                    main>section:first-child picture{position:absolute;inset:0;width:100%;height:100%;z-index:0}
-                    main>section:first-child picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 30%;z-index:0;opacity:1!important;transform:none!important}
+                    body{background:#0C0F1A;color:#fff;margin:0;min-height:100%;display:flex;flex-direction:column;font-family:system-ui,sans-serif}
+                    nav{position:sticky;top:0;z-index:50;background:#0C0F1A;border-bottom:1px solid rgba(255,255,255,0.07);height:68px;display:flex;align-items:center}
+                    main>section:first-child{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:#0C0F1A}
                     .flex-1{flex:1}
                   `}} />
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
@@ -102,7 +98,7 @@ export default function RootLayout({
                   ` }}></script>
                 </head>
                 <body
-                          className={`min-h-full flex flex-col ${quicksand.className}`}
+                          className="min-h-full flex flex-col"
                         >
                         <Navbar />
                         <div className="flex-1">{children}</div>

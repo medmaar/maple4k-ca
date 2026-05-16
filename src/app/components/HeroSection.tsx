@@ -1,101 +1,106 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
-const words = ["4K ULTRA HD", "HDR MOVIES", "LIVE SPORTS", "HEVC STREAMS"];
+const words = ["LIVE TV", "MOVIES", "SERIES", "SPORTS"];
 
 export default function HeroSection() {
-  const [index, setIndex] = useState(0);
-  const [animKey, setAnimKey] = useState(0);
+  const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((i) => (i + 1) % words.length);
-      setAnimKey((k) => k + 1);
-    }, 2400);
-    return () => clearInterval(interval);
+    const iv = setInterval(() => setCurrent(c => (c + 1) % words.length), 3000);
+    return () => clearInterval(iv);
   }, []);
 
   return (
     <section
-      className="relative overflow-hidden py-24 md:py-36 px-4 text-center"
       style={{
-        background:
-          "radial-gradient(ellipse 90% 55% at 50% -5%, rgba(253,3,34,0.14) 0%, transparent 65%), #10131E",
+        position: "relative",
+        minHeight: "92vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        padding: "120px 16px 100px",
+        overflow: "hidden",
+        background: "#0C0F1A",
       }}
     >
-      {/* Badge */}
-      <div
-        className="inline-flex items-center gap-2 mb-7 px-4 py-[7px] rounded-full text-xs font-bold uppercase tracking-widest"
-        style={{
-          background: "rgba(253,3,34,0.1)",
-          border: "1px solid rgba(253,3,34,0.28)",
-          color: "#fd0322",
-        }}
-      >
-        <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#fd0322] animate-pulse" />
-        Canada's Premium 4K IPTV — 2026
-      </div>
+      {/* Ambient glow blobs */}
+      <div style={{ position: "absolute", top: "15%", left: "10%", width: 500, height: 500, background: "rgba(232,4,31,0.1)", borderRadius: "50%", filter: "blur(100px)", pointerEvents: "none" }} />
+      <div style={{ position: "absolute", bottom: "10%", right: "5%", width: 400, height: 400, background: "rgba(63,154,174,0.07)", borderRadius: "50%", filter: "blur(90px)", pointerEvents: "none" }} />
 
-      {/* Main headline */}
-      <h1 className="text-5xl md:text-[72px] font-extrabold leading-[1.04] tracking-tight text-white mb-4">
-        Canada&apos;s Premium
-        <br />
-        4K IPTV Service
-      </h1>
+      {/* Grid pattern overlay */}
+      <div style={{
+        position: "absolute", inset: 0, pointerEvents: "none",
+        backgroundImage: `linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)`,
+        backgroundSize: "60px 60px",
+      }} />
 
-      {/* Animated rotating word */}
-      <div className="h-[60px] md:h-[76px] flex items-center justify-center mb-7 overflow-hidden">
-        <span
-          key={animKey}
-          className="block text-4xl md:text-[58px] font-extrabold tracking-tight animate-fade-slide"
-          style={{ color: "#fd0322" }}
-        >
-          {words[index]}
-        </span>
-      </div>
+      <div style={{ position: "relative", zIndex: 1, maxWidth: 800 }}>
+        {/* Badge */}
+        <div style={{
+          display: "inline-flex", alignItems: "center", gap: 8,
+          background: "rgba(232,4,31,0.12)", border: "1px solid rgba(232,4,31,0.3)",
+          borderRadius: 100, padding: "8px 20px", fontSize: 12, fontWeight: 700,
+          color: "#E8041F", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 32,
+        }}>
+          <span style={{ width: 7, height: 7, background: "#E8041F", borderRadius: "50%", animation: "softPulse 1.5s ease infinite" }} />
+          Maple4K — Canada&apos;s Best IPTV
+        </div>
 
-      {/* Subtitle */}
-      <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-        H.265/HEVC encoded. HDR10 &amp; Dolby Vision supported.
-        <br className="hidden sm:block" />
-        25,000+ live channels and 120,000+ titles — at the resolution your display deserves.
-      </p>
+        {/* Main heading with rotating word */}
+        <h1 style={{ fontSize: "clamp(36px, 7vw, 78px)", fontWeight: 900, lineHeight: 1.1, margin: "0 0 12px", letterSpacing: "-0.02em" }}>
+          <span style={{ display: "block", color: "rgba(255,255,255,0.9)", marginBottom: 4, fontSize: "0.55em", fontWeight: 700, letterSpacing: "0.05em" }}>
+            Maple4K
+          </span>
+          <span style={{ position: "relative", display: "inline-block", minWidth: "4ch" }}>
+            {words.map((word, i) => (
+              <span
+                key={word}
+                style={{
+                  position: i === 0 ? "relative" : "absolute",
+                  top: 0, left: 0, right: 0,
+                  color: "#E8041F",
+                  opacity: current === i ? 1 : 0,
+                  transform: current === i ? "translateY(0)" : "translateY(16px)",
+                  transition: "opacity 0.5s ease, transform 0.5s ease",
+                  display: "block",
+                }}
+              >
+                {word}
+              </span>
+            ))}
+          </span>
+        </h1>
 
-      {/* CTA buttons */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <a
-          href="/pricing"
-          className="inline-flex items-center justify-center gap-2 px-9 py-4 rounded-2xl text-base font-bold text-white transition-all hover:brightness-110 hover:scale-[1.02] active:scale-[0.99]"
-          style={{
-            background: "#fd0322",
-            boxShadow: "0 8px 32px rgba(253,3,34,0.32)",
-          }}
-        >
-          Subscribe Now →
-        </a>
-        <a
-          href="/free-trial"
-          className="inline-flex items-center justify-center gap-2 px-9 py-4 rounded-2xl text-base font-bold text-white transition-all hover:bg-white/10 active:scale-[0.99]"
-          style={{ border: "1px solid rgba(255,255,255,0.18)" }}
-        >
-          Free 24H Trial
-        </a>
-      </div>
+        {/* Subtitle */}
+        <p style={{
+          fontSize: "clamp(16px, 2vw, 20px)",
+          color: "rgba(255,255,255,0.6)",
+          maxWidth: 580,
+          margin: "28px auto 48px",
+          lineHeight: 1.65,
+        }}>
+          Access 25,000+ channels, 120,000+ movies & series on all your devices — from $9/month. The only Canadian IPTV in True 4K H.265 Ultra HD.
+        </p>
 
-      {/* Stats row */}
-      <div className="mt-14 flex flex-wrap justify-center gap-x-10 gap-y-3 text-sm">
-        {[
-          { n: "25,000+", l: "Live Channels" },
-          { n: "4K HDR10", l: "& Dolby Vision" },
-          { n: "H.265", l: "HEVC Codec" },
-          { n: "99.9%", l: "Uptime" },
-          { n: "24/7", l: "Support" },
-        ].map((s) => (
-          <div key={s.l} className="flex items-center gap-2">
-            <span className="font-extrabold text-white">{s.n}</span>
-            <span className="text-gray-500">{s.l}</span>
-          </div>
-        ))}
+        {/* CTA buttons */}
+        <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 56 }}>
+          <Link href="/pricing" className="btn-red" style={{ fontSize: 16, padding: "18px 40px" }}>
+            Subscribe Now
+          </Link>
+          <Link href="/free-trial" className="btn-outline" style={{ fontSize: 16, padding: "18px 40px" }}>
+            ▶ Free Trial 24H
+          </Link>
+        </div>
+
+        {/* Trust indicators */}
+        <div style={{ display: "flex", gap: 24, justifyContent: "center", flexWrap: "wrap" }}>
+          {["✓ No Credit Card for Trial", "✓ Access in Minutes", "✓ All Devices Supported", "✓ 25,000+ Channels"].map(t => (
+            <span key={t} style={{ fontSize: 13, color: "rgba(255,255,255,0.45)", fontWeight: 600 }}>{t}</span>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,99 +1,96 @@
+"use client";
 import Link from "next/link";
-import EmailLink from "./EmailLink";
 import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="py-16 px-4 border-t" style={{ background: "#1A3D45", borderColor: "rgba(121,201,197,0.2)" }}>
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 pb-12 mb-12 border-b" style={{ borderColor: "rgba(121,201,197,0.2)" }}>
+    <footer style={{ background: "#08090F", borderTop: "1px solid rgba(255,255,255,0.07)", color: "rgba(255,255,255,0.6)", fontSize: 14 }}>
+      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "64px 24px 32px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 40, marginBottom: 56 }}>
+          {/* Brand */}
           <div>
-            <Logo className="mb-4" />
-            <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
-              Canada&apos;s #1 IPTV subscription service. 25,000+ live channels,
-              120,000+ movies &amp; series in 4K. Serving all of Canada.
+            <Logo />
+            <p style={{ marginTop: 16, color: "rgba(255,255,255,0.45)", lineHeight: 1.7, fontSize: 13 }}>
+              Canada&apos;s premium 4K IPTV service. H.265/HEVC encoded, HDR10 &amp; Dolby Vision. 25,000+ live channels.
+            </p>
+            <p style={{ marginTop: 16, fontSize: 13 }}>
+              <strong style={{ color: "rgba(255,255,255,0.7)" }}>Contact:</strong>{" "}
+              <Link href="/contact" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>support@maple4k.ca</Link>
             </p>
           </div>
-          <div className="sm:text-right shrink-0">
-            <EmailLink className="text-sm text-gray-400 hover:text-[#79C9C5] transition-colors" />
-            <div className="mt-3 text-gray-500 text-sm leading-relaxed">
-              <p className="text-gray-400 font-medium text-xs uppercase tracking-wider mb-1">Address</p>
-              <p>1599 Blvd. Saint-Martin O</p>
-              <p>Laval, QC H7S 1N1</p>
-              <p>Canada</p>
+
+          {/* Service */}
+          <div>
+            <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 20, marginTop: 0 }}>Service</h4>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {[
+                { label: "Pricing", href: "/pricing" },
+                { label: "Channel List", href: "/channels-list" },
+                { label: "Free Trial", href: "/free-trial" },
+                { label: "Referral Program", href: "/referral" },
+                { label: "Reseller", href: "/reseller" },
+              ].map(l => (
+                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.5)")}
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Guides */}
+          <div>
+            <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 20, marginTop: 0 }}>Guides</h4>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {[
+                { label: "Fire Stick Setup", href: "/iptv-firestick-canada" },
+                { label: "Apple TV Setup", href: "/iptv-apple-tv-canada" },
+                { label: "Android TV Setup", href: "/iptv-android-tv-canada" },
+                { label: "Smart TV Setup", href: "/iptv-smart-tv-canada" },
+                { label: "Blog", href: "/blog" },
+              ].map(l => (
+                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.5)")}
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 20, marginTop: 0 }}>Legal</h4>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {[
+                { label: "Privacy Policy", href: "/privacy-policy" },
+                { label: "Terms of Service", href: "/terms-of-service" },
+                { label: "Refund Policy", href: "/refund-policy" },
+                { label: "DMCA", href: "/dmca" },
+                { label: "Disclaimer", href: "/disclaimer" },
+              ].map(l => (
+                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.5)")}
+                >
+                  {l.label}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Pages</p>
-            <div className="flex flex-col gap-2.5">
-              <Link href="/" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Home</Link>
-              <Link href="/pricing" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Pricing</Link>
-              <Link href="/channels-list" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Channels</Link>
-              <Link href="/free-trial" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Free Trial</Link>
-              <Link href="/blog" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Blog</Link>
-              <Link href="/reseller" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Reseller</Link>
-              <Link href="/referral" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Referral</Link>
-              <Link href="/contact" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Contact</Link>
-            </div>
-          </div>
-
-          <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">IPTV Services</p>
-            <div className="flex flex-col gap-2.5">
-              <Link href="/best-iptv-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Best IPTV Canada</Link>
-              <Link href="/iptv-4k" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">IPTV 4K</Link>
-              <Link href="/iptv-subscription" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">IPTV Subscription</Link>
-              <Link href="/smart-iptv" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Smart IPTV</Link>
-              <Link href="/iptv-formula" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">IPTV Formuler</Link>
-              <Link href="/free-trial" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Free IPTV Trial</Link>
-            </div>
-          </div>
-
-          <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">By Device</p>
-            <div className="flex flex-col gap-2.5">
-              <Link href="/iptv-firestick-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Firestick</Link>
-              <Link href="/iptv-android-tv-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Android TV</Link>
-              <Link href="/iptv-smart-tv-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Smart TV</Link>
-              <Link href="/iptv-apple-tv-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Apple TV</Link>
-              <Link href="/iptv-mag-box-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">MAG Box</Link>
-              <Link href="/iptv-samsung-tv-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Samsung TV</Link>
-              <Link href="/iptv-lg-tv-canada" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">LG TV</Link>
-            </div>
-          </div>
-
-          <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">By City</p>
-            <div className="flex flex-col gap-2.5">
-              <Link href="/iptv-toronto" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Toronto</Link>
-              <Link href="/iptv-vancouver" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Vancouver</Link>
-              <Link href="/iptv-montreal" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Montreal</Link>
-              <Link href="/iptv-calgary" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Calgary</Link>
-              <Link href="/iptv-ottawa" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Ottawa</Link>
-              <Link href="/iptv-edmonton" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Edmonton</Link>
-            </div>
-          </div>
-
-          <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Legal</p>
-            <div className="flex flex-col gap-2.5 mb-6">
-              <Link href="/privacy-policy" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Privacy Policy</Link>
-              <Link href="/terms-of-service" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Terms of Service</Link>
-              <Link href="/refund-policy" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Refund Policy</Link>
-              <Link href="/disclaimer" className="text-gray-400 hover:text-[#79C9C5] text-sm transition-colors">Disclaimer</Link>
-            </div>
-            <p className="text-gray-600 text-xs leading-relaxed mb-2">
-              Maple4K does not host or stream any copyrighted content.
-            </p>
-          </div>
-        </div>
-
-        <div className="pt-4 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>© 2026 Maple4K. All rights reserved.</p>
-          <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}><EmailLink style={{ color: "rgba(255,255,255,0.45)", textDecoration: "none" }} /></p>
+        {/* Bottom bar */}
+        <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: 28, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
+          <p style={{ margin: 0, color: "rgba(255,255,255,0.3)", fontSize: 13 }}>
+            © {new Date().getFullYear()} Maple4K. All rights reserved. Serving Canada 🍁
+          </p>
+          <p style={{ margin: 0, color: "rgba(255,255,255,0.3)", fontSize: 12 }}>
+            IPTV technology is legal in Canada. Users are responsible for content access rights.
+          </p>
         </div>
       </div>
     </footer>
