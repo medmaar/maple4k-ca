@@ -4,8 +4,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV Edmonton | Maple4K – Best 4K IPTV Canada" },
   description:
     "Maple4K is Edmonton's best IPTV service. Stream Oilers, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9. Free trial available.",
-  keywords:
-    "IPTV Edmonton, best IPTV Edmonton, IPTV service Edmonton, Maple4K Edmonton, IPTV Canada Edmonton, IPTV Alberta Edmonton",
+  keywords: "iptv edmonton, iptv near me, best iptv edmonton, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada",
   alternates: { canonical: "https://maple4k.ca/iptv-edmonton" },
   openGraph: {
     title: "IPTV Edmonton | Maple4K – Best 4K IPTV Canada",

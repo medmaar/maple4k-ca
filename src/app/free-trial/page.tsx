@@ -3,11 +3,9 @@ import PlanOrderForm from "../pricing/PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../pricing/PlanFAQ";
 
 export const metadata: Metadata = {
-  title: { absolute: "Free IPTV Trial Canada — Test Maple4K Risk-Free | Maple4K" },
-  description:
-    "Get a free Maple4K IPTV trial in Canada. No credit card required. Access 50,000+ channels + Netflix, NHL, TSN, CTV and 120,000+ movies. Activate in under 5 minutes.",
-  keywords:
-    "free IPTV trial Canada, Maple4K free trial, try IPTV Canada, free IPTV Canada no credit card",
+  title: { absolute: "IPTV Free Trial Canada 2026 — Test 4K Streaming 24H Free | Maple4K" },
+  description: "IPTV free trial Canada — test Maple4K 50,000+ channels + Netflix for 24 hours free. No credit card required. Free trial iptv, iptv free, best iptv canada free trial. Activate instantly.",
+  keywords: "iptv free trial, free trial iptv, iptv free, free iptv canada, iptv canada free trial, best iptv canada, iptv subscription canada, iptv near me, iptv providers canada",
   alternates: { canonical: "https://maple4k.ca/free-trial" },
   openGraph: {
     title: "Free IPTV Trial Canada — Test Maple4K Risk-Free | Maple4K",

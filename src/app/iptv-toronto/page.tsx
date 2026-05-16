@@ -4,6 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "4K Ultra HD IPTV Toronto | Stream Sports & Movies in 4K | Maple4K",
   description: "Stream Toronto in stunning 4K Ultra HD with Maple4K. Watch Leafs, Raptors, Blue Jays, Reds live in 4K. H.265 codec, HDR10, 50,000+ 4K-capable channels.",
+  keywords: "iptv toronto, iptv near me, best iptv toronto, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada",
   alternates: { canonical: "https://maple4k.ca/iptv-toronto" },
 };
 

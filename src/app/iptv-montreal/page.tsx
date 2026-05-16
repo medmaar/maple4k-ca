@@ -4,8 +4,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV Montreal | Maple4K – Best 4K IPTV Canada" },
   description:
     "Maple4K is Montreal's best IPTV service. Stream Canadiens, RDS, TVA Sports, TSN, CBC, and 50,000+ channels + Netflix in 4K. Plans from $9. Free trial available.",
-  keywords:
-    "IPTV Montreal, best IPTV Montreal, IPTV service Montreal, Maple4K Montreal, IPTV Canada Montreal, IPTV Quebec",
+  keywords: "iptv montreal, iptv near me, best iptv montreal, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada",
   alternates: { canonical: "https://maple4k.ca/iptv-montreal" },
   openGraph: {
     title: "IPTV Montreal | Maple4K – Best 4K IPTV Canada",

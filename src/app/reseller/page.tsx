@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "IPTV Reseller Canada 2026 | Start Your IPTV Business – Maple4K",
   description:
     "Become an IPTV reseller in Canada with Maple4K. Wholesale pricing, white-label options, and a fast reseller panel. Start your own IPTV business today.",
-  keywords: "IPTV reseller Canada, IPTV reseller program Canada 2026, start IPTV business Canada",
+  keywords: "iptv resellers, best iptv resell, iptv reseller canada, iptv supplier, iptv server, iptv solutions, canadian iptv reseller, iptv provider canada",
   alternates: { canonical: "https://maple4k.ca/reseller" },
   openGraph: {
     title: "IPTV Reseller Canada 2026 | Start Your IPTV Business – Maple4K",

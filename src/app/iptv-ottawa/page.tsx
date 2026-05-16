@@ -4,8 +4,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV Ottawa | Maple4K – Best 4K IPTV Canada" },
   description:
     "Maple4K is Ottawa's best IPTV service. Stream Senators, TSN, Sportsnet, CBC, CPAC and 50,000+ channels + Netflix in 4K. Plans from $9. Free trial available.",
-  keywords:
-    "IPTV Ottawa, best IPTV Ottawa, IPTV service Ottawa, Maple4K Ottawa, IPTV Canada Ottawa, IPTV Ontario Ottawa",
+  keywords: "iptv ottawa, iptv near me, best iptv ottawa, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada",
   alternates: { canonical: "https://maple4k.ca/iptv-ottawa" },
   openGraph: {
     title: "IPTV Ottawa | Maple4K – Best 4K IPTV Canada",

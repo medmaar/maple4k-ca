@@ -8,9 +8,16 @@ const FaqAccordion   = dynamic(() => import("./components/FaqAccordion"));
 const PricingSection = dynamic(() => import("./PricingSection"));
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Canada 2026 — 4K Ultra HD from $9/month | Maple4K" },
-  description: "Best IPTV service in Canada 2026. 4K Ultra HD, H.265/HEVC streams. Free trial available — no credit card. 50,000+ live Canadian channels, 120,000+ on-demand titles. IPTV subscription from $9/month.",
+  title: { absolute: "Best IPTV Canada 2026 — 50,000+ Channels + Netflix from $9 | Maple4K" },
+  description: "Best IPTV Canada 2026. 50,000+ channels + Netflix, free trial available — no credit card. IPTV subscription from $9/month. Best IPTV service in Canada with 4K Ultra HD, iptv québec, iptv box included.",
+  keywords: "iptv canada, best iptv canada, iptv québec, iptv box, iptv free trial, free trial iptv, iptv from canada, iptv subscription canada, best iptv in canada, iptv providers canada, best iptv service canada, iptv near me, iptv legal, smart iptv, canadian iptv, iptv 4k, iptv firestick, iptv canada reviews, best iptv provider canada, free iptv canada",
   alternates: { canonical: "https://maple4k.ca" },
+  openGraph: {
+    title: "Best IPTV Canada 2026 — 50,000+ Channels + Netflix from $9 | Maple4K",
+    description: "Canada's best IPTV service. 50,000+ channels + Netflix, free 24h trial, 4K Ultra HD from $9/month.",
+    url: "https://maple4k.ca",
+    type: "website",
+  },
 };
 
 const faqs = [

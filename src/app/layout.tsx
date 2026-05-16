@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     alternates: { canonical: "https://maple4k.ca", languages: { "en-CA": "https://maple4k.ca", "x-default": "https://maple4k.ca" } },
     icons: { icon: "/favicon.svg" },
     title: {
-        default: "Best IPTV Canada — 4K Streaming from $9 | Maple4K",
-        template: "%s | Maple4K — Best IPTV Canada",
+        default: "Best IPTV Canada 2026 — 50,000+ Channels + Netflix from $9 | Maple4K",
+        template: "%s | Maple4K — Best IPTV Canada 2026",
     },
     description:
-        "Canada's premium 4K IPTV service. H.265/HEVC encoded, HDR10 & Dolby Vision support. 50,000+ channels + Netflix, 120,000+ movies & series. Plans from $9. Try free — no credit card.",
+        "Canada's best IPTV service 2026. 50,000+ channels + Netflix, 4K Ultra HD, free trial available. IPTV subscription from $9/month. Best IPTV in Canada — no credit card for trial.",
     keywords:
-        "iptv canada, iptv subscription, iptv service, iptv legal, best iptv in canada, free trial iptv, smart iptv, iptv from canada, iptv in canada, online iptv, canadian iptv, iptv canadian, iptv for canada, Maple4K, 4K IPTV Canada, best iptv canada, iptv 4k, iptv formula, canada iptv, best iptv provider canada, best iptv canada 2026, iptv canada reviews",
+        "iptv canada, iptv québec, iptv box, iptv from canada, iptv free trial, free trial iptv, iptv with box, iptv near me, iptv free, iptv subscription, best iptv for canada, iptv legal, iptv subscription canada, iptv server, best iptv in canada, iptv resellers, best iptv service canada, iptv providers canada, iptv service, iptv smarter, iptv supplier, smart iptv, iptv canadian, best iptv canada, canada iptv, iptv in canada, online iptv, canadian iptv, best iptv 2024, best iptv provider canada, iptv 4k, iptv canada reviews, iptv in edmonton, iptv formula, free iptv canada, best iptv services, iptv firestick, iptv service canada, iptv smarters pro, best iptv providers, iptv providers in canada, iptv reviews, iptv solutions, free box for iptv in canada, best iptv app, fire stick iptv, iptv for beginners, best iptv channel, best canadian iptv provider, iptv provider canada, Maple4K, 4K IPTV Canada",
     openGraph: {
         siteName: "Maple4K",
         locale: "en_CA",

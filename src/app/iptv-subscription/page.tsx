@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Subscription Canada 2026 — Best Plans from $9 | Maple4K" },
   description: "Get the best IPTV subscription in Canada. Monthly, quarterly and annual plans. No contracts, free trial. 50,000+ channels + Netflix, 4K quality. IPTV subscription from $9/month.",
-  keywords: "iptv subscription, iptv subscription canada, best iptv subscription canada, iptv subscription plans, cheap iptv subscription canada, iptv subscription 2026",
+  keywords: "iptv subscription, iptv subscription canada, iptv service canada, best iptv subscription canada, iptv providers canada, canadian iptv, iptv from canada, best iptv canada 2026",
   alternates: { canonical: "https://maple4k.ca/iptv-subscription" },
 };
 

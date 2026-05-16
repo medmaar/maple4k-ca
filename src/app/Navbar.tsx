@@ -8,7 +8,7 @@ const links = [
   { label: "Pricing", href: "/pricing" },
   { label: "Channels", href: "/channels-list" },
   { label: "Reviews", href: "/reviews" },
-  { label: "Guides", href: "/blog" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export default function Navbar() {
