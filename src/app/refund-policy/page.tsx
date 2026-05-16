@@ -18,13 +18,13 @@ export const metadata: Metadata = {
 
 export default function RefundPolicyPage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen py-20 px-4">
+    <main style={{ background: "#0C0F1A", color: "#fff" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Refund Policy</h1>
         <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
 
         {/* Summary box */}
-        <div style={{ background: "#1A3D45", border: "1px solid rgba(121,201,197,0.3)", borderRadius: 16, padding: "24px", marginBottom: 40 }}>
+        <div style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(121,201,197,0.3)", borderRadius: 16, padding: "24px", marginBottom: 40 }}>
           <h2 style={{ fontSize: 18, fontWeight: 700, color: "#ffffff", marginBottom: 8 }}>Summary</h2>
           <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 14, lineHeight: 1.7 }}>
             Due to the instant digital nature of our service, we do not offer refunds once a subscription

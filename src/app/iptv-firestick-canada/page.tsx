@@ -75,12 +75,12 @@ export default function IPTVFirestickCanadaPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+      <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
 
         {/* Hero */}
         <section
           style={{
-            background: "#1A3D45",
+            background: "rgba(255,255,255,0.05)",
             padding: "80px 16px 60px",
           }}
         >
@@ -89,7 +89,7 @@ export default function IPTVFirestickCanadaPage() {
               style={{
                 background: "rgba(249,110,91,0.18)",
                 border: "1px solid rgba(249,110,91,0.4)",
-                color: "#F96E5B",
+                color: "#E8041F",
                 fontSize: 11,
                 fontWeight: 700,
                 padding: "5px 16px",
@@ -111,7 +111,7 @@ export default function IPTVFirestickCanadaPage() {
               }}
             >
               IPTV on Amazon Firestick in{" "}
-              <span style={{ color: "#F96E5B" }}>Canada 2026</span>
+              <span style={{ color: "#E8041F" }}>Canada 2026</span>
             </h1>
             <p
               style={{
@@ -131,7 +131,7 @@ export default function IPTVFirestickCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#F96E5B",
+                  background: "#E8041F",
                   color: "#ffffff",
                   padding: "16px 40px",
                   borderRadius: 12,
@@ -147,7 +147,7 @@ export default function IPTVFirestickCanadaPage() {
                 href="/free-trial"
                 style={{
                   border: "2px solid #F96E5B",
-                  color: "#F96E5B",
+                  color: "#E8041F",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -166,11 +166,11 @@ export default function IPTVFirestickCanadaPage() {
         <section style={{ padding: "60px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
             >
               Why Maple4K Works Great on Firestick
             </h2>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 28 }}>
+            <p style={{ color: "#fff", lineHeight: 1.75, marginBottom: 28 }}>
               Millions of Canadians use Amazon Firestick as their primary streaming device.
               Maple4K is engineered to take full advantage of the Firestick hardware —
               delivering reliable, high-speed Maple4K streams without complicated setup.
@@ -213,7 +213,7 @@ export default function IPTVFirestickCanadaPage() {
                 >
                   <span
                     style={{
-                      background: "#F96E5B",
+                      background: "#E8041F",
                       width: 10,
                       height: 10,
                       borderRadius: "50%",
@@ -223,12 +223,12 @@ export default function IPTVFirestickCanadaPage() {
                   />
                   <div>
                     <strong
-                      style={{ color: "#000000", display: "block", marginBottom: 4 }}
+                      style={{ color: "#fff", display: "block", marginBottom: 4 }}
                     >
                       {item.title}
                     </strong>
                     <span
-                      style={{ color: "#000000", fontSize: "0.92rem", lineHeight: 1.65 }}
+                      style={{ color: "#fff", fontSize: "0.92rem", lineHeight: 1.65 }}
                     >
                       {item.desc}
                     </span>
@@ -243,11 +243,11 @@ export default function IPTVFirestickCanadaPage() {
         <section style={{ padding: "60px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 8 }}
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 8 }}
             >
               How to Set Up IPTV on Your Firestick
             </h2>
-            <p style={{ color: "#000000", marginBottom: 36 }}>
+            <p style={{ color: "#fff", marginBottom: 36 }}>
               Four simple steps — up and streaming in under 5 minutes.
             </p>
             <ol
@@ -275,8 +275,8 @@ export default function IPTVFirestickCanadaPage() {
                 >
                   <span
                     style={{
-                      background: "#F96E5B",
-                      color: "#000000",
+                      background: "#E8041F",
+                      color: "#fff",
                       fontWeight: 800,
                       fontSize: "1rem",
                       borderRadius: "50%",
@@ -293,7 +293,7 @@ export default function IPTVFirestickCanadaPage() {
                   <div>
                     <strong
                       style={{
-                        color: "#000000",
+                        color: "#fff",
                         fontSize: "1rem",
                         display: "block",
                         marginBottom: 6,
@@ -302,7 +302,7 @@ export default function IPTVFirestickCanadaPage() {
                       {s.title}
                     </strong>
                     <span
-                      style={{ color: "#000000", fontSize: "0.92rem", lineHeight: 1.65 }}
+                      style={{ color: "#fff", fontSize: "0.92rem", lineHeight: 1.65 }}
                     >
                       {s.desc}
                     </span>
@@ -317,18 +317,18 @@ export default function IPTVFirestickCanadaPage() {
         <section style={{ padding: "60px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
             >
               What Canadian Channels Do You Get?
             </h2>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 16 }}>
+            <p style={{ color: "#fff", lineHeight: 1.75, marginBottom: 16 }}>
               Maple4K delivers every major Canadian channel straight to your Firestick.
               Never miss a live NHL game on TSN or Sportsnet, catch the latest on CBC News
               Network, follow hit dramas on CTV and Global, or cheer on your team with RDS and
               TVA Sports. Our Maple4K library includes all regional variants of each network
               so you always get your local feed.
             </p>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 24 }}>
+            <p style={{ color: "#fff", lineHeight: 1.75, marginBottom: 24 }}>
               Beyond Canadian content, the full 50,000+ channel lineup spans US, UK, European,
               Middle Eastern, and South Asian networks — plus a 120,000+ title VOD library of
               movies and series, all accessible from the Firestick remote.
@@ -351,9 +351,9 @@ export default function IPTVFirestickCanadaPage() {
                 <span
                   key={ch}
                   style={{
-                    background: "#1A3D45",
+                    background: "rgba(255,255,255,0.05)",
                     border: "1px solid #3a1010",
-                    color: "#000000",
+                    color: "#fff",
                     padding: "6px 16px",
                     borderRadius: 999,
                     fontSize: "0.85rem",
@@ -371,7 +371,7 @@ export default function IPTVFirestickCanadaPage() {
         <section style={{ padding: "60px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
             >
               Firestick IPTV Plans — Simple Canadian Pricing
             </h2>
@@ -399,11 +399,11 @@ export default function IPTVFirestickCanadaPage() {
                     textAlign: "center",
                   }}
                 >
-                  <div style={{ color: "#000000", fontSize: "0.9rem", marginBottom: 8 }}>
+                  <div style={{ color: "#fff", fontSize: "0.9rem", marginBottom: 8 }}>
                     {plan.period}
                   </div>
                   <div
-                    style={{ color: "#F96E5B", fontSize: "1.6rem", fontWeight: 800 }}
+                    style={{ color: "#E8041F", fontSize: "1.6rem", fontWeight: 800 }}
                   >
                     {plan.price}
                   </div>
@@ -414,8 +414,8 @@ export default function IPTVFirestickCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#F96E5B",
-                  color: "#000000",
+                  background: "#E8041F",
+                  color: "#fff",
                   padding: "14px 36px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -431,7 +431,7 @@ export default function IPTVFirestickCanadaPage() {
 
         {/* CTA */}
         <section
-          style={{ background: "#1A3D45", padding: "60px 16px", textAlign: "center" }}
+          style={{ background: "rgba(255,255,255,0.05)", padding: "60px 16px", textAlign: "center" }}
         >
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
             <h2
@@ -440,13 +440,13 @@ export default function IPTVFirestickCanadaPage() {
               Ready to Stream IPTV on Your Firestick?
             </h2>
             <p
-              style={{ color: "#000000", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
+              style={{ color: "#fff", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
             >
               Join thousands of Canadians already enjoying Maple4K. Try it free for 24
               hours — no credit card required. Questions? Email{" "}
               <a
                 href="mailto:help@maple4k.ca"
-                style={{ color: "#F96E5B", textDecoration: "none" }}
+                style={{ color: "#E8041F", textDecoration: "none" }}
               >
                 help@maple4k.ca
               </a>
@@ -458,7 +458,7 @@ export default function IPTVFirestickCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#F96E5B",
+                  background: "#E8041F",
                   color: "#ffffff",
                   padding: "16px 40px",
                   borderRadius: 12,
@@ -473,7 +473,7 @@ export default function IPTVFirestickCanadaPage() {
                 href="/free-trial"
                 style={{
                   border: "2px solid #F96E5B",
-                  color: "#F96E5B",
+                  color: "#E8041F",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -490,19 +490,19 @@ export default function IPTVFirestickCanadaPage() {
         {/* SEO Internal Links */}
         <section style={{ padding: "48px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ textAlign: "center", color: "#000000", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
+            <p style={{ textAlign: "center", color: "#fff", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
-              <a href="/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Toronto</a>
-              <a href="/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
-              <a href="/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Montreal</a>
-              <a href="/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Calgary</a>
-              <a href="/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
-              <a href="/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
+              <a href="/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Toronto</a>
+              <a href="/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
+              <a href="/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Montreal</a>
+              <a href="/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Calgary</a>
+              <a href="/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
+              <a href="/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
             </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
-              <a href="/pricing" style={{ background: "#F96E5B", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
-              <a href="/free-trial" style={{ background: "#3F9AAE", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
-              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>Channel List</a>
+              <a href="/pricing" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+              <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
+              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>Channel List</a>
             </div>
           </div>
         </section>

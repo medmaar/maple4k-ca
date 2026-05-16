@@ -1,63 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ReviewsSection from "../components/ReviewsSection";
-
-const reviewsPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Maple4K IPTV Canada",
-  "description": "Canada's best 4K IPTV service. 50,000+ channels + Netflix, NHL, UFC, CFL. True H.265/HEVC 4K streaming from $9/month.",
-  "brand": { "@type": "Brand", "name": "Maple4K" },
-  "image": "https://maple4k.ca/og-image.jpg",
-  "review": [
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Mike T." },
-      "reviewBody": "Best IPTV service in Canada. NHL streams are crystal clear and never buffer. Switched from Bell and saving $120/month."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Sarah L." },
-      "reviewBody": "Setup took 5 minutes on my Firestick. TSN and Sportsnet work perfectly in 4K. Support replied in under 10 minutes."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Jean-Pierre M." },
-      "reviewBody": "Excellent service. Toutes les chaînes canadiennes en 4K. Je recommande fortement à tous les Canadiens."
-    }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "312",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "9.00",
-    "priceCurrency": "CAD",
-    "availability": "https://schema.org/InStock",
-    "url": "https://maple4k.ca/pricing",
-    "shippingDetails": {
-      "@type": "OfferShippingDetails",
-      "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "CAD" },
-      "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "CA" },
-      "deliveryTime": {
-        "@type": "ShippingDeliveryTime",
-        "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "HUR" },
-        "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "HUR" }
-      }
-    },
-    "hasMerchantReturnPolicy": {
-      "@type": "MerchantReturnPolicy",
-      "applicableCountry": "CA",
-      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
-    }
-  }
-};
 
 export const metadata: Metadata = {
   title: { absolute: "Maple4K Reviews — Trustpilot, WhatsApp & Google | Maple4K IPTV Canada" },
@@ -67,53 +10,62 @@ export const metadata: Metadata = {
 
 export default function ReviewsPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsPageSchema) }} />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", minHeight: "100vh", color: "#000000" }}>
+    <main style={{ background: "#0C0F1A", minHeight: "100vh", color: "#fff" }}>
 
       {/* Hero */}
-      <section style={{ padding: "48px 16px 32px" }}>
+      <section style={{ padding: "80px 16px 48px", textAlign: "center" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
-          <div style={{ background: "#1A3D45", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", textAlign: "center" }}>
-            <span style={{ display: "inline-block", background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, marginBottom: 20 }}>
-              Verified Reviews
-            </span>
-            <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 14 }}>
-              What Customers Say About <span style={{ color: "#F96E5B" }}>Maple4K</span>
-            </h1>
-            <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 14 }}>
-              Real feedback from Trustpilot, WhatsApp & Google — 50,000+ happy customers across Canada and worldwide.
-            </p>
+          <span style={{ display: "inline-block", background: "rgba(232,4,31,0.12)", border: "1px solid rgba(232,4,31,0.3)", color: "#E8041F", fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", padding: "6px 18px", borderRadius: 999, marginBottom: 24 }}>
+            Verified Reviews
+          </span>
+          <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, color: "#fff", lineHeight: 1.1, marginBottom: 16 }}>
+            What Customers Say About{" "}
+            <span style={{ color: "#E8041F" }}>Maple4K</span>
+          </h1>
+          <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 15, lineHeight: 1.7, marginBottom: 40 }}>
+            Real feedback from Trustpilot, WhatsApp &amp; Google — 50,000+ happy customers across Canada and worldwide.
+          </p>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 14 }}>
+            {[
+              { val: "5.0", label: "Trustpilot", color: "#00b67a" },
+              { val: "50,000+", label: "Customers", color: "#00E5FF" },
+              { val: "4.9★", label: "Google", color: "#FBBC04" },
+              { val: "24/7", label: "Support", color: "#E8041F" },
+            ].map(s => (
+              <div key={s.val} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)", borderRadius: 14, padding: "14px 24px", textAlign: "center", minWidth: 100 }}>
+                <div style={{ fontSize: 20, fontWeight: 900, color: s.color }}>{s.val}</div>
+                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", marginTop: 4, fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase" }}>{s.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Reviews */}
-      <section style={{ padding: "32px 16px 60px", maxWidth: 1100, margin: "0 auto" }}>
+      <section style={{ padding: "0 16px 80px", maxWidth: 1100, margin: "0 auto" }}>
         <ReviewsSection showHeader={false} />
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "60px 16px", background: "#1A3D45", textAlign: "center" }}>
+      <section style={{ padding: "80px 16px", background: "#0E1120", borderTop: "1px solid rgba(255,255,255,0.06)", textAlign: "center" }}>
         <div style={{ maxWidth: 600, margin: "0 auto" }}>
-          <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 14 }}>
+          <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>
             Join 50,000+ Happy Customers
           </h2>
-          <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: 28, fontSize: 15 }}>
-            Try Maple4K free for 24 hours — no credit card required.
+          <p style={{ color: "rgba(255,255,255,0.6)", marginBottom: 32, fontSize: 15, lineHeight: 1.7 }}>
+            Start with a free 24-hour trial — no credit card required.
           </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
-            <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 15, textDecoration: "none", boxShadow: "0 6px 20px rgba(249,110,91,0.4)" }}>
-              Get Free Trial
-            </a>
-            <a href="/pricing" style={{ background: "transparent", border: "2px solid #79C9C5", color: "#79C9C5", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
-              View Plans
-            </a>
+          <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none", boxShadow: "0 6px 24px rgba(232,4,31,0.4)" }}>
+              ▶ Free Trial 24H
+            </Link>
+            <Link href="/pricing" style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.2)", color: "#fff", padding: "14px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
+              View Plans →
+            </Link>
           </div>
         </div>
       </section>
 
     </main>
-    </>
   );
 }

@@ -28,17 +28,17 @@ const faqSchema = {
 
 export default function IPTVSubscriptionPage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000", minHeight: "100vh" }}>
+    <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
       <section style={{ padding: "80px 16px 60px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
-          <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase" }}>IPTV Subscription Canada · Maple4K</span>
+          <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#E8041F", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase" }}>IPTV Subscription Canada · Maple4K</span>
           <div style={{ textAlign: "center", marginBottom: 8 }}>
-          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(63,154,174,0.25)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(255,255,255,0.1)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
             🗓 Last updated: April 2026
           </span>
         </div>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
-            IPTV Subscription Canada — <span style={{ color: "#F96E5B" }}>Plans from $9/Month</span>
+            IPTV Subscription Canada — <span style={{ color: "#E8041F" }}>Plans from $9/Month</span>
           </h1>
           <p style={{ fontSize: "1.1rem", lineHeight: 1.7, maxWidth: 680, marginBottom: 32 }}>
             Maple4K offers flexible IPTV subscription plans for Canadian customers — no contracts, no credit card required for the free trial. Start with a 1-month plan and upgrade any time. Every IPTV subscription includes 50,000+ channels + Netflix, 120,000+ on-demand titles, and True 4K Ultra HD quality.
@@ -59,8 +59,8 @@ export default function IPTVSubscriptionPage() {
             ))}
           </div>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-            <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Free Trial First →</a>
-            <a href="/pricing" style={{ border: "2px solid rgba(249,110,91,0.5)", color: "#F96E5B", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>All Plans & Pricing</a>
+            <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Free Trial First →</a>
+            <a href="/pricing" style={{ border: "2px solid rgba(249,110,91,0.5)", color: "#E8041F", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>All Plans & Pricing</a>
           </div>
         </div>
       </section>
@@ -106,12 +106,12 @@ export default function IPTVSubscriptionPage() {
         </p>
 
         <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>IPTV Subscription Canada vs Cable: The Real Cost Comparison</h2>
-        <div style={{ background: "#fff", borderRadius: 14, padding: 24, border: "1px solid rgba(63,154,174,0.15)", marginBottom: 32 }}>
+        <div style={{ background: "#fff", borderRadius: 14, padding: 24, border: "1px solid rgba(255,255,255,0.08)", marginBottom: 32 }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16, textAlign: "center", marginBottom: 20 }}>
             {[["Bell Fibe TV", "$95–$130/mo", "~350 channels"],["Rogers Ignite", "$90–$125/mo", "~250 channels"],["Maple4K IPTV", "$9–$49/year", "50,000+ channels + Netflix"]].map(([name, price, channels]) => (
               <div key={name} style={{ padding: 16, background: name === "Maple4K IPTV" ? "rgba(249,110,91,0.08)" : "transparent", borderRadius: 10, border: name === "Maple4K IPTV" ? "1px solid rgba(249,110,91,0.25)" : "none" }}>
                 <p style={{ fontWeight: 700, marginBottom: 4 }}>{name}</p>
-                <p style={{ color: "#F96E5B", fontWeight: 800, fontSize: "1.1rem", marginBottom: 4 }}>{price}</p>
+                <p style={{ color: "#E8041F", fontWeight: 800, fontSize: "1.1rem", marginBottom: 4 }}>{price}</p>
                 <p style={{ color: "#666", fontSize: 13 }}>{channels}</p>
               </div>
             ))}
@@ -121,11 +121,11 @@ export default function IPTVSubscriptionPage() {
           </p>
         </div>
 
-        <div style={{ background: "#1A3D45", borderRadius: 16, padding: 32, textAlign: "center" }}>
+        <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 16, padding: 32, textAlign: "center" }}>
           <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Start Your IPTV Subscription Today</h2>
           <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, maxWidth: 500, margin: "0 auto 28px", lineHeight: 1.7 }}>Free 24-hour trial — no credit card. Full access to all 50,000+ channels + Netflix. Subscribe from $9/month after your trial.</p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Try Free First →</a>
+            <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Try Free First →</a>
             <a href="/pricing" style={{ border: "2px solid rgba(255,255,255,0.4)", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>See All Plans</a>
           </div>
         </div>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const categories = [  {
     name: "CANADA",
-    count: "434+",
+    count: "650+",
     channels: [
       "A&E 4K",
       "ABC EAST 4K",
@@ -447,6 +447,204 @@ const categories = [  {
       "SUPER SPORTS CH 483 4K",
       "SUPER SPORTS CH 484 4K",
       "CTV Calgary 4K",
+      // ── Additional CBC Regional ──
+      "CBC EDMONTON 4K",
+      "CBC MONTREAL 4K",
+      "CBC HALIFAX 4K",
+      "CBC SASKATOON 4K",
+      "CBC REGINA 4K",
+      "CBC FREDERICTON 4K",
+      "CBC ST JOHN'S 4K",
+      "CBC CHARLOTTETOWN 4K",
+      "CBC WHITEHORSE 4K",
+      "CBC YELLOWKNIFE 4K",
+      "CBC IQALUIT 4K",
+      "CBC NEWS NETWORK 4K",
+      "CBC GEM 4K",
+      // ── Additional CTV Regional ──
+      "CTV TORONTO 4K",
+      "CTV MONTREAL 4K",
+      "CTV WINNIPEG 4K",
+      "CTV VANCOUVER 4K",
+      "CTV EDMONTON 4K",
+      "CTV OTTAWA 4K",
+      "CTV SASKATOON 4K",
+      "CTV REGINA 4K",
+      "CTV LETHBRIDGE 4K",
+      "CTV KITCHENER 4K",
+      "CTV LONDON 4K",
+      "CTV NEWS CHANNEL 4K",
+      "CTV LIFE CHANNEL 4K",
+      "CTV SCI-FI CHANNEL 4K",
+      "CTV THRILLER CHANNEL 4K",
+      // ── French Canadian / Quebec ──
+      "TVA 4K",
+      "TVA SPORTS 4K",
+      "TVA SPORTS 2 4K",
+      "TVA SPORTS 3 4K",
+      "TVA SPORTS 4 4K",
+      "TVA SPORTS 5 4K",
+      "RDS 4K",
+      "RDS 2 4K",
+      "RDS INFO 4K",
+      "V TÉLÉ 4K",
+      "CANAL VIE 4K",
+      "VRAK 4K",
+      "CASA 4K",
+      "ICI RADIO-CANADA TÉLÉ 4K",
+      "ICI RDI 4K",
+      "ICI ARTV 4K",
+      "ICI EXPLORA 4K",
+      "ICI TELE PREMIÈRE 4K",
+      "MELS 4K",
+      "LCN 4K",
+      "LCN 2 4K",
+      "CANAL D 4K",
+      "SERIES+ 4K",
+      "PRISE 2 4K",
+      "HISTORIA 4K",
+      "ZESTE 4K",
+      "MAX (SUPER ÉCRAN) 4K",
+      "SUPER ÉCRAN 2 4K",
+      "SUPER ÉCRAN 3 4K",
+      "SUPER ÉCRAN 4 4K",
+      "TÉLÉ-QUÉBEC 4K",
+      "TÉLÉ-QUÉBEC 2 4K",
+      "NOOVO 4K",
+      "NOOVO INFO 4K",
+      "ARGENT 4K",
+      "MOI ET CIE 4K",
+      "ÉVASION 4K",
+      "UNIS TV 4K",
+      "TV5 QUÉBEC CANADA 4K",
+      "CANAL SAVOIR 4K",
+      "CANAL ASSEMBLÉE 4K",
+      // ── Sports Specialty ──
+      "TSN 1 4K",
+      "TSN 2 4K",
+      "TSN 3 4K",
+      "TSN 4 4K",
+      "TSN 5 4K",
+      "SPORTSNET EAST 4K",
+      "SPORTSNET WEST 4K",
+      "SPORTSNET PACIFIC 4K",
+      "SPORTSNET ONTARIO 4K",
+      "SPORTSNET ONE 4K",
+      "SPORTSNET 360 4K",
+      "SPORTSNET WORLD 4K",
+      "NHL NETWORK CANADA 4K",
+      "NBA TV CANADA 4K",
+      "NFL NETWORK CANADA 4K",
+      "MLB NETWORK CANADA 4K",
+      "GOLF CHANNEL CANADA 4K",
+      "FIGHT NETWORK 4K",
+      "OUTDOOR CHANNEL CANADA 4K",
+      "WILD TV 4K",
+      "CURLING CHANNEL 4K",
+      // ── News & Information ──
+      "GLOBAL NEWS 4K",
+      "GLOBAL NEWS TORONTO 4K",
+      "GLOBAL NEWS VANCOUVER 4K",
+      "GLOBAL NEWS MONTREAL 4K",
+      "GLOBAL NEWS EDMONTON 4K",
+      "GLOBAL NEWS CALGARY 4K",
+      "GLOBAL NEWS WINNIPEG 4K",
+      "CTV NEWS TORONTO 4K",
+      "CTV NEWS VANCOUVER 4K",
+      "CP24 4K",
+      "BNN BLOOMBERG CANADA 4K",
+      "CITYTV NEWS 4K",
+      "OMNI 1 4K",
+      "OMNI 2 4K",
+      "OMNI REGIONAL 4K",
+      "CHCH NEWS 4K",
+      // ── Entertainment & Specialty ──
+      "SHOWCASE 4K",
+      "SLICE 4K",
+      "W NETWORK 4K",
+      "HGTV CANADA 4K",
+      "FOOD NETWORK CANADA 4K",
+      "INVESTIGATION DISCOVERY CANADA 4K",
+      "TLC CANADA 4K",
+      "DISCOVERY CHANNEL CANADA 4K",
+      "DISCOVERY SCIENCE CANADA 4K",
+      "NATIONAL GEOGRAPHIC CANADA 4K",
+      "NAT GEO WILD CANADA 4K",
+      "HISTORY CHANNEL CANADA 4K",
+      "H2 CANADA 4K",
+      "CRIME + INVESTIGATION CANADA 4K",
+      "FYI CANADA 4K",
+      "LIFETIME CANADA 4K",
+      "HALLMARK CHANNEL CANADA 4K",
+      "HALLMARK DRAMA CANADA 4K",
+      "HALLMARK MOVIES & MYSTERIES CANADA 4K",
+      "SPACE CHANNEL 4K",
+      "TREEHOUSE 4K",
+      "FAMILY CHANNEL 4K",
+      "FAMILY JR 4K",
+      "YTV 4K",
+      "TELETOON 4K",
+      "TELETOON RETRO 4K",
+      "TELETOON AT NIGHT 4K",
+      "NICKELODEON CANADA 4K",
+      "CARTOON NETWORK CANADA 4K",
+      "DISNEY CHANNEL CANADA 4K",
+      "DISNEY JR CANADA 4K",
+      "DISNEY XD CANADA 4K",
+      "MUCH 4K",
+      "CMT CANADA 4K",
+      "STINGRAY MUSIC HITS 4K",
+      "STINGRAY LOUD 4K",
+      "STINGRAY POP 4K",
+      "STINGRAY COUNTRY 4K",
+      "BILLBOARD CANADA 4K",
+      "MPIX CANADA 4K",
+      "COMEDY GOLD 4K",
+      "PASSION 4K",
+      "SILVER SCREEN CLASSICS 4K",
+      "MOVIETIME 4K",
+      "Z CHANNEL 4K",
+      "HBO CANADA 4K",
+      "MAX CANADA 4K",
+      "CRAVE 1 4K",
+      "CRAVE 2 4K",
+      "CRAVE 3 4K",
+      "CRAVE 4 4K",
+      "CRAVE STARZ 4K",
+      "STARZ CANADA 4K",
+      "STARZ ENCORE CANADA 4K",
+      "SUPER CHANNEL HEART & HOME 4K",
+      "SUPER CHANNEL FUSE 4K",
+      "SUPER CHANNEL VAULT 4K",
+      "SUPER CHANNEL ESPRIT 4K",
+      "TMN 1 4K",
+      "TMN 2 4K",
+      "TMN 3 4K",
+      "TMN 4 4K",
+      "TMN 5 4K",
+      "TMN ENCORE 1 4K",
+      "TMN ENCORE 2 4K",
+      "TMN ENCORE 3 4K",
+      "TMN GO 4K",
+      // ── Lifestyle & Other ──
+      "THE WEATHER NETWORK 4K",
+      "METEO MEDIA 4K",
+      "SHOPPING CHANNEL 4K",
+      "CANAL SHOPPING 4K",
+      "APTN NATIONAL 4K",
+      "APTN LUMI 4K",
+      "AMI-TV 4K",
+      "AMI-TÉLÉ 4K",
+      "AMI-AUDIO 4K",
+      "CPAC 4K",
+      "CPAC FRANCAIS 4K",
+      "PARLIAMENTARY CHANNEL 4K",
+      "VISION TV 4K",
+      "CROSSROADS CHRISTIAN 4K",
+      "SALT + LIGHT 4K",
+      "HOPE CHANNEL CANADA 4K",
+      "CTS CANADA 4K",
+      "JOY TV CANADA 4K",
     ],
   },
 
@@ -8253,29 +8451,32 @@ const categories = [  {
 
 export default function ChannelsListPage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen">
+    <main style={{ background: "#0C0F1A", color: "#fff" }} className="min-h-screen">
       {/* Hero */}
-      <section style={{ background: "#1A3D45", padding: "64px 16px", textAlign: "center" }}>
+      <section style={{ background: "#0E1120", padding: "80px 16px 60px", textAlign: "center", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
         <div className="max-w-3xl mx-auto">
-          <h1 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 900, marginBottom: 16, color: "#ffffff" }}>
-            Maple4K <span className="text-[#F96E5B]">Channel List</span>
+          <span style={{ display: "inline-block", background: "rgba(232,4,31,0.12)", border: "1px solid rgba(232,4,31,0.3)", color: "#E8041F", fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", padding: "6px 18px", borderRadius: 999, marginBottom: 24 }}>
+            Full Channel List
+          </span>
+          <h1 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 900, marginBottom: 16, color: "#fff" }}>
+            Maple4K <span style={{ color: "#E8041F" }}>Channel List</span>
           </h1>
-          <p style={{ fontSize: 18, color: "rgba(255,255,255,0.8)", marginBottom: 24 }}>
+          <p style={{ fontSize: 17, color: "rgba(255,255,255,0.65)", marginBottom: 32, lineHeight: 1.7 }}>
             50,000+ channels + Netflix across Canada, the US, UK, and worldwide.
             Every plan includes all channels below — no add-ons required.
           </p>
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
-            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> All Canadian networks</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> TSN &amp; Sportsnet</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> 4K &amp; HD quality</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> PPV included</span>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 20, fontSize: 14, color: "rgba(255,255,255,0.7)", fontWeight: 600 }}>
+            <span style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ color: "#E8041F" }}>✓</span> All Canadian networks</span>
+            <span style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ color: "#E8041F" }}>✓</span> TSN &amp; Sportsnet</span>
+            <span style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ color: "#E8041F" }}>✓</span> 4K &amp; HD quality</span>
+            <span style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ color: "#E8041F" }}>✓</span> PPV included</span>
           </div>
         </div>
       </section>
 
       {/* Stats bar */}
-      <div className="bg-[#F96E5B] py-3 px-4">
-        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-black text-sm font-semibold">
+      <div style={{ background: "#E8041F", padding: "14px 16px" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 28, color: "#fff", fontSize: 14, fontWeight: 700 }}>
           <span>🌍 152 Countries &amp; Regions</span>
           <span>📺 50,000+ Channels + Netflix</span>
           <span>🎬 4K Ultra HD Quality</span>
@@ -8284,40 +8485,32 @@ export default function ChannelsListPage() {
       </div>
 
       {/* Accordion channel list */}
-      <section className="py-12 px-4">
-        <div className="max-w-5xl mx-auto space-y-3">
-          {categories.map((cat, index) => (
+      <section style={{ padding: "48px 16px 80px" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", flexDirection: "column", gap: 10 }}>
+          {categories.map((cat) => (
             <details
               key={cat.name}
-              className="group border border-[rgba(63,154,174,0.2)] rounded-xl overflow-hidden transition-all hover:border-[#F96E5B]" style={{ background: "#ffffff" }}
+              style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 14, overflow: "hidden" }}
             >
-              <summary className="flex items-center justify-between px-5 py-4 cursor-pointer select-none list-none">
-                <div className="flex items-center gap-3">
-                  <span className="text-[#F96E5B] font-bold text-lg group-open:text-[#F96E5B] transition-colors">
-                    {cat.name}
-                  </span>
+              <summary style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "18px 22px", cursor: "pointer", listStyle: "none" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                  <span style={{ color: "#E8041F", fontWeight: 800, fontSize: 16 }}>{cat.name}</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <span className="bg-white border border-[rgba(63,154,174,0.25)] text-black text-xs px-3 py-1 rounded-full font-medium">
+                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                  <span style={{ background: "rgba(232,4,31,0.12)", border: "1px solid rgba(232,4,31,0.25)", color: "rgba(255,255,255,0.8)", fontSize: 12, padding: "4px 12px", borderRadius: 999, fontWeight: 600 }}>
                     {cat.count} channels
                   </span>
-                  <svg
-                    className="w-5 h-5 text-black transition-transform duration-300 group-open:rotate-180"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M19 9l-7 7-7-7" />
                   </svg>
                 </div>
               </summary>
-              <div className="px-5 pb-5 pt-2 border-t" style={{ borderColor: "rgba(63,154,174,0.15)" }}>
-                <div className="flex flex-wrap gap-2">
-                  {cat.channels.map((ch) => (
+              <div style={{ padding: "0 22px 22px", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 8, paddingTop: 16 }}>
+                  {cat.channels.map(ch => (
                     <span
                       key={ch}
-                      className="bg-white border border-[rgba(63,154,174,0.2)] hover:border-[#F96E5B] hover:bg-[#F96E5B] hover:text-white text-black text-xs px-3 py-1.5 rounded-lg transition-colors cursor-default"
+                      style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)", color: "rgba(255,255,255,0.75)", fontSize: 12, padding: "6px 14px", borderRadius: 8, fontWeight: 500 }}
                     >
                       {ch}
                     </span>
@@ -8330,18 +8523,18 @@ export default function ChannelsListPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "64px 16px", background: "#1A3D45", textAlign: "center" }}>
-        <div className="max-w-2xl mx-auto">
-          <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Access All 50,000+ Channels + Netflix</h2>
-          <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: 32 }}>
+      <section style={{ padding: "80px 16px", background: "#0E1120", borderTop: "1px solid rgba(255,255,255,0.06)", textAlign: "center" }}>
+        <div style={{ maxWidth: 620, margin: "0 auto" }}>
+          <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#fff", marginBottom: 16 }}>Access All 50,000+ Channels + Netflix</h2>
+          <p style={{ color: "rgba(255,255,255,0.6)", marginBottom: 36, lineHeight: 1.7, fontSize: 15 }}>
             Every plan includes the full channel list. Try it free for 24 hours — no credit card required.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
-              Get Free Trial
+          <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
+            <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "16px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none", boxShadow: "0 6px 24px rgba(232,4,31,0.4)" }}>
+              ▶ Free Trial 24H
             </a>
-            <a href="/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
-              View Pricing
+            <a href="/pricing" style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.2)", color: "#fff", padding: "16px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
+              View Pricing →
             </a>
           </div>
         </div>

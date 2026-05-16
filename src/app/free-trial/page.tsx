@@ -61,7 +61,7 @@ export default function FreeTrialPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+      <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
         <section
           className="py-20 px-4"
           style={{ background: "transparent" }}
@@ -74,7 +74,7 @@ export default function FreeTrialPage() {
                 style={{
                   background: "rgba(249,110,91,0.12)",
                   border: "1px solid rgba(249,110,91,0.35)",
-                  color: "#F96E5B",
+                  color: "#E8041F",
                 }}
               >
                 No Credit Card Required
@@ -83,13 +83,13 @@ export default function FreeTrialPage() {
                 style={{
                   fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
                   fontWeight: 800,
-                  color: "#000000",
+                  color: "#fff",
                   lineHeight: 1.2,
                 }}
               >
                 Free Trial — Maple4K
               </h1>
-              <p style={{ color: "#000000", fontSize: 14, marginTop: 10 }}>
+              <p style={{ color: "#fff", fontSize: 14, marginTop: 10 }}>
                 5-minute full access. Fill out the form and we&apos;ll activate your trial within minutes.
               </p>
             </div>
@@ -98,7 +98,7 @@ export default function FreeTrialPage() {
             <div
               className="rounded-3xl p-6 md:p-8 border mb-16"
               style={{
-                background: "#1A3D45",
+                background: "rgba(255,255,255,0.05)",
                 borderColor: "rgba(121,201,197,0.2)",
                 boxShadow: "0 8px 32px rgba(26,61,69,0.25)",
               }}
@@ -107,10 +107,10 @@ export default function FreeTrialPage() {
             </div>
 
             {/* FAQ */}
-            <div style={{ background: "#1A3D45", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)" }}>
+            <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)" }}>
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
-                style={{ color: "#F96E5B" }}
+                style={{ color: "#E8041F" }}
               >
                 FAQ
               </p>
@@ -126,10 +126,10 @@ export default function FreeTrialPage() {
                 <a href="/pricing/1-month" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>1 Month — $9</a>
                 <a href="/pricing/3-months" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>3 Months — $29</a>
                 <a href="/pricing/6-months" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>6 Months — $39</a>
-                <a href="/pricing/12-months" style={{ background: "#F96E5B", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>1 Year — $49 ⭐</a>
+                <a href="/pricing/12-months" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>1 Year — $49 ⭐</a>
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
-                <a href="/free-trial" style={{ background: "#79C9C5", color: "#1A3D45", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Try Free 24h</a>
+                <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Try Free 24h</a>
                 <a href="/pricing" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>All Plans</a>
                 <a href="/channels-list" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Channel List</a>
                 <a href="/iptv-toronto" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>IPTV Toronto</a>

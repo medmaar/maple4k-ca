@@ -46,8 +46,8 @@ const faqSchema = {
   })),
 };
 
-const s = { color: "#F96E5B" } as const;
-const bg = "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)";
+const s = { color: "#E8041F" } as const;
+const bg = "#0C0F1A";
 
 const providers = [
   { name: "Maple4K", quality: "True 4K H.265", channels: "50,000+", price: "$9/mo", trial: "✅ Free 24h", support: "✅ Canadian 24/7", highlight: true },
@@ -72,31 +72,31 @@ export default function BestIPTVCanadaPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script />
-      <main style={{ background: bg, color: "#000000", minHeight: "100vh" }}>
+      <main style={{ background: bg, color: "#fff", minHeight: "100vh" }}>
 
         {/* Hero */}
         <section style={{ background: bg, padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+            <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#E8041F", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
               Best IPTV Canada 2026 · Maple4K
             </span>
             <div style={{ textAlign: "center", marginBottom: 8 }}>
-          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(63,154,174,0.25)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(255,255,255,0.1)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
             🗓 Last updated: April 2026
           </span>
         </div>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
               Best IPTV Canada 2026 — <span style={s}>#1 Rated Service</span> from $9/Month
             </h1>
-            <p style={{ color: "#000000", fontSize: "1.1rem", maxWidth: 700, lineHeight: 1.7, marginBottom: 28 }}>
+            <p style={{ color: "#fff", fontSize: "1.1rem", maxWidth: 700, lineHeight: 1.7, marginBottom: 28 }}>
               Finding the best IPTV Canada has to offer means looking beyond price — you need 4K quality, 
               stable streams, Canadian channel coverage, and a provider who actually answers support tickets. 
               Maple4K delivers on all fronts: True 4K Ultra HD, 50,000+ channels + Netflix including all Canadian 
               networks, and a free trial so you can verify quality before paying a cent.
             </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-              <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Get Free Trial →</a>
-              <a href="/pricing" style={{ border: "2px solid rgba(249,110,91,0.5)", color: "#F96E5B", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+              <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Get Free Trial →</a>
+              <a href="/pricing" style={{ border: "2px solid rgba(249,110,91,0.5)", color: "#E8041F", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
             </div>
           </div>
         </section>
@@ -104,7 +104,7 @@ export default function BestIPTVCanadaPage() {
         {/* Comparison table */}
         <section style={{ maxWidth: 960, margin: "0 auto", padding: "60px 16px" }}>
           <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 8 }}>Best IPTV Canada — Provider Comparison 2026</h2>
-          <p style={{ color: "#000000", marginBottom: 32, lineHeight: 1.7 }}>
+          <p style={{ color: "#fff", marginBottom: 32, lineHeight: 1.7 }}>
             We compared every major Canadian IPTV provider on quality, price, channel count, and support to help you find the best IPTV service in Canada.
           </p>
           <div style={{ overflowX: "auto" }}>
@@ -120,11 +120,11 @@ export default function BestIPTVCanadaPage() {
                 {providers.map((p, i) => (
                   <tr key={p.name} style={{ background: p.highlight ? "rgba(249,110,91,0.06)" : i % 2 === 0 ? "transparent" : "rgba(63,154,174,0.03)", borderBottom: "1px solid rgba(63,154,174,0.1)" }}>
                     <td style={{ padding: "14px", fontWeight: p.highlight ? 800 : 500, color: p.highlight ? "#F96E5B" : "#000" }}>{p.name}{p.highlight && " ⭐"}</td>
-                    <td style={{ padding: "14px", color: "#000" }}>{p.quality}</td>
-                    <td style={{ padding: "14px", color: "#000" }}>{p.channels}</td>
+                    <td style={{ padding: "14px", color: "#fff" }}>{p.quality}</td>
+                    <td style={{ padding: "14px", color: "#fff" }}>{p.channels}</td>
                     <td style={{ padding: "14px", fontWeight: p.highlight ? 700 : 400, color: p.highlight ? "#3F9AAE" : "#000" }}>{p.price}</td>
-                    <td style={{ padding: "14px", color: "#000" }}>{p.trial}</td>
-                    <td style={{ padding: "14px", color: "#000" }}>{p.support}</td>
+                    <td style={{ padding: "14px", color: "#fff" }}>{p.trial}</td>
+                    <td style={{ padding: "14px", color: "#fff" }}>{p.support}</td>
                   </tr>
                 ))}
               </tbody>
@@ -144,7 +144,7 @@ export default function BestIPTVCanadaPage() {
               { icon: "📞", title: "Canadian Support 24/7", desc: "Real Canadian support team available around the clock via WhatsApp and email. Not an offshore chatbot." },
               { icon: "📱", title: "Works on Every Device", desc: "Firestick, Smart TV, iPhone, Android, Apple TV, MAG Box, Formuler, Roku, Windows, Mac — every device supported." },
             ].map(f => (
-              <div key={f.title} style={{ background: "#fff", borderRadius: 14, padding: 24, border: "1px solid rgba(63,154,174,0.15)" }}>
+              <div key={f.title} style={{ background: "#fff", borderRadius: 14, padding: 24, border: "1px solid rgba(255,255,255,0.08)" }}>
                 <div style={{ fontSize: 28, marginBottom: 10 }}>{f.icon}</div>
                 <p style={{ fontWeight: 700, marginBottom: 8 }}>{f.title}</p>
                 <p style={{ color: "#333", lineHeight: 1.7, fontSize: 14 }}>{f.desc}</p>
@@ -159,7 +159,7 @@ export default function BestIPTVCanadaPage() {
               { name: "Sarah L., Vancouver", text: "Best IPTV service in Canada bar none. Setup took 5 minutes, every TSN feed works perfectly for NHL, and the price is unbeatable.", stars: 5 },
               { name: "Jean-Pierre G., Montreal", text: "RDS en 4K sans coupures. Maple4K est définitivement le meilleur service IPTV au Canada. Je recommande à tous.", stars: 5 },
             ].map(r => (
-              <div key={r.name} style={{ background: "#fff", borderRadius: 14, padding: 20, border: "1px solid rgba(63,154,174,0.15)" }}>
+              <div key={r.name} style={{ background: "#fff", borderRadius: 14, padding: 20, border: "1px solid rgba(255,255,255,0.08)" }}>
                 <p style={{ fontSize: 18, marginBottom: 4 }}>{"⭐".repeat(r.stars)}</p>
                 <p style={{ color: "#333", lineHeight: 1.7, fontSize: 14, marginBottom: 8 }}>&ldquo;{r.text}&rdquo;</p>
                 <p style={{ fontWeight: 700, fontSize: 13, color: "#3F9AAE" }}>{r.name}</p>
@@ -180,7 +180,7 @@ export default function BestIPTVCanadaPage() {
         </section>
 
         {/* CTA */}
-        <section style={{ background: "#1A3D45", padding: "60px 16px", textAlign: "center" }}>
+        <section style={{ background: "rgba(255,255,255,0.05)", padding: "60px 16px", textAlign: "center" }}>
           <h2 style={{ fontSize: "1.8rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
             Try Canada&apos;s Best IPTV Service — Free
           </h2>
@@ -188,7 +188,7 @@ export default function BestIPTVCanadaPage() {
             No credit card. No contracts. Full 24-hour access. See why Maple4K is the best IPTV Canada has to offer.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "16px 40px", borderRadius: 12, fontWeight: 700, textDecoration: "none" }}>Start Free Trial →</a>
+            <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "16px 40px", borderRadius: 12, fontWeight: 700, textDecoration: "none" }}>Start Free Trial →</a>
             <a href="/pricing" style={{ border: "2px solid rgba(255,255,255,0.4)", color: "#fff", padding: "16px 40px", borderRadius: 12, fontWeight: 700, textDecoration: "none" }}>See Pricing</a>
           </div>
         </section>
@@ -196,7 +196,7 @@ export default function BestIPTVCanadaPage() {
         <section style={{ padding: "40px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
             {[["Best IPTV Canada","/best-iptv-canada"],["IPTV 4K Canada","/iptv-4k"],["IPTV Free Trial","/free-trial"],["Smart IPTV Canada","/smart-iptv"],["IPTV Subscription","/iptv-subscription"],["IPTV Formula","/iptv-formula"]].map(([label,href]) => (
-              <a key={label} href={href} style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>{label}</a>
+              <a key={label} href={href} style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>{label}</a>
             ))}
           </div>
         </section>

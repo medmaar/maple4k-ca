@@ -52,12 +52,12 @@ export default function IPTVCalgaryPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+      <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
         {/* Hero */}
         <section
           style={{
             background:
-              "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)",
+              "#0C0F1A",
             padding: "80px 16px 60px",
           }}
         >
@@ -66,7 +66,7 @@ export default function IPTVCalgaryPage() {
               style={{
                 background: "rgba(249,110,91,0.12)",
                 border: "1px solid rgba(249,110,91,0.3)",
-                color: "#F96E5B",
+                color: "#E8041F",
                 fontSize: 12,
                 fontWeight: 700,
                 padding: "4px 14px",
@@ -89,7 +89,7 @@ export default function IPTVCalgaryPage() {
             </h1>
             <p
               style={{
-                color: "#000000",
+                color: "#fff",
                 fontSize: "1.1rem",
                 maxWidth: 640,
                 lineHeight: 1.7,
@@ -104,8 +104,8 @@ export default function IPTVCalgaryPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#F96E5B",
-                  color: "#000000",
+                  background: "#E8041F",
+                  color: "#fff",
                   padding: "14px 36px",
                   borderRadius: 10,
                   fontWeight: 700,
@@ -118,7 +118,7 @@ export default function IPTVCalgaryPage() {
                 href="/free-trial"
                 style={{
                   border: "2px solid rgba(249,110,91,0.5)",
-                  color: "#F96E5B",
+                  color: "#E8041F",
                   padding: "14px 36px",
                   borderRadius: 10,
                   fontWeight: 700,
@@ -135,16 +135,16 @@ export default function IPTVCalgaryPage() {
         <section style={{ maxWidth: 900, margin: "0 auto", padding: "60px 16px" }}>
           {/* Intro */}
           <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#000000" }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
               IPTV Calgary — Complete Alberta Coverage
             </h2>
-            <p style={{ color: "#000000", lineHeight: 1.8, marginBottom: 16 }}>
+            <p style={{ color: "#fff", lineHeight: 1.8, marginBottom: 16 }}>
               Maple4K delivers the best IPTV experience in Calgary with all the channels Alberta
               residents rely on. You get CBC Calgary, CTV Calgary, Global Calgary, Sportsnet West,
               TSN, and all regional Canadian networks in crisp HD and 4K. Calgary Flames fans
               get every game live on Sportsnet and TSN — no blackouts, no extra fees.
             </p>
-            <p style={{ color: "#000000", lineHeight: 1.8 }}>
+            <p style={{ color: "#fff", lineHeight: 1.8 }}>
               Calgary IPTV subscribers also get 50,000+ international channels, 120,000+ movies
               and series on demand, 7-day catch-up TV, and a full EPG. Maple4K works on every
               device — Firestick, Smart TV, Android, iPhone, and more — with instant activation
@@ -154,7 +154,7 @@ export default function IPTVCalgaryPage() {
 
           {/* Features */}
           <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#000000" }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
               Why Calgary Subscribers Choose Maple4K
             </h2>
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
@@ -187,7 +187,7 @@ export default function IPTVCalgaryPage() {
                     gap: 16,
                     alignItems: "flex-start",
                     marginBottom: 16,
-                    background: "#ffffff",
+                    background: "rgba(255,255,255,0.05)",
                     borderRadius: 12,
                     padding: 20,
                     border: "1px solid rgba(255,255,255,0.07)",
@@ -195,8 +195,8 @@ export default function IPTVCalgaryPage() {
                 >
                   <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon}</span>
                   <div>
-                    <p style={{ fontWeight: 700, marginBottom: 4, color: "#000000" }}>{item.title}</p>
-                    <p style={{ color: "#000000", lineHeight: 1.7, margin: 0 }}>{item.desc}</p>
+                    <p style={{ fontWeight: 700, marginBottom: 4, color: "#fff" }}>{item.title}</p>
+                    <p style={{ color: "#fff", lineHeight: 1.7, margin: 0 }}>{item.desc}</p>
                   </div>
                 </li>
               ))}
@@ -205,10 +205,10 @@ export default function IPTVCalgaryPage() {
 
           {/* Pricing */}
           <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#000000" }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
               Maple4K Pricing for Calgary — From $9/Month
             </h2>
-            <p style={{ color: "#000000", lineHeight: 1.8, marginBottom: 16 }}>
+            <p style={{ color: "#fff", lineHeight: 1.8, marginBottom: 16 }}>
               Shaw and Telus TV packages in Calgary cost $80–$130/month. Maple4K starts at
               just $9/month with no contracts and no hidden fees. Calgary subscribers save
               an average of $900/year by switching to IPTV with Maple4K.
@@ -221,10 +221,10 @@ export default function IPTVCalgaryPage() {
                 padding: 20,
               }}
             >
-              <p style={{ color: "#F96E5B", fontWeight: 700, marginBottom: 12 }}>
+              <p style={{ color: "#E8041F", fontWeight: 700, marginBottom: 12 }}>
                 Maple4K Plans — Available in Calgary
               </p>
-              <ul style={{ color: "#000000", margin: 0, paddingLeft: 20, lineHeight: 2 }}>
+              <ul style={{ color: "#fff", margin: 0, paddingLeft: 20, lineHeight: 2 }}>
                 <li>1 Month — $9</li>
                 <li>3 Months — $29</li>
                 <li>6 Months — $39</li>
@@ -235,7 +235,7 @@ export default function IPTVCalgaryPage() {
 
           {/* FAQ */}
           <div>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, color: "#000000" }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, color: "#fff" }}>
               IPTV Calgary — Frequently Asked Questions
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -243,14 +243,14 @@ export default function IPTVCalgaryPage() {
                 <div
                   key={item.q}
                   style={{
-                    background: "#ffffff",
+                    background: "rgba(255,255,255,0.05)",
                     border: "1px solid rgba(63,154,174,0.1)",
                     borderRadius: 12,
                     padding: "20px 24px",
                   }}
                 >
-                  <p style={{ fontWeight: 700, color: "#000000", marginBottom: 8 }}>{item.q}</p>
-                  <p style={{ color: "#000000", lineHeight: 1.7, margin: 0 }}>{item.a}</p>
+                  <p style={{ fontWeight: 700, color: "#fff", marginBottom: 8 }}>{item.q}</p>
+                  <p style={{ color: "#fff", lineHeight: 1.7, margin: 0 }}>{item.a}</p>
                 </div>
               ))}
             </div>
@@ -260,7 +260,7 @@ export default function IPTVCalgaryPage() {
         {/* CTA */}
         <section
           style={{
-            background: "#1A3D45",
+            background: "rgba(255,255,255,0.05)",
             padding: "60px 16px",
             textAlign: "center",
             borderTop: "1px solid rgba(255,255,255,0.06)",
@@ -269,14 +269,14 @@ export default function IPTVCalgaryPage() {
           <h2 style={{ fontSize: "1.8rem", fontWeight: 800, marginBottom: 16 }}>
             Start Streaming IPTV in Calgary Today
           </h2>
-          <p style={{ color: "#000000", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>
+          <p style={{ color: "#fff", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>
             Plans from $9/month. Free trial available. No contracts, no hidden fees.
           </p>
           <a
             href="/pricing"
             style={{
-              background: "#F96E5B",
-              color: "#000000",
+              background: "#E8041F",
+              color: "#fff",
               padding: "16px 48px",
               borderRadius: 12,
               fontWeight: 700,
@@ -291,19 +291,19 @@ export default function IPTVCalgaryPage() {
         {/* SEO Internal Links */}
         <section style={{ padding: "48px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ textAlign: "center", color: "#000000", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
+            <p style={{ textAlign: "center", color: "#fff", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
-              <a href="/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Toronto</a>
-              <a href="/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
-              <a href="/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Montreal</a>
-              <a href="/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Calgary</a>
-              <a href="/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
-              <a href="/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
+              <a href="/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Toronto</a>
+              <a href="/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
+              <a href="/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Montreal</a>
+              <a href="/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Calgary</a>
+              <a href="/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
+              <a href="/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
             </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
-              <a href="/pricing" style={{ background: "#F96E5B", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
-              <a href="/free-trial" style={{ background: "#3F9AAE", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
-              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>Channel List</a>
+              <a href="/pricing" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+              <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
+              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>Channel List</a>
             </div>
           </div>
         </section>

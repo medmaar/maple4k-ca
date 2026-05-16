@@ -9,7 +9,6 @@ const links = [
   { label: "Channels", href: "/channels-list" },
   { label: "Reviews", href: "/reviews" },
   { label: "Guides", href: "/blog" },
-  { label: "My Account", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -79,9 +78,9 @@ export default function Navbar() {
           aria-label="Toggle menu"
           className="md:hidden flex flex-col justify-center gap-[5px] w-8 h-8 ml-auto"
         >
-          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`} style={{ background: "#fff" }} />
-          <span className={`block h-0.5 rounded transition-opacity duration-300 ${open ? "opacity-0" : ""}`} style={{ background: "#fff" }} />
-          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} style={{ background: "#fff" }} />
+          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`} style={{ background: "rgba(255,255,255,0.05)" }} />
+          <span className={`block h-0.5 rounded transition-opacity duration-300 ${open ? "opacity-0" : ""}`} style={{ background: "rgba(255,255,255,0.05)" }} />
+          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} style={{ background: "rgba(255,255,255,0.05)" }} />
         </button>
       </div>
 

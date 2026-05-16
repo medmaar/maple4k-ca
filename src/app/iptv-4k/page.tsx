@@ -46,26 +46,26 @@ export default function IPTV4KPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000", minHeight: "100vh" }}>
+      <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
         <section style={{ padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#E8041F", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase", letterSpacing: "0.08em" }}>
               IPTV 4K · Canada · Maple4K
             </span>
             <div style={{ textAlign: "center", marginBottom: 8 }}>
-          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(63,154,174,0.25)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(255,255,255,0.1)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
             🗓 Last updated: April 2026
           </span>
         </div>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
-              IPTV 4K Canada — True Ultra HD Streaming <span style={{ color: "#F96E5B" }}>Near You</span>
+              IPTV 4K Canada — True Ultra HD Streaming <span style={{ color: "#E8041F" }}>Near You</span>
             </h1>
-            <p style={{ color: "#000", fontSize: "1.1rem", maxWidth: 680, lineHeight: 1.7, marginBottom: 28 }}>
+            <p style={{ color: "#fff", fontSize: "1.1rem", maxWidth: 680, lineHeight: 1.7, marginBottom: 28 }}>
               Maple4K is Canada&apos;s only IPTV service delivering genuine 4K Ultra HD with H.265/HEVC encoding, HDR10, and Dolby Vision support. If you&apos;ve been searching for IPTV 4K near you, your search ends here. 50,000+ channels + Netflix at the resolution your display was built for — from $9/month.
             </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-              <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Try 4K Free →</a>
-              <a href="/pricing" style={{ border: "2px solid rgba(249,110,91,0.5)", color: "#F96E5B", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+              <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Try 4K Free →</a>
+              <a href="/pricing" style={{ border: "2px solid rgba(249,110,91,0.5)", color: "#E8041F", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
             </div>
           </div>
         </section>
@@ -79,7 +79,7 @@ export default function IPTV4KPage() {
               { icon: "🌈", title: "HDR10 & Dolby Vision", desc: "Full HDR support where broadcast sources provide it. Compatible with every HDR-capable TV, projector, or monitor." },
               { icon: "📍", title: "4K IPTV Near You", desc: "Servers optimized for every Canadian city. Low-latency 4K delivery whether you're in Toronto, Vancouver, Calgary, or a rural location." },
             ].map(f => (
-              <div key={f.title} style={{ background: "#fff", borderRadius: 14, padding: 24, border: "1px solid rgba(63,154,174,0.15)" }}>
+              <div key={f.title} style={{ background: "#fff", borderRadius: 14, padding: 24, border: "1px solid rgba(255,255,255,0.08)" }}>
                 <div style={{ fontSize: 28, marginBottom: 10 }}>{f.icon}</div>
                 <p style={{ fontWeight: 700, marginBottom: 8 }}>{f.title}</p>
                 <p style={{ color: "#333", lineHeight: 1.7, fontSize: 14 }}>{f.desc}</p>
@@ -91,7 +91,7 @@ export default function IPTV4KPage() {
             <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>4K IPTV Near Me — What Speed Do I Need?</h2>
             <p style={{ lineHeight: 1.8, marginBottom: 16 }}>For stable 4K IPTV streams in Canada, Maple4K recommends a minimum of <strong>25 Mbps</strong> for a single 4K stream. Most Canadian fibre and cable plans at 75 Mbps+ run 2–3 simultaneous 4K streams with zero buffering.</p>
             <div style={{ background: "rgba(249,110,91,0.08)", border: "1px solid rgba(249,110,91,0.25)", borderRadius: 12, padding: 20 }}>
-              <p style={{ fontWeight: 700, color: "#F96E5B", marginBottom: 12 }}>Recommended Internet Speeds for 4K IPTV</p>
+              <p style={{ fontWeight: 700, color: "#E8041F", marginBottom: 12 }}>Recommended Internet Speeds for 4K IPTV</p>
               <ul style={{ paddingLeft: 20, lineHeight: 2.2, fontSize: 14 }}>
                 <li><strong>25 Mbps</strong> — Single 4K stream (H.265/HEVC)</li>
                 <li><strong>50 Mbps</strong> — Two simultaneous 4K streams</li>
@@ -111,10 +111,10 @@ export default function IPTV4KPage() {
           </div>
         </section>
 
-        <section style={{ background: "#1A3D45", padding: "60px 16px", textAlign: "center" }}>
+        <section style={{ background: "rgba(255,255,255,0.05)", padding: "60px 16px", textAlign: "center" }}>
           <h2 style={{ fontSize: "1.8rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>Stream IPTV in 4K — Free Trial Available</h2>
           <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>No credit card. Full 4K access for 24 hours. Plans from $9/month.</p>
-          <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "16px 48px", borderRadius: 12, fontWeight: 700, textDecoration: "none" }}>Try 4K IPTV Free →</a>
+          <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "16px 48px", borderRadius: 12, fontWeight: 700, textDecoration: "none" }}>Try 4K IPTV Free →</a>
         </section>
       </main>
     </>

@@ -75,12 +75,12 @@ export default function IPTVAndroidTVCanadaPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+      <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
 
         {/* Hero */}
         <section
           style={{
-            background: "#1A3D45",
+            background: "rgba(255,255,255,0.05)",
             padding: "80px 16px 60px",
           }}
         >
@@ -89,7 +89,7 @@ export default function IPTVAndroidTVCanadaPage() {
               style={{
                 background: "rgba(249,110,91,0.18)",
                 border: "1px solid rgba(249,110,91,0.4)",
-                color: "#F96E5B",
+                color: "#E8041F",
                 fontSize: 11,
                 fontWeight: 700,
                 padding: "5px 16px",
@@ -111,7 +111,7 @@ export default function IPTVAndroidTVCanadaPage() {
               }}
             >
               Best IPTV for{" "}
-              <span style={{ color: "#F96E5B" }}>Android TV in Canada 2026</span>
+              <span style={{ color: "#E8041F" }}>Android TV in Canada 2026</span>
             </h1>
             <p
               style={{
@@ -131,7 +131,7 @@ export default function IPTVAndroidTVCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#F96E5B",
+                  background: "#E8041F",
                   color: "#ffffff",
                   padding: "16px 40px",
                   borderRadius: 12,
@@ -147,7 +147,7 @@ export default function IPTVAndroidTVCanadaPage() {
                 href="/free-trial"
                 style={{
                   border: "2px solid #F96E5B",
-                  color: "#F96E5B",
+                  color: "#E8041F",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -184,7 +184,7 @@ export default function IPTVAndroidTVCanadaPage() {
                   style={{
                     background: "#1a1a1a",
                     border: "1px solid #2a2a2a",
-                    color: "#000000",
+                    color: "#fff",
                     padding: "6px 16px",
                     borderRadius: 999,
                     fontSize: "0.85rem",
@@ -201,11 +201,11 @@ export default function IPTVAndroidTVCanadaPage() {
         <section style={{ padding: "60px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
             >
               Why Maple4K Is the Best IPTV for Android TV
             </h2>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 28 }}>
+            <p style={{ color: "#fff", lineHeight: 1.75, marginBottom: 28 }}>
               Android TV offers unmatched flexibility for Maple4K. Unlike closed platforms,
               Android TV lets you choose your preferred player, customize your EPG, and
               sideload apps freely. Maple4K is built to harness that flexibility fully.
@@ -245,11 +245,11 @@ export default function IPTVAndroidTVCanadaPage() {
                   }}
                 >
                   <strong
-                    style={{ color: "#000000", display: "block", marginBottom: 8 }}
+                    style={{ color: "#fff", display: "block", marginBottom: 8 }}
                   >
                     {f.title}
                   </strong>
-                  <span style={{ color: "#000000", fontSize: "0.9rem", lineHeight: 1.65 }}>
+                  <span style={{ color: "#fff", fontSize: "0.9rem", lineHeight: 1.65 }}>
                     {f.desc}
                   </span>
                 </div>
@@ -262,11 +262,11 @@ export default function IPTVAndroidTVCanadaPage() {
         <section style={{ padding: "60px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 8 }}
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 8 }}
             >
               How to Set Up IPTV on Android TV in Canada
             </h2>
-            <p style={{ color: "#000000", marginBottom: 36 }}>
+            <p style={{ color: "#fff", marginBottom: 36 }}>
               Four easy steps — streaming in under 5 minutes.
             </p>
             <ol
@@ -294,8 +294,8 @@ export default function IPTVAndroidTVCanadaPage() {
                 >
                   <span
                     style={{
-                      background: "#F96E5B",
-                      color: "#000000",
+                      background: "#E8041F",
+                      color: "#fff",
                       fontWeight: 800,
                       fontSize: "1rem",
                       borderRadius: "50%",
@@ -312,7 +312,7 @@ export default function IPTVAndroidTVCanadaPage() {
                   <div>
                     <strong
                       style={{
-                        color: "#000000",
+                        color: "#fff",
                         fontSize: "1rem",
                         display: "block",
                         marginBottom: 6,
@@ -321,7 +321,7 @@ export default function IPTVAndroidTVCanadaPage() {
                       {s.title}
                     </strong>
                     <span
-                      style={{ color: "#000000", fontSize: "0.92rem", lineHeight: 1.65 }}
+                      style={{ color: "#fff", fontSize: "0.92rem", lineHeight: 1.65 }}
                     >
                       {s.desc}
                     </span>
@@ -336,17 +336,17 @@ export default function IPTVAndroidTVCanadaPage() {
         <section style={{ padding: "60px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
             >
               Canadian Channels on Your Android TV
             </h2>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 16 }}>
+            <p style={{ color: "#fff", lineHeight: 1.75, marginBottom: 16 }}>
               Maple4K gives your Android TV full access to Canada's biggest channels.
               Watch every NHL game live on TSN and Sportsnet with our sports-optimized low-delay
               streams. Stay informed with CBC News Network and CTV News. Enjoy primetime
               entertainment on Global, City TV, and specialty channels across every genre.
             </p>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 24 }}>
+            <p style={{ color: "#fff", lineHeight: 1.75, marginBottom: 24 }}>
               Your subscription also unlocks 50,000+ international channels — US networks like
               ESPN, Fox, ABC, and NBC; UK channels including Sky Sports and BBC; plus
               French-Canadian channels like RDS and TVA Sports, all in one Android TV app.
@@ -369,9 +369,9 @@ export default function IPTVAndroidTVCanadaPage() {
                 <span
                   key={ch}
                   style={{
-                    background: "#1A3D45",
+                    background: "rgba(255,255,255,0.05)",
                     border: "1px solid #3a1010",
-                    color: "#000000",
+                    color: "#fff",
                     padding: "6px 16px",
                     borderRadius: 999,
                     fontSize: "0.85rem",
@@ -389,7 +389,7 @@ export default function IPTVAndroidTVCanadaPage() {
         <section style={{ padding: "60px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
             >
               Android TV IPTV Plans — Canadian Pricing
             </h2>
@@ -417,10 +417,10 @@ export default function IPTVAndroidTVCanadaPage() {
                     textAlign: "center",
                   }}
                 >
-                  <div style={{ color: "#000000", fontSize: "0.9rem", marginBottom: 8 }}>
+                  <div style={{ color: "#fff", fontSize: "0.9rem", marginBottom: 8 }}>
                     {plan.period}
                   </div>
-                  <div style={{ color: "#F96E5B", fontSize: "1.6rem", fontWeight: 800 }}>
+                  <div style={{ color: "#E8041F", fontSize: "1.6rem", fontWeight: 800 }}>
                     {plan.price}
                   </div>
                 </div>
@@ -430,8 +430,8 @@ export default function IPTVAndroidTVCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#F96E5B",
-                  color: "#000000",
+                  background: "#E8041F",
+                  color: "#fff",
                   padding: "14px 36px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -447,20 +447,20 @@ export default function IPTVAndroidTVCanadaPage() {
 
         {/* CTA */}
         <section
-          style={{ background: "#1A3D45", padding: "60px 16px", textAlign: "center" }}
+          style={{ background: "rgba(255,255,255,0.05)", padding: "60px 16px", textAlign: "center" }}
         >
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
             <h2 style={{ fontSize: "2rem", fontWeight: 800, marginBottom: 12 }}>
               Start Streaming IPTV on Android TV Today
             </h2>
             <p
-              style={{ color: "#000000", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
+              style={{ color: "#fff", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
             >
               Try Maple4K free for 24 hours — no credit card required. Need help? Contact
               us at{" "}
               <a
                 href="mailto:help@maple4k.ca"
-                style={{ color: "#F96E5B", textDecoration: "none" }}
+                style={{ color: "#E8041F", textDecoration: "none" }}
               >
                 help@maple4k.ca
               </a>
@@ -472,7 +472,7 @@ export default function IPTVAndroidTVCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#F96E5B",
+                  background: "#E8041F",
                   color: "#ffffff",
                   padding: "16px 40px",
                   borderRadius: 12,
@@ -487,7 +487,7 @@ export default function IPTVAndroidTVCanadaPage() {
                 href="/free-trial"
                 style={{
                   border: "2px solid #F96E5B",
-                  color: "#F96E5B",
+                  color: "#E8041F",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -504,19 +504,19 @@ export default function IPTVAndroidTVCanadaPage() {
         {/* SEO Internal Links */}
         <section style={{ padding: "48px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ textAlign: "center", color: "#000000", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
+            <p style={{ textAlign: "center", color: "#fff", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
-              <a href="/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Toronto</a>
-              <a href="/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
-              <a href="/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Montreal</a>
-              <a href="/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Calgary</a>
-              <a href="/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
-              <a href="/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
+              <a href="/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Toronto</a>
+              <a href="/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
+              <a href="/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Montreal</a>
+              <a href="/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Calgary</a>
+              <a href="/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
+              <a href="/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
             </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
-              <a href="/pricing" style={{ background: "#F96E5B", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
-              <a href="/free-trial" style={{ background: "#3F9AAE", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
-              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>Channel List</a>
+              <a href="/pricing" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+              <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
+              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>Channel List</a>
             </div>
           </div>
         </section>

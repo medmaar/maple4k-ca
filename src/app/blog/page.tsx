@@ -56,11 +56,11 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+    <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
       <section style={{ padding: "48px 16px 32px" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
-          <div style={{ background: "#1A3D45", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", textAlign: "center" }}>
-            <span style={{ display: "inline-block", background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, marginBottom: 20 }}>
+          <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", textAlign: "center" }}>
+            <span style={{ display: "inline-block", background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#E8041F", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, marginBottom: 20 }}>
               Maple4K Blog
             </span>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 16 }}>
@@ -83,7 +83,7 @@ export default function BlogPage() {
             >
               <article
                 style={{
-                  background: "#ffffff",
+                  background: "rgba(255,255,255,0.05)",
                   border: "1px solid rgba(255,255,255,0.08)",
                   borderRadius: 20,
                   padding: "28px 24px",
@@ -93,18 +93,18 @@ export default function BlogPage() {
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-                  <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.25)", color: "#F96E5B", fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999 }}>
+                  <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.25)", color: "#E8041F", fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999 }}>
                     {post.tag}
                   </span>
-                  <span style={{ color: "#000000", fontSize: 12 }}>{post.readTime}</span>
+                  <span style={{ color: "#fff", fontSize: 12 }}>{post.readTime}</span>
                 </div>
-                <h2 style={{ fontWeight: 800, fontSize: 18, lineHeight: 1.4, color: "#000000", marginBottom: 12 }}>
+                <h2 style={{ fontWeight: 800, fontSize: 18, lineHeight: 1.4, color: "#fff", marginBottom: 12 }}>
                   {post.title}
                 </h2>
-                <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.7, marginBottom: 16 }}>
+                <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.7, marginBottom: 16 }}>
                   {post.excerpt}
                 </p>
-                <time dateTime={post.date} style={{ color: "#000000", fontSize: 12 }}>
+                <time dateTime={post.date} style={{ color: "#fff", fontSize: 12 }}>
                   {new Date(post.date).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" })}
                 </time>
               </article>

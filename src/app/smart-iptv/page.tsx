@@ -28,24 +28,24 @@ const faqSchema = {
 
 export default function SmartIPTVPage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000", minHeight: "100vh" }}>
+    <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
       <section style={{ padding: "80px 16px 60px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
-          <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase" }}>Smart IPTV · Canada · Maple4K</span>
+          <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#E8041F", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase" }}>Smart IPTV · Canada · Maple4K</span>
           <div style={{ textAlign: "center", marginBottom: 8 }}>
-          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(63,154,174,0.25)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+          <span style={{ background: "rgba(63,154,174,0.12)", border: "1px solid rgba(255,255,255,0.1)", color: "#3F9AAE", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
             🗓 Last updated: April 2026
           </span>
         </div>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
-            Smart IPTV Canada — Stream on <span style={{ color: "#F96E5B" }}>Any Smart TV</span>
+            Smart IPTV Canada — Stream on <span style={{ color: "#E8041F" }}>Any Smart TV</span>
           </h1>
           <p style={{ fontSize: "1.1rem", lineHeight: 1.7, maxWidth: 680, marginBottom: 28 }}>
             Maple4K is Canada&apos;s best Smart IPTV service, fully compatible with Samsung, LG, Sony, Philips, and all Android TV smart TVs. No external device required on most Smart TVs — download the app and you&apos;re streaming 4K in minutes.
           </p>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-            <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Try on Your Smart TV →</a>
-            <a href="/pricing" style={{ border: "2px solid rgba(249,110,91,0.5)", color: "#F96E5B", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+            <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Try on Your Smart TV →</a>
+            <a href="/pricing" style={{ border: "2px solid rgba(249,110,91,0.5)", color: "#E8041F", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
           </div>
         </div>
       </section>
@@ -61,17 +61,17 @@ export default function SmartIPTVPage() {
             { brand: "Amazon Fire TV", app: "TiviMate / IPTV Smarters", note: "Fire OS" },
             { brand: "Microsoft Edge Browser", app: "Web-based IPTV player", note: "Windows / Mac / Android" },
           ].map(tv => (
-            <div key={tv.brand} style={{ background: "#fff", borderRadius: 14, padding: 20, border: "1px solid rgba(63,154,174,0.15)" }}>
+            <div key={tv.brand} style={{ background: "#fff", borderRadius: 14, padding: 20, border: "1px solid rgba(255,255,255,0.08)" }}>
               <p style={{ fontWeight: 700, fontSize: 15, marginBottom: 6 }}>📺 {tv.brand}</p>
               <p style={{ color: "#3F9AAE", fontSize: 13, fontWeight: 600, marginBottom: 4 }}>App: {tv.app}</p>
               <p style={{ color: "#666", fontSize: 12 }}>{tv.note}</p>
             </div>
           ))}
         </div>
-        <div style={{ background: "#1A3D45", borderRadius: 16, padding: 32, textAlign: "center" }}>
+        <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 16, padding: 32, textAlign: "center" }}>
           <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Start Smart IPTV on Your TV Today</h2>
           <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 24 }}>Free 24-hour trial. No credit card. Full 4K Smart IPTV access.</p>
-          <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Get Smart IPTV Free →</a>
+          <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Get Smart IPTV Free →</a>
         </div>
       </section>
 
@@ -108,10 +108,10 @@ export default function SmartIPTVPage() {
           For the smoothest Smart IPTV experience in Canada, Android TV models from Sony, Philips, and Hisense lead the pack — they support TiviMate natively, have hardware H.265 4K decoding, and receive regular software updates. Samsung Tizen TVs from 2020 onwards support IPTV Smarters Pro with excellent performance. LG webOS TVs from 2019 onwards work well with Smart IPTV and IPTV Smarters. Older Smart TVs (pre-2018) may struggle with 4K H.265 decoding — we recommend pairing them with a Fire Stick 4K Max or Formuler box for the best results.
         </p>
 
-        <div style={{ background: "#1A3D45", borderRadius: 16, padding: 32, textAlign: "center" }}>
+        <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 16, padding: 32, textAlign: "center" }}>
           <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Try Maple4K Smart IPTV on Your TV — Free</h2>
           <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, lineHeight: 1.7 }}>24-hour free trial, no credit card. Works on every Smart TV brand sold in Canada. Setup assistance included.</p>
-          <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Smart IPTV Free →</a>
+          <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Smart IPTV Free →</a>
         </div>
       </section>
 
