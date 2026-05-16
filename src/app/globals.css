@@ -167,3 +167,24 @@ nav { animation: fadeSlideUp 0.5s cubic-bezier(0.22,1,0.36,1) both; }
 }
 .phone-input-wrapper .PhoneInputInput::placeholder { color: rgba(255,255,255,0.35); }
 .phone-input-wrapper .PhoneInputInput:focus { border-color: var(--red); }
+
+/* ── REVIEWS DARK WRAPPER overrides ── */
+.reviews-dark-wrap { padding: 80px 16px 40px; }
+.reviews-dark-wrap h2 { color: #fff !important; }
+.reviews-dark-wrap p[style*="color: #000"], 
+.reviews-dark-wrap p[style*="color:#000"] { color: rgba(255,255,255,0.6) !important; }
+/* Trustpilot / WhatsApp / Google cards stay white — they look great as floating cards */
+
+/* ── PROGRESS DOTS dark override ── */
+.reviews-dark-wrap button[style*="rgba(63,154,174"] {
+  background: rgba(255,255,255,0.15) !important;
+}
+
+/* ── PRICING HOVER ── */
+.pricing-hover:hover { transform: translateY(-4px) !important; }
+.pricing-hover.featured:hover { transform: scale(1.03) translateY(-4px) !important; }
+
+/* ── SECTION RESPONSIVE ── */
+@media (max-width: 768px) {
+  .ma-left, .ma-right { opacity: 1 !important; transform: none !important; }
+}

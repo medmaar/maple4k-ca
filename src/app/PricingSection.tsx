@@ -17,22 +17,16 @@ const plans = [
 const durations = ["1 Month", "3 Months", "6 Months", "1 Year"] as const;
 type Duration = typeof durations[number];
 
-// Same colors as HomePricing cards
-const cardColors: Record<Duration, { bg: string; isLight: boolean; shadow: string }> = {
-  "1 Month":  { bg: "#ffffff",  isLight: true,  shadow: "0 8px 24px rgba(63,154,174,0.15)" },
-  "3 Months": { bg: "#2d6a78",  isLight: false, shadow: "0 8px 24px rgba(45,106,120,0.3)" },
-  "6 Months": { bg: "#3F9AAE",  isLight: false, shadow: "0 12px 40px rgba(63,154,174,0.45)" },
-  "1 Year":   { bg: "#F96E5B",  isLight: false, shadow: "0 12px 40px rgba(249,110,91,0.45)" },
+const cardStyle: Record<Duration, { bg: string; accent: string; border: string; featured: boolean }> = {
+  "1 Month":  { bg: "rgba(255,255,255,0.04)", accent: "#fff",    border: "rgba(255,255,255,0.1)",  featured: false },
+  "3 Months": { bg: "rgba(255,255,255,0.06)", accent: "#79C9C5", border: "rgba(121,201,197,0.25)", featured: false },
+  "6 Months": { bg: "rgba(232,4,31,0.08)",   accent: "#E8041F", border: "rgba(232,4,31,0.4)",     featured: true  },
+  "1 Year":   { bg: "rgba(232,4,31,0.12)",   accent: "#E8041F", border: "rgba(232,4,31,0.6)",     featured: true  },
 };
 
 const badgeLabels: Partial<Record<Duration, string>> = {
   "6 Months": "Popular",
-  "1 Year":   "Best Value",
-};
-
-const badgeBg: Partial<Record<Duration, string>> = {
-  "6 Months": "#F96E5B",
-  "1 Year":   "#1A3D45",
+  "1 Year":   "Best Value ⭐",
 };
 
 const durationSlug: Record<Duration, string> = {
@@ -68,7 +62,7 @@ const features = [
 
 export default function PricingSection() {
   const [activeDevices, setActiveDevices] = useState(1);
-  const plan = plans.find((p) => p.devices === activeDevices)!;
+  const plan = plans.find(p => p.devices === activeDevices)!;
   const scrollRef = useRef<HTMLDivElement>(null);
 
   function handleSelect(n: number) {
@@ -84,38 +78,31 @@ export default function PricingSection() {
   return (
     <section id="pricing-section" style={{ padding: "0 16px 60px" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        {/* Header */}
-        <p style={{ textAlign: "center", color: "#C03D28", fontWeight: 700, fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 10 }}>
-          PRICING PLANS
-        </p>
-        <h2 style={{ textAlign: "center", fontSize: "clamp(1.6rem,4vw,2.2rem)", fontWeight: 900, color: "#000000", marginBottom: 10 }}>
-          Simple, Transparent Pricing
-        </h2>
-        <div style={{ textAlign: "center", marginBottom: 10 }}>
-          <span style={{ display: "inline-block", background: "#F96E5B", color: "#fff", fontSize: 13, fontWeight: 700, padding: "5px 18px", borderRadius: 999 }}>
+
+        {/* Badge */}
+        <div style={{ textAlign: "center", marginBottom: 24 }}>
+          <span style={{ display: "inline-block", background: "#E8041F", color: "#fff", fontSize: 13, fontWeight: 700, padding: "6px 20px", borderRadius: 999 }}>
             50% OFF Today!
           </span>
         </div>
-        <p style={{ textAlign: "center", color: "#000000", marginBottom: 32, fontSize: 15 }}>
-          No contracts. No hidden fees. Instant activation after you order.
-        </p>
 
         {/* Connection selector */}
         <div
           ref={scrollRef}
           style={{
             overflowX: "auto",
-            overflowY: "visible",
             WebkitOverflowScrolling: "touch",
             display: "flex",
             gap: 8,
-            marginBottom: 36,
+            marginBottom: 40,
             paddingBottom: 10,
             paddingTop: 6,
             scrollbarWidth: "none",
+            justifyContent: "center",
+            flexWrap: "wrap",
           } as React.CSSProperties}
         >
-          {plans.map((p) => {
+          {plans.map(p => {
             const active = activeDevices === p.devices;
             return (
               <button
@@ -126,18 +113,18 @@ export default function PricingSection() {
                 aria-pressed={active}
                 style={{
                   flexShrink: 0,
-                  padding: "8px 18px",
+                  padding: "9px 20px",
                   borderRadius: 999,
-                  border: active ? "none" : "1.5px solid #1A3D45",
-                  background: active ? "#1A3D45" : "transparent",
-                  color: active ? "#E8F4F5" : "#1A3D45",
+                  border: active ? "none" : "1.5px solid rgba(255,255,255,0.15)",
+                  background: active ? "#E8041F" : "rgba(255,255,255,0.04)",
+                  color: active ? "#fff" : "rgba(255,255,255,0.5)",
                   fontWeight: 700,
                   fontSize: 13,
                   cursor: "pointer",
-                  opacity: active ? 1 : 0.5,
                   transition: "all .2s",
                   whiteSpace: "nowrap",
                   fontFamily: "inherit",
+                  boxShadow: active ? "0 4px 16px rgba(232,4,31,0.4)" : "none",
                 }}
               >
                 {p.devices} Connection{p.devices > 1 ? "s" : ""}
@@ -147,52 +134,55 @@ export default function PricingSection() {
         </div>
 
         {/* Price cards */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
-          {durations.map((dur) => {
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))", gap: 20, alignItems: "start" }}>
+          {durations.map((dur, i) => {
             const price = plan.prices[dur];
             const badge = badgeLabels[dur];
-            const { bg, isLight, shadow } = cardColors[dur];
+            const { bg, accent, border, featured } = cardStyle[dur];
             const isYear = dur === "1 Year";
             return (
               <div
                 key={dur}
                 style={{
                   background: bg,
-                  border: isLight ? "2px solid rgba(63,154,174,0.3)" : "none",
+                  border: `1px solid ${border}`,
                   borderRadius: 20,
                   padding: "32px 24px",
                   position: "relative",
                   display: "flex",
                   flexDirection: "column",
-                  boxShadow: shadow,
+                  transform: featured ? "scale(1.03)" : "none",
+                  boxShadow: featured ? "0 12px 40px rgba(232,4,31,0.2)" : "none",
+                  transition: "all 0.35s ease",
                 }}
+                className="pricing-hover"
               >
                 {badge && (
                   <span style={{
-                    position: "absolute", top: -13, left: "50%",
+                    position: "absolute", top: -14, left: "50%",
                     transform: "translateX(-50%)",
-                    background: badgeBg[dur], color: "#fff",
+                    background: "#E8041F", color: "#fff",
                     fontSize: 11, fontWeight: 800,
-                    padding: "4px 14px", borderRadius: 999, whiteSpace: "nowrap",
+                    padding: "5px 16px", borderRadius: 999, whiteSpace: "nowrap",
                   }}>
                     {badge}
                   </span>
                 )}
-                <p style={{ fontSize: 16, fontWeight: 700, color: isLight ? "#1A3D45" : "#fff", marginBottom: 6 }}>{dur}</p>
-                <div style={{ display: "flex", alignItems: "baseline", gap: 8, margin: "4px 0 16px" }}>
-                  <span style={{ fontSize: "clamp(2rem,5vw,2.6rem)", fontWeight: 900, color: isLight ? "#C03D28" : "#E8F4F5" }}>${price}</span>
-                  <span style={{ fontSize: 12, color: isLight ? "#156B7A" : "rgba(255,255,255,0.65)" }}>/ {connLabel}</span>
+                <p style={{ fontSize: 15, fontWeight: 700, color: "#fff", margin: "0 0 6px" }}>{dur}</p>
+                <div style={{ display: "flex", alignItems: "baseline", gap: 6, margin: "4px 0 16px" }}>
+                  <span style={{ fontSize: "clamp(2rem,5vw,2.6rem)", fontWeight: 900, color: accent }}>${price}</span>
+                  <span style={{ fontSize: 12, color: "rgba(255,255,255,0.45)" }}>/ {connLabel}</span>
                 </div>
                 <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
                   {isYear && (
-                    <li style={{ marginBottom: 10, display: "flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.3)", borderRadius: 8, padding: "7px 10px" }}>
+                    <li style={{ marginBottom: 10, display: "flex", alignItems: "center", gap: 8, background: "rgba(232,4,31,0.15)", border: "1px solid rgba(232,4,31,0.3)", borderRadius: 8, padding: "7px 10px" }}>
                       <span style={{ flexShrink: 0, fontSize: 14 }}>⭐</span>
                       <span style={{ fontSize: 13, color: "#fff", fontWeight: 600, lineHeight: 1.3 }}>IBO Player Subscription for Free</span>
                     </li>
                   )}
-                  {features.map((f) => (
-                    <li key={f} style={{ fontSize: 13, color: isLight ? "#1A3D45" : "rgba(255,255,255,0.9)", marginBottom: 6, display: "flex", alignItems: "center", gap: 8 }}>
-                      <span style={{ color: isLight ? "#156B7A" : "#E8F4F5", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                  {features.map(f => (
+                    <li key={f} style={{ fontSize: 13, color: "rgba(255,255,255,0.8)", marginBottom: 8, display: "flex", alignItems: "center", gap: 8 }}>
+                      <span style={{ color: accent, fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                     </li>
                   ))}
                 </ul>
@@ -200,11 +190,14 @@ export default function PricingSection() {
                   href={orderHref(activeDevices, dur)}
                   style={{
                     display: "block", textAlign: "center",
-                    padding: "13px 0", borderRadius: 12,
-                    background: isLight ? "#1A3D45" : "#E8F4F5",
-                    color: isLight ? "#fff" : bg,
+                    padding: "14px 0", borderRadius: 12,
+                    background: featured ? "#E8041F" : "rgba(255,255,255,0.08)",
+                    border: featured ? "none" : "1px solid rgba(255,255,255,0.15)",
+                    color: "#fff",
                     fontWeight: 800, fontSize: 14,
                     textDecoration: "none",
+                    boxShadow: featured ? "0 4px 20px rgba(232,4,31,0.4)" : "none",
+                    transition: "all 0.25s ease",
                   }}
                 >
                   Get Started →
@@ -214,8 +207,8 @@ export default function PricingSection() {
           })}
         </div>
 
-        <p style={{ textAlign: "center", color: "#000000", fontSize: 12, marginTop: 24, opacity: 0.6 }}>
-          All plans include the same channels, VOD library, and features. Longer plans = lower monthly cost.
+        <p style={{ textAlign: "center", color: "rgba(255,255,255,0.3)", fontSize: 12, marginTop: 28 }}>
+          No contracts · No hidden fees · Instant activation · All plans include same channels &amp; VOD library
         </p>
       </div>
     </section>
