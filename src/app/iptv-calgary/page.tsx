@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Calgary | Maple4K – Best 4K IPTV Canada" },
   description:
-    "Maple4K is Calgary's best IPTV service. Stream Flames, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
+    "Maple4K is Calgary's best IPTV service. Stream Flames, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9. Free trial available.",
   keywords:
     "IPTV Calgary, best IPTV Calgary, IPTV service Calgary, Maple4K Calgary, IPTV Canada Calgary, IPTV Alberta",
   alternates: { canonical: "https://maple4k.ca/iptv-calgary" },
   openGraph: {
     title: "IPTV Calgary | Maple4K – Best 4K IPTV Canada",
     description:
-      "Maple4K is Calgary's best IPTV service. Stream Flames, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",
+      "Maple4K is Calgary's best IPTV service. Stream Flames, TSN, Sportsnet and 50,000+ channels + Netflix in 4K. Plans from $9.",
     url: "https://maple4k.ca/iptv-calgary",
     type: "website",
     siteName: "Maple4K",
@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     q: "What is the best IPTV service in Calgary?",
-    a: "Maple4K is the best IPTV service in Calgary, offering 25,000+ live channels including all local Alberta channels (CBC Calgary, CTV Calgary, Global Calgary, Sportsnet West), complete NHL Calgary Flames coverage on Sportsnet, and 120,000+ on-demand titles — starting at $9/month.",
+    a: "Maple4K is the best IPTV service in Calgary, offering 50,000+ channels + Netflix including all local Alberta channels (CBC Calgary, CTV Calgary, Global Calgary, Sportsnet West), complete NHL Calgary Flames coverage on Sportsnet, and 120,000+ on-demand titles — starting at $9/month.",
   },
   {
     q: "Does Maple4K work in Calgary?",
@@ -96,7 +96,7 @@ export default function IPTVCalgaryPage() {
               }}
             >
               Calgary is one of Canada&apos;s fastest-growing cities with excellent internet
-              infrastructure. Maple4K serves thousands of Calgary subscribers with 25,000+
+              infrastructure. Maple4K serves thousands of Calgary subscribers with 50,000+
               live channels, NHL Flames coverage, and 120,000+ on-demand titles.
               The best IPTV Calgary has to offer, starting at just $9/month.
             </p>
@@ -145,7 +145,7 @@ export default function IPTVCalgaryPage() {
               get every game live on Sportsnet and TSN — no blackouts, no extra fees.
             </p>
             <p style={{ color: "#000000", lineHeight: 1.8 }}>
-              Calgary IPTV subscribers also get 25,000+ international channels, 120,000+ movies
+              Calgary IPTV subscribers also get 50,000+ international channels, 120,000+ movies
               and series on demand, 7-day catch-up TV, and a full EPG. Maple4K works on every
               device — Firestick, Smart TV, Android, iPhone, and more — with instant activation
               within minutes of placing your order.
@@ -171,7 +171,7 @@ export default function IPTVCalgaryPage() {
                 },
                 {
                   icon: "📺",
-                  title: "25,000+ Live Channels",
+                  title: "50,000+ Channels + Netflix",
                   desc: "Sports, news, entertainment, lifestyle, and international content — one Maple4K subscription covers every screen in your Calgary home.",
                 },
                 {

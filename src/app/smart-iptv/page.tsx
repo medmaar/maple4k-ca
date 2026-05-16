@@ -22,7 +22,7 @@ const faqSchema = {
   "mainEntity": [
     {"@type":"Question","name":"What is Smart IPTV and how does it work?","acceptedAnswer":{"@type":"Answer","text":"Smart IPTV refers to streaming IPTV directly on a Smart TV without an external device. Samsung, LG, Sony, and Android TV Smart TVs can run IPTV apps like IPTV Smarters Pro natively. Maple4K supports all Smart TV brands."}},
     {"@type":"Question","name":"Does Maple4K work on Samsung Smart TV?","acceptedAnswer":{"@type":"Answer","text":"Yes — Maple4K works on Samsung Smart TVs via IPTV Smarters Pro or the Smart IPTV app from the Samsung App Store. Supports all Samsung Tizen models from 2017 onwards."}},
-    {"@type":"Question","name":"Does Maple4K work on LG Smart TV?","acceptedAnswer":{"@type":"Answer","text":"Yes — Maple4K works on all LG webOS Smart TVs. Download Smart IPTV or IPTV Smarters from the LG Content Store, enter your Maple4K credentials, and stream all 25,000+ channels."}}
+    {"@type":"Question","name":"Does Maple4K work on LG Smart TV?","acceptedAnswer":{"@type":"Answer","text":"Yes — Maple4K works on all LG webOS Smart TVs. Download Smart IPTV or IPTV Smarters from the LG Content Store, enter your Maple4K credentials, and stream all 50,000+ channels + Netflix."}}
   ]
 };
 
@@ -94,7 +94,7 @@ export default function SmartIPTVPage() {
 
         <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Smart IPTV vs Cable on Smart TV: A Direct Comparison</h2>
         <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
-          When Bell or Rogers provides TV service, they either ship a dedicated cable box that connects to your TV, or offer a Smart TV app of their own. Both options lock you into a subscription of $90–$130/month with a 2-year contract. With Maple4K Smart IPTV, you use the TV you already own, pay $9–$49/year total, and get 25,000+ channels instead of 250–350. The picture quality on 4K channels is often superior because Maple4K delivers true 4K H.265 rather than the compressed MPEG-2 or H.264 most cable providers use.
+          When Bell or Rogers provides TV service, they either ship a dedicated cable box that connects to your TV, or offer a Smart TV app of their own. Both options lock you into a subscription of $90–$130/month with a 2-year contract. With Maple4K Smart IPTV, you use the TV you already own, pay $9–$49/year total, and get 50,000+ channels + Netflix instead of 250–350. The picture quality on 4K channels is often superior because Maple4K delivers true 4K H.265 rather than the compressed MPEG-2 or H.264 most cable providers use.
         </p>
         <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
           Beyond price and quality, Smart IPTV on Maple4K gives you access to international content unavailable on any Canadian cable package — Arabic, South Asian, Portuguese, Italian, and hundreds of other language channel groups. Canadian expats and immigrant families consistently rate this as one of Maple4K&apos;s strongest advantages.

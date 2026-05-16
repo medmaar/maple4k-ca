@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "IPTV MAG Box Canada – Setup & Best Plans 2026 | Maple4K",
   description:
-    "Set up Maple4K IPTV on your MAG Box in Canada. Full portal URL setup guide. 25,000+ live channels, NHL, TSN in 4K. Plans from $9/month.",
+    "Set up Maple4K IPTV on your MAG Box in Canada. Full portal URL setup guide. 50,000+ channels + Netflix, NHL, TSN in 4K. Plans from $9/month.",
   keywords: "IPTV MAG Box Canada, MAG 322 Maple4K, MAG Box setup Canada 2026",
   alternates: { canonical: "https://maple4k.ca/iptv-mag-box-canada" },
   openGraph: {
     title: "IPTV MAG Box Canada – Setup & Best Plans 2026 | Maple4K",
-    description: "Set up Maple4K IPTV on your MAG Box in Canada. Full portal URL setup guide. 25,000+ live channels, NHL, TSN in 4K. Plans from $9/month.",
+    description: "Set up Maple4K IPTV on your MAG Box in Canada. Full portal URL setup guide. 50,000+ channels + Netflix, NHL, TSN in 4K. Plans from $9/month.",
     url: "https://maple4k.ca/iptv-mag-box-canada",
     type: "website",
     siteName: "Maple4K",
@@ -28,7 +28,7 @@ const howToSchema = {
     { "@type": "HowToStep", name: "Boot your MAG Box", text: "Power on your MAG 322, 324, 351, or 410 box and wait for the home screen to load." },
     { "@type": "HowToStep", name: "Open Settings", text: "Navigate to System Settings > Servers > Portals in the MAG Box menu." },
     { "@type": "HowToStep", name: "Enter Portal URL", text: "Enter the Maple4K portal URL we send to your email after subscribing. Save and reboot." },
-    { "@type": "HowToStep", name: "Start streaming", text: "Your MAG Box will load the Maple4K portal with 25,000+ Canadian and international channels." },
+    { "@type": "HowToStep", name: "Start streaming", text: "Your MAG Box will load the Maple4K portal with 50,000+ Canadian and international channels." },
   ],
 };
 
@@ -87,7 +87,7 @@ export default function IPTVMagBoxCanadaPage() {
                 { n: "02", title: "Receive Portal URL by Email", desc: "Within 5 minutes, we'll send your portal URL and MAC address registration instructions to your email." },
                 { n: "03", title: "Open MAG Box Settings", desc: "On your MAG Box home screen, go to System Settings → Servers → Portals." },
                 { n: "04", title: "Enter Portal URL", desc: "Type in the Maple4K portal URL in the Portal 1 URL field. Save and reboot your MAG Box." },
-                { n: "05", title: "Stream Canadian TV", desc: "Your MAG Box will load the full channel list. Browse 25,000+ channels and 120,000+ on-demand titles." },
+                { n: "05", title: "Stream Canadian TV", desc: "Your MAG Box will load the full channel list. Browse 50,000+ channels + Netflix and 120,000+ on-demand titles." },
               ].map((s) => (
                 <div key={s.n} style={{ display: "flex", gap: 20, background: "#ffffff", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
                   <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 36 }}>{s.n}</span>

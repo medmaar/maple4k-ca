@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "1 Year IPTV Canada — $49 Best Value | Maple4K" },
   description:
-    "Get a full year of IPTV in Canada for only $49. 25,000+ live channels, 4K quality, NHL, TSN, CTV, IBO Player bonus included. Best value IPTV plan Canada.",
+    "Get a full year of IPTV in Canada for only $49. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV, IBO Player bonus included. Best value IPTV plan Canada.",
   keywords:
     "IPTV annual Canada, Maple4K 1 year, best value IPTV Canada, 12 month IPTV Canada $49, yearly IPTV Canada",
   alternates: { canonical: "https://maple4k.ca/pricing/12-months" },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "What is included in the 1-year IPTV plan?",
-    a: "The 1-year plan gives you a full 12 months of access to 25,000+ live channels (TSN, Sportsnet, CBC, CTV, Global, RDS, TVA and hundreds more), 120,000+ movies and series on demand, 4K Ultra HD streaming, EPG, and 7-day catch-up TV — all for $49.",
+    a: "The 1-year plan gives you a full 12 months of access to 50,000+ channels + Netflix (TSN, Sportsnet, CBC, CTV, Global, RDS, TVA and hundreds more), 120,000+ movies and series on demand, 4K Ultra HD streaming, EPG, and 7-day catch-up TV — all for $49.",
   },
   {
     q: "How do I receive my login credentials after ordering?",
@@ -60,7 +60,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Maple4K 1 Year IPTV Plan",
-  description: "12 months of IPTV access to 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K. Includes IBO Player subscription.",
+  description: "12 months of IPTV access to 50,000+ channels + Netflix in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K. Includes IBO Player subscription.",
   brand: { "@type": "Brand", name: "Maple4K" },
   "image": "https://maple4k.ca/og-image.jpg",
   "review": {

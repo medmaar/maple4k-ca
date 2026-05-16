@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IPTV Android Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Free trial available.",
+    "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Free trial available.",
   keywords:
     "IPTV Android Canada, IPTV Android phone Canada, IPTV Android tablet Canada, best IPTV app Android Canada",
   alternates: { canonical: "https://maple4k.ca/iptv-android-canada" },
   openGraph: {
     title: "IPTV Android Canada | Maple4K – Best 4K IPTV Canada",
-    description: "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Free trial available.",
+    description: "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Free trial available.",
     url: "https://maple4k.ca/iptv-android-canada",
     type: "website",
     siteName: "Maple4K",
@@ -41,7 +41,7 @@ export default function IPTVAndroidPage() {
           </h1>
           <p className="text-xl text-black mb-8 max-w-2xl mx-auto">
             Watch Canadian TV on any Android phone or tablet. Live sports, news, and
-            25,000+ channels wherever you are — on Wi-Fi or 5G.
+            50,000+ channels + Netflix wherever you are — on Wi-Fi or 5G.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">

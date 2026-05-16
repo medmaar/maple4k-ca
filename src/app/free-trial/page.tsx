@@ -5,13 +5,13 @@ import PlanFAQ, { type FaqItem } from "../pricing/PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "Free IPTV Trial Canada — Test Maple4K Risk-Free | Maple4K" },
   description:
-    "Get a free Maple4K IPTV trial in Canada. No credit card required. Access 25,000+ live channels, NHL, TSN, CTV and 120,000+ movies. Activate in under 5 minutes.",
+    "Get a free Maple4K IPTV trial in Canada. No credit card required. Access 50,000+ channels + Netflix, NHL, TSN, CTV and 120,000+ movies. Activate in under 5 minutes.",
   keywords:
     "free IPTV trial Canada, Maple4K free trial, try IPTV Canada, free IPTV Canada no credit card",
   alternates: { canonical: "https://maple4k.ca/free-trial" },
   openGraph: {
     title: "Free IPTV Trial Canada — Test Maple4K Risk-Free | Maple4K",
-    description: "Get a free Maple4K IPTV trial in Canada. No credit card required. Access 25,000+ live channels, NHL, TSN, CTV and 120,000+ movies.",
+    description: "Get a free Maple4K IPTV trial in Canada. No credit card required. Access 50,000+ channels + Netflix, NHL, TSN, CTV and 120,000+ movies.",
     url: "https://maple4k.ca/free-trial",
     type: "website",
     siteName: "Maple4K",
@@ -28,7 +28,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Does the free trial include all channels?",
-    a: "Yes. Your 24h trial gives you full access to all 25,000+ live channels, 120,000+ VOD titles, and all sports packages — no restrictions.",
+    a: "Yes. Your 24h trial gives you full access to all 50,000+ channels + Netflix, 120,000+ VOD titles, and all sports packages — no restrictions.",
   },
   {
     q: "How many devices can I use during the trial?",

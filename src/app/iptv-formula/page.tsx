@@ -52,7 +52,7 @@ export default function IPTVFormulaPage() {
       <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>
         <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>How to Set Up Maple4K on Formuler</h2>
         <ol style={{ paddingLeft: 24, lineHeight: 2.4, fontSize: "1rem", marginBottom: 40 }}>
-          {["Open MyTVOnline 3 on your Formuler Z8 / Z10 / Z Alpha","Select 'Add New Portal'","Enter the Maple4K M3U URL or Xtream Codes credentials provided after signup","Choose a profile name (e.g. 'Maple4K Canada')","Browse 25,000+ channels in Full 4K — sports, news, movies, and more"].map((step, i) => (
+          {["Open MyTVOnline 3 on your Formuler Z8 / Z10 / Z Alpha","Select 'Add New Portal'","Enter the Maple4K M3U URL or Xtream Codes credentials provided after signup","Choose a profile name (e.g. 'Maple4K Canada')","Browse 50,000+ channels + Netflix in Full 4K — sports, news, movies, and more"].map((step, i) => (
             <li key={i} style={{ marginBottom: 8 }}><strong>Step {i+1}:</strong> {step}</li>
           ))}
         </ol>
@@ -74,7 +74,7 @@ export default function IPTVFormulaPage() {
       <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>
         <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Why Formuler Boxes Are the Gold Standard for IPTV in Canada</h2>
         <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
-          Formuler is a Canadian-designed Android TV box brand built specifically for IPTV. Unlike generic Android boxes or Fire Sticks repurposed for streaming, Formuler devices ship with MyTVOnline 3 — a professional IPTV application that&apos;s pre-installed, regularly updated, and deeply integrated with the hardware. The result is a seamless IPTV experience that works out of the box: plug in your Formuler, enter your Maple4K portal URL, and you&apos;re watching 25,000+ channels in under three minutes.
+          Formuler is a Canadian-designed Android TV box brand built specifically for IPTV. Unlike generic Android boxes or Fire Sticks repurposed for streaming, Formuler devices ship with MyTVOnline 3 — a professional IPTV application that&apos;s pre-installed, regularly updated, and deeply integrated with the hardware. The result is a seamless IPTV experience that works out of the box: plug in your Formuler, enter your Maple4K portal URL, and you&apos;re watching 50,000+ channels + Netflix in under three minutes.
         </p>
         <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 32 }}>
           For Canadian subscribers serious about IPTV quality, a Formuler box is worth the $130–$200 investment. The hardware H.265/HEVC decoder means True 4K streams play with zero software processing overhead — no dropped frames, no stuttering during live sports, no lag when switching channels. Maple4K&apos;s streams are fully tested and optimized for all current Formuler models.

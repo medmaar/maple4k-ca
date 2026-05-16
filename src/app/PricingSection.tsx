@@ -38,19 +38,13 @@ const durationSlug: Record<Duration, string> = {
 
 function orderHref(devices: number, dur: Duration): string {
   if (devices === 1) {
-    const map: Record<Duration, string> = {
-      "1 Month":  "/pricing/1-month",
-      "3 Months": "/pricing/3-months",
-      "6 Months": "/pricing/6-months",
-      "1 Year":   "/pricing/12-months",
-    };
-    return map[dur];
+    return { "1 Month": "/pricing/1-month", "3 Months": "/pricing/3-months", "6 Months": "/pricing/6-months", "1 Year": "/pricing/12-months" }[dur];
   }
   return `/pricing/${devices}-devices/${durationSlug[dur]}`;
 }
 
 const features = [
-  "25,000+ Live Channels",
+  "50,000+ Channels + Netflix",
   "120,000+ Movies & Series",
   "4K Ultra HD Quality",
   "NHL · TSN · Sportsnet · CTV",
@@ -63,151 +57,182 @@ const features = [
 export default function PricingSection() {
   const [activeDevices, setActiveDevices] = useState(1);
   const plan = plans.find(p => p.devices === activeDevices)!;
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
 
-  function handleSelect(n: number) {
-    setActiveDevices(n);
-    requestAnimationFrame(() => {
-      const btn = scrollRef.current?.querySelector<HTMLElement>(`[data-n="${n}"]`);
-      btn?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-    });
+  /* ── Drag-to-scroll on desktop ── */
+  function onMouseDown(e: React.MouseEvent) {
+    isDragging.current = true;
+    startX.current = e.pageX - (sliderRef.current?.offsetLeft ?? 0);
+    scrollLeft.current = sliderRef.current?.scrollLeft ?? 0;
+    if (sliderRef.current) sliderRef.current.style.cursor = "grabbing";
+  }
+  function onMouseMove(e: React.MouseEvent) {
+    if (!isDragging.current || !sliderRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - sliderRef.current.offsetLeft;
+    sliderRef.current.scrollLeft = scrollLeft.current - (x - startX.current);
+  }
+  function onMouseUp() {
+    isDragging.current = false;
+    if (sliderRef.current) sliderRef.current.style.cursor = "grab";
   }
 
-  const connLabel = `${activeDevices} Connection${activeDevices > 1 ? "s" : ""}`;
+  const connLabel = `${activeDevices} Device${activeDevices > 1 ? "s" : ""}`;
 
   return (
-    <section id="pricing-section" style={{ padding: "0 16px 60px" }}>
+    <section id="pricing-section" style={{ padding: "0 0 60px" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
 
         {/* Badge */}
-        <div style={{ textAlign: "center", marginBottom: 24 }}>
-          <span style={{ display: "inline-block", background: "#E8041F", color: "#fff", fontSize: 13, fontWeight: 700, padding: "6px 20px", borderRadius: 999 }}>
+        <div style={{ textAlign: "center", marginBottom: 28, padding: "0 16px" }}>
+          <span style={{ display: "inline-block", background: "#E8041F", color: "#fff", fontSize: 13, fontWeight: 700, padding: "6px 20px", borderRadius: 999, boxShadow: "0 4px 16px rgba(232,4,31,0.4)" }}>
             50% OFF Today!
           </span>
         </div>
 
-        {/* Connection selector */}
-        <div
-          ref={scrollRef}
-          style={{
-            overflowX: "auto",
-            WebkitOverflowScrolling: "touch",
-            display: "flex",
-            gap: 8,
-            marginBottom: 40,
-            paddingBottom: 10,
-            paddingTop: 6,
-            scrollbarWidth: "none",
-            justifyContent: "center",
-            flexWrap: "wrap",
-          } as React.CSSProperties}
-        >
-          {plans.map(p => {
-            const active = activeDevices === p.devices;
-            return (
-              <button
-                key={p.devices}
-                data-n={p.devices}
-                onClick={() => handleSelect(p.devices)}
-                aria-label={`Select ${p.devices} device${p.devices > 1 ? "s" : ""}`}
-                aria-pressed={active}
-                style={{
-                  flexShrink: 0,
-                  padding: "9px 20px",
-                  borderRadius: 999,
-                  border: active ? "none" : "1.5px solid rgba(255,255,255,0.15)",
-                  background: active ? "#E8041F" : "rgba(255,255,255,0.04)",
-                  color: active ? "#fff" : "rgba(255,255,255,0.5)",
-                  fontWeight: 700,
-                  fontSize: 13,
-                  cursor: "pointer",
-                  transition: "all .2s",
-                  whiteSpace: "nowrap",
-                  fontFamily: "inherit",
-                  boxShadow: active ? "0 4px 16px rgba(232,4,31,0.4)" : "none",
-                }}
-              >
-                {p.devices} Connection{p.devices > 1 ? "s" : ""}
-              </button>
-            );
-          })}
+        {/* ── Connection slider — horizontally scrollable, one row ── */}
+        <div style={{ padding: "0 16px", marginBottom: 12 }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
+            <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 13, fontWeight: 600, margin: 0 }}>
+              Select number of simultaneous devices:
+            </p>
+            <span style={{ color: "#E8041F", fontWeight: 800, fontSize: 14 }}>
+              {connLabel}
+            </span>
+          </div>
+          {/* Scrollable pill track */}
+          <div
+            ref={sliderRef}
+            onMouseDown={onMouseDown}
+            onMouseMove={onMouseMove}
+            onMouseUp={onMouseUp}
+            onMouseLeave={onMouseUp}
+            style={{
+              overflowX: "auto",
+              overflowY: "visible",
+              display: "flex",
+              gap: 8,
+              paddingBottom: 8,
+              paddingTop: 4,
+              cursor: "grab",
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+              WebkitOverflowScrolling: "touch",
+              userSelect: "none",
+            } as React.CSSProperties}
+          >
+            {plans.map(p => {
+              const active = activeDevices === p.devices;
+              return (
+                <button
+                  key={p.devices}
+                  onClick={() => setActiveDevices(p.devices)}
+                  style={{
+                    flexShrink: 0,
+                    padding: "10px 22px",
+                    borderRadius: 999,
+                    border: active ? "none" : "1.5px solid rgba(255,255,255,0.15)",
+                    background: active ? "#E8041F" : "rgba(255,255,255,0.04)",
+                    color: active ? "#fff" : "rgba(255,255,255,0.55)",
+                    fontWeight: 700,
+                    fontSize: 14,
+                    cursor: "pointer",
+                    transition: "all 0.22s cubic-bezier(0.34,1.56,0.64,1)",
+                    whiteSpace: "nowrap",
+                    fontFamily: "inherit",
+                    boxShadow: active ? "0 4px 16px rgba(232,4,31,0.45)" : "none",
+                    transform: active ? "scale(1.06)" : "scale(1)",
+                  }}
+                >
+                  {p.devices} Device{p.devices > 1 ? "s" : ""}
+                </button>
+              );
+            })}
+          </div>
+          {/* Scroll hint */}
+          <p style={{ color: "rgba(255,255,255,0.25)", fontSize: 11, margin: "6px 0 0", textAlign: "center", fontStyle: "italic" }}>
+            ← Slide to see more options →
+          </p>
         </div>
 
         {/* Price cards */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))", gap: 20, alignItems: "start" }}>
-          {durations.map((dur, i) => {
-            const price = plan.prices[dur];
-            const badge = badgeLabels[dur];
-            const { bg, accent, border, featured } = cardStyle[dur];
-            const isYear = dur === "1 Year";
-            return (
-              <div
-                key={dur}
-                style={{
-                  background: bg,
-                  border: `1px solid ${border}`,
-                  borderRadius: 20,
-                  padding: "32px 24px",
-                  position: "relative",
-                  display: "flex",
-                  flexDirection: "column",
-                  transform: featured ? "scale(1.03)" : "none",
-                  boxShadow: featured ? "0 12px 40px rgba(232,4,31,0.2)" : "none",
-                  transition: "all 0.35s ease",
-                }}
-                className="pricing-hover"
-              >
-                {badge && (
-                  <span style={{
-                    position: "absolute", top: -14, left: "50%",
-                    transform: "translateX(-50%)",
-                    background: "#E8041F", color: "#fff",
-                    fontSize: 11, fontWeight: 800,
-                    padding: "5px 16px", borderRadius: 999, whiteSpace: "nowrap",
-                  }}>
-                    {badge}
-                  </span>
-                )}
-                <p style={{ fontSize: 15, fontWeight: 700, color: "#fff", margin: "0 0 6px" }}>{dur}</p>
-                <div style={{ display: "flex", alignItems: "baseline", gap: 6, margin: "4px 0 16px" }}>
-                  <span style={{ fontSize: "clamp(2rem,5vw,2.6rem)", fontWeight: 900, color: accent }}>${price}</span>
-                  <span style={{ fontSize: 12, color: "rgba(255,255,255,0.45)" }}>/ {connLabel}</span>
-                </div>
-                <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
-                  {isYear && (
-                    <li style={{ marginBottom: 10, display: "flex", alignItems: "center", gap: 8, background: "rgba(232,4,31,0.15)", border: "1px solid rgba(232,4,31,0.3)", borderRadius: 8, padding: "7px 10px" }}>
-                      <span style={{ flexShrink: 0, fontSize: 14 }}>⭐</span>
-                      <span style={{ fontSize: 13, color: "#fff", fontWeight: 600, lineHeight: 1.3 }}>IBO Player Subscription for Free</span>
-                    </li>
-                  )}
-                  {features.map(f => (
-                    <li key={f} style={{ fontSize: 13, color: "rgba(255,255,255,0.8)", marginBottom: 8, display: "flex", alignItems: "center", gap: 8 }}>
-                      <span style={{ color: accent, fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href={orderHref(activeDevices, dur)}
+        <div style={{ padding: "0 16px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))", gap: 20, alignItems: "start", paddingTop: 20 }}>
+            {durations.map(dur => {
+              const price = plan.prices[dur];
+              const badge = badgeLabels[dur];
+              const { bg, accent, border, featured } = cardStyle[dur];
+              const isYear = dur === "1 Year";
+              return (
+                <div
+                  key={dur}
                   style={{
-                    display: "block", textAlign: "center",
-                    padding: "14px 0", borderRadius: 12,
-                    background: featured ? "#E8041F" : "rgba(255,255,255,0.08)",
-                    border: featured ? "none" : "1px solid rgba(255,255,255,0.15)",
-                    color: "#fff",
-                    fontWeight: 800, fontSize: 14,
-                    textDecoration: "none",
-                    boxShadow: featured ? "0 4px 20px rgba(232,4,31,0.4)" : "none",
-                    transition: "all 0.25s ease",
+                    background: bg,
+                    border: `1px solid ${border}`,
+                    borderRadius: 20,
+                    padding: "32px 24px",
+                    position: "relative",
+                    display: "flex",
+                    flexDirection: "column",
+                    transform: featured ? "scale(1.03)" : "scale(1)",
+                    boxShadow: featured ? "0 12px 40px rgba(232,4,31,0.2)" : "none",
+                    transition: "all 0.35s ease",
                   }}
                 >
-                  Get Started →
-                </a>
-              </div>
-            );
-          })}
+                  {badge && (
+                    <span style={{
+                      position: "absolute", top: -14, left: "50%",
+                      transform: "translateX(-50%)",
+                      background: "#E8041F", color: "#fff",
+                      fontSize: 11, fontWeight: 800,
+                      padding: "5px 16px", borderRadius: 999, whiteSpace: "nowrap",
+                      boxShadow: "0 4px 12px rgba(232,4,31,0.4)",
+                    }}>
+                      {badge}
+                    </span>
+                  )}
+                  <p style={{ fontSize: 15, fontWeight: 700, color: "#fff", margin: "0 0 6px" }}>{dur}</p>
+                  <div style={{ display: "flex", alignItems: "baseline", gap: 6, margin: "4px 0 16px" }}>
+                    <span style={{ fontSize: "clamp(2rem,5vw,2.6rem)", fontWeight: 900, color: accent }}>${price}</span>
+                    <span style={{ fontSize: 12, color: "rgba(255,255,255,0.45)" }}>/ {connLabel}</span>
+                  </div>
+                  <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
+                    {isYear && (
+                      <li style={{ marginBottom: 10, display: "flex", alignItems: "center", gap: 8, background: "rgba(232,4,31,0.15)", border: "1px solid rgba(232,4,31,0.3)", borderRadius: 8, padding: "7px 10px" }}>
+                        <span style={{ flexShrink: 0, fontSize: 14 }}>⭐</span>
+                        <span style={{ fontSize: 13, color: "#fff", fontWeight: 600, lineHeight: 1.3 }}>IBO Player Subscription for Free</span>
+                      </li>
+                    )}
+                    {features.map(f => (
+                      <li key={f} style={{ fontSize: 13, color: "rgba(255,255,255,0.8)", marginBottom: 8, display: "flex", alignItems: "center", gap: 8 }}>
+                        <span style={{ color: accent, fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                      </li>
+                    ))}
+                  </ul>
+                  <a
+                    href={orderHref(activeDevices, dur)}
+                    style={{
+                      display: "block", textAlign: "center",
+                      padding: "14px 0", borderRadius: 12,
+                      background: featured ? "#E8041F" : "rgba(255,255,255,0.08)",
+                      border: featured ? "none" : "1px solid rgba(255,255,255,0.15)",
+                      color: "#fff", fontWeight: 800, fontSize: 14,
+                      textDecoration: "none",
+                      boxShadow: featured ? "0 4px 20px rgba(232,4,31,0.4)" : "none",
+                    }}
+                  >
+                    Get Started →
+                  </a>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
-        <p style={{ textAlign: "center", color: "rgba(255,255,255,0.3)", fontSize: 12, marginTop: 28 }}>
+        <p style={{ textAlign: "center", color: "rgba(255,255,255,0.3)", fontSize: 12, marginTop: 28, padding: "0 16px" }}>
           No contracts · No hidden fees · Instant activation · All plans include same channels &amp; VOD library
         </p>
       </div>

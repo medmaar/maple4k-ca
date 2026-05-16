@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Canada 2026 — Top Rated Service Near You | Maple4K" },
   description:
-    "Looking for the best IPTV in Canada? Maple4K is rated #1 for Canadian IPTV. 25,000+ live channels, 4K quality, free trial. Best IPTV provider Canada from $9/month.",
+    "Looking for the best IPTV in Canada? Maple4K is rated #1 for Canadian IPTV. 50,000+ channels + Netflix, 4K quality, free trial. Best IPTV provider Canada from $9/month.",
   keywords:
     "best iptv canada, best iptv in canada, best iptv canada 2024, best iptv near me, best iptv provider canada, best iptv 2024, best iptv for canada, canada iptv, canadian iptv, iptv canada reviews",
   alternates: { canonical: "https://maple4k.ca/best-iptv-canada" },
   openGraph: {
     title: "Best IPTV Canada 2026 — Top Rated Service Near You | Maple4K",
-    description: "Canada's best IPTV service. 4K quality, 25,000+ channels, free trial. From $9/month.",
+    description: "Canada's best IPTV service. 4K quality, 50,000+ channels + Netflix, free trial. From $9/month.",
     url: "https://maple4k.ca/best-iptv-canada",
     type: "website", siteName: "Maple4K", locale: "en_CA",
     images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Best IPTV Canada – Maple4K" }],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqItems = [
   {
     q: "What is the best IPTV service in Canada?",
-    a: "Maple4K is consistently rated the best IPTV service in Canada for 2026. It offers True 4K Ultra HD quality, 25,000+ live Canadian and international channels, 120,000+ on-demand titles, zero contracts, and a free 24-hour trial — all from $9/month.",
+    a: "Maple4K is consistently rated the best IPTV service in Canada for 2026. It offers True 4K Ultra HD quality, 50,000+ live Canadian and international channels, 120,000+ on-demand titles, zero contracts, and a free 24-hour trial — all from $9/month.",
   },
   {
     q: "What makes Maple4K the best IPTV provider in Canada?",
@@ -28,11 +28,11 @@ const faqItems = [
   },
   {
     q: "Is there a free trial for the best IPTV Canada service?",
-    a: "Yes — Maple4K offers a free 24-hour trial with no credit card required. You get full access to all 25,000+ channels at full 4K quality so you can personally verify stream stability before subscribing.",
+    a: "Yes — Maple4K offers a free 24-hour trial with no credit card required. You get full access to all 50,000+ channels + Netflix at full 4K quality so you can personally verify stream stability before subscribing.",
   },
   {
     q: "How does Maple4K compare to other IPTV Canada providers?",
-    a: "Maple4K delivers True 4K H.265/HEVC where most Canadian IPTV providers only offer 1080p H.264. Pricing starts at $9/month vs $15–$25 for comparable services. Channel count (25,000+) and VOD library (120,000+) also lead the Canadian market.",
+    a: "Maple4K delivers True 4K H.265/HEVC where most Canadian IPTV providers only offer 1080p H.264. Pricing starts at $9/month vs $15–$25 for comparable services. Channel count (50,000+) and VOD library (120,000+) also lead the Canadian market.",
   },
 ];
 
@@ -50,7 +50,7 @@ const s = { color: "#F96E5B" } as const;
 const bg = "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)";
 
 const providers = [
-  { name: "Maple4K", quality: "True 4K H.265", channels: "25,000+", price: "$9/mo", trial: "✅ Free 24h", support: "✅ Canadian 24/7", highlight: true },
+  { name: "Maple4K", quality: "True 4K H.265", channels: "50,000+", price: "$9/mo", trial: "✅ Free 24h", support: "✅ Canadian 24/7", highlight: true },
   { name: "Generic Provider A", quality: "1080p H.264", channels: "10,000–15,000", price: "$15–$25/mo", trial: "❌", support: "❌ Offshore", highlight: false },
   { name: "Generic Provider B", quality: "720p–1080p", channels: "5,000–8,000", price: "$12–$20/mo", trial: "❌", support: "❌ Limited", highlight: false },
   { name: "Cable (Bell/Rogers)", quality: "1080i MPEG-2", channels: "150–500", price: "$80–$150/mo", trial: "❌", support: "✅ Slow", highlight: false },
@@ -91,7 +91,7 @@ export default function BestIPTVCanadaPage() {
             <p style={{ color: "#000000", fontSize: "1.1rem", maxWidth: 700, lineHeight: 1.7, marginBottom: 28 }}>
               Finding the best IPTV Canada has to offer means looking beyond price — you need 4K quality, 
               stable streams, Canadian channel coverage, and a provider who actually answers support tickets. 
-              Maple4K delivers on all fronts: True 4K Ultra HD, 25,000+ live channels including all Canadian 
+              Maple4K delivers on all fronts: True 4K Ultra HD, 50,000+ channels + Netflix including all Canadian 
               networks, and a free trial so you can verify quality before paying a cent.
             </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>

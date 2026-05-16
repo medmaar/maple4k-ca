@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "4K Ultra HD IPTV Toronto | Stream Sports & Movies in 4K | Maple4K",
-  description: "Stream Toronto in stunning 4K Ultra HD with Maple4K. Watch Leafs, Raptors, Blue Jays, Reds live in 4K. H.265 codec, HDR10, 25,000+ 4K-capable channels.",
+  description: "Stream Toronto in stunning 4K Ultra HD with Maple4K. Watch Leafs, Raptors, Blue Jays, Reds live in 4K. H.265 codec, HDR10, 50,000+ 4K-capable channels.",
   alternates: { canonical: "https://maple4k.ca/iptv-toronto" },
 };
 
@@ -15,7 +15,7 @@ export default function TorontoPage() {
           4K Ultra HD IPTV in Toronto — Watch Sports & Movies in Stunning Clarity
         </h1>
         <p className="text-xl text-gray-300 mb-8">
-          Forget cable's grainy HD. Stream everything in 4K Ultra HD — Maple Leafs games, Raptors basketball, Blue Jays baseball, and 25,000+ other channels. H.265 codec ensures smooth 4K on Toronto's Rogers/Bell internet.
+          Forget cable's grainy HD. Stream everything in 4K Ultra HD — Maple Leafs games, Raptors basketball, Blue Jays baseball, and 50,000+ other channels. H.265 codec ensures smooth 4K on Toronto's Rogers/Bell internet.
         </p>
 
         <div className="bg-gray-900 rounded-xl p-8 mb-8">
@@ -57,7 +57,7 @@ export default function TorontoPage() {
           <li>✓ All TSN channels (TSN1, TSN2, TSN3, TSN4)</li>
           <li>✓ Sportsnet, Sportsnet East, Sportsnet Ontario</li>
           <li>✓ CTV, Global, CBC (all Canadian locals)</li>
-          <li>✓ 25,000+ other channels</li>
+          <li>✓ 50,000+ other channels</li>
           <li>✓ Sports: NHL, NBA, NFL, CFL, UEFA, Premier League</li>
         </ul>
 

@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "8 Connections IPTV Canada 6 Months — $280 | Maple4K" },
   description:
-    "Get 8 simultaneous connections for $280. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within minutes.",
+    "Get 8 simultaneous connections for $280. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within minutes.",
   alternates: { canonical: "https://maple4k.ca/pricing/8-devices/6-months" },
 };
 
@@ -50,7 +50,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Maple4K 6 Months IPTV Plan — 8 Devices",
-  description: "6 Months of IPTV access for 8 simultaneous connections. 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
+  description: "6 Months of IPTV access for 8 simultaneous connections. 50,000+ channels + Netflix in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
   brand: { "@type": "Brand", name: "Maple4K" },
   "image": "https://maple4k.ca/og-image.jpg",
   "review": {

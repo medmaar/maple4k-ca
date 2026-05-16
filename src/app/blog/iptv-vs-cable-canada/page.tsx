@@ -41,7 +41,7 @@ const articleSchema = {
 const comparison = [
   { feature: "Monthly Cost (entry)",     iptv: "$9",             cable: "$80–$100",       winner: "iptv" },
   { feature: "Monthly Cost (full pkg)",  iptv: "$9–$45",         cable: "$120–$200",      winner: "iptv" },
-  { feature: "Channel Count",           iptv: "25,000+",             cable: "200–500",            winner: "iptv" },
+  { feature: "Channel Count",           iptv: "50,000+",             cable: "200–500",            winner: "iptv" },
   { feature: "4K Channels",             iptv: "Yes — many",          cable: "Limited (extra cost)",winner: "iptv" },
   { feature: "Contract Required",       iptv: "No",                  cable: "Yes — 1–2 years",    winner: "iptv" },
   { feature: "Installation Fee",        iptv: "None",                cable: "$99–$200",           winner: "iptv" },
@@ -191,7 +191,7 @@ export default function IPTVvsCableCanada() {
             <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>Channel Selection: IPTV Wins Decisively</h2>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
               A typical Bell or Rogers cable package includes 200–500 channels depending on your tier.
-              A premium IPTV service like Maple4K includes 25,000+ channels from around
+              A premium IPTV service like Maple4K includes 50,000+ channels + Netflix from around
               the world — including everything in the cable package plus thousands more.
             </p>
             <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>

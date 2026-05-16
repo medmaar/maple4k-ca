@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <Logo />
             <p style={{ marginTop: 16, color: "rgba(255,255,255,0.45)", lineHeight: 1.7, fontSize: 13 }}>
-              Canada&apos;s premium 4K IPTV service. H.265/HEVC encoded, HDR10 &amp; Dolby Vision. 25,000+ live channels.
+              Canada&apos;s premium 4K IPTV service. H.265/HEVC encoded, HDR10 &amp; Dolby Vision. 50,000+ channels + Netflix.
             </p>
             <p style={{ marginTop: 16, fontSize: 13 }}>
               <strong style={{ color: "rgba(255,255,255,0.7)" }}>Contact:</strong>{" "}

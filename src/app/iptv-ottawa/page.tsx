@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Ottawa | Maple4K – Best 4K IPTV Canada" },
   description:
-    "Maple4K is Ottawa's best IPTV service. Stream Senators, TSN, Sportsnet, CBC, CPAC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
+    "Maple4K is Ottawa's best IPTV service. Stream Senators, TSN, Sportsnet, CBC, CPAC and 50,000+ channels + Netflix in 4K. Plans from $9. Free trial available.",
   keywords:
     "IPTV Ottawa, best IPTV Ottawa, IPTV service Ottawa, Maple4K Ottawa, IPTV Canada Ottawa, IPTV Ontario Ottawa",
   alternates: { canonical: "https://maple4k.ca/iptv-ottawa" },
   openGraph: {
     title: "IPTV Ottawa | Maple4K – Best 4K IPTV Canada",
     description:
-      "Maple4K is Ottawa's best IPTV service. Stream Senators, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9.",
+      "Maple4K is Ottawa's best IPTV service. Stream Senators, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9.",
     url: "https://maple4k.ca/iptv-ottawa",
     type: "website",
     siteName: "Maple4K",
@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     q: "What is the best IPTV service in Ottawa?",
-    a: "Maple4K is the best IPTV service in Ottawa, offering 25,000+ live channels including all local channels (CBC Ottawa, CTV Ottawa, Global Ottawa, CPAC, TSN, Sportsnet), complete NHL Senators coverage, and 120,000+ on-demand titles — starting at $9/month.",
+    a: "Maple4K is the best IPTV service in Ottawa, offering 50,000+ channels + Netflix including all local channels (CBC Ottawa, CTV Ottawa, Global Ottawa, CPAC, TSN, Sportsnet), complete NHL Senators coverage, and 120,000+ on-demand titles — starting at $9/month.",
   },
   {
     q: "Does Maple4K work in Ottawa?",
@@ -96,7 +96,7 @@ export default function IPTVOttawaPage() {
               }}
             >
               Ottawa is Canada&apos;s capital and home to some of the country&apos;s most reliable
-              internet infrastructure. Maple4K serves Ottawa subscribers with 25,000+ live
+              internet infrastructure. Maple4K serves Ottawa subscribers with 50,000+ live
               channels, NHL Senators, CPAC, and 120,000+ on-demand titles. The best IPTV Ottawa
               can offer, starting at just $9/month.
             </p>

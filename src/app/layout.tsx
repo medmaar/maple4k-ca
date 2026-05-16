@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         template: "%s | Maple4K — Best IPTV Canada",
     },
     description:
-        "Canada's premium 4K IPTV service. H.265/HEVC encoded, HDR10 & Dolby Vision support. 25,000+ live channels, 120,000+ movies & series. Plans from $9. Try free — no credit card.",
+        "Canada's premium 4K IPTV service. H.265/HEVC encoded, HDR10 & Dolby Vision support. 50,000+ channels + Netflix, 120,000+ movies & series. Plans from $9. Try free — no credit card.",
     keywords:
         "iptv canada, iptv subscription, iptv service, iptv legal, best iptv in canada, free trial iptv, smart iptv, iptv from canada, iptv in canada, online iptv, canadian iptv, iptv canadian, iptv for canada, Maple4K, 4K IPTV Canada, best iptv canada, iptv 4k, iptv formula, canada iptv, best iptv provider canada, best iptv canada 2026, iptv canada reviews",
     openGraph: {

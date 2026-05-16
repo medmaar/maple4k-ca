@@ -23,7 +23,7 @@ const planDefs = [
 ];
 
 const planFeatures = [
-  "25,000+ Live Channels",
+  "50,000+ Channels + Netflix",
   "120,000+ Movies & Series",
   "True 4K Ultra HD — H.265/HEVC",
   "HDR10 & Dolby Vision Support",
@@ -70,7 +70,7 @@ export default function HomePricing() {
           </span>
         </div>
         <p style={{ textAlign: "center", color: "#000000", marginBottom: 36, fontSize: 15 }}>
-          All plans include 25,000+ channels, True 4K H.265/HEVC streaming with HDR10, and 24/7 Canadian support. Pay via Interac e-Transfer.
+          All plans include 50,000+ channels + Netflix, True 4K H.265/HEVC streaming with HDR10, and 24/7 Canadian support. Pay via Interac e-Transfer.
         </p>
 
         {/* Connection selector — horizontally scrollable, starts from left */}

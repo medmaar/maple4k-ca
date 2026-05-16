@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IPTV LG TV Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on your LG Smart TV in Canada with Maple4K. 25,000+ channels, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Free trial available.",
+    "Stream IPTV on your LG Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Free trial available.",
   keywords:
     "IPTV LG TV Canada, IPTV LG Smart TV Canada, LG webOS Maple4K, best IPTV for LG TV Canada",
   alternates: { canonical: "https://maple4k.ca/iptv-lg-tv-canada" },
   openGraph: {
     title: "IPTV LG TV Canada | Maple4K – Best 4K IPTV Canada",
-    description: "Stream IPTV on your LG Smart TV in Canada with Maple4K. 25,000+ channels, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Free trial available.",
+    description: "Stream IPTV on your LG Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Free trial available.",
     url: "https://maple4k.ca/iptv-lg-tv-canada",
     type: "website",
     siteName: "Maple4K",
@@ -41,7 +41,7 @@ export default function IPTVLGTVPage() {
           </h1>
           <p className="text-xl text-black mb-8 max-w-2xl mx-auto">
             Turn your LG Smart TV into Canada&apos;s ultimate streaming hub.
-            Stream 25,000+ live channels and 120,000+ movies in 4K — no extra box needed.
+            Stream 50,000+ channels + Netflix and 120,000+ movies in 4K — no extra box needed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">

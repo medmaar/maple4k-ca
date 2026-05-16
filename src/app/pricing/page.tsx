@@ -5,7 +5,7 @@ import FaqAccordion from "../components/FaqAccordion";
 
 export const metadata: Metadata = {
   title: { absolute: "4K IPTV Plans Canada — H.265/HEVC from $9 | Maple4K" },
-  description: "Compare Maple4K premium 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from $9. 25,000+ live channels, no contracts.",
+  description: "Compare Maple4K premium 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from $9. 50,000+ channels + Netflix, no contracts.",
   keywords: "Maple4K pricing, 4K IPTV plans Canada, H.265 HEVC IPTV Canada, HDR IPTV subscription 2026",
   alternates: { canonical: "https://maple4k.ca/pricing" },
 };
@@ -52,7 +52,7 @@ export default function PricingPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 12 }}>
             {[
-              "25,000+ Live TV Channels",
+              "50,000+ Live TV Channels",
               "120,000+ Movies & Series (VOD)",
               "True 4K Ultra HD — H.265/HEVC",
               "HDR10 & Dolby Vision Support",

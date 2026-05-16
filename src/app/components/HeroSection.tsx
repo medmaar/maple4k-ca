@@ -159,7 +159,7 @@ export default function HeroSection() {
           margin: "0 0 40px",
           maxWidth: 440,
         }}>
-          Get access to 25,000+ channels, movies and TV series on all your devices with a single subscription.
+          Get access to 50,000+ channels + Netflix, movies and TV series on all your devices with a single subscription.
         </p>
 
         {/* CTAs */}

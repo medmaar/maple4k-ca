@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best IPTV for Android TV in Canada 2026 | Maple4K",
   description:
-    "Install IPTV on your Android TV box in Canada. Maple4K offers 25,000+ channels in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
+    "Install IPTV on your Android TV box in Canada. Maple4K offers 50,000+ channels + Netflix in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
   alternates: { canonical: "https://maple4k.ca/iptv-android-tv-canada" },
   openGraph: {
     title: "Best IPTV for Android TV in Canada 2026 | Maple4K",
     description:
-      "Install IPTV on your Android TV box in Canada. Maple4K offers 25,000+ channels in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
+      "Install IPTV on your Android TV box in Canada. Maple4K offers 50,000+ channels + Netflix in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
     url: "https://maple4k.ca/iptv-android-tv-canada",
     type: "website",
     siteName: "Maple4K",
@@ -40,7 +40,7 @@ const jsonLd = {
     {
       "@type": "HowToStep",
       name: "Enjoy Canadian TV",
-      text: "Browse your 25,000+ channel list and enjoy NHL, TSN, Sportsnet, CBC, and thousands more channels in 4K.",
+      text: "Browse your 50,000+ channel list and enjoy NHL, TSN, Sportsnet, CBC, and thousands more channels in 4K.",
     },
   ],
 };
@@ -64,7 +64,7 @@ const steps = [
   {
     num: "4",
     title: "Enjoy Canadian TV",
-    desc: "Browse your 25,000+ channel list and enjoy NHL, TSN, Sportsnet, CBC, and thousands more channels in stunning 4K HDR.",
+    desc: "Browse your 50,000+ channel list and enjoy NHL, TSN, Sportsnet, CBC, and thousands more channels in stunning 4K HDR.",
   },
 ];
 
@@ -124,7 +124,7 @@ export default function IPTVAndroidTVCanadaPage() {
             >
               Maple4K is the best Maple4K service for Android TV, Google TV, and
               Android boxes. Whether you own a Nvidia Shield, Chromecast with Google TV, or any
-              Android box, you get 25,000+ live channels and 120,000+ movies in true 4K HDR —
+              Android box, you get 50,000+ channels + Netflix and 120,000+ movies in true 4K HDR —
               set up in minutes straight from the Play Store.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
@@ -347,7 +347,7 @@ export default function IPTVAndroidTVCanadaPage() {
               entertainment on Global, City TV, and specialty channels across every genre.
             </p>
             <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 24 }}>
-              Your subscription also unlocks 25,000+ international channels — US networks like
+              Your subscription also unlocks 50,000+ international channels — US networks like
               ESPN, Fox, ABC, and NBC; UK channels including Sky Sports and BBC; plus
               French-Canadian channels like RDS and TVA Sports, all in one Android TV app.
             </p>

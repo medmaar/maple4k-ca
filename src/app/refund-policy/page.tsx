@@ -49,7 +49,7 @@ export default function RefundPolicyPage() {
             <p className="mb-3">We strongly encourage all new customers to use our free 24h trial before purchasing a subscription. The trial:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Requires no credit card</li>
-              <li>Gives full access to all 25,000+ channels and 120,000+ VOD titles</li>
+              <li>Gives full access to all 50,000+ channels + Netflix and 120,000+ VOD titles</li>
               <li>Lets you test on all your devices</li>
               <li>Carries zero obligation to purchase</li>
             </ul>

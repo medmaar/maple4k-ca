@@ -61,7 +61,7 @@ const steps = [
     detail: [
       "Inside the IPTV player, look for 'Add Playlist' or 'Add Account' (varies by app).",
       "Enter the server URL, username, and password from your subscription confirmation.",
-      "Tap Connect or Load. Your channel list — all 25,000+ channels — will load within 30–60 seconds.",
+      "Tap Connect or Load. Your channel list — all 50,000+ channels + Netflix — will load within 30–60 seconds.",
     ],
   },
   {
@@ -79,7 +79,7 @@ const steps = [
     detail: [
       "Long-press the app icon and select 'Move to Front' to add it to your Fire Stick home screen.",
       "You can also add it to the 'Recent' section for quick access.",
-      "That's it — you're ready to stream 25,000+ channels in HD and 4K on your Fire Stick.",
+      "That's it — you're ready to stream 50,000+ channels + Netflix in HD and 4K on your Fire Stick.",
     ],
   },
 ];

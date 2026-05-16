@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Edmonton | Maple4K – Best 4K IPTV Canada" },
   description:
-    "Maple4K is Edmonton's best IPTV service. Stream Oilers, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
+    "Maple4K is Edmonton's best IPTV service. Stream Oilers, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9. Free trial available.",
   keywords:
     "IPTV Edmonton, best IPTV Edmonton, IPTV service Edmonton, Maple4K Edmonton, IPTV Canada Edmonton, IPTV Alberta Edmonton",
   alternates: { canonical: "https://maple4k.ca/iptv-edmonton" },
   openGraph: {
     title: "IPTV Edmonton | Maple4K – Best 4K IPTV Canada",
     description:
-      "Maple4K is Edmonton's best IPTV service. Stream Oilers, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",
+      "Maple4K is Edmonton's best IPTV service. Stream Oilers, TSN, Sportsnet and 50,000+ channels + Netflix in 4K. Plans from $9.",
     url: "https://maple4k.ca/iptv-edmonton",
     type: "website",
     siteName: "Maple4K",
@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     q: "What is the best IPTV service in Edmonton?",
-    a: "Maple4K is the best IPTV service in Edmonton, offering 25,000+ live channels including all local Alberta channels (CBC Edmonton, CTV Edmonton, Global Edmonton, Sportsnet West), complete NHL Edmonton Oilers coverage on Sportsnet and TSN, and 120,000+ on-demand titles — starting at $9/month.",
+    a: "Maple4K is the best IPTV service in Edmonton, offering 50,000+ channels + Netflix including all local Alberta channels (CBC Edmonton, CTV Edmonton, Global Edmonton, Sportsnet West), complete NHL Edmonton Oilers coverage on Sportsnet and TSN, and 120,000+ on-demand titles — starting at $9/month.",
   },
   {
     q: "Does Maple4K work in Edmonton?",
@@ -96,7 +96,7 @@ export default function IPTVEdmontonPage() {
               }}
             >
               Edmonton is Alberta&apos;s capital and home to one of the NHL&apos;s most passionate
-              fan bases. Maple4K serves Edmonton subscribers with 25,000+ live channels,
+              fan bases. Maple4K serves Edmonton subscribers with 50,000+ channels + Netflix,
               NHL Oilers coverage on every game, and 120,000+ on-demand titles. The best
               IPTV Edmonton has to offer, starting at just $9/month.
             </p>
@@ -146,7 +146,7 @@ export default function IPTVEdmontonPage() {
               no extra fees.
             </p>
             <p style={{ color: "#000000", lineHeight: 1.8 }}>
-              Edmonton IPTV subscribers also get 25,000+ international channels, 120,000+ movies
+              Edmonton IPTV subscribers also get 50,000+ international channels, 120,000+ movies
               and series on demand, 7-day catch-up TV, and a full EPG. Maple4K works on every
               device — Firestick, Smart TV, Android, iPhone, Apple TV, and more — with instant
               activation within minutes of placing your order.
@@ -172,7 +172,7 @@ export default function IPTVEdmontonPage() {
                 },
                 {
                   icon: "📺",
-                  title: "25,000+ Live Channels",
+                  title: "50,000+ Channels + Netflix",
                   desc: "Sports, news, entertainment, lifestyle, and international content — one Maple4K subscription covers every screen in your Edmonton home.",
                 },
                 {

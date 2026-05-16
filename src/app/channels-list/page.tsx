@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Channels Canada — 25,000+ Live Channels | Maple4K" },
+  title: { absolute: "IPTV Channels Canada — 50,000+ Channels + Netflix | Maple4K" },
   description:
-    "Full Maple4K IPTV channel list for Canada 2026. Browse 25,000+ live channels including TSN, Sportsnet, CBC, CTV, RDS, TVA, NHL, NFL, NBA, and thousands of international channels.",
+    "Full Maple4K IPTV channel list for Canada 2026. Browse 50,000+ channels + Netflix including TSN, Sportsnet, CBC, CTV, RDS, TVA, NHL, NFL, NBA, and thousands of international channels.",
   keywords:
     "IPTV channels Canada, Maple4K channel list, Canadian IPTV channels, TSN IPTV, Sportsnet IPTV Canada",
   alternates: { canonical: "https://maple4k.ca/channels-list" },
@@ -8261,7 +8261,7 @@ export default function ChannelsListPage() {
             Maple4K <span className="text-[#F96E5B]">Channel List</span>
           </h1>
           <p style={{ fontSize: 18, color: "rgba(255,255,255,0.8)", marginBottom: 24 }}>
-            25,000+ live channels across Canada, the US, UK, and worldwide.
+            50,000+ channels + Netflix across Canada, the US, UK, and worldwide.
             Every plan includes all channels below — no add-ons required.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
@@ -8277,7 +8277,7 @@ export default function ChannelsListPage() {
       <div className="bg-[#F96E5B] py-3 px-4">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-black text-sm font-semibold">
           <span>🌍 152 Countries &amp; Regions</span>
-          <span>📺 25,000+ Live Channels</span>
+          <span>📺 50,000+ Channels + Netflix</span>
           <span>🎬 4K Ultra HD Quality</span>
           <span>⚡ Zero Buffering</span>
         </div>
@@ -8332,7 +8332,7 @@ export default function ChannelsListPage() {
       {/* CTA */}
       <section style={{ padding: "64px 16px", background: "#1A3D45", textAlign: "center" }}>
         <div className="max-w-2xl mx-auto">
-          <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Access All 25,000+ Channels</h2>
+          <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Access All 50,000+ Channels + Netflix</h2>
           <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: 32 }}>
             Every plan includes the full channel list. Try it free for 24 hours — no credit card required.
           </p>

@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Montreal | Maple4K – Best 4K IPTV Canada" },
   description:
-    "Maple4K is Montreal's best IPTV service. Stream Canadiens, RDS, TVA Sports, TSN, CBC, and 25,000+ channels in 4K. Plans from $9. Free trial available.",
+    "Maple4K is Montreal's best IPTV service. Stream Canadiens, RDS, TVA Sports, TSN, CBC, and 50,000+ channels + Netflix in 4K. Plans from $9. Free trial available.",
   keywords:
     "IPTV Montreal, best IPTV Montreal, IPTV service Montreal, Maple4K Montreal, IPTV Canada Montreal, IPTV Quebec",
   alternates: { canonical: "https://maple4k.ca/iptv-montreal" },
   openGraph: {
     title: "IPTV Montreal | Maple4K – Best 4K IPTV Canada",
     description:
-      "Maple4K is Montreal's best IPTV service. Stream Canadiens, RDS, TVA Sports and 25,000+ channels in 4K. Plans from $9.",
+      "Maple4K is Montreal's best IPTV service. Stream Canadiens, RDS, TVA Sports and 50,000+ channels + Netflix in 4K. Plans from $9.",
     url: "https://maple4k.ca/iptv-montreal",
     type: "website",
     siteName: "Maple4K",
@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     q: "What is the best IPTV service in Montreal?",
-    a: "Maple4K is the best IPTV service in Montreal, offering 25,000+ live channels including all Quebec channels (RDS, TVA, TVA Sports, Canal Vie, Radio-Canada, ICI), complete NHL Canadiens coverage, and 120,000+ on-demand titles — starting at $9/month with bilingual French and English support.",
+    a: "Maple4K is the best IPTV service in Montreal, offering 50,000+ channels + Netflix including all Quebec channels (RDS, TVA, TVA Sports, Canal Vie, Radio-Canada, ICI), complete NHL Canadiens coverage, and 120,000+ on-demand titles — starting at $9/month with bilingual French and English support.",
   },
   {
     q: "Does Maple4K work in Montreal?",
@@ -96,7 +96,7 @@ export default function IPTVMontrealPage() {
               }}
             >
               Montreal is Canada&apos;s most bilingual city — and Maple4K is built for both French
-              and English speakers. Stream 25,000+ live channels including RDS, TVA, Radio-Canada,
+              and English speakers. Stream 50,000+ channels + Netflix including RDS, TVA, Radio-Canada,
               CBC Montreal, NHL Canadiens, and 120,000+ on-demand titles. The best IPTV Montreal
               experience, starting at $9/month.
             </p>
@@ -145,7 +145,7 @@ export default function IPTVMontrealPage() {
               Canadian coverage. Montreal Canadiens fans get every game live on RDS and TSN.
             </p>
             <p style={{ color: "#000000", lineHeight: 1.8 }}>
-              IPTV Montreal subscribers also get 25,000+ international channels, 120,000+ movies
+              IPTV Montreal subscribers also get 50,000+ international channels, 120,000+ movies
               and series on demand, 7-day catch-up TV, and a full EPG. Maple4K works on all
               devices — Firestick, Smart TV, Android, iOS, and more — with no contracts and
               instant activation within minutes.
@@ -171,7 +171,7 @@ export default function IPTVMontrealPage() {
                 },
                 {
                   icon: "🌐",
-                  title: "25,000+ International Channels",
+                  title: "50,000+ International Channels",
                   desc: "Montreal's diverse population is served by Maple4K's massive international library — Arabic, Portuguese, Italian, Spanish, Greek, and hundreds of other language channels.",
                 },
                 {

@@ -83,7 +83,7 @@ export default function BestIPTVHockeyPage() {
               {[
                 ["Bell TV + TSN", "$95–$140/mo", "NHL on TSN feeds only"],
                 ["Rogers NHL Package", "$85–$120/mo", "NHL + Sportsnet"],
-                ["Maple4K IPTV", "$9–$49/year", "All NHL feeds + 25,000+ channels"],
+                ["Maple4K IPTV", "$9–$49/year", "All NHL feeds + 50,000+ channels + Netflix"],
               ].map(([name, price, note]) => (
                 <div key={name} style={{ padding: 16, background: name === "Maple4K IPTV" ? "rgba(249,110,91,0.07)" : "transparent", borderRadius: 10, border: name === "Maple4K IPTV" ? "1px solid rgba(249,110,91,0.2)" : "none" }}>
                   <p style={{ fontWeight: 700, fontSize: 14, marginBottom: 6 }}>{name}</p>

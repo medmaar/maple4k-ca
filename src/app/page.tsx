@@ -9,7 +9,7 @@ const PricingSection = dynamic(() => import("./PricingSection"));
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Canada 2026 — 4K Ultra HD from $9/month | Maple4K" },
-  description: "Best IPTV service in Canada 2026. 4K Ultra HD, H.265/HEVC streams. Free trial available — no credit card. 25,000+ live Canadian channels, 120,000+ on-demand titles. IPTV subscription from $9/month.",
+  description: "Best IPTV service in Canada 2026. 4K Ultra HD, H.265/HEVC streams. Free trial available — no credit card. 50,000+ live Canadian channels, 120,000+ on-demand titles. IPTV subscription from $9/month.",
   alternates: { canonical: "https://maple4k.ca" },
 };
 
@@ -18,7 +18,7 @@ const faqs = [
   { q: "What internet speed do I need for 4K IPTV streaming?", a: "A stable 25 Mbps connection handles butter-smooth 4K H.265 streams. Most Canadian fibre and cable plans at 75 Mbps+ run multiple simultaneous 4K streams with zero buffering." },
   { q: "Does Maple4K support HDR — HDR10 or Dolby Vision?", a: "Yes. Where broadcasters provide HDR feeds, Maple4K streams in HDR10 and Dolby Vision. Pair it with an Apple TV 4K, Samsung QLED, or LG OLED and your display's full HDR capability engages automatically." },
   { q: "Which IPTV player works best for 4K H.265 streams?", a: "TiviMate on Android TV and Fire TV is the top choice for hardware-accelerated 4K H.265 playback with full EPG. IPTV Smarters Pro performs excellently on iOS and Apple TV 4K." },
-  { q: "Can I stream 4K on multiple TVs simultaneously?", a: "Yes — multi-connection plans support 2–10 independent simultaneous streams, each capable of full 4K Ultra HD. Ideal for households with multiple 4K displays." },
+  { q: "Can I stream on multiple TVs simultaneously?", a: "Yes — plans support multiple simultaneous streams on unlimited devices, each capable of full 4K Ultra HD. Ideal for households with multiple 4K displays." },
   { q: "Is IPTV legal in Canada?", a: "IPTV technology is legal in Canada and is the same delivery method used by major telecoms. Maple4K operates within Canadian broadcasting standards and provides access to publicly available streams." },
   { q: "Is there a free trial to test the 4K quality?", a: "Yes — Maple4K offers a free 24h trial with no credit card required. The trial streams at full 4K quality so you can personally validate H.265 performance on your own hardware before committing." },
   { q: "Are there any hidden fees?", a: "No hidden fees. All our services are sold directly and transparently. The price you see is the price you pay." },
@@ -29,7 +29,7 @@ const faqs = [
 ];
 
 const features = [
-  { icon: "📺", title: "Live TV", desc: "Access 25,000+ live channels including local and international Canadian networks in HD and 4K." },
+  { icon: "📺", title: "Live TV", desc: "Access 50,000+ channels + Netflix including local and international Canadian networks in HD and 4K." },
   { icon: "🎬", title: "Movies", desc: "Stream thousands of movies from all genres — from timeless classics to the latest blockbusters in stunning 4K HDR." },
   { icon: "📡", title: "Series", desc: "Find your favourite American and Canadian series. Our library is constantly updated to satisfy every taste." },
   { icon: "🏒", title: "Sports", desc: "Never miss a game — hockey, football, tennis and more. Watch every live sporting event wherever you are." },
@@ -56,23 +56,42 @@ export default function HomePage() {
 
       {/* ── 2. STATS BAR ── */}
       <section style={{ background: "#0E1120", borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)", padding: "28px 16px" }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 24, textAlign: "center" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 24, textAlign: "center" }}>
           {[
-            { n: "25,000+",    label: "Live Channels" },
-            { n: "120,000+",   label: "Movies & Series" },
-            { n: "4K / HDR",   label: "Max Resolution" },
-            { n: "1–10",       label: "Connections" },
-            { n: "24H",        label: "Free Trial" },
+            { n: "50,000+",      label: "Channels + Netflix" },
+            { n: "120,000+",     label: "Movies & Series" },
+            { n: "4K / HDR",     label: "Max Resolution" },
+            { n: "Unlimited",    label: "Devices" },
+            { n: "24H",          label: "Free Trial" },
           ].map(s => (
             <div key={s.label} className="ma-init">
-              <div style={{ fontSize: "clamp(18px, 2.5vw, 22px)", fontWeight: 800, color: "#E8041F" }}>{s.n}</div>
-              <div style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", marginTop: 4, fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase" }}>{s.label}</div>
+              <div style={{ fontSize: "clamp(16px, 2.5vw, 22px)", fontWeight: 800, color: "#E8041F" }}>{s.n}</div>
+              <div style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", marginTop: 4, fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase" }}>{s.label}</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* ── 3. FEATURES GRID ── */}
+      {/* ── 3. REVIEWS (right after hero) ── */}
+      <section style={{ background: "#0C0F1A", padding: "80px 16px 60px" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <ReviewsSection />
+        </div>
+      </section>
+
+      {/* ── 4. PRICING (directly below reviews) ── */}
+      <section style={{ padding: "80px 0 60px", background: "#0E1120" }}>
+        <div className="ma-init" style={{ textAlign: "center", marginBottom: 20, padding: "0 16px" }}>
+          <p className="section-label">Plans & Pricing</p>
+          <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, margin: 0 }}>Simple, Transparent Pricing</h2>
+          <p style={{ color: "rgba(255,255,255,0.5)", marginTop: 16, fontSize: 15 }}>
+            Choose your plan — slide to pick connections, save more with longer durations
+          </p>
+        </div>
+        <PricingSection />
+      </section>
+
+      {/* ── 5. FEATURES GRID ── */}
       <section style={{ padding: "100px 16px", background: "#0C0F1A" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <div className="ma-init" style={{ textAlign: "center", marginBottom: 60 }}>
@@ -94,7 +113,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 4. EXPERIENCE SECTION ── */}
+      {/* ── 6. EXPERIENCE SECTION ── */}
       <section style={{ padding: "100px 16px", background: "#0E1120" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 60, alignItems: "center" }}>
           <div className="ma-left" style={{ position: "relative", borderRadius: 24, overflow: "hidden", background: "linear-gradient(135deg, #1a0d1f, #0d1a25)", minHeight: 380, display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid rgba(255,255,255,0.08)" }}>
@@ -118,7 +137,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 5. DEVICES ── */}
+      {/* ── 7. DEVICES ── */}
       <section style={{ padding: "100px 16px", background: "#0C0F1A" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 60, alignItems: "center" }}>
           <div className="ma-left">
@@ -137,7 +156,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 6. SPORTS MARQUEE ── */}
+      {/* ── 8. SPORTS MARQUEE ── */}
       <section style={{ padding: "48px 0", background: "#0E1120", borderTop: "1px solid rgba(255,255,255,0.05)", overflow: "hidden" }}>
         <div style={{ marginBottom: 20, textAlign: "center" }}>
           <p style={{ color: "rgba(255,255,255,0.4)", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", margin: 0 }}>Live Sports Channels</p>
@@ -153,22 +172,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 7. PRICING (real plans: 1–10 connections, 4 durations, original prices) ── */}
-      <section style={{ padding: "100px 0 60px", background: "#0C0F1A" }}>
-        <div className="ma-init" style={{ textAlign: "center", marginBottom: 20, padding: "0 16px" }}>
-          <p className="section-label">Plans & Pricing</p>
-          <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, margin: 0 }}>Simple, Transparent Pricing</h2>
-          <p style={{ color: "rgba(255,255,255,0.5)", marginTop: 16, fontSize: 15 }}>
-            1 to 10 simultaneous connections — pick your duration, save more with longer plans
-          </p>
-        </div>
-        {/* PricingSection wrapped in dark override */}
-        <div className="pricing-dark-wrap">
-          <PricingSection />
-        </div>
-      </section>
-
-      {/* ── 8. FREE TRIAL CTA ── */}
+      {/* ── 9. FREE TRIAL CTA ── */}
       <section style={{ padding: "80px 16px", background: "linear-gradient(135deg, #0E1120, #1a0510 50%, #0E1120)" }}>
         <div style={{ maxWidth: 680, margin: "0 auto", textAlign: "center" }} className="ma-init">
           <p className="section-label">24H — No Credit Card</p>
@@ -180,13 +184,6 @@ export default function HomePage() {
             <Link href="/free-trial" className="btn-red">▶ Free Trial 24H</Link>
             <Link href="/pricing" className="btn-outline">View Plans →</Link>
           </div>
-        </div>
-      </section>
-
-      {/* ── 9. REVIEWS (Trustpilot + WhatsApp + Google — original content) ── */}
-      <section style={{ background: "#0C0F1A", padding: "0 0 40px" }}>
-        <div className="reviews-dark-wrap">
-          <ReviewsSection />
         </div>
       </section>
 
@@ -206,7 +203,7 @@ export default function HomePage() {
         <div style={{ maxWidth: 600, margin: "0 auto" }} className="ma-init">
           <h2 style={{ fontSize: "clamp(28px, 4vw, 46px)", fontWeight: 900, margin: "0 0 20px" }}>Start Streaming Today</h2>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 16, lineHeight: 1.7, marginBottom: 40 }}>
-            Canada&apos;s only IPTV built around True 4K Ultra HD. H.265/HEVC encoded, HDR10 &amp; Dolby Vision — from $9/month. Try free, no credit card required.
+            Canada&apos;s only IPTV built around True 4K Ultra HD. 50,000+ channels + Netflix, HDR10 &amp; Dolby Vision — from $9/month. Try free, no credit card required.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <Link href="/free-trial" className="btn-red">▶ Free Trial 24H</Link>
@@ -220,7 +217,7 @@ export default function HomePage() {
 
 function ExperienceAccordion() {
   const items = [
-    { title: "Live TV", body: "Enjoy 25,000+ live channels, including local and international networks. Follow your favourite programs in high definition, whether news, entertainment, movies or live events." },
+    { title: "Live TV", body: "Enjoy 50,000+ channels + Netflix, including local and international networks. Follow your favourite programs in high definition, whether news, entertainment, movies or live events." },
     { title: "Movies & Series in 4K", body: "Dive into an immersive cinematic universe with thousands of movies and series available in 4K. From the latest blockbusters to timeless classics, our library grows daily." },
     { title: "Live Sports Events", body: "Never miss a match! Whether it's hockey, football, tennis or other sports, our internet TV service lets you follow your favourite live sporting events wherever you are." },
     { title: "Canadian Content", body: "As a local service, we celebrate Canadian cinema and series. Discover or rediscover the best films and series produced in Canada, directly on your TV." },

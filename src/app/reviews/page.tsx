@@ -5,7 +5,7 @@ const reviewsPageSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Maple4K IPTV Canada",
-  "description": "Canada's best 4K IPTV service. 25,000+ live channels, NHL, UFC, CFL. True H.265/HEVC 4K streaming from $9/month.",
+  "description": "Canada's best 4K IPTV service. 50,000+ channels + Netflix, NHL, UFC, CFL. True H.265/HEVC 4K streaming from $9/month.",
   "brand": { "@type": "Brand", "name": "Maple4K" },
   "image": "https://maple4k.ca/og-image.jpg",
   "review": [

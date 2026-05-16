@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IPTV Samsung TV Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on your Samsung Smart TV in Canada with Maple4K. 25,000+ channels, 4K quality, NHL, TSN and more. Easy Tizen OS setup. Free trial available.",
+    "Stream IPTV on your Samsung Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN and more. Easy Tizen OS setup. Free trial available.",
   keywords:
     "IPTV Samsung TV Canada, IPTV Samsung Smart TV Canada, Samsung TV Maple4K, best IPTV Samsung Canada",
   alternates: { canonical: "https://maple4k.ca/iptv-samsung-tv-canada" },
   openGraph: {
     title: "IPTV Samsung TV Canada | Maple4K – Best 4K IPTV Canada",
-    description: "Stream IPTV on your Samsung Smart TV in Canada with Maple4K. 25,000+ channels, 4K quality, NHL, TSN and more. Easy Tizen OS setup. Free trial available.",
+    description: "Stream IPTV on your Samsung Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN and more. Easy Tizen OS setup. Free trial available.",
     url: "https://maple4k.ca/iptv-samsung-tv-canada",
     type: "website",
     siteName: "Maple4K",
@@ -41,7 +41,7 @@ export default function IPTVSamsungPage() {
           </h1>
           <p className="text-xl text-black mb-8 max-w-2xl mx-auto">
             Transform your Samsung Smart TV into the ultimate entertainment system.
-            Stream 25,000+ live channels and 120,000+ movies in 4K — no set-top box needed.
+            Stream 50,000+ channels + Netflix and 120,000+ movies in 4K — no set-top box needed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">

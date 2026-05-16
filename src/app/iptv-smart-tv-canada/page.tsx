@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "IPTV for Samsung & LG Smart TV in Canada 2026 | Maple4K",
   description:
-    "Install Maple4K IPTV on your Samsung or LG Smart TV in Canada. 25,000+ live channels, NHL, TSN, CTV in 4K. Easy setup in minutes. From $9/month.",
+    "Install Maple4K IPTV on your Samsung or LG Smart TV in Canada. 50,000+ channels + Netflix, NHL, TSN, CTV in 4K. Easy setup in minutes. From $9/month.",
   keywords: "IPTV Samsung TV Canada, IPTV LG Smart TV Canada, Smart TV Maple4K",
   alternates: { canonical: "https://maple4k.ca/iptv-smart-tv-canada" },
   openGraph: {
     title: "IPTV for Samsung & LG Smart TV in Canada 2026 | Maple4K",
-    description: "Install Maple4K IPTV on your Samsung or LG Smart TV in Canada. 25,000+ live channels, NHL, TSN, CTV in 4K. Easy setup in minutes. From $9/month.",
+    description: "Install Maple4K IPTV on your Samsung or LG Smart TV in Canada. 50,000+ channels + Netflix, NHL, TSN, CTV in 4K. Easy setup in minutes. From $9/month.",
     url: "https://maple4k.ca/iptv-smart-tv-canada",
     type: "website",
     siteName: "Maple4K",
@@ -28,7 +28,7 @@ const howToSchema = {
     { "@type": "HowToStep", name: "Open Smart Hub", text: "Press the Home button on your Samsung or LG remote and open the app store (Samsung Apps or LG Content Store)." },
     { "@type": "HowToStep", name: "Download IPTV app", text: "Search for 'IPTV Smarters' or 'Smart IPTV' and install it on your Smart TV." },
     { "@type": "HowToStep", name: "Enter credentials", text: "Open the app and enter the server URL, username, and password that Maple4K sends to your email." },
-    { "@type": "HowToStep", name: "Start streaming", text: "Browse 25,000+ channels, Canadian sports, and 120,000+ on-demand titles in 4K." },
+    { "@type": "HowToStep", name: "Start streaming", text: "Browse 50,000+ channels + Netflix, Canadian sports, and 120,000+ on-demand titles in 4K." },
   ],
 };
 
@@ -48,7 +48,7 @@ export default function IPTVSmartTVCanadaPage() {
               <span style={{ color: "#F96E5B" }}>in Canada 2026</span>
             </h1>
             <p style={{ color: "#000000", fontSize: 17, lineHeight: 1.7, maxWidth: 680, marginBottom: 36 }}>
-              Maple4K works seamlessly on Samsung and LG Smart TVs across Canada. Get 25,000+ live channels including CBC, CTV, TSN, and Sportsnet in stunning 4K quality — all without a cable subscription.
+              Maple4K works seamlessly on Samsung and LG Smart TVs across Canada. Get 50,000+ channels + Netflix including CBC, CTV, TSN, and Sportsnet in stunning 4K quality — all without a cable subscription.
             </p>
             <Link href="/pricing" style={{ background: "#F96E5B", color: "#000000", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Get Your Maple4K Plan →
@@ -67,7 +67,7 @@ export default function IPTVSmartTVCanadaPage() {
                 { title: "4K Ultra HD Picture", desc: "Stream every NHL, NBA, and CFL game in crystal-clear 4K on your big screen Samsung or LG TV." },
                 { title: "Zero Buffering", desc: "Our Canadian servers deliver smooth, lag-free streams optimized for Smart TV connections." },
                 { title: "Electronic Program Guide", desc: "Navigate channels easily with a built-in EPG — just like traditional cable TV, on your Smart TV." },
-                { title: "25,000+ Live Channels", desc: "Access every Canadian network plus thousands of international channels directly on your Smart TV." },
+                { title: "50,000+ Channels + Netflix", desc: "Access every Canadian network plus thousands of international channels directly on your Smart TV." },
               ].map((f) => (
                 <div key={f.title} style={{ background: "#ffffff", border: "1px solid rgba(63,154,174,0.1)", borderRadius: 16, padding: "24px 20px" }}>
                   <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8, color: "#F96E5B" }}>{f.title}</h3>
@@ -90,7 +90,7 @@ export default function IPTVSmartTVCanadaPage() {
                 { n: "02", title: "Receive Your Credentials", desc: "We'll email you a server URL, username, and password within minutes of your order." },
                 { n: "03", title: "Install IPTV App on Smart TV", desc: "Open the Samsung Apps or LG Content Store and download 'Smart IPTV' or 'IPTV Smarters'." },
                 { n: "04", title: "Enter Your Login Details", desc: "Open the app, input your server URL and credentials, then load your channel list." },
-                { n: "05", title: "Start Streaming in 4K", desc: "Enjoy 25,000+ live channels and 120,000+ on-demand titles on your big-screen Smart TV." },
+                { n: "05", title: "Start Streaming in 4K", desc: "Enjoy 50,000+ channels + Netflix and 120,000+ on-demand titles on your big-screen Smart TV." },
               ].map((s) => (
                 <div key={s.n} style={{ display: "flex", gap: 20, background: "#ffffff", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
                   <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 36 }}>{s.n}</span>

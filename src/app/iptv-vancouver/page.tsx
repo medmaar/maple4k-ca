@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Vancouver | Maple4K – Best 4K IPTV Canada" },
   description:
-    "Maple4K is Vancouver's best IPTV service. Stream Canucks, Whitecaps, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
+    "Maple4K is Vancouver's best IPTV service. Stream Canucks, Whitecaps, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9. Free trial available.",
   keywords:
     "IPTV Vancouver, best IPTV Vancouver, IPTV service Vancouver, Maple4K Vancouver, IPTV Canada Vancouver",
   alternates: { canonical: "https://maple4k.ca/iptv-vancouver" },
   openGraph: {
     title: "IPTV Vancouver | Maple4K – Best 4K IPTV Canada",
     description:
-      "Maple4K is Vancouver's best IPTV service. Stream Canucks, Whitecaps, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",
+      "Maple4K is Vancouver's best IPTV service. Stream Canucks, Whitecaps, TSN, Sportsnet and 50,000+ channels + Netflix in 4K. Plans from $9.",
     url: "https://maple4k.ca/iptv-vancouver",
     type: "website",
     siteName: "Maple4K",
@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     q: "What is the best IPTV service in Vancouver?",
-    a: "Maple4K is the best IPTV service in Vancouver, offering 25,000+ live channels including local BC channels (CBC Vancouver, CTV BC, Global BC, OMNI BC), complete NHL Canucks coverage on Sportsnet Pacific and TSN, and 120,000+ on-demand titles starting at $9/month.",
+    a: "Maple4K is the best IPTV service in Vancouver, offering 50,000+ channels + Netflix including local BC channels (CBC Vancouver, CTV BC, Global BC, OMNI BC), complete NHL Canucks coverage on Sportsnet Pacific and TSN, and 120,000+ on-demand titles starting at $9/month.",
   },
   {
     q: "Does Maple4K work in Vancouver?",
@@ -97,7 +97,7 @@ export default function IPTVVancouverPage() {
             >
               Vancouver enjoys some of the best fibre internet in Canada — making it ideal for
               4K IPTV streaming. Maple4K serves thousands of Vancouver subscribers with
-              25,000+ live channels, NHL Canucks, Whitecaps, and 120,000+ on-demand titles.
+              50,000+ channels + Netflix, NHL Canucks, Whitecaps, and 120,000+ on-demand titles.
               The best IPTV Vancouver has to offer, starting at just $9/month.
             </p>
             <div style={{ marginTop: 32, display: "flex", gap: 16, flexWrap: "wrap" }}>
@@ -145,7 +145,7 @@ export default function IPTVVancouverPage() {
               game on Sportsnet Pacific with no blackouts.
             </p>
             <p style={{ color: "#000000", lineHeight: 1.8 }}>
-              Beyond local Vancouver channels, Maple4K IPTV gives you 25,000+ live channels from
+              Beyond local Vancouver channels, Maple4K IPTV gives you 50,000+ channels + Netflix from
               across Canada and the world — plus 120,000+ movies and series on demand, 7-day
               catch-up TV, and a full electronic program guide (EPG). IPTV Vancouver subscribers
               can watch on any device: Firestick, Smart TV, phone, tablet, or computer.
@@ -166,7 +166,7 @@ export default function IPTVVancouverPage() {
                 },
                 {
                   icon: "📺",
-                  title: "25,000+ Live Channels",
+                  title: "50,000+ Channels + Netflix",
                   desc: "From local BC news to international sports and entertainment — one Maple4K subscription covers every screen in your Vancouver home.",
                 },
                 {

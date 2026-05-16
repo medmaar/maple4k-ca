@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV 4K Canada — True Ultra HD Streaming Near You | Maple4K" },
   description:
-    "Stream IPTV in 4K Ultra HD in Canada. H.265/HEVC encoded, HDR10 & Dolby Vision. 25,000+ channels in true 4K quality near you. Free trial — no credit card. From $9/month.",
+    "Stream IPTV in 4K Ultra HD in Canada. H.265/HEVC encoded, HDR10 & Dolby Vision. 50,000+ channels + Netflix in true 4K quality near you. Free trial — no credit card. From $9/month.",
   keywords:
     "iptv 4k, iptv 4k near me, 4k iptv canada, 4k iptv subscription, ultra hd iptv canada, h.265 iptv canada, hdr iptv canada, best iptv 4k canada",
   alternates: { canonical: "https://maple4k.ca/iptv-4k" },
@@ -61,7 +61,7 @@ export default function IPTV4KPage() {
               IPTV 4K Canada — True Ultra HD Streaming <span style={{ color: "#F96E5B" }}>Near You</span>
             </h1>
             <p style={{ color: "#000", fontSize: "1.1rem", maxWidth: 680, lineHeight: 1.7, marginBottom: 28 }}>
-              Maple4K is Canada&apos;s only IPTV service delivering genuine 4K Ultra HD with H.265/HEVC encoding, HDR10, and Dolby Vision support. If you&apos;ve been searching for IPTV 4K near you, your search ends here. 25,000+ live channels at the resolution your display was built for — from $9/month.
+              Maple4K is Canada&apos;s only IPTV service delivering genuine 4K Ultra HD with H.265/HEVC encoding, HDR10, and Dolby Vision support. If you&apos;ve been searching for IPTV 4K near you, your search ends here. 50,000+ channels + Netflix at the resolution your display was built for — from $9/month.
             </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
               <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Try 4K Free →</a>

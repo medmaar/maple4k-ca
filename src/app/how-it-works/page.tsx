@@ -118,7 +118,7 @@ export default function HowItWorksPage() {
             </p>
             <p>
               Think of it like Netflix or YouTube — but for live TV. You open an app, browse a
-              channel guide with 25,000+ channels, and press play. The stream comes from our
+              channel guide with 50,000+ channels + Netflix, and press play. The stream comes from our
               servers directly to your device over the internet in real time.
             </p>
             <p>

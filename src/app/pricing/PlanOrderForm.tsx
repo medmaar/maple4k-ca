@@ -3,7 +3,6 @@ import { useState, useRef } from "react";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
-// Dynamically import emailjs — only loads when form is submitted
 async function getEmailjs() {
   const mod = await import("@emailjs/browser");
   return mod.default;
@@ -33,31 +32,19 @@ const deviceTypes = [
   "Other",
 ];
 
-interface Props {
-  plan: string;
-}
+interface Props { plan: string; }
 
 export default function PlanOrderForm({ plan }: Props) {
-  const [form, setForm] = useState({
-    full_name: "",
-    email: "",
-    country: "Canada",
-    device: "",
-    message: "",
-  });
+  const [form, setForm] = useState({ full_name: "", email: "", country: "Canada", device: "", message: "" });
   const [phone, setPhone] = useState<string | undefined>("");
   const [emailWarning, setEmailWarning] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const emailjsInitialized = useRef(false);
 
-  function handleChange(
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) {
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-    if (name === "email") {
-      setEmailWarning(value.length > 3 && !value.includes("@"));
-    }
+    setForm(prev => ({ ...prev, [name]: value }));
+    if (name === "email") setEmailWarning(value.length > 3 && !value.includes("@"));
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -69,24 +56,17 @@ export default function PlanOrderForm({ plan }: Props) {
         emailjs.init("BE3GO7hcQXUJAnRBV");
         emailjsInitialized.current = true;
       }
-      const result = await emailjs.send(
-        "service_mq69xac",
-        "template_6gpfu3m",
-        {
-          from_name: form.full_name || "Not provided",
-          from_email: form.email || "Not provided",
-          phone: phone || "Not provided",
-          country: form.country,
-          device: form.device || "Not specified",
-          plan,
-          message: form.message || "—",
-          site_name: "Maple4K.ca",
-        }
-      );
-      console.log("EmailJS success:", result);
+      await emailjs.send("service_mq69xac", "template_6gpfu3m", {
+        from_name: form.full_name || "Not provided",
+        from_email: form.email || "Not provided",
+        phone: phone || "Not provided",
+        country: form.country,
+        device: form.device || "Not specified",
+        plan,
+        message: form.message || "—",
+        site_name: "Maple4K.ca",
+      });
       setStatus("success");
-      setForm({ full_name: "", email: "", country: "Canada", device: "", message: "" });
-      setPhone("");
     } catch (err) {
       console.error("EmailJS error:", err);
       setStatus("error");
@@ -104,42 +84,60 @@ export default function PlanOrderForm({ plan }: Props) {
     outline: "none",
   };
 
-  return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+  /* ── SUCCESS: form completely hidden, only confirmation shown ── */
+  if (status === "success") {
+    return (
+      <div style={{
+        background: "rgba(34,197,94,0.06)",
+        border: "1px solid rgba(34,197,94,0.25)",
+        borderRadius: 20,
+        padding: "48px 32px",
+        textAlign: "center",
+      }}>
+        <div style={{ fontSize: 56, marginBottom: 20 }}>✅</div>
+        <h3 style={{ color: "#4ade80", fontWeight: 800, fontSize: 22, margin: "0 0 12px" }}>
+          Order Received!
+        </h3>
+        <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 15, lineHeight: 1.7, margin: "0 0 20px", maxWidth: 380, marginLeft: "auto", marginRight: "auto" }}>
+          Thank you! We will contact you shortly via{" "}
+          <span style={{ color: "#25D366", fontWeight: 700 }}>WhatsApp</span>{" "}
+          or{" "}
+          <span style={{ color: "#60a5fa", fontWeight: 700 }}>email</span>{" "}
+          to complete the process and send your login credentials.
+        </p>
+        <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap", marginTop: 8 }}>
+          <span style={{ background: "rgba(37,211,102,0.12)", border: "1px solid rgba(37,211,102,0.25)", color: "#25D366", fontSize: 13, fontWeight: 600, padding: "8px 18px", borderRadius: 999 }}>
+            📱 WhatsApp reply within minutes
+          </span>
+          <span style={{ background: "rgba(96,165,250,0.12)", border: "1px solid rgba(96,165,250,0.25)", color: "#60a5fa", fontSize: 13, fontWeight: 600, padding: "8px 18px", borderRadius: 999 }}>
+            📧 Email confirmation sent
+          </span>
+        </div>
+      </div>
+    );
+  }
 
-      {/* Order instructions */}
+  return (
+    <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+
+      {/* Instructions */}
       <div style={{ marginBottom: 8, paddingBottom: 16, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-        <h2 style={{ fontSize: "1.1rem", fontWeight: 700, color: "#fff", marginBottom: 6 }}>
-          Place Your Order
-        </h2>
+        <h2 style={{ fontSize: "1.1rem", fontWeight: 700, color: "#fff", marginBottom: 6 }}>Place Your Order</h2>
         <p style={{ fontSize: 13, color: "rgba(255,255,255,0.65)", marginBottom: 12 }}>
           Please complete the form below. Make sure your details are correct so we can contact you without delay.
         </p>
         <ol style={{ paddingLeft: 18, margin: 0, display: "flex", flexDirection: "column", gap: 6 }}>
           <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Enter your first and last name</li>
-          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Add your email or WhatsApp number — depending on how you prefer to be contacted</li>
-          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Submit the form — we will contact you within minutes</li>
+          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Add your email or WhatsApp number</li>
+          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Submit — we will contact you within minutes</li>
         </ol>
       </div>
 
-      {/* Success banner */}
-      {status === "success" && (
-        <div
-          className="rounded-2xl px-4 py-3 text-sm font-medium"
-          style={{ background: "rgba(74,222,128,0.1)", border: "1px solid rgba(74,222,128,0.3)", color: "#4ade80" }}
-        >
-          ✅ Order received! We&apos;ll contact you within minutes.
-        </div>
-      )}
-
       {/* Error banner */}
       {status === "error" && (
-        <div
-          className="rounded-2xl px-4 py-3 text-sm font-medium"
-          style={{ background: "rgba(253,3,34,0.1)", border: "1px solid rgba(253,3,34,0.3)", color: "#ff6b6b" }}
-        >
+        <div style={{ background: "rgba(253,3,34,0.1)", border: "1px solid rgba(253,3,34,0.3)", color: "#ff6b6b", borderRadius: 12, padding: "12px 16px", fontSize: 14 }}>
           ❌ Something went wrong. Please try again or{" "}
-          <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="underline">
+          <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" style={{ color: "#ff6b6b", textDecoration: "underline" }}>
             contact us on WhatsApp
           </a>.
         </div>
@@ -147,117 +145,73 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Full Name */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>
           Full Name <span style={{ color: "#fd0322" }}>*</span>
         </label>
-        <input
-          type="text"
-          name="full_name"
-          required
-          placeholder="Your full name"
-          value={form.full_name}
-          onChange={handleChange}
-          style={inputStyle}
-        />
+        <input type="text" name="full_name" required placeholder="Your full name" value={form.full_name} onChange={handleChange} style={inputStyle} />
       </div>
 
       {/* Email */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>
           Email Address <span style={{ color: "#fd0322" }}>*</span>
         </label>
-        <input
-          type="text"
-          name="email"
-          required
-          placeholder="you@example.com"
-          value={form.email}
-          onChange={handleChange}
-          style={inputStyle}
-        />
-        {emailWarning && (
-          <p className="text-xs mt-1" style={{ color: "#fbbf24" }}>
-            This doesn&apos;t look like a valid email — make sure it contains @
-          </p>
-        )}
+        <input type="text" name="email" required placeholder="you@example.com" value={form.email} onChange={handleChange} style={inputStyle} />
+        {emailWarning && <p style={{ color: "#fbbf24", fontSize: 12, marginTop: 4 }}>This doesn&apos;t look like a valid email — make sure it contains @</p>}
       </div>
 
-      {/* Phone with flag dropdown */}
+      {/* Phone */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
-          Phone / WhatsApp
-          <span style={{ color:"rgba(255,255,255,0.4)", fontSize:11, marginLeft:6 }}>(optional)</span>
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>
+          Phone / WhatsApp <span style={{ color: "rgba(255,255,255,0.4)", fontSize: 11, marginLeft: 6 }}>(optional)</span>
         </label>
         <div className="phone-input-wrapper">
-          <PhoneInput
-            international
-            defaultCountry="CA"
-            value={phone}
-            onChange={setPhone}
-            placeholder="+1 234 567 8900"
-          />
+          <PhoneInput international defaultCountry="CA" value={phone} onChange={setPhone} placeholder="+1 234 567 8900" />
         </div>
       </div>
 
       {/* Country */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>Country</label>
-        <select
-          name="country"
-          value={form.country}
-          onChange={handleChange}
-          style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e", color: "#ffffff" }}
-        >
-          {countries.map((c) => (
-            <option key={c} value={c} style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>{c}</option>
-          ))}
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>Country</label>
+        <select name="country" value={form.country} onChange={handleChange} style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e" }}>
+          {countries.map(c => <option key={c} value={c} style={{ backgroundColor: "#1a1a2e" }}>{c}</option>)}
         </select>
       </div>
 
-      {/* Device Type */}
+      {/* Device */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>Device Type</label>
-        <select
-          name="device"
-          value={form.device}
-          onChange={handleChange}
-          style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e", color: "#ffffff" }}
-        >
-          <option value="" style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>Select your device</option>
-          {deviceTypes.map((d) => (
-            <option key={d} value={d} style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>{d}</option>
-          ))}
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>Device Type</label>
+        <select name="device" value={form.device} onChange={handleChange} style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e" }}>
+          <option value="" style={{ backgroundColor: "#1a1a2e" }}>Select your device</option>
+          {deviceTypes.map(d => <option key={d} value={d} style={{ backgroundColor: "#1a1a2e" }}>{d}</option>)}
         </select>
       </div>
 
       {/* Notes */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
-          Notes / Message
-          <span style={{ color:"rgba(255,255,255,0.4)", fontSize:11, marginLeft:6 }}>(optional)</span>
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>
+          Notes / Message <span style={{ color: "rgba(255,255,255,0.4)", fontSize: 11, marginLeft: 6 }}>(optional)</span>
         </label>
-        <textarea
-          name="message"
-          placeholder="Any special requests?"
-          value={form.message}
-          onChange={handleChange}
-          rows={3}
-          style={{ ...inputStyle, resize: "vertical" }}
-        />
+        <textarea name="message" placeholder="Any special requests?" value={form.message} onChange={handleChange} rows={3} style={{ ...inputStyle, resize: "vertical" }} />
       </div>
-
-      {/* Hidden plan field — passed via emailjs.send data object, not a real input */}
 
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full text-white py-4 rounded-2xl font-bold text-base transition-all hover:brightness-110 disabled:opacity-60"
-        style={{ background: "#F96E5B" }}
+        style={{
+          width: "100%", background: "#E8041F", color: "#fff", border: "none",
+          fontWeight: 800, fontSize: 16, padding: "16px", borderRadius: 14,
+          cursor: status === "loading" ? "not-allowed" : "pointer",
+          opacity: status === "loading" ? 0.7 : 1,
+          boxShadow: "0 4px 20px rgba(232,4,31,0.4)",
+          transition: "all 0.2s ease",
+          fontFamily: "inherit",
+        }}
       >
         {status === "loading" ? "Sending…" : "Order Now →"}
       </button>
 
-      <p style={{ textAlign:"center", color:"rgba(255,255,255,0.55)", fontSize:12 }}>
+      <p style={{ textAlign: "center", color: "rgba(255,255,255,0.4)", fontSize: 12 }}>
         Secure · Login credentials sent to your email within minutes
       </p>
     </form>

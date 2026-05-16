@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IPTV iPhone & iPad Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on iPhone or iPad in Canada with Maple4K. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free trial available.",
+    "Stream IPTV on iPhone or iPad in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free trial available.",
   keywords:
     "IPTV iPhone Canada, IPTV iPad Canada, IPTV iOS Canada, best IPTV for iPhone Canada, IPTV app Canada iOS",
   alternates: { canonical: "https://maple4k.ca/iptv-ios-canada" },
   openGraph: {
     title: "IPTV iPhone & iPad Canada | Maple4K – Best 4K IPTV Canada",
-    description: "Stream IPTV on iPhone or iPad in Canada with Maple4K. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free trial available.",
+    description: "Stream IPTV on iPhone or iPad in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free trial available.",
     url: "https://maple4k.ca/iptv-ios-canada",
     type: "website",
     siteName: "Maple4K",
@@ -41,7 +41,7 @@ export default function IPTVIOSPage() {
           </h1>
           <p className="text-xl text-black mb-8 max-w-2xl mx-auto">
             Watch Canadian TV anywhere on your iPhone or iPad. Live sports, news, movies,
-            and 25,000+ channels in the palm of your hand.
+            and 50,000+ channels + Netflix in the palm of your hand.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">

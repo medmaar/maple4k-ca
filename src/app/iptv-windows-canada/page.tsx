@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IPTV Windows PC & Mac Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on Windows PC or Mac in Canada with Maple4K. 25,000+ channels, 4K quality, NHL, TSN, CTV. Works with VLC, IPTV Smarters and more. Free trial available.",
+    "Stream IPTV on Windows PC or Mac in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV. Works with VLC, IPTV Smarters and more. Free trial available.",
   keywords:
     "IPTV Windows Canada, IPTV PC Canada, IPTV computer Canada, IPTV Mac Canada, best IPTV for PC Canada",
   alternates: { canonical: "https://maple4k.ca/iptv-windows-canada" },
   openGraph: {
     title: "IPTV Windows PC & Mac Canada | Maple4K – Best 4K IPTV Canada",
-    description: "Stream IPTV on Windows PC or Mac in Canada with Maple4K. 25,000+ channels, 4K quality, NHL, TSN, CTV. Works with VLC, IPTV Smarters and more. Free trial available.",
+    description: "Stream IPTV on Windows PC or Mac in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV. Works with VLC, IPTV Smarters and more. Free trial available.",
     url: "https://maple4k.ca/iptv-windows-canada",
     type: "website",
     siteName: "Maple4K",
@@ -24,7 +24,7 @@ const steps = [
   { step: "2", title: "Download an IPTV Player", desc: "Install a free IPTV player on your PC. We recommend IPTV Smarters Pro for Windows or VLC Media Player for a lightweight option." },
   { step: "3", title: "Add Your Playlist", desc: "Open the IPTV player and add your M3U playlist URL or Xtream Codes credentials that we provide." },
   { step: "4", title: "Load Your Channels", desc: "The player fetches your full channel list and EPG automatically. This takes about 30 seconds on first load." },
-  { step: "5", title: "Watch Full Screen", desc: "Press F11 for full screen and enjoy 25,000+ channels directly on your PC or laptop display." },
+  { step: "5", title: "Watch Full Screen", desc: "Press F11 for full screen and enjoy 50,000+ channels + Netflix directly on your PC or laptop display." },
 ];
 
 export default function IPTVWindowsPage() {

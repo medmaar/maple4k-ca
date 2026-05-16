@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4K",
   description:
-    "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 25,000+ live channels, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $9/month.",
+    "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 50,000+ channels + Netflix, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $9/month.",
   keywords: "IPTV Apple TV Canada, IPTV iPhone Canada, IPTV iPad Canada 2026",
   alternates: { canonical: "https://maple4k.ca/iptv-apple-tv-canada" },
   openGraph: {
     title: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4K",
-    description: "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 25,000+ live channels, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $9/month.",
+    description: "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 50,000+ channels + Netflix, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $9/month.",
     url: "https://maple4k.ca/iptv-apple-tv-canada",
     type: "website",
     siteName: "Maple4K",
@@ -28,7 +28,7 @@ const howToSchema = {
     { "@type": "HowToStep", name: "Download IPTV app", text: "Open the App Store on your Apple TV or iPhone and download 'IPTV Smarters Pro' or 'GSE Smart IPTV'." },
     { "@type": "HowToStep", name: "Get your credentials", text: "After subscribing to Maple4K, receive your server URL, username, and password by email within minutes." },
     { "@type": "HowToStep", name: "Add your playlist", text: "Open the app, select 'Add via URL' and enter your M3U playlist URL or Xtream Codes credentials." },
-    { "@type": "HowToStep", name: "Start streaming", text: "Browse and stream 25,000+ live channels and 120,000+ on-demand titles on your Apple device." },
+    { "@type": "HowToStep", name: "Start streaming", text: "Browse and stream 50,000+ channels + Netflix and 120,000+ on-demand titles on your Apple device." },
   ],
 };
 
@@ -47,7 +47,7 @@ export default function IPTVAppleTVCanadaPage() {
               <span style={{ color: "#F96E5B" }}>in Canada 2026</span>
             </h1>
             <p style={{ color: "#000000", fontSize: 17, lineHeight: 1.7, maxWidth: 680, marginBottom: 36 }}>
-              Maple4K is fully compatible with all Apple devices in Canada — Apple TV (4th gen and later), iPhone, and iPad. Stream 25,000+ live channels including CBC, TSN, and Sportsnet in 4K without a cable subscription.
+              Maple4K is fully compatible with all Apple devices in Canada — Apple TV (4th gen and later), iPhone, and iPad. Stream 50,000+ channels + Netflix including CBC, TSN, and Sportsnet in 4K without a cable subscription.
             </p>
             <Link href="/pricing" style={{ background: "#F96E5B", color: "#000000", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Get Your Maple4K Plan →
@@ -87,7 +87,7 @@ export default function IPTVAppleTVCanadaPage() {
                 { n: "02", title: "Receive Your Login Details", desc: "Within 5 minutes, we'll email your server URL, username, and password." },
                 { n: "03", title: "Download an IPTV App", desc: "On your Apple TV or iPhone, download 'IPTV Smarters Pro' or 'GSE Smart IPTV' from the App Store." },
                 { n: "04", title: "Enter Your Credentials", desc: "Open the app and enter your Xtream Codes or M3U URL. Your channel list loads automatically." },
-                { n: "05", title: "Watch in 4K", desc: "Enjoy 25,000+ live Canadian and international channels plus 120,000+ on-demand titles." },
+                { n: "05", title: "Watch in 4K", desc: "Enjoy 50,000+ live Canadian and international channels plus 120,000+ on-demand titles." },
               ].map((s) => (
                 <div key={s.n} style={{ display: "flex", gap: 20, background: "#ffffff", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
                   <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 36 }}>{s.n}</span>

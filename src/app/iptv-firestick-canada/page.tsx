@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IPTV Firestick Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 25,000+ channels, NHL, TSN & 4K quality. Free 24h trial.",
+    "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 50,000+ channels + Netflix, NHL, TSN & 4K quality. Free 24h trial.",
   alternates: { canonical: "https://maple4k.ca/iptv-firestick-canada" },
   openGraph: {
     title: "IPTV Firestick Canada | Maple4K – Best 4K IPTV Canada",
     description:
-      "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 25,000+ channels, NHL, TSN & 4K quality. Free 24h trial.",
+      "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 50,000+ channels + Netflix, NHL, TSN & 4K quality. Free 24h trial.",
     url: "https://maple4k.ca/iptv-firestick-canada",
     type: "website",
     siteName: "Maple4K",
@@ -40,7 +40,7 @@ const jsonLd = {
     {
       "@type": "HowToStep",
       name: "Start Streaming",
-      text: "Your 25,000+ Canadian and international channels are now ready. Navigate to TSN, Sportsnet, or CBC and enjoy 4K streaming.",
+      text: "Your 50,000+ Canadian and international channels are now ready. Navigate to TSN, Sportsnet, or CBC and enjoy 4K streaming.",
     },
   ],
 };
@@ -64,7 +64,7 @@ const steps = [
   {
     num: "4",
     title: "Start Streaming",
-    desc: "Your 25,000+ Canadian and international channels are now ready. Navigate to TSN, Sportsnet, or CBC and enjoy 4K streaming on your big screen.",
+    desc: "Your 50,000+ Canadian and international channels are now ready. Navigate to TSN, Sportsnet, or CBC and enjoy 4K streaming on your big screen.",
   },
 ];
 
@@ -123,7 +123,7 @@ export default function IPTVFirestickCanadaPage() {
               }}
             >
               Maple4K is the top-rated Maple4K service built for Amazon Firestick.
-              Connect your Firestick in under 5 minutes and unlock 25,000+ live channels,
+              Connect your Firestick in under 5 minutes and unlock 50,000+ channels + Netflix,
               120,000+ movies and series, and crystal-clear 4K HDR streams — including every
               major Canadian broadcaster and sports network.
             </p>
@@ -329,7 +329,7 @@ export default function IPTVFirestickCanadaPage() {
               so you always get your local feed.
             </p>
             <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 24 }}>
-              Beyond Canadian content, the full 25,000+ channel lineup spans US, UK, European,
+              Beyond Canadian content, the full 50,000+ channel lineup spans US, UK, European,
               Middle Eastern, and South Asian networks — plus a 120,000+ title VOD library of
               movies and series, all accessible from the Firestick remote.
             </p>

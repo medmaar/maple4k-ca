@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "1 Month IPTV Canada — $9 | Maple4K" },
   description:
-    "Get 1 month of IPTV in Canada for only $9. 25,000+ live channels, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within minutes.",
+    "Get 1 month of IPTV in Canada for only $9. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within minutes.",
   keywords:
     "IPTV 1 month Canada, Maple4K 1 month, IPTV $9 Canada, month to month IPTV Canada",
   alternates: { canonical: "https://maple4k.ca/pricing/1-month" },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "What is included in the 1-month IPTV plan?",
-    a: "The 1-month plan gives you full access to 25,000+ live channels including all Canadian networks (TSN, Sportsnet, CBC, CTV, Global, RDS, TVA), 120,000+ movies and series on demand, 4K Ultra HD streaming, electronic program guide (EPG), and 7-day catch-up TV — all for $9.",
+    a: "The 1-month plan gives you full access to 50,000+ channels + Netflix including all Canadian networks (TSN, Sportsnet, CBC, CTV, Global, RDS, TVA), 120,000+ movies and series on demand, 4K Ultra HD streaming, electronic program guide (EPG), and 7-day catch-up TV — all for $9.",
   },
   {
     q: "How do I receive my login credentials after ordering?",
@@ -60,7 +60,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Maple4K 1 Month IPTV Plan",
-  description: "1 month of IPTV access to 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
+  description: "1 month of IPTV access to 50,000+ channels + Netflix in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
   brand: { "@type": "Brand", name: "Maple4K" },
   "image": "https://maple4k.ca/og-image.jpg",
   "review": {
