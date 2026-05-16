@@ -104,7 +104,7 @@ const TrustpilotLogo = () => (
   <svg viewBox="0 0 260 62" width="180" height="44" xmlns="http://www.w3.org/2000/svg">
     <path d="M28 0l5.5 17H52L37.5 27.5l5.5 17L28 34 13 44.5l5.5-17L4 17h18.5z" fill="#00b67a"/>
     <path d="M28 0l5.5 17H52L37.5 27.5 28 34V0z" fill="#005128"/>
-    <text x="60" y="22" fontFamily="Arial,sans-serif" fontWeight="700" fontSize="22" fill="#191919">Trustpilot</text>
+    <text x="60" y="22" fontFamily="Arial,sans-serif" fontWeight="700" fontSize="22" fill="#ffffff">Trustpilot</text>
     <g transform="translate(60,32)">
       {[0,1,2,3,4].map(i => (
         <rect key={i} x={i*24} y={0} width={20} height={20} rx="2" fill="#00b67a"/>
@@ -122,7 +122,7 @@ const GoogleReviewsLogo = () => (
     <text x="50" y="26" fontFamily="Arial,sans-serif" fontWeight="700" fontSize="24" dominantBaseline="middle">
       <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
     </text>
-    <text x="50" y="48" fontFamily="Arial,sans-serif" fontWeight="600" fontSize="15" fill="#5F6368">Reviews</text>
+    <text x="50" y="48" fontFamily="Arial,sans-serif" fontWeight="600" fontSize="15" fill="rgba(255,255,255,0.6)">Reviews</text>
     <text x="135" y="48" fontFamily="Arial,sans-serif" fontSize="15" fill="#FBBC05" dominantBaseline="auto">★★★★★</text>
   </svg>
 );
@@ -165,7 +165,7 @@ const ProgressDots = ({ total, current, go }: { total: number; current: number; 
       <button key={i} onClick={() => go(i)} aria-label={`Go to review ${i + 1}`} style={{
         width: i === current ? 26 : 10, height: 10, borderRadius: 99,
         border: "none", cursor: "pointer", padding: 0, fontFamily: "inherit",
-        background: i === current ? "#F96E5B" : "rgba(63,154,174,0.3)",
+        background: i === current ? "#E8041F" : "rgba(255,255,255,0.15)",
         transition: "all 0.45s cubic-bezier(0.34,1.56,0.64,1)",
       }} />
     ))}
@@ -182,59 +182,77 @@ const TP_STARS = () => (
   </div>
 );
 
+// Dark theme tokens used throughout
+const CARD_BG     = "rgba(255,255,255,0.05)";
+const CARD_BORDER = "rgba(255,255,255,0.09)";
+const TEXT_MAIN   = "#ffffff";
+const TEXT_MUTED  = "rgba(255,255,255,0.6)";
+const TEXT_NAME   = "rgba(255,255,255,0.85)";
+
 export default function ReviewsSection({ showHeader = true }: { showHeader?: boolean }) {
   const tp = useAutoSlide(trustpilotReviews.length, 5200);
   const wa = useAutoSlide(Math.ceil(whatsappReviews.length / 2), 5700);
-  const g = useAutoSlide(Math.ceil(googleReviews.length / 3), 6100);
+  const g  = useAutoSlide(Math.ceil(googleReviews.length / 3), 6100);
 
   const waVisible = whatsappReviews.slice(wa.current * 2, wa.current * 2 + 2);
-  const gVisible = googleReviews.slice(g.current * 3, g.current * 3 + 3);
-  const tpReview = trustpilotReviews[tp.current];
+  const gVisible  = googleReviews.slice(g.current * 3, g.current * 3 + 3);
+  const tpReview  = trustpilotReviews[tp.current];
 
   return (
     <div>
       {showHeader && (
         <div style={{ textAlign: "center", marginBottom: 52 }}>
-          <p style={{ color: "#C03D28", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 14 }}>Verified Reviews</p>
-          <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", fontWeight: 900, color: "#000000", marginBottom: 12 }}>
-            What Customers Say About <span style={{ color: "#C03D28" }}>Maple4K</span>
+          <p style={{ color: "#E8041F", fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 14 }}>
+            Verified Reviews
+          </p>
+          <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", fontWeight: 900, color: TEXT_MAIN, marginBottom: 12 }}>
+            What Customers Say About{" "}
+            <span style={{ color: "#E8041F" }}>Maple4K</span>
           </h2>
-          <p style={{ color: "#000000", fontSize: 15, marginBottom: 28 }}>Real feedback from Trustpilot, WhatsApp & Google</p>
+          <p style={{ color: TEXT_MUTED, fontSize: 15, marginBottom: 32 }}>
+            Real feedback from Trustpilot, WhatsApp &amp; Google
+          </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 14 }}>
             {[
-              { val: "5.0", label: "Trustpilot", color: "#00b67a" },
-              { val: "50,000+", label: "Customers", color: "#3F9AAE" },
-              { val: "4.9★", label: "Google", color: "#FBBC04" },
-              { val: "24/7", label: "Support", color: "#FF9F91" },
+              { val: "5.0",     label: "Trustpilot", color: "#00b67a" },
+              { val: "50,000+", label: "Customers",  color: "#00E5FF" },
+              { val: "4.9★",   label: "Google",     color: "#FBBC04" },
+              { val: "24/7",    label: "Support",    color: "#E8041F" },
             ].map(s => (
-              <div key={s.val} style={{ background: "#1A3D45", borderRadius: 12, padding: "12px 20px", textAlign: "center", minWidth: 90 }}>
-                <div style={{ fontSize: 18, fontWeight: 900, color: s.color }}>{s.val}</div>
-                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.65)", marginTop: 2 }}>{s.label}</div>
+              <div key={s.val} style={{ background: CARD_BG, border: `1px solid ${CARD_BORDER}`, borderRadius: 14, padding: "14px 24px", textAlign: "center", minWidth: 100 }}>
+                <div style={{ fontSize: 20, fontWeight: 900, color: s.color }}>{s.val}</div>
+                <div style={{ fontSize: 11, color: TEXT_MUTED, marginTop: 4, fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase" }}>{s.label}</div>
               </div>
             ))}
           </div>
         </div>
       )}
 
-      {/* TRUSTPILOT */}
+      {/* ── TRUSTPILOT ── */}
       <div style={{ marginBottom: 64 }}>
         <div style={{ display: "flex", justifyContent: "center", marginBottom: 28 }}>
           <TrustpilotLogo />
         </div>
         <div style={{ maxWidth: 780, margin: "0 auto", overflow: "hidden" }}>
           <div style={slideStyle(tp.sliding)}>
-            <div style={{ background: "#fff", borderRadius: 20, padding: "32px 36px", boxShadow: "0 4px 28px rgba(63,154,174,0.13)", border: "1px solid rgba(63,154,174,0.15)" }}>
+            <div style={{
+              background: CARD_BG,
+              border: `1px solid ${CARD_BORDER}`,
+              borderRadius: 20,
+              padding: "32px 36px",
+              boxShadow: "0 8px 40px rgba(0,0,0,0.4)",
+            }}>
               <TP_STARS />
-              <h3 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#000" }}>{tpReview.title}</h3>
-              <p style={{ color: "#000", lineHeight: 1.8, fontSize: 15, marginBottom: 20 }}>{tpReview.text}</p>
-              <p style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 13 }}>— {tpReview.name} <FlagImg flag={tpReview.flag} /></p>
+              <h3 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: TEXT_MAIN }}>{tpReview.title}</h3>
+              <p style={{ color: TEXT_MUTED, lineHeight: 1.8, fontSize: 15, marginBottom: 20 }}>{tpReview.text}</p>
+              <p style={{ color: "#00b67a", fontWeight: 600, fontSize: 13 }}>— {tpReview.name} <FlagImg flag={tpReview.flag} /></p>
             </div>
           </div>
           <ProgressDots total={trustpilotReviews.length} current={tp.current} go={tp.go} />
         </div>
       </div>
 
-      {/* WHATSAPP */}
+      {/* ── WHATSAPP ── */}
       <div style={{ marginBottom: 64 }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginBottom: 28 }}>
           <div style={{ background: "#25D366", borderRadius: 10, width: 38, height: 38, display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -246,15 +264,20 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
           <div style={slideStyle(wa.sliding)}>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
               {waVisible.map((r, i) => (
-                <div key={i} style={{ background: "#fff", borderRadius: 16, padding: "24px", boxShadow: "0 4px 20px rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.15)" }}>
+                <div key={i} style={{
+                  background: CARD_BG,
+                  border: `1px solid ${CARD_BORDER}`,
+                  borderRadius: 16, padding: "24px",
+                  boxShadow: "0 6px 30px rgba(0,0,0,0.35)",
+                }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
                     <div style={{ width: 34, height: 34, borderRadius: "50%", background: "#25D366", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                       <WA_ICON />
                     </div>
-                    <span style={{ fontWeight: 700, fontSize: 14, color: "#000" }}>WhatsApp</span>
+                    <span style={{ fontWeight: 700, fontSize: 14, color: TEXT_MAIN }}>WhatsApp</span>
                   </div>
-                  <p style={{ color: "#000", lineHeight: 1.75, fontSize: 14, marginBottom: 14 }}>{r.text}</p>
-                  <p style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 13 }}>— {r.name} <FlagImg flag={r.flag} /></p>
+                  <p style={{ color: TEXT_MUTED, lineHeight: 1.75, fontSize: 14, marginBottom: 14 }}>{r.text}</p>
+                  <p style={{ color: "#25D366", fontWeight: 600, fontSize: 13 }}>— {r.name} <FlagImg flag={r.flag} /></p>
                 </div>
               ))}
             </div>
@@ -263,7 +286,7 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
         </div>
       </div>
 
-      {/* GOOGLE */}
+      {/* ── GOOGLE ── */}
       <div style={{ marginBottom: 24 }}>
         <div style={{ display: "flex", justifyContent: "center", marginBottom: 28 }}>
           <GoogleReviewsLogo />
@@ -272,12 +295,19 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
           <div style={slideStyle(g.sliding)}>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
               {gVisible.map((r, i) => (
-                <div key={i} style={{ background: "#fff", borderRadius: 16, padding: "24px", boxShadow: "0 4px 20px rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.15)" }}>
+                <div key={i} style={{
+                  background: CARD_BG,
+                  border: `1px solid ${CARD_BORDER}`,
+                  borderRadius: 16, padding: "24px",
+                  boxShadow: "0 6px 30px rgba(0,0,0,0.35)",
+                }}>
                   <div style={{ display: "flex", gap: 2, marginBottom: 10 }}>
-                    {Array.from({ length: r.rating }).map((_, j) => <span key={j} style={{ color: "#FBBC04", fontSize: 20 }}>★</span>)}
+                    {Array.from({ length: r.rating }).map((_, j) => (
+                      <span key={j} style={{ color: "#FBBC04", fontSize: 20 }}>★</span>
+                    ))}
                   </div>
-                  <p style={{ fontWeight: 700, fontSize: 15, color: "#000", marginBottom: 10 }}>{r.name}</p>
-                  <p style={{ color: "#000", lineHeight: 1.75, fontSize: 14 }}>{r.text}</p>
+                  <p style={{ fontWeight: 700, fontSize: 15, color: TEXT_NAME, marginBottom: 10 }}>{r.name}</p>
+                  <p style={{ color: TEXT_MUTED, lineHeight: 1.75, fontSize: 14 }}>{r.text}</p>
                 </div>
               ))}
             </div>
