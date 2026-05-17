@@ -16,6 +16,7 @@ const CARDS = [
     width: 220,
     zIndex: 4,
     delay: "0s",
+    image: "/iptv-subscription-canada-1.jpg",
   },
   {
     label: "🎬 Movies",
@@ -28,6 +29,7 @@ const CARDS = [
     width: 190,
     zIndex: 3,
     delay: "0.15s",
+    image: null,
   },
   {
     label: "⚡ Action",
@@ -40,6 +42,7 @@ const CARDS = [
     width: 240,
     zIndex: 5,
     delay: "0.3s",
+    image: "/iptv-subscription-canada-3.jpg",
   },
   {
     label: "🎭 Series",
@@ -52,6 +55,7 @@ const CARDS = [
     width: 200,
     zIndex: 2,
     delay: "0.45s",
+    image: null,
   },
 ];
 
@@ -223,30 +227,45 @@ export default function HeroSection() {
               animation: `cardFloat${idx} ${4 + idx * 0.7}s ease-in-out infinite`,
             }}
           >
+            {/* Real image background if available */}
+            {card.image && (
+              <img
+                src={card.image}
+                alt={card.label}
+                style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+              />
+            )}
             {/* Card shine overlay */}
             <div style={{
               position: "absolute", inset: 0,
-              background: "linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 50%)",
+              background: card.image
+                ? "linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)"
+                : "linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 50%)",
             }} />
-            {/* Card content */}
-            <div style={{ padding: "20px 18px", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-              <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
-                {[...Array(3)].map((_, i) => (
-                  <div key={i} style={{
-                    height: 6, borderRadius: 3,
-                    background: card.accent,
-                    opacity: 0.3 + i * 0.15,
-                    width: `${30 + i * 15}%`,
-                  }} />
-                ))}
-              </div>
-              <div>
-                <div style={{ fontSize: 28, marginBottom: 6 }}>{card.emoji}</div>
-                <div style={{ fontSize: 11, fontWeight: 700, color: card.accent, letterSpacing: "0.06em", textTransform: "uppercase" }}>
-                  {card.label}
-                </div>
+            {/* Card label badge */}
+            <div style={{ position: "absolute", bottom: 10, left: 12, zIndex: 2 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: card.image ? "#fff" : card.accent, letterSpacing: "0.06em", textTransform: "uppercase", textShadow: card.image ? "0 1px 4px rgba(0,0,0,0.8)" : "none" }}>
+                {card.label}
               </div>
             </div>
+            {/* Abstract shimmer bars for non-image cards */}
+            {!card.image && (
+              <div style={{ padding: "20px 18px", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                  {[...Array(3)].map((_, i) => (
+                    <div key={i} style={{
+                      height: 6, borderRadius: 3,
+                      background: card.accent,
+                      opacity: 0.3 + i * 0.15,
+                      width: `${30 + i * 15}%`,
+                    }} />
+                  ))}
+                </div>
+                <div>
+                  <div style={{ fontSize: 28, marginBottom: 6 }}>{card.emoji}</div>
+                </div>
+              </div>
+            )}
             {/* Bottom gradient */}
             <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "40%", background: "linear-gradient(to top, rgba(0,0,0,0.5), transparent)" }} />
           </div>

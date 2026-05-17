@@ -123,12 +123,14 @@ export default function HomePage() {
       {/* ── 6. EXPERIENCE SECTION ── */}
       <section style={{ padding: "100px 16px", background: "#0E1120" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 60, alignItems: "center" }}>
-          <div className="ma-left" style={{ position: "relative", borderRadius: 24, overflow: "hidden", background: "linear-gradient(135deg, #1a0d1f, #0d1a25)", minHeight: 380, display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid rgba(255,255,255,0.08)" }}>
-            <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 30% 70%, rgba(232,4,31,0.15), transparent 60%), radial-gradient(circle at 80% 20%, rgba(63,154,174,0.1), transparent 60%)" }} />
-            <div style={{ textAlign: "center", zIndex: 1, position: "relative" }}>
-              <div style={{ fontSize: 64, marginBottom: 16 }}>▶</div>
-              <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, margin: 0 }}>Your favourite content, anywhere</p>
-            </div>
+          <div className="ma-left" style={{ position: "relative", borderRadius: 24, overflow: "hidden", minHeight: 380, border: "1px solid rgba(255,255,255,0.08)" }}>
+            <img
+              src="/iptv-subscription-canada-2.jpg"
+              alt="Stream IPTV Canada live sports on any device — Maple4K"
+              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", minHeight: 380 }}
+              loading="lazy"
+            />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.55) 0%, transparent 60%)" }} />
           </div>
           <div className="ma-right">
             <p className="section-label">The Ultimate TV Experience</p>

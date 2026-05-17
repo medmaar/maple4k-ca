@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Best IPTV for Hockey Canada – Maple4K" }],
+    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1920, height: 1080, alt: "Best IPTV for Hockey Canada – Maple4K" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -57,6 +57,16 @@ export default function BestIPTVHockeyPage() {
           <h1 style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
             Best IPTV for Hockey Canada 2026 — Every NHL Game, Zero Blackouts
           </h1>
+
+          {/* Hero image */}
+          <div style={{ borderRadius: 16, overflow: "hidden", marginBottom: 28, border: "1px solid rgba(255,255,255,0.08)" }}>
+            <img
+              src="/iptv-subscription-canada-1.jpg"
+              alt="Watch hockey Canada live — IPTV NHL streaming Maple4K"
+              style={{ width: "100%", height: "auto", display: "block", maxHeight: 420, objectFit: "cover" }}
+              loading="eager"
+            />
+          </div>
           <p style={{ color: "#444", fontSize: "1.1rem", lineHeight: 1.75, marginBottom: 32 }}>
             Hockey is Canada&apos;s sport — and Canadian hockey fans have been overpaying for it for years. Bell&apos;s Crave + TSN Direct costs $30–$50/month on top of your existing cable or internet package. Rogers&apos; NHL streaming packages are comparably priced. Maple4K delivers every single NHL game, all TSN feeds, and all Sportsnet feeds for $9–$49/year total. This guide explains exactly how.
           </p>

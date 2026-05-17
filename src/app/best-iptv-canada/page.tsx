@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: "Canada's best IPTV service. 4K quality, 50,000+ channels + Netflix, free trial. From $9/month.",
     url: "https://maple4k.ca/best-iptv-canada",
     type: "website", siteName: "Maple4K", locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Best IPTV Canada – Maple4K" }],
+    images: [{ url: "/iptv-subscription-canada-3.jpg", width: 1400, height: 933, alt: "Best IPTV Canada – Maple4K" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -96,6 +96,22 @@ export default function BestIPTVCanadaPage() {
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
               <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Get Free Trial →</a>
               <a href="/pricing" style={{ border: "2px solid rgba(249,110,91,0.5)", color: "#E8041F", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+            </div>
+
+            {/* Hero image — NHL arena with Canadian flag */}
+            <div style={{ marginTop: 40, borderRadius: 20, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative" }}>
+              <img
+                src="/iptv-subscription-canada-3.jpg"
+                alt="Watch NHL hockey live in Canada — best IPTV service Maple4K"
+                style={{ width: "100%", height: "auto", maxHeight: 420, objectFit: "cover", display: "block" }}
+                loading="eager"
+              />
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.6) 0%, transparent 50%)" }} />
+              <div style={{ position: "absolute", bottom: 20, left: 24, right: 24 }}>
+                <p style={{ margin: 0, fontWeight: 700, fontSize: 15, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.8)" }}>
+                  🍁 Stream every NHL game live — no blackouts, no extra fees
+                </p>
+              </div>
             </div>
           </div>
         </section>
