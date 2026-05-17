@@ -105,6 +105,7 @@ export default function IptvBoxPage() {
               <p style={{ margin: 0, fontWeight: 700, fontSize: 14, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>🏆 Never miss a championship moment — stream live with Maple4K</p>
             </div>
           </div>
+        </div>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <h2 style={{ fontWeight: 900, fontSize: "clamp(1.6rem,3vw,2.2rem)", marginBottom: 16 }}>Get Started with Any IPTV Box</h2>
           <p style={{ color: "rgba(255,255,255,0.6)", marginBottom: 32, fontSize: 15, lineHeight: 1.7 }}>50,000+ channels + Netflix on your box in minutes. Free 24h trial — no credit card.</p>
