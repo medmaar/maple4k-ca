@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   keywords: "iptv subscription, iptv subscription canada, iptv service canada, best iptv subscription canada, iptv providers canada, canadian iptv, iptv from canada, best iptv canada 2026",
   alternates: { canonical: "https://maple4k.ca/iptv-subscription" },
   openGraph: {
-    url: ""https://maple4k.ca/iptv-subscription",
+    url: "https://maple4k.ca/iptv-subscription",
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",

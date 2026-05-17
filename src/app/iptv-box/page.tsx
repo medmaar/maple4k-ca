@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   keywords: "iptv box, iptv with box, at iptv box, iptv box at, free box for iptv in canada, iptv box canada, best iptv box canada, formuler box canada, mag box iptv, android tv box iptv",
   alternates: { canonical: "https://maple4k.ca/iptv-box" },
   openGraph: {
-    url: ""https://maple4k.ca/iptv-box",
+    url: "https://maple4k.ca/iptv-box",
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
