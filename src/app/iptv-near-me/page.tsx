@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   description: "Looking for IPTV near me in Canada? Maple4K serves all Canadian cities — Toronto, Vancouver, Montreal, Calgary, Ottawa, Edmonton. 50,000+ channels + Netflix. Try free 24h.",
   keywords: "iptv near me, best iptv near me, iptv 4k near me, iptv canada, iptv service canada, iptv providers canada, iptv subscription canada, canadian iptv, best iptv in canada",
   alternates: { canonical: "https://maple4k.ca/iptv-near-me" },
+  openGraph: {
+    url: ""https://maple4k.ca/iptv-near-me",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/iptv-near-me.jpg", width: 1280, height: 720, alt: "IPTV Near Me Canada – Maple4K" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const cities = [
@@ -47,6 +55,15 @@ export default function IptvNearMePage() {
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
             <Link href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "16px 40px", borderRadius: 14, fontWeight: 800, fontSize: 16, textDecoration: "none", boxShadow: "0 6px 24px rgba(232,4,31,0.4)" }}>▶ Free Trial 24H</Link>
             <Link href="/pricing" style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)", color: "#fff", padding: "16px 32px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>View Plans →</Link>
+          </div>
+
+          {/* Hero image */}
+          <div style={{ marginTop: 40, borderRadius: 18, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative", maxWidth: 820, margin: "40px auto 0" }}>
+            <img src="/iptv-near-me.jpg" alt="IPTV near me Canada — watch hockey, baseball, sports live with Maple4K" style={{ width: "100%", height: "auto", maxHeight: 380, objectFit: "cover", display: "block" }} loading="eager" />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.65) 0%, transparent 55%)" }} />
+            <div style={{ position: "absolute", bottom: 18, left: 22 }}>
+              <p style={{ margin: 0, fontWeight: 700, fontSize: 14, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>🍁 All Canadian sports — NHL, MLB, CFL, MLS — live near you with Maple4K</p>
+            </div>
           </div>
         </div>
       </section>

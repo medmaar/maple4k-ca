@@ -4,6 +4,14 @@ export const metadata: Metadata = {
   description: "Get the best IPTV subscription in Canada. Monthly, quarterly and annual plans. No contracts, free trial. 50,000+ channels + Netflix, 4K quality. IPTV subscription from $9/month.",
   keywords: "iptv subscription, iptv subscription canada, iptv service canada, best iptv subscription canada, iptv providers canada, canadian iptv, iptv from canada, best iptv canada 2026",
   alternates: { canonical: "https://maple4k.ca/iptv-subscription" },
+  openGraph: {
+    url: ""https://maple4k.ca/iptv-subscription",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/iptv-subscription.jpg", width: 1280, height: 720, alt: "IPTV Subscription Canada – Maple4K" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const breadcrumbSchema = {
@@ -63,6 +71,15 @@ export default function IPTVSubscriptionPage() {
             <a href="/pricing" style={{ border: "2px solid rgba(249,110,91,0.5)", color: "#E8041F", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>All Plans & Pricing</a>
           </div>
         </div>
+
+          {/* Hero image */}
+          <div style={{ margin: "40px 16px 0", borderRadius: 20, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative" }}>
+            <img src="/iptv-subscription.jpg" alt="IPTV subscription Canada — thousands of Canadians streaming live sports with Maple4K" style={{ width: "100%", maxHeight: 400, objectFit: "cover", objectPosition: "center 30%", display: "block" }} loading="eager" />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.65) 0%, transparent 50%)" }} />
+            <div style={{ position: "absolute", bottom: 20, left: 24, right: 24 }}>
+              <p style={{ margin: 0, fontWeight: 700, fontSize: 15, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>🍁 Join thousands of Canadians streaming with Maple4K — from $9/month</p>
+            </div>
+          </div>
       </section>
       <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 80px" }}>
         <h2 style={{ fontSize: "1.5rem", fontWeight: 800, marginBottom: 16 }}>What&apos;s Included in Every IPTV Subscription</h2>

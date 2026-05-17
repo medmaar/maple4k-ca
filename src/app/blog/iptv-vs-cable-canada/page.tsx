@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "IPTV vs Cable Canada – Maple4K" }],
+    images: [{ url: "/iptv-free.jpg", width: 512, height: 512, alt: "IPTV vs Cable Canada – Maple4K" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -84,7 +84,13 @@ export default function IPTVvsCableCanada() {
           <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 900, marginBottom: 24, lineHeight: 1.2 }}>
             IPTV vs Cable Canada 2026: <span style={{ color: "#ef4444" }}>Which Is Better?</span>
           </h1>
-          <p style={{ fontSize: 18, color: "#d1d5db", marginBottom: 40, lineHeight: 1.75 }}>
+
+          {/* Hero image */}
+          <div style={{ borderRadius: 16, overflow: "hidden", marginBottom: 28, marginTop: 20, border: "1px solid rgba(255,255,255,0.08)", position: "relative" }}>
+            <img src="/iptv-free.jpg" alt="IPTV vs cable Canada — NHL arena streaming vs cable TV comparison" style={{ width: "100%", height: "auto", maxHeight: 400, objectFit: "cover", display: "block" }} loading="eager" />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.6) 0%, transparent 55%)" }} />
+            <p style={{ position: "absolute", bottom: 16, left: 20, margin: 0, fontWeight: 700, fontSize: 14, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>🍁 Why Canadians are switching from cable to IPTV — $80/mo vs $9/mo</p>
+          </div>          <p style={{ fontSize: 18, color: "#d1d5db", marginBottom: 40, lineHeight: 1.75 }}>
             Canadian households are ditching cable at record rates — over 400,000 subscribers cut the
             cord in 2025 alone. But is IPTV actually better than cable in Canada? We break it down
             across every factor that matters.

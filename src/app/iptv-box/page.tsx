@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   description: "Best IPTV box Canada 2026. Formuler, MAG, Firestick, Android TV box with 50,000+ channels + Netflix. IPTV subscription from $9/month. Free 24h trial — no credit card.",
   keywords: "iptv box, iptv with box, at iptv box, iptv box at, free box for iptv in canada, iptv box canada, best iptv box canada, formuler box canada, mag box iptv, android tv box iptv",
   alternates: { canonical: "https://maple4k.ca/iptv-box" },
+  openGraph: {
+    url: ""https://maple4k.ca/iptv-box",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/iptv-box.jpg", width: 1280, height: 720, alt: "IPTV Box Canada – Maple4K" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const boxes = [
@@ -43,6 +51,15 @@ export default function IptvBoxPage() {
             <Link href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "16px 40px", borderRadius: 14, fontWeight: 800, fontSize: 16, textDecoration: "none", boxShadow: "0 6px 24px rgba(232,4,31,0.4)" }}>▶ Free Trial 24H</Link>
             <Link href="/pricing" style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)", color: "#fff", padding: "16px 32px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>View Plans →</Link>
           </div>
+
+          {/* Hero image — IPTV on TV */}
+          <div style={{ marginTop: 40, borderRadius: 18, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative", maxWidth: 820, margin: "40px auto 0" }}>
+            <img src="/iptv-box.jpg" alt="IPTV box Canada — stream live hockey on your TV with Maple4K" style={{ width: "100%", height: "auto", maxHeight: 380, objectFit: "cover", display: "block" }} loading="eager" />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.65) 0%, transparent 55%)" }} />
+            <div style={{ position: "absolute", bottom: 18, left: 22 }}>
+              <p style={{ margin: 0, fontWeight: 700, fontSize: 14, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>📺 Stream IPTV on any box — instant setup, 4K quality</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -79,6 +96,15 @@ export default function IptvBoxPage() {
       </section>
 
       <section style={{ padding: "80px 16px", textAlign: "center", background: "linear-gradient(135deg, #0E1120, #1a0510 50%, #0E1120)" }}>
+        <div style={{ maxWidth: 860, margin: "0 auto" }}>
+          {/* Trophy image */}
+          <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", marginBottom: 40, position: "relative" }}>
+            <img src="/iptv-with-box.jpg" alt="Canada wins — celebrate every game with IPTV Maple4K" style={{ width: "100%", maxHeight: 360, objectFit: "cover", objectPosition: "center 20%", display: "block" }} loading="lazy" />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.7) 0%, transparent 50%)" }} />
+            <div style={{ position: "absolute", bottom: 18, left: 22 }}>
+              <p style={{ margin: 0, fontWeight: 700, fontSize: 14, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>🏆 Never miss a championship moment — stream live with Maple4K</p>
+            </div>
+          </div>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <h2 style={{ fontWeight: 900, fontSize: "clamp(1.6rem,3vw,2.2rem)", marginBottom: 16 }}>Get Started with Any IPTV Box</h2>
           <p style={{ color: "rgba(255,255,255,0.6)", marginBottom: 32, fontSize: 15, lineHeight: 1.7 }}>50,000+ channels + Netflix on your box in minutes. Free 24h trial — no credit card.</p>

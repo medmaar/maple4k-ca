@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   description: "Meilleur service IPTV Québec 2026. TVA, RDS, ICI Radio-Canada, Noovo, V Télé en 4K Ultra HD. Essai gratuit 24h sans carte de crédit. IPTV abonnement dès 9$/mois.",
   keywords: "iptv québec, iptv canada, iptv montreal, iptv abonnement québec, meilleur iptv québec, iptv service québec, iptv 4k québec, iptv near me, iptv subscription canada",
   alternates: { canonical: "https://maple4k.ca/iptv-quebec" },
+  openGraph: {
+    url: ""https://maple4k.ca/iptv-quebec",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/iptv-quebec.jpg", width: 1280, height: 720, alt: "IPTV Québec – Maple4K" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const qcChannels = [
@@ -40,6 +48,15 @@ export default function IptvQuebecPage() {
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
             <Link href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "16px 40px", borderRadius: 14, fontWeight: 800, fontSize: 16, textDecoration: "none", boxShadow: "0 6px 24px rgba(232,4,31,0.4)" }}>▶ Essai Gratuit 24H</Link>
             <Link href="/pricing" style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)", color: "#fff", padding: "16px 32px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>Voir les forfaits →</Link>
+          </div>
+
+          {/* Hero image */}
+          <div style={{ marginTop: 40, borderRadius: 18, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative", maxWidth: 820, margin: "40px auto 0" }}>
+            <img src="/iptv-quebec.jpg" alt="IPTV Québec — regardez le hockey canadien en direct avec Maple4K" style={{ width: "100%", height: "auto", maxHeight: 400, objectFit: "cover", display: "block" }} loading="eager" />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.65) 0%, transparent 55%)" }} />
+            <div style={{ position: "absolute", bottom: 18, left: 22 }}>
+              <p style={{ margin: 0, fontWeight: 700, fontSize: 14, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>🏒 Regardez le Canadien, le CH et tous les sports en direct — sans coupure</p>
+            </div>
           </div>
         </div>
       </section>

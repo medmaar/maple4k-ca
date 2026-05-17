@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K Free IPTV Trial Canada" }],
+    images: [{ url: "/iptv-free-trial.jpg", width: 512, height: 512, alt: "Maple4K Free IPTV Trial Canada" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -135,6 +135,20 @@ export default function FreeTrialPage() {
               </div>
             </div>
             </div>
+          </div>
+        </section>
+
+        {/* Image banner */}
+        <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
+          <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative" }}>
+            <img src="/iptv-free-trial.jpg" alt="Free trial IPTV Canada — Canadian sports fans streaming live" style={{ width: "100%", height: 240, objectFit: "cover", display: "block" }} loading="lazy" />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.7) 0%, transparent 55%)" }} />
+            <p style={{ position: "absolute", bottom: 14, left: 16, margin: 0, fontWeight: 700, fontSize: 13, color: "#fff", textShadow: "0 1px 4px rgba(0,0,0,0.9)" }}>🍁 Stream Canadian sports live — free trial, no card needed</p>
+          </div>
+          <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative" }}>
+            <img src="/free-trial-iptv.jpg" alt="IPTV free trial Canada — fan holding Canadian flag" style={{ width: "100%", height: 240, objectFit: "cover", objectPosition: "center top", display: "block" }} loading="lazy" />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.7) 0%, transparent 55%)" }} />
+            <p style={{ position: "absolute", bottom: 14, left: 16, margin: 0, fontWeight: 700, fontSize: 13, color: "#fff", textShadow: "0 1px 4px rgba(0,0,0,0.9)" }}>🇨🇦 Full access in minutes — 50,000+ channels + Netflix</p>
           </div>
         </section>
       </main>
