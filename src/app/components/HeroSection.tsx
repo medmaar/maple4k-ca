@@ -29,10 +29,7 @@ const CARDS = [
     width: 190,
     zIndex: 3,
     delay: "0.15s",
-    image: null,
-  },
-  {
-    label: "⚡ Action",
+    image: "/iptv-canada.jpg",
     gradient: "linear-gradient(135deg, #1b2838 0%, #0f1923 100%)",
     accent: "#EF5350",
     emoji: "⚡",
@@ -55,9 +52,7 @@ const CARDS = [
     width: 200,
     zIndex: 2,
     delay: "0.45s",
-    image: null,
-  },
-];
+    image: "/iptv-subscription.jpg",
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
@@ -80,6 +75,17 @@ export default function HeroSection() {
         background: "#0C0F1A",
       }}
     >
+      {/* ── Hero background image ── */}
+      <img
+        src="/iptv-free.jpg"
+        alt="IPTV Canada — NHL arena live streaming"
+        style={{
+          position: "absolute", inset: 0, width: "100%", height: "100%",
+          objectFit: "cover", objectPosition: "center 40%",
+          zIndex: 0, opacity: 0.18, pointerEvents: "none",
+        }}
+      />
+
       {/* ── Red diagonal geometric background (top-left corner) ── */}
       <div style={{
         position: "absolute", top: 0, left: 0,
