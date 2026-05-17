@@ -30,6 +30,9 @@ const CARDS = [
     zIndex: 3,
     delay: "0.15s",
     image: "/iptv-canada.jpg",
+  },
+  {
+    label: "⚡ Action",
     gradient: "linear-gradient(135deg, #1b2838 0%, #0f1923 100%)",
     accent: "#EF5350",
     emoji: "⚡",
@@ -53,6 +56,8 @@ const CARDS = [
     zIndex: 2,
     delay: "0.45s",
     image: "/iptv-subscription.jpg",
+  },
+];
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
