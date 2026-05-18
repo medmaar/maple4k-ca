@@ -71,6 +71,7 @@ export default function HeroSection() {
 
   return (
     <section
+      className="hero-section"
       style={{
         position: "relative",
         minHeight: "92vh",
@@ -123,12 +124,14 @@ export default function HeroSection() {
       }} />
 
       {/* ── LEFT — text content ── */}
-      <div style={{
-        position: "relative", zIndex: 10,
-        padding: "120px 48px 100px 6vw",
-        maxWidth: 560,
-        flex: "0 0 auto",
-      }}>
+      <div
+        className="hero-text"
+        style={{
+          position: "relative", zIndex: 10,
+          padding: "120px 48px 100px 6vw",
+          maxWidth: 560,
+          flex: "0 0 auto",
+        }}>
         {/* Service name */}
         <p style={{
           fontSize: 16, fontWeight: 700, color: "rgba(255,255,255,0.55)",
@@ -207,16 +210,34 @@ export default function HeroSection() {
             Free Trial 24H
           </Link>
         </div>
+
+        {/* ── Mobile-only image strip (hidden on desktop via CSS) ── */}
+        <div className="hero-mobile-imgs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 32 }}>
+          {[
+            { src: "/iptv-subscription-canada-1.jpg", alt: "🏒 Hockey" },
+            { src: "/iptv-canada.jpg",                alt: "🎬 Live TV" },
+            { src: "/iptv-subscription-canada-3.jpg", alt: "⚡ Sports" },
+            { src: "/iptv-subscription.jpg",          alt: "🎭 Series" },
+          ].map(card => (
+            <div key={card.src} style={{ borderRadius: 12, overflow: "hidden", position: "relative", aspectRatio: "16/10" }}>
+              <img src={card.src} alt={card.alt} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} loading="lazy" />
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%)" }} />
+              <span style={{ position: "absolute", bottom: 7, left: 10, fontSize: 11, fontWeight: 700, color: "#fff", textShadow: "0 1px 3px rgba(0,0,0,0.9)" }}>{card.alt}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* ── RIGHT — floating tilted content cards ── */}
-      <div style={{
-        position: "absolute",
-        right: 0, top: 0, bottom: 0,
-        width: "55%",
-        pointerEvents: "none",
-        zIndex: 5,
-      }}>
+      <div
+        className="hero-cards-panel"
+        style={{
+          position: "absolute",
+          right: 0, top: 0, bottom: 0,
+          width: "55%",
+          pointerEvents: "none",
+          zIndex: 5,
+        }}>
         {CARDS.map((card, idx) => (
           <div
             key={card.label}
@@ -304,9 +325,6 @@ export default function HeroSection() {
         @keyframes heroPulse {
           0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(232,4,31,0.5); }
           50%       { opacity: 0.7; box-shadow: 0 0 0 6px rgba(232,4,31,0); }
-        }
-        @media (max-width: 768px) {
-          section > div:last-of-type { display: none; }
         }
       `}</style>
     </section>

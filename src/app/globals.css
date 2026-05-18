@@ -184,7 +184,89 @@ nav { animation: fadeSlideUp 0.5s cubic-bezier(0.22,1,0.36,1) both; }
 .pricing-hover:hover { transform: translateY(-4px) !important; }
 .pricing-hover.featured:hover { transform: scale(1.03) translateY(-4px) !important; }
 
-/* ── SECTION RESPONSIVE ── */
+/* ══════════════════════════════════════════════
+   MOBILE RESPONSIVE — full site
+   ══════════════════════════════════════════════ */
 @media (max-width: 768px) {
-  .ma-left, .ma-right { opacity: 1 !important; transform: none !important; }
+  /* ── Animations: disable slide-in so content is visible ── */
+  .ma-left, .ma-right, .ma-init {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* ── Global spacing ── */
+  section { padding-left: 16px !important; padding-right: 16px !important; }
+
+  /* ── Typography scale-down ── */
+  h1 { font-size: clamp(28px, 8vw, 42px) !important; }
+  h2 { font-size: clamp(22px, 6vw, 32px) !important; }
+  h3 { font-size: clamp(16px, 4.5vw, 20px) !important; }
+
+  /* ── Hero section ── */
+  .hero-section {
+    min-height: auto !important;
+    padding-bottom: 60px !important;
+  }
+  .hero-text {
+    padding: 100px 20px 40px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .hero-cards-panel { display: none !important; }
+
+  /* ── Feature cards: single column ── */
+  .feature-card { padding: 24px 20px !important; }
+
+  /* ── Pricing cards ── */
+  .pricing-card { padding: 24px 20px !important; }
+  .pricing-card.featured { transform: none !important; }
+  .pricing-card.featured:hover { transform: translateY(-4px) !important; }
+
+  /* ── FAQ ── */
+  .faq-trigger { padding: 18px 20px !important; font-size: 14px !important; }
+  .faq-body { padding: 0 20px 18px !important; font-size: 14px !important; }
+
+  /* ── Device badges: wrapping grid ── */
+  .device-badge { padding: 10px 14px !important; font-size: 12px !important; }
+
+  /* ── CTA buttons: full width on mobile ── */
+  .btn-red, .btn-outline {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 16px 24px !important;
+  }
+
+  /* ── Two-column grids → single column ── */
+  .ma-left, .ma-right { width: 100% !important; }
+
+  /* ── Stat bar: 2-column grid ── */
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+
+  /* ── Image banners: no overflow ── */
+  img { max-width: 100% !important; }
+
+  /* ── Marquee: smaller items ── */
+  .marquee-track { gap: 20px !important; }
+
+  /* ── Review cards ── */
+  .reviews-dark-wrap { padding: 40px 16px 24px !important; }
+
+  /* ── City pages, blog pages: inline hero images ── */
+  div[style*="maxHeight: 420"], div[style*="maxHeight: 400"], div[style*="maxHeight: 380"] {
+    border-radius: 12px !important;
+  }
+
+  /* ── Nav spacing on mobile ── */
+  nav { padding: 0 12px !important; }
+}
+
+/* Hide mobile hero image strip on desktop, show on mobile */
+.hero-mobile-imgs { display: none !important; }
+@media (max-width: 768px) {
+  .hero-mobile-imgs { display: grid !important; }
 }
