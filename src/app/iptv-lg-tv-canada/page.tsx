@@ -27,8 +27,23 @@ const steps = [
   { step: "5", title: "Enjoy 4K IPTV", desc: "Your full channel list and VOD library loads automatically. Browse, search, and watch in stunning 4K." },
 ];
 
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Set Up IPTV on LG Smart TV in Canada",
+  step: [
+    {"@type":"HowToStep",position:1,name:"Subscribe & Get Credentials",text:"Choose a Maple4K plan and contact us. Credentials arrive within minutes."},
+    {"@type":"HowToStep",position:2,name:"Open LG Content Store",text:"Press Home on your LG remote and navigate to LG Content Store or webOS Store."},
+    {"@type":"HowToStep",position:3,name:"Install an IPTV App",text:"Search for our recommended IPTV player and install it on your LG TV."},
+    {"@type":"HowToStep",position:4,name:"Enter Your Login Details",text:"Open the app, enter the server URL, username, and password provided."},
+    {"@type":"HowToStep",position:5,name:"Enjoy 4K IPTV",text:"Your full channel list loads automatically. Watch 50,000+ channels in 4K."}
+  ],
+};
 export default function IPTVLGTVPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
     <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">

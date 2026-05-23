@@ -268,6 +268,9 @@ export default function HomePage() {
               <h3 style={{ fontSize: 13, fontWeight: 700, color: "#E8041F", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 16 }}>Guides & Info</h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                 {[
+                  { label: "Best IPTV App", href: "/best-iptv-app-canada" },
+                  { label: "TiviMate Canada", href: "/tivimate-canada" },
+                  { label: "IPTV Smarters Pro", href: "/blog/iptv-smarters-pro-canada" },
                   { label: "Best IPTV Canada", href: "/best-iptv-canada" },
                   { label: "IPTV Subscription", href: "/iptv-subscription" },
                   { label: "IPTV 4K", href: "/iptv-4k" },

@@ -110,6 +110,9 @@ const breadcrumbSchema = {
 
 export default function IPTVFirestickBlogPost() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main className="bg-transparent min-h-screen">
       <article className="max-w-3xl mx-auto py-16 px-4">
         {/* Header */}

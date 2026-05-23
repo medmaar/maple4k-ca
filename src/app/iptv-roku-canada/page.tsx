@@ -27,8 +27,23 @@ const steps = [
   { step: "5", title: "Start Watching", desc: "Your full channel list and EPG load automatically. Use your Roku remote to browse and enjoy." },
 ];
 
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Set Up IPTV on Roku in Canada",
+  step: [
+    {"@type":"HowToStep",position:1,name:"Subscribe & Get Credentials",text:"Choose a Maple4K plan and contact us. Credentials arrive within minutes."},
+    {"@type":"HowToStep",position:2,name:"Add a Private Channel",text:"Go to my.roku.com, sign in, and add the private channel code we provide."},
+    {"@type":"HowToStep",position:3,name:"Install on Your Roku",text:"Open Roku Channel Store and install the newly added private channel."},
+    {"@type":"HowToStep",position:4,name:"Enter Your Login Details",text:"Open the channel, enter the server URL, username, and password provided."},
+    {"@type":"HowToStep",position:5,name:"Start Streaming",text:"Browse 50,000+ channels and 120,000+ movies in HD and 4K on your Roku."}
+  ],
+};
 export default function IPTVRokuPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
     <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">

@@ -27,8 +27,23 @@ const steps = [
   { step: "5", title: "Enjoy 4K IPTV", desc: "Your full channel list and VOD library loads automatically. Browse and enjoy in stunning 4K." },
 ];
 
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Set Up IPTV on Samsung Smart TV in Canada",
+  step: [
+    {"@type":"HowToStep",position:1,name:"Subscribe & Get Credentials",text:"Choose a Maple4K plan and contact us. Credentials arrive within minutes."},
+    {"@type":"HowToStep",position:2,name:"Open Samsung Smart Hub",text:"Press Home on your Samsung remote and go to the Apps section in Smart Hub."},
+    {"@type":"HowToStep",position:3,name:"Install an IPTV App",text:"Search for our recommended IPTV player in Samsung App Store and install it."},
+    {"@type":"HowToStep",position:4,name:"Enter Your Login Details",text:"Open the app, enter the server URL, username, and password provided."},
+    {"@type":"HowToStep",position:5,name:"Enjoy 4K IPTV",text:"Your channel list loads automatically. Stream in 4K on your Samsung TV."}
+  ],
+};
 export default function IPTVSamsungPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
     <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">

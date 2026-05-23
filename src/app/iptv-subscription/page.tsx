@@ -36,6 +36,9 @@ const faqSchema = {
 
 export default function IPTVSubscriptionPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
       <section style={{ padding: "80px 16px 60px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>

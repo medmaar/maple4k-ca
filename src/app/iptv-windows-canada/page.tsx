@@ -27,8 +27,23 @@ const steps = [
   { step: "5", title: "Watch Full Screen", desc: "Press F11 for full screen and enjoy 50,000+ channels + Netflix directly on your PC or laptop display." },
 ];
 
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Set Up IPTV on Windows PC or Mac in Canada",
+  step: [
+    {"@type":"HowToStep",position:1,name:"Subscribe & Get Credentials",text:"Choose a Maple4K plan and contact us. Login details arrive within minutes."},
+    {"@type":"HowToStep",position:2,name:"Download an IPTV Player",text:"Install IPTV Smarters Pro for Windows or VLC Media Player."},
+    {"@type":"HowToStep",position:3,name:"Add Your Playlist",text:"Open the player and add your M3U URL or Xtream Codes credentials."},
+    {"@type":"HowToStep",position:4,name:"Configure Settings",text:"Set video output to hardware acceleration for smooth 4K H.265 playback."},
+    {"@type":"HowToStep",position:5,name:"Start Streaming",text:"Browse 50,000+ channels and stream in 4K on your PC or Mac."}
+  ],
+};
 export default function IPTVWindowsPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
     <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
