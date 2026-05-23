@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Android TV Canada" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K IPTV Android TV Canada" }],
   },
 };
 

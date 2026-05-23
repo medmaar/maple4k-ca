@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "Maple4K",
     type: "article",
     locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Is IPTV Legal in Canada? – Maple4K" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Is IPTV Legal in Canada? – Maple4K" }],
   },
   twitter: {
     card: "summary_large_image",

@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Set Up IPTV on Android in Canada",
+  description: "Step-by-step guide to install and configure IPTV on any Android phone or tablet in Canada with Maple4K.",
+  step: [
+    { "@type": "HowToStep", position: 1, name: "Subscribe & Get Credentials", text: "Choose a Maple4K plan and contact us via WhatsApp, Telegram, or email. Credentials arrive within minutes." },
+    { "@type": "HowToStep", position: 2, name: "Allow Unknown Sources", text: "Go to Settings > Security and enable 'Install Unknown Apps' on your Android device." },
+    { "@type": "HowToStep", position: 3, name: "Download the IPTV App", text: "Download the APK file provided or install our recommended app from the Google Play Store." },
+    { "@type": "HowToStep", position: 4, name: "Enter Your Credentials", text: "Open the app, enter the server URL, username, and password sent to you, then tap Connect." },
+    { "@type": "HowToStep", position: 5, name: "Watch Anywhere in Canada", text: "Your full channel list and VOD library load instantly. Stream on Wi-Fi or mobile data." },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "IPTV Android Canada | Maple4K – Best 4K IPTV Canada",
   description:
@@ -14,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K – Best 4K IPTV Canada" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -29,6 +43,8 @@ const steps = [
 
 export default function IPTVAndroidPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
     <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
@@ -166,5 +182,6 @@ export default function IPTVAndroidPage() {
           </div>
         </section>
       </main>
+    </>
   );
 }

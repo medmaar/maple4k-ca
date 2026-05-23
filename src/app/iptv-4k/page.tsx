@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "True 4K IPTV in Canada. H.265/HEVC, HDR10, Dolby Vision. Free trial from $9/month.",
     url: "https://maple4k.ca/iptv-4k",
     type: "website", siteName: "Maple4K", locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "IPTV 4K Canada – Maple4K" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV 4K Canada – Maple4K" }],
   },
   twitter: { card: "summary_large_image" },
 };

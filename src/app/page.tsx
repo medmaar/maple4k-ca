@@ -207,6 +207,87 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── 10.5 INTERNAL LINKS HUB ── */}
+      <section style={{ padding: "80px 16px", background: "#0C0F1A", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <p className="section-label">Coverage Across Canada</p>
+            <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, margin: 0 }}>IPTV Available in Every Canadian City</h2>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 36 }}>
+            {/* City pages */}
+            <div>
+              <h3 style={{ fontSize: 13, fontWeight: 700, color: "#E8041F", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 16 }}>By City</h3>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                {[
+                  { label: "IPTV Toronto", href: "/iptv-toronto" },
+                  { label: "IPTV Vancouver", href: "/iptv-vancouver" },
+                  { label: "IPTV Montreal", href: "/iptv-montreal" },
+                  { label: "IPTV Calgary", href: "/iptv-calgary" },
+                  { label: "IPTV Ottawa", href: "/iptv-ottawa" },
+                  { label: "IPTV Edmonton", href: "/iptv-edmonton" },
+                  { label: "IPTV Winnipeg", href: "/iptv-winnipeg" },
+                  { label: "IPTV Quebec", href: "/iptv-quebec" },
+                  { label: "IPTV Halifax", href: "/iptv-halifax" },
+                  { label: "IPTV Hamilton", href: "/iptv-hamilton" },
+                  { label: "IPTV Victoria", href: "/iptv-victoria" },
+                  { label: "IPTV Near Me", href: "/iptv-near-me" },
+                ].map(link => (
+                  <Link key={link.href} href={link.href} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 8, padding: "6px 14px", fontSize: 13, color: "rgba(255,255,255,0.75)", textDecoration: "none", fontWeight: 500 }}>
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            {/* Device pages */}
+            <div>
+              <h3 style={{ fontSize: 13, fontWeight: 700, color: "#E8041F", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 16 }}>By Device</h3>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                {[
+                  { label: "Fire Stick", href: "/iptv-firestick-canada" },
+                  { label: "Android TV", href: "/iptv-android-tv-canada" },
+                  { label: "Smart TV", href: "/iptv-smart-tv-canada" },
+                  { label: "Apple TV", href: "/iptv-apple-tv-canada" },
+                  { label: "Samsung TV", href: "/iptv-samsung-tv-canada" },
+                  { label: "LG TV", href: "/iptv-lg-tv-canada" },
+                  { label: "Android Phone", href: "/iptv-android-canada" },
+                  { label: "iPhone & iPad", href: "/iptv-ios-canada" },
+                  { label: "Roku", href: "/iptv-roku-canada" },
+                  { label: "MAG Box", href: "/iptv-mag-box-canada" },
+                  { label: "Windows PC", href: "/iptv-windows-canada" },
+                  { label: "IPTV Box", href: "/iptv-box" },
+                ].map(link => (
+                  <Link key={link.href} href={link.href} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 8, padding: "6px 14px", fontSize: 13, color: "rgba(255,255,255,0.75)", textDecoration: "none", fontWeight: 500 }}>
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            {/* Resources */}
+            <div>
+              <h3 style={{ fontSize: 13, fontWeight: 700, color: "#E8041F", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 16 }}>Guides & Info</h3>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                {[
+                  { label: "Best IPTV Canada", href: "/best-iptv-canada" },
+                  { label: "IPTV Subscription", href: "/iptv-subscription" },
+                  { label: "IPTV 4K", href: "/iptv-4k" },
+                  { label: "Channels List", href: "/channels-list" },
+                  { label: "How It Works", href: "/how-it-works" },
+                  { label: "Free Trial", href: "/free-trial" },
+                  { label: "Blog", href: "/blog" },
+                  { label: "Reviews", href: "/reviews" },
+                  { label: "Reseller Program", href: "/reseller" },
+                ].map(link => (
+                  <Link key={link.href} href={link.href} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 8, padding: "6px 14px", fontSize: 13, color: "rgba(255,255,255,0.75)", textDecoration: "none", fontWeight: 500 }}>
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── 11. FINAL CTA ── */}
       <section style={{ padding: "100px 16px", textAlign: "center", background: "#0C0F1A" }}>
         <div style={{ maxWidth: 600, margin: "0 auto" }} className="ma-init">

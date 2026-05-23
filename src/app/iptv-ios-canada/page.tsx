@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Set Up IPTV on iPhone and iPad in Canada",
+  description: "Step-by-step guide to install and configure IPTV on iPhone or iPad in Canada with Maple4K.",
+  step: [
+    { "@type": "HowToStep", position: 1, name: "Subscribe & Get Credentials", text: "Choose a Maple4K plan and contact us via WhatsApp, Telegram, or email. Credentials arrive within minutes." },
+    { "@type": "HowToStep", position: 2, name: "Open the App Store", text: "On your iPhone or iPad, open the App Store and search for our recommended IPTV player app." },
+    { "@type": "HowToStep", position: 3, name: "Install the App", text: "Download and install the IPTV player. We'll tell you exactly which app to use after you subscribe." },
+    { "@type": "HowToStep", position: 4, name: "Enter Your Credentials", text: "Open the app, enter the server URL, username, and password we provided, then tap Connect." },
+    { "@type": "HowToStep", position: 5, name: "Watch Anywhere", text: "Your channels load instantly. Stream live TV and VOD on your iPhone or iPad anywhere in Canada." },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "IPTV iPhone & iPad Canada | Maple4K – Best 4K IPTV Canada",
   description:
@@ -14,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K – Best 4K IPTV Canada" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -29,6 +43,8 @@ const steps = [
 
 export default function IPTVIOSPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
     <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
@@ -166,5 +182,6 @@ export default function IPTVIOSPage() {
           </div>
         </section>
       </main>
+    </>
   );
 }
