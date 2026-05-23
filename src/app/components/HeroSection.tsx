@@ -99,11 +99,11 @@ export default function HeroSection() {
         pointerEvents: "none", zIndex: 1,
       }} />
 
-      {/* ── Strong left-side gradient — text readability zone ── */}
+      {/* ── Full-width center gradient — text readability zone ── */}
       <div style={{
         position: "absolute", top: 0, left: 0,
-        width: "65%", height: "100%",
-        background: "linear-gradient(100deg, rgba(8,10,20,0.97) 0%, rgba(8,10,20,0.90) 35%, rgba(8,10,20,0.60) 60%, transparent 100%)",
+        width: "100%", height: "100%",
+        background: "radial-gradient(ellipse 70% 80% at 50% 50%, rgba(8,10,20,0.82) 0%, rgba(8,10,20,0.5) 60%, transparent 100%)",
         pointerEvents: "none", zIndex: 2,
       }} />
 
@@ -135,9 +135,12 @@ export default function HeroSection() {
         className="hero-text"
         style={{
           position: "relative", zIndex: 15,
-          padding: "120px 48px 100px 6vw",
-          maxWidth: 560,
+          padding: "120px 24px 100px",
+          maxWidth: 660,
           flex: "0 0 auto",
+          width: "100%",
+          margin: "0 auto",
+          textAlign: "center",
         }}>
         {/* Service name */}
         <p style={{
@@ -186,7 +189,8 @@ export default function HeroSection() {
           borderRadius: 14,
           padding: "16px 20px",
           marginBottom: 36,
-          maxWidth: 440,
+          maxWidth: 480,
+          margin: "0 auto 36px",
         }}>
           <p style={{
             fontSize: "clamp(14px, 1.5vw, 16px)",
@@ -200,7 +204,7 @@ export default function HeroSection() {
         </div>
 
         {/* CTAs */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 14, alignItems: "flex-start" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 14, alignItems: "center" }}>
           <Link
             href="/pricing"
             style={{
@@ -250,7 +254,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* ── RIGHT — floating tilted content cards ── */}
+      {/* ── Floating content cards — desktop decorative ── */}
       <div
         className="hero-cards-panel"
         style={{
@@ -259,6 +263,7 @@ export default function HeroSection() {
           width: "55%",
           pointerEvents: "none",
           zIndex: 5,
+          display: "none",
         }}>
         {CARDS.map((card, idx) => (
           <div
