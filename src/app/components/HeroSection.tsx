@@ -92,34 +92,41 @@ export default function HeroSection() {
         }}
       />
 
-      {/* ── Red diagonal geometric background (top-left corner) ── */}
+      {/* ── Dark base overlay — makes the whole hero darker ── */}
+      <div style={{
+        position: "absolute", inset: 0,
+        background: "rgba(8,10,20,0.55)",
+        pointerEvents: "none", zIndex: 1,
+      }} />
+
+      {/* ── Strong left-side gradient — text readability zone ── */}
+      <div style={{
+        position: "absolute", top: 0, left: 0,
+        width: "65%", height: "100%",
+        background: "linear-gradient(100deg, rgba(8,10,20,0.97) 0%, rgba(8,10,20,0.90) 35%, rgba(8,10,20,0.60) 60%, transparent 100%)",
+        pointerEvents: "none", zIndex: 2,
+      }} />
+
+      {/* ── Red diagonal accent (top-left corner) ── */}
       <div style={{
         position: "absolute", top: 0, left: 0,
         width: "45%", height: "100%",
-        background: "linear-gradient(160deg, rgba(180,4,20,0.22) 0%, transparent 65%)",
-        pointerEvents: "none", zIndex: 0,
+        background: "linear-gradient(160deg, rgba(180,4,20,0.18) 0%, transparent 55%)",
+        pointerEvents: "none", zIndex: 2,
       }} />
       <div style={{
         position: "absolute", top: 0, left: 0,
         width: 0, height: 0,
         borderStyle: "solid",
         borderWidth: "340px 260px 0 0",
-        borderColor: "rgba(180,4,20,0.14) transparent transparent transparent",
-        pointerEvents: "none", zIndex: 0,
-      }} />
-      <div style={{
-        position: "absolute", top: 0, left: 0,
-        width: 0, height: 0,
-        borderStyle: "solid",
-        borderWidth: "200px 150px 0 0",
-        borderColor: "rgba(232,4,31,0.1) transparent transparent transparent",
-        pointerEvents: "none", zIndex: 0,
+        borderColor: "rgba(180,4,20,0.12) transparent transparent transparent",
+        pointerEvents: "none", zIndex: 2,
       }} />
 
       {/* Subtle grid overlay */}
       <div style={{
-        position: "absolute", inset: 0, pointerEvents: "none", zIndex: 0,
-        backgroundImage: "linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px)",
+        position: "absolute", inset: 0, pointerEvents: "none", zIndex: 2,
+        backgroundImage: "linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px)",
         backgroundSize: "60px 60px",
       }} />
 
@@ -127,15 +134,16 @@ export default function HeroSection() {
       <div
         className="hero-text"
         style={{
-          position: "relative", zIndex: 10,
+          position: "relative", zIndex: 15,
           padding: "120px 48px 100px 6vw",
           maxWidth: 560,
           flex: "0 0 auto",
         }}>
         {/* Service name */}
         <p style={{
-          fontSize: 16, fontWeight: 700, color: "rgba(255,255,255,0.55)",
-          margin: "0 0 12px", letterSpacing: "0.04em",
+          fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.5)",
+          margin: "0 0 12px", letterSpacing: "0.12em", textTransform: "uppercase",
+          textShadow: "0 1px 4px rgba(0,0,0,0.8)",
         }}>
           Maple4K
         </p>
@@ -145,7 +153,7 @@ export default function HeroSection() {
           fontSize: "clamp(42px, 6vw, 78px)", fontWeight: 900,
           lineHeight: 1.0, margin: "0 0 28px", letterSpacing: "-0.02em",
         }}>
-          <span style={{ display: "block", color: "#fff", marginBottom: 6 }}>
+          <span style={{ display: "block", color: "#fff", marginBottom: 6, textShadow: "0 2px 20px rgba(0,0,0,0.9), 0 4px 40px rgba(0,0,0,0.7)" }}>
             Stream
           </span>
           <span style={{ position: "relative", display: "block", minHeight: "1.1em" }}>
@@ -160,7 +168,7 @@ export default function HeroSection() {
                   transform: current === i ? "translateY(0)" : "translateY(16px)",
                   transition: "opacity 0.5s ease, transform 0.5s ease",
                   display: "block",
-                  textShadow: "0 0 40px rgba(0,229,255,0.4)",
+                  textShadow: "0 0 40px rgba(0,229,255,0.5), 0 2px 20px rgba(0,0,0,0.9)",
                 }}
               >
                 {word}
@@ -169,16 +177,27 @@ export default function HeroSection() {
           </span>
         </h1>
 
-        {/* Subtitle */}
-        <p style={{
-          fontSize: "clamp(15px, 1.6vw, 17px)",
-          color: "rgba(255,255,255,0.65)",
-          lineHeight: 1.7,
-          margin: "0 0 40px",
+        {/* Subtitle — frosted pill background for guaranteed readability */}
+        <div style={{
+          background: "rgba(0,0,0,0.45)",
+          backdropFilter: "blur(8px)",
+          WebkitBackdropFilter: "blur(8px)",
+          border: "1px solid rgba(255,255,255,0.08)",
+          borderRadius: 14,
+          padding: "16px 20px",
+          marginBottom: 36,
           maxWidth: 440,
         }}>
-          Get access to 50,000+ channels + Netflix, movies and TV series on all your devices with a single subscription.
-        </p>
+          <p style={{
+            fontSize: "clamp(14px, 1.5vw, 16px)",
+            color: "rgba(255,255,255,0.9)",
+            lineHeight: 1.7,
+            margin: 0,
+            fontWeight: 400,
+          }}>
+            Get access to <strong style={{ color: "#fff", fontWeight: 700 }}>50,000+ channels</strong> + Netflix, movies and TV series on all your devices with a single subscription.
+          </p>
+        </div>
 
         {/* CTAs */}
         <div style={{ display: "flex", flexDirection: "column", gap: 14, alignItems: "flex-start" }}>
@@ -189,7 +208,7 @@ export default function HeroSection() {
               color: "#fff", fontWeight: 800, fontSize: 16,
               padding: "16px 40px", borderRadius: 12,
               textDecoration: "none", display: "inline-block",
-              boxShadow: "0 6px 32px rgba(232,4,31,0.5)",
+              boxShadow: "0 6px 32px rgba(232,4,31,0.55), 0 2px 8px rgba(0,0,0,0.5)",
               letterSpacing: "0.01em",
             }}
           >
@@ -198,12 +217,15 @@ export default function HeroSection() {
           <Link
             href="/free-trial"
             style={{
-              background: "rgba(255,255,255,0.08)",
-              border: "1px solid rgba(255,255,255,0.2)",
+              background: "rgba(255,255,255,0.12)",
+              border: "1px solid rgba(255,255,255,0.28)",
+              backdropFilter: "blur(6px)",
+              WebkitBackdropFilter: "blur(6px)",
               color: "#fff", fontWeight: 700, fontSize: 15,
               padding: "14px 36px", borderRadius: 12,
               textDecoration: "none", display: "inline-flex",
               alignItems: "center", gap: 10,
+              textShadow: "0 1px 3px rgba(0,0,0,0.6)",
             }}
           >
             <span style={{ width: 10, height: 10, background: "#E8041F", borderRadius: "50%", flexShrink: 0, animation: "heroPulse 1.4s ease-in-out infinite" }} />
