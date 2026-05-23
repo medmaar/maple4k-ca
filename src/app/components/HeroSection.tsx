@@ -7,9 +7,7 @@ const words = ["LIVE TV", "MOVIES", "SERIES", "SPORTS"];
 const CARDS = [
   {
     label: "🏒 Hockey",
-    gradient: "linear-gradient(135deg, #1a2744 0%, #0d1829 100%)",
     accent: "#4FC3F7",
-    emoji: "🏒",
     rotate: "-8deg",
     top: "4%",
     right: "28%",
@@ -20,9 +18,7 @@ const CARDS = [
   },
   {
     label: "🎬 Movies",
-    gradient: "linear-gradient(135deg, #2d1b4e 0%, #1a0d2e 100%)",
     accent: "#CE93D8",
-    emoji: "🎬",
     rotate: "6deg",
     top: "2%",
     right: "2%",
@@ -33,9 +29,7 @@ const CARDS = [
   },
   {
     label: "⚡ Action",
-    gradient: "linear-gradient(135deg, #1b2838 0%, #0f1923 100%)",
     accent: "#EF5350",
-    emoji: "⚡",
     rotate: "-4deg",
     top: "48%",
     right: "24%",
@@ -46,9 +40,7 @@ const CARDS = [
   },
   {
     label: "🎭 Series",
-    gradient: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
     accent: "#66BB6A",
-    emoji: "🎭",
     rotate: "8deg",
     top: "52%",
     right: "1%",
@@ -77,101 +69,109 @@ export default function HeroSection() {
         minHeight: "92vh",
         display: "flex",
         alignItems: "center",
+        justifyContent: "center",
         overflow: "hidden",
         background: "#0C0F1A",
       }}
     >
-      {/* ── Hero background image ── */}
+      {/* Background image */}
       <img
         src="/iptv-free.jpg"
         alt="IPTV Canada — NHL arena live streaming"
         style={{
           position: "absolute", inset: 0, width: "100%", height: "100%",
           objectFit: "cover", objectPosition: "center 40%",
-          zIndex: 0, opacity: 0.18, pointerEvents: "none",
+          zIndex: 0, opacity: 0.22, pointerEvents: "none",
         }}
       />
 
-      {/* ── Dark base overlay — makes the whole hero darker ── */}
+      {/* Dark base overlay */}
       <div style={{
         position: "absolute", inset: 0,
-        background: "rgba(8,10,20,0.55)",
+        background: "rgba(8,10,20,0.52)",
         pointerEvents: "none", zIndex: 1,
       }} />
 
-      {/* ── Full-width center gradient — text readability zone ── */}
+      {/* Radial vignette — darker in center where text sits */}
       <div style={{
-        position: "absolute", top: 0, left: 0,
-        width: "100%", height: "100%",
-        background: "radial-gradient(ellipse 70% 80% at 50% 50%, rgba(8,10,20,0.82) 0%, rgba(8,10,20,0.5) 60%, transparent 100%)",
+        position: "absolute", inset: 0,
+        background: "radial-gradient(ellipse 65% 75% at 38% 50%, rgba(8,10,20,0.78) 0%, rgba(8,10,20,0.4) 60%, transparent 100%)",
         pointerEvents: "none", zIndex: 2,
       }} />
 
-      {/* ── Red diagonal accent (top-left corner) ── */}
+      {/* Red top-left accent */}
       <div style={{
         position: "absolute", top: 0, left: 0,
-        width: "45%", height: "100%",
-        background: "linear-gradient(160deg, rgba(180,4,20,0.18) 0%, transparent 55%)",
-        pointerEvents: "none", zIndex: 2,
-      }} />
-      <div style={{
-        position: "absolute", top: 0, left: 0,
-        width: 0, height: 0,
-        borderStyle: "solid",
-        borderWidth: "340px 260px 0 0",
-        borderColor: "rgba(180,4,20,0.12) transparent transparent transparent",
+        width: "40%", height: "100%",
+        background: "linear-gradient(160deg, rgba(180,4,20,0.16) 0%, transparent 55%)",
         pointerEvents: "none", zIndex: 2,
       }} />
 
-      {/* Subtle grid overlay */}
+      {/* Subtle grid */}
       <div style={{
         position: "absolute", inset: 0, pointerEvents: "none", zIndex: 2,
         backgroundImage: "linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px)",
         backgroundSize: "60px 60px",
       }} />
 
-      {/* ── LEFT — text content ── */}
+      {/* ── TEXT CONTENT — centered ── */}
       <div
         className="hero-text"
         style={{
           position: "relative", zIndex: 15,
           padding: "120px 24px 100px",
-          maxWidth: 660,
-          flex: "0 0 auto",
           width: "100%",
-          margin: "0 auto",
+          maxWidth: 620,
           textAlign: "center",
-        }}>
-        {/* Service name */}
+        }}
+      >
+        {/* Brand label */}
         <p style={{
-          fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.5)",
-          margin: "0 0 12px", letterSpacing: "0.12em", textTransform: "uppercase",
+          fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.45)",
+          margin: "0 0 14px", letterSpacing: "0.14em", textTransform: "uppercase",
           textShadow: "0 1px 4px rgba(0,0,0,0.8)",
         }}>
           Maple4K
         </p>
 
-        {/* Rotating headline */}
+        {/* Headline */}
         <h1 style={{
-          fontSize: "clamp(42px, 6vw, 78px)", fontWeight: 900,
+          fontSize: "clamp(48px, 7vw, 82px)", fontWeight: 900,
           lineHeight: 1.0, margin: "0 0 28px", letterSpacing: "-0.02em",
+          textAlign: "center",
         }}>
-          <span style={{ display: "block", color: "#fff", marginBottom: 6, textShadow: "0 2px 20px rgba(0,0,0,0.9), 0 4px 40px rgba(0,0,0,0.7)" }}>
+          {/* "Stream" line */}
+          <span style={{
+            display: "block", color: "#fff", marginBottom: 4,
+            textShadow: "0 2px 24px rgba(0,0,0,0.95), 0 4px 48px rgba(0,0,0,0.8)",
+          }}>
             Stream
           </span>
-          <span style={{ position: "relative", display: "block", minHeight: "1.1em" }}>
+
+          {/* Rotating word — fixed centering via width:100% + text-align:center */}
+          <span style={{
+            display: "block",
+            position: "relative",
+            width: "100%",
+            height: "1.15em",
+            overflow: "hidden",
+          }}>
             {words.map((word, i) => (
               <span
                 key={word}
                 style={{
-                  position: i === 0 ? "relative" : "absolute",
-                  top: 0, left: 0,
-                  color: "#00E5FF",
+                  position: "absolute",
+                  top: 0,
+                  left: "50%",
+                  transform: current === i
+                    ? "translateX(-50%) translateY(0)"
+                    : "translateX(-50%) translateY(20px)",
                   opacity: current === i ? 1 : 0,
-                  transform: current === i ? "translateY(0)" : "translateY(16px)",
                   transition: "opacity 0.5s ease, transform 0.5s ease",
+                  color: "#00E5FF",
+                  whiteSpace: "nowrap",
+                  textShadow: "0 0 48px rgba(0,229,255,0.55), 0 2px 24px rgba(0,0,0,0.95)",
                   display: "block",
-                  textShadow: "0 0 40px rgba(0,229,255,0.5), 0 2px 20px rgba(0,0,0,0.9)",
                 }}
               >
                 {word}
@@ -180,26 +180,27 @@ export default function HeroSection() {
           </span>
         </h1>
 
-        {/* Subtitle — frosted pill background for guaranteed readability */}
+        {/* Subtitle — red background, white text */}
         <div style={{
-          background: "rgba(0,0,0,0.45)",
+          background: "rgba(180,4,20,0.82)",
           backdropFilter: "blur(8px)",
           WebkitBackdropFilter: "blur(8px)",
-          border: "1px solid rgba(255,255,255,0.08)",
+          border: "1px solid rgba(255,80,80,0.25)",
           borderRadius: 14,
-          padding: "16px 20px",
-          marginBottom: 36,
-          maxWidth: 480,
-          margin: "0 auto 36px",
+          padding: "16px 24px",
+          maxWidth: 500,
+          margin: "0 auto 40px",
+          boxShadow: "0 4px 32px rgba(180,4,20,0.35)",
         }}>
           <p style={{
             fontSize: "clamp(14px, 1.5vw, 16px)",
-            color: "rgba(255,255,255,0.9)",
+            color: "#fff",
             lineHeight: 1.7,
             margin: 0,
             fontWeight: 400,
+            textShadow: "0 1px 3px rgba(0,0,0,0.4)",
           }}>
-            Get access to <strong style={{ color: "#fff", fontWeight: 700 }}>50,000+ channels</strong> + Netflix, movies and TV series on all your devices with a single subscription.
+            Get access to <strong style={{ fontWeight: 800 }}>50,000+ channels</strong> + Netflix, movies and TV series on all your devices with a single subscription.
           </p>
         </div>
 
@@ -210,9 +211,9 @@ export default function HeroSection() {
             style={{
               background: "#E8041F",
               color: "#fff", fontWeight: 800, fontSize: 16,
-              padding: "16px 40px", borderRadius: 12,
+              padding: "16px 48px", borderRadius: 12,
               textDecoration: "none", display: "inline-block",
-              boxShadow: "0 6px 32px rgba(232,4,31,0.55), 0 2px 8px rgba(0,0,0,0.5)",
+              boxShadow: "0 6px 32px rgba(232,4,31,0.6), 0 2px 8px rgba(0,0,0,0.5)",
               letterSpacing: "0.01em",
             }}
           >
@@ -221,24 +222,24 @@ export default function HeroSection() {
           <Link
             href="/free-trial"
             style={{
-              background: "rgba(255,255,255,0.12)",
-              border: "1px solid rgba(255,255,255,0.28)",
+              background: "rgba(255,255,255,0.1)",
+              border: "1px solid rgba(255,255,255,0.25)",
               backdropFilter: "blur(6px)",
               WebkitBackdropFilter: "blur(6px)",
               color: "#fff", fontWeight: 700, fontSize: 15,
-              padding: "14px 36px", borderRadius: 12,
+              padding: "14px 40px", borderRadius: 12,
               textDecoration: "none", display: "inline-flex",
               alignItems: "center", gap: 10,
               textShadow: "0 1px 3px rgba(0,0,0,0.6)",
             }}
           >
-            <span style={{ width: 10, height: 10, background: "#E8041F", borderRadius: "50%", flexShrink: 0, animation: "heroPulse 1.4s ease-in-out infinite" }} />
+            <span style={{ width: 9, height: 9, background: "#E8041F", borderRadius: "50%", flexShrink: 0, animation: "heroPulse 1.4s ease-in-out infinite" }} />
             Free Trial 24H
           </Link>
         </div>
 
-        {/* ── Mobile-only image strip (hidden on desktop via CSS) ── */}
-        <div className="hero-mobile-imgs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 32 }}>
+        {/* Mobile image grid */}
+        <div className="hero-mobile-imgs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 36 }}>
           {[
             { src: "/iptv-subscription-canada-1.jpg", alt: "🏒 Hockey" },
             { src: "/iptv-canada.jpg",                alt: "🎬 Live TV" },
@@ -247,24 +248,24 @@ export default function HeroSection() {
           ].map(card => (
             <div key={card.src} style={{ borderRadius: 12, overflow: "hidden", position: "relative", aspectRatio: "16/10" }}>
               <img src={card.src} alt={card.alt} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} loading="lazy" />
-              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%)" }} />
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 60%)" }} />
               <span style={{ position: "absolute", bottom: 7, left: 10, fontSize: 11, fontWeight: 700, color: "#fff", textShadow: "0 1px 3px rgba(0,0,0,0.9)" }}>{card.alt}</span>
             </div>
           ))}
         </div>
       </div>
 
-      {/* ── Floating content cards — desktop decorative ── */}
+      {/* ── Floating cards — right side, desktop only ── */}
       <div
         className="hero-cards-panel"
         style={{
           position: "absolute",
           right: 0, top: 0, bottom: 0,
-          width: "55%",
+          width: "42%",
           pointerEvents: "none",
-          zIndex: 5,
-          display: "none",
-        }}>
+          zIndex: 8,
+        }}
+      >
         {CARDS.map((card, idx) => (
           <div
             key={card.label}
@@ -274,10 +275,9 @@ export default function HeroSection() {
               right: card.right,
               width: card.width,
               aspectRatio: "16/10",
-              background: card.gradient,
               borderRadius: 16,
-              border: `1px solid ${card.accent}22`,
-              boxShadow: `0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px ${card.accent}18`,
+              border: `1px solid ${card.accent}28`,
+              boxShadow: `0 20px 60px rgba(0,0,0,0.65), 0 0 0 1px ${card.accent}18`,
               transform: `rotate(${card.rotate})`,
               zIndex: card.zIndex,
               overflow: "hidden",
@@ -286,52 +286,25 @@ export default function HeroSection() {
               animation: `cardFloat${idx} ${4 + idx * 0.7}s ease-in-out infinite`,
             }}
           >
-            {/* Real image background if available */}
-            {card.image && (
-              <img
-                src={card.image}
-                alt={card.label}
-                style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-              />
-            )}
-            {/* Card shine overlay */}
+            <img
+              src={card.image}
+              alt={card.label}
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            />
             <div style={{
               position: "absolute", inset: 0,
-              background: card.image
-                ? "linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)"
-                : "linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 50%)",
+              background: "linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.08) 60%, transparent 100%)",
             }} />
-            {/* Card label badge */}
             <div style={{ position: "absolute", bottom: 10, left: 12, zIndex: 2 }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: card.image ? "#fff" : card.accent, letterSpacing: "0.06em", textTransform: "uppercase", textShadow: card.image ? "0 1px 4px rgba(0,0,0,0.8)" : "none" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "#fff", letterSpacing: "0.06em", textTransform: "uppercase", textShadow: "0 1px 4px rgba(0,0,0,0.9)" }}>
                 {card.label}
               </div>
             </div>
-            {/* Abstract shimmer bars for non-image cards */}
-            {!card.image && (
-              <div style={{ padding: "20px 18px", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-                <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
-                  {[...Array(3)].map((_, i) => (
-                    <div key={i} style={{
-                      height: 6, borderRadius: 3,
-                      background: card.accent,
-                      opacity: 0.3 + i * 0.15,
-                      width: `${30 + i * 15}%`,
-                    }} />
-                  ))}
-                </div>
-                <div>
-                  <div style={{ fontSize: 28, marginBottom: 6 }}>{card.emoji}</div>
-                </div>
-              </div>
-            )}
-            {/* Bottom gradient */}
-            <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "40%", background: "linear-gradient(to top, rgba(0,0,0,0.5), transparent)" }} />
           </div>
         ))}
       </div>
 
-      {/* Keyframes injected via style tag */}
+      {/* Keyframes */}
       <style>{`
         @keyframes cardFloat0 {
           0%, 100% { transform: rotate(-8deg) translateY(0px); }
@@ -352,6 +325,13 @@ export default function HeroSection() {
         @keyframes heroPulse {
           0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(232,4,31,0.5); }
           50%       { opacity: 0.7; box-shadow: 0 0 0 6px rgba(232,4,31,0); }
+        }
+        @media (max-width: 768px) {
+          .hero-cards-panel { display: none !important; }
+          .hero-mobile-imgs { display: grid !important; }
+        }
+        @media (min-width: 769px) {
+          .hero-mobile-imgs { display: none !important; }
         }
       `}</style>
     </section>
