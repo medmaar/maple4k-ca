@@ -8449,8 +8449,28 @@ const categories = [  {
   },
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"IPTV Channels Canada","item":"https://maple4k.ca/channels-list"}
+  ]
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How many channels does Maple4K have in Canada?","acceptedAnswer":{"@type":"Answer","text":"Maple4K offers 50,000+ live channels for Canadian subscribers, including 650+ Canadian channels, all TSN and Sportsnet feeds, RDS, TVA, CBC, CTV, Global, and thousands of international channels."}},
+    {"@type":"Question","name":"Does Maple4K include TSN and Sportsnet?","acceptedAnswer":{"@type":"Answer","text":"Yes. Maple4K includes all TSN feeds (TSN1-TSN5), all Sportsnet regional channels, NHL Network, NBA TV Canada, NFL Network, RDS, TVA Sports, and every other major Canadian sports channel."}}
+  ]
+};
 export default function ChannelsListPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff" }} className="min-h-screen">
       {/* Hero */}
       <section style={{ background: "#0E1120", padding: "80px 16px 60px", textAlign: "center", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K IPTV Reseller Canada" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K IPTV Reseller Canada" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -37,8 +37,28 @@ const features = [
   },
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"IPTV Reseller Canada","item":"https://maple4k.ca/reseller"}
+  ]
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How do I become an IPTV reseller in Canada?","acceptedAnswer":{"@type":"Answer","text":"Contact Maple4K via WhatsApp or email to start your reseller account. You get a reseller panel, wholesale pricing, and white-label options to run your own IPTV business in Canada."}},
+    {"@type":"Question","name":"What is the minimum order for IPTV resellers?","acceptedAnswer":{"@type":"Answer","text":"Maple4K offers flexible reseller plans with no large minimum orders. Contact us for current wholesale pricing tailored to your reseller volume."}}
+  ]
+};
 export default function ResellerPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
       {/* Hero */}
       <section

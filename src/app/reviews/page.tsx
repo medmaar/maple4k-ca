@@ -8,8 +8,33 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://maple4k.ca/reviews" },
 };
 
+
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Maple4K",
+  "url": "https://maple4k.ca",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "50000",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Reviews","item":"https://maple4k.ca/reviews"}
+  ]
+};
 export default function ReviewsPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main style={{ background: "#0C0F1A", minHeight: "100vh", color: "#fff" }}>
 
       {/* Hero */}

@@ -26,8 +26,27 @@ const channels = [
   },
 ];
 
+
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Maple4K",
+  "url": "https://maple4k.ca/contact",
+  "description": "Contact Maple4K IPTV Canada support team 24/7 via WhatsApp, email or live chat."
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Contact","item":"https://maple4k.ca/contact"}
+  ]
+};
 export default function ContactPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main className="bg-gray-950 text-white min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">

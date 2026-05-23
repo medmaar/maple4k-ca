@@ -54,8 +54,28 @@ const posts = [
   },
 ];
 
+
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Maple4K Blog",
+  "url": "https://maple4k.ca/blog",
+  "description": "IPTV guides, player reviews, and streaming tips for Canada.",
+  "publisher": {"@type":"Organization","name":"Maple4K","url":"https://maple4k.ca"}
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/blog"}
+  ]
+};
 export default function BlogPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
       <section style={{ padding: "48px 16px 32px" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>

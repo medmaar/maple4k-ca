@@ -29,8 +29,30 @@ const rules = [
   "Referrals are unlimited — each successful referral gives you +12 more months.",
 ];
 
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Refer a Friend to Maple4K and Earn a Free Year",
+  "step": [
+    {"@type":"HowToStep","position":1,"name":"Refer a Friend","text":"Share your referral code or info with a friend who hasn't used Maple4K before."},
+    {"@type":"HowToStep","position":2,"name":"Friend Subscribes","text":"Your friend purchases at least a 12-month Maple4K subscription."},
+    {"@type":"HowToStep","position":3,"name":"Get +1 Year FREE","text":"Once their payment is verified, 12 months are added to your account automatically."}
+  ]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Referral Program","item":"https://maple4k.ca/referral"}
+  ]
+};
 export default function ReferralPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
 
       {/* Hero */}

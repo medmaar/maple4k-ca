@@ -54,8 +54,33 @@ const sportsChannels = [
   "DAZN", "UFC Fight Pass", "Golf Channel", "Olympic Channel",
 ];
 
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Maple4K",
+  "url": "https://maple4k.ca",
+  "logo": "https://maple4k.ca/favicon.svg",
+  "description": "Canada's best IPTV service. 50,000+ channels + Netflix in 4K Ultra HD from $9/month.",
+  "areaServed": "CA",
+  "contactPoint": { "@type": "ContactPoint", "contactType": "customer service", "availableLanguage": ["English", "French"] }
+};
+
+const homeFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is the best IPTV service in Canada?","acceptedAnswer":{"@type":"Answer","text":"Maple4K is Canada's top-rated IPTV service in 2026. It offers 50,000+ channels + Netflix, True 4K Ultra HD via H.265 codec, a free 24-hour trial, and plans from $9/month with no contracts."}},
+    {"@type":"Question","name":"Is there a free IPTV trial in Canada?","acceptedAnswer":{"@type":"Answer","text":"Yes. Maple4K offers a free 24-hour trial with no credit card required. You get full access to all channels in 4K quality to test before subscribing."}},
+    {"@type":"Question","name":"How much does IPTV cost in Canada?","acceptedAnswer":{"@type":"Answer","text":"Maple4K IPTV plans start at $9/month for one device. Multi-device plans are available, and longer subscriptions (3, 6, 12 months) offer significant discounts."}},
+    {"@type":"Question","name":"Is IPTV legal in Canada?","acceptedAnswer":{"@type":"Answer","text":"IPTV technology is legal in Canada and is the same delivery method used by major telecoms. Maple4K operates within Canadian broadcasting standards."}}
+  ]
+};
+
 export default function HomePage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff" }}>
 
       {/* ── 1. HERO ── */}
@@ -305,6 +330,7 @@ export default function HomePage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
 

@@ -18,8 +18,30 @@ const pricingFaqs = [
   { q: "Can I cancel my subscription?", a: "You can stop at any time. Subscriptions remain active for the paid duration — no automatic renewals." },
 ];
 
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Are there any hidden fees?","acceptedAnswer":{"@type":"Answer","text":"No hidden fees. The price you see is the price you pay. All plans include the same channels and VOD library."}},
+    {"@type":"Question","name":"How fast do I get access after ordering?","acceptedAnswer":{"@type":"Answer","text":"Instantly. Login credentials are sent to your email within minutes of payment confirmation."}},
+    {"@type":"Question","name":"Is there a free trial?","acceptedAnswer":{"@type":"Answer","text":"Yes — Maple4K offers a free 24-hour trial with no credit card required. Contact us via WhatsApp or email to activate."}},
+    {"@type":"Question","name":"Can I cancel my subscription?","acceptedAnswer":{"@type":"Answer","text":"You can stop at any time. Subscriptions remain active for the paid duration — no automatic renewals."}}
+  ]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Pricing","item":"https://maple4k.ca/pricing"}
+  ]
+};
 export default function PricingPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
 
       {/* Header */}

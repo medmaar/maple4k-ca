@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Maple4K – Best 4K IPTV Canada" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K – Best 4K IPTV Canada" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -63,8 +63,30 @@ const requirements = [
   { label: "4K Ultra HD", speed: "50 Mbps" },
 ];
 
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Start Using IPTV in Canada with Maple4K",
+  "step": [
+    {"@type":"HowToStep","position":1,"name":"Choose a Plan","text":"Pick the subscription duration and number of devices. All plans include every channel. Free 24h trial available."},
+    {"@type":"HowToStep","position":2,"name":"Get Your Credentials","text":"After subscribing, receive your server URL, username, and password via email within minutes."},
+    {"@type":"HowToStep","position":3,"name":"Install and Stream","text":"Install your preferred IPTV player (TiviMate, IPTV Smarters Pro), enter your credentials, and start watching 50,000+ channels in 4K."}
+  ]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"How It Works","item":"https://maple4k.ca/how-it-works"}
+  ]
+};
 export default function HowItWorksPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff" }} className="min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 px-4 text-center">
