@@ -183,5 +183,6 @@ export default function IPTVSamsungPage() {
           </div>
         </section>
       </main>
+    </>
   );
 }

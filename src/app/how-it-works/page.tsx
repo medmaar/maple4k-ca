@@ -244,5 +244,6 @@ export default function HowItWorksPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }

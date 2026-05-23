@@ -119,5 +119,6 @@ export default function SmartIPTVPage() {
       </section>
 
     </main>
+    </>
   );
 }

@@ -181,5 +181,6 @@ export default function IPTVWindowsPage() {
           </div>
         </section>
       </main>
+    </>
   );
 }

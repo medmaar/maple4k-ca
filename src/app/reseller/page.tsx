@@ -192,5 +192,6 @@ export default function ResellerPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }

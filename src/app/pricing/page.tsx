@@ -166,5 +166,6 @@ export default function PricingPage() {
       </section>
 
     </main>
+    </>
   );
 }

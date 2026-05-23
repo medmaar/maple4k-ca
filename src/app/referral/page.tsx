@@ -140,5 +140,6 @@ export default function ReferralPage() {
       </section>
 
     </main>
+    </>
   );
 }
