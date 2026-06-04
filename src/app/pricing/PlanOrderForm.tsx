@@ -37,14 +37,12 @@ interface Props { plan: string; }
 export default function PlanOrderForm({ plan }: Props) {
   const [form, setForm] = useState({ full_name: "", email: "", country: "Canada", device: "", message: "" });
   const [phone, setPhone] = useState<string | undefined>("");
-  const [emailWarning, setEmailWarning] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const emailjsInitialized = useRef(false);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     const { name, value } = e.target;
     setForm(prev => ({ ...prev, [name]: value }));
-    if (name === "email") setEmailWarning(value.length > 3 && !value.includes("@"));
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -146,18 +144,17 @@ export default function PlanOrderForm({ plan }: Props) {
       {/* Full Name */}
       <div>
         <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>
-          Full Name <span style={{ color: "#fd0322" }}>*</span>
+          Full Name
         </label>
-        <input type="text" name="full_name" required placeholder="Your full name" value={form.full_name} onChange={handleChange} style={inputStyle} />
+        <input type="text" name="full_name" placeholder="Your full name" value={form.full_name} onChange={handleChange} style={inputStyle} />
       </div>
 
       {/* Email */}
       <div>
         <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>
-          Email Address <span style={{ color: "#fd0322" }}>*</span>
+          Email Address
         </label>
-        <input type="text" name="email" required placeholder="you@example.com" value={form.email} onChange={handleChange} style={inputStyle} />
-        {emailWarning && <p style={{ color: "#fbbf24", fontSize: 12, marginTop: 4 }}>This doesn&apos;t look like a valid email — make sure it contains @</p>}
+        <input type="text" name="email" placeholder="you@example.com" value={form.email} onChange={handleChange} style={inputStyle} />
       </div>
 
       {/* Phone */}

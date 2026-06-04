@@ -67,7 +67,6 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
         </label>
         <input
           type="text"
-          required
           placeholder="E.g. John"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -82,7 +81,6 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
         </label>
         <input
           type="email"
-          required
           placeholder="E.g. john@example.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -96,7 +94,6 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
           Country
         </label>
         <select
-          required
           value={country}
           onChange={(e) => setCountry(e.target.value)}
           className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100 transition"
