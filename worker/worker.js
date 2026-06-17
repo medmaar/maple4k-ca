@@ -285,7 +285,7 @@ async function handleFetch(request, env) {
 
     // 5. Admin notification
     step = "email_admin";
-    await sendEmail(ADMIN_EMAIL, `[Trial] ${name} — ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl));
+    await sendEmail(ADMIN_EMAIL, `Automation / maple4k.ca / trial / ${name} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl));
 
     // 6. Store in KV (TTL 4 days)
     step = "kv_store";
