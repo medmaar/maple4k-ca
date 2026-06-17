@@ -167,22 +167,8 @@ function reminderEmail(name, username, password, m3uUrl) {
     </p>
     ${ctaButton("View Our Plans →", SITE_URL + "/pricing")}
     <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Questions? Reach us in two ways:
+      Questions? Reach us by replying to this email or on WhatsApp at <a href="https://wa.me/17828026280" style="color:#E8041F;text-decoration:none;font-weight:bold;">+1 782-802-6280</a>
     </p>
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
-      <tr>
-        <td style="padding-right:12px;">
-          <a href="https://wa.me/17828026280" style="display:inline-block;background:#25D366;color:#ffffff;text-decoration:none;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;padding:10px 20px;border-radius:6px;">
-            WhatsApp → +1 782-802-6280
-          </a>
-        </td>
-        <td>
-          <a href="mailto:help@maple4k.ca" style="display:inline-block;background:#f0f0f0;color:#333333;text-decoration:none;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;padding:10px 20px;border-radius:6px;">
-            Email → help@maple4k.ca
-          </a>
-        </td>
-      </tr>
-    </table>
     <p style="margin:24px 0 0;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Best regards,<br><strong>The Maple4K Team</strong></p>
   `);
 }
@@ -202,22 +188,8 @@ function followupEmail(name) {
     </p>
     ${ctaButton("Choose My Plan →", SITE_URL + "/pricing")}
     <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Any questions? Contact us in two ways:
+      Any questions? Contact us by replying to this email or directly on WhatsApp at <a href="https://wa.me/17828026280" style="color:#E8041F;text-decoration:none;font-weight:bold;">+1 782-802-6280</a>
     </p>
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
-      <tr>
-        <td style="padding-right:12px;">
-          <a href="https://wa.me/17828026280" style="display:inline-block;background:#25D366;color:#ffffff;text-decoration:none;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;padding:10px 20px;border-radius:6px;">
-            WhatsApp → +1 782-802-6280
-          </a>
-        </td>
-        <td>
-          <a href="mailto:help@maple4k.ca" style="display:inline-block;background:#f0f0f0;color:#333333;text-decoration:none;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;padding:10px 20px;border-radius:6px;">
-            Email → help@maple4k.ca
-          </a>
-        </td>
-      </tr>
-    </table>
     <p style="margin:24px 0 0;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Best regards,<br><strong>The Maple4K Team</strong></p>
   `);
 }
