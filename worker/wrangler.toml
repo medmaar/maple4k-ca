@@ -1,0 +1,10 @@
+name = "iptv-trial-maple4k"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "TRIALS"
+id = "d34fcc29026649d986bcfc70f21cf02e"
+
+[triggers]
+crons = ["0 * * * *"]
