@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import PlanOrderForm from "../pricing/PlanOrderForm";
+import FreeTrialForm from "./FreeTrialForm";
 import PlanFAQ, { type FaqItem } from "../pricing/PlanFAQ";
 
 export const metadata: Metadata = {
@@ -101,7 +101,7 @@ export default function FreeTrialPage() {
                 boxShadow: "0 8px 32px rgba(26,61,69,0.25)",
               }}
             >
-              <PlanOrderForm plan="Free Trial" />
+              <FreeTrialForm />
             </div>
 
             {/* FAQ */}
