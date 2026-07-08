@@ -162,7 +162,7 @@ export default function ResellerPage() {
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <a
-                href="https://wa.me/17828026280?text=Hi%20Maple4K!%20I%27m%20interested%20in%20the%20reseller%20program."
+                href="/link/wa?msg=Hi%20Maple4K!%20I%27m%20interested%20in%20the%20reseller%20program."
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ background: "#25D366", color: "#fff", fontWeight: 700, fontSize: 16, padding: "16px 36px", borderRadius: 14, textDecoration: "none", display: "inline-block" }}

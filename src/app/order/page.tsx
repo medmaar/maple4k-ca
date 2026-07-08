@@ -57,7 +57,7 @@ function OrderContent() {
           <p className="text-center text-black text-sm font-semibold uppercase tracking-wider">Choose how to order</p>
 
           <a
-            href={`https://wa.me/17828026280?text=${whatsappMsg}`}
+            href={`/link/wa?msg=${whatsappMsg}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl font-bold text-gray-900 bg-[#25D366] hover:brightness-110 transition text-lg"

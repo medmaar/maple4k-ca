@@ -24,7 +24,7 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
     const msg = encodeURIComponent(
       `Hi Maple4K!\n\nI'd like to order the ${planLabel} plan at $${price}.\n\nName: ${name}\nEmail: ${email}\nCountry: ${country}\nWhatsApp: ${phone || "—"}\n\nPlease send me payment instructions. Thank you!`
     );
-    window.open(`https://wa.me/${whatsappNumber}?text=${msg}`, "_blank");
+    window.open(`/link/wa?msg=${msg}`, "_blank");
     setSubmitted(true);
   }
 

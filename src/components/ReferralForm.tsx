@@ -135,7 +135,7 @@ export default function ReferralForm() {
       <div style={{ marginTop: 24, textAlign: "center" }}>
         <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 13, marginBottom: 16 }}>Prefer WhatsApp? Reach us directly:</p>
         <a
-          href="https://wa.me/17828026280?text=Hi%20Maple4K!%20I%20want%20to%20submit%20a%20referral."
+          href="/link/wa?msg=Hi%20Maple4K!%20I%20want%20to%20submit%20a%20referral."
           target="_blank"
           rel="noopener noreferrer"
           style={{ display: "inline-block", background: "#25D366", color: "#fff", fontWeight: 700, padding: "14px 32px", borderRadius: 12, fontSize: 14, textDecoration: "none" }}

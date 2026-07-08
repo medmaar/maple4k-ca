@@ -144,7 +144,7 @@ export default function ResellerOrderForm() {
           {status === "error" && (
             <div style={{ background: "rgba(232,4,31,0.1)", border: "1px solid rgba(232,4,31,0.3)", color: "#ff6b6b", borderRadius: 12, padding: "12px 16px", fontSize: 14, marginBottom: 20 }}>
               ❌ Something went wrong. Please try again or{" "}
-              <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" style={{ color: "#ff6b6b", textDecoration: "underline" }}>
+              <a href="/link/wa" target="_blank" rel="noopener noreferrer" style={{ color: "#ff6b6b", textDecoration: "underline" }}>
                 contact us on WhatsApp
               </a>.
             </div>
