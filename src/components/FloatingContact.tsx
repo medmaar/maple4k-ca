@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const WA_URL = "/whatsapp-contact";
+const WA_URL = "/link/wa?msg=Hi%20Maple4K%2C%20I%27m%20interested%20in%20your%20service.";
 const TG_URL = "https://t.me/IPTVCanadaSupport?text=Hi%20Maple4K%2C%20I%27m%20interested%20in%20your%20service.";
 // email constructed client-side only (see useEffect)
 
