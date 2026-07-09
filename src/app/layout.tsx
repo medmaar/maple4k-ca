@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "../components/Footer";
 import FloatingContact from "../components/FloatingContact";
+import SalesBanner from "../components/SalesBanner";
 
 import Animations from "./components/Animations";
 
@@ -104,6 +105,7 @@ export default function RootLayout({
                         <div className="flex-1">{children}</div>
                         <Footer />
                         <FloatingContact />
+                        <SalesBanner />
                         <Animations />
                 </body>
           </html>
