@@ -12,7 +12,7 @@ const channels = [
     name: "WhatsApp Live Chat",
     desc: "Fastest response. Chat with our 4K streaming team — typically under 5 minutes.",
     action: "Start Live Chat",
-    href: "/whatsapp-contact",
+    href: "/link/wa",
     bg: "bg-[#25D366]",
     detail: "Response time: < 5 min",
   },
