@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best 4K IPTV in Canada 2026: H.265 Codec, HDR, Ultra HD Streaming | Maple4K",
+  title: "Best 4K IPTV in Canada 2026: H.265 Codec, HDR, Ultra | Maple4K",
   description:
     "Experience true 4K Ultra HD IPTV in Canada. Compare H.265 codecs, HDR10, bitrate support, and video quality. Stream sports and movies in 4K on every.",
   keywords:

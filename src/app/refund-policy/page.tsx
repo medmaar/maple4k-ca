@@ -18,7 +18,11 @@ export const metadata: Metadata = {
 
 export default function RefundPolicyPage() {
   return (
-    <main style={{ background: "#0C0F1A", color: "#fff" }} className="min-h-screen py-20 px-4">
+    <main
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Maple4K", "item": "https://maple4k.ca"}, {"@type": "ListItem", "position": 2, "name": "Refund Policy", "item": "https://maple4k.ca/refund-policy"}]}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Refund Policy", "url": "https://maple4k.ca/refund-policy", "inLanguage": "en-CA", "dateModified": "2026-07-19", "isPartOf": {"@type": "WebSite", "name": "Maple4K", "url": "https://maple4k.ca"}}) }} />
+    </> style={{ background: "#0C0F1A", color: "#fff" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Refund Policy</h1>
         <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
