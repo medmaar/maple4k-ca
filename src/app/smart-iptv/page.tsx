@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "Smart IPTV Canada — Best Smart TV IPTV Service 2026 | Maple4K" },
-  description: "Stream IPTV on any Smart TV in Canada. Maple4K works on Samsung, LG, Android TV, Apple TV and all smart TVs. Free trial, 4K quality. Smart IPTV Canada from $9/month.",
+  description: "Stream IPTV on any Smart TV in Canada. Maple4K works on Samsung, LG, Android TV, Apple TV and all smart TVs. Free trial, 4K quality. Smart IPTV Canada.",
   keywords: "smart iptv, iptv smarter, iptv smarters pro, best iptv app, iptv service canada, best iptv canada, iptv providers canada",
   alternates: { canonical: "https://maple4k.ca/smart-iptv" },
 };

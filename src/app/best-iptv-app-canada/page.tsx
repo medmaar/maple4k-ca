@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV App Canada 2026 — Top 5 Rated Players | Maple4K" },
-  description: "The 5 best IPTV apps in Canada for 2026. TiviMate, IPTV Smarters Pro, GSE Smart IPTV, Perfect Player and more — compared for Fire Stick, Android, iPhone, and Smart TV.",
+  description: "The 5 best IPTV apps in Canada for 2026. TiviMate, IPTV Smarters Pro, GSE Smart IPTV, Perfect Player and more — compared for Fire Stick, Android, iPhone.",
   keywords: "best iptv app canada, best iptv player canada, iptv app canada, iptv smarters canada, tivimate canada, best iptv app for fire stick canada, best iptv app iphone canada",
   alternates: { canonical: "https://maple4k.ca/best-iptv-app-canada" },
   openGraph: {

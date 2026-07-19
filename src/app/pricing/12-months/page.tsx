@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "1 Year IPTV Canada — $49 Best Value | Maple4K" },
   description:
-    "Get a full year of IPTV in Canada for only $49. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV, IBO Player bonus included. Best value IPTV plan Canada.",
+    "Get a full year of IPTV in Canada for only $49. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV, IBO Player bonus included. Best value IPTV plan.",
   keywords:
     "IPTV annual Canada, Maple4K 1 year, best value IPTV Canada, 12 month IPTV Canada $49, yearly IPTV Canada",
   alternates: { canonical: "https://maple4k.ca/pricing/12-months" },
@@ -60,7 +60,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Maple4K 1 Year IPTV Plan",
-  description: "12 months of IPTV access to 50,000+ channels + Netflix in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K. Includes IBO Player subscription.",
+  description: "12 months of IPTV access to 50,000+ channels + Netflix in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K. Includes IBO Player.",
   brand: { "@type": "Brand", name: "Maple4K" },
   "image": "https://maple4k.ca/og-image.jpg",
   "review": {

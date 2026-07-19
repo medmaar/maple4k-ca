@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IPTV Roku Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on Roku in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy private channel setup. Free trial available.",
+    "Stream IPTV on Roku in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy private channel setup. Free trial.",
   keywords:
     "IPTV Roku Canada, Roku Maple4K, best IPTV for Roku Canada, Roku streaming Maple4K",
   alternates: { canonical: "https://maple4k.ca/iptv-roku-canada" },
   openGraph: {
     title: "IPTV Roku Canada | Maple4K – Best 4K IPTV Canada",
-    description: "Stream IPTV on Roku in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy private channel setup. Free trial available.",
+    description: "Stream IPTV on Roku in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy private channel setup. Free trial.",
     url: "https://maple4k.ca/iptv-roku-canada",
     type: "website",
     siteName: "Maple4K",

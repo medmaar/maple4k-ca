@@ -9,10 +9,11 @@ const PricingSection = dynamic(() => import("./PricingSection"));
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Canada 2026 — 50,000+ Channels + Netflix from $9 | Maple4K" },
-  description: "Best IPTV Canada 2026. 50,000+ channels + Netflix, free trial available — no credit card. IPTV subscription from $9/month. Best IPTV service in Canada with 4K Ultra HD, iptv québec, iptv box included.",
+  description: "Best IPTV Canada 2026. 50,000+ channels + Netflix, free trial available — no credit card. IPTV subscription from $9/month. Best IPTV service in Canada.",
   keywords: "iptv canada, best iptv canada, iptv québec, iptv box, iptv free trial, free trial iptv, iptv from canada, iptv subscription canada, best iptv in canada, iptv providers canada, best iptv service canada, iptv near me, iptv legal, smart iptv, canadian iptv, iptv 4k, iptv firestick, iptv canada reviews, best iptv provider canada, free iptv canada",
   alternates: { canonical: "https://maple4k.ca" },
   openGraph: {
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K — Canada's Best 4K IPTV" }],
     title: "Best IPTV Canada 2026 — 50,000+ Channels + Netflix from $9 | Maple4K",
     description: "Canada's best IPTV service. 50,000+ channels + Netflix, free 24h trial, 4K Ultra HD from $9/month.",
     url: "https://maple4k.ca",
@@ -79,6 +80,7 @@ const homeFaqSchema = {
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "Maple4K IPTV Canada", "brand": {"@type": "Brand", "name": "Maple4K"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "289", "bestRating": "5", "worstRating": "1"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff" }}>

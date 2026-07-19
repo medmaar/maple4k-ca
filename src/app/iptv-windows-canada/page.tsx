@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IPTV Windows PC & Mac Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on Windows PC or Mac in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV. Works with VLC, IPTV Smarters and more. Free trial available.",
+    "Stream IPTV on Windows PC or Mac in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV. Works with VLC, IPTV Smarters and more.",
   keywords:
     "IPTV Windows Canada, IPTV PC Canada, IPTV computer Canada, IPTV Mac Canada, best IPTV for PC Canada",
   alternates: { canonical: "https://maple4k.ca/iptv-windows-canada" },
   openGraph: {
     title: "IPTV Windows PC & Mac Canada | Maple4K – Best 4K IPTV Canada",
-    description: "Stream IPTV on Windows PC or Mac in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV. Works with VLC, IPTV Smarters and more. Free trial available.",
+    description: "Stream IPTV on Windows PC or Mac in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV. Works with VLC, IPTV Smarters and more.",
     url: "https://maple4k.ca/iptv-windows-canada",
     type: "website",
     siteName: "Maple4K",

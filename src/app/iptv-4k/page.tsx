@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV 4K Canada — True Ultra HD Streaming Near You | Maple4K" },
   description:
-    "Stream IPTV in 4K Ultra HD in Canada. H.265/HEVC encoded, HDR10 & Dolby Vision. 50,000+ channels + Netflix in true 4K quality near you. Free trial — no credit card. From $9/month.",
+    "Stream IPTV in 4K Ultra HD in Canada. H.265/HEVC encoded, HDR10 & Dolby Vision. 50,000+ channels + Netflix in true 4K quality near you. Free trial — no.",
   keywords:
     "iptv 4k, iptv 4k near me, 4k iptv canada, 4k iptv subscription, ultra hd iptv canada, h.265 iptv canada, hdr iptv canada, best iptv 4k canada",
   alternates: { canonical: "https://maple4k.ca/iptv-4k" },

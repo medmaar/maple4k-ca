@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4K",
   description:
-    "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 50,000+ channels + Netflix, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $9/month.",
+    "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 50,000+ channels + Netflix, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From.",
   keywords: "IPTV Apple TV Canada, IPTV iPhone Canada, IPTV iPad Canada 2026",
   alternates: { canonical: "https://maple4k.ca/iptv-apple-tv-canada" },
   openGraph: {
     title: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4K",
-    description: "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 50,000+ channels + Netflix, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $9/month.",
+    description: "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 50,000+ channels + Netflix, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From.",
     url: "https://maple4k.ca/iptv-apple-tv-canada",
     type: "website",
     siteName: "Maple4K",

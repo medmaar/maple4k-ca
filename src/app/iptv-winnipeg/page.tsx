@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Winnipeg 2026 — Best 4K IPTV Service Manitoba | Maple4K" },
-  description: "Best IPTV service in Winnipeg 2026. Stream Jets, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9/month. Free 24h trial — no credit card.",
+  description: "Best IPTV service in Winnipeg 2026. Stream Jets, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9/month. Free 24h trial — no credit.",
   keywords: "iptv winnipeg, iptv near me, best iptv winnipeg, iptv manitoba, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada",
   alternates: { canonical: "https://maple4k.ca/iptv-winnipeg" },
   openGraph: {

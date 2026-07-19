@@ -4,7 +4,7 @@ import PricingSection from "../PricingSection";
 
 export const metadata: Metadata = {
   title: { absolute: "4K IPTV Plans Canada — H.265/HEVC from $9 | Maple4K" },
-  description: "Compare Maple4K premium 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from $9. 50,000+ channels + Netflix, no contracts.",
+  description: "Compare Maple4K premium 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from $9. 50,000+ channels + Netflix, no.",
   keywords: "Maple4K pricing, 4K IPTV plans Canada, H.265 HEVC IPTV Canada, HDR IPTV subscription 2026",
   alternates: { canonical: "https://maple4k.ca/pricing" },
 };

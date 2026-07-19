@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: { absolute: "About Maple4K — Canada's Best 4K IPTV Service | Maple4K" },
-  description: "Maple4K is a Canadian IPTV service delivering 50,000+ channels + Netflix in 4K to subscribers across Canada. Learn about our mission, coverage, and why Canadians choose us.",
+  description: "Maple4K is a Canadian IPTV service delivering 50,000+ channels + Netflix in 4K to subscribers across Canada. Learn about our mission, coverage, and why.",
   keywords: "about maple4k, maple4k iptv canada, canadian iptv service, iptv canada company, best iptv canada",
   alternates: { canonical: "https://maple4k.ca/about" },
   openGraph: {

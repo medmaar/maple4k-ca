@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Best 4K IPTV in Canada 2026: H.265 Codec, HDR, Ultra HD Streaming | Maple4K",
   description:
-    "Experience true 4K Ultra HD IPTV in Canada. Compare H.265 codecs, HDR10, bitrate support, and video quality. Stream sports and movies in 4K on every device.",
+    "Experience true 4K Ultra HD IPTV in Canada. Compare H.265 codecs, HDR10, bitrate support, and video quality. Stream sports and movies in 4K on every.",
   keywords:
     "4K IPTV Canada, H.265 IPTV, HDR10 streaming Canada, Ultra HD IPTV, 4K sports streaming Canada",
   alternates: { canonical: "https://maple4k.ca/blog/best-iptv-canada-2026" },

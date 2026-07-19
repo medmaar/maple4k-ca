@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IPTV LG TV Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on your LG Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Free trial available.",
+    "Stream IPTV on your LG Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Free trial.",
   keywords:
     "IPTV LG TV Canada, IPTV LG Smart TV Canada, LG webOS Maple4K, best IPTV for LG TV Canada",
   alternates: { canonical: "https://maple4k.ca/iptv-lg-tv-canada" },
   openGraph: {
     title: "IPTV LG TV Canada | Maple4K – Best 4K IPTV Canada",
-    description: "Stream IPTV on your LG Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Free trial available.",
+    description: "Stream IPTV on your LG Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Free trial.",
     url: "https://maple4k.ca/iptv-lg-tv-canada",
     type: "website",
     siteName: "Maple4K",

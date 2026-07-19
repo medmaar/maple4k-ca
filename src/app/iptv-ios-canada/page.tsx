@@ -17,13 +17,13 @@ const howToSchema = {
 export const metadata: Metadata = {
   title: "IPTV iPhone & iPad Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on iPhone or iPad in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free trial available.",
+    "Stream IPTV on iPhone or iPad in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free.",
   keywords:
     "IPTV iPhone Canada, IPTV iPad Canada, IPTV iOS Canada, best IPTV for iPhone Canada, IPTV app Canada iOS",
   alternates: { canonical: "https://maple4k.ca/iptv-ios-canada" },
   openGraph: {
     title: "IPTV iPhone & iPad Canada | Maple4K – Best 4K IPTV Canada",
-    description: "Stream IPTV on iPhone or iPad in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free trial available.",
+    description: "Stream IPTV on iPhone or iPad in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free.",
     url: "https://maple4k.ca/iptv-ios-canada",
     type: "website",
     siteName: "Maple4K",

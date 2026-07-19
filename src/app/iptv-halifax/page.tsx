@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Halifax 2026 — Best 4K IPTV Nova Scotia | Maple4K" },
-  description: "Best IPTV service in Halifax 2026. Stream Mooseheads, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9/month. Free 24h trial — no credit card.",
+  description: "Best IPTV service in Halifax 2026. Stream Mooseheads, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9/month. Free 24h trial — no.",
   keywords: "iptv halifax, iptv near me, best iptv halifax, iptv nova scotia, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada",
   alternates: { canonical: "https://maple4k.ca/iptv-halifax" },
   openGraph: {

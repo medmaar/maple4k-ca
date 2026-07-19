@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Box Canada 2026 — Best IPTV Box + Subscription | Maple4K" },
-  description: "Best IPTV box Canada 2026. Formuler, MAG, Firestick, Android TV box with 50,000+ channels + Netflix. IPTV subscription from $9/month. Free 24h trial — no credit card.",
+  description: "Best IPTV box Canada 2026. Formuler, MAG, Firestick, Android TV box with 50,000+ channels + Netflix. IPTV subscription from $9/month. Free 24h trial — no.",
   keywords: "iptv box, iptv with box, at iptv box, iptv box at, free box for iptv in canada, iptv box canada, best iptv box canada, formuler box canada, mag box iptv, android tv box iptv",
   alternates: { canonical: "https://maple4k.ca/iptv-box" },
   openGraph: {

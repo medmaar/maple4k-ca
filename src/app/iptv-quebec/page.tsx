@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Québec 2026 — 50,000+ Chaînes + Netflix dès 9$/mois | Maple4K" },
-  description: "Meilleur service IPTV Québec 2026. TVA, RDS, ICI Radio-Canada, Noovo, V Télé en 4K Ultra HD. Essai gratuit 24h sans carte de crédit. IPTV abonnement dès 9$/mois.",
+  description: "Meilleur service IPTV Québec 2026. TVA, RDS, ICI Radio-Canada, Noovo, V Télé en 4K Ultra HD. Essai gratuit 24h sans carte de crédit. IPTV abonnement dès.",
   keywords: "iptv québec, iptv canada, iptv montreal, iptv abonnement québec, meilleur iptv québec, iptv service québec, iptv 4k québec, iptv near me, iptv subscription canada",
   alternates: { canonical: "https://maple4k.ca/iptv-quebec" },
   openGraph: {

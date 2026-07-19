@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Hamilton Ontario 2026 — Best 4K IPTV Service | Maple4K" },
-  description: "Best IPTV service in Hamilton Ontario 2026. Stream Bulldogs, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9/month. Free 24h trial — no credit card.",
+  description: "Best IPTV service in Hamilton Ontario 2026. Stream Bulldogs, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9/month. Free 24h trial.",
   keywords: "iptv hamilton, iptv hamilton ontario, iptv near me, best iptv hamilton, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada",
   alternates: { canonical: "https://maple4k.ca/iptv-hamilton" },
   openGraph: {

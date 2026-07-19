@@ -17,13 +17,13 @@ const howToSchema = {
 export const metadata: Metadata = {
   title: "IPTV Android Canada | Maple4K – Best 4K IPTV Canada",
   description:
-    "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Free trial available.",
+    "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Free trial.",
   keywords:
     "IPTV Android Canada, IPTV Android phone Canada, IPTV Android tablet Canada, best IPTV app Android Canada",
   alternates: { canonical: "https://maple4k.ca/iptv-android-canada" },
   openGraph: {
     title: "IPTV Android Canada | Maple4K – Best 4K IPTV Canada",
-    description: "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Free trial available.",
+    description: "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Free trial.",
     url: "https://maple4k.ca/iptv-android-canada",
     type: "website",
     siteName: "Maple4K",
