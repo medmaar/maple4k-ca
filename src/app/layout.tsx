@@ -45,15 +45,7 @@ const sitelinksSearchSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Maple4K",
-  "url": "https://maple4k.ca",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://maple4k.ca/?q={search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
-  }
+  "url": "https://maple4k.ca"
 };
 
 export default function RootLayout({

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Get 10 simultaneous connections for $350. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within minutes.",
   alternates: { canonical: "https://maple4k.ca/pricing/10-devices/6-months" },
+  robots: { index: false, follow: true },
 };
 
 const faqItems: FaqItem[] = [
