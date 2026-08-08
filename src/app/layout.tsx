@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://maple4k.ca"),
-    alternates: { canonical: "https://maple4k.ca", languages: { "en-CA": "https://maple4k.ca", "x-default": "https://maple4k.ca" } },
+
     icons: { icon: "/favicon.svg" },
     title: {
         default: "Best IPTV Canada 2026 — 50,000+ Channels + Netflix from $9 | Maple4K",
