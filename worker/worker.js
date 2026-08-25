@@ -294,11 +294,11 @@ async function handleFetch(request, env) {
 
     // 5. Welcome email
     step = "email_client";
-    await sendEmail(email, "Your Maple4K Free Trial is Ready — 24H Access Activated ✓", welcomeEmail(name, username, password, m3uUrl, RESEND_KEY));
+    await sendEmail(email, "Your Maple4K Free Trial is Ready — 24H Access Activated ✓", welcomeEmail(name, username, password, m3uUrl), RESEND_KEY);
 
     // 6. Admin notification
     step = "email_admin";
-    await sendEmail(ADMIN_EMAIL, `Automation / maple4k.ca / trial / ${name} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl, RESEND_KEY));
+    await sendEmail(ADMIN_EMAIL, `Automation / maple4k.ca / trial / ${name} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl), RESEND_KEY);
 
     return jsonRes({ success: true });
 
@@ -327,7 +327,7 @@ async function handleScheduled(env) {
 
     if (!reminder_sent && now >= expiry - FOUR_HOURS && now < expiry) {
       try {
-        await sendEmail(email, "⏳ Your Maple4K Trial Expires in 4 Hours", reminderEmail(name, username, password, m3uUrl, RESEND_KEY));
+        await sendEmail(email, "⏳ Your Maple4K Trial Expires in 4 Hours", reminderEmail(name, username, password, m3uUrl), RESEND_KEY);
         trial.reminder_sent = true;
         await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Reminder → ${email}`);
@@ -336,7 +336,7 @@ async function handleScheduled(env) {
 
     if (!followup_sent && now >= expiry) {
       try {
-        await sendEmail(email, "Your Maple4K Trial Has Ended — Keep Streaming 🎬", followupEmail(name, RESEND_KEY));
+        await sendEmail(email, "Your Maple4K Trial Has Ended — Keep Streaming 🎬", followupEmail(name), RESEND_KEY);
         trial.followup_sent = true;
         await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Follow-up → ${email}`);
