@@ -8,7 +8,7 @@
 
 const API_BASE    = "https://activationpanel.ru/api/api.php";
 const API_KEY     = "35cf68cc83a3a82e1a0ac5361c7b6105";
-const HOST        = "http://mag.trexlive.me";
+const HOST        = "http://line.truthdaily.me";
 const FROM_EMAIL  = "Maple4K <help@maple4k.ca>";
 const ADMIN_EMAIL = "help@maple4k.ca";
 const SITE_URL    = "https://maple4k.ca";
