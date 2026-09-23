@@ -52,6 +52,46 @@ const posts = [
     readTime: "5 min read",
     tag: "Guide",
   },
+  {
+    slug: "best-iptv-for-hockey-canada-2026",
+    title: "Best IPTV for Hockey in Canada 2026 — Watch NHL Free",
+    excerpt: "Every NHL game, all TSN and Sportsnet feeds, zero blackouts. The complete guide to watching hockey on IPTV in Canada.",
+    date: "2026-04-15",
+    readTime: "6 min read",
+    tag: "Sports",
+  },
+  {
+    slug: "iptv-firestick-canada",
+    title: "Install IPTV on Firestick Canada (2026 Step-by-Step)",
+    excerpt: "The complete guide to installing Maple4K on Amazon Fire Stick, Fire Stick 4K, and Fire Stick Lite in Canada.",
+    date: "2026-05-01",
+    readTime: "5 min read",
+    tag: "Guide",
+  },
+  {
+    slug: "iptv-smarters-pro-canada",
+    title: "IPTV Smarters Pro Canada 2026 — Full Setup Tutorial",
+    excerpt: "Step-by-step IPTV Smarters Pro setup for iPhone, Android, Fire Stick, and Smart TV, with a real Maple4K subscription.",
+    date: "2026-05-10",
+    readTime: "6 min read",
+    tag: "Guide",
+  },
+  {
+    slug: "what-is-m3u-iptv-canada",
+    title: "What Is an M3U Playlist? IPTV M3U Explained (2026)",
+    excerpt: "A plain-English guide to M3U playlists, how they work with IPTV, and which apps support them.",
+    date: "2026-06-10",
+    readTime: "4 min read",
+    tag: "Guide",
+  },
+  {
+    slug: "best-iptv-canada-reddit",
+    title: "Best IPTV in Canada According to Reddit (2026)",
+    excerpt: "What Reddit discussion threads actually say makes a good IPTV service in Canada, and the red flags to watch for.",
+    date: "2026-06-15",
+    readTime: "5 min read",
+    tag: "Reviews",
+  },
 ];
 
 

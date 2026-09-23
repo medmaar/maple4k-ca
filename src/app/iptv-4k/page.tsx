@@ -82,7 +82,7 @@ export default function IPTV4KPage() {
               <div key={f.title} style={{ background: "#fff", borderRadius: 14, padding: 24, border: "1px solid rgba(255,255,255,0.08)" }}>
                 <div style={{ fontSize: 28, marginBottom: 10 }}>{f.icon}</div>
                 <p style={{ fontWeight: 700, marginBottom: 8 }}>{f.title}</p>
-                <p style={{ color: "#333", lineHeight: 1.7, fontSize: 14 }}>{f.desc}</p>
+                <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.7, fontSize: 14 }}>{f.desc}</p>
               </div>
             ))}
           </div>
@@ -105,7 +105,7 @@ export default function IPTV4KPage() {
             {faqItems.map(item => (
               <div key={item.q} style={{ background: "#fff", border: "1px solid rgba(63,154,174,0.1)", borderRadius: 12, padding: "20px 24px" }}>
                 <p style={{ fontWeight: 700, marginBottom: 8 }}>{item.q}</p>
-                <p style={{ color: "#333", lineHeight: 1.7, margin: 0, fontSize: 14 }}>{item.a}</p>
+                <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.7, margin: 0, fontSize: 14 }}>{item.a}</p>
               </div>
             ))}
           </div>

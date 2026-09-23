@@ -87,7 +87,7 @@ export default function BestIPTVPlayerCanadaPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script />
-      <main style={{ background: "#E8F4F5", color: "#fff", minHeight: "100vh" }}>
+      <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
         <section style={{ background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(249,110,91,0.12) 0%, transparent 65%), #0a0a0a", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
             <p style={{ color: "#E8041F", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
@@ -106,7 +106,7 @@ export default function BestIPTVPlayerCanadaPage() {
         </section>
 
         {/* Intro */}
-        <section style={{ padding: "40px 16px 20px", background: "#E8F4F5" }}>
+        <section style={{ padding: "40px 16px 20px", background: "#0E1120" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
             <p style={{ color: "#fff", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
               All four players below are fully compatible with <Link href="/pricing" style={{ color: "#E8041F", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link>. They support M3U playlists and Xtream Codes — the two formats we provide. Whether you&apos;re on a Firestick, Android TV box, or iPhone, one of these will work perfectly for you.
@@ -118,7 +118,7 @@ export default function BestIPTVPlayerCanadaPage() {
         </section>
 
         {/* Player reviews */}
-        <section style={{ padding: "40px 16px 80px", background: "#E8F4F5" }}>
+        <section style={{ padding: "40px 16px 80px", background: "#0E1120" }}>
           <div style={{ maxWidth: 800, margin: "0 auto", display: "flex", flexDirection: "column", gap: 32 }}>
             {players.map((p, i) => (
               <div key={p.name} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "32px 28px" }}>
@@ -159,7 +159,7 @@ export default function BestIPTVPlayerCanadaPage() {
         </section>
 
         {/* Summary */}
-        <section style={{ padding: "60px 16px", background: "#E8F4F5" }}>
+        <section style={{ padding: "60px 16px", background: "#0E1120" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 34px)", fontWeight: 800, marginBottom: 20 }}>
               Our Recommendation for Canadian IPTV Users

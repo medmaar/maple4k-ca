@@ -1,0 +1,19 @@
+# Maple4K — canonical URL consolidation
+# Next.js App Router already serves clean URLs natively (folder name = path),
+# so this file only maps likely alternate/typo URL guesses to their canonical page.
+
+/iptv-smarters              /iptv-smarters-pro-canada   301
+/smarters-pro                /iptv-smarters-pro-canada   301
+/iptv-smarters-pro           /iptv-smarters-pro-canada   301
+/stb-emu                     /stb-emu-canada             301
+/stbemu-pro                  /stb-emu-canada             301
+/iptv-apps                   /best-iptv-apps-canada      301
+/iptv-players                /best-iptv-apps-canada      301
+/iptv-player-canada          /best-iptv-apps-canada      301
+/m3u                         /blog/what-is-m3u-iptv-canada   301
+/what-is-m3u                 /blog/what-is-m3u-iptv-canada   301
+/iptv-reddit                 /blog/best-iptv-canada-reddit   301
+/best-iptv-reddit            /blog/best-iptv-canada-reddit   301
+/formuler-z11                /iptv-formula               301
+/formuler                    /iptv-formula               301
+/mag-box                     /iptv-mag-box-canada        301

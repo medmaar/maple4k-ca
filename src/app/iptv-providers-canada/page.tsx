@@ -114,6 +114,9 @@ export default function IptvProvidersCanadaPage() {
             <Link href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "16px 36px", borderRadius: 14, fontWeight: 800, fontSize: 16, textDecoration: "none", boxShadow: "0 6px 24px rgba(232,4,31,0.4)" }}>▶ Free Trial 24H</Link>
             <Link href="/pricing" style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)", color: "#fff", padding: "16px 28px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>Subscribe →</Link>
           </div>
+          <p style={{ marginTop: 24, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
+            Setup guides: <Link href="/best-iptv-apps-canada" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>Best IPTV Apps</Link> · <Link href="/iptv-smarters-pro-canada" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>IPTV Smarters Pro</Link> · <Link href="/tivimate-canada" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>TiviMate</Link>
+          </p>
         </div>
       </section>
     </main>

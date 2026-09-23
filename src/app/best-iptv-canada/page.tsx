@@ -162,7 +162,7 @@ export default function BestIPTVCanadaPage() {
               <div key={f.title} style={{ background: "#fff", borderRadius: 14, padding: 24, border: "1px solid rgba(255,255,255,0.08)" }}>
                 <div style={{ fontSize: 28, marginBottom: 10 }}>{f.icon}</div>
                 <p style={{ fontWeight: 700, marginBottom: 8 }}>{f.title}</p>
-                <p style={{ color: "#333", lineHeight: 1.7, fontSize: 14 }}>{f.desc}</p>
+                <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.7, fontSize: 14 }}>{f.desc}</p>
               </div>
             ))}
           </div>
@@ -176,7 +176,7 @@ export default function BestIPTVCanadaPage() {
             ].map(r => (
               <div key={r.name} style={{ background: "#fff", borderRadius: 14, padding: 20, border: "1px solid rgba(255,255,255,0.08)" }}>
                 <p style={{ fontSize: 18, marginBottom: 4 }}>{"⭐".repeat(r.stars)}</p>
-                <p style={{ color: "#333", lineHeight: 1.7, fontSize: 14, marginBottom: 8 }}>&ldquo;{r.text}&rdquo;</p>
+                <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.7, fontSize: 14, marginBottom: 8 }}>&ldquo;{r.text}&rdquo;</p>
                 <p style={{ fontWeight: 700, fontSize: 13, color: "#3F9AAE" }}>{r.name}</p>
               </div>
             ))}
@@ -188,7 +188,7 @@ export default function BestIPTVCanadaPage() {
             {faqItems.map(item => (
               <div key={item.q} style={{ background: "#fff", border: "1px solid rgba(63,154,174,0.1)", borderRadius: 12, padding: "20px 24px" }}>
                 <p style={{ fontWeight: 700, marginBottom: 8 }}>{item.q}</p>
-                <p style={{ color: "#333", lineHeight: 1.7, margin: 0, fontSize: 14 }}>{item.a}</p>
+                <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.7, margin: 0, fontSize: 14 }}>{item.a}</p>
               </div>
             ))}
           </div>
@@ -210,7 +210,7 @@ export default function BestIPTVCanadaPage() {
 
         <section style={{ padding: "40px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
-            {[["Best IPTV Canada","/best-iptv-canada"],["IPTV 4K Canada","/iptv-4k"],["IPTV Free Trial","/free-trial"],["Smart IPTV Canada","/smart-iptv"],["IPTV Subscription","/iptv-subscription"],["IPTV Formula","/iptv-formula"]].map(([label,href]) => (
+            {[["Best IPTV Canada","/best-iptv-canada"],["IPTV 4K Canada","/iptv-4k"],["IPTV Free Trial","/free-trial"],["Smart IPTV Canada","/smart-iptv"],["IPTV Subscription","/iptv-subscription"],["IPTV Formula","/iptv-formula"],["Best IPTV Apps","/best-iptv-apps-canada"],["IPTV Smarters Pro","/iptv-smarters-pro-canada"],["Best IPTV on Reddit","/blog/best-iptv-canada-reddit"]].map(([label,href]) => (
               <a key={label} href={href} style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>{label}</a>
             ))}
           </div>

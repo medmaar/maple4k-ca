@@ -49,6 +49,8 @@ export default function Footer() {
                 { label: "Apple TV Setup", href: "/iptv-apple-tv-canada" },
                 { label: "Android TV Setup", href: "/iptv-android-tv-canada" },
                 { label: "Smart TV Setup", href: "/iptv-smart-tv-canada" },
+                { label: "IPTV Smarters Pro", href: "/iptv-smarters-pro-canada" },
+                { label: "Best IPTV Apps", href: "/best-iptv-apps-canada" },
                 { label: "Blog", href: "/blog" },
               ].map(l => (
                 <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}

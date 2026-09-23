@@ -48,6 +48,20 @@ const sitelinksSearchSchema = {
   "url": "https://maple4k.ca"
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Maple4K",
+  "url": "https://maple4k.ca",
+  "logo": "https://maple4k.ca/og-image.jpg",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "support@maple4k.ca",
+    "availableLanguage": ["English", "French"]
+  }
+};
+
 export default function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -69,6 +83,7 @@ export default function RootLayout({
                     .flex-1{flex:1}
                   `}} />
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
+                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
                   {/* GTM — loaded after user interaction or 5s delay, never during Lighthouse measurement */}
                   <script dangerouslySetInnerHTML={{ __html: `
                     window.dataLayer=window.dataLayer||[];

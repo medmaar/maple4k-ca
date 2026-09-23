@@ -99,29 +99,29 @@ export default function IPTVSubscriptionPage() {
       {/* Deep content section */}
       <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>
         <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>What Is an IPTV Subscription and How Does It Work?</h2>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 16 }}>
           An IPTV subscription gives you access to live television channels delivered over your internet connection rather than a cable wire or satellite dish. When you subscribe to Maple4K, you receive a set of credentials — a server URL, username, and password — that you enter into an IPTV player app on your device. The app connects to Maple4K&apos;s Canadian servers and streams your chosen channel in real time, exactly like cable TV but at a fraction of the cost.
         </p>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 32 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 32 }}>
           Unlike cable or satellite, a Maple4K IPTV subscription isn&apos;t tied to a physical address. You can watch at home on your Smart TV, at the office on your laptop, or on the road on your phone — all with the same subscription. Each plan supports a set number of simultaneous streams, and you can upgrade at any time to add more screens.
         </p>
 
         <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Choosing the Right IPTV Subscription Plan for Canada</h2>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 16 }}>
           The right plan depends on how long you want to commit and how many devices you need. The 1-month plan at $9 is ideal if you want to test the service beyond the free 24-hour trial — you get full access for a month with no risk. The 3-month plan at $29 works well for most households, offering a meaningful saving over paying monthly. If you&apos;re ready to cut cable for good, the 12-month plan at $49 is the best IPTV subscription value in Canada: less than $5 per month for 50,000+ channels + Netflix and 120,000+ on-demand titles.
         </p>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 32 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 32 }}>
           Multi-device plans are available for households where multiple family members watch simultaneously in different rooms. Contact us via WhatsApp before subscribing and we&apos;ll recommend the plan that best fits your household size.
         </p>
 
         <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>What You Get With Every Maple4K IPTV Subscription</h2>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 16 }}>
           Every subscription tier includes the complete Maple4K channel lineup with no locked tiers or add-on fees. You get all 50,000+ channels + Netflix including every Canadian network — CBC, CTV, Global, City TV, CP24, TSN in all five regional feeds, Sportsnet in all regional feeds, and French-language channels including TVA, RDS, and Canal Vie. Sports are fully covered: every NHL game, every UFC PPV, all CFL games, NBA, NFL, and MLB — all with zero blackouts and zero extra charges.
         </p>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 16 }}>
           The 120,000+ VOD library covers the latest movies usually within a week of release, plus a comprehensive catalogue of TV series organized by genre, country, and year. Catch-up TV lets you replay content from the past 7 days on supported channels. The full EPG (electronic program guide) loads automatically so you can browse by channel or by time slot, just like a traditional cable guide.
         </p>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 32 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 32 }}>
           True 4K Ultra HD with H.265/HEVC encoding is available on all plans for channels that broadcast in 4K. If your TV or device supports HDR10 or Dolby Vision, compatible channels display in full HDR. On 1080p devices, streams automatically serve optimized HD quality. Setup is instant — credentials arrive within minutes of subscribing.
         </p>
 
@@ -136,7 +136,7 @@ export default function IPTVSubscriptionPage() {
               </div>
             ))}
           </div>
-          <p style={{ color: "#333", fontSize: 14, lineHeight: 1.75 }}>
+          <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 14, lineHeight: 1.75 }}>
             The average Canadian household on Bell or Rogers pays $95–$130/month for TV alone — that&apos;s $1,140–$1,560 per year for a fraction of the channels. A 12-month Maple4K IPTV subscription costs $49 total. The annual saving is over $1,000 for most families, with access to more content, in higher quality, on more devices.
           </p>
         </div>

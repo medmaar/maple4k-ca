@@ -57,7 +57,7 @@ export default function IPTVSmartTVCanadaPage() {
         </section>
 
         {/* Why Maple4K */}
-        <section style={{ padding: "60px 16px", background: "#E8F4F5" }}>
+        <section style={{ padding: "60px 16px", background: "#0E1120" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32 }}>
               Why Maple4K Works Great on Smart TV
@@ -79,7 +79,7 @@ export default function IPTVSmartTVCanadaPage() {
         </section>
 
         {/* Setup Steps */}
-        <section style={{ padding: "60px 16px", background: "#E8F4F5" }}>
+        <section style={{ padding: "60px 16px", background: "#0E1120" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32 }}>
               How to Set Up IPTV on Your Smart TV
@@ -105,7 +105,7 @@ export default function IPTVSmartTVCanadaPage() {
         </section>
 
         {/* CTA */}
-        <section style={{ padding: "60px 16px", background: "#E8F4F5", textAlign: "center" }}>
+        <section style={{ padding: "60px 16px", background: "#0E1120", textAlign: "center" }}>
           <div style={{ maxWidth: 600, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 16 }}>
               Ready to Cut the Cable?

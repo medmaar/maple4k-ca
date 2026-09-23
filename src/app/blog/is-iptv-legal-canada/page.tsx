@@ -60,7 +60,7 @@ export default function IsIPTVLegalCanada() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script
       />
-      <main style={{ background: "#E8F4F5", color: "#fff", minHeight: "100vh" }}>
+      <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
         <article style={{ maxWidth: 800, margin: "0 auto", padding: "80px 16px" }}>
           <time
             dateTime="2026-01-15"

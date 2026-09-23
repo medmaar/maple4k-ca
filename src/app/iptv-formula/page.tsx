@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Formuler Canada — Best Setup Guide 2026 | Maple4K" },
-  description: "Set up Maple4K IPTV on Formuler Z8, Z10, Z Alpha, and all Formuler Android TV boxes in Canada. 4K IPTV on your Formuler box — free trial from $9/month.",
-  keywords: "iptv formula, iptv formuler canada, formuler z8 iptv canada, formuler z10 iptv, iptv formuler box canada, best iptv formuler canada",
+  title: { absolute: "Formuler Z11 & Z11 Pro Max Canada — IPTV Setup Guide 2026 | Maple4K" },
+  description: "Set up Maple4K IPTV on Formuler Z11, Z11 Pro, Z11 Pro Max, Z8, Z8 Pro, Z10, and all Formuler Android TV boxes in Canada. 4K IPTV — free trial from $9/month.",
+  keywords: "iptv formula, formuler z11, formuler z11 pro, formuler z11 pro max, box formuler, formuler box, formuler tv box, formuler z8 pro, formuler z8 pro 4k, formuler z7, formuler z nano, formuler z neo, formuler z+, formuler zx, iptv formuler canada, formuler z8 iptv canada, formuler z10 iptv, iptv formuler box canada, best iptv formuler canada",
   alternates: { canonical: "https://maple4k.ca/iptv-formula" },
 };
 
@@ -22,7 +22,9 @@ const faqSchema = {
   "mainEntity": [
     {"@type":"Question","name":"What IPTV app should I use on a Formuler box in Canada?","acceptedAnswer":{"@type":"Answer","text":"For Formuler boxes in Canada, use MyTVOnline 3 — the built-in app designed specifically for IPTV. It supports Xtream Codes and M3U, full EPG, and 4K H.265 hardware playback with no extra app install."}},
     {"@type":"Question","name":"Which Formuler box is best for IPTV in Canada in 2026?","acceptedAnswer":{"@type":"Answer","text":"The Formuler Z10 Pro Max is the top pick for Canadian IPTV in 2026. It runs Android 9, has a Gigabit ethernet port, Dolby Vision support, and hardware 4K H.265 decoding — ideal for Maple4K's 4K streams."}},
-    {"@type":"Question","name":"Is Maple4K compatible with Formuler Z8?","acceptedAnswer":{"@type":"Answer","text":"Yes — Maple4K is fully compatible with the Formuler Z8 and all Formuler models. Use MyTVOnline 3 or TiviMate on the Z8 with your Maple4K Xtream Codes credentials for 4K playback."}}
+    {"@type":"Question","name":"Is Maple4K compatible with Formuler Z8?","acceptedAnswer":{"@type":"Answer","text":"Yes — Maple4K is fully compatible with the Formuler Z8 and all Formuler models. Use MyTVOnline 3 or TiviMate on the Z8 with your Maple4K Xtream Codes credentials for 4K playback."}},
+    {"@type":"Question","name":"What's the difference between the Formuler Z11, Z11 Pro, and Z11 Pro Max?","acceptedAnswer":{"@type":"Answer","text":"All three run the same MyTVOnline 3 software and support Maple4K identically. The base Z11 has less RAM/storage, the Z11 Pro adds more RAM and a faster processor, and the Z11 Pro Max adds the most RAM/storage plus the strongest Wi-Fi module — the Pro Max is the best choice if you want maximum future-proofing, but any of the three handles Maple4K's 4K streams smoothly."}},
+    {"@type":"Question","name":"Does Maple4K work on the Formuler Z8 Pro and older Z7 models?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Formuler Z8 Pro, Z7, Z Nano, Z Neo, Z+, and ZX are all supported — every Formuler box since the original Z7 runs MyTVOnline 3 and connects to Maple4K the same way, via Xtream Codes or M3U."}}
   ]
 };
 
@@ -41,10 +43,10 @@ export default function IPTVFormulaPage() {
           </span>
         </div>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
-            IPTV on Formuler Box Canada — <span style={{ color: "#E8041F" }}>4K Setup Guide</span>
+            Formuler Z11, Z11 Pro Max & All Formuler Boxes Canada — <span style={{ color: "#E8041F" }}>4K Setup Guide</span>
           </h1>
           <p style={{ fontSize: "1.1rem", lineHeight: 1.7, maxWidth: 680, marginBottom: 28 }}>
-            Formuler boxes are among the best IPTV players available in Canada — the Z8, Z10, and Z Alpha deliver hardware-accelerated 4K H.265 playback through the built-in MyTVOnline 3 app. Maple4K is fully optimized for all Formuler devices.
+            Formuler boxes are among the best IPTV players available in Canada — the Z11, Z11 Pro Max, Z8, Z10, and Z Alpha all deliver hardware-accelerated 4K H.265 playback through the built-in MyTVOnline 3 app. Maple4K is fully optimized for every current and previous-generation Formuler device.
           </p>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
             <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Try Free on Formuler →</a>
@@ -62,7 +64,7 @@ export default function IPTVFormulaPage() {
         <div style={{ background: "rgba(249,110,91,0.08)", border: "1px solid rgba(249,110,91,0.25)", borderRadius: 12, padding: 24, marginBottom: 40 }}>
           <p style={{ fontWeight: 700, color: "#E8041F", marginBottom: 12 }}>Supported Formuler Models</p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-            {["Formuler Z8","Formuler Z10","Formuler Z11 Pro","Formuler Z Alpha","Formuler GTV","Formuler CC","Formuler Z10 SE"].map(m => (
+            {["Formuler Z11 Pro Max","Formuler Z11 Pro","Formuler Z11","Formuler Z8 Pro","Formuler Z8","Formuler Z10","Formuler Z10 SE","Formuler Z Alpha","Formuler GTV","Formuler CC","Formuler Z7","Formuler Z Nano","Formuler Z Neo","Formuler Z+","Formuler ZX"].map(m => (
               <span key={m} style={{ background: "rgba(249,110,91,0.1)", border: "1px solid rgba(249,110,91,0.2)", borderRadius: 8, padding: "6px 14px", fontSize: 13, fontWeight: 600 }}>{m}</span>
             ))}
           </div>
@@ -76,29 +78,34 @@ export default function IPTVFormulaPage() {
 
       <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>
         <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Why Formuler Boxes Are the Gold Standard for IPTV in Canada</h2>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 16 }}>
           Formuler is a Canadian-designed Android TV box brand built specifically for IPTV. Unlike generic Android boxes or Fire Sticks repurposed for streaming, Formuler devices ship with MyTVOnline 3 — a professional IPTV application that&apos;s pre-installed, regularly updated, and deeply integrated with the hardware. The result is a seamless IPTV experience that works out of the box: plug in your Formuler, enter your Maple4K portal URL, and you&apos;re watching 50,000+ channels + Netflix in under three minutes.
         </p>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 32 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 32 }}>
           For Canadian subscribers serious about IPTV quality, a Formuler box is worth the $130–$200 investment. The hardware H.265/HEVC decoder means True 4K streams play with zero software processing overhead — no dropped frames, no stuttering during live sports, no lag when switching channels. Maple4K&apos;s streams are fully tested and optimized for all current Formuler models.
         </p>
 
-        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Formuler Box Models Available in Canada — Which to Choose</h2>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
-          The <strong>Formuler Z10 Pro Max</strong> is the current flagship and the recommended choice for new Canadian IPTV subscribers in 2026. It runs Android 9, includes a Gigabit Ethernet port for wired connections (strongly recommended over Wi-Fi for 4K IPTV), supports Dolby Vision and HDR10+, and has 4 GB RAM — plenty for smooth 4K H.265 decoding alongside the MyTVOnline 3 app. You can find it at Canadian electronics retailers for approximately $170.
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Formuler Z11, Z11 Pro & Z11 Pro Max — The Current Lineup</h2>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 32 }}>
+          The <strong>Formuler Z11 series</strong> is Formuler&apos;s current flagship line for 2026, replacing the older Z10 as the top recommendation for new Canadian IPTV subscribers. All three tiers — the base <strong>Z11</strong>, the mid-tier <strong>Z11 Pro</strong>, and the top-end <strong>Z11 Pro Max</strong> — run the same MyTVOnline 3 software and connect to Maple4K identically via Xtream Codes or M3U. The difference is hardware headroom: the Z11 Pro Max adds the most RAM and storage plus the strongest dual-band Wi-Fi module, which matters if you plan to run multiple apps alongside IPTV or stream 4K over Wi-Fi rather than Ethernet. For most Canadian households the standard Z11 or Z11 Pro is more than enough for smooth 4K H.265 playback of every Maple4K channel.
         </p>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Formuler Box Models Available in Canada — Which to Choose</h2>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 16 }}>
+          The <strong>Formuler Z10 Pro Max</strong> (the previous flagship, still widely available) remains a strong choice for new Canadian IPTV subscribers in 2026. It runs Android 9, includes a Gigabit Ethernet port for wired connections (strongly recommended over Wi-Fi for 4K IPTV), supports Dolby Vision and HDR10+, and has 4 GB RAM — plenty for smooth 4K H.265 decoding alongside the MyTVOnline 3 app. You can find it at Canadian electronics retailers for approximately $170.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 16 }}>
           The <strong>Formuler Z8</strong> remains an excellent mid-range option. It handles Full HD and 1080p streams perfectly and manages most 4K content well, though very high-bitrate 4K channels perform better on the Z10. If you have a 1080p TV or primarily watch HD channels, the Z8 is all you need. Available for approximately $130 Canadian.
         </p>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 32 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 32 }}>
           The <strong>Formuler Z Alpha</strong> and <strong>Formuler GTV</strong> are newer models that run Google TV, giving you access to the full Google Play Store in addition to the built-in IPTV functionality. These are ideal if you also want Netflix, Prime Video, and Disney+ on the same device — one remote, one box, all your streaming services.
         </p>
 
         <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16 }}>Maple4K on Formuler: Connection Options and Best Practices</h2>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 16 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 16 }}>
           Maple4K supports both M3U playlist format and Xtream Codes API on all Formuler boxes. We recommend using Xtream Codes for the best experience — it loads the full channel list faster, provides better EPG data, and supports catch-up TV features that M3U playlists don&apos;t always expose. Your Xtream Codes credentials arrive in your welcome email within minutes of subscribing.
         </p>
-        <p style={{ color: "#333", lineHeight: 1.85, marginBottom: 24 }}>
+        <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.85, marginBottom: 24 }}>
           For the best 4K performance on any Formuler box, always connect via Gigabit Ethernet if possible. A wired connection eliminates the variable latency of Wi-Fi, which is the most common cause of buffering on 4K IPTV streams. Most Formuler boxes also support 5GHz Wi-Fi if ethernet isn&apos;t practical — avoid 2.4GHz Wi-Fi for 4K streams. Maple4K&apos;s Canadian support team can help optimize your Formuler setup via WhatsApp for any router or network configuration.
         </p>
 

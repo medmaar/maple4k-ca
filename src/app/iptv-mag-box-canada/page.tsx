@@ -55,7 +55,7 @@ export default function IPTVMagBoxCanadaPage() {
           </div>
         </section>
 
-        <section style={{ padding: "60px 16px", background: "#E8F4F5" }}>
+        <section style={{ padding: "60px 16px", background: "#0E1120" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32 }}>
               Why Maple4K Works Great on MAG Box
@@ -76,7 +76,7 @@ export default function IPTVMagBoxCanadaPage() {
           </div>
         </section>
 
-        <section style={{ padding: "60px 16px", background: "#E8F4F5" }}>
+        <section style={{ padding: "60px 16px", background: "#0E1120" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32 }}>
               How to Set Up Maple4K on Your MAG Box
@@ -101,7 +101,7 @@ export default function IPTVMagBoxCanadaPage() {
           </div>
         </section>
 
-        <section style={{ padding: "60px 16px", background: "#E8F4F5", textAlign: "center" }}>
+        <section style={{ padding: "60px 16px", background: "#0E1120", textAlign: "center" }}>
           <div style={{ maxWidth: 600, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 16 }}>Ready to Set Up Your MAG Box?</h2>
             <p style={{ color: "#fff", marginBottom: 32, fontSize: 15 }}>

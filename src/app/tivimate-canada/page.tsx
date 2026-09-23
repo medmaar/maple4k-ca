@@ -225,7 +225,8 @@ export default function TiviMateCanadaPage() {
             </div>
             <p style={{ marginTop: 28, fontSize: 13, color: "rgba(255,255,255,0.3)" }}>
               Also:{" "}
-              <Link href="/blog/iptv-smarters-pro-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>IPTV Smarters Pro</Link>{" · "}
+              <Link href="/iptv-smarters-pro-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>IPTV Smarters Pro</Link>{" · "}
+              <Link href="/best-iptv-apps-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>All IPTV Apps</Link>{" · "}
               <Link href="/iptv-firestick-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>Fire Stick Canada</Link>{" · "}
               <Link href="/iptv-android-tv-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>Android TV Canada</Link>
             </p>
