@@ -24,13 +24,13 @@ function OrderContent() {
       <div className="max-w-xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
-          <div className="inline-block bg-green-600 text-black text-xs px-3 py-1 rounded-full mb-4 font-bold uppercase tracking-wider">
+          <div className="inline-block bg-green-600 text-white text-xs px-3 py-1 rounded-full mb-4 font-bold uppercase tracking-wider">
             You&apos;re one step away
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold mb-3">
             Complete Your <span className="text-[#F96E5B]">Order</span>
           </h1>
-          <p className="text-black">
+          <p className="text-white">
             Contact us via your preferred method below and we&apos;ll activate your subscription within minutes.
           </p>
         </div>
@@ -39,22 +39,22 @@ function OrderContent() {
         <div className="bg-transparent border border-[#F96E5B] rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-[#F96E5B] mb-4">Your Selected Plan</h2>
           <div className="flex justify-between items-center mb-2">
-            <span className="text-black">Duration</span>
+            <span className="text-white">Duration</span>
             <span className="font-bold">{duration}</span>
           </div>
           <div className="flex justify-between items-center mb-2">
-            <span className="text-black">Devices</span>
+            <span className="text-white">Devices</span>
             <span className="font-bold">{devices} {Number(devices) === 1 ? "Device" : "Devices"}</span>
           </div>
           <div className="border-t border-gray-700 mt-4 pt-4 flex justify-between items-center">
-            <span className="text-black font-bold">Total</span>
+            <span className="text-white font-bold">Total</span>
             <span className="text-3xl font-extrabold text-[#F96E5B]">${price}</span>
           </div>
         </div>
 
         {/* Contact options */}
         <div className="space-y-4 mb-8">
-          <p className="text-center text-black text-sm font-semibold uppercase tracking-wider">Choose how to order</p>
+          <p className="text-center text-white text-sm font-semibold uppercase tracking-wider">Choose how to order</p>
 
           <a
             href={`/link/wa?msg=${whatsappMsg}`}
@@ -92,7 +92,7 @@ function OrderContent() {
         </div>
 
         {/* Reassurance */}
-        <div className="grid grid-cols-3 gap-4 text-center text-sm text-black mb-8">
+        <div className="grid grid-cols-3 gap-4 text-center text-sm text-white mb-8">
           <div className="bg-transparent rounded-xl p-4 border border-gray-800">
             <div className="text-2xl mb-1">⚡</div>
             <div>Instant Activation</div>
@@ -120,7 +120,7 @@ function OrderContent() {
 
 export default function OrderPage() {
   return (
-    <Suspense fallback={<div className="bg-transparent min-h-screen flex items-center justify-center text-black">Loading...</div>}>
+    <Suspense fallback={<div className="bg-transparent min-h-screen flex items-center justify-center text-white">Loading...</div>}>
       <OrderContent />
     </Suspense>
   );

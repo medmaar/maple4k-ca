@@ -23,7 +23,7 @@ export default function RefundPolicyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Refund Policy", "url": "https://maple4k.ca/refund-policy", "inLanguage": "en-CA", "dateModified": "2026-07-19", "isPartOf": {"@type": "WebSite", "name": "Maple4K", "url": "https://maple4k.ca"}}) }} />
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Refund Policy</h1>
-        <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
+        <p className="text-white text-sm mb-10">Last updated: March 28, 2026</p>
 
         {/* Summary box */}
         <div style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(121,201,197,0.3)", borderRadius: 16, padding: "24px", marginBottom: 40 }}>
@@ -35,9 +35,9 @@ export default function RefundPolicyPage() {
           </p>
         </div>
 
-        <div className="space-y-10 text-black leading-relaxed">
+        <div className="space-y-10 text-white leading-relaxed">
           <section>
-            <h2 className="text-2xl font-bold text-black mb-3">1. No-Refund Policy</h2>
+            <h2 className="text-2xl font-bold text-white mb-3">1. No-Refund Policy</h2>
             <p className="mb-3">All sales are final. Once your IPTV subscription has been activated and credentials delivered, we are unable to offer refunds for the following reasons:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>The service is delivered digitally and immediately upon payment</li>
@@ -47,7 +47,7 @@ export default function RefundPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-black mb-3">2. Free Trial — Try Before You Buy</h2>
+            <h2 className="text-2xl font-bold text-white mb-3">2. Free Trial — Try Before You Buy</h2>
             <p className="mb-3">We strongly encourage all new customers to use our free 24h trial before purchasing a subscription. The trial:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Requires no credit card</li>
@@ -61,7 +61,7 @@ export default function RefundPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-black mb-3">3. Exceptions</h2>
+            <h2 className="text-2xl font-bold text-white mb-3">3. Exceptions</h2>
             <p className="mb-3">We will consider a credit or resolution (not a cash refund) in the following limited circumstances:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Service never activated:</strong> If you paid but never received your credentials due to a technical error on our end, you are entitled to a full refund or re-delivery.</li>
@@ -72,24 +72,24 @@ export default function RefundPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-black mb-3">4. Chargebacks</h2>
+            <h2 className="text-2xl font-bold text-white mb-3">4. Chargebacks</h2>
             <p>Initiating a chargeback or payment dispute without first contacting us will result in immediate account termination and may be reported to payment processors. Please contact our support team first — we resolve issues quickly and fairly.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-black mb-3">5. How to Contact Us</h2>
+            <h2 className="text-2xl font-bold text-white mb-3">5. How to Contact Us</h2>
             <p className="mb-4">If you believe you qualify for an exception or have a billing concern, please reach out — we're here to help.</p>
             <div className="bg-transparent rounded-xl p-6 border border-gray-800 space-y-3">
               <p>
-                <span className="text-black text-sm">WhatsApp: </span>
+                <span className="text-white text-sm">WhatsApp: </span>
                 <a href="/link/wa" target="_blank" rel="noopener noreferrer" className="text-[#F96E5B] hover:underline">WhatsApp</a>
               </p>
               <p>
-                <span className="text-black text-sm">Telegram: </span>
+                <span className="text-white text-sm">Telegram: </span>
                 <a href="https://t.me/IPTVCanadaSupport" target="_blank" rel="noopener noreferrer" className="text-[#F96E5B] hover:underline">@IPTVCanadaSupport</a>
               </p>
               <p>
-                <span className="text-black text-sm">Email: </span>
+                <span className="text-white text-sm">Email: </span>
                 <a href="mailto:help@maple4k.ca" className="text-[#F96E5B] hover:underline">help@maple4k.ca</a>
               </p>
             </div>

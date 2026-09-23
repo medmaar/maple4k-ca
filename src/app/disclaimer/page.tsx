@@ -24,12 +24,12 @@ export default function DisclaimerPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Disclaimer", "url": "https://maple4k.ca/disclaimer", "inLanguage": "en-CA", "dateModified": "2026-07-19", "isPartOf": {"@type": "WebSite", "name": "Maple4K", "url": "https://maple4k.ca"}}) }} />
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Disclaimer</h1>
-        <p className="text-black text-sm mb-10">Last updated: April 4, 2026</p>
+        <p className="text-white text-sm mb-10">Last updated: April 4, 2026</p>
 
-        <section className="space-y-8 text-black leading-relaxed">
+        <section className="space-y-8 text-white leading-relaxed">
           <div className="bg-transparent border border-red-700 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold text-black mb-4">Content Disclaimer</h2>
-            <p className="text-black leading-relaxed">
+            <h2 className="text-2xl font-bold text-white mb-4">Content Disclaimer</h2>
+            <p className="text-white leading-relaxed">
               Maple4K does not host or stream any copyrighted content. All content is
               provided by third-party providers. Users are responsible for ensuring they have
               the rights to view content in their jurisdiction.
@@ -37,7 +37,7 @@ export default function DisclaimerPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black mb-3">Third-Party Content</h2>
+            <h2 className="text-2xl font-bold text-white mb-3">Third-Party Content</h2>
             <p>
               Maple4K acts solely as a reseller and intermediary for third-party IPTV
               services. We do not create, produce, host, store, or transmit any video content
@@ -48,7 +48,7 @@ export default function DisclaimerPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black mb-3">User Responsibility</h2>
+            <h2 className="text-2xl font-bold text-white mb-3">User Responsibility</h2>
             <p className="mb-3">
               By using the Maple4K service, you acknowledge and agree that:
             </p>
@@ -61,7 +61,7 @@ export default function DisclaimerPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black mb-3">No Warranties</h2>
+            <h2 className="text-2xl font-bold text-white mb-3">No Warranties</h2>
             <p>
               The service is provided &quot;as is&quot; without warranties of any kind, express or implied.
               Maple4K does not warrant that the service will be uninterrupted, error-free,
@@ -71,7 +71,7 @@ export default function DisclaimerPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black mb-3">Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold text-white mb-3">Limitation of Liability</h2>
             <p>
               To the maximum extent permitted by applicable law, Maple4K shall not be
               liable for any indirect, incidental, special, consequential, or punitive damages
@@ -81,7 +81,7 @@ export default function DisclaimerPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black mb-3">Copyright Concerns</h2>
+            <h2 className="text-2xl font-bold text-white mb-3">Copyright Concerns</h2>
             <p>
               If you believe that copyrighted content is being made accessible through our
               platform without authorization, please contact us immediately. We take all

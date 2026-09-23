@@ -75,21 +75,21 @@ export default function IPTVIOSPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-block bg-[#F96E5B] text-black text-xs px-3 py-1 rounded-full mb-4 font-bold uppercase tracking-wider">
+          <div className="inline-block bg-[#F96E5B] text-white text-xs px-3 py-1 rounded-full mb-4 font-bold uppercase tracking-wider">
             iPhone · iPad · iPod Touch
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
             IPTV for <span className="text-[#F96E5B]">iPhone & iPad Canada</span>
           </h1>
-          <p className="text-xl text-black mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
             Watch Canadian TV anywhere on your iPhone or iPad. Live sports, news, movies,
             and 50,000+ channels + Netflix in the palm of your hand.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               Get Free Trial
             </a>
-            <a href="/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               View Pricing
             </a>
           </div>
@@ -99,10 +99,10 @@ export default function IPTVIOSPage() {
       {/* Compatible devices */}
       <section className="py-12 px-4 bg-transparent">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-xl font-bold mb-6 text-black">Compatible iOS Devices</h2>
+          <h2 className="text-xl font-bold mb-6 text-white">Compatible iOS Devices</h2>
           <div className="flex flex-wrap justify-center gap-4">
             {["iPhone 15 series", "iPhone 14 series", "iPhone 13 series", "iPhone 12 & older", "iPad Pro", "iPad Air", "iPad mini", "iPod Touch"].map((d) => (
-              <span key={d} className="bg-gray-800 border border-gray-700 px-4 py-2 rounded-full text-sm text-black">
+              <span key={d} className="bg-gray-800 border border-gray-700 px-4 py-2 rounded-full text-sm text-white">
                 {d}
               </span>
             ))}
@@ -116,16 +116,16 @@ export default function IPTVIOSPage() {
           <h2 className="text-3xl font-bold text-center mb-4">
             How to Set Up IPTV on <span className="text-[#F96E5B]">iPhone & iPad</span>
           </h2>
-          <p className="text-center text-black mb-12">App Store install — no jailbreak needed.</p>
+          <p className="text-center text-white mb-12">App Store install — no jailbreak needed.</p>
           <div className="space-y-6">
             {steps.map((s) => (
               <div key={s.step} className="flex gap-5 bg-transparent rounded-2xl p-6 border border-gray-800">
-                <div className="flex-shrink-0 w-10 h-10 bg-[#F96E5B] rounded-full flex items-center justify-center font-extrabold text-black">
+                <div className="flex-shrink-0 w-10 h-10 bg-[#F96E5B] rounded-full flex items-center justify-center font-extrabold text-white">
                   {s.step}
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">{s.title}</h3>
-                  <p className="text-black text-sm">{s.desc}</p>
+                  <p className="text-white text-sm">{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -148,7 +148,7 @@ export default function IPTVIOSPage() {
             ].map((f) => (
               <div key={f.title} className="bg-transparent rounded-2xl p-6 border border-gray-800">
                 <h3 className="font-bold text-lg mb-2">{f.title}</h3>
-                <p className="text-black text-sm">{f.desc}</p>
+                <p className="text-white text-sm">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -170,7 +170,7 @@ export default function IPTVIOSPage() {
             ].map((item) => (
               <div key={item.q} className="bg-transparent rounded-xl p-6 border border-gray-800">
                 <h3 className="font-bold text-lg mb-3 text-[#F96E5B]">{item.q}</h3>
-                <p className="text-black text-sm leading-relaxed">{item.a}</p>
+                <p className="text-white text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}
           </div>
@@ -181,8 +181,8 @@ export default function IPTVIOSPage() {
       <section className="py-16 px-4 bg-gradient-to-r from-red-900 to-gray-900 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Start Watching on Your iPhone Today</h2>
-          <p className="text-black mb-8">Try it free for 24 hours — no credit card required.</p>
-          <a href="/free-trial" className="inline-block bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-10 py-4 rounded-xl font-bold text-lg transition-colors">
+          <p className="text-white mb-8">Try it free for 24 hours — no credit card required.</p>
+          <a href="/free-trial" className="inline-block bg-[#F96E5B] hover:bg-[#F96E5B] text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors">
             Get Free Trial
           </a>
         </div>
