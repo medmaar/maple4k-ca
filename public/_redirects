@@ -2,6 +2,11 @@
 # Next.js App Router already serves clean URLs natively (folder name = path),
 # so this file only maps likely alternate/typo URL guesses to their canonical page.
 
+# www -> non-www (Cloudflare Pages resolves this at the edge; the
+# Next.js redirects() in next.config.ts is a no-op under output:"export",
+# so this line is the actual fix — must stay first for priority)
+https://www.maple4k.ca/*     https://maple4k.ca/:splat   301!
+
 /iptv-smarters              /iptv-smarters-pro-canada   301
 /smarters-pro                /iptv-smarters-pro-canada   301
 /iptv-smarters-pro           /iptv-smarters-pro-canada   301

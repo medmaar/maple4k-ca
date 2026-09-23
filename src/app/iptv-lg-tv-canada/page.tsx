@@ -40,10 +40,36 @@ const howToSchema = {
     {"@type":"HowToStep",position:5,name:"Enjoy 4K IPTV",text:"Your full channel list loads automatically. Watch 50,000+ channels in 4K."}
   ],
 };
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  { q: "Does IPTV work on all LG Smart TVs?", a: "Our service works on all LG Smart TVs running webOS (2018 and newer). Older LG TVs may require an Android box or Fire Stick." },
+  { q: "Do I need to sideload any apps?", a: "Most supported apps are available directly from the LG Content Store. For older models, we provide a safe sideload method that does not void your warranty." },
+  { q: "Can I watch on my LG TV and phone at the same time?", a: "Yes — with a 2-device or higher plan you can stream on multiple devices simultaneously." },
+  { q: "Does IPTV support LG's 4K and 8K resolution?", a: "Yes. We stream up to 4K Ultra HD. Our servers automatically match the stream quality to your TV's resolution and your internet speed." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV LG TV Canada", item: "https://maple4k.ca/iptv-lg-tv-canada" },
+  ],
+};
+
 export default function IPTVLGTVPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">

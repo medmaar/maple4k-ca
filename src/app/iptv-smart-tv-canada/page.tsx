@@ -32,10 +32,36 @@ const howToSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { q: "Does IPTV work on Samsung and LG Smart TVs in Canada?", a: "Yes. Install IPTV Smarters or Smart IPTV from the Samsung Apps or LG Content Store, enter your Maple4K credentials, and start streaming immediately." },
+    { q: "Do I need an extra device for IPTV on my Smart TV?", a: "No. Samsung and LG Smart TVs have built-in app stores that run IPTV apps natively — no Firestick, Android box, or extra hardware required." },
+    { q: "Why won't the IPTV app install on my Smart TV?", a: "Make sure your TV's software is up to date. Older Samsung (pre-2018) and LG (pre-webOS 4) models may need a Firestick or Android TV box instead of a native app." },
+    { q: "Can I watch IPTV on my Smart TV and phone at the same time?", a: "Yes — with a 2-device or higher plan, your Smart TV and phone can stream different channels simultaneously." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV Smart TV Canada", item: "https://maple4k.ca/iptv-smart-tv-canada" },
+  ],
+};
+
 export default function IPTVSmartTVCanadaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
         {/* Hero */}
         <section style={{ background: "transparent", padding: "80px 16px 60px" }}>
@@ -98,6 +124,28 @@ export default function IPTVSmartTVCanadaPage() {
                     <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 6 }}>{s.title}</h3>
                     <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.6 }}>{s.desc}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section style={{ padding: "60px 16px" }}>
+          <div style={{ maxWidth: 780, margin: "0 auto" }}>
+            <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32, textAlign: "center" }}>
+              Smart TV IPTV <span style={{ color: "#E8041F" }}>FAQ</span>
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {[
+                { q: "Does IPTV work on Samsung and LG Smart TVs in Canada?", a: "Yes. Install IPTV Smarters or Smart IPTV from the Samsung Apps or LG Content Store, enter your Maple4K credentials, and start streaming immediately." },
+                { q: "Do I need an extra device for IPTV on my Smart TV?", a: "No. Samsung and LG Smart TVs have built-in app stores that run IPTV apps natively — no Firestick, Android box, or extra hardware required." },
+                { q: "Why won't the IPTV app install on my Smart TV?", a: "Make sure your TV's software is up to date. Older Samsung (pre-2018) and LG (pre-webOS 4) models may need a Firestick or Android TV box instead of a native app." },
+                { q: "Can I watch IPTV on my Smart TV and phone at the same time?", a: "Yes — with a 2-device or higher plan, your Smart TV and phone can stream different channels simultaneously." },
+              ].map((item) => (
+                <div key={item.q} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#E8041F" }}>{item.q}</h3>
+                  <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.6 }}>{item.a}</p>
                 </div>
               ))}
             </div>

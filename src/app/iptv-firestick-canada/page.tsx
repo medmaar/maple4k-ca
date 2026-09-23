@@ -68,6 +68,30 @@ const steps = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { q: "Do I need to jailbreak my Firestick for IPTV?", a: "No. Sideloading apps like TiviMate or IPTV Smarters Pro through the Downloader app is completely legal and doesn't require jailbreaking your Firestick." },
+    { q: "Which Firestick models work with Maple4K?", a: "Maple4K works on all Fire TV devices, including Fire Stick 4K, Fire Stick Lite, Fire Stick 4K Max, and Fire TV Cube." },
+    { q: "How long does Firestick setup take?", a: "Setup typically takes under 5 minutes once you have your Maple4K credentials — installing the Downloader app, sideloading your IPTV player, and entering your login details." },
+    { q: "Can I use my Firestick and phone on the same account?", a: "Yes — with a 2-device or higher plan, your Firestick and phone (or any other device) can stream at the same time." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV Firestick Canada", item: "https://maple4k.ca/iptv-firestick-canada" },
+  ],
+};
+
 export default function IPTVFirestickCanadaPage() {
   return (
     <>
@@ -75,6 +99,8 @@ export default function IPTVFirestickCanadaPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
 
         {/* Hero */}
@@ -425,6 +451,28 @@ export default function IPTVFirestickCanadaPage() {
               >
                 See Full Pricing Details →
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section style={{ padding: "60px 16px" }}>
+          <div style={{ maxWidth: 780, margin: "0 auto" }}>
+            <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32, textAlign: "center" }}>
+              Firestick IPTV <span style={{ color: "#E8041F" }}>FAQ</span>
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {[
+                { q: "Do I need to jailbreak my Firestick for IPTV?", a: "No. Sideloading apps like TiviMate or IPTV Smarters Pro through the Downloader app is completely legal and doesn't require jailbreaking your Firestick." },
+                { q: "Which Firestick models work with Maple4K?", a: "Maple4K works on all Fire TV devices, including Fire Stick 4K, Fire Stick Lite, Fire Stick 4K Max, and Fire TV Cube." },
+                { q: "How long does Firestick setup take?", a: "Setup typically takes under 5 minutes once you have your Maple4K credentials — installing the Downloader app, sideloading your IPTV player, and entering your login details." },
+                { q: "Can I use my Firestick and phone on the same account?", a: "Yes — with a 2-device or higher plan, your Firestick and phone (or any other device) can stream at the same time." },
+              ].map((item) => (
+                <div key={item.q} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#E8041F" }}>{item.q}</h3>
+                  <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.6 }}>{item.a}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

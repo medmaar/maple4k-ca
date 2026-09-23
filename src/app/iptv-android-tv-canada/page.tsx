@@ -68,6 +68,30 @@ const steps = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { q: "Which apps work best for IPTV on Android TV?", a: "IPTV Smarters Pro and TiviMate are the two most reliable apps for Android TV, both available directly on the Google Play Store and fully compatible with Maple4K." },
+    { q: "Do I need to sideload any APKs on Android TV?", a: "No. Both recommended apps install directly from the Google Play Store — no sideloading, unknown sources, or APK files required." },
+    { q: "Can I use IPTV on Android TV and my phone at once?", a: "Yes — with a 2-device or higher plan, your Android TV and phone can stream simultaneously without any interruption." },
+    { q: "What Android TV boxes are compatible with Maple4K?", a: "Any device running Android TV or Google TV works, including Chromecast with Google TV, NVIDIA Shield, Xiaomi Mi Box, and Android TV built into Sony or TCL televisions." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV Android TV Canada", item: "https://maple4k.ca/iptv-android-tv-canada" },
+  ],
+};
+
 export default function IPTVAndroidTVCanadaPage() {
   return (
     <>
@@ -75,6 +99,8 @@ export default function IPTVAndroidTVCanadaPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
 
         {/* Hero */}
@@ -441,6 +467,28 @@ export default function IPTVAndroidTVCanadaPage() {
               >
                 See Full Pricing Details →
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section style={{ padding: "60px 16px" }}>
+          <div style={{ maxWidth: 780, margin: "0 auto" }}>
+            <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32, textAlign: "center" }}>
+              Android TV IPTV <span style={{ color: "#E8041F" }}>FAQ</span>
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {[
+                { q: "Which apps work best for IPTV on Android TV?", a: "IPTV Smarters Pro and TiviMate are the two most reliable apps for Android TV, both available directly on the Google Play Store and fully compatible with Maple4K." },
+                { q: "Do I need to sideload any APKs on Android TV?", a: "No. Both recommended apps install directly from the Google Play Store — no sideloading, unknown sources, or APK files required." },
+                { q: "Can I use IPTV on Android TV and my phone at once?", a: "Yes — with a 2-device or higher plan, your Android TV and phone can stream simultaneously without any interruption." },
+                { q: "What Android TV boxes are compatible with Maple4K?", a: "Any device running Android TV or Google TV works, including Chromecast with Google TV, NVIDIA Shield, Xiaomi Mi Box, and Android TV built into Sony or TCL televisions." },
+              ].map((item) => (
+                <div key={item.q} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#E8041F" }}>{item.q}</h3>
+                  <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.6 }}>{item.a}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

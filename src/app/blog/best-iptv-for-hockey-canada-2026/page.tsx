@@ -41,11 +41,27 @@ const breadcrumbSchema = {
   ]
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { q: "What is the best IPTV service to watch NHL hockey in Canada?", a: "Maple4K is the top-rated IPTV service for NHL hockey in Canada, streaming every TSN and Sportsnet feed in 4K with zero regional blackouts." },
+    { q: "Can I watch every NHL game with IPTV, including out-of-market games?", a: "Yes. Maple4K includes all national and regional NHL broadcast feeds, so you can watch your team's games even if you've moved outside their local broadcast market." },
+    { q: "Do I need a special device to watch hockey in 4K with IPTV?", a: "No. Maple4K streams in 4K on Firestick, Smart TVs, Android devices, and computers — no special hardware or satellite dish required." },
+    { q: "Is there blackout restriction on IPTV hockey streams?", a: "Maple4K's IPTV streams are not subject to the regional blackout restrictions that apply to some traditional cable and satellite NHL packages." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
 export default function BestIPTVHockeyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
         <section style={{ maxWidth: 800, margin: "0 auto", padding: "80px 16px 60px" }}>
           <Link href="/blog" style={{ color: "#3F9AAE", fontSize: 14, textDecoration: "none", fontWeight: 600 }}>← Back to Blog</Link>
@@ -122,6 +138,23 @@ export default function BestIPTVHockeyPage() {
           <p style={{ lineHeight: 1.85, marginBottom: 24, color: "rgba(255,255,255,0.65)" }}>
             For most Canadian hockey fans in 2026, yes. The combination of zero blackouts, all TSN and Sportsnet feeds, 4K quality on Maple4K, and a price that saves $900–$1,500 per year versus cable makes IPTV the clear winner for NHL viewing. The remaining advantage cable holds — a dedicated remote and channel guide integrated into the TV — is narrowing every year as IPTV apps like TiviMate and MyTVOnline 3 become more polished and easier to use.
           </p>
+
+          <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 16, padding: 32, marginBottom: 32 }}>
+            <h2 style={{ fontSize: "1.5rem", fontWeight: 800, marginBottom: 20 }}>Hockey IPTV FAQ</h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {[
+                { q: "What is the best IPTV service to watch NHL hockey in Canada?", a: "Maple4K is the top-rated IPTV service for NHL hockey in Canada, streaming every TSN and Sportsnet feed in 4K with zero regional blackouts." },
+                { q: "Can I watch every NHL game with IPTV, including out-of-market games?", a: "Yes. Maple4K includes all national and regional NHL broadcast feeds, so you can watch your team's games even if you've moved outside their local broadcast market." },
+                { q: "Do I need a special device to watch hockey in 4K with IPTV?", a: "No. Maple4K streams in 4K on Firestick, Smart TVs, Android devices, and computers — no special hardware or satellite dish required." },
+                { q: "Is there blackout restriction on IPTV hockey streams?", a: "Maple4K's IPTV streams are not subject to the regional blackout restrictions that apply to some traditional cable and satellite NHL packages." },
+              ].map((item) => (
+                <div key={item.q} style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: 16 }}>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 6, color: "#E8041F" }}>{item.q}</h3>
+                  <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 14, lineHeight: 1.6 }}>{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
 
           <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 16, padding: 32, textAlign: "center", marginBottom: 40 }}>
             <h2 style={{ fontSize: "1.4rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Watch Hockey on Maple4K — Free 24h Trial</h2>

@@ -32,10 +32,36 @@ const howToSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { q: "Does IPTV work on Apple TV in Canada?", a: "Yes. Install IPTV Smarters Pro or GSE Smart IPTV from the App Store on your Apple TV, enter your Maple4K credentials, and you're streaming in minutes." },
+    { q: "Can I watch IPTV on my iPhone and Apple TV at the same time?", a: "Yes — with a 2-device or higher plan, you can stream on your iPhone and Apple TV simultaneously without interruption." },
+    { q: "Do I need to jailbreak my Apple TV for IPTV?", a: "No. All recommended apps are available directly on the official App Store — no jailbreak, sideloading, or unofficial software required." },
+    { q: "What internet speed do I need for IPTV on Apple TV?", a: "We recommend at least 15–25 Mbps for smooth 4K playback. Most Canadian internet plans from Bell, Rogers, or Telus comfortably exceed this." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV Apple TV Canada", item: "https://maple4k.ca/iptv-apple-tv-canada" },
+  ],
+};
+
 export default function IPTVAppleTVCanadaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
         <section style={{ background: "transparent", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
@@ -95,6 +121,28 @@ export default function IPTVAppleTVCanadaPage() {
                     <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 6 }}>{s.title}</h3>
                     <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.6 }}>{s.desc}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section style={{ padding: "60px 16px", background: "#0E1120" }}>
+          <div style={{ maxWidth: 780, margin: "0 auto" }}>
+            <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32, textAlign: "center" }}>
+              Apple TV & iPhone IPTV <span style={{ color: "#E8041F" }}>FAQ</span>
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {[
+                { q: "Does IPTV work on Apple TV in Canada?", a: "Yes. Install IPTV Smarters Pro or GSE Smart IPTV from the App Store on your Apple TV, enter your Maple4K credentials, and you're streaming in minutes." },
+                { q: "Can I watch IPTV on my iPhone and Apple TV at the same time?", a: "Yes — with a 2-device or higher plan, you can stream on your iPhone and Apple TV simultaneously without interruption." },
+                { q: "Do I need to jailbreak my Apple TV for IPTV?", a: "No. All recommended apps are available directly on the official App Store — no jailbreak, sideloading, or unofficial software required." },
+                { q: "What internet speed do I need for IPTV on Apple TV?", a: "We recommend at least 15–25 Mbps for smooth 4K playback. Most Canadian internet plans from Bell, Rogers, or Telus comfortably exceed this." },
+              ].map((item) => (
+                <div key={item.q} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#E8041F" }}>{item.q}</h3>
+                  <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.6 }}>{item.a}</p>
                 </div>
               ))}
             </div>

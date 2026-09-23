@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Install IPTV on Firestick Canada 2026 | | Best 4K IPTV Canada",
+  title: "Install IPTV on Firestick Canada 2026 | Maple4K – Best 4K IPTV Canada",
   description:
     "Complete guide to installing Maple4K IPTV on Amazon Fire Stick in Canada. Works on Fire Stick 4K, Lite, and all Fire TV devices. Easy step-by-step setup.",
   keywords:
@@ -98,6 +98,21 @@ const articleSchema = {
 };
 
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { q: "App won't install (security error)", a: "Make sure you've enabled 'Apps from Unknown Sources' in Developer Options. Also ensure Downloader has storage permissions." },
+    { q: "Channels are buffering on Firestick", a: "Check your internet speed — run a speed test on your phone. If you're getting 25+ Mbps, try switching from 2.4GHz to 5GHz Wi-Fi, or use an Ethernet adapter." },
+    { q: "Channel list won't load on Firestick", a: "Double-check your server URL, username, and password. Even a single character difference will prevent connection. Contact our support team via WhatsApp for help." },
+    { q: "EPG not showing program info on Firestick", a: "Go to app settings and manually refresh the EPG. If it still doesn't load, try deleting and re-adding the EPG URL. Our support can provide an updated URL if needed." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -113,6 +128,7 @@ export default function IPTVFirestickBlogPost() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     <main className="bg-transparent min-h-screen">
       <article className="max-w-3xl mx-auto py-16 px-4">
         {/* Header */}

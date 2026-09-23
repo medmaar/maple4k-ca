@@ -51,6 +51,21 @@ const breadcrumbSchema = {
   ]
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { q: "Is it legal to watch IPTV in Canada?", a: "Watching TV over an internet connection is legal in Canada. What matters is whether the provider is properly licensed to distribute the content it streams — always choose a service that operates transparently, like Maple4K." },
+    { q: "Can I get in trouble for using an IPTV service in Canada?", a: "Canadian law has historically targeted the operators and distributors of unlicensed streams rather than individual home viewers. Choosing a reputable, established provider reduces any risk further." },
+    { q: "What's the difference between legal and illegal IPTV?", a: "Legal IPTV providers pay for the content rights they distribute and operate as a real business with support and infrastructure. Illegal operations resell pirated streams with no licensing, often disappearing without warning." },
+    { q: "Does the CRTC regulate IPTV services?", a: "The CRTC regulates broadcasting in Canada, but internet-delivered television falls into an evolving legal space. This is exactly why choosing a transparent, long-standing provider like Maple4K matters." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
 export default function IsIPTVLegalCanada() {
   return (
     <>

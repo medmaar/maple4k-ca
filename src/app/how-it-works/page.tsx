@@ -74,6 +74,22 @@ const howToSchema = {
     {"@type":"HowToStep","position":3,"name":"Install and Stream","text":"Install your preferred IPTV player (TiviMate, IPTV Smarters Pro), enter your credentials, and start watching 50,000+ channels in 4K."}
   ]
 };
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  { q: "Do I need to install any hardware?", a: "No. If you already have a Fire Stick, Smart TV, phone, or computer, you're ready. No dish, no cable box, no technician visit required." },
+  { q: "Will IPTV work with my existing internet plan?", a: "Yes. Any standard Canadian internet plan from Bell, Rogers, Telus, Shaw, Videotron, or any ISP with at least 25 Mbps will work perfectly for HD streaming." },
+  { q: "Can I watch on multiple TVs at the same time?", a: "Yes — choose a 2, 3, 4, or 5 device plan. Each device streams independently. One person can watch hockey in the living room while another watches a movie in the bedroom." },
+  { q: "Does IPTV work outside Canada?", a: "Your subscription works anywhere in the world with a decent internet connection. Travel to Europe, the US, or anywhere and still access all your Canadian channels." },
+  { q: "What happens if a channel goes down?", a: "Our servers maintain multiple redundant streams for each channel. If one stream has issues, the system automatically switches to a backup. Our 24/7 support team also monitors the service around the clock." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -87,6 +103,7 @@ export default function HowItWorksPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff" }} className="min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 px-4 text-center">

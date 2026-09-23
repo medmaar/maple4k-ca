@@ -32,10 +32,36 @@ const howToSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { q: "Which MAG Box models work with Maple4K IPTV?", a: "Maple4K works with all common MAG Box models, including MAG 322, MAG 324, MAG 351, and MAG 410, through the standard portal URL setup." },
+    { q: "Where do I enter the portal URL on my MAG Box?", a: "Go to System Settings > Servers > Portals on your MAG Box, enter the Maple4K portal URL we email you, then save and reboot the device." },
+    { q: "Why isn't my MAG Box loading channels after setup?", a: "Double-check the portal URL for typos, confirm your internet connection is active, and reboot the box. Contact our support team via WhatsApp if the issue persists." },
+    { q: "Can I use a MAG Box and another device on the same Maple4K plan?", a: "Yes — with a 2-device or higher plan, your MAG Box and a phone, Firestick, or Smart TV can all stream simultaneously." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV MAG Box Canada", item: "https://maple4k.ca/iptv-mag-box-canada" },
+  ],
+};
+
 export default function IPTVMagBoxCanadaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
         <section style={{ background: "transparent", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
@@ -95,6 +121,28 @@ export default function IPTVMagBoxCanadaPage() {
                     <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 6 }}>{s.title}</h3>
                     <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.6 }}>{s.desc}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section style={{ padding: "60px 16px" }}>
+          <div style={{ maxWidth: 780, margin: "0 auto" }}>
+            <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32, textAlign: "center" }}>
+              MAG Box IPTV <span style={{ color: "#E8041F" }}>FAQ</span>
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {[
+                { q: "Which MAG Box models work with Maple4K IPTV?", a: "Maple4K works with all common MAG Box models, including MAG 322, MAG 324, MAG 351, and MAG 410, through the standard portal URL setup." },
+                { q: "Where do I enter the portal URL on my MAG Box?", a: "Go to System Settings > Servers > Portals on your MAG Box, enter the Maple4K portal URL we email you, then save and reboot the device." },
+                { q: "Why isn't my MAG Box loading channels after setup?", a: "Double-check the portal URL for typos, confirm your internet connection is active, and reboot the box. Contact our support team via WhatsApp if the issue persists." },
+                { q: "Can I use a MAG Box and another device on the same Maple4K plan?", a: "Yes — with a 2-device or higher plan, your MAG Box and a phone, Firestick, or Smart TV can all stream simultaneously." },
+              ].map((item) => (
+                <div key={item.q} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#E8041F" }}>{item.q}</h3>
+                  <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.6 }}>{item.a}</p>
                 </div>
               ))}
             </div>

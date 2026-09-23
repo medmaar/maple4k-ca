@@ -41,10 +41,36 @@ const steps = [
   { step: "5", title: "Watch Anywhere", desc: "Your channels load instantly. Stream live TV and VOD on your iPhone or iPad anywhere in Canada." },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  { q: "Do I need to jailbreak my iPhone for IPTV?", a: "No. All IPTV apps we recommend are available on the official App Store. No jailbreak is needed or recommended." },
+  { q: "How much data does IPTV use on iPhone?", a: "HD streams use approximately 1.5–3 GB per hour. We recommend Wi-Fi for extended viewing, though our adaptive streaming works well on 5G." },
+  { q: "Can I use my iPhone subscription on my iPad too?", a: "With a 2-device or higher plan, you can use both devices simultaneously. A single-device plan allows one stream at a time." },
+  { q: "Will it work in Canada while travelling abroad?", a: "Yes. Your IPTV subscription works globally. You can watch Canadian channels from anywhere in the world on your iPhone." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV iOS Canada", item: "https://maple4k.ca/iptv-ios-canada" },
+  ],
+};
+
 export default function IPTVIOSPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">

@@ -40,10 +40,36 @@ const howToSchema = {
     {"@type":"HowToStep",position:5,name:"Start Streaming",text:"Browse 50,000+ channels and stream in 4K on your PC or Mac."}
   ],
 };
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  { q: "What is the best free IPTV player for Windows?", a: "IPTV Smarters Pro offers the best experience with EPG integration. VLC is a great free alternative if you prefer a lightweight player." },
+  { q: "Does IPTV work on Mac?", a: "Yes. IPTV Smarters is available for macOS, and VLC works on all Mac versions. Our M3U playlist is compatible with any player on macOS." },
+  { q: "Do I need a fast computer to run IPTV?", a: "No. Any PC made after 2015 can handle HD IPTV streams. 4K requires a more capable GPU, but HD works on virtually any modern computer." },
+  { q: "Can I use a VPN with IPTV on PC?", a: "Yes. VPN is fully compatible. We recommend connecting to a Canadian server for the best performance, especially for live sports." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV Windows Canada", item: "https://maple4k.ca/iptv-windows-canada" },
+  ],
+};
+
 export default function IPTVWindowsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">

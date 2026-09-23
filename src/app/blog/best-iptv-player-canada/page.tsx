@@ -81,12 +81,27 @@ const breadcrumbSchema = {
   ]
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { q: "What is the best IPTV player app in Canada?", a: "TiviMate is the best overall IPTV player for Firestick and Android users in Canada, offering the most polished interface and EPG. IPTV Smarters Pro is the best pick if you need one app across all your devices." },
+    { q: "Is TiviMate free to use?", a: "TiviMate has a free tier, but the Premium version (about $5 USD/year) unlocks multiple playlists, recording, and other features most users want — it's still one of the cheapest premium apps available." },
+    { q: "Which IPTV player works best on iPhone and Apple TV?", a: "GSE Smart IPTV is the strongest choice for iPhone, iPad, and Apple TV, offering a clean interface and Chromecast support with no major limitations in the free version." },
+    { q: "Do all these IPTV players work with Maple4K?", a: "Yes. Maple4K supports Xtream Codes and M3U formats, which are compatible with TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
 export default function BestIPTVPlayerCanadaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
         <section style={{ background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(249,110,91,0.12) 0%, transparent 65%), #0a0a0a", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
@@ -176,6 +191,28 @@ export default function BestIPTVPlayerCanadaPage() {
             <Link href="/pricing" style={{ background: "#E8041F", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               View Maple4K Plans →
             </Link>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section style={{ padding: "60px 16px" }}>
+          <div style={{ maxWidth: 800, margin: "0 auto" }}>
+            <h2 style={{ fontSize: "clamp(24px, 3.5vw, 34px)", fontWeight: 800, marginBottom: 24, textAlign: "center" }}>
+              IPTV Player <span style={{ color: "#E8041F" }}>FAQ</span>
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {[
+                { q: "What is the best IPTV player app in Canada?", a: "TiviMate is the best overall IPTV player for Firestick and Android users in Canada, offering the most polished interface and EPG. IPTV Smarters Pro is the best pick if you need one app across all your devices." },
+                { q: "Is TiviMate free to use?", a: "TiviMate has a free tier, but the Premium version (about $5 USD/year) unlocks multiple playlists, recording, and other features most users want — it's still one of the cheapest premium apps available." },
+                { q: "Which IPTV player works best on iPhone and Apple TV?", a: "GSE Smart IPTV is the strongest choice for iPhone, iPad, and Apple TV, offering a clean interface and Chromecast support with no major limitations in the free version." },
+                { q: "Do all these IPTV players work with Maple4K?", a: "Yes. Maple4K supports Xtream Codes and M3U formats, which are compatible with TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player." },
+              ].map((item) => (
+                <div key={item.q} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#E8041F" }}>{item.q}</h3>
+                  <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.6 }}>{item.a}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       </main>

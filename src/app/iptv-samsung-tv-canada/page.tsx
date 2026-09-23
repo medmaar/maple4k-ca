@@ -40,10 +40,36 @@ const howToSchema = {
     {"@type":"HowToStep",position:5,name:"Enjoy 4K IPTV",text:"Your channel list loads automatically. Stream in 4K on your Samsung TV."}
   ],
 };
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  { q: "Does IPTV work on all Samsung Smart TVs?", a: "Our IPTV service works on all Samsung Smart TVs running Tizen OS (2018 and newer). Older models may require a Fire Stick or Android box instead." },
+  { q: "Do I need to jailbreak my Samsung TV?", a: "No jailbreak required. Our recommended apps are available directly from the Samsung App Store or via a safe sideload method that doesn't void your warranty." },
+  { q: "Can I use IPTV on my Samsung TV and phone at the same time?", a: "Yes — with a 2-device or higher plan, you can stream on your Samsung TV and any other device simultaneously." },
+  { q: "Will IPTV affect my Samsung TV's performance?", a: "Not at all. The IPTV app runs as a separate app and does not affect system performance or other Samsung features." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV Samsung TV Canada", item: "https://maple4k.ca/iptv-samsung-tv-canada" },
+  ],
+};
+
 export default function IPTVSamsungPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">

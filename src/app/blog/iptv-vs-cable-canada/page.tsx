@@ -64,6 +64,21 @@ const breadcrumbSchema = {
   ]
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { q: "Is IPTV cheaper than cable TV in Canada?", a: "Yes. Maple4K plans start at $9/month compared to $80–$100+/month for cable, with no installation fee, no equipment rental, and no long-term contract." },
+    { q: "Do I need cable internet to use IPTV?", a: "No — any standard internet connection works, including Bell Fibe, Rogers, Telus, or Shaw. IPTV rides on your existing internet plan, so you don't need a cable subscription at all." },
+    { q: "Does IPTV have the same channels as cable in Canada?", a: "Maple4K offers 50,000+ channels — far more than the 200–500 channels typical of a cable package — including all major Canadian networks, sports, and international channels." },
+    { q: "Can I cancel IPTV anytime, unlike a cable contract?", a: "Yes. Maple4K has no contracts. You can subscribe month-to-month and cancel anytime, unlike cable providers that often require a 1–2 year commitment." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
 export default function IPTVvsCableCanada() {
   return (
     <>
@@ -71,8 +86,7 @@ export default function IPTVvsCableCanada() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ background: "#030712", color: "#fff", minHeight: "100vh" }}>
         <article style={{ maxWidth: 768, margin: "0 auto", padding: "64px 16px" }}>
           {/* Header */}
@@ -242,6 +256,24 @@ export default function IPTVvsCableCanada() {
               Cable TV made sense when it was the only option. In 2026, it&apos;s an expensive legacy product
               for consumers who haven&apos;t yet discovered a better way to watch.
             </p>
+          </section>
+
+          {/* FAQ */}
+          <section style={{ marginBottom: 48 }}>
+            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 800, marginBottom: 24 }}>IPTV vs Cable FAQ</h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {[
+                { q: "Is IPTV cheaper than cable TV in Canada?", a: "Yes. Maple4K plans start at $9/month compared to $80–$100+/month for cable, with no installation fee, no equipment rental, and no long-term contract." },
+                { q: "Do I need cable internet to use IPTV?", a: "No — any standard internet connection works, including Bell Fibe, Rogers, Telus, or Shaw. IPTV rides on your existing internet plan." },
+                { q: "Does IPTV have the same channels as cable in Canada?", a: "Maple4K offers 50,000+ channels — far more than the 200–500 channels typical of a cable package — including all major Canadian networks, sports, and international channels." },
+                { q: "Can I cancel IPTV anytime, unlike a cable contract?", a: "Yes. Maple4K has no contracts. You can subscribe month-to-month and cancel anytime, unlike cable providers that often require a 1–2 year commitment." },
+              ].map((item) => (
+                <div key={item.q} style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: 14, padding: "20px 24px" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#f87171" }}>{item.q}</h3>
+                  <p style={{ color: "#d1d5db", fontSize: 14, lineHeight: 1.6 }}>{item.a}</p>
+                </div>
+              ))}
+            </div>
           </section>
 
           {/* CTA */}

@@ -41,10 +41,36 @@ const steps = [
   { step: "5", title: "Watch Anywhere in Canada", desc: "Your full channel list and VOD library load instantly. Stream on the go over Wi-Fi or mobile data." },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  { q: "Which IPTV app is best for Android?", a: "We recommend IPTV Smarters Pro or TiviMate for the best experience. Both support Xtream Codes and offer excellent EPG integration." },
+  { q: "Is the IPTV app on the Google Play Store?", a: "Some of our recommended apps are on the Play Store. Others may require APK sideloading — we provide a safe, virus-free download link." },
+  { q: "How much data does IPTV use on Android?", a: "SD streams use roughly 700 MB/hour, HD uses 1.5–3 GB/hour. We recommend Wi-Fi for extended sessions." },
+  { q: "Can I use IPTV on two Android phones at once?", a: "Yes — with a 2-device or higher plan, you can stream on multiple devices simultaneously, including two Android phones." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV Android Canada", item: "https://maple4k.ca/iptv-android-canada" },
+  ],
+};
+
 export default function IPTVAndroidPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main className="bg-transparent min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
