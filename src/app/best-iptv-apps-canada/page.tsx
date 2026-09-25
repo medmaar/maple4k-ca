@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "The 14 best IPTV player apps for Canada in 2026 — TiviMate, IPTV Smarters Pro, XCIPTV, Xtream IPTV, Smart4IPTV, STB Emu Pro and more. Compared, ranked, with setup links.",
   keywords:
-    "iptv player, iptv app, iptvapp, xc iptv, xtream iptv, xtreme hd iptv, smart4iptv, mytvonline, implayer, iptvpro, cloud stream, forevertv, diablo iptv, pandar tv, best iptv player canada, best iptv app canada",
+    "iptv player, iptv app, iptvapp, xc iptv, xtream iptv, xtreme hd iptv, smart4iptv, mytvonline, implayer, iptvpro, cloud stream, forevertv, diablo iptv, pandar tv, best iptv player canada, best iptv app canada, atlaspro, beastiptv, dreamlink t2, dodo iptv, dream iptv, fast iptv, flix iptv, foxiptv, gold iptv, guru iptv, hot iptv, iplaytv, kemo iptv, king iptv, lion iptv, lux iptv, mega iptv, epic iptv, extreme iptv, eagle iptv, elon iptv, apollo iptv, alibaba iptv, b1g iptv, e vision iptv, evybuy, jellyfin iptv",
   alternates: { canonical: "https://maple4k.ca/best-iptv-apps-canada" },
   openGraph: {
     title: "Best IPTV Apps & Players for Canada 2026 (14 Compared) | Maple4K",
@@ -90,6 +90,31 @@ const detailSections = [
   { id: "cloudstream", title: "Cloud Stream", body: "Cloud Stream syncs your playlist settings across devices via the cloud, so switching from your phone to your Android TV box keeps your favourites and categories intact." },
   { id: "vlc", title: "VLC Media Player", body: "VLC can open a Maple4K M3U playlist link directly (Media → Open Network Stream → paste URL). It's the most universal option — works on Windows, Mac, Linux, and mobile — but has no EPG or channel categories, so we recommend it mainly as a fallback." },
   { id: "kodi", title: "Kodi", body: "Kodi requires the free 'PVR IPTV Simple Client' add-on, into which you paste your Maple4K M3U and EPG URLs. It's the most customizable option for power users who already run Kodi for other media, with full skin and add-on support." },
+];
+
+// Brand-name IPTV apps/providers Canadians commonly search for while shopping around.
+// These are other companies' products, mentioned here only for honest comparison context —
+// Maple4K does not claim any affiliation with them.
+const otherApps = [
+  { name: "AtlasPro", note: "A subscription IPTV service marketed mainly to French-speaking audiences. Uses standard Xtream Codes login." },
+  { name: "Beast IPTV", note: "A subscription IPTV provider with its own branded app. Like most Xtream-based services, it works with any standard player too." },
+  { name: "Dreamlink T2", note: "An Android set-top box (hardware), not a subscription — comparable to the Formuler boxes covered above." },
+  { name: "Dodo IPTV / Dream IPTV", note: "Subscription IPTV brands using Xtream Codes. If you already have a working player like TiviMate, you don't need their dedicated app." },
+  { name: "Fast IPTV / FastIPTV", note: "A lightweight Xtream Codes player app, similar in function to IPTVPro or XCIPTV." },
+  { name: "Flix IPTV", note: "An Xtream Codes player app with a Netflix-style browsing layout." },
+  { name: "Fox IPTV", note: "A subscription IPTV brand — not affiliated with the Fox television network." },
+  { name: "Gold IPTV / Golden IPTV", note: "Subscription IPTV brands. Compare pricing and channel counts before committing to any provider." },
+  { name: "Guru IPTV", note: "A subscription IPTV service using the same Xtream Codes technology as Maple4K." },
+  { name: "Hot IPTV", note: "A subscription IPTV brand. Read reviews carefully — service quality varies widely between resellers using this name." },
+  { name: "IPlayTV", note: "One of the few dedicated IPTV apps available on Apple TV — a good pick if TiviMate (Android-only) isn't an option for you." },
+  { name: "Kemo IPTV / Kemo TV", note: "A subscription IPTV brand using standard Xtream Codes credentials." },
+  { name: "King IPTV / King365", note: "Subscription IPTV brands. As with any reseller, check for a free trial before paying." },
+  { name: "Lion IPTV / Lux IPTV", note: "Subscription IPTV brands common in online ads — both use standard Xtream Codes login." },
+  { name: "Mega IPTV", note: "A subscription IPTV brand — verify channel lists and trial availability directly with the provider." },
+  { name: "Epic IPTV / Extreme IPTV / Eagle IPTV / Elon IPTV", note: "Smaller subscription IPTV brands. All connect through the same Xtream Codes player apps listed above." },
+  { name: "Apollo IPTV / Alibaba IPTV / B1G IPTV", note: "Subscription IPTV brands you may see advertised online — compare their trial terms against Maple4K's free 24-hour trial." },
+  { name: "E Vision IPTV / Evybuy", note: "Subscription IPTV brands using standard Xtream Codes technology." },
+  { name: "Jellyfin", note: "A free, self-hosted media server (not an IPTV provider) that some advanced users pair with their own recordings — different use case from a live TV subscription." },
 ];
 
 export default function BestIptvAppsCanadaPage() {
@@ -180,6 +205,24 @@ export default function BestIptvAppsCanadaPage() {
                 <div key={sec.id} id={sec.id} style={{ borderBottom: "1px solid rgba(255,255,255,0.07)", paddingBottom: 18 }}>
                   <h3 style={{ fontSize: 16, fontWeight: 700, margin: "0 0 8px", color: "#fff" }}>{sec.title}</h3>
                   <p style={{ color: "rgba(255,255,255,0.55)", fontSize: 14, lineHeight: 1.75, margin: 0 }}>{sec.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Other brand-name apps/providers Canadians ask about */}
+        <section style={{ padding: "60px 16px", background: bg }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <h2 style={{ fontSize: "clamp(22px, 2.5vw, 34px)", fontWeight: 800, marginBottom: 12 }}>Other IPTV Apps & Providers You May Have Heard Of</h2>
+            <p style={{ color: "rgba(255,255,255,0.55)", fontSize: 14, lineHeight: 1.7, marginBottom: 28, maxWidth: 720 }}>
+              While researching IPTV in Canada you&apos;ll run into dozens of other brand names online. Here&apos;s honest, brief context on the most common ones — none of these are affiliated with Maple4K, and most connect through the same Xtream Codes player apps covered above.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 14 }}>
+              {otherApps.map(a => (
+                <div key={a.name} className="device-badge" style={{ padding: "16px 18px", textAlign: "left" }}>
+                  <div style={{ fontWeight: 700, color: "#fff", fontSize: 14, marginBottom: 6 }}>{a.name}</div>
+                  <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 12.5, lineHeight: 1.6 }}>{a.note}</div>
                 </div>
               ))}
             </div>

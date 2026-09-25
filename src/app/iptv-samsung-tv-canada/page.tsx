@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Stream IPTV on your Samsung Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN and more. Easy Tizen OS setup. Free trial.",
   keywords:
-    "IPTV Samsung TV Canada, IPTV Samsung Smart TV Canada, Samsung TV Maple4K, best IPTV Samsung Canada",
+    "IPTV Samsung TV Canada, IPTV Samsung Smart TV Canada, Samsung TV Maple4K, best IPTV Samsung Canada, iptv for samsung tv, smart iptv samsung",
   alternates: { canonical: "https://maple4k.ca/iptv-samsung-tv-canada" },
   openGraph: {
     title: "IPTV Samsung TV Canada | Maple4K – Best 4K IPTV Canada",

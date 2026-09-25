@@ -165,6 +165,7 @@ export default function BestIPTVHockeyPage() {
           <div style={{ background: "rgba(63,154,174,0.06)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "20px 24px" }}>
             <p style={{ fontWeight: 700, marginBottom: 12, fontSize: 15 }}>Related Guides</p>
             <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 14 }}>
+              <Link href="/best-iptv-for-sports-canada" style={{ color: "#E8041F", textDecoration: "underline" }}>Best IPTV for Sports Canada — NHL, NFL, UFC &amp; More</Link>
               <Link href="/iptv-4k" style={{ color: "#E8041F", textDecoration: "underline" }}>4K IPTV Canada — True Ultra HD Streaming</Link>
               <Link href="/iptv-subscription" style={{ color: "#E8041F", textDecoration: "underline" }}>IPTV Subscription Canada — Plans from $9/Month</Link>
               <Link href="/best-iptv-canada" style={{ color: "#E8041F", textDecoration: "underline" }}>Best IPTV Canada 2026 — Full Comparison</Link>

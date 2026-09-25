@@ -51,6 +51,8 @@ export default function Footer() {
                 { label: "Smart TV Setup", href: "/iptv-smart-tv-canada" },
                 { label: "IPTV Smarters Pro", href: "/iptv-smarters-pro-canada" },
                 { label: "Best IPTV Apps", href: "/best-iptv-apps-canada" },
+                { label: "Best IPTV for Sports", href: "/best-iptv-for-sports-canada" },
+                { label: "VLC, M3U & Kodi Guide", href: "/blog/iptv-vlc-m3u-kodi-guide-canada" },
                 { label: "Blog", href: "/blog" },
               ].map(l => (
                 <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}

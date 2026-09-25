@@ -4,6 +4,8 @@ export const metadata: Metadata = {
   title: "IPTV Firestick Canada | Maple4K – Best 4K IPTV Canada",
   description:
     "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 50,000+ channels + Netflix, NHL, TSN & 4K quality. Free 24h trial.",
+  keywords:
+    "iptv firestick canada, amazon fire stick iptv, amazon fire tv stick iptv, fire tv iptv, fire tv stick iptv, fire stick iptv, best iptv for firestick, iptv for firestick, iptv smarters pro firestick, tivimate firestick, firestick tivimate, iptv firestick reddit, firestick iptv reddit, iptv stick",
   alternates: { canonical: "https://maple4k.ca/iptv-firestick-canada" },
   openGraph: {
     title: "IPTV Firestick Canada | Maple4K – Best 4K IPTV Canada",
@@ -76,6 +78,7 @@ const faqSchema = {
     { q: "Which Firestick models work with Maple4K?", a: "Maple4K works on all Fire TV devices, including Fire Stick 4K, Fire Stick Lite, Fire Stick 4K Max, and Fire TV Cube." },
     { q: "How long does Firestick setup take?", a: "Setup typically takes under 5 minutes once you have your Maple4K credentials — installing the Downloader app, sideloading your IPTV player, and entering your login details." },
     { q: "Can I use my Firestick and phone on the same account?", a: "Yes — with a 2-device or higher plan, your Firestick and phone (or any other device) can stream at the same time." },
+    { q: "Is Amazon Fire Stick the same as Fire TV Stick for IPTV?", a: "Yes — Amazon Fire Stick, Fire TV Stick, and Amazon Fire TV Stick all refer to the same device family. Any generation (Lite, 4K, 4K Max) works with Maple4K the same way." },
   ].map((item) => ({
     "@type": "Question",
     name: item.q,
@@ -467,6 +470,7 @@ export default function IPTVFirestickCanadaPage() {
                 { q: "Which Firestick models work with Maple4K?", a: "Maple4K works on all Fire TV devices, including Fire Stick 4K, Fire Stick Lite, Fire Stick 4K Max, and Fire TV Cube." },
                 { q: "How long does Firestick setup take?", a: "Setup typically takes under 5 minutes once you have your Maple4K credentials — installing the Downloader app, sideloading your IPTV player, and entering your login details." },
                 { q: "Can I use my Firestick and phone on the same account?", a: "Yes — with a 2-device or higher plan, your Firestick and phone (or any other device) can stream at the same time." },
+                { q: "Is Amazon Fire Stick the same as Fire TV Stick for IPTV?", a: "Yes — Amazon Fire Stick, Fire TV Stick, and Amazon Fire TV Stick all refer to the same device family. Any generation (Lite, 4K, 4K Max) works with Maple4K the same way." },
               ].map((item) => (
                 <div key={item.q} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
                   <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#E8041F" }}>{item.q}</h3>

@@ -92,6 +92,14 @@ const posts = [
     readTime: "5 min read",
     tag: "Reviews",
   },
+  {
+    slug: "iptv-vlc-m3u-kodi-guide-canada",
+    title: "IPTV with VLC, M3U & Kodi in Canada (2026 Guide)",
+    excerpt: "How to use your Maple4K subscription with VLC, an M3U playlist, or Kodi — step-by-step setup, troubleshooting, and when to use a dedicated app instead.",
+    date: "2026-09-20",
+    readTime: "6 min read",
+    tag: "Guide",
+  },
 ];
 
 

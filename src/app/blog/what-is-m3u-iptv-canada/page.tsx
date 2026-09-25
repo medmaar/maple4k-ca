@@ -150,6 +150,9 @@ export default function WhatIsM3uPage() {
             <Link href="/free-trial" className="btn-red">▶ Try Maple4K Free for 24H</Link>
             <Link href="/best-iptv-apps-canada" className="btn-outline">Compare IPTV Apps →</Link>
           </div>
+          <p style={{ marginTop: 24, fontSize: 13, color: "rgba(255,255,255,0.4)" }}>
+            Going deeper: <Link href="/blog/iptv-vlc-m3u-kodi-guide-canada" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>full VLC, M3U &amp; Kodi setup guide</Link>
+          </p>
         </article>
       </main>
     </>

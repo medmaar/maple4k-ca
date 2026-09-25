@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Box Canada 2026 — Best IPTV Box + Subscription | Maple4K" },
   description: "Best IPTV box Canada 2026. Formuler, MAG, Firestick, Android TV box with 50,000+ channels + Netflix. IPTV subscription from $9/month. Free 24h trial — no.",
-  keywords: "iptv box, iptv with box, at iptv box, iptv box at, free box for iptv in canada, iptv box canada, best iptv box canada, formuler box canada, mag box iptv, android tv box iptv",
+  keywords: "iptv box, iptv with box, ip tv box, ip box tv, iptv box near me, iptv box price, iptv box amazon, amazon iptv box, box iptv 4k, iptv set top box, iptv stick, at iptv box, iptv box at, free box for iptv in canada, iptv box canada, best iptv box canada, formuler box canada, mag box iptv, android tv box iptv, iptv android tv box, android iptv player",
   alternates: { canonical: "https://maple4k.ca/iptv-box" },
   openGraph: {
     url: "https://maple4k.ca/iptv-box",
@@ -31,6 +31,7 @@ const faqs = [
   { q: "Does Maple4K offer a free IPTV box?", a: "Contact our team about bundle deals — we occasionally offer promotional packages combining an IPTV box with a 12-month subscription at a discounted price." },
   { q: "How do I set up an IPTV box?", a: "After ordering, you receive login credentials by email within minutes. Simply enter your server URL, username, and password in your IPTV player app (TiviMate, IPTV Smarters, MytvOnline2). Our setup guides cover every device." },
   { q: "What IPTV subscription works with my box?", a: "All Maple4K plans work on every IPTV box — Formuler, MAG, Firestick, Android box, or Apple TV. Plans start at $9/month for 1 connection, up to 10 simultaneous connections." },
+  { q: "How much does an IPTV box cost and where can I buy one?", a: "A Firestick 4K runs about $60–$80 CAD, Android TV boxes $50–$120, and a Formuler Z10 Pro around $150–$200. Amazon and Best Buy carry most of these in Canada. The box itself is separate from your Maple4K subscription, which starts at $9/month." },
 ];
 
 export default function IptvBoxPage() {

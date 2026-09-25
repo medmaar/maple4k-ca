@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Stream IPTV on Roku in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy private channel setup. Free trial.",
   keywords:
-    "IPTV Roku Canada, Roku Maple4K, best IPTV for Roku Canada, Roku streaming Maple4K",
+    "IPTV Roku Canada, Roku Maple4K, best IPTV for Roku Canada, Roku streaming Maple4K, iptv on roku tv, iptv roku tv, roku tv iptv, tivimate roku",
   alternates: { canonical: "https://maple4k.ca/iptv-roku-canada" },
   openGraph: {
     title: "IPTV Roku Canada | Maple4K – Best 4K IPTV Canada",
@@ -48,6 +48,7 @@ const faqSchema = {
   { q: "Do I need to jailbreak my Roku?", a: "No jailbreak required. Roku's private channel feature allows installing IPTV apps cleanly through the official Roku website." },
   { q: "Can I use my Roku and phone at the same time?", a: "Yes — with a 2-device or higher plan, you can stream on your Roku and any other device simultaneously." },
   { q: "Which Roku model is best for IPTV in Canada?", a: "The Roku Streaming Stick 4K is our top pick — great 4K HDR performance, compact design, and excellent value for Canadians." },
+  { q: "Can I use TiviMate on Roku?", a: "No — TiviMate is Android-only and isn't available on Roku's channel store. Roku uses Maple4K's private channel instead, giving you the same live TV and VOD library without needing TiviMate." },
   ].map((item) => ({
     "@type": "Question",
     name: item.q,
@@ -166,6 +167,7 @@ export default function IPTVRokuPage() {
               { q: "Do I need to jailbreak my Roku?", a: "No jailbreak required. Roku's private channel feature allows installing IPTV apps cleanly through the official Roku website." },
               { q: "Can I use my Roku and phone at the same time?", a: "Yes — with a 2-device or higher plan, you can stream on your Roku and any other device simultaneously." },
               { q: "Which Roku model is best for IPTV in Canada?", a: "The Roku Streaming Stick 4K is our top pick — great 4K HDR performance, compact design, and excellent value for Canadians." },
+              { q: "Can I use TiviMate on Roku?", a: "No — TiviMate is Android-only and isn't available on Roku's channel store. Roku uses Maple4K's private channel instead, giving you the same live TV and VOD library without needing TiviMate." },
             ].map((item) => (
               <div key={item.q} className="bg-transparent rounded-xl p-6 border border-gray-800">
                 <h3 className="font-bold text-lg mb-3 text-[#F96E5B]">{item.q}</h3>

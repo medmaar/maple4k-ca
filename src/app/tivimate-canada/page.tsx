@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "TiviMate Canada 2026 — Setup Guide for Fire Stick & Android TV | Maple4K" },
   description: "TiviMate IPTV player setup guide for Canada 2026. Configure TiviMate on Fire Stick, Android TV Box, and Shield TV with Maple4K. Best IPTV player for 4K.",
-  keywords: "tivimate canada, tivimate iptv canada, tivimate fire stick canada, tivimate android tv canada, tivimate setup canada, best iptv player canada",
+  keywords: "tivimate canada, tivi mate, tivi mate canada, tivimate iptv canada, tivimate fire stick canada, tivimate firestick, tivimate on firestick, tivimate apple tv, tivimate android tv canada, tivimate roku, tivimate setup canada, best iptv player canada, iptv stream player, iptv online player",
   alternates: { canonical: "https://maple4k.ca/tivimate-canada" },
   openGraph: {
     title: "TiviMate Canada 2026 — Complete Setup Guide | Maple4K",
@@ -55,6 +55,16 @@ const faqSchema = {
       "@type": "Question",
       name: "Why is TiviMate better than IPTV Smarters Pro for Canada?",
       acceptedAnswer: { "@type": "Answer", text: "TiviMate has a more polished TV-first UI, smoother EPG, better buffer management for 4K streams, and superior catch-up/recording. IPTV Smarters Pro is better for mobile. For Fire Stick and Android TV in Canada, TiviMate is the clear winner." },
+    },
+    {
+      "@type": "Question",
+      name: "Does TiviMate work on Apple TV or Roku?",
+      acceptedAnswer: { "@type": "Answer", text: "No — TiviMate is Android-only, so it is not available on Apple TV or Roku. For Apple TV, use IPlayTV or GSE Smart IPTV with your Maple4K credentials. For Roku, cast from a phone app or use a Fire TV Stick / Android TV box alongside TiviMate instead." },
+    },
+    {
+      "@type": "Question",
+      name: "Is it spelled TiviMate or Tivi Mate?",
+      acceptedAnswer: { "@type": "Answer", text: "The official app name is one word, TiviMate, but it's commonly searched and typed as two words — Tivi Mate. Both refer to the same IPTV player app, and Maple4K works identically with either spelling." },
     },
   ],
 };
@@ -107,7 +117,7 @@ export default function TiviMateCanadaPage() {
               TiviMate Canada — Best IPTV Player for Fire Stick & Android TV 2026
             </h1>
             <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", color: "rgba(255,255,255,0.7)", maxWidth: 680, marginBottom: 36, lineHeight: 1.65 }}>
-              TiviMate is the #1 rated IPTV player in Canada for Fire Stick and Android TV. Pair it with Maple4K for the best 4K streaming experience — full EPG, recordings, hardware-accelerated H.265. This guide shows you exactly how to set it up.
+              TiviMate (often typed &quot;Tivi Mate&quot;) is the #1 rated IPTV player in Canada for Fire Stick and Android TV. Pair it with Maple4K for the best 4K streaming experience — full EPG, recordings, hardware-accelerated H.265. This guide shows you exactly how to set it up.
             </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
               <Link href="/free-trial" className="btn-red">▶ Get Maple4K Free Trial</Link>
@@ -201,6 +211,8 @@ export default function TiviMateCanadaPage() {
               { q: "Does TiviMate work on Fire Stick in Canada?", a: "Yes. Available on the Amazon App Store — search 'TiviMate' and install directly. No sideloading needed. It's the top-rated IPTV player for Fire Stick in Canada, optimized for 4K H.265 and full EPG." },
               { q: "What is TiviMate Premium and is it worth it?", a: "TiviMate Premium (~$4.99/year) adds catch-up TV recordings, multiple playlists, parental controls, panel view, and advanced EPG. For Canadian sports fans watching TSN and Sportsnet, the catch-up recording feature alone makes it worth every cent." },
               { q: "Why is TiviMate better than IPTV Smarters Pro for Canada?", a: "TiviMate has a more polished TV-first UI, smoother EPG, better buffer management for 4K H.265, and superior catch-up/recording. For Fire Stick and Android TV in Canada, TiviMate wins. For mobile (iPhone/Android phone), use IPTV Smarters Pro." },
+              { q: "Does TiviMate work on Apple TV or Roku?", a: "No — TiviMate is Android-only, so it isn't available on Apple TV or Roku. For Apple TV, use IPlayTV or GSE Smart IPTV with your Maple4K credentials instead. For Roku, pair a Fire TV Stick or Android TV box running TiviMate alongside it." },
+              { q: "Is it spelled TiviMate or Tivi Mate?", a: "The official app name is one word — TiviMate — but it's commonly typed as two words, Tivi Mate. Both refer to the same app, and Maple4K works identically either way." },
             ].map(item => (
               <details key={item.q} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 12, overflow: "hidden", marginBottom: 10 }}>
                 <summary style={{ padding: "18px 22px", cursor: "pointer", fontWeight: 600, fontSize: 15, listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
