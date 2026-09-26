@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Apps & Players for Canada 2026 (14 Compared) | Maple4K" },
+  title: { absolute: "Best IPTV Apps for Canada 2026 — 14 Players Compared" },
   description:
     "The 14 best IPTV player apps for Canada in 2026 — TiviMate, IPTV Smarters Pro, XCIPTV, Xtream IPTV, Smart4IPTV, STB Emu Pro and more. Compared, ranked, with setup links.",
   keywords:

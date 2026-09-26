@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV for Samsung & LG Smart TV in Canada 2026 | Maple4K",
+  title: { absolute: "IPTV for Samsung & LG Smart TV in Canada 2026 | Maple4K" },
   description:
     "Install Maple4K IPTV on your Samsung or LG Smart TV in Canada. 50,000+ channels + Netflix, NHL, TSN, CTV in 4K. Easy setup in minutes. From $9/month.",
   keywords: "IPTV Samsung TV Canada, IPTV LG Smart TV Canada, Smart TV Maple4K",

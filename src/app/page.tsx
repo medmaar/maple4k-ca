@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: { absolute: "Best IPTV Canada 2026 — 50,000+ Channels + Netflix | Maple4K" },
   description: "Best IPTV Canada 2026. 50,000+ channels + Netflix, free trial available — no credit card. IPTV subscription from $9/month. Best IPTV service in Canada.",
   keywords: "iptv canada, best iptv canada, iptv québec, iptv box, iptv free trial, free trial iptv, iptv from canada, iptv subscription canada, best iptv in canada, iptv providers canada, best iptv service canada, iptv near me, iptv legal, smart iptv, canadian iptv, iptv 4k, iptv firestick, iptv canada reviews, best iptv provider canada, free iptv canada",
-  alternates: { canonical: "https://maple4k.ca" },
+  alternates: { canonical: "https://maple4k.ca", languages: { "en-CA": "https://maple4k.ca", "fr-CA": "https://maple4k.ca/fr", "x-default": "https://maple4k.ca" } },
   openGraph: {
       images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K — Canada's Best 4K IPTV" }],
     title: "Best IPTV Canada 2026 — 50,000+ Channels + Netflix from $9 | Maple4K",
@@ -259,6 +259,7 @@ export default function HomePage() {
                   { label: "IPTV Hamilton", href: "/iptv-hamilton" },
                   { label: "IPTV Victoria", href: "/iptv-victoria" },
                   { label: "IPTV Near Me", href: "/iptv-near-me" },
+                  { label: "All Cities →", href: "/iptv-cities" },
                 ].map(link => (
                   <Link key={link.href} href={link.href} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 8, padding: "6px 14px", fontSize: 13, color: "rgba(255,255,255,0.75)", textDecoration: "none", fontWeight: 500 }}>
                     {link.label}
@@ -283,6 +284,7 @@ export default function HomePage() {
                   { label: "MAG Box", href: "/iptv-mag-box-canada" },
                   { label: "Windows PC", href: "/iptv-windows-canada" },
                   { label: "IPTV Box", href: "/iptv-box" },
+                  { label: "All Devices →", href: "/iptv-devices" },
                 ].map(link => (
                   <Link key={link.href} href={link.href} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 8, padding: "6px 14px", fontSize: 13, color: "rgba(255,255,255,0.75)", textDecoration: "none", fontWeight: 500 }}>
                     {link.label}
@@ -307,6 +309,13 @@ export default function HomePage() {
                   { label: "Blog", href: "/blog" },
                   { label: "Reviews", href: "/reviews" },
                   { label: "Reseller Program", href: "/reseller" },
+                  { label: "What Is IPTV?", href: "/what-is-iptv" },
+                  { label: "IPTV Players & Apps", href: "/iptv-player" },
+                  { label: "IPTV Set-Top Boxes", href: "/iptv-set-top-box" },
+                  { label: "Canadian IPTV", href: "/canadian-iptv" },
+                  { label: "IPTV Alternatives", href: "/iptv-alternatives" },
+                  { label: "Cheap IPTV", href: "/cheap-iptv-canada" },
+                  { label: "IPTV en français", href: "/fr" },
                 ].map(link => (
                   <Link key={link.href} href={link.href} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 8, padding: "6px 14px", fontSize: 13, color: "rgba(255,255,255,0.75)", textDecoration: "none", fontWeight: 500 }}>
                     {link.label}

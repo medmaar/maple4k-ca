@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV for Sports in Canada 2026 — NHL, NFL, UFC, Soccer | Maple4K" },
+  title: { absolute: "Best IPTV for Sports Canada 2026 — NHL, NFL, UFC, Soccer" },
   description:
     "The best IPTV for sports in Canada. NHL, NFL, NBA, UFC, soccer, Eurosport, beIN Sports and Sky Sports in 4K. All TSN and Sportsnet feeds. Free 24h trial from $9/month.",
   keywords:

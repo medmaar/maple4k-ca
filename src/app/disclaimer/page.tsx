@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | Maple4K – Best 4K IPTV Canada",
+  title: { absolute: "Disclaimer — Maple4K IPTV Canada" },
   description:
     "Legal disclaimer for Maple4K, Canada's best 4K IPTV service. We do not host or stream any copyrighted content. All content is provided by third-party.",
   alternates: { canonical: "https://maple4k.ca/disclaimer" },

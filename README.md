@@ -34,3 +34,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## SEO landing pages (generated)
+
+Long-tail SEO pages (apps, devices, boxes, buying guides, French track, brand comparisons) are data-driven:
+
+- Content lives in `src/data/seo/*.ts` (one `SeoPageData` object per URL; `depth*.ts` add long-form sections).
+- `src/components/SeoPage.tsx` renders every page in the site's design system and emits FAQPage, BreadcrumbList,
+  HowTo and WebPage/BlogPosting JSON-LD plus canonical, hreflang, Open Graph and Twitter tags.
+- `node scripts/gen-seo-pages.mjs` writes the `src/app/<slug>/page.tsx` route files, refreshes the generated block in
+  `public/sitemap.xml` and the alias block in `public/_redirects`, and lints titles, descriptions and FAQ counts.
+- `npm run build && node scripts/audit-out.mjs` audits the built site (H1, canonical, FAQ/breadcrumb schema, broken links, orphans).
+
+To add a page: add an object to the right `src/data/seo/*.ts` file, run the generator, build, audit.

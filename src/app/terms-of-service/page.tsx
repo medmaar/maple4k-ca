@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Maple4K – Best 4K IPTV Canada",
+  title: { absolute: "Terms of Service — Maple4K IPTV Canada" },
   description: "Terms of service for Maple4K, Canada's leading 4K IPTV provider. Read our terms before using our IPTV service.",
   alternates: { canonical: "https://maple4k.ca/terms-of-service" },
   openGraph: {

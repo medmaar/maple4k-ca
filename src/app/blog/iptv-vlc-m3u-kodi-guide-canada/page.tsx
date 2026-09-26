@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV with VLC, M3U & Kodi in Canada (2026 Guide) | Maple4K",
+  title: { absolute: "IPTV with VLC, M3U & Kodi in Canada — 2026 Guide" },
   description:
     "How to use your Maple4K IPTV subscription with VLC, an M3U playlist, or Kodi in Canada. Step-by-step setup, troubleshooting, and when to use a dedicated app instead.",
   keywords:

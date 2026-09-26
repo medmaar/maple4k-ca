@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "TiviMate Canada 2026 — Setup Guide for Fire Stick & Android TV | Maple4K" },
+  title: { absolute: "TiviMate Canada 2026 — Fire Stick & Android TV Guide" },
   description: "TiviMate IPTV player setup guide for Canada 2026. Configure TiviMate on Fire Stick, Android TV Box, and Shield TV with Maple4K. Best IPTV player for 4K.",
   keywords: "tivimate canada, tivi mate, tivi mate canada, tivimate iptv canada, tivimate fire stick canada, tivimate firestick, tivimate on firestick, tivimate apple tv, tivimate android tv canada, tivimate roku, tivimate setup canada, best iptv player canada, iptv stream player, iptv online player",
   alternates: { canonical: "https://maple4k.ca/tivimate-canada" },

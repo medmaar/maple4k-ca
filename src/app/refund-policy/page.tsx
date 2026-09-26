@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Refund Policy | Maple4K – Best 4K IPTV Canada",
+  title: { absolute: "Refund Policy — Maple4K IPTV Canada" },
   description: "Refund policy for Maple4K, Canada's best 4K IPTV service. Learn about our no-refund policy and how our free trial protects you before you subscribe.",
   alternates: { canonical: "https://maple4k.ca/refund-policy" },
   openGraph: {

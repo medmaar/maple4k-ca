@@ -15,7 +15,7 @@ const howToSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "IPTV Android Canada | Maple4K – Best 4K IPTV Canada",
+  title: { absolute: "IPTV on Android Canada 2026 — Phone & Tablet Setup" },
   description:
     "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Free trial.",
   keywords:

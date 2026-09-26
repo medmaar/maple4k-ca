@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Smarters Pro Canada 2026 — Setup Guide & Free Trial | Maple4K" },
+  title: { absolute: "IPTV Smarters Pro Canada 2026 — Setup & Free Trial" },
   description:
     "IPTV Smarters Pro setup guide for Canada 2026. Configure Smarters Pro on Firestick, Android, iPhone & Smart TV with Maple4K. 50,000+ channels, free 24h trial.",
   keywords:

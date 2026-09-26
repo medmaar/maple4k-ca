@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV MAG Box Canada – Setup & Best Plans 2026 | Maple4K",
+  title: { absolute: "IPTV MAG Box Canada — Setup & Best Plans 2026 | Maple4K" },
   description:
     "Set up Maple4K IPTV on your MAG Box in Canada. Full portal URL setup guide. 50,000+ channels + Netflix, NHL, TSN in 4K. Plans from $9/month.",
   keywords: "IPTV MAG Box Canada, MAG 322 Maple4K, MAG Box setup Canada 2026, mag 254, mag iptv box, mag iptv boxes, mag tv box, magic iptv, formuler iptv box",

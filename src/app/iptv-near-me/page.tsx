@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Near Me Canada 2026 — Local IPTV Service from $9 | Maple4K" },
+  title: { absolute: "IPTV Near Me Canada 2026 — From $9/Month | Maple4K" },
   description: "Looking for IPTV near me in Canada? Maple4K serves all Canadian cities — Toronto, Vancouver, Montreal, Calgary, Ottawa, Edmonton. 50,000+ channels +.",
   keywords: "iptv near me, best iptv near me, iptv 4k near me, iptv canada, iptv service canada, iptv providers canada, iptv subscription canada, canadian iptv, best iptv in canada",
   alternates: { canonical: "https://maple4k.ca/iptv-near-me" },

@@ -65,6 +65,31 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Explore */}
+          <div>
+            <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 20, marginTop: 0 }}>Explore</h4>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {[
+                { label: "What Is IPTV?", href: "/what-is-iptv" },
+                { label: "IPTV Devices", href: "/iptv-devices" },
+                { label: "IPTV Players & Apps", href: "/iptv-player" },
+                { label: "IPTV Set-Top Boxes", href: "/iptv-set-top-box" },
+                { label: "IPTV by City", href: "/iptv-cities" },
+                { label: "Canadian IPTV", href: "/canadian-iptv" },
+                { label: "IPTV Alternatives", href: "/iptv-alternatives" },
+                { label: "IPTV en français", href: "/fr" },
+                { label: "About Maple4K", href: "/about" },
+              ].map(l => (
+                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.5)")}
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
           {/* Legal */}
           <div>
             <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 20, marginTop: 0 }}>Legal</h4>

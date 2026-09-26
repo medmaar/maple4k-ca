@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SimpleFaq from "../../components/SimpleFaq";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Maple4K 4K IPTV Canada — 24/7 Support",
+  title: { absolute: "Contact Maple4K IPTV Support Canada — WhatsApp 24/7" },
   description: "Contact Maple4K via live chat, WhatsApp, or email. 4K streaming support team available 24/7 in English and French.",
   alternates: { canonical: "https://maple4k.ca/contact" },
 };
@@ -96,7 +97,8 @@ export default function ContactPage() {
           </p>
         </div>
       </div>
-    </main>
+      <SimpleFaq title="Contact & Support \u2014 FAQ" items={[{"q": "How do I contact Maple4K support?", "a": "Message the team on WhatsApp, use live chat or email support@maple4k.ca. Support is available 24/7 in English and French."}, {"q": "How fast will I receive my login after ordering?", "a": "Login details are normally sent by email and WhatsApp within minutes of your order or free-trial request."}, {"q": "What should I include when I report a problem?", "a": "Tell us your device model, the app you use, the channel affected and the time it happened so we can help quickly."}, {"q": "Can I get help with setup?", "a": "Yes. Message support and we will walk you through installing TiviMate, IPTV Smarters Pro or another player on your device."}]} />
+      </main>
     </>
   );
 }

@@ -1,0 +1,38 @@
+# Maple4K
+> Maple4K is an independent Canadian IPTV service: 50,000+ live channels, movies and series in 4K, from $9/month, with a free 24-hour trial and no contract.
+> Target markets: Canada (English and French). Serving viewers coast to coast.
+
+## Main pages
+- Pricing: https://maple4k.ca/pricing
+- Free 24-hour trial: https://maple4k.ca/free-trial
+- Best IPTV in Canada: https://maple4k.ca/best-iptv-canada
+- IPTV subscription: https://maple4k.ca/iptv-subscription
+- What is IPTV?: https://maple4k.ca/what-is-iptv
+- Canadian IPTV (channels): https://maple4k.ca/canadian-iptv
+- Best IPTV for sports: https://maple4k.ca/best-iptv-for-sports-canada
+
+## Devices, apps and boxes
+- IPTV devices hub: https://maple4k.ca/iptv-devices
+- IPTV player apps hub (TiviMate, IPTV Smarters Pro, XCIPTV, iPlayTV, IMPlayer): https://maple4k.ca/iptv-player
+- TiviMate guide: https://maple4k.ca/tivimate-canada
+- IPTV Smarters Pro guide: https://maple4k.ca/iptv-smarters-pro-canada
+- Set-top boxes (Formuler, MAG, Dreamlink, BuzzTV, TVIP): https://maple4k.ca/iptv-set-top-box
+
+## Local pages
+- IPTV by Canadian city: https://maple4k.ca/iptv-cities
+- IPTV Québec (français): https://maple4k.ca/iptv-quebec
+- IPTV Canada en français: https://maple4k.ca/fr
+
+## Help and trust
+- How it works: https://maple4k.ca/how-it-works
+- Reviews: https://maple4k.ca/reviews
+- Is IPTV legal in Canada?: https://maple4k.ca/blog/is-iptv-legal-canada
+- Fix IPTV buffering: https://maple4k.ca/blog/fix-iptv-buffering-canada
+- Blog: https://maple4k.ca/blog
+- Contact: https://maple4k.ca/contact
+
+## Facts
+- Plans (1 connection): $9 / 1 month, $29 / 3 months, $39 / 6 months, $49 / 12 months
+- Free trial: 24 hours, no credit card
+- Works with: TiviMate, IPTV Smarters Pro, XCIPTV, iPlayTV, VLC, Formuler, MAG boxes, Fire Stick, Android TV, Apple TV, Samsung and LG smart TVs
+- Sitemap: https://maple4k.ca/sitemap.xml

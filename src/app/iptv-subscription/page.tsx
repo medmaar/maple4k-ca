@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Subscription Canada 2026 — Best Plans from $9 | Maple4K" },
   description: "Get the best IPTV subscription in Canada. Monthly, quarterly and annual plans. No contracts, free trial. 50,000+ channels + Netflix, 4K quality. IPTV.",
-  keywords: "iptv subscription, iptv subscription canada, ip tv subscription, iptv service canada, best iptv subscription canada, iptv providers canada, canadian iptv, iptv from canada, best iptv canada 2026, buy iptv, cheap iptv, iptv deals, iptv premium, iptv streaming service, iptv service provider, iptv service near me",
-  alternates: { canonical: "https://maple4k.ca/iptv-subscription" },
+  keywords: "iptv subscription, iptv subscription canada, ip tv subscription, iptv service canada, best iptv subscription canada, iptv providers canada, canadian iptv, iptv from canada, best iptv canada 2026, buy iptv, cheap iptv, iptv deals, iptv premium, iptv streaming service, iptv service provider, iptv service near me, iptv subscribe, iptv sub, iptv subscription reddit, best iptv subscription, iptv subscription canada, premium iptv subscription",
+  alternates: { canonical: "https://maple4k.ca/iptv-subscription", languages: { "en-CA": "https://maple4k.ca/iptv-subscription", "fr-CA": "https://maple4k.ca/fr/abonnement-iptv-canada", "x-default": "https://maple4k.ca/iptv-subscription" } },
   openGraph: {
     url: "https://maple4k.ca/iptv-subscription",
     type: "website",

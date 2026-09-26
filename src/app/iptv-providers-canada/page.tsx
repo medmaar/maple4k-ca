@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Providers Canada 2026 — Top IPTV Service Comparison | Maple4K" },
+  title: { absolute: "Best IPTV Providers Canada 2026 — Compared | Maple4K" },
   description: "Compare the best IPTV providers in Canada 2026. Maple4K leads with 50,000+ channels + Netflix, 4K Ultra HD, $9/month, free trial. See why Canadians choose.",
-  keywords: "iptv providers canada, best iptv providers, iptv provider canada, best iptv provider canada, iptv service canada, best iptv service canada, canadian iptv, best iptv in canada, best iptv canada, iptv subscription canada",
+  keywords: "iptv providers canada, best iptv providers, iptv provider canada, best iptv provider canada, iptv service canada, best iptv service canada, canadian iptv, best iptv in canada, best iptv canada, iptv subscription canada, iptv providers, provider iptv, iptv providers in canada, iptv provider canada, best iptv providers, iptv service providers, iptv suppliers",
   alternates: { canonical: "https://maple4k.ca/iptv-providers-canada" },
   openGraph: {
     url: "https://maple4k.ca/iptv-providers-canada",

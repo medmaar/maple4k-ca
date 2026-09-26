@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Looking for the best IPTV in Canada? Maple4K is rated #1 for Canadian IPTV. 50,000+ channels + Netflix, 4K quality, free trial. Best IPTV provider Canada.",
   keywords: "best iptv canada, best iptv in canada, best iptv for canada, best iptv service canada, best iptv service provider, best iptv services, best iptv provider canada, best canadian iptv provider, iptv providers canada, iptv service provider, iptv canada reviews, best iptv 2026, best iptv near me, ip tv best, iptv best",
-  alternates: { canonical: "https://maple4k.ca/best-iptv-canada" },
+  alternates: { canonical: "https://maple4k.ca/best-iptv-canada", languages: { "en-CA": "https://maple4k.ca/best-iptv-canada", "fr-CA": "https://maple4k.ca/fr/meilleur-iptv-canada", "x-default": "https://maple4k.ca/best-iptv-canada" } },
   openGraph: {
     title: "Best IPTV Canada 2026 — Top Rated Service Near You | Maple4K",
     description: "Canada's best IPTV service. 4K quality, 50,000+ channels + Netflix, free trial. From $9/month.",

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import ReferralForm from "../../components/ReferralForm";
+import SimpleFaq from "../../components/SimpleFaq";
 
 export const metadata: Metadata = {
-  title: "Referral Program | Maple4K — Refer a Friend, Get +1 Year Free",
+  title: { absolute: "Referral Program — Refer a Friend, Get +1 Year Free" },
   description:
     "Refer a friend to Maple4K and earn +1 free year of service. No limits — every successful referral adds 12 months to your account.",
   keywords:
@@ -139,7 +140,8 @@ export default function ReferralPage() {
         </div>
       </section>
 
-    </main>
+      <SimpleFaq title="Referral Program \u2014 FAQ" items={[{"q": "How does the Maple4K referral program work?", "a": "Refer a friend who has never used Maple4K. When they purchase at least a 1-year subscription and your referral is approved, +12 months are added to your account."}, {"q": "Is there a limit to how many people I can refer?", "a": "No. Referrals are unlimited — each successful referral gives you another 12 months."}, {"q": "Who counts as a new customer?", "a": "The referred person must be a new customer who has never used Maple4K before."}, {"q": "How do I submit a referral?", "a": "Send your friend's details via WhatsApp or fill in the referral form on this page. The team reviews and approves referrals quickly."}]} />
+      </main>
     </>
   );
 }

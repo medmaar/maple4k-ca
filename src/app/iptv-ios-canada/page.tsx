@@ -15,7 +15,7 @@ const howToSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "IPTV iPhone & iPad Canada | Maple4K – Best 4K IPTV Canada",
+  title: { absolute: "IPTV on iPhone & iPad Canada 2026 — Setup | Maple4K" },
   description:
     "Stream IPTV on iPhone or iPad in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free.",
   keywords:

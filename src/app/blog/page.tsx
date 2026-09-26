@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { seoPages } from "../../data/seo";
+import SimpleFaq from "../../components/SimpleFaq";
 
 export const metadata: Metadata = {
-  title: "Maple4K Blog | IPTV Guides, Reviews & News – Canada",
+  title: { absolute: "IPTV Blog Canada — Guides, Reviews & Setup | Maple4K" },
   description:
     "Read Maple4K's IPTV blog. Expert guides on setup, legality, pricing comparisons, player reviews, and the best 4K IPTV services in Canada for 2026.",
   keywords: "Maple4K blog, IPTV guide Canada 2026, best IPTV Canada review",
@@ -102,6 +104,11 @@ const posts = [
   },
 ];
 
+type BlogCard = { slug: string; href?: string; title: string; excerpt: string; date: string; readTime: string; tag: string };
+const seoPosts: BlogCard[] = seoPages
+  .filter(p => p.kind === "blog")
+  .map(p => ({ slug: p.path, href: p.path, title: p.h1, excerpt: p.description, date: p.datePublished ?? "2026-09-26", readTime: "6 min read", tag: "Guide" }));
+const allPosts: BlogCard[] = [...posts, ...seoPosts];
 
 const blogSchema = {
   "@context": "https://schema.org",
@@ -143,10 +150,10 @@ export default function BlogPage() {
 
       <section style={{ padding: "60px 16px 100px", background: "transparent" }}>
         <div style={{ maxWidth: 860, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: 24 }}>
-          {posts.map((post) => (
+          {allPosts.map((post) => (
             <Link
               key={post.slug}
-              href={`/blog/${post.slug}`}
+              href={post.href ?? `/blog/${post.slug}`}
               style={{ textDecoration: "none", display: "block" }}
             >
               <article
@@ -180,7 +187,8 @@ export default function BlogPage() {
           ))}
         </div>
       </section>
-    </main>
+      <SimpleFaq title="IPTV Blog \u2014 FAQ" items={[{"q": "What topics does the Maple4K blog cover?", "a": "Setup guides for TiviMate and IPTV Smarters Pro, device tutorials, legality explainers, cost comparisons and sports viewing guides for Canada."}, {"q": "Where should I start if I'm new to IPTV?", "a": "Read What Is IPTV? then follow a device guide for your Fire Stick, smart TV or phone."}, {"q": "How often is the blog updated?", "a": "Guides are reviewed regularly and carry a visible last-updated date."}, {"q": "Can I try IPTV before reading everything?", "a": "Yes. Start a free 24-hour trial and follow the setup guide for your device."}]} />
+      </main>
     </>
   );
 }

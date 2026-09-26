@@ -7,6 +7,7 @@ import FloatingContact from "../components/FloatingContact";
 import SalesBanner from "../components/SalesBanner";
 
 import Animations from "./components/Animations";
+import AutoBreadcrumb from "../components/AutoBreadcrumb";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -114,6 +115,7 @@ export default function RootLayout({
                         <FloatingContact />
                         <SalesBanner />
                         <Animations />
+                        <AutoBreadcrumb />
                 </body>
           </html>
         );

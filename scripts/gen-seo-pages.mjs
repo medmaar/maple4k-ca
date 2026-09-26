@@ -1,0 +1,121 @@
+// Generates route files, sitemap entries and _redirects aliases from src/data/seo.
+// Run: node scripts/gen-seo-pages.mjs
+import { buildSync } from "esbuild";
+import { mkdirSync, writeFileSync, readFileSync, existsSync } from "fs";
+import { join, dirname } from "path";
+import { createRequire } from "module";
+import { tmpdir } from "os";
+import { fileURLToPath } from "url";
+
+const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const out = join(tmpdir(), "maple4k-seo-data.cjs");
+buildSync({
+  entryPoints: [join(root, "src/data/seo/index.ts")],
+  bundle: true,
+  platform: "node",
+  format: "cjs",
+  outfile: out,
+  logLevel: "error",
+});
+const require = createRequire(import.meta.url);
+const { seoPages, lookupLink } = require(out);
+
+const SITE = "https://maple4k.ca";
+const LASTMOD = "2026-09-26";
+let problems = 0;
+const warn = (m) => { problems++; console.warn("⚠ " + m); };
+
+// ───────── lint ─────────
+const seenTitle = new Map();
+const seenPath = new Set();
+const LINK_RE = /\[([^\]]+)\]\((\/[^)\s#]*)/g;
+const allPaths = new Set(seoPages.map(p => p.path));
+const knownExisting = new Set();
+for (const p of seoPages) {
+  if (seenPath.has(p.path)) warn(`duplicate path ${p.path}`);
+  seenPath.add(p.path);
+  if (seenTitle.has(p.title)) warn(`duplicate title: ${p.title}`);
+  seenTitle.set(p.title, p.path);
+  if (p.title.length > 62) warn(`title ${p.title.length} chars: ${p.path} — ${p.title}`);
+  if (p.title.length < 40) warn(`title short ${p.title.length}: ${p.path}`);
+  if (p.description.length > 165 || p.description.length < 110) warn(`description ${p.description.length} chars: ${p.path}`);
+  if (p.faqs.length < 4) warn(`FAQ < 4: ${p.path}`);
+  const text = JSON.stringify(p);
+  for (const m of text.matchAll(LINK_RE)) {
+    const target = m[2];
+    if (!allPaths.has(target) && !lookupLink(target) && !target.startsWith("/api")) knownExisting.add(target);
+  }
+  for (const l of [p.hub, ...(p.related ?? []), ...(p.hubLinks ?? []), ...(p.alt ?? []).map(a => a.path)].filter(Boolean)) {
+    if (!lookupLink(l) && !allPaths.has(l)) knownExisting.add(l);
+  }
+}
+
+// ───────── route files ─────────
+for (const p of seoPages) {
+  const dir = join(root, "src/app", p.path);
+  mkdirSync(dir, { recursive: true });
+  const src = `import SeoPage, { seoMetadata } from "../../components/SeoPage";
+import { getSeoPage } from "../../data/seo";
+
+const page = getSeoPage(${JSON.stringify(p.path)});
+
+export const metadata = seoMetadata(page);
+
+export default function Page() {
+  return <SeoPage page={page} />;
+}
+`;
+  // relative depth
+  const depth = p.path.split("/").filter(Boolean).length;
+  const rel = "../".repeat(depth + 1);
+  writeFileSync(join(dir, "page.tsx"), src.replaceAll("../../", rel));
+}
+
+// ───────── sitemap ─────────
+const smPath = join(root, "public/sitemap.xml");
+let sm = readFileSync(smPath, "utf8");
+sm = sm.replace(/\s*<!-- seo-pages:start -->[\s\S]*?<!-- seo-pages:end -->/, "");
+const newLocs = new Set(seoPages.map(p => SITE + p.path));
+sm = sm.split("\n").filter(l => {
+  const m = l.match(/<loc>([^<]+)<\/loc>/);
+  return !(m && newLocs.has(m[1]));
+}).join("\n");
+// Multi-connection plan pages that exist as routes but were missing from the sitemap.
+const extraPaths = [];
+for (const n of [8, 9, 10]) for (const d of ["1-month", "3-months", "6-months", "1-year"]) {
+  const path = `/pricing/${n}-devices/${d}`;
+  if (!sm.includes(`<loc>${SITE + path}</loc>`) && existsSync(join(root, "src/app", path, "page.tsx"))) extraPaths.push(path);
+}
+const extraEntries = extraPaths.map(path => `  <url><loc>${SITE + path}</loc><lastmod>${LASTMOD}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>`).join("\n");
+const seoEntries = seoPages.map(p => {
+  const pr = p.kind === "hub" ? "0.85" : p.kind === "blog" ? "0.7" : "0.75";
+  return `  <url><loc>${SITE + p.path}</loc><lastmod>${LASTMOD}</lastmod><changefreq>${p.kind === "hub" ? "weekly" : "monthly"}</changefreq><priority>${pr}</priority></url>`;
+}).join("\n");
+const entries = extraEntries ? `${seoEntries}\n${extraEntries}` : seoEntries;
+sm = sm.replace("</urlset>", `  <!-- seo-pages:start -->\n${entries}\n  <!-- seo-pages:end -->\n</urlset>`);
+writeFileSync(smPath, sm);
+
+// ───────── redirects ─────────
+const rdPath = join(root, "public/_redirects");
+let rd = readFileSync(rdPath, "utf8");
+rd = rd.replace(/\n*# seo-aliases:start[\s\S]*?# seo-aliases:end\n?/, "\n");
+const existingSources = new Set(rd.split("\n").map(l => l.trim().split(/\s+/)[0]).filter(l => l.startsWith("/")));
+const lines = [];
+const usedSources = new Set();
+for (const p of seoPages) {
+  for (const a of p.aliases ?? []) {
+    if (a === p.path) continue;
+    if (allPaths.has(a) || existingSources.has(a) || usedSources.has(a)) { warn(`alias skipped (collision): ${a} → ${p.path}`); continue; }
+    usedSources.add(a);
+    lines.push(`${a.padEnd(46)} ${p.path} 301`);
+  }
+}
+rd = rd.trimEnd() + `\n\n# seo-aliases:start — generated by scripts/gen-seo-pages.mjs (typo/alias URLs → canonical)\n${lines.join("\n")}\n# seo-aliases:end\n`;
+writeFileSync(rdPath, rd);
+
+console.log(`Generated ${seoPages.length} pages, ${lines.length} redirects.`);
+if (knownExisting.size) {
+  const missing = [...knownExisting].filter(t => !existsSync(join(root, "src/app", t, "page.tsx")) && t !== "/");
+  if (missing.length) { console.warn("⚠ Links to routes with no page.tsx:\n  " + missing.join("\n  ")); }
+}
+console.log(problems ? `${problems} lint warnings` : "lint clean");

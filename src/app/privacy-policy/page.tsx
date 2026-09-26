@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Maple4K – Best 4K IPTV Canada",
+  title: { absolute: "Privacy Policy — Maple4K IPTV Canada" },
   description: "Privacy policy for Maple4K, Canada's best 4K IPTV service. Learn how we collect, use, and protect your personal information.",
   alternates: { canonical: "https://maple4k.ca/privacy-policy" },
   openGraph: {

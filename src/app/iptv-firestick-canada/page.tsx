@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IPTV Firestick Canada | Maple4K – Best 4K IPTV Canada",
+  title: { absolute: "IPTV on Firestick Canada 2026 — Setup Guide | Maple4K" },
   description:
     "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 50,000+ channels + Netflix, NHL, TSN & 4K quality. Free 24h trial.",
   keywords:

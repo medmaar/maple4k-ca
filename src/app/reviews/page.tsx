@@ -3,7 +3,7 @@ import Link from "next/link";
 import ReviewsSection from "../components/ReviewsSection";
 
 export const metadata: Metadata = {
-  title: { absolute: "Maple4K Reviews — Trustpilot, WhatsApp & Google | Maple4K IPTV Canada" },
+  title: { absolute: "Maple4K Reviews — Trustpilot, Google & WhatsApp" },
   description: "Read verified Maple4K reviews from Trustpilot, WhatsApp, and Google. 50,000+ happy Canadian customers. See why Maple4K is Canada's top-rated IPTV service.",
   keywords: "maple4k reviews, iptv reviews, iptv trustpilot, trustpilot iptv, iptv canada reviews",
   alternates: { canonical: "https://maple4k.ca/reviews" },

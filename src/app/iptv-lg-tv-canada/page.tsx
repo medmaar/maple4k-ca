@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IPTV LG TV Canada | Maple4K – Best 4K IPTV Canada",
+  title: { absolute: "IPTV on LG TV Canada 2026 — webOS Setup | Maple4K" },
   description:
     "Stream IPTV on your LG Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Free trial.",
   keywords:

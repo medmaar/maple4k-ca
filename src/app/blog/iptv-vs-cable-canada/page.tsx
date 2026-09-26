@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV vs Cable Canada 2026 | Maple4K – Best 4K IPTV Canada",
+  title: { absolute: "IPTV vs Cable Canada 2026 — Cost & Features Compared" },
   description:
     "IPTV vs cable TV in Canada — we compare price, channels, 4K picture quality, contracts, and flexibility to help you decide which is better in 2026.",
   keywords:

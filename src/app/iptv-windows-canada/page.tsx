@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IPTV Windows PC & Mac Canada | Maple4K – Best 4K IPTV Canada",
+  title: { absolute: "IPTV on Windows PC Canada 2026 — Players & Setup" },
   description:
     "Stream IPTV on Windows PC or Mac in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV. Works with VLC, IPTV Smarters and more.",
   keywords:
-    "IPTV Windows Canada, IPTV PC Canada, IPTV computer Canada, IPTV Mac Canada, best IPTV for PC Canada",
+    "IPTV Windows Canada, IPTV PC Canada, IPTV computer Canada, IPTV Mac Canada, best IPTV for PC Canada, iptv pc, iptv player pc, iptv pour pc, iptv laptop, m3u player pc, iptv smarters pc, tivimate pc",
   alternates: { canonical: "https://maple4k.ca/iptv-windows-canada" },
   openGraph: {
     title: "IPTV Windows PC & Mac Canada | Maple4K – Best 4K IPTV Canada",

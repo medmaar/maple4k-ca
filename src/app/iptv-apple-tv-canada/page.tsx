@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4K",
+  title: { absolute: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4K" },
   description:
     "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 50,000+ channels + Netflix, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From.",
   keywords: "IPTV Apple TV Canada, IPTV iPhone Canada, IPTV iPad Canada 2026",

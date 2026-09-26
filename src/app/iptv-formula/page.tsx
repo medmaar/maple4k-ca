@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: { absolute: "Formuler Z11 & Z11 Pro Max Canada — IPTV Setup Guide 2026 | Maple4K" },
+  title: { absolute: "Formuler Z11 Pro Max Canada — IPTV Setup 2026 | Maple4K" },
   description: "Set up Maple4K IPTV on Formuler Z11, Z11 Pro, Z11 Pro Max, Z8, Z8 Pro, Z10, and all Formuler Android TV boxes in Canada. 4K IPTV — free trial from $9/month.",
   keywords: "iptv formula, formuler z11, formuler z11 pro, formuler z11 pro max, box formuler, formuler box, formuler tv box, formuler z8 pro, formuler z8 pro 4k, formuler z7, formuler z nano, formuler z neo, formuler z+, formuler zx, iptv formuler canada, formuler z8 iptv canada, formuler z10 iptv, iptv formuler box canada, best iptv formuler canada",
   alternates: { canonical: "https://maple4k.ca/iptv-formula" },

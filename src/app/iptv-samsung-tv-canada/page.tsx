@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IPTV Samsung TV Canada | Maple4K – Best 4K IPTV Canada",
+  title: { absolute: "IPTV on Samsung TV Canada 2026 — Tizen Setup | Maple4K" },
   description:
     "Stream IPTV on your Samsung Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN and more. Easy Tizen OS setup. Free trial.",
   keywords:

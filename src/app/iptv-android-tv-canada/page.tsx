@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best IPTV for Android TV in Canada 2026 | Maple4K",
+  title: { absolute: "Best IPTV for Android TV in Canada 2026 | Maple4K" },
   description:
     "Install IPTV on your Android TV box in Canada. Maple4K offers 50,000+ channels + Netflix in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
   alternates: { canonical: "https://maple4k.ca/iptv-android-tv-canada" },
