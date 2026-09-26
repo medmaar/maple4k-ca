@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV with VLC, M3U & Kodi in Canada — 2026 Guide" },
   description:
     "How to use your Maple4K IPTV subscription with VLC, an M3U playlist, or Kodi in Canada. Step-by-step setup, troubleshooting, and when to use a dedicated app instead.",
-  keywords:
-    "iptv vlc, ip tv vlc, iptv vlc media player, iptv vlc player, vlc ip tv, iptv m3u8, ip tv m3u, kodi iptv m3u, kodi m3u, m3u kodi, m3u player online, m3u player pc, m3u online, m3u lista, m3u checker, m3u downloader online, lxtream, lxtream player, lxtream android tv, iptv sur vlc, liste iptv m3u fr, lecteur m3u en ligne, iptv listas m3u, iptv smasters m3u, jellyfin iptv",
+  keywords: "iptv vlc, ip tv vlc, iptv vlc media player, iptv vlc player, vlc ip tv, iptv m3u8, ip tv m3u, kodi iptv m3u, kodi m3u, m3u kodi, m3u player online, m3u player pc, m3u online, m3u lista, m3u checker, m3u downloader online, lxtream, lxtream player, lxtream android tv, iptv sur vlc, liste iptv m3u fr, lecteur m3u en ligne, iptv listas m3u, iptv smasters m3u, jellyfin iptv, kodi iptv, kodi ip tv, vlc iptv",
   alternates: { canonical: "https://maple4k.ca/blog/iptv-vlc-m3u-kodi-guide-canada" },
   openGraph: {
     title: "IPTV with VLC, M3U & Kodi in Canada (2026 Guide) | Maple4K",
@@ -191,6 +191,7 @@ export default function VlcM3uKodiGuidePage() {
             </Link>
           </div>
         </article>
+      <ExtraSections path="/blog/iptv-vlc-m3u-kodi-guide-canada" />
       </main>
     </>
   );

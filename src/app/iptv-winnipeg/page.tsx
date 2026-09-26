@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Winnipeg 2026 — Best 4K IPTV Service Manitoba | Maple4K" },
   description: "Best IPTV service in Winnipeg 2026. Stream Jets, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9/month. Free 24h trial — no credit.",
-  keywords: "iptv winnipeg, iptv near me, best iptv winnipeg, iptv manitoba, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada",
+  keywords: "iptv winnipeg, iptv near me, best iptv winnipeg, iptv manitoba, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada, winnipeg iptv service",
   alternates: { canonical: "https://maple4k.ca/iptv-winnipeg" },
   openGraph: {
     title: "IPTV Winnipeg 2026 — Best 4K IPTV Service Manitoba | Maple4K",
@@ -150,6 +151,7 @@ export default function IPTVWinnipegPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-winnipeg" />
       </main>
     </>
   );

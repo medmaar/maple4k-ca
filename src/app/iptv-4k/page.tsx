@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV 4K Canada — True Ultra HD Streaming Near You | Maple4K" },
   description:
     "Stream IPTV in 4K Ultra HD in Canada. H.265/HEVC encoded, HDR10 & Dolby Vision. 50,000+ channels + Netflix in true 4K quality near you. Free trial — no.",
-  keywords:
-    "iptv 4k, iptv 4k near me, 4k iptv canada, 4k iptv subscription, ultra hd iptv canada, h.265 iptv canada, hdr iptv canada, best iptv 4k canada",
+  keywords: "iptv 4k, iptv 4k near me, 4k iptv canada, 4k iptv subscription, ultra hd iptv canada, h.265 iptv canada, hdr iptv canada, best iptv 4k canada, ip tv 4k, iptv full hd, iptv 8k, 8k iptv, myiptv 4k, box iptv 4k, iptv premium 4k, 4k ott iptv",
   alternates: { canonical: "https://maple4k.ca/iptv-4k" },
   openGraph: {
     title: "IPTV 4K Canada — True Ultra HD Streaming Near You | Maple4K",
@@ -116,6 +116,7 @@ export default function IPTV4KPage() {
           <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>No credit card. Full 4K access for 24 hours. Plans from $9/month.</p>
           <a href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "16px 48px", borderRadius: 12, fontWeight: 700, textDecoration: "none" }}>Try 4K IPTV Free →</a>
         </section>
+      <ExtraSections path="/iptv-4k" />
       </main>
     </>
   );

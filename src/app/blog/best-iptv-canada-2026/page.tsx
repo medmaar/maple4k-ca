@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "10 Best IPTV Providers in Canada 2026 — Tested & Ranked" },
   description:
     "Experience true 4K Ultra HD IPTV in Canada. Compare H.265 codecs, HDR10, bitrate support, and video quality. Stream sports and movies in 4K on every.",
-  keywords:
-    "4K IPTV Canada, H.265 IPTV, HDR10 streaming Canada, Ultra HD IPTV, 4K sports streaming Canada",
+  keywords: "4K IPTV Canada, H.265 IPTV, HDR10 streaming Canada, Ultra HD IPTV, 4K sports streaming Canada, best iptv 2026, top 10 iptv",
   alternates: { canonical: "https://maple4k.ca/blog/best-iptv-canada-2026" },
   openGraph: {
       images: [{ url: "/iptv-canada.jpg", width: 1403, height: 761, alt: "Maple4K — Best 4K IPTV Canada 2026" }],
@@ -275,6 +275,7 @@ export default function Maple4KBlogPost() {
           </Link>
         </div>
       </article>
-    </main>
+    <ExtraSections path="/blog/best-iptv-canada-2026" />
+      </main>
   );
 }

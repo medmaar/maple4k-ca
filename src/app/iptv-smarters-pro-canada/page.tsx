@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Smarters Pro Canada 2026 — Setup & Free Trial" },
   description:
     "IPTV Smarters Pro setup guide for Canada 2026. Configure Smarters Pro on Firestick, Android, iPhone & Smart TV with Maple4K. 50,000+ channels, free 24h trial.",
-  keywords:
-    "ip tv smarters pro, iptv smarters pro, iptv smarters, smarters pro, smarterspro, smarters players lite, iptv smarters pro free, iptv smarters pro pc, smarters player, ip tv smarter pro, ip tv smarters, ip tv smart pro, smarters iptv pro, smarters pro iptv, iptv smarters lite, iptv smarters downloader, iptv smarters pro canada",
+  keywords: "ip tv smarters pro, iptv smarters pro, iptv smarters, smarters pro, smarterspro, smarters players lite, iptv smarters pro free, iptv smarters pro pc, smarters player, ip tv smarter pro, ip tv smarters, ip tv smart pro, smarters iptv pro, smarters pro iptv, iptv smarters lite, iptv smarters downloader, iptv smarters pro canada, ip smarters pro, ip smarter pro, iptvsmarterspro, iptv smarters android, iptv smarters apple tv, iptv smasters google play, iptv smasters iphone, iptv smasters on roku tv, iptv smasters player android, iptv smasters player samsung, iptv smasters pro apple tv, iptv smasters pro com, iptv smasters pro iphone, iptv smasters pro live, iptv smasters pro m3u, iptv smasters pro tv, smarters player pro, smarters player tv, smarters pro tv, smarterstv, iptv smart pro, smart pro iptv, smart plus iptv, smarter player pro",
   alternates: { canonical: "https://maple4k.ca/iptv-smarters-pro-canada" },
   openGraph: {
     title: "IPTV Smarters Pro Canada 2026 — Setup Guide & Free Trial | Maple4K",
@@ -251,6 +251,7 @@ export default function SmartersProCanadaPage() {
             </p>
           </div>
         </section>
+      <ExtraSections path="/iptv-smarters-pro-canada" />
       </main>
     </>
   );

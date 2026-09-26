@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "What Is an M3U Playlist? IPTV Guide Canada 2026" },
   description:
     "What is an M3U playlist and how does it work with IPTV? A plain-English guide for Canadians covering M3U links, EPG, and which apps support them.",
-  keywords: "m3u, m3u iptv, m3u list, iptv m3u list, liste m3u iptv, player m3u, m3u ip tv, iptv player m3u",
+  keywords: "m3u, m3u iptv, m3u list, iptv m3u list, liste m3u iptv, player m3u, m3u ip tv, iptv player m3u, iptv m3u",
   alternates: { canonical: "https://maple4k.ca/blog/what-is-m3u-iptv-canada", languages: { "en-CA": "https://maple4k.ca/blog/what-is-m3u-iptv-canada", "fr-CA": "https://maple4k.ca/fr/liste-m3u-iptv", "x-default": "https://maple4k.ca/blog/what-is-m3u-iptv-canada" } },
   openGraph: {
     title: "What Is an M3U Playlist? IPTV M3U Guide for Canada 2026 | Maple4K",
@@ -154,6 +155,7 @@ export default function WhatIsM3uPage() {
             Going deeper: <Link href="/blog/iptv-vlc-m3u-kodi-guide-canada" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>full VLC, M3U &amp; Kodi setup guide</Link>
           </p>
         </article>
+      <ExtraSections path="/blog/what-is-m3u-iptv-canada" />
       </main>
     </>
   );

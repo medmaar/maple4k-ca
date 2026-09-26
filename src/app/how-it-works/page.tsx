@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "How IPTV Works in Canada — Setup in 3 Steps | Maple4K" },
   description:
     "Learn how Maple4K IPTV works in Canada. Simple 3-step setup, compatible devices, internet requirements — everything you need to start 4K streaming today.",
-  keywords:
-    "how does IPTV work Canada, how to set up Maple4K, IPTV setup Canada, IPTV explained Canada",
+  keywords: "how does IPTV work Canada, how to set up Maple4K, IPTV setup Canada, IPTV explained Canada, how iptv works, iptv setup, iptv installer",
   alternates: { canonical: "https://maple4k.ca/how-it-works", languages: { "en-CA": "https://maple4k.ca/how-it-works", "fr-CA": "https://maple4k.ca/fr/installer-iptv-canada", "x-default": "https://maple4k.ca/how-it-works" } },
   openGraph: {
     title: "How IPTV Works in Canada | Maple4K – Best 4K IPTV Canada",
@@ -260,7 +260,8 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
-    </main>
+    <ExtraSections path="/how-it-works" />
+      </main>
     </>
   );
 }

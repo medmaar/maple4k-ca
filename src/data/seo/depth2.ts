@@ -2,6 +2,30 @@ import type { Section } from "./types";
 
 /** Second depth pass: extra unique sections for the highest-value pages. */
 export const depth2: Record<string, Section[]> = {
+  "/dreamlink-box-canada": [
+    {
+      h2: "Enigma2, Dreambox and IPTV",
+      paras: [
+        "Some Linux receivers in the Dreambox and Dreamlink family run Enigma2, a receiver software that can play IPTV through plugins and playlists. Searches for 'IPTV Enigma2' usually mean adding an M3U bouquet to such a box. If your receiver supports it, ask [Maple4K support](/contact) for an M3U link and follow your image's plugin instructions; if it does not, an Android box or Fire Stick is easier.",
+      ],
+    },
+  ],
+  "/blog/iptv-server-explained-canada": [
+    {
+      h2: "IPTV sharing and connection limits",
+      paras: [
+        "'IPTV sharing' usually means letting several people or devices use one login. Each plan allows a set number of simultaneous connections; exceeding it can cause freezing or dropped streams for everyone. Do not post your login publicly, and choose a plan with enough connections for your household — see [pricing](/pricing). If two rooms watch at once, you need two connections.",
+      ],
+    },
+  ],
+  "/fr/installer-iptv-canada": [
+    {
+      h2: "Freebox, Orange et IPTV : de quoi parle-t-on?",
+      paras: [
+        "Freebox et Orange sont des offres de télévision par Internet de fournisseurs français : le décodeur est fourni par l'opérateur. Les recherches « IPTV Freebox » ou « IPTV Orange » signifient souvent qu'on veut ajouter une application IPTV. Au Canada, la solution est plus simple : utilisez une clé Fire Stick, un boîtier Android ou l'application de votre téléviseur, puis entrez vos identifiants Maple4K. Le terme « iptvisuel » désigne le même besoin : regarder l'IPTV avec des identifiants et un lecteur. Voir [lecteur IPTV](/fr/lecteur-iptv-canada).",
+      ],
+    },
+  ],
   "/tivimate-premium-canada": [
     {
       h2: "TiviMate Premium myths and facts",

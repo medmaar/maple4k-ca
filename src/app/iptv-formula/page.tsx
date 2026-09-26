@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 export const metadata: Metadata = {
   title: { absolute: "Formuler Z11 Pro Max Canada — IPTV Setup 2026 | Maple4K" },
   description: "Set up Maple4K IPTV on Formuler Z11, Z11 Pro, Z11 Pro Max, Z8, Z8 Pro, Z10, and all Formuler Android TV boxes in Canada. 4K IPTV — free trial from $9/month.",
@@ -116,7 +117,8 @@ export default function IPTVFormulaPage() {
         </div>
       </section>
 
-    </main>
+    <ExtraSections path="/iptv-formula" />
+      </main>
     </>
   );
 }

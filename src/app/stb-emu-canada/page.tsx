@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "STB Emu Pro Canada 2026 — MAC-Address Setup Guide | Maple4K" },
   description:
     "STB Emu Pro setup guide for Canada 2026. Configure STB Emu / StbEmu Pro with Maple4K using portal URL and MAC address. 50,000+ channels, free 24h trial.",
-  keywords: "stb emu pro, stbemu pro, iptv stbemu, stb emu canada, stbemu pro canada, stb emulator iptv, mag emulator canada",
+  keywords: "stb emu pro, stbemu pro, iptv stbemu, stb emu canada, stbemu pro canada, stb emulator iptv, mag emulator canada, stbemu iptv, stbemu 4k, stbemu pro firestick, stb emu firestick, stb emu 4k",
   alternates: { canonical: "https://maple4k.ca/stb-emu-canada" },
   openGraph: {
     title: "STB Emu Pro Canada 2026 — MAC-Address Setup Guide | Maple4K",
@@ -181,6 +182,7 @@ export default function StbEmuCanadaPage() {
             </p>
           </div>
         </section>
+      <ExtraSections path="/stb-emu-canada" />
       </main>
     </>
   );

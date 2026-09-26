@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import FreeTrialForm from "./FreeTrialForm";
 import PlanFAQ, { type FaqItem } from "../pricing/PlanFAQ";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Free Trial Canada 2026 — Test 4K Free for 24 Hours" },
   description: "IPTV free trial Canada — test Maple4K 50,000+ channels + Netflix for 24 hours free. No credit card required. Free trial iptv, iptv free, best iptv canada.",
-  keywords: "iptv free trial, free trial iptv, iptv free, free iptv canada, iptv canada free trial, best iptv canada, iptv subscription canada, iptv near me, iptv providers canada",
+  keywords: "iptv free trial, free trial iptv, iptv free, free iptv canada, iptv canada free trial, best iptv canada, iptv subscription canada, iptv near me, iptv providers canada, iptv trial, trial iptv, iptv free trial canada 24 hours",
   alternates: { canonical: "https://maple4k.ca/free-trial" },
   openGraph: {
     title: "Free IPTV Trial Canada — Test Maple4K Risk-Free | Maple4K",
@@ -151,6 +152,7 @@ export default function FreeTrialPage() {
             <p style={{ position: "absolute", bottom: 14, left: 16, margin: 0, fontWeight: 700, fontSize: 13, color: "#fff", textShadow: "0 1px 4px rgba(0,0,0,0.9)" }}>🇨🇦 Full access in minutes — 50,000+ channels + Netflix</p>
           </div>
         </section>
+      <ExtraSections path="/free-trial" />
       </main>
     </>
   );

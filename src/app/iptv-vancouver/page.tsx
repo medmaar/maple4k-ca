@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Vancouver | Maple4K – Best 4K IPTV Canada" },
   description:
     "Maple4K is Vancouver's best IPTV service. Stream Canucks, Whitecaps, TSN, Sportsnet, CBC and 50,000+ channels + Netflix in 4K. Plans from $9. Free trial.",
-  keywords: "iptv vancouver, iptv near me, best iptv vancouver, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada",
+  keywords: "iptv vancouver, iptv near me, best iptv vancouver, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada, vancouver iptv service",
   alternates: { canonical: "https://maple4k.ca/iptv-vancouver" },
   openGraph: {
     title: "IPTV Vancouver | Maple4K – Best 4K IPTV Canada",
@@ -306,6 +307,7 @@ export default function IPTVVancouverPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-vancouver" />
       </main>
     </>
   );

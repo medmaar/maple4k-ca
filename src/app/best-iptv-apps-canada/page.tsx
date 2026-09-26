@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Apps for Canada 2026 — 14 Players Compared" },
   description:
     "The 14 best IPTV player apps for Canada in 2026 — TiviMate, IPTV Smarters Pro, XCIPTV, Xtream IPTV, Smart4IPTV, STB Emu Pro and more. Compared, ranked, with setup links.",
-  keywords:
-    "iptv player, iptv app, iptvapp, xc iptv, xtream iptv, xtreme hd iptv, smart4iptv, mytvonline, implayer, iptvpro, cloud stream, forevertv, diablo iptv, pandar tv, best iptv player canada, best iptv app canada, atlaspro, beastiptv, dreamlink t2, dodo iptv, dream iptv, fast iptv, flix iptv, foxiptv, gold iptv, guru iptv, hot iptv, iplaytv, kemo iptv, king iptv, lion iptv, lux iptv, mega iptv, epic iptv, extreme iptv, eagle iptv, elon iptv, apollo iptv, alibaba iptv, b1g iptv, e vision iptv, evybuy, jellyfin iptv",
+  keywords: "iptv player, iptv app, iptvapp, xc iptv, xtream iptv, xtreme hd iptv, smart4iptv, mytvonline, implayer, iptvpro, cloud stream, forevertv, diablo iptv, pandar tv, best iptv player canada, best iptv app canada, atlaspro, beastiptv, dreamlink t2, dodo iptv, dream iptv, fast iptv, flix iptv, foxiptv, gold iptv, guru iptv, hot iptv, iplaytv, kemo iptv, king iptv, lion iptv, lux iptv, mega iptv, epic iptv, extreme iptv, eagle iptv, elon iptv, apollo iptv, alibaba iptv, b1g iptv, e vision iptv, evybuy, jellyfin iptv, best iptv apps, best iptv app, iptv apps",
   alternates: { canonical: "https://maple4k.ca/best-iptv-apps-canada" },
   openGraph: {
     title: "Best IPTV Apps & Players for Canada 2026 (14 Compared) | Maple4K",
@@ -264,6 +264,7 @@ export default function BestIptvAppsCanadaPage() {
             </p>
           </div>
         </section>
+      <ExtraSections path="/best-iptv-apps-canada" />
       </main>
     </>
   );

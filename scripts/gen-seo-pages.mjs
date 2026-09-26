@@ -18,7 +18,7 @@ buildSync({
   logLevel: "error",
 });
 const require = createRequire(import.meta.url);
-const { seoPages, lookupLink } = require(out);
+const { seoPages, lookupLink, existingExtras } = require(out);
 
 const SITE = "https://maple4k.ca";
 const LASTMOD = "2026-09-26";
@@ -48,6 +48,18 @@ for (const p of seoPages) {
   for (const l of [p.hub, ...(p.related ?? []), ...(p.hubLinks ?? []), ...(p.alt ?? []).map(a => a.path)].filter(Boolean)) {
     if (!lookupLink(l) && !allPaths.has(l)) knownExisting.add(l);
   }
+}
+
+// ───────── existing pages: append extra meta keywords (idempotent) ─────────
+for (const [path, x] of Object.entries(existingExtras)) {
+  const f = join(root, "src/app", path, "page.tsx");
+  if (!existsSync(f)) { warn(`extras for missing page ${path}`); continue; }
+  let src = readFileSync(f, "utf8");
+  const m = src.match(/keywords:\s*"([^"]*)"/);
+  if (!m) { warn(`no keywords meta in ${path}`); continue; }
+  const have = new Set(m[1].split(",").map(k => k.trim().toLowerCase()));
+  const add = x.keywords.filter(k => !have.has(k.toLowerCase()));
+  if (add.length) { src = src.replace(m[0], `keywords: "${m[1]}, ${add.join(", ")}"`); writeFileSync(f, src); }
 }
 
 // ───────── route files ─────────

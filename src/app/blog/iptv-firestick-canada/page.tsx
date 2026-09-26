@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "Install IPTV on Firestick Canada 2026 — Step-by-Step" },
   description:
     "Complete guide to installing Maple4K IPTV on Amazon Fire Stick in Canada. Works on Fire Stick 4K, Lite, and all Fire TV devices. Easy step-by-step setup.",
-  keywords:
-    "IPTV Firestick Canada, install IPTV Fire Stick Canada, how to set up IPTV Firestick Canada, IPTV Fire TV Canada",
+  keywords: "IPTV Firestick Canada, install IPTV Fire Stick Canada, how to set up IPTV Firestick Canada, IPTV Fire TV Canada, install iptv firestick",
   alternates: { canonical: "https://maple4k.ca/blog/iptv-firestick-canada" },
   openGraph: {
     title: "Install IPTV on Firestick Canada 2026 | Maple4K – Best 4K IPTV Canada",
@@ -260,7 +260,8 @@ export default function IPTVFirestickBlogPost() {
             </div>
           </div>
           </article>
-    </main>
+    <ExtraSections path="/blog/iptv-firestick-canada" />
+      </main>
     </>
   );
 }

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Smarters Pro Canada 2026 — Full Setup Tutorial" },
   description: "Complete IPTV Smarters Pro setup guide for Canada 2026. Configure Smarters Pro on iPhone, Android, Fire Stick, and Smart TV. Step-by-step tutorial with.",
-  keywords: "iptv smarters pro canada, iptv smarters pro setup, iptv smarters canada, smarters pro iptv, iptv smarters pro android, iptv smarters pro iphone, iptv smarters pro fire stick",
+  keywords: "iptv smarters pro canada, iptv smarters pro setup, iptv smarters canada, smarters pro iptv, iptv smarters pro android, iptv smarters pro iphone, iptv smarters pro fire stick, iptv smarters pro tutorial",
   alternates: { canonical: "https://maple4k.ca/blog/iptv-smarters-pro-canada" },
   openGraph: {
     title: "IPTV Smarters Pro Canada 2026 — Setup Guide | Maple4K",
@@ -227,6 +228,7 @@ export default function IPTVSmartersProPage() {
             </p>
           </div>
         </section>
+      <ExtraSections path="/blog/iptv-smarters-pro-canada" />
       </main>
     </>
   );

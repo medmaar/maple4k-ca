@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV for Samsung & LG Smart TV in Canada 2026 | Maple4K" },
   description:
     "Install Maple4K IPTV on your Samsung or LG Smart TV in Canada. 50,000+ channels + Netflix, NHL, TSN, CTV in 4K. Easy setup in minutes. From $9/month.",
-  keywords: "IPTV Samsung TV Canada, IPTV LG Smart TV Canada, Smart TV Maple4K",
+  keywords: "IPTV Samsung TV Canada, IPTV LG Smart TV Canada, Smart TV Maple4K, iptv smart tv, ip tv smart tv, iptv samsung smart tv",
   alternates: { canonical: "https://maple4k.ca/iptv-smart-tv-canada" },
   openGraph: {
     title: "IPTV for Samsung & LG Smart TV in Canada 2026 | Maple4K",
@@ -191,6 +192,7 @@ export default function IPTVSmartTVCanadaPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-smart-tv-canada" />
       </main>
     </>
   );

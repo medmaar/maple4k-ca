@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 export const metadata: Metadata = {
   title: { absolute: "Smart IPTV Canada 2026 — Samsung & LG TV Service | Maple4K" },
   description: "Stream IPTV on any Smart TV in Canada. Maple4K works on Samsung, LG, Android TV, Apple TV and all smart TVs. Free trial, 4K quality. Smart IPTV Canada.",
-  keywords: "smart iptv, iptv smarter, iptv smarters pro, best iptv app, iptv service canada, best iptv canada, iptv providers canada, siptv, sip tv, my siptv, my sip tv, smart iptv player, smart iptv pro, smart iptv premium, smart iptv android tv, smart iptv samsung, smart iptv sony, smart iptv list, smart iptv m3u",
+  keywords: "smart iptv, iptv smarter, iptv smarters pro, best iptv app, iptv service canada, best iptv canada, iptv providers canada, siptv, sip tv, my siptv, my sip tv, smart iptv player, smart iptv pro, smart iptv premium, smart iptv android tv, smart iptv samsung, smart iptv sony, smart iptv list, smart iptv m3u, smart iptv com, smart iptv fire stick, smart iptv firestick, smart iptv pc, smart iptv activation, siptv activation",
   alternates: { canonical: "https://maple4k.ca/smart-iptv" },
 };
 
@@ -118,7 +119,8 @@ export default function SmartIPTVPage() {
         </div>
       </section>
 
-    </main>
+    <ExtraSections path="/smart-iptv" />
+      </main>
     </>
   );
 }

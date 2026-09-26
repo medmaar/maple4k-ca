@@ -103,7 +103,17 @@ export default function SeoPage({ page: p }: { page: SeoPageData }) {
       }
     : {
         "@context": "https://schema.org",
-        "@type": "WebPage",
+        "@type": p.kind === "hub" ? "CollectionPage" : "WebPage",
+        ...(hubLinks.length > 0
+          ? {
+              mainEntity: {
+                "@type": "ItemList",
+                numberOfItems: hubLinks.length,
+                itemListElement: hubLinks.map((l, i) => ({ "@type": "ListItem", position: i + 1, name: lookupLink(l)!.label, url: SITE + (l === "/" ? "" : l) })),
+              },
+            }
+          : {}),
+        publisher: { "@id": `${SITE}/#organization` },
         name: p.title,
         description: p.description,
         url,

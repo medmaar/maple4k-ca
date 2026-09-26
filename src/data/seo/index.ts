@@ -8,6 +8,9 @@ import { commerce } from "./commerce";
 import { info } from "./info";
 import { brands } from "./brands";
 import { french } from "./french";
+import { groupPages } from "./groups";
+import { gaps } from "./gaps";
+import { glossary } from "./glossary";
 import { depthApps } from "./depth-apps";
 import { depthDevices } from "./depth-devices";
 import { depthCommerce } from "./depth-commerce";
@@ -30,6 +33,9 @@ const base: SeoPageData[] = [
   ...info,
   ...brands,
   ...french,
+  ...groupPages,
+  ...gaps,
+  ...glossary,
 ];
 
 // Long-form depth sections are appended after the core sections of each page.
@@ -64,3 +70,5 @@ export function relatedFor(page: SeoPageData, max = 8): string[] {
     .forEach(p => add(p.path));
   return out.slice(0, max);
 }
+
+export { existingExtras } from "./extras-all";

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 const howToSchema = {
   "@context": "https://schema.org",
@@ -18,8 +19,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV on iPhone & iPad Canada 2026 — Setup | Maple4K" },
   description:
     "Stream IPTV on iPhone or iPad in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Free.",
-  keywords:
-    "IPTV iPhone Canada, IPTV iPad Canada, IPTV iOS Canada, best IPTV for iPhone Canada, IPTV app Canada iOS",
+  keywords: "IPTV iPhone Canada, IPTV iPad Canada, IPTV iOS Canada, best IPTV for iPhone Canada, IPTV app Canada iOS, iptv iphone, iptv ipad, iptv sur iphone",
   alternates: { canonical: "https://maple4k.ca/iptv-ios-canada" },
   openGraph: {
     title: "IPTV iPhone & iPad Canada | Maple4K – Best 4K IPTV Canada",
@@ -207,6 +207,7 @@ export default function IPTVIOSPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-ios-canada" />
       </main>
     </>
   );

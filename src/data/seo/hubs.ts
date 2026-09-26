@@ -178,7 +178,7 @@ export const hubs: SeoPageData[] = [
     blurb: "Formuler, MAG, Dreamlink, BuzzTV and more",
     title: "IPTV Set Top Box Canada 2026 — Formuler, MAG & Android",
     description: "IPTV set-top box guide for Canada: Formuler, MAG, Dreamlink, BuzzTV, TVIP and Android boxes explained, with setup guides for each model.",
-    keywords: ["iptv set top box", "set top box iptv", "iptv stb", "iptv set", "set iptv", "set ip tv", "iptv receiver", "iptv device", "iptv smart box", "ott pro box", "ott navigator premium", "iptv box"],
+    keywords: ["iptv set top box", "set top box iptv", "iptv stb", "iptv set", "set iptv", "set ip tv", "iptv receiver", "iptv device", "iptv smart box", "ott pro box", "ott navigator premium", "box tv iptv", "tv ip box", "iptv box"],
     eyebrow: "IPTV Set-Top Boxes",
     h1: "IPTV Set-Top Boxes for Canada — Formuler, MAG, Dreamlink & More",
     intro: "An IPTV set-top box (STB) is a small device dedicated to IPTV. The main families are Formuler (Android-based, MyTVOnline 3), Infomir MAG (portal-based), Dreamlink, BuzzTV and TVIP, plus general Android TV boxes. Each has a Maple4K setup guide below.",
@@ -271,7 +271,12 @@ export const hubs: SeoPageData[] = [
         ],
       },
     ],
-    hubLinks: brandDefs.map(b => `/${b.slug}-alternative`),
+    hubLinks: [
+      ...brandDefs.map(b => `/${b.slug}-alternative`),
+      "/iptv-brands-power-speed", "/iptv-brands-gold-royal", "/iptv-brands-animals-myth",
+      "/iptv-brands-space-tech", "/iptv-brands-everyday-names", "/iptv-brands-numbers-domains",
+      "/iptv-brand-names-a-z",
+    ],
     faqs: [
       { q: "Is Maple4K affiliated with other IPTV brands?", a: "No. Maple4K is independent. Other brand names are separate services." },
       { q: "How do I compare IPTV providers fairly?", a: "Use each provider's free trial on the same device at the same time of day, test a live sports channel and a 4K movie, and message support." },

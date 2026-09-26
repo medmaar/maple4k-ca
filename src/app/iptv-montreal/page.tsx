@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Montreal | Maple4K – Best 4K IPTV Canada" },
   description:
     "Maple4K is Montreal's best IPTV service. Stream Canadiens, RDS, TVA Sports, TSN, CBC, and 50,000+ channels + Netflix in 4K. Plans from $9. Free trial.",
-  keywords: "iptv montreal, iptv near me, best iptv montreal, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada",
+  keywords: "iptv montreal, iptv near me, best iptv montreal, iptv canada, iptv service canada, iptv providers canada, best iptv in canada, canadian iptv, iptv subscription canada, iptv montréal, best iptv montréal, montréal iptv service",
   alternates: { canonical: "https://maple4k.ca/iptv-montreal" },
   openGraph: {
     title: "IPTV Montreal | Maple4K – Best 4K IPTV Canada",
@@ -306,6 +307,7 @@ export default function IPTVMontrealPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-montreal" />
       </main>
     </>
   );

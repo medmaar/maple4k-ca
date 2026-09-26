@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV on Roku Canada 2026 — Options Explained | Maple4K" },
   description:
     "Stream IPTV on Roku in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy private channel setup. Free trial.",
-  keywords:
-    "IPTV Roku Canada, Roku Maple4K, best IPTV for Roku Canada, Roku streaming Maple4K, iptv on roku tv, iptv roku tv, roku tv iptv, tivimate roku",
+  keywords: "IPTV Roku Canada, Roku Maple4K, best IPTV for Roku Canada, Roku streaming Maple4K, iptv on roku tv, iptv roku tv, roku tv iptv, tivimate roku, roku express iptv, iptv smasters on roku tv, roku iptv app, iptv roku stick",
   alternates: { canonical: "https://maple4k.ca/iptv-roku-canada" },
   openGraph: {
     title: "IPTV Roku Canada | Maple4K – Best 4K IPTV Canada",
@@ -208,6 +208,7 @@ export default function IPTVRokuPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-roku-canada" />
       </main>
     </>
   );

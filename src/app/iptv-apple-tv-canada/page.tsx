@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4K" },
   description:
     "Use Maple4K IPTV on Apple TV, iPhone, and iPad in Canada. 50,000+ channels + Netflix, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From.",
-  keywords: "IPTV Apple TV Canada, IPTV iPhone Canada, IPTV iPad Canada 2026",
+  keywords: "IPTV Apple TV Canada, IPTV iPhone Canada, IPTV iPad Canada 2026, iptv apple tv 4k, iptv on apple tv 4k, iptv smarters apple tv, iptv sur apple tv",
   alternates: { canonical: "https://maple4k.ca/iptv-apple-tv-canada" },
   openGraph: {
     title: "IPTV on Apple TV & iPhone in Canada 2026 | Maple4K",
@@ -181,6 +182,7 @@ export default function IPTVAppleTVCanadaPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-apple-tv-canada" />
       </main>
     </>
   );

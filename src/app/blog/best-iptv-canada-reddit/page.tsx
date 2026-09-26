@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV in Canada per Reddit 2026 — Honest Roundup" },
   description:
     "What does r/PleX, r/IPTV and other Reddit threads actually say makes a good IPTV service in Canada? We break down the recurring themes and what to look for.",
-  keywords: "iptv reddit, reddit iptv, best iptv reddit, best iptv provider reddit, iptv providers reddit, iptv services reddit, best iptv reddit, reddit best iptv, reddit iptv, iptv reddit, best iptv provider reddit, best iptv service reddit, iptv providers reddit, iptv services reddit, iptv subscription reddit",
+  keywords: "iptv reddit, reddit iptv, best iptv reddit, best iptv provider reddit, iptv providers reddit, iptv services reddit, best iptv reddit, reddit best iptv, reddit iptv, iptv reddit, best iptv provider reddit, best iptv service reddit, iptv providers reddit, iptv services reddit, iptv subscription reddit, tivimate reddit",
   alternates: { canonical: "https://maple4k.ca/blog/best-iptv-canada-reddit" },
   openGraph: {
     title: "Best IPTV in Canada According to Reddit (2026 Roundup) | Maple4K",
@@ -141,6 +142,7 @@ export default function BestIptvRedditPage() {
             <Link href="/best-iptv-canada" className="btn-outline">See Full Comparison →</Link>
           </div>
         </article>
+      <ExtraSections path="/blog/best-iptv-canada-reddit" />
       </main>
     </>
   );

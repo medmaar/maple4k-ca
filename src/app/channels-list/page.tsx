@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Channels Canada — 50,000+ Channels + Netflix | Maple4K" },
   description:
     "Full Maple4K IPTV channel list for Canada 2026. Browse 50,000+ channels + Netflix including TSN, Sportsnet, CBC, CTV, RDS, TVA, NHL, NFL, NBA, and.",
-  keywords:
-    "IPTV channels Canada, Maple4K channel list, Canadian IPTV channels, TSN IPTV, Sportsnet IPTV Canada",
+  keywords: "IPTV channels Canada, Maple4K channel list, Canadian IPTV channels, TSN IPTV, Sportsnet IPTV Canada, iptv channels list, iptv list",
   alternates: { canonical: "https://maple4k.ca/channels-list" },
 };
 
@@ -8559,7 +8559,8 @@ export default function ChannelsListPage() {
           </div>
         </div>
       </section>
-    </main>
+    <ExtraSections path="/channels-list" />
+      </main>
     </>
   );
 }

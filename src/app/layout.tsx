@@ -45,13 +45,19 @@ export const metadata: Metadata = {
 const sitelinksSearchSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://maple4k.ca/#website",
   "name": "Maple4K",
-  "url": "https://maple4k.ca"
+  "url": "https://maple4k.ca",
+  "inLanguage": ["en-CA", "fr-CA"],
+  "publisher": { "@id": "https://maple4k.ca/#organization" }
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://maple4k.ca/#organization",
+  "areaServed": { "@type": "Country", "name": "Canada" },
+  "sameAs": ["https://t.me/IPTVCanadaSupport"],
   "name": "Maple4K",
   "url": "https://maple4k.ca",
   "logo": "https://maple4k.ca/og-image.jpg",

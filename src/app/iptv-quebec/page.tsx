@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Québec 2026 — 50 000+ Chaînes dès 9 $ | Maple4K" },
   description: "Meilleur service IPTV Québec 2026. TVA, RDS, ICI Radio-Canada, Noovo, V Télé en 4K Ultra HD. Essai gratuit 24h sans carte de crédit. IPTV abonnement dès.",
-  keywords: "iptv québec, iptv canada, iptv montreal, iptv abonnement québec, meilleur iptv québec, iptv service québec, iptv 4k québec, iptv near me, iptv subscription canada",
+  keywords: "iptv québec, iptv canada, iptv montreal, iptv abonnement québec, meilleur iptv québec, iptv service québec, iptv 4k québec, iptv near me, iptv subscription canada, iptv rive nord, iptv rive-nord, iptv laurentides, iptv laval, iptv longueuil, iptv quebec city, abonnement iptv québec",
   alternates: { canonical: "https://maple4k.ca/iptv-quebec" },
   openGraph: {
     url: "https://maple4k.ca/iptv-quebec",
@@ -99,6 +100,7 @@ export default function IptvQuebecPage() {
           </div>
         </div>
       </section>
-    </main>
+    <ExtraSections path="/iptv-quebec" />
+      </main>
   );
 }

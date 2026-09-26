@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SimpleFaq from "../../components/SimpleFaq";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "About Maple4K — Canada's Best 4K IPTV Service | Maple4K" },
@@ -154,6 +155,7 @@ export default function AboutPage() {
           </div>
         </section>
         <SimpleFaq title="About Maple4K \u2014 FAQ" items={[{"q": "What is Maple4K?", "a": "Maple4K is an independent IPTV service built for Canadian viewers, with 50,000+ channels, 4K streams and support in English and French."}, {"q": "How much does Maple4K cost?", "a": "Plans start at $9 for one month, $29 for three months, $39 for six months and $49 for twelve months on one connection."}, {"q": "Is there a free trial?", "a": "Yes. New customers can request a free 24-hour trial with no credit card required."}, {"q": "Which devices does Maple4K support?", "a": "Fire Stick, Android and Google TV, Apple TV, Samsung and LG smart TVs, iPhone, iPad, Android phones, Windows, Mac and dedicated IPTV boxes such as Formuler and MAG."}, {"q": "How do I contact support?", "a": "Message the team on WhatsApp, use live chat or email support@maple4k.ca. Support is available around the clock."}]} />
+      <ExtraSections path="/about" />
       </main>
     </>
   );

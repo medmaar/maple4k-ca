@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SimpleFaq from "../../../components/SimpleFaq";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "Is IPTV Legal in Canada? Honest 2026 Answer | Maple4K" },
   description:
     "Is IPTV legal in Canada in 2026? We explain CRTC rules, legal vs illegal IPTV, and what you need to know as a Canadian consumer.",
-  keywords: "is iptv legal in canada, iptv legal canada 2026, crtc iptv canada",
+  keywords: "is iptv legal in canada, iptv legal canada 2026, crtc iptv canada, iptv legal, iptv légal",
   alternates: { canonical: "https://maple4k.ca/blog/is-iptv-legal-canada", languages: { "en-CA": "https://maple4k.ca/blog/is-iptv-legal-canada", "fr-CA": "https://maple4k.ca/fr/iptv-legal-canada", "x-default": "https://maple4k.ca/blog/is-iptv-legal-canada" } },
   openGraph: {
     title: "Is IPTV Legal in Canada? (2026 Honest Answer) | Maple4K",
@@ -305,6 +306,7 @@ export default function IsIPTVLegalCanada() {
           </div>
         </article>
         <SimpleFaq title="Is IPTV Legal in Canada? — FAQ" items={legalFaqs} />
+      <ExtraSections path="/blog/is-iptv-legal-canada" />
       </main>
     </>
   );

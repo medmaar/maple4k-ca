@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV for Hockey Canada 2026 — Watch NHL Free | Maple4K" },
   description:
     "The best IPTV service for watching hockey in Canada 2026. Every NHL game, TSN all feeds, Sportsnet all feeds — zero blackouts. Free trial from $9/month.",
-  keywords:
-    "best iptv for hockey canada, iptv nhl canada, watch hockey iptv canada, nhl iptv canada 2026, tsn iptv canada, sportsnet iptv canada, iptv hockey streaming canada",
+  keywords: "best iptv for hockey canada, iptv nhl canada, watch hockey iptv canada, nhl iptv canada 2026, tsn iptv canada, sportsnet iptv canada, iptv hockey streaming canada, iptv hockey, nhl iptv",
   alternates: { canonical: "https://maple4k.ca/blog/best-iptv-for-hockey-canada-2026" },
   openGraph: {
     title: "Best IPTV for Hockey Canada 2026 — Watch NHL Free | Maple4K",
@@ -172,6 +172,7 @@ export default function BestIPTVHockeyPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/blog/best-iptv-for-hockey-canada-2026" />
       </main>
     </>
   );

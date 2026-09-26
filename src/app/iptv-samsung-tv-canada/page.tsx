@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV on Samsung TV Canada 2026 — Tizen Setup | Maple4K" },
   description:
     "Stream IPTV on your Samsung Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN and more. Easy Tizen OS setup. Free trial.",
-  keywords:
-    "IPTV Samsung TV Canada, IPTV Samsung Smart TV Canada, Samsung TV Maple4K, best IPTV Samsung Canada, iptv for samsung tv, smart iptv samsung",
+  keywords: "IPTV Samsung TV Canada, IPTV Samsung Smart TV Canada, Samsung TV Maple4K, best IPTV Samsung Canada, iptv for samsung tv, smart iptv samsung, smasters player samsung, iptv smasters player samsung, samsung tizen iptv, iptv samsung tizen",
   alternates: { canonical: "https://maple4k.ca/iptv-samsung-tv-canada" },
   openGraph: {
     title: "IPTV Samsung TV Canada | Maple4K – Best 4K IPTV Canada",
@@ -208,6 +208,7 @@ export default function IPTVSamsungPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-samsung-tv-canada" />
       </main>
     </>
   );

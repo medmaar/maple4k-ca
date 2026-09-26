@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV on LG TV Canada 2026 — webOS Setup | Maple4K" },
   description:
     "Stream IPTV on your LG Smart TV in Canada with Maple4K. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Free trial.",
-  keywords:
-    "IPTV LG TV Canada, IPTV LG Smart TV Canada, LG webOS Maple4K, best IPTV for LG TV Canada",
+  keywords: "IPTV LG TV Canada, IPTV LG Smart TV Canada, LG webOS Maple4K, best IPTV for LG TV Canada, iptv lg, iptv lg tv, iptv lg webos, iptv for lg webos, iptv lg smart",
   alternates: { canonical: "https://maple4k.ca/iptv-lg-tv-canada" },
   openGraph: {
     title: "IPTV LG TV Canada | Maple4K – Best 4K IPTV Canada",
@@ -206,6 +206,7 @@ export default function IPTVLGTVPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-lg-tv-canada" />
       </main>
     </>
   );

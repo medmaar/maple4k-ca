@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 const howToSchema = {
   "@context": "https://schema.org",
@@ -18,8 +19,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV on Android Canada 2026 — Phone & Tablet Setup" },
   description:
     "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Free trial.",
-  keywords:
-    "IPTV Android Canada, IPTV Android phone Canada, IPTV Android tablet Canada, best IPTV app Android Canada",
+  keywords: "IPTV Android Canada, IPTV Android phone Canada, IPTV Android tablet Canada, best IPTV app Android Canada, iptv android, android iptv player, iptv smarters android",
   alternates: { canonical: "https://maple4k.ca/iptv-android-canada" },
   openGraph: {
     title: "IPTV Android Canada | Maple4K – Best 4K IPTV Canada",
@@ -207,6 +207,7 @@ export default function IPTVAndroidPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-android-canada" />
       </main>
     </>
   );

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV vs Cable Canada 2026 — Cost & Features Compared" },
   description:
     "IPTV vs cable TV in Canada — we compare price, channels, 4K picture quality, contracts, and flexibility to help you decide which is better in 2026.",
-  keywords:
-    "IPTV vs cable Canada, IPTV vs cable TV Canada, is IPTV better than cable Canada, IPTV or cable Canada 2026",
+  keywords: "IPTV vs cable Canada, IPTV vs cable TV Canada, is IPTV better than cable Canada, IPTV or cable Canada 2026, iptv vs cable",
   alternates: { canonical: "https://maple4k.ca/blog/iptv-vs-cable-canada" },
   openGraph: {
     title: "IPTV vs Cable Canada 2026 | Maple4K – Best 4K IPTV Canada",
@@ -304,6 +304,7 @@ export default function IPTVvsCableCanada() {
             </Link>
           </div>
         </article>
+      <ExtraSections path="/blog/iptv-vs-cable-canada" />
       </main>
     </>
   );

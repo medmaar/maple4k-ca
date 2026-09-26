@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Canada 2026 — Top Rated Service Near You | Maple4K" },
@@ -215,6 +216,7 @@ export default function BestIPTVCanadaPage() {
             ))}
           </div>
         </section>
+      <ExtraSections path="/best-iptv-canada" />
       </main>
     </>
   );

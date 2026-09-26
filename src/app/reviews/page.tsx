@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ReviewsSection from "../components/ReviewsSection";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "Maple4K Reviews — Trustpilot, Google & WhatsApp" },
@@ -129,7 +130,8 @@ export default function ReviewsPage() {
         </div>
       </section>
 
-    </main>
+    <ExtraSections path="/reviews" />
+      </main>
     </>
   );
 }

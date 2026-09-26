@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import ResellerOrderForm from "./ResellerOrderForm";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Reseller Canada 2026 — Start Your IPTV Business" },
   description:
     "Become an IPTV reseller in Canada with Maple4K. Wholesale pricing, white-label options, and a fast reseller panel. Start your own IPTV business today.",
-  keywords: "iptv resellers, best iptv resell, iptv reseller canada, iptv supplier, iptv server, iptv solutions, canadian iptv reseller, iptv provider canada, iptv resellers, iptv reseller canada, best iptv resell, iptv supplier, iptv resale, iptvresale, iptv reseller panel",
+  keywords: "iptv resellers, best iptv resell, iptv reseller canada, iptv supplier, iptv server, iptv solutions, canadian iptv reseller, iptv provider canada, iptv resellers, iptv reseller canada, best iptv resell, iptv supplier, iptv resale, iptvresale, iptv reseller panel, iptv reseller panel canada",
   alternates: { canonical: "https://maple4k.ca/reseller" },
   openGraph: {
     title: "IPTV Reseller Canada 2026 | Start Your IPTV Business – Maple4K",
@@ -182,6 +183,7 @@ export default function ResellerPage() {
           </div>
         </section>
 
+      <ExtraSections path="/reseller" />
       </main>
     </>
   );

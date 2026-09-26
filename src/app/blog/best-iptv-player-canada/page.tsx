@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Player Canada 2026 — TiviMate vs Smarters" },
   description:
     "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player. Works with Maple4K on all.",
-  keywords: "best IPTV player Canada, TiviMate Canada, IPTV Smarters Canada, IPTV app Canada 2026",
+  keywords: "best IPTV player Canada, TiviMate Canada, IPTV Smarters Canada, IPTV app Canada 2026, best iptv player, iptv player",
   alternates: { canonical: "https://maple4k.ca/blog/best-iptv-player-canada" },
   openGraph: {
     title: "Best IPTV Player Canada 2026 | Maple4K – Best 4K IPTV Canada",
@@ -215,6 +216,7 @@ export default function BestIPTVPlayerCanadaPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/blog/best-iptv-player-canada" />
       </main>
     </>
   );

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Box Canada 2026 — Box + 4K Subscription | Maple4K" },
   description: "Best IPTV box Canada 2026. Formuler, MAG, Firestick, Android TV box with 50,000+ channels + Netflix. IPTV subscription from $9/month. Free 24h trial — no.",
-  keywords: "iptv box, iptv with box, ip tv box, ip box tv, iptv box near me, iptv box price, iptv box amazon, amazon iptv box, box iptv 4k, iptv set top box, iptv stick, at iptv box, iptv box at, free box for iptv in canada, iptv box canada, best iptv box canada, formuler box canada, mag box iptv, android tv box iptv, iptv android tv box, android iptv player",
+  keywords: "iptv box, iptv with box, ip tv box, ip box tv, iptv box near me, iptv box price, iptv box amazon, amazon iptv box, box iptv 4k, iptv set top box, iptv stick, at iptv box, iptv box at, free box for iptv in canada, iptv box canada, best iptv box canada, formuler box canada, mag box iptv, android tv box iptv, iptv android tv box, android iptv player, tv ip box, iptv box 4k, box iptv",
   alternates: { canonical: "https://maple4k.ca/iptv-box" },
   openGraph: {
     url: "https://maple4k.ca/iptv-box",
@@ -116,6 +117,7 @@ export default function IptvBoxPage() {
           </div>
         </div>
       </section>
-    </main>
+    <ExtraSections path="/iptv-box" />
+      </main>
   );
 }

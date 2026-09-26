@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV on Firestick Canada 2026 — Setup Guide | Maple4K" },
   description:
     "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 50,000+ channels + Netflix, NHL, TSN & 4K quality. Free 24h trial.",
-  keywords:
-    "iptv firestick canada, amazon fire stick iptv, amazon fire tv stick iptv, fire tv iptv, fire tv stick iptv, fire stick iptv, best iptv for firestick, iptv for firestick, iptv smarters pro firestick, tivimate firestick, firestick tivimate, iptv firestick reddit, firestick iptv reddit, iptv stick",
+  keywords: "iptv firestick canada, amazon fire stick iptv, amazon fire tv stick iptv, fire tv iptv, fire tv stick iptv, fire stick iptv, best iptv for firestick, iptv for firestick, iptv smarters pro firestick, tivimate firestick, firestick tivimate, iptv firestick reddit, firestick iptv reddit, iptv stick, smarters firestick",
   alternates: { canonical: "https://maple4k.ca/iptv-firestick-canada" },
   openGraph: {
     title: "IPTV Firestick Canada | Maple4K – Best 4K IPTV Canada",
@@ -558,6 +558,7 @@ export default function IPTVFirestickCanadaPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-firestick-canada" />
       </main>
     </>
   );

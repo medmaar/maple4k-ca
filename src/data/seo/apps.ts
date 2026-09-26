@@ -579,7 +579,7 @@ export const apps: SeoPageData[] = [
     blurb: "IPTV Smarters Player Lite for smart TVs and phones",
     title: "Smarters Player Lite Canada — Setup on Samsung & LG TV",
     description: "Smarters Player Lite setup for Canada: install on Samsung, LG or Android, log in with Xtream Codes and stream Maple4K. Lite vs Pro explained.",
-    keywords: ["smarters players lite", "smarters player lite", "smarters lite", "smarters pro lite", "iptv smarters lite", "smasters player lite", "smart player lite", "iptv smasters player lite", "smarters player lite samsung tv", "smarters player lite firestick", "smarters player lite chromecast"],
+    keywords: ["smarters players lite", "smarters player lite", "smarters lite", "smarters pro lite", "iptv smarters lite", "smasters player lite", "smart player lite", "iptv smasters player lite", "smarters player lite samsung tv", "smarters player lite firestick", "smarters player lite chromecast", "smarters player lite tv", "smarters player lite sur tv samsung", "iptv smarters player"],
     eyebrow: "Smarters Player Lite · Canada",
     h1: "Smarters Player Lite Canada — Setup on Samsung, LG & Android",
     intro: "Smarters Player Lite is the lightweight version of IPTV Smarters designed for smart TVs and simple devices. It logs in with Xtream Codes, shows live TV, movies and series, and is a popular way to watch Maple4K on Samsung and LG TVs where TiviMate cannot run.",

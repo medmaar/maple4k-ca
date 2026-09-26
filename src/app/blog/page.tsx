@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { seoPages } from "../../data/seo";
 import SimpleFaq from "../../components/SimpleFaq";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Blog Canada — Guides, Reviews & Setup | Maple4K" },
   description:
     "Read Maple4K's IPTV blog. Expert guides on setup, legality, pricing comparisons, player reviews, and the best 4K IPTV services in Canada for 2026.",
-  keywords: "Maple4K blog, IPTV guide Canada 2026, best IPTV Canada review",
+  keywords: "Maple4K blog, IPTV guide Canada 2026, best IPTV Canada review, iptv blog canada, iptv guides",
   alternates: { canonical: "https://maple4k.ca/blog" },
   openGraph: {
     title: "Maple4K Blog | IPTV Guides, Reviews & News – Canada",
@@ -188,6 +189,7 @@ export default function BlogPage() {
         </div>
       </section>
       <SimpleFaq title="IPTV Blog \u2014 FAQ" items={[{"q": "What topics does the Maple4K blog cover?", "a": "Setup guides for TiviMate and IPTV Smarters Pro, device tutorials, legality explainers, cost comparisons and sports viewing guides for Canada."}, {"q": "Where should I start if I'm new to IPTV?", "a": "Read What Is IPTV? then follow a device guide for your Fire Stick, smart TV or phone."}, {"q": "How often is the blog updated?", "a": "Guides are reviewed regularly and carry a visible last-updated date."}, {"q": "Can I try IPTV before reading everything?", "a": "Yes. Start a free 24-hour trial and follow the setup guide for your device."}]} />
+      <ExtraSections path="/blog" />
       </main>
     </>
   );

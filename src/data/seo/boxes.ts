@@ -378,7 +378,7 @@ export const boxes: SeoPageData[] = [
     blurb: "Dreamlink T2, T3 and Dreamlink IPTV boxes",
     title: "Dreamlink Box Canada — T2, T3 IPTV Setup Guide 2026",
     description: "Dreamlink T2 and T3 IPTV box guide for Canada: how portal setup works, how to add Maple4K and what to try when the box shows no channels.",
-    keywords: ["dreamlink t2", "dreamlink t3", "dreamlink box", "dreamlink iptv", "dream tv iptv", "dream player iptv", "dreamlink"],
+    keywords: ["dreamlink t2", "dreamlink t3", "iptv enigma2", "enigma2 iptv", "dreambox iptv", "dreamlink box", "dreamlink iptv", "dream tv iptv", "dream player iptv", "dreamlink"],
     eyebrow: "Dreamlink · IPTV Box",
     h1: "Dreamlink Box Canada — T2 & T3 IPTV Setup Guide",
     intro: "Dreamlink T2 and T3 boxes are IPTV set-top boxes that normally connect through a portal or a supported IPTV app. To use Maple4K, check which portal or player app your model includes, then enter the URL or Xtream details we send you. If your box supports Android apps, TiviMate and Smarters Pro also work.",

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV MAG Box Canada — Setup & Best Plans 2026 | Maple4K" },
   description:
     "Set up Maple4K IPTV on your MAG Box in Canada. Full portal URL setup guide. 50,000+ channels + Netflix, NHL, TSN in 4K. Plans from $9/month.",
-  keywords: "IPTV MAG Box Canada, MAG 322 Maple4K, MAG Box setup Canada 2026, mag 254, mag iptv box, mag iptv boxes, mag tv box, magic iptv, formuler iptv box",
+  keywords: "IPTV MAG Box Canada, MAG 322 Maple4K, MAG Box setup Canada 2026, mag 254, mag iptv box, mag iptv boxes, mag tv box, magic iptv, formuler iptv box, mag box, tv box mag, mag 322, mag 524",
   alternates: { canonical: "https://maple4k.ca/iptv-mag-box-canada" },
   openGraph: {
     title: "IPTV MAG Box Canada – Setup & Best Plans 2026 | Maple4K",
@@ -181,6 +182,7 @@ export default function IPTVMagBoxCanadaPage() {
             </div>
           </div>
         </section>
+      <ExtraSections path="/iptv-mag-box-canada" />
       </main>
     </>
   );

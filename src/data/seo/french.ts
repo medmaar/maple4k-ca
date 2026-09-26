@@ -211,7 +211,7 @@ export const french: SeoPageData[] = [
     blurb: "Installer l'IPTV sur PC, Mac, Samsung, Fire Stick, iPhone",
     title: "Installer IPTV Canada — PC, Samsung, Fire Stick, iPhone",
     description: "Comment installer l'IPTV sur PC, Mac, téléviseur Samsung, Smart TV, Fire Stick, iPhone, Apple TV, PS5 et Chromecast. Guide pas à pas en français canadien.",
-    keywords: ["iptv sur pc", "iptv pour pc", "iptv sur mac", "iptv sur samsung", "iptv sur tv samsung", "iptv sur smart tv", "iptv sur fire stick", "iptv sur iphone", "iptv sur apple tv", "iptv sur ps5", "iptv sur kodi", "iptv sur vlc", "iptv sur chromecast", "installer iptv"],
+    keywords: ["iptv sur pc", "iptv pour pc", "iptv sur mac", "iptv sur samsung", "iptv sur tv samsung", "iptv sur smart tv", "iptv sur fire stick", "iptv sur iphone", "iptv sur apple tv", "iptv sur ps5", "iptv sur kodi", "iptv sur vlc", "iptv sur chromecast", "iptv freebox", "iptv orange", "iptvisuel", "iptv france", "installer iptv"],
     eyebrow: "Installer IPTV · Guide",
     h1: "Installer l'IPTV au Canada — PC, Mac, Samsung, Fire Stick et iPhone",
     intro: "Pour installer l'IPTV, choisissez une application compatible avec votre appareil, entrez vos identifiants Xtream Codes (adresse du serveur, nom d'utilisateur et mot de passe), puis attendez le chargement des chaînes. Le tableau ci-dessous indique l'application à utiliser sur chaque appareil.",
