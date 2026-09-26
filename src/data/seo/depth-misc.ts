@@ -45,14 +45,6 @@ export const depthMisc: Record<string, Section[]> = {
       ],
     },
   ],
-  "/nap-iptv-alternative": [
-    {
-      h2: "What good reviews look like",
-      paras: [
-        "Useful reviews are specific: they mention a device, an event and how the service behaved. Vague praise such as 'great service' is easy to fake. Look for reviews that describe a problem and how support solved it — they reveal how a company behaves when something goes wrong. Maple4K's own [reviews page](/reviews) links to public review sources so you can check for yourself.",
-      ],
-    },
-  ],
   "/kemo-iptv-alternative": [
     {
       h2: "Using Reddit and forums wisely",
@@ -82,14 +74,6 @@ export const depthMisc: Record<string, Section[]> = {
           ["Android TV / Shield", "Yes", "[Android TV guide](/iptv-android-tv-canada)"],
         ],
       },
-    },
-  ],
-  "/beastiptv-alternative": [
-    {
-      h2: "Stress-test any service on a busy night",
-      paras: [
-        "Peak-time performance is where services differ most. Choose a Saturday evening with a popular game, connect your device by Ethernet, and watch two different channels — one HD and one 4K — for at least thirty minutes each. Note any buffering, resolution drops or delays when changing channels. A service that stays steady under load will be steady on ordinary nights too.",
-      ],
     },
   ],
 

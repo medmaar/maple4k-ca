@@ -48,6 +48,8 @@ export type SeoPageData = {
   alt?: { lang: string; path: string }[];
   /** Brand/trademark disclaimer */
   notAffiliated?: string;
+  /** Outbound authority links ("Sources & further reading") */
+  sources?: { label: string; url: string }[];
   datePublished?: string;
   dateModified?: string;
 };

@@ -14,7 +14,7 @@ const CARDS = [
     width: 220,
     zIndex: 4,
     delay: "0s",
-    image: "/iptv-subscription-canada-1.jpg",
+    image: "/iptv-subscription-canada-1.webp",
   },
   {
     label: "🎬 Movies",
@@ -25,7 +25,7 @@ const CARDS = [
     width: 190,
     zIndex: 3,
     delay: "0.15s",
-    image: "/iptv-canada.jpg",
+    image: "/iptv-canada.webp",
   },
   {
     label: "⚡ Action",
@@ -36,7 +36,7 @@ const CARDS = [
     width: 240,
     zIndex: 5,
     delay: "0.3s",
-    image: "/iptv-subscription-canada-3.jpg",
+    image: "/iptv-subscription-canada-3.webp",
   },
   {
     label: "🎭 Series",
@@ -47,7 +47,7 @@ const CARDS = [
     width: 200,
     zIndex: 2,
     delay: "0.45s",
-    image: "/iptv-subscription.jpg",
+    image: "/iptv-subscription.webp",
   },
 ];
 
@@ -75,8 +75,8 @@ export default function HeroSection() {
       }}
     >
       {/* Background image */}
-      <img
-        src="/iptv-free.jpg"
+      <img width={1280} height={853}
+        src="/iptv-free.webp"
         alt="IPTV Canada — NHL arena live streaming"
         style={{
           position: "absolute", inset: 0, width: "100%", height: "100%",
@@ -241,10 +241,10 @@ export default function HeroSection() {
         {/* Mobile image grid */}
         <div className="hero-mobile-imgs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 36 }}>
           {[
-            { src: "/iptv-subscription-canada-1.jpg", alt: "🏒 Hockey" },
-            { src: "/iptv-canada.jpg",                alt: "🎬 Live TV" },
-            { src: "/iptv-subscription-canada-3.jpg", alt: "⚡ Sports" },
-            { src: "/iptv-subscription.jpg",          alt: "🎭 Series" },
+            { src: "/iptv-subscription-canada-1.webp", alt: "🏒 Hockey" },
+            { src: "/iptv-canada.webp",                alt: "🎬 Live TV" },
+            { src: "/iptv-subscription-canada-3.webp", alt: "⚡ Sports" },
+            { src: "/iptv-subscription.webp",          alt: "🎭 Series" },
           ].map(card => (
             <div key={card.src} style={{ borderRadius: 12, overflow: "hidden", position: "relative", aspectRatio: "16/10" }}>
               <img src={card.src} alt={card.alt} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} loading="lazy" />

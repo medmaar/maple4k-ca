@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
-  title: { absolute: "DMCA Policy — Maple4K IPTV Canada" },
+  title: { absolute: "DMCA & Copyright Policy — Maple4K IPTV Canada" },
   description:
     "DMCA policy for Maple4K, Canada's top 4K IPTV service. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
   alternates: { canonical: "https://maple4k.ca/dmca" },
@@ -109,6 +110,7 @@ export default function DMCAPage() {
           </div>
         </section>
       </div>
-    </main>
+    <ExtraSections path="/dmca" />
+      </main>
   );
 }

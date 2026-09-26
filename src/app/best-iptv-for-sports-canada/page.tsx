@@ -5,7 +5,7 @@ import ExtraSections from "../../components/ExtraSections";
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV for Sports Canada 2026 — NHL, NFL, UFC, Soccer" },
   description:
-    "The best IPTV for sports in Canada. NHL, NFL, NBA, UFC, soccer, Eurosport, beIN Sports and Sky Sports in 4K. All TSN and Sportsnet feeds. Free 24h trial from $9/month.",
+    "Best IPTV for sports in Canada: NHL, NFL, NBA, UFC, soccer, Eurosport, beIN and Sky Sports in 4K. All TSN and Sportsnet feeds. Free 24h trial from $9/month.",
   keywords: "best iptv for sports, iptv sport, iptv ufc, iptv nba, iptv soccer, iptv bein sport, iptv eurosport, iptv sky sports, sportz iptv, sportz tv iptv, gamma iptv, gamma iptv subscription, best iptv for hockey, iptv f1",
   alternates: { canonical: "https://maple4k.ca/best-iptv-for-sports-canada" },
   openGraph: {

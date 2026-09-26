@@ -6,7 +6,10 @@ export const metadata: Metadata = {
   title: { absolute: "6 Connections IPTV Canada 1 Month — $54 | Maple4K" },
   description:
     "Get 6 simultaneous connections for $54. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within minutes.",
+  robots: { index: false, follow: true },
   alternates: { canonical: "https://maple4k.ca/pricing/6-devices/1-month" },
+  openGraph: { title: "6 Connections IPTV Canada 1 Month — $54 | Maple4K", description: "Get 6 simultaneous connections for $54. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within minutes.", url: "https://maple4k.ca/pricing/6-devices/1-month", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "6 Connections IPTV Canada 1 Month — $54 – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "6 Connections IPTV Canada 1 Month — $54 | Maple4K", description: "Get 6 simultaneous connections for $54. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within minutes.", images: ["/og-image.jpg"] },
 };
 
 const faqItems: FaqItem[] = [

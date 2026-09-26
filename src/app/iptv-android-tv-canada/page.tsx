@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "Best IPTV for Android TV in Canada 2026 | Maple4K" },
   description:
     "Install IPTV on your Android TV box in Canada. Maple4K offers 50,000+ channels + Netflix in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
+  keywords: "android tv iptv, iptv android tv, iptv canada android tv box, best android tv box for iptv, tivimate android tv, shield tv iptv",
   alternates: { canonical: "https://maple4k.ca/iptv-android-tv-canada" },
   openGraph: {
     title: "Best IPTV for Android TV in Canada 2026 | Maple4K",

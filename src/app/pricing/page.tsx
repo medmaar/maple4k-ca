@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   description: "Compare Maple4K premium 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from $9. 50,000+ channels + Netflix, no.",
   keywords: "Maple4K pricing, 4K IPTV plans Canada, H.265 HEVC IPTV Canada, HDR IPTV subscription 2026, iptv price, iptv cost, iptv plans, iptv packages, iptv 12 months, iptv 1 month, iptv promo, cheap iptv",
   alternates: { canonical: "https://maple4k.ca/pricing" },
+  openGraph: { title: "4K IPTV Plans Canada — H.265/HEVC from $9 | Maple4K", description: "Compare Maple4K premium 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from $9. 50,000+ channels + Netflix, no.", url: "https://maple4k.ca/pricing", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "4K IPTV Plans Canada — H.265/HEVC from $9 – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "4K IPTV Plans Canada — H.265/HEVC from $9 | Maple4K", description: "Compare Maple4K premium 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from $9. 50,000+ channels + Netflix, no.", images: ["/og-image.jpg"] },
 };
 
 const pricingFaqs = [

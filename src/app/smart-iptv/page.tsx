@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import ExtraSections from "../../components/ExtraSections";
+import SchemaFaqVisible from "../../components/SchemaFaqVisible";
 export const metadata: Metadata = {
   title: { absolute: "Smart IPTV Canada 2026 — Samsung & LG TV Service | Maple4K" },
   description: "Stream IPTV on any Smart TV in Canada. Maple4K works on Samsung, LG, Android TV, Apple TV and all smart TVs. Free trial, 4K quality. Smart IPTV Canada.",
   keywords: "smart iptv, iptv smarter, iptv smarters pro, best iptv app, iptv service canada, best iptv canada, iptv providers canada, siptv, sip tv, my siptv, my sip tv, smart iptv player, smart iptv pro, smart iptv premium, smart iptv android tv, smart iptv samsung, smart iptv sony, smart iptv list, smart iptv m3u, smart iptv com, smart iptv fire stick, smart iptv firestick, smart iptv pc, smart iptv activation, siptv activation",
   alternates: { canonical: "https://maple4k.ca/smart-iptv" },
+  openGraph: { title: "Smart IPTV Canada 2026 — Samsung & LG TV Service | Maple4K", description: "Stream IPTV on any Smart TV in Canada. Maple4K works on Samsung, LG, Android TV, Apple TV and all smart TVs. Free trial, 4K quality. Smart IPTV Canada.", url: "https://maple4k.ca/smart-iptv", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Smart IPTV Canada 2026 — Samsung & LG TV Service – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "Smart IPTV Canada 2026 — Samsung & LG TV Service | Maple4K", description: "Stream IPTV on any Smart TV in Canada. Maple4K works on Samsung, LG, Android TV, Apple TV and all smart TVs. Free trial, 4K quality. Smart IPTV Canada.", images: ["/og-image.jpg"] },
 };
 
 const breadcrumbSchema = {
@@ -119,7 +122,8 @@ export default function SmartIPTVPage() {
         </div>
       </section>
 
-    <ExtraSections path="/smart-iptv" />
+    <SchemaFaqVisible schema={faqSchema as never} title="Quick answers" />
+      <ExtraSections path="/smart-iptv" />
       </main>
     </>
   );

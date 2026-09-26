@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   description: "Read verified Maple4K reviews from Trustpilot, WhatsApp, and Google. 50,000+ happy Canadian customers. See why Maple4K is Canada's top-rated IPTV service.",
   keywords: "maple4k reviews, iptv reviews, iptv trustpilot, trustpilot iptv, iptv canada reviews",
   alternates: { canonical: "https://maple4k.ca/reviews" },
+  openGraph: { title: "Maple4K Reviews — Trustpilot, Google & WhatsApp", description: "Read verified Maple4K reviews from Trustpilot, WhatsApp, and Google. 50,000+ happy Canadian customers. See why Maple4K is Canada's top-rated IPTV service.", url: "https://maple4k.ca/reviews", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K Reviews — Trustpilot, Google & WhatsApp – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "Maple4K Reviews — Trustpilot, Google & WhatsApp", description: "Read verified Maple4K reviews from Trustpilot, WhatsApp, and Google. 50,000+ happy Canadian customers. See why Maple4K is Canada's top-rated IPTV service.", images: ["/og-image.jpg"] },
 };
 
 

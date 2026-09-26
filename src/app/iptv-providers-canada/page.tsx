@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/iptv-from-canada.jpg", width: 1280, height: 720, alt: "IPTV Providers Canada – Maple4K" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Providers Canada – Maple4K" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -49,7 +49,7 @@ export default function IptvProvidersCanadaPage() {
 
           {/* Hero image */}
           <div style={{ borderRadius: 16, overflow: "hidden", marginBottom: 28, marginTop: 20, border: "1px solid rgba(255,255,255,0.08)", position: "relative" }}>
-            <img src="/iptv-from-canada.jpg" alt="IPTV from Canada — Canadian hockey player representing the best IPTV providers in Canada" style={{ width: "100%", height: "auto", maxHeight: 380, objectFit: "cover", display: "block" }} loading="eager" />
+            <img width={1200} height={675} src="/iptv-from-canada.webp" alt="IPTV from Canada — Canadian hockey player representing the best IPTV providers in Canada" style={{ width: "100%", height: "auto", maxHeight: 380, objectFit: "cover", display: "block" }} loading="eager" />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.6) 0%, transparent 55%)" }} />
             <p style={{ position: "absolute", bottom: 16, left: 20, margin: 0, fontWeight: 700, fontSize: 14, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>🏒 Proudly Canadian IPTV — serving every province from $9/month</p>
           </div>          <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 17, lineHeight: 1.7, marginBottom: 36, maxWidth: 560, margin: "0 auto 36px" }}>

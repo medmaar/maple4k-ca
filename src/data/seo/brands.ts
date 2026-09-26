@@ -35,17 +35,7 @@ function brandPage(b: Brand): SeoPageData {
       },
       {
         h2: `How to compare ${b.name} with any IPTV service`,
-        table: {
-          head: ["Check", "How to test it", "Maple4K"],
-          rows: [
-            ["Free trial", "Can you test before paying?", "Free for 24 hours"],
-            ["Price", "Is the full price shown up front?", "$9 / $29 / $39 / $49 — [pricing](/pricing)"],
-            ["Support", "Message them before buying", "WhatsApp, Telegram, email — [contact](/contact)"],
-            ["Stability", "Watch live sport at peak time", "4K H.265 streams"],
-            ["Devices", "Does it work on your TV or box?", "[Fire Stick, Android, Apple, Samsung, LG, PC](/iptv-devices)"],
-          ],
-        },
-        note: "Maple4K's column reflects our own service; verify everything with the trial.",
+        paras: [`Use the same five-point test on ${b.name} and on Maple4K: free trial, price shown up front, support reply speed, stability on a live game at peak time, and compatibility with your device. The full checklist is on our [IPTV alternatives page](/iptv-alternatives); Maple4K's side of it is a free 24-hour trial, published prices from $9 (see [pricing](/pricing)), WhatsApp/Telegram/email support and 4K H.265 streams.`],
       },
       {
         h2: "Switching to Maple4K in 5 minutes",
@@ -129,17 +119,6 @@ export const brandDefs: Brand[] = [
     ],
   },
   {
-    slug: "nap-iptv",
-    name: "NAP IPTV",
-    variants: ["nap iptv", "napiptv", "nap iptv canada"],
-    blurb: "Searching NAP IPTV? Compare options in Canada",
-    focus: "When people search for NAP IPTV they are usually looking for pricing, login details or reviews. Use independent reviews rather than testimonials on a service's own site, and ask for a short trial so you can judge stream quality yourself.",
-    extraFaq: [
-      { q: "How do I find reviews of an IPTV service?", a: "Look for independent reviews on Trustpilot and Google, and cross-check with forum discussions. See Maple4K's [reviews page](/reviews)." },
-      { q: "Can I try before I commit?", a: "With Maple4K, yes — [free for 24 hours](/free-trial)." },
-    ],
-  },
-  {
     slug: "kemo-iptv",
     name: "Kemo IPTV",
     variants: ["kemo iptv", "kemoiptv", "kemo tv", "kemo iptv reddit"],
@@ -170,72 +149,6 @@ export const brandDefs: Brand[] = [
     extraFaq: [
       { q: "Does Maple4K work on iPhone?", a: "Yes, through apps like IPTV Smarters Pro. See [IPTV on iPhone & iPad](/iptv-ios-canada)." },
       { q: "AtlasPro vs Atlas Pro IPTV?", a: "Spelling variants of the same search. Maple4K is unrelated to either." },
-    ],
-  },
-  {
-    slug: "beastiptv",
-    name: "BeastIPTV",
-    variants: ["beastiptv", "beast iptv", "beast iptv canada"],
-    blurb: "Searching BeastIPTV? Compare options in Canada",
-    focus: "Performance-themed names such as 'Beast' promise power, but what matters is measurable: buffering during a Saturday NHL game, EPG speed and response time from support. Run the same tests on every service you compare.",
-    extraFaq: [
-      { q: "How do I test IPTV performance?", a: "Watch a live sports channel at peak time and a 4K movie, and note buffering. Follow the [buffering guide](/blog/fix-iptv-buffering-canada) if you see issues." },
-      { q: "BeastIPTV vs Beast IPTV?", a: "The same search in two spellings. Maple4K is not affiliated." },
-    ],
-  },
-  {
-    slug: "ib-iptv",
-    name: "IB IPTV",
-    variants: ["ib iptv", "ibiptv", "ib iptv canada"],
-    blurb: "Searching IB IPTV? Compare Canadian options",
-    focus: "Short initial-style names such as IB IPTV are hard to research because many sites reuse them. Confirm the exact domain, look for a written refund policy and check that reviews mention that same domain rather than a lookalike.",
-    extraFaq: [
-      { q: "How do I verify which IB IPTV site is real?", a: "Match the domain in reviews, support messages and payment pages. If they differ, stop and ask for clarification." },
-      { q: "Can I try Maple4K next to it?", a: "Yes — add Maple4K as a second playlist in your player during the [free trial](/free-trial)." },
-    ],
-  },
-  {
-    slug: "megaott-iptv",
-    name: "MegaOTT",
-    variants: ["megaott", "mega ott", "mega iptv", "mega ip tv", "megaiptv", "megaott iptv", "megaott net"],
-    blurb: "Searching MegaOTT or Mega IPTV? Compare options",
-    focus: "Mega-named services appear under many spellings — MegaOTT, Mega OTT, Mega IPTV, MegaIPTV — and may not be the same operator. Before paying anyone, confirm the exact site and read our [OTT vs IPTV guide](/ott-iptv-canada) so you know what an OTT-style login actually gives you.",
-    extraFaq: [
-      { q: "MegaOTT vs Mega IPTV — same service?", a: "Not necessarily. Spellings vary and different sites use them. Maple4K is unrelated to all of them." },
-      { q: "What does OTT mean here?", a: "Over-the-top — delivered over the internet. See [OTT vs IPTV](/ott-iptv-canada)." },
-    ],
-  },
-  {
-    slug: "smartone-iptv",
-    name: "SmartOne IPTV",
-    variants: ["smartone iptv", "smartone iptv com", "smartone iptv generate", "smartone iptv com generate", "smartone iptv canada"],
-    blurb: "Searching SmartOne IPTV? Compare options",
-    focus: "Searches that combine SmartOne IPTV with 'generate' suggest people want a playlist-generation tool for a player app. If you use a player that needs a playlist uploaded, always use a link from a provider you trust and not a public generator; see our [free list risks guide](/blog/free-iptv-m3u-lists-risks-canada).",
-    extraFaq: [
-      { q: "What does 'generate' mean in SmartOne searches?", a: "Usually creating or uploading a playlist for a TV app. Use only links from your own provider, entered on the app developer's official site." },
-      { q: "Which TV apps need a playlist upload?", a: "Smart IPTV, Duplecast and similar TV apps. See [Tizen & webOS apps](/iptv-tizen-webos-apps-canada)." },
-    ],
-  },
-  {
-    slug: "starshare-iptv",
-    name: "Starshare IPTV",
-    variants: ["starshare iptv", "starshare", "starshare tv"],
-    blurb: "Searching Starshare IPTV? Compare options",
-    focus: "Starshare is often searched alongside 'reddit' and 'app', which points to people looking for user feedback. Treat forum feedback as one input, combine it with your own trial, and check that the provider publishes clear terms.",
-    extraFaq: [
-      { q: "Is there a Starshare app?", a: "Services usually work through standard players using Xtream Codes or M3U. See the [player hub](/iptv-player)." },
-      { q: "Where can I compare independent reviews?", a: "Start with our [reviews page](/reviews) and [Reddit summary](/blog/best-iptv-canada-reddit)." },
-    ],
-  },
-  {
-    slug: "bandwich-iptv",
-    name: "Bandwich IPTV",
-    variants: ["bandwich iptv", "iptv foster", "foster iptv", "iptv control", "iptv installer"],
-    blurb: "Searching Bandwich or Foster IPTV? Compare options",
-    focus: "Less common names such as Bandwich and Foster generate few reliable search results, so it is hard to learn about them. Ask direct questions about trial, price and support, and be cautious if answers are vague.",
-    extraFaq: [
-      { q: "What if I can't find reviews for a service?", a: "Treat that as a warning sign and use a short free trial before paying." },
-      { q: "Do I need an IPTV installer or control panel?", a: "No. You install a player app yourself. See the [beginner's guide](/blog/iptv-for-beginners-canada)." },
     ],
   },
 ];

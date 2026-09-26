@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
-  title: { absolute: "1 Month IPTV Canada — $9 | Maple4K" },
+  title: { absolute: "1 Month IPTV Plan Canada — $9, No Contract | Maple4K" },
   description:
     "Get 1 month of IPTV in Canada for only $9. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within.",
-  keywords:
-    "IPTV 1 month Canada, Maple4K 1 month, IPTV $9 Canada, month to month IPTV Canada",
+  keywords: "IPTV 1 month Canada, Maple4K 1 month, IPTV $9 Canada, month to month IPTV Canada, iptv 1 month, iptv monthly plan canada, iptv $9",
   alternates: { canonical: "https://maple4k.ca/pricing/1-month" },
+  openGraph: { title: "1 Month IPTV Plan Canada — $9, No Contract | Maple4K", description: "Get 1 month of IPTV in Canada for only $9. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within.", url: "https://maple4k.ca/pricing/1-month", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "1 Month IPTV Canada — $9 – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "1 Month IPTV Plan Canada — $9, No Contract | Maple4K", description: "Get 1 month of IPTV in Canada for only $9. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within.", images: ["/og-image.jpg"] },
 };
 
 const faqItems: FaqItem[] = [
@@ -180,6 +182,7 @@ export default function Pricing1MonthPage() {
           </div>
         </section>
 
+      <ExtraSections path="/pricing/1-month" />
       </main>
     </>
   );

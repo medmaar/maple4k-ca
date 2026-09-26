@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ResellerOrderForm from "./ResellerOrderForm";
 import ExtraSections from "../../components/ExtraSections";
+import SchemaFaqVisible from "../../components/SchemaFaqVisible";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Reseller Canada 2026 — Start Your IPTV Business" },
@@ -183,6 +184,7 @@ export default function ResellerPage() {
           </div>
         </section>
 
+      <SchemaFaqVisible schema={faqSchema as never} title="Quick answers" />
       <ExtraSections path="/reseller" />
       </main>
     </>

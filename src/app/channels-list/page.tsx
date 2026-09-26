@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ExtraSections from "../../components/ExtraSections";
+import SchemaFaqVisible from "../../components/SchemaFaqVisible";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Channels Canada — 50,000+ Channels + Netflix | Maple4K" },
@@ -7,6 +8,8 @@ export const metadata: Metadata = {
     "Full Maple4K IPTV channel list for Canada 2026. Browse 50,000+ channels + Netflix including TSN, Sportsnet, CBC, CTV, RDS, TVA, NHL, NFL, NBA, and.",
   keywords: "IPTV channels Canada, Maple4K channel list, Canadian IPTV channels, TSN IPTV, Sportsnet IPTV Canada, iptv channels list, iptv list",
   alternates: { canonical: "https://maple4k.ca/channels-list" },
+  openGraph: { title: "IPTV Channels Canada — 50,000+ Channels + Netflix | Maple4K", description: "Full Maple4K IPTV channel list for Canada 2026. Browse 50,000+ channels + Netflix including TSN, Sportsnet, CBC, CTV, RDS, TVA, NHL, NFL, NBA, and.", url: "https://maple4k.ca/channels-list", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Channels Canada — 50,000+ Channels + Netflix – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "IPTV Channels Canada — 50,000+ Channels + Netflix | Maple4K", description: "Full Maple4K IPTV channel list for Canada 2026. Browse 50,000+ channels + Netflix including TSN, Sportsnet, CBC, CTV, RDS, TVA, NHL, NFL, NBA, and.", images: ["/og-image.jpg"] },
 };
 
 const categories = [  {
@@ -8559,7 +8562,8 @@ export default function ChannelsListPage() {
           </div>
         </div>
       </section>
-    <ExtraSections path="/channels-list" />
+    <SchemaFaqVisible schema={faqSchema as never} title="Quick answers" />
+      <ExtraSections path="/channels-list" />
       </main>
     </>
   );

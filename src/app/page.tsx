@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import SchemaFaqVisible from "../components/SchemaFaqVisible";
 
 const ReviewsSection = dynamic(() => import("./components/ReviewsSection"));
 const HeroSection    = dynamic(() => import("./components/HeroSection"));
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   description: "Best IPTV Canada 2026. 50,000+ channels + Netflix, free trial available — no credit card. IPTV subscription from $9/month. Best IPTV service in Canada.",
   keywords: "iptv canada, best iptv canada, iptv québec, iptv box, iptv free trial, free trial iptv, iptv from canada, iptv subscription canada, best iptv in canada, iptv providers canada, best iptv service canada, iptv near me, iptv legal, smart iptv, canadian iptv, iptv 4k, iptv firestick, iptv canada reviews, best iptv provider canada, free iptv canada",
   alternates: { canonical: "https://maple4k.ca", languages: { "en-CA": "https://maple4k.ca", "fr-CA": "https://maple4k.ca/fr", "x-default": "https://maple4k.ca" } },
-  openGraph: {
+  openGraph: { siteName: "Maple4K", locale: "en_CA",
       images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K — Canada's Best 4K IPTV" }],
     title: "Best IPTV Canada 2026 — 50,000+ Channels + Netflix from $9 | Maple4K",
     description: "Canada's best IPTV service. 50,000+ channels + Netflix, free 24h trial, 4K Ultra HD from $9/month.",
@@ -80,7 +81,7 @@ const homeFaqSchema = {
 export default function HomePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "Maple4K IPTV Canada", "brand": {"@type": "Brand", "name": "Maple4K"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "289", "bestRating": "5", "worstRating": "1"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "Maple4K IPTV Canada", "description": "IPTV subscription for Canada: 50,000+ live channels, 120,000+ movies and series, 4K streams, EPG and 24/7 support. Free 24-hour trial.", "image": "https://maple4k.ca/og-image.jpg", "url": "https://maple4k.ca", "brand": {"@type": "Brand", "name": "Maple4K"}, "offers": {"@type": "AggregateOffer", "priceCurrency": "CAD", "lowPrice": "9", "highPrice": "49", "offerCount": "4", "availability": "https://schema.org/InStock", "url": "https://maple4k.ca/pricing"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "289", "bestRating": "5", "worstRating": "1"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff" }}>
@@ -151,8 +152,8 @@ export default function HomePage() {
       <section style={{ padding: "100px 16px", background: "#0E1120" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 60, alignItems: "center" }}>
           <div className="ma-left" style={{ position: "relative", borderRadius: 24, overflow: "hidden", minHeight: 380, border: "1px solid rgba(255,255,255,0.08)" }}>
-            <img
-              src="/iptv-subscription-canada-2.jpg"
+            <img width={1280} height={694}
+              src="/iptv-subscription-canada-2.webp"
               alt="Stream IPTV Canada live sports on any device — Maple4K"
               style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", minHeight: 380 }}
               loading="lazy"
@@ -340,7 +341,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </main>
+    <SchemaFaqVisible schema={homeFaqSchema as never} title="Quick answers" />
+      </main>
     </>
   );
 }

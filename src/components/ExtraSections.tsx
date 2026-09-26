@@ -74,6 +74,16 @@ export default function ExtraSections({ path }: { path: string }) {
           </div>
         </section>
       )}
+      {x.sources && x.sources.length > 0 && (
+        <section style={{ background: "#0E1120", padding: "36px 16px", color: "#fff" }}>
+          <div style={{ maxWidth: 820, margin: "0 auto" }}>
+            <h2 style={{ fontSize: 13, fontWeight: 700, color: red, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 14 }}>Sources &amp; further reading</h2>
+            <ul style={{ margin: 0, paddingLeft: 20, color: "rgba(255,255,255,0.6)", fontSize: 14, lineHeight: 1.8 }}>
+              {x.sources.map(s => <li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer" style={{ color: red, textDecoration: "underline", textUnderlineOffset: 3 }}>{s.label}</a></li>)}
+            </ul>
+          </div>
+        </section>
+      )}
     </>
   );
 }

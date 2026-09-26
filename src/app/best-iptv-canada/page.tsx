@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "Canada's best IPTV service. 4K quality, 50,000+ channels + Netflix, free trial. From $9/month.",
     url: "https://maple4k.ca/best-iptv-canada",
     type: "website", siteName: "Maple4K", locale: "en_CA",
-    images: [{ url: "/iptv-subscription-canada-3.jpg", width: 1400, height: 933, alt: "Best IPTV Canada – Maple4K" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Best IPTV Canada – Maple4K" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -101,8 +101,8 @@ export default function BestIPTVCanadaPage() {
 
             {/* Hero image — NHL arena with Canadian flag */}
             <div style={{ marginTop: 40, borderRadius: 20, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative" }}>
-              <img
-                src="/iptv-subscription-canada-3.jpg"
+              <img width={1280} height={853}
+                src="/iptv-subscription-canada-3.webp"
                 alt="Watch NHL hockey live in Canada — best IPTV service Maple4K"
                 style={{ width: "100%", height: "auto", maxHeight: 420, objectFit: "cover", display: "block" }}
                 loading="eager"

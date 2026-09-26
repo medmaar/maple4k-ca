@@ -8,6 +8,8 @@ export type ExistingExtra = {
   qas?: Faq[];
   /** Extra JSON-LD objects for the page */
   jsonld?: Record<string, unknown>[];
+  /** Outbound authority links */
+  sources?: { label: string; url: string }[];
 };
 
 const CUR = "CAD";

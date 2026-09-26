@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ExtraSections from "../../../components/ExtraSections";
+import SchemaFaqVisible from "../../../components/SchemaFaqVisible";
 
 export const metadata: Metadata = {
   title: { absolute: "10 Best IPTV Providers in Canada 2026 — Tested & Ranked" },
@@ -8,8 +9,8 @@ export const metadata: Metadata = {
     "Experience true 4K Ultra HD IPTV in Canada. Compare H.265 codecs, HDR10, bitrate support, and video quality. Stream sports and movies in 4K on every.",
   keywords: "4K IPTV Canada, H.265 IPTV, HDR10 streaming Canada, Ultra HD IPTV, 4K sports streaming Canada, best iptv 2026, top 10 iptv",
   alternates: { canonical: "https://maple4k.ca/blog/best-iptv-canada-2026" },
-  openGraph: {
-      images: [{ url: "/iptv-canada.jpg", width: 1403, height: 761, alt: "Maple4K — Best 4K IPTV Canada 2026" }],
+  openGraph: { locale: "en_CA",
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K — Best 4K IPTV Canada 2026" }],
     title: "Best 4K IPTV in Canada 2026 — H.265, HDR10, 50 Mbps Support",
     description:
       "Stream in true 4K Ultra HD. H.265 codec, HDR10, high-bitrate support. Watch sports, movies, and series in pristine quality.",
@@ -116,7 +117,7 @@ export default function Maple4KBlogPost() {
 
           {/* Hero image */}
           <div style={{ borderRadius: 16, overflow: "hidden", marginBottom: 28, marginTop: 20, border: "1px solid rgba(255,255,255,0.08)", position: "relative" }}>
-            <img src="/iptv-canada.jpg" alt="IPTV Canada — Canadian hockey fans celebrating a goal" style={{ width: "100%", height: "auto", maxHeight: 400, objectFit: "cover", display: "block" }} loading="eager" />
+            <img width={1280} height={720} src="/iptv-canada.webp" alt="IPTV Canada — Canadian hockey fans celebrating a goal" style={{ width: "100%", height: "auto", maxHeight: 400, objectFit: "cover", display: "block" }} loading="eager" />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.6) 0%, transparent 55%)" }} />
             <p style={{ position: "absolute", bottom: 16, left: 20, margin: 0, fontWeight: 700, fontSize: 14, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>🍁 Every goal, every game — stream it all live with Maple4K IPTV Canada</p>
           </div>        <p className="text-gray-400 text-lg mb-8">
@@ -275,7 +276,8 @@ export default function Maple4KBlogPost() {
           </Link>
         </div>
       </article>
-    <ExtraSections path="/blog/best-iptv-canada-2026" />
+    <SchemaFaqVisible schema={faqSchema as never} title="Quick answers" />
+      <ExtraSections path="/blog/best-iptv-canada-2026" />
       </main>
   );
 }

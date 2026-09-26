@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ExtraSections from "../../components/ExtraSections";
+import SchemaFaqVisible from "../../components/SchemaFaqVisible";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Subscription Canada 2026 — Best Plans from $9 | Maple4K" },
   description: "Get the best IPTV subscription in Canada. Monthly, quarterly and annual plans. No contracts, free trial. 50,000+ channels + Netflix, 4K quality. IPTV.",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/iptv-subscription.jpg", width: 1280, height: 720, alt: "IPTV Subscription Canada – Maple4K" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Subscription Canada – Maple4K" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -78,7 +79,7 @@ export default function IPTVSubscriptionPage() {
 
           {/* Hero image */}
           <div style={{ margin: "40px 16px 0", borderRadius: 20, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative" }}>
-            <img src="/iptv-subscription.jpg" alt="IPTV subscription Canada — thousands of Canadians streaming live sports with Maple4K" style={{ width: "100%", maxHeight: 400, objectFit: "cover", objectPosition: "center 30%", display: "block" }} loading="eager" />
+            <img width={1280} height={853} src="/iptv-subscription.webp" alt="IPTV subscription Canada — thousands of Canadians streaming live sports with Maple4K" style={{ width: "100%", maxHeight: 400, objectFit: "cover", objectPosition: "center 30%", display: "block" }} loading="eager" />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.65) 0%, transparent 50%)" }} />
             <div style={{ position: "absolute", bottom: 20, left: 24, right: 24 }}>
               <p style={{ margin: 0, fontWeight: 700, fontSize: 15, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>🍁 Join thousands of Canadians streaming with Maple4K — from $9/month</p>
@@ -152,7 +153,8 @@ export default function IPTVSubscriptionPage() {
         </div>
       </section>
 
-    <ExtraSections path="/iptv-subscription" />
+    <SchemaFaqVisible schema={faqSchema as never} title="Quick answers" />
+      <ExtraSections path="/iptv-subscription" />
       </main>
     </>
   );

@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description:
     "Get 8 simultaneous connections for $360. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within minutes.",
   alternates: { canonical: "https://maple4k.ca/pricing/8-devices/1-year" },
+  openGraph: { title: "8 Connections IPTV Canada 1 Year — $360 | Maple4K", description: "Get 8 simultaneous connections for $360. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within minutes.", url: "https://maple4k.ca/pricing/8-devices/1-year", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "8 Connections IPTV Canada 1 Year — $360 – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "8 Connections IPTV Canada 1 Year — $360 | Maple4K", description: "Get 8 simultaneous connections for $360. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within minutes.", images: ["/og-image.jpg"] },
   robots: { index: false, follow: true },
 };
 

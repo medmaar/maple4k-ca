@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1920, height: 1080, alt: "Best IPTV for Hockey Canada – Maple4K" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Best IPTV for Hockey Canada – Maple4K" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -76,8 +76,8 @@ export default function BestIPTVHockeyPage() {
 
           {/* Hero image */}
           <div style={{ borderRadius: 16, overflow: "hidden", marginBottom: 28, border: "1px solid rgba(255,255,255,0.08)" }}>
-            <img
-              src="/iptv-subscription-canada-1.jpg"
+            <img width={1280} height={719}
+              src="/iptv-subscription-canada-1.webp"
               alt="Watch hockey Canada live — IPTV NHL streaming Maple4K"
               style={{ width: "100%", height: "auto", display: "block", maxHeight: 420, objectFit: "cover" }}
               loading="eager"

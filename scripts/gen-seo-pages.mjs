@@ -62,6 +62,38 @@ for (const [path, x] of Object.entries(existingExtras)) {
   if (add.length) { src = src.replace(m[0], `keywords: "${m[1]}, ${add.join(", ")}"`); writeFileSync(f, src); }
 }
 
+// ───────── page-meta.json (title/description of hand-written pages, for auto schema) ─────────
+import { readdirSync as _rd, statSync as _st } from "fs";
+const pageMeta = {};
+(function walkSrc(d) {
+  for (const f of _rd(d)) {
+    const p = join(d, f);
+    if (_st(p).isDirectory()) { walkSrc(p); continue; }
+    if (f !== "page.tsx") continue;
+    const src = readFileSync(p, "utf8");
+    if (src.includes("getSeoPage")) continue;
+    const t = src.match(/absolute:\s*"([^"]+)"/), dsc = src.match(/description:\s*"([^"]+)"/);
+    const route = "/" + d.replace(join(root, "src/app"), "").split("\\").join("/").replace(/^\//, "");
+    if (t && dsc) pageMeta[route === "/" ? "/" : route.replace(/\/$/, "")] = { title: t[1], description: dsc[1] };
+  }
+})(join(root, "src/app"));
+writeFileSync(join(root, "src/data/seo/page-meta.json"), JSON.stringify(pageMeta, null, 1));
+
+// ───────── remove stale generated routes (pages dropped from the registry) ─────────
+import { rmSync } from "fs";
+(function cleanStale(d) {
+  for (const f of _rd(d)) {
+    const p = join(d, f);
+    if (!_st(p).isDirectory()) continue;
+    const pg = join(p, "page.tsx");
+    if (existsSync(pg) && readFileSync(pg, "utf8").includes("getSeoPage")) {
+      const route = "/" + p.replace(join(root, "src/app"), "").split("\\").join("/").replace(/^\//, "");
+      if (!allPaths.has(route)) { rmSync(p, { recursive: true, force: true }); console.log("removed stale route", route); continue; }
+    }
+    cleanStale(p);
+  }
+})(join(root, "src/app"));
+
 // ───────── route files ─────────
 for (const p of seoPages) {
   const dir = join(root, "src/app", p.path);
@@ -92,18 +124,13 @@ sm = sm.split("\n").filter(l => {
   const m = l.match(/<loc>([^<]+)<\/loc>/);
   return !(m && newLocs.has(m[1]));
 }).join("\n");
-// Multi-connection plan pages that exist as routes but were missing from the sitemap.
-const extraPaths = [];
-for (const n of [8, 9, 10]) for (const d of ["1-month", "3-months", "6-months", "1-year"]) {
-  const path = `/pricing/${n}-devices/${d}`;
-  if (!sm.includes(`<loc>${SITE + path}</loc>`) && existsSync(join(root, "src/app", path, "page.tsx"))) extraPaths.push(path);
-}
-const extraEntries = extraPaths.map(path => `  <url><loc>${SITE + path}</loc><lastmod>${LASTMOD}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>`).join("\n");
+// Multi-connection plan pages are noindex (near-duplicate templates) — keep them out of the sitemap.
+sm = sm.split("\n").filter(l => !/<loc>[^<]*\/pricing\/\d+-devices\//.test(l)).join("\n");
 const seoEntries = seoPages.map(p => {
   const pr = p.kind === "hub" ? "0.85" : p.kind === "blog" ? "0.7" : "0.75";
   return `  <url><loc>${SITE + p.path}</loc><lastmod>${LASTMOD}</lastmod><changefreq>${p.kind === "hub" ? "weekly" : "monthly"}</changefreq><priority>${pr}</priority></url>`;
 }).join("\n");
-const entries = extraEntries ? `${seoEntries}\n${extraEntries}` : seoEntries;
+const entries = seoEntries;
 sm = sm.replace("</urlset>", `  <!-- seo-pages:start -->\n${entries}\n  <!-- seo-pages:end -->\n</urlset>`);
 writeFileSync(smPath, sm);
 

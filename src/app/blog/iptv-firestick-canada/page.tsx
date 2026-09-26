@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ExtraSections from "../../../components/ExtraSections";
+import SchemaFaqVisible from "../../../components/SchemaFaqVisible";
 
 export const metadata: Metadata = {
   title: { absolute: "Install IPTV on Firestick Canada 2026 — Step-by-Step" },
@@ -260,7 +261,8 @@ export default function IPTVFirestickBlogPost() {
             </div>
           </div>
           </article>
-    <ExtraSections path="/blog/iptv-firestick-canada" />
+    <SchemaFaqVisible schema={faqSchema as never} title="Quick answers" />
+      <ExtraSections path="/blog/iptv-firestick-canada" />
       </main>
     </>
   );

@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "1 Year IPTV Canada — $49 Best Value | Maple4K" },
   description:
     "Get a full year of IPTV in Canada for only $49. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV, IBO Player bonus included. Best value IPTV plan.",
-  keywords:
-    "IPTV annual Canada, Maple4K 1 year, best value IPTV Canada, 12 month IPTV Canada $49, yearly IPTV Canada",
+  keywords: "IPTV annual Canada, Maple4K 1 year, best value IPTV Canada, 12 month IPTV Canada $49, yearly IPTV Canada, iptv 12 months, iptv annual plan, iptv 1 year, iptv $49",
   alternates: { canonical: "https://maple4k.ca/pricing/12-months" },
+  openGraph: { title: "1 Year IPTV Canada — $49 Best Value | Maple4K", description: "Get a full year of IPTV in Canada for only $49. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV, IBO Player bonus included. Best value IPTV plan.", url: "https://maple4k.ca/pricing/12-months", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "1 Year IPTV Canada — $49 Best Value – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "1 Year IPTV Canada — $49 Best Value | Maple4K", description: "Get a full year of IPTV in Canada for only $49. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV, IBO Player bonus included. Best value IPTV plan.", images: ["/og-image.jpg"] },
 };
 
 const faqItems: FaqItem[] = [
@@ -180,6 +182,7 @@ export default function Pricing12MonthsPage() {
           </div>
         </section>
 
+      <ExtraSections path="/pricing/12-months" />
       </main>
     </>
   );

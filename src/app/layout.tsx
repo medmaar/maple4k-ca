@@ -1,6 +1,9 @@
 
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin", "latin-ext"], weight: ["400", "500", "600", "700", "800"], display: "swap" });
 import Navbar from "./Navbar";
 import Footer from "../components/Footer";
 import FloatingContact from "../components/FloatingContact";
@@ -8,6 +11,7 @@ import SalesBanner from "../components/SalesBanner";
 
 import Animations from "./components/Animations";
 import AutoBreadcrumb from "../components/AutoBreadcrumb";
+import AutoPageSchema from "../components/AutoPageSchema";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -73,18 +77,16 @@ export default function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
     return (
-          <html lang="en" className="h-full">
+          <html lang="en" className={`h-full ${jakarta.className}`}>
                 <head>
                   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                   {/* Preconnect to Google Fonts CDN */}
-                  {/* Preload LCP hero — desktop gets 1920px image, mobile gets 600px */}
-                  <link rel="preload" as="image" href="/hero-desktop.webp" type="image/webp" fetchPriority="high" media="(min-width: 768px)" />
-                  <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" media="(max-width: 767px)" />
+                  {/* Hero preload is sent as an HTTP Link header for "/" only (public/_headers) */}
                   {/* Critical above-fold CSS inlined — hero renders without waiting for CSS file */}
                   <style dangerouslySetInnerHTML={{ __html: `
                     *,*::before,*::after{box-sizing:border-box}
                     html{height:100%;scroll-behavior:smooth}
-                    body{background:#0C0F1A;color:#fff;margin:0;min-height:100%;display:flex;flex-direction:column;font-family:system-ui,sans-serif}
+                    body{background:#0C0F1A;color:#fff;margin:0;min-height:100%;display:flex;flex-direction:column;font-family:inherit}
                     nav{position:sticky;top:0;z-index:50;background:#0C0F1A;border-bottom:1px solid rgba(255,255,255,0.07);height:68px;display:flex;align-items:center}
                     main>section:first-child{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:#0C0F1A}
                     .flex-1{flex:1}
@@ -122,6 +124,7 @@ export default function RootLayout({
                         <SalesBanner />
                         <Animations />
                         <AutoBreadcrumb />
+                        <AutoPageSchema />
                 </body>
           </html>
         );

@@ -11,6 +11,7 @@ type Group = {
   theme: string;
   entries: Entry[];
   faq: Faq[];
+  aliases?: string[];
 };
 
 const e = (name: string, variants: string[], angle: string): Entry => ({ name, variants, angle });
@@ -67,7 +68,7 @@ function groupPage(g: Group): SeoPageData {
       { q: "How much does Maple4K cost?", a: "$9 for one month, $29 for three, $39 for six and $49 for twelve months on one connection. See [pricing](/pricing)." },
     ],
     related: ["/iptv-alternatives", "/best-iptv-canada", "/top-iptv-providers-canada"],
-    aliases: [],
+    aliases: g.aliases ?? [],
     ctaTitle: "Compare with Maple4K — Free for 24 Hours",
     ctaText: "No card, no contract. Test stability, channels and support yourself.",
     notAffiliated: "any brand named on this page",
@@ -211,6 +212,29 @@ const groups: Group[] = [
       { q: "Does IPTV 8K exist?", a: "IPTV services do not deliver 8K broadcast sources. Treat 8K claims as marketing. See [4K IPTV](/iptv-4k)." },
       { q: "What does 24/7 mean for IPTV?", a: "Ideally that channels stream around the clock and support answers at any hour. See our [24/7 IPTV guide](/iptv-24-7-canada)." },
     ],
+  },
+  {
+    slug: "iptv-brands-nap-ib-mega-smartone",
+    label: "NAP, IB, MegaOTT, SmartOne & Starshare IPTV",
+    blurb: "NAP, IB, MegaOTT, SmartOne, Starshare, BeastIPTV, Bandwich and Foster",
+    title: "NAP, IB, MegaOTT, SmartOne & Starshare IPTV — Compare",
+    description: "Searching NAP IPTV, IB IPTV, MegaOTT, SmartOne, Starshare, BeastIPTV, Bandwich or Foster IPTV? Compare these names fairly in Canada. Free 24-hour trial.",
+    h1: "NAP, IB, MegaOTT, SmartOne & Starshare IPTV — Comparing Popular Names",
+    theme: "These names — NAP, IB, MegaOTT, SmartOne, Starshare, BeastIPTV, Bandwich and Foster — each draw several hundred searches a month.",
+    entries: [
+      e("NAP IPTV", ["nap iptv", "napiptv", "nap iptv canada"], "People searching NAP IPTV mostly want pricing, login details or reviews. Use independent reviews rather than testimonials on a service's own site, and ask for a short trial so you can judge stream quality yourself."),
+      e("IB IPTV", ["ib iptv", "ibiptv", "ib iptv canada"], "Short initial-style names are hard to research because many sites reuse them. Confirm the exact domain, look for a written refund policy and check that reviews mention that same domain rather than a lookalike."),
+      e("MegaOTT and Mega IPTV", ["megaott", "mega ott", "mega iptv", "mega ip tv", "megaiptv", "megaott iptv", "megaott net"], "Mega-named services appear under many spellings and may not be the same operator. Read our [OTT vs IPTV guide](/ott-iptv-canada) so you know what an OTT-style login actually gives you."),
+      e("SmartOne IPTV", ["smartone iptv", "smartone iptv com", "smartone iptv generate", "smartone iptv com generate", "smartone iptv canada"], "Searches combining SmartOne with 'generate' suggest people want a playlist tool for a player app. Always use links from a provider you trust and never a public generator — see [free list risks](/blog/free-iptv-m3u-lists-risks-canada) and the [Tizen & webOS apps guide](/iptv-tizen-webos-apps-canada)."),
+      e("Starshare IPTV", ["starshare iptv", "starshare", "starshare tv"], "Starshare is often searched alongside 'reddit' and 'app', which points to people looking for user feedback. Treat forum feedback as one input and combine it with your own trial and independent [reviews](/reviews)."),
+      e("BeastIPTV", ["beastiptv", "beast iptv", "beast iptv canada"], "Performance-themed names promise power; what matters is measurable — buffering during a Saturday NHL game, EPG speed and support response time. Run the same tests on every service."),
+      e("Bandwich and Foster IPTV", ["bandwich iptv", "iptv foster", "foster iptv", "iptv control", "iptv installer"], "Less common names generate few reliable results, so ask direct questions about trial, price and support and be cautious if answers are vague. You never need an 'installer' — see the [beginner's guide](/blog/iptv-for-beginners-canada)."),
+    ],
+    faq: [
+      { q: "How do I check which IB IPTV or NAP IPTV site is real?", a: "Match the domain across reviews, support messages and payment pages. If they differ, stop and ask for clarification." },
+      { q: "MegaOTT vs Mega IPTV — same service?", a: "Not necessarily. Spellings vary and different sites use them. Maple4K is unrelated to all of them." },
+    ],
+    aliases: ["/nap-iptv-alternative", "/ib-iptv-alternative", "/megaott-iptv-alternative", "/smartone-iptv-alternative", "/starshare-iptv-alternative", "/beastiptv-alternative", "/bandwich-iptv-alternative", "/nap-iptv", "/ib-iptv", "/megaott", "/megaott-iptv", "/smartone-iptv", "/starshare-iptv", "/beastiptv", "/bandwich-iptv", "/mega-iptv", "/iptv-foster"],
   },
 ];
 

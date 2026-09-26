@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "Privacy Policy — Maple4K IPTV Canada" },
@@ -102,6 +103,7 @@ export default function PrivacyPolicyPage() {
           </section>
         </div>
       </div>
-    </main>
+    <ExtraSections path="/privacy-policy" />
+      </main>
   );
 }

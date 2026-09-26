@@ -273,7 +273,7 @@ export const hubs: SeoPageData[] = [
     ],
     hubLinks: [
       ...brandDefs.map(b => `/${b.slug}-alternative`),
-      "/iptv-brands-power-speed", "/iptv-brands-gold-royal", "/iptv-brands-animals-myth",
+      "/iptv-brands-nap-ib-mega-smartone", "/iptv-brands-power-speed", "/iptv-brands-gold-royal", "/iptv-brands-animals-myth",
       "/iptv-brands-space-tech", "/iptv-brands-everyday-names", "/iptv-brands-numbers-domains",
       "/iptv-brand-names-a-z",
     ],

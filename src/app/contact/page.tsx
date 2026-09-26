@@ -6,7 +6,10 @@ import ExtraSections from "../../components/ExtraSections";
 export const metadata: Metadata = {
   title: { absolute: "Contact Maple4K IPTV Support Canada — WhatsApp 24/7" },
   description: "Contact Maple4K via live chat, WhatsApp, or email. 4K streaming support team available 24/7 in English and French.",
+  keywords: "iptv customer service, iptv support canada, contact maple4k, iptv help, iptv smarters customer service, iptv support, iptv help canada",
   alternates: { canonical: "https://maple4k.ca/contact" },
+  openGraph: { title: "Contact Maple4K IPTV Support Canada — WhatsApp 24/7", description: "Contact Maple4K via live chat, WhatsApp, or email. 4K streaming support team available 24/7 in English and French.", url: "https://maple4k.ca/contact", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Contact Maple4K IPTV Support Canada — WhatsApp 24/7 – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "Contact Maple4K IPTV Support Canada — WhatsApp 24/7", description: "Contact Maple4K via live chat, WhatsApp, or email. 4K streaming support team available 24/7 in English and French.", images: ["/og-image.jpg"] },
 };
 
 const channels = [

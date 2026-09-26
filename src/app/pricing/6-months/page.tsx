@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
+import ExtraSections from "../../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "6 Month IPTV Canada — $39 | Maple4K" },
   description:
     "Get 6 months of IPTV in Canada for only $39. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV included. Save vs monthly. Login credentials sent.",
-  keywords:
-    "IPTV 6 months Canada, Maple4K 6 months, best IPTV plan Canada, 6 month IPTV Canada $39",
+  keywords: "IPTV 6 months Canada, Maple4K 6 months, best IPTV plan Canada, 6 month IPTV Canada $39, iptv 6 months, iptv half year plan, iptv $39",
   alternates: { canonical: "https://maple4k.ca/pricing/6-months" },
+  openGraph: { title: "6 Month IPTV Canada — $39 | Maple4K", description: "Get 6 months of IPTV in Canada for only $39. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV included. Save vs monthly. Login credentials sent.", url: "https://maple4k.ca/pricing/6-months", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "6 Month IPTV Canada — $39 – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "6 Month IPTV Canada — $39 | Maple4K", description: "Get 6 months of IPTV in Canada for only $39. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV included. Save vs monthly. Login credentials sent.", images: ["/og-image.jpg"] },
 };
 
 const faqItems: FaqItem[] = [
@@ -180,6 +182,7 @@ export default function Pricing6MonthsPage() {
           </div>
         </section>
 
+      <ExtraSections path="/pricing/6-months" />
       </main>
     </>
   );

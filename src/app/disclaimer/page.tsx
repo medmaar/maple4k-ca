@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
-  title: { absolute: "Disclaimer — Maple4K IPTV Canada" },
+  title: { absolute: "Disclaimer & Content Notice — Maple4K IPTV Canada" },
   description:
     "Legal disclaimer for Maple4K, Canada's best 4K IPTV service. We do not host or stream any copyrighted content. All content is provided by third-party.",
   alternates: { canonical: "https://maple4k.ca/disclaimer" },
@@ -95,6 +96,7 @@ export default function DisclaimerPage() {
           </div>
         </section>
       </div>
-    </main>
+    <ExtraSections path="/disclaimer" />
+      </main>
   );
 }

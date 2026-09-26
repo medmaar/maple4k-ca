@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     "Refer a friend to Maple4K and earn +1 free year of service. No limits — every successful referral adds 12 months to your account.",
   keywords: "Maple4K referral, refer a friend IPTV, Maple4K free year, IPTV affiliate Canada, iptv referral",
   alternates: { canonical: "https://maple4k.ca/referral" },
+  openGraph: { title: "Referral Program — Refer a Friend, Get +1 Year Free", description: "Refer a friend to Maple4K and earn +1 free year of service. No limits — every successful referral adds 12 months to your account.", url: "https://maple4k.ca/referral", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Referral Program — Refer a Friend, Get +1 Year Free – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "Referral Program — Refer a Friend, Get +1 Year Free", description: "Refer a friend to Maple4K and earn +1 free year of service. No limits — every successful referral adds 12 months to your account.", images: ["/og-image.jpg"] },
 };
 
 const steps = [

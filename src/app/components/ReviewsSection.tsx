@@ -243,7 +243,7 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
               boxShadow: "0 8px 40px rgba(0,0,0,0.4)",
             }}>
               <TP_STARS />
-              <h3 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: TEXT_MAIN }}>{tpReview.title}</h3>
+              <p style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: TEXT_MAIN }}>{tpReview.title}</p>
               <p style={{ color: TEXT_MUTED, lineHeight: 1.8, fontSize: 15, marginBottom: 20 }}>{tpReview.text}</p>
               <p style={{ color: "#00b67a", fontWeight: 600, fontSize: 13 }}>— {tpReview.name} <FlagImg flag={tpReview.flag} /></p>
             </div>

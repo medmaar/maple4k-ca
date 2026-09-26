@@ -17,10 +17,13 @@ import { depthCommerce } from "./depth-commerce";
 import { depthInfo } from "./depth-info";
 import { depthMisc } from "./depth-misc";
 import { depth2 } from "./depth2";
+import { depth3, sourcesMap } from "./depth3";
+import { depth4 } from "./depth4";
+import { depth5 } from "./depth5";
 import type { Section } from "./types";
 
 const depth: Record<string, Section[]> = {};
-for (const d of [depthApps, depthDevices, depthCommerce, depthInfo, depthMisc, depth2]) {
+for (const d of [depthApps, depthDevices, depthCommerce, depthInfo, depthMisc, depth2, depth3, depth4, depth5]) {
   for (const [path, sections] of Object.entries(d)) depth[path] = [...(depth[path] ?? []), ...sections];
 }
 
@@ -39,9 +42,11 @@ const base: SeoPageData[] = [
 ];
 
 // Long-form depth sections are appended after the core sections of each page.
-export const seoPages: SeoPageData[] = base.map(p =>
-  depth[p.path] ? { ...p, sections: [...p.sections, ...depth[p.path]] } : p
-);
+export const seoPages: SeoPageData[] = base.map(p => ({
+  ...p,
+  sections: depth[p.path] ? [...p.sections, ...depth[p.path]] : p.sections,
+  sources: [...(p.sources ?? []), ...(sourcesMap[p.path] ?? [])],
+}));
 
 const byPath = new Map(seoPages.map(p => [p.path, p]));
 

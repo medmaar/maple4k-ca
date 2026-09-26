@@ -1,7 +1,7 @@
 import SeoPage, { seoMetadata } from "../../components/SeoPage";
 import { getSeoPage } from "../../data/seo";
 
-const page = getSeoPage("/smartone-iptv-alternative");
+const page = getSeoPage("/iptv-brands-nap-ib-mega-smartone");
 
 export const metadata = seoMetadata(page);
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ExtraSections from "../../components/ExtraSections";
 
 export const metadata: Metadata = {
   title: { absolute: "Terms of Service — Maple4K IPTV Canada" },
@@ -109,6 +110,7 @@ export default function TermsOfServicePage() {
           </section>
         </div>
       </div>
-    </main>
+    <ExtraSections path="/terms-of-service" />
+      </main>
   );
 }

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Maple4K",
     locale: "en_CA",
-    images: [{ url: "/iptv-box.jpg", width: 1280, height: 720, alt: "IPTV Box Canada – Maple4K" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Box Canada – Maple4K" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -56,7 +56,7 @@ export default function IptvBoxPage() {
 
           {/* Hero image — IPTV on TV */}
           <div style={{ marginTop: 40, borderRadius: 18, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative", maxWidth: 820, margin: "40px auto 0" }}>
-            <img src="/iptv-box.jpg" alt="IPTV box Canada — stream live hockey on your TV with Maple4K" style={{ width: "100%", height: "auto", maxHeight: 380, objectFit: "cover", display: "block" }} loading="eager" />
+            <img width={1280} height={694} src="/iptv-box.webp" alt="IPTV box Canada — stream live hockey on your TV with Maple4K" style={{ width: "100%", height: "auto", maxHeight: 380, objectFit: "cover", display: "block" }} loading="eager" />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.65) 0%, transparent 55%)" }} />
             <div style={{ position: "absolute", bottom: 18, left: 22 }}>
               <p style={{ margin: 0, fontWeight: 700, fontSize: 14, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>📺 Stream IPTV on any box — instant setup, 4K quality</p>
@@ -101,7 +101,7 @@ export default function IptvBoxPage() {
         <div style={{ maxWidth: 860, margin: "0 auto" }}>
           {/* Trophy image */}
           <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", marginBottom: 40, position: "relative" }}>
-            <img src="/iptv-with-box.jpg" alt="Canada wins — celebrate every game with IPTV Maple4K" style={{ width: "100%", maxHeight: 360, objectFit: "cover", objectPosition: "center 20%", display: "block" }} loading="lazy" />
+            <img width={1280} height={853} src="/iptv-with-box.webp" alt="Canada wins — celebrate every game with IPTV Maple4K" style={{ width: "100%", maxHeight: 360, objectFit: "cover", objectPosition: "center 20%", display: "block" }} loading="lazy" />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.7) 0%, transparent 50%)" }} />
             <div style={{ position: "absolute", bottom: 18, left: 22 }}>
               <p style={{ margin: 0, fontWeight: 700, fontSize: 14, color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>🏆 Never miss a championship moment — stream live with Maple4K</p>

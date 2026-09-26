@@ -293,6 +293,18 @@ export default function SeoPage({ page: p }: { page: SeoPageData }) {
           </div>
         </section>
 
+        {/* Sources */}
+        {p.sources && p.sources.length > 0 && (
+          <section style={{ padding: "40px 16px", background: nextBg() }}>
+            <div style={{ maxWidth: 900, margin: "0 auto" }}>
+              <h2 style={{ fontSize: 13, fontWeight: 700, color: red, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 14 }}>{fr ? "Sources et lectures utiles" : "Sources & further reading"}</h2>
+              <ul style={{ margin: 0, paddingLeft: 20, color: "rgba(255,255,255,0.6)", fontSize: 14, lineHeight: 1.8 }}>
+                {p.sources.map(x => <li key={x.url}><a href={x.url} target="_blank" rel="noopener noreferrer" style={inlineLink}>{x.label}</a></li>)}
+              </ul>
+            </div>
+          </section>
+        )}
+
         {/* Related */}
         {related.length > 0 && (
           <section style={{ padding: "50px 16px", background: nextBg() }}>
