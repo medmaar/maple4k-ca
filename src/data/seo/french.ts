@@ -24,7 +24,7 @@ export const french: SeoPageData[] = [
           "Chaînes canadiennes et sportives : hockey, CFL, soccer et plus — voir [IPTV Québec](/iptv-quebec)",
           "Contenu en français et en anglais dans la même application",
           "Aucun contrat, aucun équipement obligatoire : Fire Stick, téléviseur intelligent, téléphone ou ordinateur",
-          "Prix transparents en dollars canadiens — voir [l'abonnement IPTV](/fr/abonnement-iptv-canada)",
+          "Prix transparents en dollars américains (USD) — voir [l'abonnement IPTV](/fr/abonnement-iptv-canada)",
         ],
       },
       {

@@ -12,7 +12,7 @@ export type ExistingExtra = {
   sources?: { label: string; url: string }[];
 };
 
-const CUR = "CAD";
+const CUR = "USD";
 const offer = (name: string, price: string, url: string) => ({
   "@type": "Offer",
   name,

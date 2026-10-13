@@ -21,7 +21,7 @@ export const apps: SeoPageData[] = [
       {
         h2: "TiviMate Premium price and cost in Canada",
         paras: [
-          "TiviMate bills in US dollars through the TiviMate Companion app, so Canadian buyers pay the CAD equivalent on their card or Google Play balance. Pricing in the app can change, so treat the figures below as a guide and confirm the live price at checkout.",
+          "TiviMate bills in US dollars through the TiviMate Companion app, so buyers are charged in USD on their card or Google Play balance. Pricing in the app can change, so treat the figures below as a guide and confirm the live price at checkout.",
         ],
         table: {
           head: ["Option", "Approx. cost (USD)", "Best for"],
@@ -62,7 +62,7 @@ export const apps: SeoPageData[] = [
       ],
     },
     faqs: [
-      { q: "How much is TiviMate Premium in Canada?", a: "TiviMate Premium is roughly US$4.99 per year or a one-time lifetime purchase of about US$19.99, billed in USD and converted to CAD by your card issuer. Confirm the current price in the TiviMate Companion app." },
+      { q: "How much is TiviMate Premium in Canada?", a: "TiviMate Premium is roughly US$4.99 per year or a one-time lifetime purchase of about US$19.99, billed in USD. Confirm the current price in the TiviMate Companion app." },
       { q: "Is TiviMate Premium worth it?", a: "For most people watching on a TV every day, yes. Recordings, multiple playlists and custom channel groups are all Premium features, and the yearly price is very low. If you only watch one playlist and never record, the free version is fine." },
       { q: "Do I still need an IPTV subscription with TiviMate Premium?", a: "Yes. TiviMate is only the player. You need an IPTV service that gives you Xtream Codes or M3U details — for example a [Maple4K plan from $9/month](/pricing)." },
       { q: "How do I create a TiviMate account?", a: "Install the TiviMate Companion app on an Android phone, sign up with your email and buy Premium there. Then sign in with the same account on your Fire Stick or Android TV inside TiviMate → Settings → Account." },

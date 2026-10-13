@@ -72,12 +72,12 @@ const productSchema = {
   offers: {
     "@type": "Offer",
     price: "99.00",
-    priceCurrency: "CAD",
+    priceCurrency: "USD",
     availability: "https://schema.org/InStock",
     url: "https://maple4k.ca/pricing/4-devices/3-months",
     "shippingDetails": {
       "@type": "OfferShippingDetails",
-      "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "CAD" },
+      "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "USD" },
       "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "CA" },
       "deliveryTime": {
         "@type": "ShippingDeliveryTime",

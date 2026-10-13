@@ -63,7 +63,7 @@ export default function TermsOfServicePage() {
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-3">5. Payment and Billing</h2>
-            <p className="mb-3">All subscriptions are prepaid. Prices are listed in Canadian dollars (CAD) unless otherwise stated. By purchasing a subscription, you agree that:</p>
+            <p className="mb-3">All subscriptions are prepaid. Prices are listed in US dollars (USD) unless otherwise stated. By purchasing a subscription, you agree that:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>All fees are due at the time of purchase</li>
               <li>There are no automatic renewals — you purchase the duration you choose</li>

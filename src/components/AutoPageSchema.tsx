@@ -35,7 +35,7 @@ export default function AutoPageSchema() {
       url,
       provider: org,
       areaServed: { "@type": "City", name: CITIES[path], containedInPlace: { "@type": "Country", name: "Canada" } },
-      offers: { "@type": "AggregateOffer", priceCurrency: "CAD", lowPrice: "9", highPrice: "49", offerCount: "4", url: `${SITE}/pricing` },
+      offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "9", highPrice: "49", offerCount: "4", url: `${SITE}/pricing` },
     };
   } else if (WEBPAGE.has(path)) {
     schema = {

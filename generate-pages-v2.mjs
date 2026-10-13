@@ -93,7 +93,7 @@ const productSchema = {
   offers: {
     "@type": "Offer",
     price: "${price}.00",
-    priceCurrency: "CAD",
+    priceCurrency: "USD",
     availability: "https://schema.org/InStock",
     url: "${canonical}",
   },

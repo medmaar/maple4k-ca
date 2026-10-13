@@ -124,7 +124,7 @@ export default function TorontoPage() {
               <h2 style={{ fontSize: "clamp(22px, 2.5vw, 32px)", fontWeight: 800, marginBottom: 20 }}>Best Devices for Toronto</h2>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
                 {[
-                  { d: "Fire Stick 4K", note: "$79 CAD — perfect for 4K sports" },
+                  { d: "Fire Stick 4K", note: "$79 USD — perfect for 4K sports" },
                   { d: "Samsung / LG 4K Smart TV", note: "Native 4K app support (2016+)" },
                   { d: "Android TV Box", note: "Best living room option, H.265 HW decode" },
                   { d: "Apple TV 4K", note: "Premium, flawless reliability" },
