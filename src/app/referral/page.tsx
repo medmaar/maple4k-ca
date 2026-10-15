@@ -59,7 +59,7 @@ export default function ReferralPage() {
     <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section style={{ background: "#0C0F1A", padding: "48px 16px 32px" }}>
+      <section style={{ background: "#0C0F1A", padding: "32px 16px 24px", minHeight: "auto" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", textAlign: "center" }}>
             <span style={{ display: "inline-block", background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#E8041F", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, marginBottom: 20 }}>
@@ -71,7 +71,7 @@ export default function ReferralPage() {
             <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13, marginBottom: 20 }}>
               Share Maple4K with people you know and earn free subscription time when they join.
             </p>
-            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 20, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "10px 20px", fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
               <span><span style={{ color: "#79C9C5" }}>✓</span> Unlimited referrals</span>
               <span><span style={{ color: "#79C9C5" }}>✓</span> +6 months per referral</span>
               <span><span style={{ color: "#79C9C5" }}>✓</span> Fast review</span>
@@ -81,18 +81,18 @@ export default function ReferralPage() {
       </section>
 
       {/* Referral form */}
-      <section id="refer" style={{ padding: "8px 16px 64px" }}>
+      <section id="refer" style={{ padding: "0 16px 48px" }}>
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
           <ReferralForm />
         </div>
       </section>
 
       {/* How it works */}
-      <section style={{ padding: "80px 16px" }}>
+      <section style={{ padding: "16px 16px 56px" }}>
         <div style={{ maxWidth: 960, margin: "0 auto" }}>
           <p style={{ textAlign: "center", color: "#E8041F", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>Simple Process</p>
           <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#fff" }}>How It Works</h2>
-          <p style={{ textAlign: "center", color: "#fff", marginBottom: 48, fontSize: 15 }}>Three simple steps to earn free service.</p>
+          <p style={{ textAlign: "center", color: "#fff", marginBottom: 32, fontSize: 15 }}>Three simple steps to earn free service.</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
             {steps.map((step) => (
               <div key={step.number} style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(63,154,174,0.2)", borderRadius: 20, padding: "36px 28px", boxShadow: "0 4px 20px rgba(63,154,174,0.1)" }}>
@@ -106,9 +106,9 @@ export default function ReferralPage() {
       </section>
 
       {/* Rules */}
-      <section style={{ padding: "0 16px 80px" }}>
+      <section style={{ padding: "0 16px 56px" }}>
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
-          <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 900, marginBottom: 40, color: "#fff" }}>Program Rules</h2>
+          <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 900, marginBottom: 28, color: "#fff" }}>Program Rules</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             {rules.map((rule, i) => (
               <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 16, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)", borderRadius: 14, padding: "20px 24px" }}>
@@ -121,7 +121,7 @@ export default function ReferralPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "80px 16px", background: "rgba(255,255,255,0.05)", textAlign: "center" }}>
+      <section style={{ padding: "56px 16px", background: "rgba(255,255,255,0.05)", textAlign: "center" }}>
         <div style={{ maxWidth: 620, margin: "0 auto" }}>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Not a Customer Yet?</h2>
           <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
