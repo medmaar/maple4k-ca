@@ -2,6 +2,7 @@
 import { useState, useRef } from "react";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import { sendInvoice } from "@/lib/invoice";
 
 async function getEmailjs() {
   const mod = await import("@emailjs/browser");
@@ -64,6 +65,7 @@ export default function PlanOrderForm({ plan }: Props) {
         message: form.message || "—",
         site_name: "Maple4K.ca",
       });
+      sendInvoice(form.full_name || "Not provided", form.email || "Not provided", plan);
       setStatus("success");
     } catch (err) {
       console.error("EmailJS error:", err);
