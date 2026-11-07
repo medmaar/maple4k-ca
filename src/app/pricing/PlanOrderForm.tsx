@@ -2,6 +2,7 @@
 import { useState, useRef } from "react";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import Celebrate from "@/components/Celebrate";
 import { sendInvoice } from "@/lib/invoice";
 
 async function getEmailjs() {
@@ -39,6 +40,7 @@ export default function PlanOrderForm({ plan }: Props) {
   const [form, setForm] = useState({ full_name: "", email: "", country: "Canada", device: "", message: "" });
   const [phone, setPhone] = useState<string | undefined>("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [celebrating, setCelebrating] = useState(false);
   const emailjsInitialized = useRef(false);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
@@ -67,6 +69,7 @@ export default function PlanOrderForm({ plan }: Props) {
       });
       sendInvoice(form.full_name || "Not provided", form.email || "Not provided", plan);
       setStatus("success");
+      setCelebrating(true);
     } catch (err) {
       console.error("EmailJS error:", err);
       setStatus("error");
@@ -87,6 +90,8 @@ export default function PlanOrderForm({ plan }: Props) {
   /* ── SUCCESS: form completely hidden, only confirmation shown ── */
   if (status === "success") {
     return (
+      <>
+      {celebrating && <Celebrate kind="order" email={form.email} onClose={() => setCelebrating(false)} />}
       <div style={{
         background: "rgba(34,197,94,0.06)",
         border: "1px solid rgba(34,197,94,0.25)",
@@ -114,6 +119,7 @@ export default function PlanOrderForm({ plan }: Props) {
           </span>
         </div>
       </div>
+      </>
     );
   }
 

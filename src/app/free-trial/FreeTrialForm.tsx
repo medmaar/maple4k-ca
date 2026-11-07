@@ -2,6 +2,7 @@
 import { useState } from "react";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import Celebrate from "@/components/Celebrate";
 
 const WORKER_URL = "https://iptv-trial-maple4k.medmaar.workers.dev";
 
@@ -28,6 +29,7 @@ export default function FreeTrialForm() {
   const [form, setForm] = useState({ full_name: "", email: "", country: "Canada", device: "", message: "" });
   const [phone, setPhone] = useState<string | undefined>("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [celebrating, setCelebrating] = useState(false);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     const { name, value } = e.target;
@@ -53,6 +55,7 @@ export default function FreeTrialForm() {
       const data = await res.json();
       if (!res.ok || !data.success) throw new Error(data.error || "Worker error");
       setStatus("success");
+      setCelebrating(true);
     } catch (err) {
       console.error("Trial error:", err);
       setStatus("error");
@@ -73,6 +76,8 @@ export default function FreeTrialForm() {
 
   if (status === "success") {
     return (
+      <>
+      {celebrating && <Celebrate kind="trial" email={form.email} onClose={() => setCelebrating(false)} />}
       <div style={{ background: "rgba(34,197,94,0.06)", border: "1px solid rgba(34,197,94,0.25)", borderRadius: 20, padding: "48px 32px", textAlign: "center" }}>
         <div style={{ fontSize: 56, marginBottom: 20 }}>✅</div>
         <h3 style={{ color: "#4ade80", fontWeight: 800, fontSize: 22, margin: "0 0 12px" }}>Trial Activated!</h3>
@@ -88,6 +93,7 @@ export default function FreeTrialForm() {
           </span>
         </div>
       </div>
+      </>
     );
   }
 

@@ -12,6 +12,7 @@ import SalesBanner from "../components/SalesBanner";
 import Animations from "./components/Animations";
 import AutoBreadcrumb from "../components/AutoBreadcrumb";
 import AutoPageSchema from "../components/AutoPageSchema";
+import { CelebratePreview } from "../components/Celebrate";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -125,6 +126,7 @@ export default function RootLayout({
                         <Animations />
                         <AutoBreadcrumb />
                         <AutoPageSchema />
+                        <CelebratePreview />
                 </body>
           </html>
         );
