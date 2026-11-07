@@ -29,7 +29,6 @@ export default function FreeTrialForm() {
   const [form, setForm] = useState({ full_name: "", email: "", country: "Canada", device: "", message: "" });
   const [phone, setPhone] = useState<string | undefined>("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [celebrating, setCelebrating] = useState(false);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     const { name, value } = e.target;
@@ -55,7 +54,6 @@ export default function FreeTrialForm() {
       const data = await res.json();
       if (!res.ok || !data.success) throw new Error(data.error || "Worker error");
       setStatus("success");
-      setCelebrating(true);
     } catch (err) {
       console.error("Trial error:", err);
       setStatus("error");
@@ -74,27 +72,9 @@ export default function FreeTrialForm() {
     boxSizing: "border-box",
   };
 
+  // Success: only the full-screen celebration (its button goes to the homepage); no inline confirmation.
   if (status === "success") {
-    return (
-      <>
-      {celebrating && <Celebrate kind="trial" email={form.email} onClose={() => setCelebrating(false)} />}
-      <div style={{ background: "rgba(34,197,94,0.06)", border: "1px solid rgba(34,197,94,0.25)", borderRadius: 20, padding: "48px 32px", textAlign: "center" }}>
-        <div style={{ fontSize: 56, marginBottom: 20 }}>✅</div>
-        <h3 style={{ color: "#4ade80", fontWeight: 800, fontSize: 22, margin: "0 0 12px" }}>Trial Activated!</h3>
-        <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 15, lineHeight: 1.7, margin: "0 0 20px", maxWidth: 380, marginLeft: "auto", marginRight: "auto" }}>
-          Your login credentials have been sent to your <span style={{ color: "#60a5fa", fontWeight: 700 }}>email</span>. Check your inbox — it should arrive within 1 minute.
-        </p>
-        <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap" }}>
-          <span style={{ background: "rgba(37,211,102,0.12)", border: "1px solid rgba(37,211,102,0.25)", color: "#25D366", fontSize: 13, fontWeight: 600, padding: "8px 18px", borderRadius: 999 }}>
-            📱 WhatsApp support available
-          </span>
-          <span style={{ background: "rgba(96,165,250,0.12)", border: "1px solid rgba(96,165,250,0.25)", color: "#60a5fa", fontSize: 13, fontWeight: 600, padding: "8px 18px", borderRadius: 999 }}>
-            📧 Credentials sent to email
-          </span>
-        </div>
-      </div>
-      </>
-    );
+    return <Celebrate kind="trial" email={form.email} />;
   }
 
   return (
