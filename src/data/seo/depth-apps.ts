@@ -2,7 +2,7 @@ import type { Section } from "./types";
 
 /** Extra long-form sections appended to each page (unique per page). */
 export const depthApps: Record<string, Section[]> = {
-  "/tivimate-premium-canada": [
+  "/ca/tivimate-premium-canada": [
     {
       h2: "Is TiviMate Premium worth it for Canadian viewers?",
       paras: [
@@ -19,10 +19,10 @@ export const depthApps: Record<string, Section[]> = {
         "Set the guide to refresh once a day; more frequent refreshes just add load time",
         "If you upgrade your IPTV plan later, edit the existing playlist instead of adding a new one so your groups and favourites carry over",
       ],
-      paras: ["Not sure whether your device is powerful enough for recording? Compare options in our [best Android TV box for IPTV](/best-android-tv-box-for-iptv-canada) guide, or stay on a [Fire Stick 4K](/iptv-firestick-canada) which handles TiviMate comfortably."],
+      paras: ["Not sure whether your device is powerful enough for recording? Compare options in our [best Android TV box for IPTV](/best-android-tv-box-for-iptv-canada) guide, or stay on a [Fire Stick 4K](/ca/iptv-firestick-canada) which handles TiviMate comfortably."],
     },
   ],
-  "/tivimate-firestick-canada": [
+  "/ca/tivimate-firestick-canada": [
     {
       h2: "Fire Stick settings that make TiviMate feel faster",
       paras: [
@@ -42,10 +42,10 @@ export const depthApps: Record<string, Section[]> = {
           ["Black screen on 4K channels", "Software decoder in use", "Settings → Playback → Video decoder → Hardware"],
         ],
       },
-      paras: ["Still stuck? Message [Maple4K support](/contact) with your Fire Stick model and the channel name. We reply fast, including during live games."],
+      paras: ["Still stuck? Message [Maple4K support](/ca/contact) with your Fire Stick model and the channel name. We reply fast, including during live games."],
     },
   ],
-  "/tivimate-alternatives-canada": [
+  "/ca/tivimate-alternatives-canada": [
     {
       h2: "How to get a TiviMate-style experience without Android",
       paras: [
@@ -59,9 +59,9 @@ export const depthApps: Record<string, Section[]> = {
         "Use the TV's own app if the TV is only occasionally used for IPTV and you are happy with a simpler interface",
         "Use a plug-in Android device if it is your main living-room screen, you record programmes, or you watch a lot of live sport",
         "Use your phone or tablet for travel — IPTV Smarters Pro on iOS and Android works with the same Maple4K login",
-        "Remember one login supports one simultaneous stream per connection — plan connections for the number of screens you will use at the same time (see [pricing](/pricing))",
+        "Remember one login supports one simultaneous stream per connection — plan connections for the number of screens you will use at the same time (see [pricing](/ca/pricing))",
       ],
-      paras: ["See the complete device overview in the [IPTV devices hub](/iptv-devices)."],
+      paras: ["See the complete device overview in the [IPTV devices hub](/ca/iptv-devices)."],
     },
   ],
   "/xciptv-canada": [
@@ -80,10 +80,10 @@ export const depthApps: Record<string, Section[]> = {
         "You want a second app to test whether a problem is provider-side or app-side",
         "You are comfortable spending five minutes in settings to tune buffer and format",
       ],
-      paras: ["If you would rather not tweak anything, install [TiviMate](/tivimate-canada) and follow its default steps. For an overview of every app see the [IPTV player hub](/iptv-player)."],
+      paras: ["If you would rather not tweak anything, install [TiviMate](/ca/tivimate-canada) and follow its default steps. For an overview of every app see the [IPTV player hub](/ca/iptv-player)."],
     },
   ],
-  "/xtream-iptv-canada": [
+  "/ca/xtream-iptv-canada": [
     {
       h2: "Reading your Xtream Codes details correctly",
       paras: [
@@ -122,10 +122,10 @@ export const depthApps: Record<string, Section[]> = {
           ["Best for", "Simple Android use", "Living-room TVs", "Tinkerers"],
         ],
       },
-      paras: ["Every one of these works with the same login. Browse the [IPTV player hub](/iptv-player) and pick one to try."],
+      paras: ["Every one of these works with the same login. Browse the [IPTV player hub](/ca/iptv-player) and pick one to try."],
     },
   ],
-  "/implayer-canada": [
+  "/ca/implayer-canada": [
     {
       h2: "Who IMPlayer suits best",
       paras: [
@@ -136,7 +136,7 @@ export const depthApps: Record<string, Section[]> = {
     {
       h2: "Checklist before you pay for a premium player",
       bullets: [
-        "Test with the free tier and the Maple4K [free trial](/free-trial) first",
+        "Test with the free tier and the Maple4K [free trial](/ca/free-trial) first",
         "Confirm Premium unlocks something you will actually use (multiple playlists, EPG options, no ad-like prompts)",
         "Check whether the licence covers all your devices or just one",
         "Compare with free alternatives such as [IPTV Smarters Pro](/iptv-smarters-pro-canada) and [XCIPTV](/xciptv-canada)",
@@ -162,7 +162,7 @@ export const depthApps: Record<string, Section[]> = {
           ["Best for", "Living-room Apple TV", "People who use Smarters on phones"],
         ],
       },
-      paras: ["See also the full [Apple TV IPTV guide](/iptv-apple-tv-canada) and [IPTV on iPhone & iPad](/iptv-ios-canada)."],
+      paras: ["See also the full [Apple TV IPTV guide](/iptv-apple-tv-canada) and [IPTV on iPhone & iPad](/ca/iptv-ios-canada)."],
     },
   ],
   "/nanomid-lg-webos-canada": [
@@ -181,10 +181,10 @@ export const depthApps: Record<string, Section[]> = {
         "No EPG: some M3U-based apps need a separate guide link; ask support for the EPG URL",
         "Freezes on 4K: reduce to an HD channel to confirm the network, then check Ethernet",
       ],
-      paras: ["When webOS apps do not behave, a plug-in [Fire Stick with TiviMate](/tivimate-firestick-canada) is a dependable fallback."],
+      paras: ["When webOS apps do not behave, a plug-in [Fire Stick with TiviMate](/ca/tivimate-firestick-canada) is a dependable fallback."],
     },
   ],
-  "/duplecast-iptv-canada": [
+  "/ca/duplecast-iptv-canada": [
     {
       h2: "Getting reliable results from code-based smart TV apps",
       paras: [
@@ -196,9 +196,9 @@ export const depthApps: Record<string, Section[]> = {
       h2: "If Duplecast is not available on your TV",
       bullets: [
         "Try [Smarters Player Lite](/smarters-player-lite-canada) for a login-based approach without codes",
-        "Check [Smart IPTV](/smart-iptv) if you own a Samsung or LG TV",
-        "Consider a plug-in device such as a Fire Stick — see [IPTV on Fire Stick](/iptv-firestick-canada)",
-        "Contact [Maple4K support](/contact) with your TV brand and year, and we will suggest the best option",
+        "Check [Smart IPTV](/ca/smart-iptv) if you own a Samsung or LG TV",
+        "Consider a plug-in device such as a Fire Stick — see [IPTV on Fire Stick](/ca/iptv-firestick-canada)",
+        "Contact [Maple4K support](/ca/contact) with your TV brand and year, and we will suggest the best option",
       ],
     },
   ],
@@ -212,7 +212,7 @@ export const depthApps: Record<string, Section[]> = {
     },
     {
       h2: "Why the name is spelled so many ways",
-      paras: ["Searches show many spellings — Smarters, Smasters, Smart Player Lite, Smarters Pro Lite. They all point to the same family of apps by the same developer. If the store shows two similar apps, choose the one whose description mentions Xtream Codes login and the Lite label for smart TVs. When in doubt, ask [Maple4K support](/contact) and mention your TV brand."],
+      paras: ["Searches show many spellings — Smarters, Smasters, Smart Player Lite, Smarters Pro Lite. They all point to the same family of apps by the same developer. If the store shows two similar apps, choose the one whose description mentions Xtream Codes login and the Lite label for smart TVs. When in doubt, ask [Maple4K support](/ca/contact) and mention your TV brand."],
     },
   ],
   "/iptv-smarters-pro-firestick-canada": [
@@ -272,7 +272,7 @@ export const depthApps: Record<string, Section[]> = {
         "You use several IPTV logins",
         "You want the same interface on every TV in the house",
       ],
-      paras: ["Read our [Fire Stick guide](/iptv-firestick-canada) or the [set-top box hub](/iptv-set-top-box) for options."],
+      paras: ["Read our [Fire Stick guide](/ca/iptv-firestick-canada) or the [set-top box hub](/iptv-set-top-box) for options."],
     },
   ],
   "/iptv-smarters-pro-subscription-canada": [
@@ -289,7 +289,7 @@ export const depthApps: Record<string, Section[]> = {
         "Request a free trial and test it on your main device at peak time",
         "Check the plan covers the number of simultaneous screens you need",
         "Confirm you can reach support by message",
-        "Read the refund policy — [Maple4K's refund policy](/refund-policy)",
+        "Read the refund policy — [Maple4K's refund policy](/ca/refund-policy)",
         "Save your login details securely",
       ],
     },
@@ -310,10 +310,10 @@ export const depthApps: Record<string, Section[]> = {
         "Checking whether a playlist loads before you set up a TV app",
         "Troubleshooting: if it plays in a browser but not in your TV app, the app is the problem",
       ],
-      paras: ["For day-to-day viewing, jump to our [IPTV player hub](/iptv-player) and pick an app for your TV."],
+      paras: ["For day-to-day viewing, jump to our [IPTV player hub](/ca/iptv-player) and pick an app for your TV."],
     },
   ],
-  "/mytvonline-canada": [
+  "/ca/mytvonline-canada": [
     {
       h2: "Getting more from MyTVOnline 3",
       paras: [
@@ -332,7 +332,7 @@ export const depthApps: Record<string, Section[]> = {
           ["Box slow after weeks of use", "Reboot and remove unused portals"],
         ],
       },
-      paras: ["Model-specific notes: [Z11](/iptv-formula), [Z10 Pro Max](/formuler-z10-pro-max-canada), [Z8 Pro](/formuler-z8-pro-canada)."],
+      paras: ["Model-specific notes: [Z11](/ca/iptv-formula), [Z10 Pro Max](/formuler-z10-pro-max-canada), [Z8 Pro](/formuler-z8-pro-canada)."],
     },
   ],
 };

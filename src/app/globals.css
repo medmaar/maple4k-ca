@@ -73,8 +73,8 @@ body {
 a:not([aria-hidden="true"]), button {
   transition: transform 0.28s cubic-bezier(0.34,1.56,0.64,1), background 0.22s ease, color 0.22s ease, box-shadow 0.28s ease;
 }
-nav a:not([href="/free-trial"]), footer a { background: transparent !important; box-shadow: none !important; }
-nav a:not([href="/free-trial"]):hover { transform: translateY(-2px) !important; }
+nav a:not([href="/ca/free-trial"]), footer a { background: transparent !important; box-shadow: none !important; }
+nav a:not([href="/ca/free-trial"]):hover { transform: translateY(-2px) !important; }
 
 .btn-red {
   background: var(--red); color: #fff; font-weight: 700; border-radius: 12px;
@@ -100,8 +100,8 @@ nav a::after, footer a::after {
 }
 nav a:hover::after, footer a:hover::after { width: 100%; }
 
-a[href="/free-trial"] { animation: softPulse 3.2s ease-in-out infinite; will-change: box-shadow; }
-a[href="/free-trial"]:hover { animation: none !important; }
+a[href="/ca/free-trial"] { animation: softPulse 3.2s ease-in-out infinite; will-change: box-shadow; }
+a[href="/ca/free-trial"]:hover { animation: none !important; }
 main > section:first-child > img { opacity: 1 !important; transform: none !important; }
 
 .feature-card {

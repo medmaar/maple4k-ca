@@ -120,7 +120,7 @@ const EMAIL_BRAND = {
     "-",
     "—"
   ],
-  "plansUrl": "/pricing",
+  "plansUrl": "/ca/pricing",
   "money": {
     "pre": "$",
     "post": "",
@@ -133,22 +133,22 @@ const EMAIL_BRAND = {
         {
           "months": 1,
           "price": 9,
-          "url": "/pricing/1-month"
+          "url": "/ca/pricing/1-month"
         },
         {
           "months": 3,
           "price": 29,
-          "url": "/pricing/3-months"
+          "url": "/ca/pricing/3-months"
         },
         {
           "months": 6,
           "price": 39,
-          "url": "/pricing/6-months"
+          "url": "/ca/pricing/6-months"
         },
         {
           "months": 12,
           "price": 49,
-          "url": "/pricing/12-months"
+          "url": "/ca/pricing/12-months"
         }
       ]
     },

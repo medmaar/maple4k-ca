@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: { absolute: "Best IPTV Canada 2026 — 50,000+ Channels + Netflix | Maple4K" },
   description: "Best IPTV Canada 2026. 50,000+ channels + Netflix, free trial available — no credit card. IPTV subscription from $9/month. Best IPTV service in Canada.",
   keywords: "iptv canada, best iptv canada, iptv québec, iptv box, iptv free trial, free trial iptv, iptv from canada, iptv subscription canada, best iptv in canada, iptv providers canada, best iptv service canada, iptv near me, iptv legal, smart iptv, canadian iptv, iptv 4k, iptv firestick, iptv canada reviews, best iptv provider canada, free iptv canada",
-  alternates: { canonical: "https://maple4k.ca", languages: { "en-CA": "https://maple4k.ca", "fr-CA": "https://maple4k.ca/fr", "x-default": "https://maple4k.ca" } },
+  alternates: { canonical: "https://maple4k.ca", languages: { "en-CA": "https://maple4k.ca", "fr-CA": "https://maple4k.ca/ca/fr", "x-default": "https://maple4k.ca" } },
   openGraph: { siteName: "Maple4K", locale: "en_CA",
       images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K — Canada's Best 4K IPTV" }],
     title: "Best IPTV Canada 2026 — 50,000+ Channels + Netflix from $9 | Maple4K",
@@ -81,7 +81,7 @@ const homeFaqSchema = {
 export default function HomePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "Maple4K IPTV Canada", "description": "IPTV subscription for Canada: 50,000+ live channels, 120,000+ movies and series, 4K streams, EPG and 24/7 support. Free 24-hour trial.", "image": "https://maple4k.ca/og-image.jpg", "url": "https://maple4k.ca", "brand": {"@type": "Brand", "name": "Maple4K"}, "offers": {"@type": "AggregateOffer", "priceCurrency": "USD", "lowPrice": "9", "highPrice": "49", "offerCount": "4", "availability": "https://schema.org/InStock", "url": "https://maple4k.ca/pricing"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "289", "bestRating": "5", "worstRating": "1"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "Maple4K IPTV Canada", "description": "IPTV subscription for Canada: 50,000+ live channels, 120,000+ movies and series, 4K streams, EPG and 24/7 support. Free 24-hour trial.", "image": "https://maple4k.ca/og-image.jpg", "url": "https://maple4k.ca", "brand": {"@type": "Brand", "name": "Maple4K"}, "offers": {"@type": "AggregateOffer", "priceCurrency": "USD", "lowPrice": "9", "highPrice": "49", "offerCount": "4", "availability": "https://schema.org/InStock", "url": "https://maple4k.ca/ca/pricing"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "289", "bestRating": "5", "worstRating": "1"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }} />
     <main style={{ background: "#0C0F1A", color: "#fff" }}>
@@ -168,7 +168,7 @@ export default function HomePage() {
             </p>
             <ExperienceAccordion />
             <div style={{ marginTop: 32 }}>
-              <Link href="/pricing" className="btn-red" style={{ display: "inline-flex" }}>Subscribe Now</Link>
+              <Link href="/ca/pricing" className="btn-red" style={{ display: "inline-flex" }}>Subscribe Now</Link>
             </div>
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
             <p style={{ color: "rgba(255,255,255,0.55)", fontSize: 15, lineHeight: 1.7, marginBottom: 32 }}>
               Whether on your phone, TV, tablet or computer — as long as you have internet access, you can watch anywhere, on any device.
             </p>
-            <Link href="/pricing" className="btn-red" style={{ display: "inline-flex" }}>Subscribe</Link>
+            <Link href="/ca/pricing" className="btn-red" style={{ display: "inline-flex" }}>Subscribe</Link>
           </div>
           <div className="ma-right" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10 }}>
             {devices.map(d => (
@@ -218,8 +218,8 @@ export default function HomePage() {
             Get 24 hours of full access — set it up yourself on any compatible device using our step-by-step guides.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/free-trial" className="btn-red">▶ Free Trial 24H</Link>
-            <Link href="/pricing" className="btn-outline">View Plans →</Link>
+            <Link href="/ca/free-trial" className="btn-red">▶ Free Trial 24H</Link>
+            <Link href="/ca/pricing" className="btn-outline">View Plans →</Link>
           </div>
         </div>
       </section>
@@ -248,19 +248,19 @@ export default function HomePage() {
               <h3 style={{ fontSize: 13, fontWeight: 700, color: "#E8041F", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 16 }}>By City</h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                 {[
-                  { label: "IPTV Toronto", href: "/iptv-toronto" },
-                  { label: "IPTV Vancouver", href: "/iptv-vancouver" },
-                  { label: "IPTV Montreal", href: "/iptv-montreal" },
-                  { label: "IPTV Calgary", href: "/iptv-calgary" },
-                  { label: "IPTV Ottawa", href: "/iptv-ottawa" },
-                  { label: "IPTV Edmonton", href: "/iptv-edmonton" },
-                  { label: "IPTV Winnipeg", href: "/iptv-winnipeg" },
-                  { label: "IPTV Quebec", href: "/iptv-quebec" },
-                  { label: "IPTV Halifax", href: "/iptv-halifax" },
-                  { label: "IPTV Hamilton", href: "/iptv-hamilton" },
-                  { label: "IPTV Victoria", href: "/iptv-victoria" },
-                  { label: "IPTV Near Me", href: "/iptv-near-me" },
-                  { label: "All Cities →", href: "/iptv-cities" },
+                  { label: "IPTV Toronto", href: "/ca/iptv-toronto" },
+                  { label: "IPTV Vancouver", href: "/ca/iptv-vancouver" },
+                  { label: "IPTV Montreal", href: "/ca/iptv-montreal" },
+                  { label: "IPTV Calgary", href: "/ca/iptv-calgary" },
+                  { label: "IPTV Ottawa", href: "/ca/iptv-ottawa" },
+                  { label: "IPTV Edmonton", href: "/ca/iptv-edmonton" },
+                  { label: "IPTV Winnipeg", href: "/ca/iptv-winnipeg" },
+                  { label: "IPTV Quebec", href: "/ca/iptv-quebec" },
+                  { label: "IPTV Halifax", href: "/ca/iptv-halifax" },
+                  { label: "IPTV Hamilton", href: "/ca/iptv-hamilton" },
+                  { label: "IPTV Victoria", href: "/ca/iptv-victoria" },
+                  { label: "IPTV Near Me", href: "/ca/iptv-near-me" },
+                  { label: "All Cities →", href: "/ca/iptv-cities" },
                 ].map(link => (
                   <Link key={link.href} href={link.href} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 8, padding: "6px 14px", fontSize: 13, color: "rgba(255,255,255,0.75)", textDecoration: "none", fontWeight: 500 }}>
                     {link.label}
@@ -273,19 +273,19 @@ export default function HomePage() {
               <h3 style={{ fontSize: 13, fontWeight: 700, color: "#E8041F", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 16 }}>By Device</h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                 {[
-                  { label: "Fire Stick", href: "/iptv-firestick-canada" },
+                  { label: "Fire Stick", href: "/ca/iptv-firestick-canada" },
                   { label: "Android TV", href: "/iptv-android-tv-canada" },
                   { label: "Smart TV", href: "/iptv-smart-tv-canada" },
                   { label: "Apple TV", href: "/iptv-apple-tv-canada" },
                   { label: "Samsung TV", href: "/iptv-samsung-tv-canada" },
                   { label: "LG TV", href: "/iptv-lg-tv-canada" },
-                  { label: "Android Phone", href: "/iptv-android-canada" },
-                  { label: "iPhone & iPad", href: "/iptv-ios-canada" },
-                  { label: "Roku", href: "/iptv-roku-canada" },
+                  { label: "Android Phone", href: "/ca/iptv-android-canada" },
+                  { label: "iPhone & iPad", href: "/ca/iptv-ios-canada" },
+                  { label: "Roku", href: "/ca/iptv-roku-canada" },
                   { label: "MAG Box", href: "/iptv-mag-box-canada" },
-                  { label: "Windows PC", href: "/iptv-windows-canada" },
-                  { label: "IPTV Box", href: "/iptv-box" },
-                  { label: "All Devices →", href: "/iptv-devices" },
+                  { label: "Windows PC", href: "/ca/iptv-windows-canada" },
+                  { label: "IPTV Box", href: "/ca/iptv-box" },
+                  { label: "All Devices →", href: "/ca/iptv-devices" },
                 ].map(link => (
                   <Link key={link.href} href={link.href} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 8, padding: "6px 14px", fontSize: 13, color: "rgba(255,255,255,0.75)", textDecoration: "none", fontWeight: 500 }}>
                     {link.label}
@@ -299,24 +299,24 @@ export default function HomePage() {
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                 {[
                   { label: "Best IPTV App", href: "/best-iptv-app-canada" },
-                  { label: "TiviMate Canada", href: "/tivimate-canada" },
+                  { label: "TiviMate Canada", href: "/ca/tivimate-canada" },
                   { label: "IPTV Smarters Pro", href: "/blog/iptv-smarters-pro-canada" },
-                  { label: "Best IPTV Canada", href: "/best-iptv-canada" },
-                  { label: "IPTV Subscription", href: "/iptv-subscription" },
-                  { label: "IPTV 4K", href: "/iptv-4k" },
-                  { label: "Channels List", href: "/channels-list" },
-                  { label: "How It Works", href: "/how-it-works" },
-                  { label: "Free Trial", href: "/free-trial" },
-                  { label: "Blog", href: "/blog" },
-                  { label: "Reviews", href: "/reviews" },
-                  { label: "Reseller Program", href: "/reseller" },
-                  { label: "What Is IPTV?", href: "/what-is-iptv" },
-                  { label: "IPTV Players & Apps", href: "/iptv-player" },
+                  { label: "Best IPTV Canada", href: "/ca/best-iptv-canada" },
+                  { label: "IPTV Subscription", href: "/ca/iptv-subscription" },
+                  { label: "IPTV 4K", href: "/ca/iptv-4k" },
+                  { label: "Channels List", href: "/ca/channels-list" },
+                  { label: "How It Works", href: "/ca/how-it-works" },
+                  { label: "Free Trial", href: "/ca/free-trial" },
+                  { label: "Blog", href: "/ca/blog" },
+                  { label: "Reviews", href: "/ca/reviews" },
+                  { label: "Reseller Program", href: "/ca/reseller" },
+                  { label: "What Is IPTV?", href: "/ca/what-is-iptv" },
+                  { label: "IPTV Players & Apps", href: "/ca/iptv-player" },
                   { label: "IPTV Set-Top Boxes", href: "/iptv-set-top-box" },
-                  { label: "Canadian IPTV", href: "/canadian-iptv" },
-                  { label: "IPTV Alternatives", href: "/iptv-alternatives" },
-                  { label: "Cheap IPTV", href: "/cheap-iptv-canada" },
-                  { label: "IPTV en français", href: "/fr" },
+                  { label: "Canadian IPTV", href: "/ca/canadian-iptv" },
+                  { label: "IPTV Alternatives", href: "/ca/iptv-alternatives" },
+                  { label: "Cheap IPTV", href: "/ca/cheap-iptv-canada" },
+                  { label: "IPTV en français", href: "/ca/fr" },
                 ].map(link => (
                   <Link key={link.href} href={link.href} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 8, padding: "6px 14px", fontSize: 13, color: "rgba(255,255,255,0.75)", textDecoration: "none", fontWeight: 500 }}>
                     {link.label}
@@ -336,8 +336,8 @@ export default function HomePage() {
             Canada&apos;s only IPTV built around True 4K Ultra HD. 50,000+ channels + Netflix, HDR10 &amp; Dolby Vision — from $9/month. Try free, no credit card required.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/free-trial" className="btn-red">▶ Free Trial 24H</Link>
-            <Link href="/pricing" className="btn-outline">Subscribe →</Link>
+            <Link href="/ca/free-trial" className="btn-red">▶ Free Trial 24H</Link>
+            <Link href="/ca/pricing" className="btn-outline">Subscribe →</Link>
           </div>
         </div>
       </section>

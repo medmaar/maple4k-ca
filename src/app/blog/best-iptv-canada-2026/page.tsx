@@ -29,7 +29,7 @@ const articleSchema = {
     "Deep dive into 4K IPTV technology in Canada. H.265 codec, HDR10 support, bitrate requirements, device compatibility, and video quality benchmarks.",
   datePublished: "2026-01-15",
   dateModified: "2026-04-30",
-  "author": { "@type": "Person", "name": "Alex Tremblay", "url": "https://maple4k.ca/about" },
+  "author": { "@type": "Person", "name": "Alex Tremblay", "url": "https://maple4k.ca/ca/about" },
   publisher: {
     "@type": "Organization",
     name: "Maple4K",
@@ -91,7 +91,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
-    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/blog"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/ca/blog"},
     {"@type":"ListItem","position":3,"name":"Best Iptv Canada 2026","item":"https://maple4k.ca/blog/best-iptv-canada-2026"}
   ]
 };
@@ -269,7 +269,7 @@ export default function Maple4KBlogPost() {
             Try Maple4K free for 24 hours. Stream sports, movies, and series in stunning 4K Ultra HD with H.265 codec and HDR10. No credit card. Full device access.
           </p>
           <Link
-            href="/free-trial"
+            href="/ca/free-trial"
             className="inline-block bg-blue-600 text-white font-bold px-8 py-3 rounded-lg hover:bg-blue-700 transition"
           >
             Get Free 4K Trial

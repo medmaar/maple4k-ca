@@ -1,0 +1,189 @@
+import type { Metadata } from "next";
+import PlanOrderForm from "@/app/pricing/PlanOrderForm";
+import PlanFAQ, { type FaqItem } from "@/app/pricing/PlanFAQ";
+import ExtraSections from "@/components/ExtraSections";
+
+export const metadata: Metadata = {
+  title: { absolute: "1 Month IPTV Plan Canada — $9, No Contract | Maple4K" },
+  description:
+    "Get 1 month of IPTV in Canada for only $9. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within.",
+  keywords: "IPTV 1 month Canada, Maple4K 1 month, IPTV $9 Canada, month to month IPTV Canada, iptv 1 month, iptv monthly plan canada, iptv $9",
+  alternates: { canonical: "https://maple4k.ca/ca/pricing/1-month" },
+  openGraph: { title: "1 Month IPTV Plan Canada — $9, No Contract | Maple4K", description: "Get 1 month of IPTV in Canada for only $9. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within.", url: "https://maple4k.ca/ca/pricing/1-month", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "1 Month IPTV Canada — $9 – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "1 Month IPTV Plan Canada — $9, No Contract | Maple4K", description: "Get 1 month of IPTV in Canada for only $9. 50,000+ channels + Netflix, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within.", images: ["/og-image.jpg"] },
+};
+
+const faqItems: FaqItem[] = [
+  {
+    q: "What is included in the 1-month IPTV plan?",
+    a: "The 1-month plan gives you full access to 50,000+ channels + Netflix including all Canadian networks (TSN, Sportsnet, CBC, CTV, Global, RDS, TVA), 120,000+ movies and series on demand, 4K Ultra HD streaming, electronic program guide (EPG), and 7-day catch-up TV — all for $9.",
+  },
+  {
+    q: "How do I receive my login credentials after ordering?",
+    a: "After placing your order, our team will review it and send your login credentials (server URL, username, and password) directly to your email address within minutes. Check your spam folder if you don't see it.",
+  },
+  {
+    q: "Which devices are compatible with this IPTV service?",
+    a: "Our service works on Amazon Firestick, all Samsung and LG Smart TVs, Android boxes, Android phones and tablets, iPhone, iPad, Apple TV, MAG boxes, Windows PCs and Macs. You can use it on virtually any device that supports an IPTV player app.",
+  },
+  {
+    q: "How fast does my internet connection need to be?",
+    a: "We recommend at least 10 Mbps for HD streaming and 25 Mbps for 4K Ultra HD. Any standard Canadian home internet plan handles this easily. Our anti-freeze technology also minimises buffering on slower connections.",
+  },
+  {
+    q: "Can I watch live Canadian and Quebec channels?",
+    a: "Yes — every plan includes TSN, Sportsnet, CBC, CTV, Global, City TV, RDS, TVA, Canal Vie, and all regional Canadian channels in HD and 4K. Every NHL, NFL, NBA and CFL game is covered.",
+  },
+  {
+    q: "Can I use this service on more than one device at a time?",
+    a: "The base plan supports 1 simultaneous connection. If you need more devices streaming at the same time, contact us and we'll set up a multi-connection plan for you.",
+  },
+  {
+    q: "What happens when my 1-month subscription expires?",
+    a: "You'll receive a reminder before expiry. Simply place a new order to renew — or upgrade to the 6-month or 12-month plan for better savings. There are no automatic charges and no contracts.",
+  },
+  {
+    q: "How do I get support if something stops working?",
+    a: "Our Canadian support team is available 24/7 via WhatsApp (contact us via WhatsApp form) and email in English and French. Most issues are resolved within minutes.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Maple4K 1 Month IPTV Plan",
+  description: "1 month of IPTV access to 50,000+ channels + Netflix in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
+  brand: { "@type": "Brand", name: "Maple4K" },
+  "image": "https://maple4k.ca/og-image.jpg",
+  "review": {
+    "@type": "Review",
+    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    "author": { "@type": "Person", "name": "Marc D." },
+    "reviewBody": "Best IPTV service in Canada. Works perfectly on my Firestick with zero buffering. TSN and Sportsnet in 4K — incredible."
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "312",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  offers: {
+    "@type": "Offer",
+    price: "9.00",
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
+    url: "https://maple4k.ca/ca/pricing/1-month",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "USD" },
+      "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "CA" },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "HUR" },
+        "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "HUR" }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "CA",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+    },
+  },
+};
+
+export default function Pricing1MonthPage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
+        <section
+          className="py-20 px-4"
+          style={{
+            background:
+              "transparent",
+          }}
+        >
+          <div className="max-w-2xl mx-auto">
+            {/* 1. Page title */}
+            <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", marginBottom: 24, textAlign: "center" }}>
+              <span style={{ background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#E8041F", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 20 }}>
+                Maple4K · 1 Month
+              </span>
+              <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 16 }}>
+                1 Month
+              </h1>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, marginBottom: 16 }}>
+                <span style={{ color: "#E8041F", fontWeight: 900, fontSize: "2.4rem" }}>Price : $9</span>
+                <span style={{ background: "#E8041F", color: "#fff", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>50% OFF</span>
+              </div>
+              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13 }}>Fill out the form below — credentials sent within minutes</p>
+            </div>
+
+            {/* 3. Order Form */}
+            <div
+              className="rounded-3xl p-6 md:p-8 border mb-16"
+              style={{
+                background: "rgba(255,255,255,0.05)",
+                borderColor: "rgba(121,201,197,0.2)", boxShadow: "0 8px 32px rgba(26,61,69,0.25)",
+              }}
+            >
+              <PlanOrderForm plan="1 Month Plan — $9" />
+            </div>
+
+            {/* 4. FAQ */}
+            <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", marginBottom: 32 }}>
+              <p
+                className="text-xs font-bold uppercase tracking-widest mb-2"
+                style={{ color: "#E8041F" }}
+              >
+                FAQ
+              </p>
+              <h2 style={{ color: "#ffffff", fontSize: "1.4rem", fontWeight: 800, marginBottom: 24 }}>
+                Frequently Asked Questions
+              </h2>
+              <PlanFAQ items={faqItems} />
+            
+            {/* Internal Links */}
+            <div style={{ marginTop: 32, background: "rgba(255,255,255,0.06)", borderRadius: 16, padding: "24px 20px" }}>
+              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 12, fontWeight: 600, textAlign: "center", marginBottom: 16, textTransform: "uppercase", letterSpacing: "0.08em" }}>Explore More Plans</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 14 }}>
+                <a href="/ca/pricing/1-month" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>1 Month — $9</a>
+                <a href="/ca/pricing/3-months" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>3 Months — $29</a>
+                <a href="/ca/pricing/6-months" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>6 Months — $39</a>
+                <a href="/ca/pricing/12-months" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>1 Year — $49 ⭐</a>
+              </div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+                <a href="/ca/free-trial" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Try Free 24h</a>
+                <a href="/ca/pricing" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>All Plans</a>
+                <a href="/ca/channels-list" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Channel List</a>
+                <a href="/ca/iptv-toronto" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>IPTV Toronto</a>
+                <a href="/ca/iptv-vancouver" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>IPTV Vancouver</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+
+      <ExtraSections path="/ca/pricing/1-month" />
+      </main>
+    </>
+  );
+}

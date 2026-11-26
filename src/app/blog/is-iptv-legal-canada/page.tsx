@@ -33,7 +33,7 @@ const articleSchema = {
   headline: "Is IPTV Legal in Canada in 2026?",
   datePublished: "2026-01-15",
   dateModified: "2026-04-30",
-  "author": { "@type": "Person", "name": "Alex Tremblay", "url": "https://maple4k.ca/about" },
+  "author": { "@type": "Person", "name": "Alex Tremblay", "url": "https://maple4k.ca/ca/about" },
   publisher: {
     "@type": "Organization",
     name: "Maple4K",
@@ -48,7 +48,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
-    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/blog"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/ca/blog"},
     {"@type":"ListItem","position":3,"name":"Is Iptv Legal Canada","item":"https://maple4k.ca/blog/is-iptv-legal-canada"}
   ]
 };
@@ -279,7 +279,7 @@ export default function IsIPTVLegalCanada() {
               → Best IPTV Player Apps for Canada in 2026
             </Link>
             <Link
-              href="/iptv-firestick-canada"
+              href="/ca/iptv-firestick-canada"
               style={{ color: "#E8041F", textDecoration: "none", fontSize: 15 }}
             >
               → How to Set Up IPTV on Firestick in Canada
@@ -289,7 +289,7 @@ export default function IsIPTVLegalCanada() {
           {/* CTA */}
           <div style={{ marginTop: 48, textAlign: "center" }}>
             <Link
-              href="/pricing"
+              href="/ca/pricing"
               style={{
                 display: "inline-block",
                 background: "#E8041F",

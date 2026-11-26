@@ -207,7 +207,7 @@ export default function HeroSection() {
         {/* CTAs */}
         <div style={{ display: "flex", flexDirection: "column", gap: 14, alignItems: "center" }}>
           <Link
-            href="/pricing"
+            href="/ca/pricing"
             style={{
               background: "#E8041F",
               color: "#fff", fontWeight: 800, fontSize: 16,
@@ -220,7 +220,7 @@ export default function HeroSection() {
             Subscribe
           </Link>
           <Link
-            href="/free-trial"
+            href="/ca/free-trial"
             style={{
               background: "rgba(255,255,255,0.1)",
               border: "1px solid rgba(255,255,255,0.25)",

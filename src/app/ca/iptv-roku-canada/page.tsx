@@ -1,0 +1,215 @@
+import type { Metadata } from "next";
+import ExtraSections from "@/components/ExtraSections";
+
+export const metadata: Metadata = {
+  title: { absolute: "IPTV on Roku Canada 2026 — Options Explained | Maple4K" },
+  description:
+    "Stream IPTV on Roku in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy private channel setup. Free trial.",
+  keywords: "IPTV Roku Canada, Roku Maple4K, best IPTV for Roku Canada, Roku streaming Maple4K, iptv on roku tv, iptv roku tv, roku tv iptv, tivimate roku, roku express iptv, iptv smasters on roku tv, roku iptv app, iptv roku stick",
+  alternates: { canonical: "https://maple4k.ca/ca/iptv-roku-canada" },
+  openGraph: {
+    title: "IPTV Roku Canada | Maple4K – Best 4K IPTV Canada",
+    description: "Stream IPTV on Roku in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Easy private channel setup. Free trial.",
+    url: "https://maple4k.ca/ca/iptv-roku-canada",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
+};
+
+const steps = [
+  { step: "1", title: "Subscribe & Get Credentials", desc: "Choose a plan and contact us via WhatsApp, Telegram, or email. Your credentials arrive within minutes." },
+  { step: "2", title: "Add a Private Channel", desc: "Go to my.roku.com on a browser, sign in, and add the private channel code we provide to your Roku account." },
+  { step: "3", title: "Install on Your Roku", desc: "Open the Roku Channel Store on your device and find the newly added private channel. Install it." },
+  { step: "4", title: "Enter Your Credentials", desc: "Open the IPTV channel on your Roku, enter your server URL, username, and password, and connect." },
+  { step: "5", title: "Start Watching", desc: "Your full channel list and EPG load automatically. Use your Roku remote to browse and enjoy." },
+];
+
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Set Up IPTV on Roku in Canada",
+  step: [
+    {"@type":"HowToStep",position:1,name:"Subscribe & Get Credentials",text:"Choose a Maple4K plan and contact us. Credentials arrive within minutes."},
+    {"@type":"HowToStep",position:2,name:"Add a Private Channel",text:"Go to my.roku.com, sign in, and add the private channel code we provide."},
+    {"@type":"HowToStep",position:3,name:"Install on Your Roku",text:"Open Roku Channel Store and install the newly added private channel."},
+    {"@type":"HowToStep",position:4,name:"Enter Your Login Details",text:"Open the channel, enter the server URL, username, and password provided."},
+    {"@type":"HowToStep",position:5,name:"Start Streaming",text:"Browse 50,000+ channels and 120,000+ movies in HD and 4K on your Roku."}
+  ],
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  { q: "Does IPTV work on all Roku models?", a: "Yes, IPTV works on all Roku models running Roku OS 9.2 or newer. The Roku Streaming Stick 4K and Ultra offer the best performance." },
+  { q: "Do I need to jailbreak my Roku?", a: "No jailbreak required. Roku's private channel feature allows installing IPTV apps cleanly through the official Roku website." },
+  { q: "Can I use my Roku and phone at the same time?", a: "Yes — with a 2-device or higher plan, you can stream on your Roku and any other device simultaneously." },
+  { q: "Which Roku model is best for IPTV in Canada?", a: "The Roku Streaming Stick 4K is our top pick — great 4K HDR performance, compact design, and excellent value for Canadians." },
+  { q: "Can I use TiviMate on Roku?", a: "No — TiviMate is Android-only and isn't available on Roku's channel store. Roku uses Maple4K's private channel instead, giving you the same live TV and VOD library without needing TiviMate." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV Roku Canada", item: "https://maple4k.ca/ca/iptv-roku-canada" },
+  ],
+};
+
+export default function IPTVRokuPage() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+    <main className="bg-transparent min-h-screen">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
+        <div className="max-w-3xl mx-auto">
+          <div className="inline-block bg-[#F96E5B] text-white text-xs px-3 py-1 rounded-full mb-4 font-bold uppercase tracking-wider">
+            Roku Stick · Roku TV · Roku Ultra
+          </div>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+            IPTV for <span className="text-[#F96E5B]">Roku Canada</span>
+          </h1>
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+            Watch Canadian TV on any Roku device. Simple private channel setup,
+            no jailbreak, no sideloading. Works on all Roku sticks and Roku TVs.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/ca/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+              Get Free Trial
+            </a>
+            <a href="/ca/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+              View Pricing
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Compatible devices */}
+      <section className="py-12 px-4 bg-transparent">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-xl font-bold mb-6 text-white">Compatible Roku Devices</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {["Roku Express", "Roku Streaming Stick", "Roku Streaming Stick 4K", "Roku Ultra", "Roku Ultra LT", "Roku TV (all brands)", "Roku Smart Soundbar"].map((d) => (
+              <span key={d} className="bg-gray-800 border border-gray-700 px-4 py-2 rounded-full text-sm text-white">
+                {d}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Setup guide */}
+      <section className="py-20 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">
+            How to Set Up IPTV on <span className="text-[#F96E5B]">Roku</span>
+          </h2>
+          <p className="text-center text-white mb-12">Private channel setup — clean and straightforward.</p>
+          <div className="space-y-6">
+            {steps.map((s) => (
+              <div key={s.step} className="flex gap-5 bg-transparent rounded-2xl p-6 border border-gray-800">
+                <div className="flex-shrink-0 w-10 h-10 bg-[#F96E5B] rounded-full flex items-center justify-center font-extrabold text-white">
+                  {s.step}
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-1">{s.title}</h3>
+                  <p className="text-white text-sm">{s.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="py-20 px-4 bg-transparent">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-10">
+            Why Roku is a <span className="text-[#F96E5B]">Great IPTV Device</span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { title: "Affordable & Accessible", desc: "Roku devices start at under $40, making them the most affordable way to get IPTV on your TV in Canada." },
+              { title: "4K HDR on Roku Ultra", desc: "The Roku Streaming Stick 4K and Roku Ultra support 4K HDR10+ streams for a premium picture quality." },
+              { title: "Simple Remote", desc: "Roku's simple remote with dedicated shortcut buttons makes navigating channels and VOD fast and easy." },
+              { title: "No Account Lock-In", desc: "Your Roku private channel works regardless of your Roku account region. Watch Canadian content anywhere." },
+            ].map((f) => (
+              <div key={f.title} className="bg-transparent rounded-2xl p-6 border border-gray-800">
+                <h3 className="font-bold text-lg mb-2">{f.title}</h3>
+                <p className="text-white text-sm">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-10">
+            Roku IPTV <span className="text-[#F96E5B]">FAQ</span>
+          </h2>
+          <div className="space-y-6">
+            {[
+              { q: "Does IPTV work on all Roku models?", a: "Yes, IPTV works on all Roku models running Roku OS 9.2 or newer. The Roku Streaming Stick 4K and Ultra offer the best performance." },
+              { q: "Do I need to jailbreak my Roku?", a: "No jailbreak required. Roku's private channel feature allows installing IPTV apps cleanly through the official Roku website." },
+              { q: "Can I use my Roku and phone at the same time?", a: "Yes — with a 2-device or higher plan, you can stream on your Roku and any other device simultaneously." },
+              { q: "Which Roku model is best for IPTV in Canada?", a: "The Roku Streaming Stick 4K is our top pick — great 4K HDR performance, compact design, and excellent value for Canadians." },
+              { q: "Can I use TiviMate on Roku?", a: "No — TiviMate is Android-only and isn't available on Roku's channel store. Roku uses Maple4K's private channel instead, giving you the same live TV and VOD library without needing TiviMate." },
+            ].map((item) => (
+              <div key={item.q} className="bg-transparent rounded-xl p-6 border border-gray-800">
+                <h3 className="font-bold text-lg mb-3 text-[#F96E5B]">{item.q}</h3>
+                <p className="text-white text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 px-4 bg-gradient-to-r from-red-900 to-gray-900 text-center">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4">Ready for IPTV on Your Roku?</h2>
+          <p className="text-white mb-8">Try it free for 24 hours — no credit card required.</p>
+          <a href="/ca/free-trial" className="inline-block bg-[#F96E5B] hover:bg-[#F96E5B] text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors">
+            Get Free Trial
+          </a>
+        </div>
+      </section>
+    
+        {/* SEO Internal Links */}
+        <section style={{ padding: "48px 16px" }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <p style={{ textAlign: "center", color: "#fff", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
+              <a href="/ca/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Toronto</a>
+              <a href="/ca/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
+              <a href="/ca/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Montreal</a>
+              <a href="/ca/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Calgary</a>
+              <a href="/ca/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
+              <a href="/ca/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+              <a href="/ca/pricing" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+              <a href="/ca/free-trial" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
+              <a href="/ca/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>Channel List</a>
+            </div>
+          </div>
+        </section>
+      <ExtraSections path="/ca/iptv-roku-canada" />
+      </main>
+    </>
+  );
+}

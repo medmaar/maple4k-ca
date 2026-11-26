@@ -1,10 +1,10 @@
 import type { SeoPageData } from "./types";
 
-const HUB = "/iptv-devices";
+const HUB = "/ca/iptv-devices";
 
 export const devices: SeoPageData[] = [
   {
-    path: "/iptv-mac-canada",
+    path: "/ca/iptv-mac-canada",
     cluster: "devices",
     hub: HUB,
     label: "IPTV on Mac",
@@ -35,14 +35,14 @@ export const devices: SeoPageData[] = [
           "Use Ethernet through a USB-C adapter for long sports sessions",
           "Apple Silicon Macs (M1 and newer) decode H.265 4K in hardware — an easy win",
           "Close Safari tabs and heavy apps while streaming live sport",
-          "For iPhone or iPad follow the [iOS IPTV guide](/iptv-ios-canada)",
+          "For iPhone or iPad follow the [iOS IPTV guide](/ca/iptv-ios-canada)",
         ],
       },
     ],
     steps: {
       h2: "Watch IPTV on Mac in 4 steps",
       items: [
-        { title: "Get your Maple4K login", body: "[Start a free trial](/free-trial) to receive Xtream Codes details and an M3U link." },
+        { title: "Get your Maple4K login", body: "[Start a free trial](/ca/free-trial) to receive Xtream Codes details and an M3U link." },
         { title: "Install a player", body: "Download IPTV Smarters Pro for macOS or install VLC from videolan.org." },
         { title: "Add your playlist", body: "In Smarters choose Xtream Codes API; in VLC use Media → Open Network Stream and paste the M3U URL." },
         { title: "Cast to a TV (optional)", body: "Use AirPlay to send the video to Apple TV. For the best quality, run the player natively on the [Apple TV](/iptv-apple-tv-canada)." },
@@ -50,11 +50,11 @@ export const devices: SeoPageData[] = [
     },
     faqs: [
       { q: "How do I watch IPTV on my MacBook?", a: "Install IPTV Smarters Pro for macOS or VLC, then enter your Maple4K Xtream Codes or M3U details. Both work on MacBook Air, Pro, iMac and Mac mini." },
-      { q: "Is there a Mac version of TiviMate?", a: "No. TiviMate is Android-only. See [TiviMate alternatives](/tivimate-alternatives-canada)." },
-      { q: "Does Smart IPTV work on Mac?", a: "Smart IPTV is a TV app for Samsung and LG. On Mac use Smarters Pro or VLC. See the [Smart IPTV guide](/smart-iptv) for TVs." },
+      { q: "Is there a Mac version of TiviMate?", a: "No. TiviMate is Android-only. See [TiviMate alternatives](/ca/tivimate-alternatives-canada)." },
+      { q: "Does Smart IPTV work on Mac?", a: "Smart IPTV is a TV app for Samsung and LG. On Mac use Smarters Pro or VLC. See the [Smart IPTV guide](/ca/smart-iptv) for TVs." },
       { q: "Can I record IPTV on a Mac?", a: "VLC can record a stream to disk; recording features vary by app. For managed DVR, TiviMate Premium on Fire TV or Android TV is easier." },
     ],
-    related: ["/iptv-windows-canada", "/iptv-ios-canada"],
+    related: ["/ca/iptv-windows-canada", "/ca/iptv-ios-canada"],
     aliases: ["/iptv-mac", "/mac-iptv", "/iptv-macbook", "/iptv-pc", "/iptv-laptop"],
     ctaTitle: "Try Maple4K on Your Mac",
     ctaText: "24-hour free trial with Xtream and M3U logins — works on macOS today.",
@@ -79,7 +79,7 @@ export const devices: SeoPageData[] = [
         table: {
           head: ["Device", "Install apps?", "Best IPTV approach"],
           rows: [
-            ["Chromecast with Google TV (4K or HD)", "Yes", "[TiviMate](/tivimate-canada) or Smarters Pro"],
+            ["Chromecast with Google TV (4K or HD)", "Yes", "[TiviMate](/ca/tivimate-canada) or Smarters Pro"],
             ["Sony / TCL / Philips Google TV", "Yes", "Same as Android TV — [guide](/iptv-android-tv-canada)"],
             ["Older Chromecast (Audio, Gen 1–3, Ultra)", "No", "Cast from an Android or iOS IPTV app"],
           ],
@@ -89,7 +89,7 @@ export const devices: SeoPageData[] = [
         h2: "Casting IPTV from your phone",
         paras: [
           "Some IPTV apps include a cast button. Open the app on your Android phone or iPhone, log in with Xtream Codes, start a channel and tap Cast. Quality depends on your Wi-Fi and the app's cast support, so a native TV app is preferable when your device allows it.",
-          "Owners of older Chromecasts often find the cheapest fix is a [Fire Stick](/iptv-firestick-canada) or [Android TV box](/best-android-tv-box-for-iptv-canada).",
+          "Owners of older Chromecasts often find the cheapest fix is a [Fire Stick](/ca/iptv-firestick-canada) or [Android TV box](/best-android-tv-box-for-iptv-canada).",
         ],
       },
     ],
@@ -97,7 +97,7 @@ export const devices: SeoPageData[] = [
       h2: "Set up IPTV on Chromecast with Google TV (4 steps)",
       items: [
         { title: "Open the Google Play Store on the TV", body: "Search for TiviMate or IPTV Smarters Pro and install." },
-        { title: "Get your Maple4K login", body: "[Free trial](/free-trial) sends server URL, username and password." },
+        { title: "Get your Maple4K login", body: "[Free trial](/ca/free-trial) sends server URL, username and password." },
         { title: "Add the playlist", body: "In TiviMate: Add Playlist → Xtream Codes. In Smarters: Login with Xtream Codes API." },
         { title: "Set decoding to hardware", body: "Use Auto/Hardware decoding so H.265 4K plays smoothly on Chromecast." },
       ],
@@ -107,9 +107,9 @@ export const devices: SeoPageData[] = [
       { q: "Does TiviMate work on Chromecast with Google TV?", a: "Yes, TiviMate is available for Android TV and Google TV devices." },
       { q: "How do I cast IPTV to Chromecast?", a: "Use an IPTV app with a cast button on your phone. Start a channel and tap the cast icon. Performance varies by app." },
       { q: "Does Sony Google TV support IPTV?", a: "Yes. Sony Bravia Google TV models run Android apps — see [IPTV on Android TV](/iptv-android-tv-canada)." },
-      { q: "Is Chromecast good for 4K IPTV?", a: "Chromecast with Google TV 4K supports H.265 4K playback. Use Ethernet or 5 GHz Wi-Fi for best results; see [4K IPTV](/iptv-4k)." },
+      { q: "Is Chromecast good for 4K IPTV?", a: "Chromecast with Google TV 4K supports H.265 4K playback. Use Ethernet or 5 GHz Wi-Fi for best results; see [4K IPTV](/ca/iptv-4k)." },
     ],
-    related: ["/iptv-android-tv-canada", "/tivimate-canada"],
+    related: ["/iptv-android-tv-canada", "/ca/tivimate-canada"],
     aliases: ["/iptv-chromecast", "/chromecast-iptv", "/iptv-google-tv", "/iptv-sony"],
     ctaTitle: "Stream Maple4K on Chromecast",
     ctaText: "24-hour free trial. Install, log in and watch in 4K.",
@@ -134,8 +134,8 @@ export const devices: SeoPageData[] = [
         table: {
           head: ["Hisense model type", "OS", "IPTV approach"],
           rows: [
-            ["Hisense with Google TV", "Google TV", "Install [TiviMate](/tivimate-canada) — see [Android TV guide](/iptv-android-tv-canada)"],
-            ["Hisense with Roku TV", "Roku OS", "See [Roku IPTV options](/iptv-roku-canada)"],
+            ["Hisense with Google TV", "Google TV", "Install [TiviMate](/ca/tivimate-canada) — see [Android TV guide](/iptv-android-tv-canada)"],
+            ["Hisense with Roku TV", "Roku OS", "See [Roku IPTV options](/ca/iptv-roku-canada)"],
             ["Hisense with VIDAA", "VIDAA", "Add a Fire Stick or Android box"],
           ],
         },
@@ -143,7 +143,7 @@ export const devices: SeoPageData[] = [
       {
         h2: "Best plug-in devices for VIDAA TVs",
         bullets: [
-          "[Fire Stick 4K](/iptv-firestick-canada) — cheapest, works with TiviMate and Smarters",
+          "[Fire Stick 4K](/ca/iptv-firestick-canada) — cheapest, works with TiviMate and Smarters",
           "Android TV box — see [best Android TV box for IPTV](/best-android-tv-box-for-iptv-canada)",
           "[Apple TV](/iptv-apple-tv-canada) with iPlayTV if you are already in the Apple ecosystem",
         ],
@@ -152,8 +152,8 @@ export const devices: SeoPageData[] = [
     faqs: [
       { q: "Does IPTV work on Hisense TV?", a: "Yes, if the TV runs Google TV/Android TV you can install apps directly. On VIDAA use an external streaming device." },
       { q: "Is there a VIDAA IPTV app?", a: "Some VIDAA versions list basic players, but options are limited and vary by model year. An external Fire Stick or Android box is more reliable." },
-      { q: "Can I install TiviMate on VIDAA?", a: "No. TiviMate is Android-only. See [TiviMate alternatives](/tivimate-alternatives-canada)." },
-      { q: "What is the cheapest way to add IPTV to a Hisense TV?", a: "A Fire Stick plugged into HDMI. See [Fire Stick IPTV setup](/iptv-firestick-canada)." },
+      { q: "Can I install TiviMate on VIDAA?", a: "No. TiviMate is Android-only. See [TiviMate alternatives](/ca/tivimate-alternatives-canada)." },
+      { q: "What is the cheapest way to add IPTV to a Hisense TV?", a: "A Fire Stick plugged into HDMI. See [Fire Stick IPTV setup](/ca/iptv-firestick-canada)." },
     ],
     related: ["/iptv-smart-tv-canada", "/iptv-samsung-tv-canada"],
     aliases: ["/iptv-hisense", "/vidaa-iptv"],
@@ -195,22 +195,22 @@ export const devices: SeoPageData[] = [
             ["TiviMate decoder", "Hardware", "Best for H.265 4K"],
           ],
         },
-        paras: ["See the [TiviMate setup guide](/tivimate-canada) for the app steps and the [Android TV guide](/iptv-android-tv-canada) for general tips."],
+        paras: ["See the [TiviMate setup guide](/ca/tivimate-canada) for the app steps and the [Android TV guide](/iptv-android-tv-canada) for general tips."],
       },
     ],
     steps: {
       h2: "Set up IPTV on Shield TV (4 steps)",
       items: [
         { title: "Install TiviMate", body: "Open the Play Store on Shield and install TiviMate." },
-        { title: "Get your login", body: "[Claim a free trial](/free-trial) to receive Xtream Codes details." },
+        { title: "Get your login", body: "[Claim a free trial](/ca/free-trial) to receive Xtream Codes details." },
         { title: "Add the playlist", body: "TiviMate → Add Playlist → Xtream Codes → enter details." },
         { title: "Tune playback", body: "Enable hardware decoding and frame rate matching for smooth motion." },
       ],
     },
     faqs: [
       { q: "Is Nvidia Shield good for IPTV?", a: "Yes. It is widely considered one of the best boxes for IPTV thanks to strong 4K decoding, Ethernet and Android TV apps." },
-      { q: "Which IPTV app is best on Shield TV?", a: "[TiviMate](/tivimate-canada) is the most popular, with Smarters Pro and XCIPTV as alternatives. See the [best IPTV apps](/best-iptv-apps-canada)." },
-      { q: "Does Shield support 4K H.265?", a: "Yes, Shield TV decodes H.265/HEVC 4K in hardware, which suits Maple4K's [4K streams](/iptv-4k)." },
+      { q: "Which IPTV app is best on Shield TV?", a: "[TiviMate](/ca/tivimate-canada) is the most popular, with Smarters Pro and XCIPTV as alternatives. See the [best IPTV apps](/best-iptv-apps-canada)." },
+      { q: "Does Shield support 4K H.265?", a: "Yes, Shield TV decodes H.265/HEVC 4K in hardware, which suits Maple4K's [4K streams](/ca/iptv-4k)." },
       { q: "Do I need Ethernet on Shield?", a: "Not required, but recommended for live sports and 4K to reduce buffering." },
     ],
     related: ["/best-android-tv-box-for-iptv-canada", "/iptv-android-tv-canada"],
@@ -240,7 +240,7 @@ export const devices: SeoPageData[] = [
       {
         h2: "Best apps on Mi Box",
         bullets: [
-          "[TiviMate](/tivimate-canada) — best TV interface",
+          "[TiviMate](/ca/tivimate-canada) — best TV interface",
           "[IPTV Smarters Pro](/iptv-smarters-pro-canada) — familiar and free",
           "[XCIPTV](/xciptv-canada) — customisable Android player",
         ],
@@ -251,13 +251,13 @@ export const devices: SeoPageData[] = [
       items: [
         { title: "Connect and update", body: "Connect the Mi Box to your TV and internet, then update Android TV from Settings." },
         { title: "Install an IPTV app", body: "Open Google Play and install TiviMate or Smarters Pro." },
-        { title: "Add Maple4K", body: "Use Xtream Codes login. [Get free trial details](/free-trial)." },
+        { title: "Add Maple4K", body: "Use Xtream Codes login. [Get free trial details](/ca/free-trial)." },
         { title: "Optimise", body: "Enable hardware decoding and use Ethernet via a USB adapter if Wi-Fi is weak." },
       ],
     },
     faqs: [
       { q: "Does IPTV work on Xiaomi Mi Box?", a: "Yes. It runs Android TV so all major IPTV players work." },
-      { q: "Can I install TiviMate on Mi Box?", a: "Yes, from Google Play. See the [TiviMate setup guide](/tivimate-canada)." },
+      { q: "Can I install TiviMate on Mi Box?", a: "Yes, from Google Play. See the [TiviMate setup guide](/ca/tivimate-canada)." },
       { q: "Is Mi Box S good for 4K IPTV?", a: "It supports 4K HDR and H.265. For heavy multi-app use, a Shield TV has more power." },
       { q: "Mi Box keeps buffering — what should I try?", a: "Use Ethernet, clear cache, lower playlist size, and follow the [buffering fix guide](/blog/fix-iptv-buffering-canada)." },
     ],
@@ -291,22 +291,22 @@ export const devices: SeoPageData[] = [
             ["[Xiaomi Mi Box S](/iptv-xiaomi-mi-box-canada)", "Android TV", "Play Store"],
           ],
         },
-        paras: ["Compare more in [IPTV devices](/iptv-devices) and the [best Android TV box for IPTV](/best-android-tv-box-for-iptv-canada)."],
+        paras: ["Compare more in [IPTV devices](/ca/iptv-devices) and the [best Android TV box for IPTV](/best-android-tv-box-for-iptv-canada)."],
       },
     ],
     steps: {
       h2: "Set up IPTV on an Onn box (3 steps)",
       items: [
         { title: "Install TiviMate", body: "Open Google Play on the Onn box and install TiviMate or Smarters Pro." },
-        { title: "Log in", body: "Enter your Maple4K Xtream details. [Free trial](/free-trial)." },
+        { title: "Log in", body: "Enter your Maple4K Xtream details. [Free trial](/ca/free-trial)." },
         { title: "Optimise", body: "Set hardware decoding and use Ethernet if you can." },
       ],
     },
     faqs: [
       { q: "Can you use IPTV on an Onn box?", a: "Yes. Onn's Google TV box installs IPTV apps from Google Play." },
       { q: "Is Onn a good IPTV box?", a: "For the price, yes. For heavy 4K and multi-apps, a Shield TV has more power." },
-      { q: "Which app should I install on the Onn box?", a: "[TiviMate](/tivimate-canada) is the most popular. Smarters Pro is simpler for phones." },
-      { q: "Onn TV box says app not compatible", a: "Update Google TV, then try a different app or a Fire Stick. See [IPTV devices](/iptv-devices)." },
+      { q: "Which app should I install on the Onn box?", a: "[TiviMate](/ca/tivimate-canada) is the most popular. Smarters Pro is simpler for phones." },
+      { q: "Onn TV box says app not compatible", a: "Update Google TV, then try a different app or a Fire Stick. See [IPTV devices](/ca/iptv-devices)." },
     ],
     related: ["/iptv-android-tv-canada", "/iptv-xiaomi-mi-box-canada"],
     aliases: ["/onn-tv-box", "/iptv-onn"],
@@ -337,7 +337,7 @@ export const devices: SeoPageData[] = [
             ["Xiaomi Mi Box S", "Budget 4K", "Via adapter", "[Mi Box guide](/iptv-xiaomi-mi-box-canada)"],
             ["Onn 4K box", "Lowest price Google TV", "Via adapter", "[Onn guide](/iptv-onn-tv-box-canada)"],
             ["Ugoos AM7 / Homatics-class boxes", "Power users, more storage", "Yes (model dependent)", "Check specs"],
-            ["Fire TV Cube", "Fast Fire OS", "Optional adapter", "[Fire Stick guide](/iptv-firestick-canada)"],
+            ["Fire TV Cube", "Fast Fire OS", "Optional adapter", "[Fire Stick guide](/ca/iptv-firestick-canada)"],
           ],
         },
         note: "Models and specs change — check current specifications before buying.",
@@ -354,7 +354,7 @@ export const devices: SeoPageData[] = [
       },
       {
         h2: "Prefer a box with IPTV pre-configured?",
-        paras: ["Read our [IPTV box guide](/iptv-box) and the [best IPTV box comparison](/best-iptv-box-canada) for plug-and-play options, or explore [Formuler and MAG boxes](/iptv-set-top-box)."],
+        paras: ["Read our [IPTV box guide](/ca/iptv-box) and the [best IPTV box comparison](/best-iptv-box-canada) for plug-and-play options, or explore [Formuler and MAG boxes](/iptv-set-top-box)."],
       },
     ],
     faqs: [
@@ -364,7 +364,7 @@ export const devices: SeoPageData[] = [
       { q: "How much RAM do I need?", a: "2 GB is the minimum; 3–4 GB is smoother for big EPGs and multi-tasking." },
       { q: "Where can I buy Android TV boxes in Canada?", a: "Amazon.ca, Best Buy and Walmart carry most mainstream boxes. Compare with [Amazon and marketplace advice](/blog/iptv-amazon-ebay-aliexpress-canada)." },
     ],
-    related: ["/iptv-box", "/iptv-android-tv-canada"],
+    related: ["/ca/iptv-box", "/iptv-android-tv-canada"],
     aliases: ["/best-android-box-for-iptv", "/best-android-tv-box-iptv", "/android-box-iptv", "/iptv-android-box"],
     ctaTitle: "Pair Your Box with Maple4K",
     ctaText: "Any of these boxes works with a free 24-hour Maple4K trial.",

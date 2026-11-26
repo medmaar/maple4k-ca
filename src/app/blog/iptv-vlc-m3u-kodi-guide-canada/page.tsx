@@ -28,7 +28,7 @@ const articleSchema = {
   description:
     "How to use your Maple4K IPTV subscription with VLC, an M3U playlist, or Kodi in Canada — step-by-step setup and troubleshooting.",
   image: "https://maple4k.ca/og-image.jpg",
-  author: { "@type": "Person", name: "Alex Tremblay", url: "https://maple4k.ca/about" },
+  author: { "@type": "Person", name: "Alex Tremblay", url: "https://maple4k.ca/ca/about" },
   publisher: {
     "@type": "Organization",
     name: "Maple4K",
@@ -44,7 +44,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://maple4k.ca/blog" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://maple4k.ca/ca/blog" },
     { "@type": "ListItem", position: 3, name: "IPTV with VLC, M3U & Kodi", item: "https://maple4k.ca/blog/iptv-vlc-m3u-kodi-guide-canada" },
   ],
 };
@@ -176,7 +176,7 @@ export default function VlcM3uKodiGuidePage() {
             <Link href="/best-iptv-apps-canada" style={{ color: "#E8041F", textDecoration: "none", fontSize: 15 }}>
               → Best IPTV Apps &amp; Players for Canada 2026
             </Link>
-            <Link href="/tivimate-canada" style={{ color: "#E8041F", textDecoration: "none", fontSize: 15 }}>
+            <Link href="/ca/tivimate-canada" style={{ color: "#E8041F", textDecoration: "none", fontSize: 15 }}>
               → TiviMate Canada — Full Setup Guide
             </Link>
             <Link href="/blog/what-is-m3u-iptv-canada" style={{ color: "#E8041F", textDecoration: "none", fontSize: 15 }}>
@@ -186,7 +186,7 @@ export default function VlcM3uKodiGuidePage() {
 
           {/* CTA */}
           <div style={{ marginTop: 48, textAlign: "center" }}>
-            <Link href="/pricing" className="btn-red">
+            <Link href="/ca/pricing" className="btn-red">
               Explore Maple4K Plans →
             </Link>
           </div>

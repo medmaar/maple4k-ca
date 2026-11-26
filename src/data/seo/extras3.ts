@@ -4,11 +4,11 @@ import type { Section } from "./types";
 const TRUST: Section = {
   h2: "Guarantees, payment and support",
   bullets: [
-    "Free 24-hour trial before you pay — no credit card required ([start here](/free-trial))",
-    "No contract and no automatic renewal — read the [refund policy](/refund-policy) and [terms](/terms-of-service)",
+    "Free 24-hour trial before you pay — no credit card required ([start here](/ca/free-trial))",
+    "No contract and no automatic renewal — read the [refund policy](/ca/refund-policy) and [terms](/ca/terms-of-service)",
     "Login details are sent by email and WhatsApp within minutes of your order",
-    "Support in English and French on WhatsApp, Telegram, live chat and email — [contact us](/contact)",
-    "Prices are shown up front on the [pricing page](/pricing); payment options are listed at checkout",
+    "Support in English and French on WhatsApp, Telegram, live chat and email — [contact us](/ca/contact)",
+    "Prices are shown up front on the [pricing page](/ca/pricing); payment options are listed at checkout",
   ],
 };
 
@@ -23,7 +23,7 @@ const plan = (label: string, price: string, perMonth: string, perDay: string, wh
         rows: [[`${label}`, price, perMonth, perDay]],
       },
     },
-    { h2: `What happens after you order the ${label} plan`, paras: [`You receive a server URL, username and password (Xtream Codes) by email and WhatsApp. Install a player such as [TiviMate](/tivimate-canada) or [IPTV Smarters Pro](/iptv-smarters-pro-canada), enter the details and open the guide. ${next} Compare every option in our [IPTV price guide](/iptv-price-canada) or pick your [device guide](/iptv-devices).`] },
+    { h2: `What happens after you order the ${label} plan`, paras: [`You receive a server URL, username and password (Xtream Codes) by email and WhatsApp. Install a player such as [TiviMate](/ca/tivimate-canada) or [IPTV Smarters Pro](/iptv-smarters-pro-canada), enter the details and open the guide. ${next} Compare every option in our [IPTV price guide](/ca/iptv-price-canada) or pick your [device guide](/ca/iptv-devices).`] },
     TRUST,
   ],
 });
@@ -33,30 +33,30 @@ const S = {
 };
 
 export const existingExtras3: Record<string, ExistingExtra> = {
-  "/pricing/1-month": plan("1-month", "$9", "$9.00", "≈ $0.30", [
+  "/ca/pricing/1-month": plan("1-month", "$9", "$9.00", "≈ $0.30", [
     "The 1-month plan is the lowest-commitment way to keep Maple4K after your free trial. It suits anyone who wants to check quality over a full month, watch a single event such as a playoff series, or use IPTV only occasionally — for example at a cottage or while travelling.",
-    "It is priced for flexibility, not for the lowest monthly cost. If you already know you will keep watching, the [6-month](/pricing/6-months) and [12-month](/pricing/12-months) plans cost much less per month.",
+    "It is priced for flexibility, not for the lowest monthly cost. If you already know you will keep watching, the [6-month](/ca/pricing/6-months) and [12-month](/ca/pricing/12-months) plans cost much less per month.",
   ], ["iptv 1 month", "iptv monthly plan canada", "iptv $9"], "If you like it, you can move to a longer plan at any time."),
-  "/pricing/3-months": plan("3-month", "$29", "≈ $9.67", "≈ $0.32", [
+  "/ca/pricing/3-months": plan("3-month", "$29", "≈ $9.67", "≈ $0.32", [
     "The 3-month plan covers a full season stretch — a hockey playoff run, a football season or a winter — without committing for a year. It is a good middle step if you want more than a month but are not ready for a long plan.",
-    "Be aware that if you will watch for more than three months, the [6-month plan](/pricing/6-months) at $39 works out cheaper per month, and the [12-month plan](/pricing/12-months) cheaper still.",
+    "Be aware that if you will watch for more than three months, the [6-month plan](/ca/pricing/6-months) at $39 works out cheaper per month, and the [12-month plan](/ca/pricing/12-months) cheaper still.",
   ], ["iptv 3 months", "iptv quarterly plan", "iptv $29"], "Your login stays active for the full three months."),
-  "/pricing/6-months": plan("6-month", "$39", "$6.50", "≈ $0.21", [
+  "/ca/pricing/6-months": plan("6-month", "$39", "$6.50", "≈ $0.21", [
     "The 6-month plan is the popular mid-term choice: about $6.50 a month, enough to cover most of a sports season and any streaming-app habit you want to replace. It is the sensible upgrade after a month or two on a monthly plan.",
-    "If you are confident you will keep the service all year, the [12-month plan](/pricing/12-months) drops the price to about $4.08 a month.",
+    "If you are confident you will keep the service all year, the [12-month plan](/ca/pricing/12-months) drops the price to about $4.08 a month.",
   ], ["iptv 6 months", "iptv half year plan", "iptv $39"], "Renew or switch plans before it ends — there is no automatic renewal."),
-  "/pricing/12-months": plan("12-month", "$49", "≈ $4.08", "≈ $0.13", [
+  "/ca/pricing/12-months": plan("12-month", "$49", "≈ $4.08", "≈ $0.13", [
     "The 12-month plan is Maple4K's best value: about $4.08 a month, or roughly 13 cents a day, with no contract. It suits households that watch daily, follow several sports and want the same login on all their devices.",
-    "Because it is the longest commitment, test first with the [free trial](/free-trial) and, if you have several TVs, choose enough connections — see the [multi-connection price table](/iptv-price-canada).",
+    "Because it is the longest commitment, test first with the [free trial](/ca/free-trial) and, if you have several TVs, choose enough connections — see the [multi-connection price table](/ca/iptv-price-canada).",
   ], ["iptv 12 months", "iptv annual plan", "iptv 1 year", "iptv $49"], "You keep the same login for the full year."),
-  "/iptv-near-me": {
+  "/ca/iptv-near-me": {
     keywords: ["iptv near me canada"],
     sections: [
       {
         h2: "Finding a good IPTV service near you: a checklist",
         paras: [
-          "Because IPTV runs over the internet, the best service 'near you' is the one that performs well on your connection. Start with three questions. First, what internet do you have? A stable 10 Mbps supports HD and 25 Mbps supports 4K per stream, and cable, fibre and fixed wireless all work. Second, which screens will you use? Fire Stick, Android TV, Apple TV, Samsung and LG smart TVs, phones and computers are all supported — see the [device hub](/iptv-devices). Third, what do you watch? Local teams, national networks and international channels are all in one lineup.",
-          "Then test. Request the [free 24-hour trial](/free-trial), watch a live game in the evening on the device you use most, and message support once. That is more informative than any list of providers. If you want a shortlist to compare, use the [top providers scorecard](/top-iptv-providers-canada) and the [alternatives checklist](/iptv-alternatives).",
+          "Because IPTV runs over the internet, the best service 'near you' is the one that performs well on your connection. Start with three questions. First, what internet do you have? A stable 10 Mbps supports HD and 25 Mbps supports 4K per stream, and cable, fibre and fixed wireless all work. Second, which screens will you use? Fire Stick, Android TV, Apple TV, Samsung and LG smart TVs, phones and computers are all supported — see the [device hub](/ca/iptv-devices). Third, what do you watch? Local teams, national networks and international channels are all in one lineup.",
+          "Then test. Request the [free 24-hour trial](/ca/free-trial), watch a live game in the evening on the device you use most, and message support once. That is more informative than any list of providers. If you want a shortlist to compare, use the [top providers scorecard](/top-iptv-providers-canada) and the [alternatives checklist](/ca/iptv-alternatives).",
         ],
       },
       {
@@ -66,37 +66,37 @@ export const existingExtras3: Record<string, ExistingExtra> = {
       TRUST,
     ],
   },
-  "/iptv-providers-canada": {
+  "/ca/iptv-providers-canada": {
     keywords: [],
     sections: [
       {
         h2: "How Canadian IPTV providers differ",
         paras: [
           "Canadian IPTV providers differ less in channel counts than in operations: how quickly they fix a failed channel, how many servers carry a busy hockey night, how they handle support, and whether they publish prices and refund terms. Those are the things that decide whether you stay after the first month.",
-          "When you compare, keep notes. Score each service from 1 to 5 on stability, picture quality, guide accuracy, support speed and price for your plan. Our [scorecard template](/top-iptv-providers-canada) makes this quick. For name-by-name comparisons see [IPTV alternatives](/iptv-alternatives) and the [A–Z brand directory](/iptv-brand-names-a-z).",
+          "When you compare, keep notes. Score each service from 1 to 5 on stability, picture quality, guide accuracy, support speed and price for your plan. Our [scorecard template](/top-iptv-providers-canada) makes this quick. For name-by-name comparisons see [IPTV alternatives](/ca/iptv-alternatives) and the [A–Z brand directory](/iptv-brand-names-a-z).",
         ],
       },
       {
         h2: "What Maple4K publishes so you can verify it",
         bullets: [
-          "Prices for every plan on the [pricing page](/pricing) — $9, $29, $39 and $49 for one connection",
-          "A written [refund policy](/refund-policy), [terms of service](/terms-of-service) and [privacy policy](/privacy-policy)",
+          "Prices for every plan on the [pricing page](/ca/pricing) — $9, $29, $39 and $49 for one connection",
+          "A written [refund policy](/ca/refund-policy), [terms of service](/ca/terms-of-service) and [privacy policy](/ca/privacy-policy)",
           "A free 24-hour trial with no credit card",
-          "Support contact details and a [contact page](/contact)",
-          "Public [reviews](/reviews) you can cross-check",
+          "Support contact details and a [contact page](/ca/contact)",
+          "Public [reviews](/ca/reviews) you can cross-check",
         ],
       },
       TRUST,
     ],
     sources: [{ label: "CRTC — Canada's broadcasting and telecommunications regulator", url: "https://crtc.gc.ca" }],
   },
-  "/iptv-quebec": {
+  "/ca/iptv-quebec": {
     keywords: [],
     sections: [
       {
         h2: "Chaînes et sports au Québec",
         paras: [
-          "Au Québec, l'IPTV Maple4K réunit les réseaux francophones et anglophones dans un seul guide : information, divertissement, sports et chaînes internationales, en HD et en 4K là où c'est offert. Le hockey des Canadiens, le soccer de CF Montréal et le football des Alouettes se suivent grâce au guide horaire (EPG), avec des rappels avant le début des matchs. Confirmez les chaînes qui vous intéressent pendant l'[essai gratuit de 24 heures](/free-trial).",
+          "Au Québec, l'IPTV Maple4K réunit les réseaux francophones et anglophones dans un seul guide : information, divertissement, sports et chaînes internationales, en HD et en 4K là où c'est offert. Le hockey des Canadiens, le soccer de CF Montréal et le football des Alouettes se suivent grâce au guide horaire (EPG), avec des rappels avant le début des matchs. Confirmez les chaînes qui vous intéressent pendant l'[essai gratuit de 24 heures](/ca/free-trial).",
           "Pour la meilleure stabilité, branchez votre appareil en Ethernet ou utilisez le Wi-Fi 5 GHz, surtout si vous êtes chez Vidéotron, Bell ou Cogeco aux heures de pointe. Consultez le guide [IPTV ne fonctionne plus?](/fr/iptv-ne-fonctionne-plus) en cas de saccades.",
         ],
       },
@@ -104,22 +104,22 @@ export const existingExtras3: Record<string, ExistingExtra> = {
         h2: "Garanties, paiement et soutien",
         bullets: [
           "Essai gratuit de 24 heures, sans carte de crédit",
-          "Aucun contrat ni renouvellement automatique — voir la [politique de remboursement](/refund-policy)",
+          "Aucun contrat ni renouvellement automatique — voir la [politique de remboursement](/ca/refund-policy)",
           "Identifiants envoyés par courriel et WhatsApp en quelques minutes",
-          "Soutien en français et en anglais sur WhatsApp, Telegram et par courriel — [nous joindre](/contact)",
+          "Soutien en français et en anglais sur WhatsApp, Telegram et par courriel — [nous joindre](/ca/contact)",
           "Prix dès 9 $ par mois — [abonnement IPTV](/fr/abonnement-iptv-canada)",
         ],
       },
     ],
   },
-  "/reseller": {
+  "/ca/reseller": {
     keywords: [],
     sections: [
       {
         h2: "Running a reseller business responsibly",
         paras: [
-          "Reselling IPTV is a customer-service business more than a technical one. Your customers judge you on how fast they get a login, how quickly you answer when a game is on and how honest you are about what the service does and does not include. Build a simple routine: send credentials promptly, provide setup instructions for each device (our [device guides](/iptv-devices) can be shared), and keep a record of each customer's expiry date.",
-          "Before you commit, test the panel yourself with the [free trial](/free-trial), watch a live game at peak time and message support at an odd hour. Apply the same checks to any panel you consider: the [alternatives checklist](/iptv-alternatives) works for resellers too.",
+          "Reselling IPTV is a customer-service business more than a technical one. Your customers judge you on how fast they get a login, how quickly you answer when a game is on and how honest you are about what the service does and does not include. Build a simple routine: send credentials promptly, provide setup instructions for each device (our [device guides](/ca/iptv-devices) can be shared), and keep a record of each customer's expiry date.",
+          "Before you commit, test the panel yourself with the [free trial](/ca/free-trial), watch a live game at peak time and message support at an odd hour. Apply the same checks to any panel you consider: the [alternatives checklist](/ca/iptv-alternatives) works for resellers too.",
         ],
       },
       {
@@ -130,7 +130,7 @@ export const existingExtras3: Record<string, ExistingExtra> = {
     ],
     sources: [{ label: "Copyright Act (Canada) — Justice Laws Website", url: "https://laws-lois.justice.gc.ca/eng/acts/c-42/" }],
   },
-  "/iptv-android-canada": {
+  "/ca/iptv-android-canada": {
     keywords: [],
     sections: [
       {
@@ -155,7 +155,7 @@ export const existingExtras3: Record<string, ExistingExtra> = {
       TRUST,
     ],
   },
-  "/iptv-ios-canada": {
+  "/ca/iptv-ios-canada": {
     keywords: [],
     sections: [
       {
@@ -187,7 +187,7 @@ export const existingExtras3: Record<string, ExistingExtra> = {
     ],
     sources: [{ label: "Apple TV 4K (Apple Canada)", url: "https://www.apple.com/ca/apple-tv-4k/" }],
   },
-  "/iptv-box": {
+  "/ca/iptv-box": {
     keywords: [],
     sections: [
       {
@@ -201,27 +201,27 @@ export const existingExtras3: Record<string, ExistingExtra> = {
     ],
     sources: [{ label: "Formuler — official website", url: "https://www.formuler.tv" }],
   },
-  "/iptv-halifax": {
+  "/ca/iptv-halifax": {
     keywords: [],
     sections: [
       {
         h2: "Atlantic Canada: internet and channel tips",
         paras: [
           "Viewers in Halifax and across Nova Scotia typically use Bell Aliant or Eastlink. Both support IPTV well; use Ethernet for the main TV and keep other devices on 5 GHz Wi-Fi. Atlantic time means evening games start at different hours in the guide — the EPG in your player shows programme times in your local time zone.",
-          "Follow the Mooseheads and Atlantic-based coverage alongside every NHL, CFL and NBA broadcast on TSN and Sportsnet, and pick a player from the [IPTV player hub](/iptv-player). See all city guides on the [IPTV by city](/iptv-cities) page.",
+          "Follow the Mooseheads and Atlantic-based coverage alongside every NHL, CFL and NBA broadcast on TSN and Sportsnet, and pick a player from the [IPTV player hub](/ca/iptv-player). See all city guides on the [IPTV by city](/ca/iptv-cities) page.",
         ],
       },
       TRUST,
     ],
   },
-  "/iptv-hamilton": {
+  "/ca/iptv-hamilton": {
     keywords: [],
     sections: [
       {
         h2: "Hamilton and the Golden Horseshoe",
         paras: [
-          "Hamilton sits between Toronto and the Niagara region, so viewers follow the Tiger-Cats, the Maple Leafs and the Blue Jays. Rogers and Bell fibre and cable both work well. Choose a wired connection for live games, and if several TVs stream at once, pick a plan with enough connections — see [pricing](/pricing).",
-          "Nearby guides: [IPTV Toronto](/iptv-toronto), [IPTV London Ontario](/iptv-london-ontario) and [IPTV Ottawa](/iptv-ottawa). Set up your device with the [devices hub](/iptv-devices).",
+          "Hamilton sits between Toronto and the Niagara region, so viewers follow the Tiger-Cats, the Maple Leafs and the Blue Jays. Rogers and Bell fibre and cable both work well. Choose a wired connection for live games, and if several TVs stream at once, pick a plan with enough connections — see [pricing](/ca/pricing).",
+          "Nearby guides: [IPTV Toronto](/ca/iptv-toronto), [IPTV London Ontario](/ca/iptv-london-ontario) and [IPTV Ottawa](/ca/iptv-ottawa). Set up your device with the [devices hub](/ca/iptv-devices).",
         ],
       },
       TRUST,
@@ -237,7 +237,7 @@ export const existingExtras3: Record<string, ExistingExtra> = {
           "Update the firmware before installing IPTV apps",
           "Try Nanomid, Smarters Player Lite or Duplecast — compare in the [Tizen & webOS guide](/iptv-tizen-webos-apps-canada)",
           "Use Ethernet or 5 GHz Wi-Fi and pick a picture mode without motion smoothing for live sport",
-          "If apps are missing, plug in a Fire Stick — see [IPTV on Fire Stick](/iptv-firestick-canada)",
+          "If apps are missing, plug in a Fire Stick — see [IPTV on Fire Stick](/ca/iptv-firestick-canada)",
         ],
       },
       TRUST,
@@ -253,21 +253,21 @@ export const existingExtras3: Record<string, ExistingExtra> = {
           "Send the MAC to support — the portal is linked to it",
           "Enter the portal under Settings → System settings → Servers → Portals",
           "Use Ethernet; MAG 524-class boxes suit 4K, older MAG models are HD",
-          "Read the detailed guides: [MAG 254](/mag-254-canada), [MAG 322](/mag-322-canada), [MAG 524](/mag-524-canada), [all MAG models](/infomir-mag-models-canada)",
+          "Read the detailed guides: [MAG 254](/ca/mag-254-canada), [MAG 322](/mag-322-canada), [MAG 524](/ca/mag-524-canada), [all MAG models](/infomir-mag-models-canada)",
         ],
       },
       TRUST,
     ],
     sources: [{ label: "Infomir — MAG set-top boxes", url: "https://infomir.eu" }],
   },
-  "/iptv-roku-canada": {
+  "/ca/iptv-roku-canada": {
     keywords: [],
     sections: [
       {
         h2: "Roku: the two workable options",
         paras: [
           "Roku's platform does not run mainstream IPTV apps, so the workable options are casting from a phone (quality depends on your Wi-Fi and the app's cast support) or connecting a second streaming device to another HDMI port. A Fire Stick 4K or an Onn Google TV box is inexpensive and gives you TiviMate or Smarters Pro with the full guide. Many Roku owners keep Roku for the apps they like and switch HDMI input for IPTV.",
-          "See [TiviMate on Fire Stick](/tivimate-firestick-canada), the [Onn box guide](/iptv-onn-tv-box-canada) and [TiviMate alternatives for Roku](/tivimate-alternatives-canada).",
+          "See [TiviMate on Fire Stick](/ca/tivimate-firestick-canada), the [Onn box guide](/iptv-onn-tv-box-canada) and [TiviMate alternatives for Roku](/ca/tivimate-alternatives-canada).",
         ],
       },
       TRUST,
@@ -281,9 +281,9 @@ export const existingExtras3: Record<string, ExistingExtra> = {
         bullets: [
           "Find your model year: Settings → Support → About This TV",
           "Update the TV software before installing apps",
-          "Try Smarters Player Lite first; if it is missing, try Smart IPTV or Duplecast — see [Smart IPTV](/smart-iptv) and [Duplecast](/duplecast-iptv-canada)",
+          "Try Smarters Player Lite first; if it is missing, try Smart IPTV or Duplecast — see [Smart IPTV](/ca/smart-iptv) and [Duplecast](/ca/duplecast-iptv-canada)",
           "Enter long URLs with a phone keyboard where the app allows it",
-          "If your model has no IPTV app, use a Fire Stick — [Fire Stick guide](/iptv-firestick-canada)",
+          "If your model has no IPTV app, use a Fire Stick — [Fire Stick guide](/ca/iptv-firestick-canada)",
         ],
       },
       TRUST,
@@ -304,12 +304,12 @@ export const existingExtras3: Record<string, ExistingExtra> = {
             ["Best for", "Occasional viewing", "Daily, sports-heavy viewing"],
           ],
         },
-        paras: ["Whichever you choose, the same Maple4K login works. Start with the [free trial](/free-trial) and read the [Tizen & webOS guide](/iptv-tizen-webos-apps-canada)."],
+        paras: ["Whichever you choose, the same Maple4K login works. Start with the [free trial](/ca/free-trial) and read the [Tizen & webOS guide](/iptv-tizen-webos-apps-canada)."],
       },
       TRUST,
     ],
   },
-  "/iptv-windows-canada": {
+  "/ca/iptv-windows-canada": {
     keywords: [],
     sections: [
       {
@@ -326,14 +326,14 @@ export const existingExtras3: Record<string, ExistingExtra> = {
     ],
     sources: [{ label: "VLC media player — official site", url: "https://www.videolan.org/vlc/" }],
   },
-  "/reviews": {
+  "/ca/reviews": {
     keywords: [],
     sections: [
       {
         h2: "How Maple4K handles feedback and problems",
         paras: [
-          "Reviews are most useful when they describe what happened: the device, the event and how support responded. If something goes wrong with your service, message the team with your device model, app and the time of the problem; most issues are diagnosed in a couple of messages. Read the [refund policy](/refund-policy) for what is covered.",
-          "Want to compare before you decide? Use the [top providers scorecard](/top-iptv-providers-canada) and run your own [free trial](/free-trial).",
+          "Reviews are most useful when they describe what happened: the device, the event and how support responded. If something goes wrong with your service, message the team with your device model, app and the time of the problem; most issues are diagnosed in a couple of messages. Read the [refund policy](/ca/refund-policy) for what is covered.",
+          "Want to compare before you decide? Use the [top providers scorecard](/top-iptv-providers-canada) and run your own [free trial](/ca/free-trial).",
         ],
       },
       TRUST,
@@ -362,18 +362,18 @@ export const existingExtras3: Record<string, ExistingExtra> = {
     ],
   },
   "/blog/iptv-vs-cable-canada": { keywords: [], sections: [], sources: [{ label: "CRTC — broadcasting in Canada", url: "https://crtc.gc.ca" }] },
-  "/iptv-4k": { keywords: [], sections: [], sources: [S.wiki("High Efficiency Video Coding (H.265)", "High_Efficiency_Video_Coding")] },
-  "/about": { keywords: [], sections: [TRUST] },
-  "/how-it-works": { keywords: [], sections: [TRUST], sources: [S.wiki("Internet Protocol television", "IPTV")] },
-  "/channels-list": { keywords: [], sections: [TRUST] },
-  "/blog": {
+  "/ca/iptv-4k": { keywords: [], sections: [], sources: [S.wiki("High Efficiency Video Coding (H.265)", "High_Efficiency_Video_Coding")] },
+  "/ca/about": { keywords: [], sections: [TRUST] },
+  "/ca/how-it-works": { keywords: [], sections: [TRUST], sources: [S.wiki("Internet Protocol television", "IPTV")] },
+  "/ca/channels-list": { keywords: [], sections: [TRUST] },
+  "/ca/blog": {
     keywords: [],
     sections: [
       {
         h2: "Try what you read about",
-        paras: ["Every guide here can be tested with a free 24-hour Maple4K trial — [start yours](/free-trial), see [pricing](/pricing) or ask [support](/contact) for help with any setup."],
+        paras: ["Every guide here can be tested with a free 24-hour Maple4K trial — [start yours](/ca/free-trial), see [pricing](/ca/pricing) or ask [support](/ca/contact) for help with any setup."],
       },
     ],
   },
-  "/referral": { keywords: [], sections: [TRUST] },
+  "/ca/referral": { keywords: [], sections: [TRUST] },
 };

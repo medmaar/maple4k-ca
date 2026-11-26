@@ -2,9 +2,9 @@ import type { SeoPageData } from "./types";
 
 export const info: SeoPageData[] = [
   {
-    path: "/what-is-iptv",
+    path: "/ca/what-is-iptv",
     cluster: "learn",
-    hub: "/blog",
+    hub: "/ca/blog",
     kind: "blog",
     label: "what is IPTV",
     blurb: "IPTV explained in plain English",
@@ -20,7 +20,7 @@ export const info: SeoPageData[] = [
         h2: "How does IPTV work?",
         paras: [
           "Traditional TV broadcasts every channel to every home at once. IPTV sends only the channel you select, as a stream of data packets, from a server to your device. Your app decodes the stream, shows the programme guide (EPG) and lets you browse live channels, movies and series.",
-          "Because it uses the internet, IPTV works on any device with an app and a connection — see our list of [supported IPTV devices](/iptv-devices).",
+          "Because it uses the internet, IPTV works on any device with an app and a connection — see our list of [supported IPTV devices](/ca/iptv-devices).",
         ],
       },
       {
@@ -40,9 +40,9 @@ export const info: SeoPageData[] = [
       {
         h2: "What you need to watch IPTV",
         bullets: [
-          "An IPTV subscription — for example [Maple4K plans from $9/month](/pricing)",
-          "A device: [Fire Stick](/iptv-firestick-canada), [Android TV](/iptv-android-tv-canada), [Apple TV](/iptv-apple-tv-canada), [Samsung](/iptv-samsung-tv-canada) or [LG](/iptv-lg-tv-canada) smart TV, phone, tablet or computer",
-          "An IPTV app such as [TiviMate](/tivimate-canada) or [IPTV Smarters Pro](/iptv-smarters-pro-canada)",
+          "An IPTV subscription — for example [Maple4K plans from $9/month](/ca/pricing)",
+          "A device: [Fire Stick](/ca/iptv-firestick-canada), [Android TV](/iptv-android-tv-canada), [Apple TV](/iptv-apple-tv-canada), [Samsung](/iptv-samsung-tv-canada) or [LG](/iptv-lg-tv-canada) smart TV, phone, tablet or computer",
+          "An IPTV app such as [TiviMate](/ca/tivimate-canada) or [IPTV Smarters Pro](/iptv-smarters-pro-canada)",
           "A stable internet connection — see [fixing buffering](/blog/fix-iptv-buffering-canada)",
         ],
       },
@@ -52,16 +52,16 @@ export const info: SeoPageData[] = [
       },
       {
         h2: "How to start with IPTV in 4 steps",
-        paras: ["1) Claim a [free 24-hour trial](/free-trial). 2) Install an app on your device. 3) Enter the Xtream Codes login we send you. 4) Pick a plan if you like it. New to setup? Follow the [beginner's setup guide](/blog/iptv-for-beginners-canada)."],
+        paras: ["1) Claim a [free 24-hour trial](/ca/free-trial). 2) Install an app on your device. 3) Enter the Xtream Codes login we send you. 4) Pick a plan if you like it. New to setup? Follow the [beginner's setup guide](/blog/iptv-for-beginners-canada)."],
       },
     ],
     faqs: [
       { q: "What does IPTV stand for?", a: "Internet Protocol Television — TV delivered over an internet connection rather than cable or satellite." },
-      { q: "Do I need a special box for IPTV?", a: "No. A Fire Stick, Android box, smart TV, phone or computer works. Dedicated boxes like [Formuler](/formuler-box-canada) are optional." },
+      { q: "Do I need a special box for IPTV?", a: "No. A Fire Stick, Android box, smart TV, phone or computer works. Dedicated boxes like [Formuler](/ca/formuler-box-canada) are optional." },
       { q: "How much internet speed does IPTV need?", a: "About 10 Mbps for HD and 25 Mbps or more for 4K on one stream." },
-      { q: "What is an IPTV player?", a: "An app that connects to your IPTV service and shows channels, EPG and VOD. See the [IPTV player hub](/iptv-player)." },
+      { q: "What is an IPTV player?", a: "An app that connects to your IPTV service and shows channels, EPG and VOD. See the [IPTV player hub](/ca/iptv-player)." },
       { q: "How is IPTV different from Netflix?", a: "Netflix offers on-demand content only. IPTV adds live channels and sports alongside movies and series." },
-      { q: "Where can I try IPTV for free?", a: "Maple4K offers a [free 24-hour trial](/free-trial) with no card required." },
+      { q: "Where can I try IPTV for free?", a: "Maple4K offers a [free 24-hour trial](/ca/free-trial) with no card required." },
     ],
     related: ["/blog/iptv-for-beginners-canada", "/blog/is-iptv-legal-canada", "/iptv-service-canada"],
     aliases: ["/iptv-what-is-it", "/what-is-ip-tv", "/ip-television", "/iptv-explained", "/iptv-for-beginners"],
@@ -72,7 +72,7 @@ export const info: SeoPageData[] = [
   {
     path: "/blog/iptv-for-beginners-canada",
     cluster: "learn",
-    hub: "/what-is-iptv",
+    hub: "/ca/what-is-iptv",
     kind: "blog",
     label: "IPTV for beginners",
     blurb: "Start watching IPTV in 5 easy steps",
@@ -89,10 +89,10 @@ export const info: SeoPageData[] = [
         table: {
           head: ["Device", "Best app", "Guide"],
           rows: [
-            ["Fire Stick", "TiviMate", "[Fire Stick guide](/iptv-firestick-canada)"],
+            ["Fire Stick", "TiviMate", "[Fire Stick guide](/ca/iptv-firestick-canada)"],
             ["Android TV / Shield", "TiviMate", "[Android TV guide](/iptv-android-tv-canada)"],
             ["Samsung / LG TV", "Smarters Lite / Smart IPTV", "[Smart TV guide](/iptv-smart-tv-canada)"],
-            ["iPhone / iPad", "Smarters Pro", "[iOS guide](/iptv-ios-canada)"],
+            ["iPhone / iPad", "Smarters Pro", "[iOS guide](/ca/iptv-ios-canada)"],
             ["Apple TV", "iPlayTV", "[iPlayTV](/iplaytv-apple-tv-canada)"],
           ],
         },
@@ -100,7 +100,7 @@ export const info: SeoPageData[] = [
       {
         h2: "Steps 2–5: install, log in, watch",
         paras: [
-          "Install the app from your device's store. Request your [free trial login](/free-trial) — you will get a server URL, username and password (see [what Xtream Codes is](/xtream-iptv-canada)). Enter them in the app, wait for channels to load, and open the EPG to see what's on.",
+          "Install the app from your device's store. Request your [free trial login](/ca/free-trial) — you will get a server URL, username and password (see [what Xtream Codes is](/ca/xtream-iptv-canada)). Enter them in the app, wait for channels to load, and open the EPG to see what's on.",
         ],
       },
       {
@@ -115,12 +115,12 @@ export const info: SeoPageData[] = [
       },
     ],
     faqs: [
-      { q: "How do I set up IPTV for the first time?", a: "Install an app like TiviMate or Smarters Pro, enter your Xtream Codes login, and load the EPG. See the [device guides](/iptv-devices) for step-by-step help." },
-      { q: "Do I need an IPTV installer?", a: "No. You install the app yourself in minutes. Ask [support](/contact) if you get stuck." },
+      { q: "How do I set up IPTV for the first time?", a: "Install an app like TiviMate or Smarters Pro, enter your Xtream Codes login, and load the EPG. See the [device guides](/ca/iptv-devices) for step-by-step help." },
+      { q: "Do I need an IPTV installer?", a: "No. You install the app yourself in minutes. Ask [support](/ca/contact) if you get stuck." },
       { q: "What is an IPTV account or line?", a: "The login (username, password, server) tied to your subscription. Keep it private." },
       { q: "What do I do if channels won't load?", a: "Check the login for typos, confirm your subscription is active and restart the app. See [fixing buffering](/blog/fix-iptv-buffering-canada)." },
     ],
-    related: ["/what-is-iptv", "/how-it-works"],
+    related: ["/ca/what-is-iptv", "/ca/how-it-works"],
     aliases: ["/iptv-installer", "/iptv-setup", "/how-to-set-up-iptv"],
     ctaTitle: "Ready to Start? Try Free for 24 Hours",
     ctaText: "We will send your login within minutes.",
@@ -128,7 +128,7 @@ export const info: SeoPageData[] = [
   {
     path: "/blog/iptv-server-explained-canada",
     cluster: "learn",
-    hub: "/what-is-iptv",
+    hub: "/ca/what-is-iptv",
     kind: "blog",
     label: "IPTV server explained",
     blurb: "What an IPTV server is and how servers affect quality",
@@ -142,7 +142,7 @@ export const info: SeoPageData[] = [
     sections: [
       {
         h2: "What the server URL is",
-        paras: ["When a provider gives you an Xtream Codes login, the 'server URL' tells your app where to fetch channels. It looks like a web address with a port. See the [Xtream Codes explainer](/xtream-iptv-canada)."],
+        paras: ["When a provider gives you an Xtream Codes login, the 'server URL' tells your app where to fetch channels. It looks like a web address with a port. See the [Xtream Codes explainer](/ca/xtream-iptv-canada)."],
       },
       {
         h2: "What makes a good IPTV server setup",
@@ -156,7 +156,7 @@ export const info: SeoPageData[] = [
       },
       {
         h2: "How to test a provider's servers",
-        paras: ["Use the [free trial](/free-trial) during a busy evening, watch a live sports channel and a 4K movie, and note buffering. If buffering appears, follow the [buffering fix guide](/blog/fix-iptv-buffering-canada) to rule out your own Wi-Fi first."],
+        paras: ["Use the [free trial](/ca/free-trial) during a busy evening, watch a live sports channel and a 4K movie, and note buffering. If buffering appears, follow the [buffering fix guide](/blog/fix-iptv-buffering-canada) to rule out your own Wi-Fi first."],
       },
     ],
     faqs: [
@@ -165,7 +165,7 @@ export const info: SeoPageData[] = [
       { q: "Does server location matter?", a: "Yes, closer servers usually mean lower latency and fewer drops." },
       { q: "Can I run my own IPTV server?", a: "You can technically, but content licensing and hosting costs make it impractical. Most people subscribe to a provider." },
     ],
-    related: ["/what-is-iptv", "/xtream-iptv-canada"],
+    related: ["/ca/what-is-iptv", "/ca/xtream-iptv-canada"],
     aliases: ["/iptv-server", "/iptv-servers"],
     ctaTitle: "Test Our Servers Free for 24 Hours",
     ctaText: "See real performance on your own connection.",
@@ -173,7 +173,7 @@ export const info: SeoPageData[] = [
   {
     path: "/blog/fix-iptv-buffering-canada",
     cluster: "learn",
-    hub: "/what-is-iptv",
+    hub: "/ca/what-is-iptv",
     kind: "blog",
     label: "fix IPTV buffering",
     blurb: "Stop IPTV buffering and freezing",
@@ -192,11 +192,11 @@ export const info: SeoPageData[] = [
           "Move to 5 GHz Wi-Fi and sit closer to the router",
           "Restart the router, modem and device to clear stalls",
           "Clear the IPTV app cache and reduce playlist size",
-          "Enable hardware decoding in your player (see [TiviMate setup](/tivimate-canada))",
+          "Enable hardware decoding in your player (see [TiviMate setup](/ca/tivimate-canada))",
           "Test a lower-bitrate channel to see if the issue is 4K only",
           "Stop heavy downloads or gaming on the same network",
           "Try a different DNS such as 1.1.1.1 or 8.8.8.8",
-          "Check that you are not exceeding your plan's connection limit — see [pricing](/pricing)",
+          "Check that you are not exceeding your plan's connection limit — see [pricing](/ca/pricing)",
           "Update your device firmware and player app",
         ],
       },
@@ -214,7 +214,7 @@ export const info: SeoPageData[] = [
       },
       {
         h2: "When the problem is not your side",
-        paras: ["If every channel fails on multiple devices, the issue may be with the service. Message [Maple4K support](/contact) with your device model and app. For device-specific tips see [IPTV devices](/iptv-devices) and [IPTV server explained](/blog/iptv-server-explained-canada)."],
+        paras: ["If every channel fails on multiple devices, the issue may be with the service. Message [Maple4K support](/ca/contact) with your device model and app. For device-specific tips see [IPTV devices](/ca/iptv-devices) and [IPTV server explained](/blog/iptv-server-explained-canada)."],
       },
     ],
     faqs: [
@@ -224,7 +224,7 @@ export const info: SeoPageData[] = [
       { q: "How do I get stable IPTV without cuts?", a: "Use a wired connection, a capable device and a provider with strong servers. See [IPTV service Canada](/iptv-service-canada)." },
       { q: "Is buffering worse during hockey games?", a: "Peak events strain all networks. Ethernet and a stable provider make the biggest difference." },
     ],
-    related: ["/blog/iptv-server-explained-canada", "/iptv-firestick-canada"],
+    related: ["/blog/iptv-server-explained-canada", "/ca/iptv-firestick-canada"],
     aliases: ["/iptv-buffering", "/fix-iptv-buffering", "/iptv-sans-coupure", "/iptv-stable"],
     alt: [{ lang: "fr-CA", path: "/fr/iptv-ne-fonctionne-plus" }],
     ctaTitle: "Stream Smoothly — Test Free for 24 Hours",
@@ -233,7 +233,7 @@ export const info: SeoPageData[] = [
   {
     path: "/blog/iptv-downloader-app-guide-canada",
     cluster: "learn",
-    hub: "/what-is-iptv",
+    hub: "/ca/what-is-iptv",
     kind: "blog",
     label: "Downloader app guide",
     blurb: "Use the Downloader app to sideload IPTV apps safely",
@@ -278,9 +278,9 @@ export const info: SeoPageData[] = [
       { q: "Is Downloader safe?", a: "Downloader itself is a legitimate app. Safety depends on the URL you enter — use official developer sites only." },
       { q: "Can I install IPTV Smarters with Downloader?", a: "Yes if it is not in your store; follow the [Smarters Fire Stick guide](/iptv-smarters-pro-firestick-canada)." },
       { q: "What are Downloader codes?", a: "Short numeric codes that map to a URL. Only use codes provided by the app's official site; random codes can be unsafe." },
-      { q: "Does TiviMate need Downloader?", a: "Often it is in the Amazon Appstore. See the [TiviMate Fire Stick guide](/tivimate-firestick-canada)." },
+      { q: "Does TiviMate need Downloader?", a: "Often it is in the Amazon Appstore. See the [TiviMate Fire Stick guide](/ca/tivimate-firestick-canada)." },
     ],
-    related: ["/iptv-firestick-canada", "/tivimate-firestick-canada"],
+    related: ["/ca/iptv-firestick-canada", "/ca/tivimate-firestick-canada"],
     aliases: ["/iptv-downloader", "/downloader-iptv"],
     ctaTitle: "Install, Log In and Stream Free",
     ctaText: "24-hour trial — Xtream login in minutes.",
@@ -289,7 +289,7 @@ export const info: SeoPageData[] = [
   {
     path: "/blog/iptv-plex-jellyfin-emby-stremio-canada",
     cluster: "learn",
-    hub: "/what-is-iptv",
+    hub: "/ca/what-is-iptv",
     kind: "blog",
     label: "IPTV with Plex, Jellyfin, Emby & Stremio",
     blurb: "Use IPTV with media servers and Stremio",
@@ -320,16 +320,16 @@ export const info: SeoPageData[] = [
       },
       {
         h2: "Our recommendation",
-        paras: ["Media servers shine for personal libraries, not for live sports. For IPTV, choose a dedicated player from our [IPTV player hub](/iptv-player) and use Xtream Codes so live TV, movies and EPG load automatically."],
+        paras: ["Media servers shine for personal libraries, not for live sports. For IPTV, choose a dedicated player from our [IPTV player hub](/ca/iptv-player) and use Xtream Codes so live TV, movies and EPG load automatically."],
       },
     ],
     faqs: [
       { q: "Can I add IPTV to Plex?", a: "Not directly with an M3U link. Plex Live TV expects a tuner; third-party bridges exist but add complexity." },
       { q: "Does Jellyfin support IPTV?", a: "Yes, through Live TV using an M3U playlist and XMLTV guide." },
       { q: "Is Stremio an IPTV player?", a: "Not by itself. Add-ons vary. Dedicated IPTV players are simpler." },
-      { q: "What is the best way to watch IPTV?", a: "A dedicated player like [TiviMate](/tivimate-canada) or [IPTV Smarters Pro](/iptv-smarters-pro-canada)." },
+      { q: "What is the best way to watch IPTV?", a: "A dedicated player like [TiviMate](/ca/tivimate-canada) or [IPTV Smarters Pro](/iptv-smarters-pro-canada)." },
     ],
-    related: ["/blog/iptv-vlc-m3u-kodi-guide-canada", "/xtream-iptv-canada"],
+    related: ["/blog/iptv-vlc-m3u-kodi-guide-canada", "/ca/xtream-iptv-canada"],
     aliases: ["/plex-iptv", "/jellyfin-iptv", "/emby-iptv", "/stremio-iptv"],
     ctaTitle: "Get an IPTV Login That Works Everywhere",
     ctaText: "Free trial with M3U and Xtream logins.",
@@ -338,7 +338,7 @@ export const info: SeoPageData[] = [
   {
     path: "/blog/free-iptv-m3u-lists-risks-canada",
     cluster: "learn",
-    hub: "/what-is-iptv",
+    hub: "/ca/what-is-iptv",
     kind: "blog",
     label: "free M3U lists & risks",
     blurb: "Why free IPTV lists fail and how to test a playlist",
@@ -374,17 +374,17 @@ export const info: SeoPageData[] = [
             ["EPG & VOD", "Rare", "Included"],
           ],
         },
-        paras: ["Start the [free 24-hour trial](/free-trial). For M3U basics and VLC steps, read the [VLC, M3U & Kodi guide](/blog/iptv-vlc-m3u-kodi-guide-canada)."],
+        paras: ["Start the [free 24-hour trial](/ca/free-trial). For M3U basics and VLC steps, read the [VLC, M3U & Kodi guide](/blog/iptv-vlc-m3u-kodi-guide-canada)."],
       },
     ],
     faqs: [
       { q: "Are free IPTV lists safe?", a: "Rarely. They are unreliable and can expose you to unsafe links or unlicensed content." },
       { q: "How do I check if an M3U link works?", a: "Open it in VLC or your IPTV app. Do not upload it to unknown websites." },
-      { q: "Why does my siptv list not load?", a: "Common causes: a wrong MAC, an expired list or a bad URL. See [Smart IPTV](/smart-iptv)." },
-      { q: "Where can I get a working IPTV list legally?", a: "From a provider you subscribe to. Maple4K offers a [free trial](/free-trial) and [paid plans](/pricing)." },
+      { q: "Why does my siptv list not load?", a: "Common causes: a wrong MAC, an expired list or a bad URL. See [Smart IPTV](/ca/smart-iptv)." },
+      { q: "Where can I get a working IPTV list legally?", a: "From a provider you subscribe to. Maple4K offers a [free trial](/ca/free-trial) and [paid plans](/ca/pricing)." },
       { q: "Liste M3U IPTV gratuite?", a: "Les listes gratuites publiques sont peu fiables. Voir notre page [liste M3U IPTV](/fr/liste-m3u-iptv)." },
     ],
-    related: ["/blog/what-is-m3u-iptv-canada", "/iptv-web-player-canada", "/free-trial"],
+    related: ["/blog/what-is-m3u-iptv-canada", "/iptv-web-player-canada", "/ca/free-trial"],
     aliases: ["/iptv-list", "/m3u-list", "/iptv-m3u-list", "/free-iptv-list", "/iptv-checker", "/m3u-checker"],
     ctaTitle: "Skip the Broken Lists — Try Real IPTV Free",
     ctaText: "24-hour trial with a working M3U and Xtream login.",
@@ -392,7 +392,7 @@ export const info: SeoPageData[] = [
   {
     path: "/blog/iptv-amazon-ebay-aliexpress-canada",
     cluster: "learn",
-    hub: "/what-is-iptv",
+    hub: "/ca/what-is-iptv",
     kind: "blog",
     label: "IPTV on Amazon, eBay & AliExpress",
     blurb: "Is it safe to buy IPTV from Amazon, eBay or AliExpress?",
@@ -409,7 +409,7 @@ export const info: SeoPageData[] = [
         table: {
           head: ["Item", "Risk", "Advice"],
           rows: [
-            ["Fire Stick, Fire TV Cube", "Low", "Buy from Amazon.ca — see [Fire Stick guide](/iptv-firestick-canada)"],
+            ["Fire Stick, Fire TV Cube", "Low", "Buy from Amazon.ca — see [Fire Stick guide](/ca/iptv-firestick-canada)"],
             ["Android TV boxes (Shield, Onn, Mi Box)", "Low–medium", "Buy from major retailers — [best Android box](/best-android-tv-box-for-iptv-canada)"],
             ["Pre-loaded 'IPTV boxes'", "High", "Locked to unknown services — avoid"],
             ["IPTV activation keys / codes", "High", "Cannot verify the provider — avoid"],
@@ -427,7 +427,7 @@ export const info: SeoPageData[] = [
       },
       {
         h2: "Safer way to buy",
-        paras: ["Buy your device from a mainstream retailer and your subscription direct from a provider with a real trial. Read [buy IPTV in Canada](/buy-iptv-canada) and the [best IPTV box guide](/best-iptv-box-canada)."],
+        paras: ["Buy your device from a mainstream retailer and your subscription direct from a provider with a real trial. Read [buy IPTV in Canada](/ca/buy-iptv-canada) and the [best IPTV box guide](/best-iptv-box-canada)."],
       },
     ],
     faqs: [
@@ -435,9 +435,9 @@ export const info: SeoPageData[] = [
       { q: "Is eBay IPTV safe?", a: "Risky. Many listings are short-lived resellers with no support." },
       { q: "What about AliExpress and Alibaba IPTV boxes?", a: "Unbranded boxes often have outdated software and unknown pre-loaded services. Choose a known brand from a Canadian retailer." },
       { q: "What is an 'IPTV key' on Amazon?", a: "A code sold to activate a service (often called clé IPTV in French). It is hard to verify and often not refundable." },
-      { q: "Where should I buy an IPTV subscription?", a: "Directly from a provider — see [Maple4K pricing](/pricing) and try the [free trial](/free-trial)." },
+      { q: "Where should I buy an IPTV subscription?", a: "Directly from a provider — see [Maple4K pricing](/ca/pricing) and try the [free trial](/ca/free-trial)." },
     ],
-    related: ["/best-iptv-box-canada", "/buy-iptv-canada"],
+    related: ["/best-iptv-box-canada", "/ca/buy-iptv-canada"],
     aliases: ["/iptv-amazon", "/iptv-ebay", "/iptv-aliexpress", "/amazon-iptv"],
     ctaTitle: "Buy Direct — Test Free First",
     ctaText: "24-hour trial, no card, then transparent plans from $9.",
@@ -446,7 +446,7 @@ export const info: SeoPageData[] = [
   {
     path: "/blog/iptv-vs-satellite-canada",
     cluster: "learn",
-    hub: "/what-is-iptv",
+    hub: "/ca/what-is-iptv",
     kind: "blog",
     label: "IPTV vs satellite",
     blurb: "IPTV vs satellite TV and Starlink",
@@ -488,7 +488,7 @@ export const info: SeoPageData[] = [
       { q: "Do I need a dish for IPTV?", a: "No. IPTV uses your internet connection." },
       { q: "Can IPTV replace both cable and satellite?", a: "For most homes, yes — see [IPTV service Canada](/iptv-service-canada)." },
     ],
-    related: ["/blog/iptv-vs-cable-canada", "/what-is-iptv"],
+    related: ["/blog/iptv-vs-cable-canada", "/ca/what-is-iptv"],
     aliases: ["/iptv-satellite", "/sat-iptv", "/starlink-iptv"],
     ctaTitle: "Cut the Dish — Try IPTV Free",
     ctaText: "24-hour trial to test on your own connection.",

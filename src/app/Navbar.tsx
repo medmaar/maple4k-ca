@@ -5,10 +5,10 @@ import Logo from "../components/Logo";
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Channels", href: "/channels-list" },
-  { label: "Reviews", href: "/reviews" },
-  { label: "Blog", href: "/blog" },
+  { label: "Pricing", href: "/ca/pricing" },
+  { label: "Channels", href: "/ca/channels-list" },
+  { label: "Reviews", href: "/ca/reviews" },
+  { label: "Blog", href: "/ca/blog" },
 ];
 
 export default function Navbar() {
@@ -55,7 +55,7 @@ export default function Navbar() {
         {/* Desktop CTAs */}
         <div className="hidden md:flex items-center gap-3">
           <Link
-            href="/pricing"
+            href="/ca/pricing"
             className="text-sm font-bold px-5 py-2 rounded-xl whitespace-nowrap"
             style={{ color: "rgba(255,255,255,0.7)", border: "1px solid rgba(255,255,255,0.15)" }}
             onMouseEnter={e => { e.currentTarget.style.color = "#fff"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.35)"; }}
@@ -64,7 +64,7 @@ export default function Navbar() {
             Subscribe
           </Link>
           <Link
-            href="/free-trial"
+            href="/ca/free-trial"
             className="text-sm font-bold text-white px-6 py-2.5 rounded-xl whitespace-nowrap"
             style={{ background: "#E8041F", boxShadow: "0 4px 18px rgba(232,4,31,0.45)" }}
           >
@@ -103,7 +103,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/free-trial"
+              href="/ca/free-trial"
               onClick={() => setOpen(false)}
               className="mt-2 text-white px-4 py-3 rounded-xl text-sm font-bold text-center"
               style={{ background: "#E8041F" }}

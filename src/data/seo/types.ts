@@ -9,7 +9,7 @@ export type Section = {
 export type Faq = { q: string; a: string };
 
 export type SeoPageData = {
-  /** URL path, e.g. "/tivimate-premium-canada" */
+  /** URL path, e.g. "/ca/tivimate-premium-canada" */
   path: string;
   /** Cluster id — pages in the same cluster cross-link automatically */
   cluster: string;
@@ -44,7 +44,7 @@ export type SeoPageData = {
   ctaTitle: string;
   ctaText: string;
   lang?: "en-CA" | "fr-CA";
-  /** hreflang siblings, e.g. [{ lang: "en-CA", path: "/best-iptv-canada" }] */
+  /** hreflang siblings, e.g. [{ lang: "en-CA", path: "/ca/best-iptv-canada" }] */
   alt?: { lang: string; path: string }[];
   /** Brand/trademark disclaimer */
   notAffiliated?: string;

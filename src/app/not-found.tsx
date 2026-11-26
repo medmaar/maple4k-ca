@@ -12,18 +12,18 @@ export default function NotFound() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 12, marginBottom: 32 }}>
           {[
             ["/", "🏠 Home"],
-            ["/pricing", "💰 Pricing"],
-            ["/free-trial", "🎁 Free Trial"],
-            ["/best-iptv-canada", "🏆 Best IPTV Canada"],
-            ["/iptv-4k", "📺 4K IPTV"],
-            ["/iptv-subscription", "📋 Subscriptions"],
-            ["/smart-iptv", "📡 Smart IPTV"],
-            ["/blog", "📝 Blog"],
+            ["/ca/pricing", "💰 Pricing"],
+            ["/ca/free-trial", "🎁 Free Trial"],
+            ["/ca/best-iptv-canada", "🏆 Best IPTV Canada"],
+            ["/ca/iptv-4k", "📺 4K IPTV"],
+            ["/ca/iptv-subscription", "📋 Subscriptions"],
+            ["/ca/smart-iptv", "📡 Smart IPTV"],
+            ["/ca/blog", "📝 Blog"],
           ].map(([href, label]) => (
             <Link key={href} href={href} style={{ background: "#fff", border: "1px solid rgba(255,255,255,0.09)", borderRadius: 10, padding: "12px 16px", textDecoration: "none", color: "#fff", fontWeight: 600, fontSize: 14, display: "block" }}>{label}</Link>
           ))}
         </div>
-        <Link href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
+        <Link href="/ca/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
           Try Maple4K Free →
         </Link>
       </div>

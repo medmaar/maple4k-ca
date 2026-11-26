@@ -26,7 +26,7 @@ const articleSchema = {
   headline: "What Is an M3U Playlist? A Complete Beginner's Guide (2026)",
   description: "A plain-English guide to M3U playlists and how they work with IPTV in Canada.",
   image: "https://maple4k.ca/og-image.jpg",
-  author: { "@type": "Person", name: "Alex Tremblay", url: "https://maple4k.ca/about" },
+  author: { "@type": "Person", name: "Alex Tremblay", url: "https://maple4k.ca/ca/about" },
   publisher: {
     "@type": "Organization",
     name: "Maple4K",
@@ -60,7 +60,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://maple4k.ca/blog" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://maple4k.ca/ca/blog" },
     { "@type": "ListItem", position: 3, name: "What Is M3U IPTV", item: "https://maple4k.ca/blog/what-is-m3u-iptv-canada" },
   ],
 };
@@ -130,7 +130,7 @@ export default function WhatIsM3uPage() {
             <h2 style={{ fontSize: "1.4rem", fontWeight: 700, marginBottom: 12 }}>Recommended: Use a Full Player App Instead</h2>
             <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.75 }}>
               A raw M3U link in VLC works, but it skips EPG, categories, and catch-up. For the best day-to-day experience with Maple4K, we recommend{" "}
-              <Link href="/tivimate-canada" style={{ color: red }}>TiviMate</Link> on Firestick/Android TV or{" "}
+              <Link href="/ca/tivimate-canada" style={{ color: red }}>TiviMate</Link> on Firestick/Android TV or{" "}
               <Link href="/iptv-smarters-pro-canada" style={{ color: red }}>IPTV Smarters Pro</Link> on mobile — both use the same Maple4K subscription with a much richer interface.
             </p>
           </section>
@@ -148,7 +148,7 @@ export default function WhatIsM3uPage() {
           </section>
 
           <div style={{ marginTop: 48, display: "flex", gap: 16, flexWrap: "wrap" }}>
-            <Link href="/free-trial" className="btn-red">▶ Try Maple4K Free for 24H</Link>
+            <Link href="/ca/free-trial" className="btn-red">▶ Try Maple4K Free for 24H</Link>
             <Link href="/best-iptv-apps-canada" className="btn-outline">Compare IPTV Apps →</Link>
           </div>
           <p style={{ marginTop: 24, fontSize: 13, color: "rgba(255,255,255,0.4)" }}>

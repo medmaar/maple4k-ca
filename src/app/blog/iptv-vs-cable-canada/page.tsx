@@ -29,7 +29,7 @@ const articleSchema = {
     "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility.",
   datePublished: "2026-02-20",
   dateModified: "2026-04-30",
-  "author": { "@type": "Person", "name": "Alex Tremblay", "url": "https://maple4k.ca/about" },
+  "author": { "@type": "Person", "name": "Alex Tremblay", "url": "https://maple4k.ca/ca/about" },
   publisher: {
     "@type": "Organization",
     name: "Maple4K",
@@ -59,7 +59,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
-    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/blog"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/ca/blog"},
     {"@type":"ListItem","position":3,"name":"Iptv Vs Cable Canada","item":"https://maple4k.ca/blog/iptv-vs-cable-canada"}
   ]
 };
@@ -164,7 +164,7 @@ export default function IPTVvsCableCanada() {
             </div>
 
             <p style={{ color: "#d1d5db", fontSize: 14, lineHeight: 1.75 }}>
-              View all <Link href="/pricing" style={{ color: "#E8041F", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link> with full pricing details.
+              View all <Link href="/ca/pricing" style={{ color: "#E8041F", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link> with full pricing details.
             </p>
           </section>
 
@@ -281,10 +281,10 @@ export default function IPTVvsCableCanada() {
             <h2 style={{ fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, marginBottom: 16 }}>Ready to Switch from Cable to IPTV?</h2>
             <p style={{ color: "#d1d5db", marginBottom: 24 }}>Try Maple4K free for 24 hours — no credit card required.</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "center" }}>
-              <Link href="/free-trial" style={{ background: "#dc2626", color: "#fff", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
+              <Link href="/ca/free-trial" style={{ background: "#dc2626", color: "#fff", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
                 Get Free Trial
               </Link>
-              <Link href="/pricing" style={{ border: "1px solid #dc2626", color: "#f87171", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
+              <Link href="/ca/pricing" style={{ border: "1px solid #dc2626", color: "#f87171", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
                 View Maple4K Plans
               </Link>
             </div>

@@ -1,0 +1,159 @@
+import type { Metadata } from "next";
+import FreeTrialForm from "@/app/ca/free-trial/FreeTrialForm";
+import PlanFAQ, { type FaqItem } from "@/app/pricing/PlanFAQ";
+import ExtraSections from "@/components/ExtraSections";
+
+export const metadata: Metadata = {
+  title: { absolute: "IPTV Free Trial Canada 2026 — Test 4K Free for 24 Hours" },
+  description: "IPTV free trial Canada — test Maple4K 50,000+ channels + Netflix for 24 hours free. No credit card required. Free trial iptv, iptv free, best iptv canada.",
+  keywords: "iptv free trial, free trial iptv, iptv free, free iptv canada, iptv canada free trial, best iptv canada, iptv subscription canada, iptv near me, iptv providers canada, iptv trial, trial iptv, iptv free trial canada 24 hours",
+  alternates: { canonical: "https://maple4k.ca/ca/free-trial" },
+  openGraph: {
+    title: "Free IPTV Trial Canada — Test Maple4K Risk-Free | Maple4K",
+    description: "Get a free Maple4K IPTV trial in Canada. No credit card required. Access 50,000+ channels + Netflix, NHL, TSN, CTV and 120,000+ movies.",
+    url: "https://maple4k.ca/ca/free-trial",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K Free IPTV Trial Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
+};
+
+const faqItems: FaqItem[] = [
+  {
+    q: "How do I get the free trial?",
+    a: "Simply fill out the form above and submit your request. Our team will activate your trial within minutes — usually under 5 minutes during business hours.",
+  },
+  {
+    q: "Does the free trial include all channels?",
+    a: "Yes. Your 24h trial gives you full access to all 50,000+ channels + Netflix, 120,000+ VOD titles, and all sports packages — no restrictions.",
+  },
+  {
+    q: "How many devices can I use during the trial?",
+    a: "Your trial includes one simultaneous connection. If you want to test on multiple devices, let us know and we can arrange that.",
+  },
+  {
+    q: "What happens after 2 hours?",
+    a: "Your trial simply stops. There are no charges, no cancellation required. If you'd like to continue, contact us to choose a plan.",
+  },
+  {
+    q: "Is a credit card required to start the trial?",
+    a: "Absolutely not. No payment information is needed. The trial is 100% free with zero obligation to subscribe afterwards.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+export default function FreeTrialPage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
+        <section
+          className="py-20 px-4"
+          style={{ background: "transparent" }}
+        >
+          <div className="max-w-2xl mx-auto">
+            {/* Header */}
+            <div className="mb-8">
+              <span
+                className="inline-block text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5"
+                style={{
+                  background: "rgba(249,110,91,0.12)",
+                  border: "1px solid rgba(249,110,91,0.35)",
+                  color: "#E8041F",
+                }}
+              >
+                No Credit Card Required
+              </span>
+              <h1
+                style={{
+                  fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
+                  fontWeight: 800,
+                  color: "#fff",
+                  lineHeight: 1.2,
+                }}
+              >
+                Free Trial — Maple4K
+              </h1>
+              <p style={{ color: "#fff", fontSize: 14, marginTop: 10 }}>
+                5-minute full access. Fill out the form and we&apos;ll activate your trial within minutes.
+              </p>
+            </div>
+
+            {/* Order Form */}
+            <div
+              className="rounded-3xl p-6 md:p-8 border mb-16"
+              style={{
+                background: "rgba(255,255,255,0.05)",
+                borderColor: "rgba(121,201,197,0.2)",
+                boxShadow: "0 8px 32px rgba(26,61,69,0.25)",
+              }}
+            >
+              <FreeTrialForm />
+            </div>
+
+            {/* FAQ */}
+            <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)" }}>
+              <p
+                className="text-xs font-bold uppercase tracking-widest mb-2"
+                style={{ color: "#E8041F" }}
+              >
+                FAQ
+              </p>
+              <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#ffffff", marginBottom: 24 }}>
+                Frequently Asked Questions
+              </h2>
+              <PlanFAQ items={faqItems} />
+            
+            {/* Internal Links */}
+            <div style={{ marginTop: 32, background: "rgba(255,255,255,0.06)", borderRadius: 16, padding: "24px 20px" }}>
+              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 12, fontWeight: 600, textAlign: "center", marginBottom: 16, textTransform: "uppercase", letterSpacing: "0.08em" }}>Explore More Plans</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 14 }}>
+                <a href="/ca/pricing/1-month" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>1 Month — $9</a>
+                <a href="/ca/pricing/3-months" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>3 Months — $29</a>
+                <a href="/ca/pricing/6-months" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>6 Months — $39</a>
+                <a href="/ca/pricing/12-months" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>1 Year — $49 ⭐</a>
+              </div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+                <a href="/ca/free-trial" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Try Free 24h</a>
+                <a href="/ca/pricing" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>All Plans</a>
+                <a href="/ca/channels-list" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Channel List</a>
+                <a href="/ca/iptv-toronto" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>IPTV Toronto</a>
+                <a href="/ca/iptv-vancouver" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>IPTV Vancouver</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Image banner */}
+        <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
+          <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative" }}>
+            <img width={1280} height={720} src="/iptv-free-trial.webp" alt="Free trial IPTV Canada — Canadian sports fans streaming live" style={{ width: "100%", height: 240, objectFit: "cover", display: "block" }} loading="lazy" />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.7) 0%, transparent 55%)" }} />
+            <p style={{ position: "absolute", bottom: 14, left: 16, margin: 0, fontWeight: 700, fontSize: 13, color: "#fff", textShadow: "0 1px 4px rgba(0,0,0,0.9)" }}>🍁 Stream Canadian sports live — free trial, no card needed</p>
+          </div>
+          <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", position: "relative" }}>
+            <img width={1036} height={512} src="/free-trial-iptv.webp" alt="IPTV free trial Canada — fan holding Canadian flag" style={{ width: "100%", height: 240, objectFit: "cover", objectPosition: "center top", display: "block" }} loading="lazy" />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,15,26,0.7) 0%, transparent 55%)" }} />
+            <p style={{ position: "absolute", bottom: 14, left: 16, margin: 0, fontWeight: 700, fontSize: 13, color: "#fff", textShadow: "0 1px 4px rgba(0,0,0,0.9)" }}>🇨🇦 Full access in minutes — 50,000+ channels + Netflix</p>
+          </div>
+        </section>
+      <ExtraSections path="/ca/free-trial" />
+      </main>
+    </>
+  );
+}

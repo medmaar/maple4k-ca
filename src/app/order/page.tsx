@@ -108,7 +108,7 @@ function OrderContent() {
         </div>
 
         <div className="text-center">
-          <a href="/pricing" className="text-[#1A3D45] hover:text-[#F96E5B] text-sm transition-colors">
+          <a href="/ca/pricing" className="text-[#1A3D45] hover:text-[#F96E5B] text-sm transition-colors">
             ← Back to pricing
           </a>
         </div>

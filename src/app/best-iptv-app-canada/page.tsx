@@ -71,7 +71,7 @@ const apps = [
     pros: ["Best EPG guide in Canada", "4K H.265 hardware decode", "Catch-up & recording (Premium)", "Clean TV-first interface", "Direct Amazon App Store install"],
     cons: ["No iPhone/Android phone app", "Premium needed for recordings"],
     verdict: "If you watch IPTV on a Fire Stick or Android TV box, TiviMate is the clear #1. The EPG and catch-up alone make it irreplaceable for TSN and Sportsnet.",
-    link: "/tivimate-canada",
+    link: "/ca/tivimate-canada",
   },
   {
     rank: 2,
@@ -123,7 +123,7 @@ const apps = [
     pros: ["Available on every platform", "Handles any codec including H.265", "Free and open-source", "No account needed"],
     cons: ["No EPG guide", "Manual M3U playlist management", "Not designed for IPTV"],
     verdict: "Not a dedicated IPTV app, but VLC works as a fallback on Windows, Mac, Android, or iPhone. Good for testing streams or as a backup player.",
-    link: "/iptv-windows-canada",
+    link: "/ca/iptv-windows-canada",
   },
 ];
 
@@ -225,8 +225,8 @@ export default function BestIPTVAppCanadaPage() {
               Get your credentials, pick your IPTV app, and start watching 50,000+ channels in 4K. Free 24H trial — no credit card.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/free-trial" className="btn-red">▶ Free Trial 24H</Link>
-              <Link href="/pricing" className="btn-outline">View Plans →</Link>
+              <Link href="/ca/free-trial" className="btn-red">▶ Free Trial 24H</Link>
+              <Link href="/ca/pricing" className="btn-outline">View Plans →</Link>
             </div>
           </div>
         </section>

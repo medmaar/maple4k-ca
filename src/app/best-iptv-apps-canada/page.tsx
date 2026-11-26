@@ -21,9 +21,9 @@ export const metadata: Metadata = {
 };
 
 const apps = [
-  { name: "TiviMate", best: "Firestick & Android TV", price: "Free / $4.99 yr Premium", note: "Best all-round EPG + catch-up, TV-first UI.", href: "/tivimate-canada" },
+  { name: "TiviMate", best: "Firestick & Android TV", price: "Free / $4.99 yr Premium", note: "Best all-round EPG + catch-up, TV-first UI.", href: "/ca/tivimate-canada" },
   { name: "IPTV Smarters Pro", best: "iPhone & Android phone", price: "Free", note: "Only major player with true native mobile apps.", href: "/iptv-smarters-pro-canada" },
-  { name: "STB Emu Pro", best: "MAG-style portal fans", price: "Free / paid Pro", note: "Portal + MAC login instead of username/password.", href: "/stb-emu-canada" },
+  { name: "STB Emu Pro", best: "MAG-style portal fans", price: "Free / paid Pro", note: "Portal + MAC login instead of username/password.", href: "/ca/stb-emu-canada" },
   { name: "XCIPTV", best: "Android boxes", price: "Free", note: "Xtream Codes player with a built-in VPN option and multi-screen.", href: "#xciptv" },
   { name: "Xtream IPTV / XtreamHD IPTV", best: "Android & Firestick", price: "Free", note: "Lightweight Xtream Codes players, simple and fast to set up.", href: "#xtream" },
   { name: "Smart4IPTV", best: "Samsung & LG Smart TVs", price: "Free (app store)", note: "Native Smart TV app — no sideloading, pairs via MAC + M3U.", href: "/iptv-samsung-tv-canada" },
@@ -137,8 +137,8 @@ export default function BestIptvAppsCanadaPage() {
               An IPTV subscription like Maple4K needs a player app to watch it on. We tested and compared the 12 most popular apps Canadians use — TiviMate, IPTV Smarters Pro, XCIPTV, Smart4IPTV, STB Emu Pro, VLC, Kodi and more — so you can pick the right one for your device in seconds.
             </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginTop: 24 }}>
-              <Link href="/free-trial" className="btn-red">▶ Get Maple4K Free Trial</Link>
-              <Link href="/pricing" className="btn-outline">View Plans →</Link>
+              <Link href="/ca/free-trial" className="btn-red">▶ Get Maple4K Free Trial</Link>
+              <Link href="/ca/pricing" className="btn-outline">View Plans →</Link>
             </div>
           </div>
         </section>
@@ -180,9 +180,9 @@ export default function BestIptvAppsCanadaPage() {
             <h2 style={{ fontSize: "clamp(22px, 2.5vw, 34px)", fontWeight: 800, marginBottom: 28 }}>Our Top 3 Picks — With Full Setup Guides</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
               {[
-                { title: "TiviMate", body: "Best on Firestick & Android TV — full EPG, catch-up recording, TV-first UI.", href: "/tivimate-canada" },
+                { title: "TiviMate", body: "Best on Firestick & Android TV — full EPG, catch-up recording, TV-first UI.", href: "/ca/tivimate-canada" },
                 { title: "IPTV Smarters Pro", body: "Best on iPhone & Android phone — the only player with true native mobile apps.", href: "/iptv-smarters-pro-canada" },
-                { title: "STB Emu Pro", body: "Best for MAG-style portal fans — connects with a Portal URL + MAC address.", href: "/stb-emu-canada" },
+                { title: "STB Emu Pro", body: "Best for MAG-style portal fans — connects with a Portal URL + MAC address.", href: "/ca/stb-emu-canada" },
               ].map(card => (
                 <Link key={card.title} href={card.href} style={{ textDecoration: "none" }}>
                   <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: 24, height: "100%" }}>
@@ -252,15 +252,15 @@ export default function BestIptvAppsCanadaPage() {
               No credit card needed. Get your Maple4K credentials in minutes and start streaming 50,000+ channels in 4K on any app above.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/free-trial" className="btn-red">▶ Free Trial 24H</Link>
-              <Link href="/pricing" className="btn-outline">View Plans →</Link>
+              <Link href="/ca/free-trial" className="btn-red">▶ Free Trial 24H</Link>
+              <Link href="/ca/pricing" className="btn-outline">View Plans →</Link>
             </div>
             <p style={{ marginTop: 24, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
               Setup guides:{" "}
-              <Link href="/tivimate-canada" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>TiviMate</Link>{" · "}
+              <Link href="/ca/tivimate-canada" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>TiviMate</Link>{" · "}
               <Link href="/iptv-smarters-pro-canada" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>Smarters Pro</Link>{" · "}
-              <Link href="/stb-emu-canada" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>STB Emu Pro</Link>{" · "}
-              <Link href="/iptv-formula" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>Formuler Boxes</Link>
+              <Link href="/ca/stb-emu-canada" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>STB Emu Pro</Link>{" · "}
+              <Link href="/ca/iptv-formula" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>Formuler Boxes</Link>
             </p>
           </div>
         </section>

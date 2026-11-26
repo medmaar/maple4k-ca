@@ -2,21 +2,21 @@ import type { Section } from "./types";
 
 export const depthMisc: Record<string, Section[]> = {
   // ─────────── brand alternatives ───────────
-  "/diablo-iptv-alternative": [
+  "/ca/diablo-iptv-alternative": [
     {
       h2: "A practical test plan if you are comparing Diablo IPTV with other services",
       paras: [
         "Give each service the same three tests. First, an evening live-sports test: pick a game you would actually watch and note buffering and picture quality. Second, a guide test: check that the programme guide matches what is really on air. Third, a support test: send a simple question and time the reply. Together they take under an hour and tell you more than any review.",
-        "Do the same with Maple4K using the [free 24-hour trial](/free-trial). Because the trial gives you a normal Xtream login, you can add it to the app you already use and flip between services on the same TV.",
+        "Do the same with Maple4K using the [free 24-hour trial](/ca/free-trial). Because the trial gives you a normal Xtream login, you can add it to the app you already use and flip between services on the same TV.",
       ],
     },
   ],
-  "/forevertv-alternative": [
+  "/ca/forevertv-alternative": [
     {
       h2: "Questions to ask any provider that markets long-term value",
       paras: [
         "A name that promises permanence should be backed by clear terms. Ask how long the company has operated, what the renewal price will be, whether longer plans can be refunded and how they handle a shutdown of a channel or server. If the answers are vague, treat the promise with caution.",
-        "Maple4K keeps its offer simple: monthly, 3, 6 and 12-month plans with published prices on the [pricing page](/pricing) and a written [refund policy](/refund-policy).",
+        "Maple4K keeps its offer simple: monthly, 3, 6 and 12-month plans with published prices on the [pricing page](/ca/pricing) and a written [refund policy](/ca/refund-policy).",
       ],
     },
   ],
@@ -24,28 +24,28 @@ export const depthMisc: Record<string, Section[]> = {
     {
       h2: "Separating apps, add-ons and IPTV services",
       paras: [
-        "Streaming has many overlapping terms. An app plays video. An add-on extends an app with extra sources. An IPTV service is a company that supplies channels and a login. If you are not sure which one you need, start with the player: install [TiviMate](/tivimate-canada) or [IPTV Smarters Pro](/iptv-smarters-pro-canada), then add a service login. That combination is straightforward, works on most devices and keeps you in control.",
+        "Streaming has many overlapping terms. An app plays video. An add-on extends an app with extra sources. An IPTV service is a company that supplies channels and a login. If you are not sure which one you need, start with the player: install [TiviMate](/ca/tivimate-canada) or [IPTV Smarters Pro](/iptv-smarters-pro-canada), then add a service login. That combination is straightforward, works on most devices and keeps you in control.",
       ],
     },
   ],
-  "/pandar-tv-alternative": [
+  "/ca/pandar-tv-alternative": [
     {
       h2: "Confirm the exact provider before you pay",
       paras: [
-        "When several similar names exist, confirm the exact website and contact method before you send any payment. Look for a real support channel, written terms and a trial. Search for reviews that mention the same website, not just the same word. If you cannot verify who you are paying, choose a service where you can — Maple4K lists its [contact details](/contact), [terms](/terms-of-service) and [privacy policy](/privacy-policy) openly.",
+        "When several similar names exist, confirm the exact website and contact method before you send any payment. Look for a real support channel, written terms and a trial. Search for reviews that mention the same website, not just the same word. If you cannot verify who you are paying, choose a service where you can — Maple4K lists its [contact details](/ca/contact), [terms](/ca/terms-of-service) and [privacy policy](/ca/privacy-policy) openly.",
       ],
     },
   ],
-  "/edge-iptv-alternative": [
+  "/ca/edge-iptv-alternative": [
     {
       h2: "How to measure latency and speed yourself",
       paras: [
         "Latency is the delay between an event happening and you seeing it. For sports fans it shows up as spoilers from friends' phone alerts arriving before your stream shows the goal. To compare services, watch the same live match on two services side by side and note how far apart they are. Also time how long a channel takes to start after you press select — fast start-up usually points to healthy servers.",
-        "Try this comparison with Maple4K on the [free trial](/free-trial) next to any other service you are considering.",
+        "Try this comparison with Maple4K on the [free trial](/ca/free-trial) next to any other service you are considering.",
       ],
     },
   ],
-  "/kemo-iptv-alternative": [
+  "/ca/kemo-iptv-alternative": [
     {
       h2: "Using Reddit and forums wisely",
       paras: [
@@ -53,23 +53,23 @@ export const depthMisc: Record<string, Section[]> = {
       ],
     },
   ],
-  "/flix-iptv-alternative": [
+  "/ca/flix-iptv-alternative": [
     {
       h2: "Choosing a player separately from a provider",
       paras: [
-        "Keep the two decisions separate. Pick a provider based on channels, price, support and stability. Pick a player based on your device and your taste in interfaces. Splitting them means you can change one without redoing the other: if you dislike your player, switch apps and keep your login; if you dislike your provider, add a new login to the same app. See the [IPTV player hub](/iptv-player) to choose a player.",
+        "Keep the two decisions separate. Pick a provider based on channels, price, support and stability. Pick a player based on your device and your taste in interfaces. Splitting them means you can change one without redoing the other: if you dislike your player, switch apps and keep your login; if you dislike your provider, add a new login to the same app. See the [IPTV player hub](/ca/iptv-player) to choose a player.",
       ],
     },
   ],
-  "/atlaspro-iptv-alternative": [
+  "/ca/atlaspro-iptv-alternative": [
     {
       h2: "Device support checklist",
       table: {
         head: ["Device", "Works with Maple4K?", "Guide"],
         rows: [
-          ["iPhone / iPad", "Yes", "[iOS guide](/iptv-ios-canada)"],
+          ["iPhone / iPad", "Yes", "[iOS guide](/ca/iptv-ios-canada)"],
           ["Apple TV", "Yes", "[Apple TV guide](/iptv-apple-tv-canada)"],
-          ["Fire Stick", "Yes", "[Fire Stick guide](/iptv-firestick-canada)"],
+          ["Fire Stick", "Yes", "[Fire Stick guide](/ca/iptv-firestick-canada)"],
           ["Samsung / LG", "Yes", "[Smart TV guide](/iptv-smart-tv-canada)"],
           ["Android TV / Shield", "Yes", "[Android TV guide](/iptv-android-tv-canada)"],
         ],
@@ -78,7 +78,7 @@ export const depthMisc: Record<string, Section[]> = {
   ],
 
   // ─────────── French ───────────
-  "/fr": [
+  "/ca/fr": [
     {
       h2: "IPTV pour les francophones du Canada",
       paras: [
@@ -92,7 +92,7 @@ export const depthMisc: Record<string, Section[]> = {
       h2: "Mener votre propre comparatif en un week-end",
       paras: [
         "Choisissez deux ou trois fournisseurs et demandez leur essai gratuit. Utilisez le même appareil et le même réseau. Le samedi soir, regardez le même match sur chaque service et notez les saccades et la qualité d'image. Le dimanche, testez un film en 4K, cherchez une chaîne en français et posez une question au support. Notez chaque service de 1 à 5 : le meilleur IPTV est celui qui obtient le meilleur score pour vous.",
-        "Vous pouvez faire ce test avec Maple4K grâce à l'[essai gratuit de 24 heures](/free-trial).",
+        "Vous pouvez faire ce test avec Maple4K grâce à l'[essai gratuit de 24 heures](/ca/free-trial).",
       ],
     },
     {
@@ -119,7 +119,7 @@ export const depthMisc: Record<string, Section[]> = {
         "Vous recevez l'adresse du serveur, le nom d'utilisateur et le mot de passe par courriel et WhatsApp",
         "Installez une application — voir [installer IPTV](/fr/installer-iptv-canada)",
         "Entrez vos identifiants Xtream Codes et actualisez le guide",
-        "Contactez le [support](/contact) en cas de difficulté, en français ou en anglais",
+        "Contactez le [support](/ca/contact) en cas de difficulté, en français ou en anglais",
       ],
     },
   ],
@@ -128,7 +128,7 @@ export const depthMisc: Record<string, Section[]> = {
       h2: "Bonnes pratiques pour les consommateurs",
       paras: [
         "Renseignez-vous sur l'entreprise derrière un service : nom, coordonnées, conditions d'utilisation et politique de remboursement. Méfiez-vous des vendeurs anonymes, des paiements inhabituels et des offres qui semblent trop belles pour être vraies. Conservez vos preuves d'achat et vos communications.",
-        "Maple4K publie ses [conditions d'utilisation](/terms-of-service), sa [politique de confidentialité](/privacy-policy) et sa [politique de remboursement](/refund-policy). Cette page est informative et ne remplace pas un avis juridique.",
+        "Maple4K publie ses [conditions d'utilisation](/ca/terms-of-service), sa [politique de confidentialité](/ca/privacy-policy) et sa [politique de remboursement](/ca/refund-policy). Cette page est informative et ne remplace pas un avis juridique.",
       ],
     },
   ],
@@ -144,7 +144,7 @@ export const depthMisc: Record<string, Section[]> = {
       h2: "Conseils pour PC, Mac et téléphone",
       bullets: [
         "Sur PC ou Mac, installez IPTV Smarters Pro ou VLC — voir [guide PC et Mac](/iptv-smarters-pro-pc-mac-canada)",
-        "Sur iPhone et iPad, utilisez IPTV Smarters Pro — voir [IPTV sur iPhone](/iptv-ios-canada)",
+        "Sur iPhone et iPad, utilisez IPTV Smarters Pro — voir [IPTV sur iPhone](/ca/iptv-ios-canada)",
         "Sur Android, installez TiviMate ou Smarters Pro depuis Google Play",
         "Branchez l'appareil en Ethernet si possible pour éviter les coupures",
       ],

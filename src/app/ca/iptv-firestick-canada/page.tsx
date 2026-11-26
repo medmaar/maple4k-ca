@@ -1,0 +1,565 @@
+import type { Metadata } from "next";
+import ExtraSections from "@/components/ExtraSections";
+
+export const metadata: Metadata = {
+  title: { absolute: "IPTV on Firestick Canada 2026 — Setup Guide | Maple4K" },
+  description:
+    "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 50,000+ channels + Netflix, NHL, TSN & 4K quality. Free 24h trial.",
+  keywords: "iptv firestick canada, amazon fire stick iptv, amazon fire tv stick iptv, fire tv iptv, fire tv stick iptv, fire stick iptv, best iptv for firestick, iptv for firestick, iptv smarters pro firestick, tivimate firestick, firestick tivimate, iptv firestick reddit, firestick iptv reddit, iptv stick, smarters firestick",
+  alternates: { canonical: "https://maple4k.ca/ca/iptv-firestick-canada" },
+  openGraph: {
+    title: "IPTV Firestick Canada | Maple4K – Best 4K IPTV Canada",
+    description:
+      "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Maple4K offers 50,000+ channels + Netflix, NHL, TSN & 4K quality. Free 24h trial.",
+    url: "https://maple4k.ca/ca/iptv-firestick-canada",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K IPTV Firestick Canada" }],
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Set Up IPTV on Amazon Firestick in Canada",
+  step: [
+    {
+      "@type": "HowToStep",
+      name: "Install Downloader App",
+      text: "Search for 'Downloader' in the Amazon App Store and install it. Enable 'Apps from Unknown Sources' in Firestick settings.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Install IPTV Player",
+      text: "Open Downloader and enter the URL provided by Maple4K to install TiviMate or IPTV Smarters Pro.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Enter Your Credentials",
+      text: "Open your IPTV player and enter the server URL, username, and password sent by Maple4K to your email.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Start Streaming",
+      text: "Your 50,000+ Canadian and international channels are now ready. Navigate to TSN, Sportsnet, or CBC and enjoy 4K streaming.",
+    },
+  ],
+};
+
+const steps = [
+  {
+    num: "1",
+    title: "Install Downloader App",
+    desc: "Search for 'Downloader' in the Amazon App Store and install it. Then go to Settings > My Fire TV > Developer Options and enable 'Apps from Unknown Sources'.",
+  },
+  {
+    num: "2",
+    title: "Install IPTV Player",
+    desc: "Open Downloader, enter the URL provided by Maple4K, and install TiviMate or IPTV Smarters Pro — both are optimized for Firestick.",
+  },
+  {
+    num: "3",
+    title: "Enter Your Credentials",
+    desc: "Open your IPTV player and enter the server URL, username, and password from your Maple4K welcome email. Tap 'Connect' and your channels load in seconds.",
+  },
+  {
+    num: "4",
+    title: "Start Streaming",
+    desc: "Your 50,000+ Canadian and international channels are now ready. Navigate to TSN, Sportsnet, or CBC and enjoy 4K streaming on your big screen.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { q: "Do I need to jailbreak my Firestick for IPTV?", a: "No. Sideloading apps like TiviMate or IPTV Smarters Pro through the Downloader app is completely legal and doesn't require jailbreaking your Firestick." },
+    { q: "Which Firestick models work with Maple4K?", a: "Maple4K works on all Fire TV devices, including Fire Stick 4K, Fire Stick Lite, Fire Stick 4K Max, and Fire TV Cube." },
+    { q: "How long does Firestick setup take?", a: "Setup typically takes under 5 minutes once you have your Maple4K credentials — installing the Downloader app, sideloading your IPTV player, and entering your login details." },
+    { q: "Can I use my Firestick and phone on the same account?", a: "Yes — with a 2-device or higher plan, your Firestick and phone (or any other device) can stream at the same time." },
+    { q: "Is Amazon Fire Stick the same as Fire TV Stick for IPTV?", a: "Yes — Amazon Fire Stick, Fire TV Stick, and Amazon Fire TV Stick all refer to the same device family. Any generation (Lite, 4K, 4K Max) works with Maple4K the same way." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV Firestick Canada", item: "https://maple4k.ca/ca/iptv-firestick-canada" },
+  ],
+};
+
+export default function IPTVFirestickCanadaPage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
+
+        {/* Hero */}
+        <section
+          style={{
+            background: "rgba(255,255,255,0.05)",
+            padding: "80px 16px 60px",
+          }}
+        >
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <span
+              style={{
+                background: "rgba(249,110,91,0.18)",
+                border: "1px solid rgba(249,110,91,0.4)",
+                color: "#E8041F",
+                fontSize: 11,
+                fontWeight: 700,
+                padding: "5px 16px",
+                borderRadius: 999,
+                letterSpacing: 1,
+                display: "inline-block",
+                marginBottom: 20,
+              }}
+            >
+              IPTV CANADA · MAPLE4K
+            </span>
+            <h1
+              style={{
+                fontSize: "clamp(2rem, 5vw, 3rem)",
+                fontWeight: 800,
+                lineHeight: 1.15,
+                marginBottom: 20,
+                color: "#ffffff",
+              }}
+            >
+              IPTV on Amazon Firestick in{" "}
+              <span style={{ color: "#E8041F" }}>Canada 2026</span>
+            </h1>
+            <p
+              style={{
+                fontSize: "1.15rem",
+                color: "rgba(255,255,255,0.82)",
+                maxWidth: 680,
+                lineHeight: 1.75,
+                marginBottom: 36,
+              }}
+            >
+              Maple4K is the top-rated Maple4K service built for Amazon Firestick.
+              Connect your Firestick in under 5 minutes and unlock 50,000+ channels + Netflix,
+              120,000+ movies and series, and crystal-clear 4K HDR streams — including every
+              major Canadian broadcaster and sports network.
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
+              <a
+                href="/ca/pricing"
+                style={{
+                  background: "#E8041F",
+                  color: "#ffffff",
+                  padding: "16px 40px",
+                  borderRadius: 12,
+                  fontWeight: 700,
+                  display: "inline-block",
+                  textDecoration: "none",
+                  fontSize: "1rem",
+                }}
+              >
+                Get Your Maple4K Plan →
+              </a>
+              <a
+                href="/ca/free-trial"
+                style={{
+                  border: "2px solid #F96E5B",
+                  color: "#E8041F",
+                  padding: "16px 40px",
+                  borderRadius: 12,
+                  fontWeight: 700,
+                  display: "inline-block",
+                  textDecoration: "none",
+                  fontSize: "1rem",
+                }}
+              >
+                Try 24h Free
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Maple4K on Firestick */}
+        <section style={{ padding: "60px 16px" }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <h2
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+            >
+              Why Maple4K Works Great on Firestick
+            </h2>
+            <p style={{ color: "#fff", lineHeight: 1.75, marginBottom: 28 }}>
+              Millions of Canadians use Amazon Firestick as their primary streaming device.
+              Maple4K is engineered to take full advantage of the Firestick hardware —
+              delivering reliable, high-speed Maple4K streams without complicated setup.
+            </p>
+            <ul
+              style={{
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
+                display: "flex",
+                flexDirection: "column",
+                gap: 16,
+              }}
+            >
+              {[
+                {
+                  title: "Blazing-Fast Anti-Freeze Servers",
+                  desc: "Our Canadian-optimized servers guarantee low-latency streams with zero buffering — even during peak NHL playoff nights. Your Firestick handles 4K without a hitch.",
+                },
+                {
+                  title: "Full TiviMate & Smarters Compatibility",
+                  desc: "Maple4K works perfectly with both TiviMate and IPTV Smarters Pro — the two highest-rated IPTV players on Fire TV. Full 7-day EPG guide included.",
+                },
+                {
+                  title: "True 4K Ultra HD Picture Quality",
+                  desc: "Firestick 4K and Firestick 4K Max users get native 4K HDR streams. SD and HD options are available for older Fire TV Stick models — always crisp, always clear.",
+                },
+              ].map((item) => (
+                <li
+                  key={item.title}
+                  style={{
+                    background: "transparent",
+                    border: "1px solid #2a0a0a",
+                    borderRadius: 14,
+                    padding: "20px 24px",
+                    display: "flex",
+                    gap: 16,
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <span
+                    style={{
+                      background: "#E8041F",
+                      width: 10,
+                      height: 10,
+                      borderRadius: "50%",
+                      flexShrink: 0,
+                      marginTop: 6,
+                    }}
+                  />
+                  <div>
+                    <strong
+                      style={{ color: "#fff", display: "block", marginBottom: 4 }}
+                    >
+                      {item.title}
+                    </strong>
+                    <span
+                      style={{ color: "#fff", fontSize: "0.92rem", lineHeight: 1.65 }}
+                    >
+                      {item.desc}
+                    </span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Setup Steps */}
+        <section style={{ padding: "60px 16px", background: "transparent" }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <h2
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 8 }}
+            >
+              How to Set Up IPTV on Your Firestick
+            </h2>
+            <p style={{ color: "#fff", marginBottom: 36 }}>
+              Four simple steps — up and streaming in under 5 minutes.
+            </p>
+            <ol
+              style={{
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
+                display: "flex",
+                flexDirection: "column",
+                gap: 18,
+              }}
+            >
+              {steps.map((s) => (
+                <li
+                  key={s.num}
+                  style={{
+                    background: "transparent",
+                    border: "1px solid #1f1f1f",
+                    borderRadius: 14,
+                    padding: "22px 24px",
+                    display: "flex",
+                    gap: 20,
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <span
+                    style={{
+                      background: "#E8041F",
+                      color: "#fff",
+                      fontWeight: 800,
+                      fontSize: "1rem",
+                      borderRadius: "50%",
+                      width: 40,
+                      height: 40,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexShrink: 0,
+                    }}
+                  >
+                    {s.num}
+                  </span>
+                  <div>
+                    <strong
+                      style={{
+                        color: "#fff",
+                        fontSize: "1rem",
+                        display: "block",
+                        marginBottom: 6,
+                      }}
+                    >
+                      {s.title}
+                    </strong>
+                    <span
+                      style={{ color: "#fff", fontSize: "0.92rem", lineHeight: 1.65 }}
+                    >
+                      {s.desc}
+                    </span>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
+        {/* Canadian Channels */}
+        <section style={{ padding: "60px 16px" }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <h2
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+            >
+              What Canadian Channels Do You Get?
+            </h2>
+            <p style={{ color: "#fff", lineHeight: 1.75, marginBottom: 16 }}>
+              Maple4K delivers every major Canadian channel straight to your Firestick.
+              Never miss a live NHL game on TSN or Sportsnet, catch the latest on CBC News
+              Network, follow hit dramas on CTV and Global, or cheer on your team with RDS and
+              TVA Sports. Our Maple4K library includes all regional variants of each network
+              so you always get your local feed.
+            </p>
+            <p style={{ color: "#fff", lineHeight: 1.75, marginBottom: 24 }}>
+              Beyond Canadian content, the full 50,000+ channel lineup spans US, UK, European,
+              Middle Eastern, and South Asian networks — plus a 120,000+ title VOD library of
+              movies and series, all accessible from the Firestick remote.
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+              {[
+                "TSN 1–5",
+                "Sportsnet",
+                "CBC",
+                "CTV",
+                "Global",
+                "City TV",
+                "RDS",
+                "TVA Sports",
+                "ESPN",
+                "NFL Network",
+                "Sky Sports",
+                "beIN Sports",
+              ].map((ch) => (
+                <span
+                  key={ch}
+                  style={{
+                    background: "rgba(255,255,255,0.05)",
+                    border: "1px solid #3a1010",
+                    color: "#fff",
+                    padding: "6px 16px",
+                    borderRadius: 999,
+                    fontSize: "0.85rem",
+                    fontWeight: 600,
+                  }}
+                >
+                  {ch}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing Snapshot */}
+        <section style={{ padding: "60px 16px", background: "transparent" }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <h2
+              style={{ color: "#fff", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
+            >
+              Firestick IPTV Plans — Simple Canadian Pricing
+            </h2>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+                gap: 16,
+                marginBottom: 28,
+              }}
+            >
+              {[
+                { period: "1 Month", price: "$9" },
+                { period: "3 Months", price: "$29" },
+                { period: "6 Months", price: "$49" },
+                { period: "12 Months", price: "$49" },
+              ].map((plan) => (
+                <div
+                  key={plan.period}
+                  style={{
+                    background: "transparent",
+                    border: "1px solid #2a0a0a",
+                    borderRadius: 14,
+                    padding: "24px 20px",
+                    textAlign: "center",
+                  }}
+                >
+                  <div style={{ color: "#fff", fontSize: "0.9rem", marginBottom: 8 }}>
+                    {plan.period}
+                  </div>
+                  <div
+                    style={{ color: "#E8041F", fontSize: "1.6rem", fontWeight: 800 }}
+                  >
+                    {plan.price}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <a
+                href="/ca/pricing"
+                style={{
+                  background: "#E8041F",
+                  color: "#fff",
+                  padding: "14px 36px",
+                  borderRadius: 12,
+                  fontWeight: 700,
+                  display: "inline-block",
+                  textDecoration: "none",
+                }}
+              >
+                See Full Pricing Details →
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section style={{ padding: "60px 16px" }}>
+          <div style={{ maxWidth: 780, margin: "0 auto" }}>
+            <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32, textAlign: "center" }}>
+              Firestick IPTV <span style={{ color: "#E8041F" }}>FAQ</span>
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {[
+                { q: "Do I need to jailbreak my Firestick for IPTV?", a: "No. Sideloading apps like TiviMate or IPTV Smarters Pro through the Downloader app is completely legal and doesn't require jailbreaking your Firestick." },
+                { q: "Which Firestick models work with Maple4K?", a: "Maple4K works on all Fire TV devices, including Fire Stick 4K, Fire Stick Lite, Fire Stick 4K Max, and Fire TV Cube." },
+                { q: "How long does Firestick setup take?", a: "Setup typically takes under 5 minutes once you have your Maple4K credentials — installing the Downloader app, sideloading your IPTV player, and entering your login details." },
+                { q: "Can I use my Firestick and phone on the same account?", a: "Yes — with a 2-device or higher plan, your Firestick and phone (or any other device) can stream at the same time." },
+                { q: "Is Amazon Fire Stick the same as Fire TV Stick for IPTV?", a: "Yes — Amazon Fire Stick, Fire TV Stick, and Amazon Fire TV Stick all refer to the same device family. Any generation (Lite, 4K, 4K Max) works with Maple4K the same way." },
+              ].map((item) => (
+                <div key={item.q} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#E8041F" }}>{item.q}</h3>
+                  <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.6 }}>{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section
+          style={{ background: "rgba(255,255,255,0.05)", padding: "60px 16px", textAlign: "center" }}
+        >
+          <div style={{ maxWidth: 700, margin: "0 auto" }}>
+            <h2
+              style={{ fontSize: "2rem", fontWeight: 800, marginBottom: 12 }}
+            >
+              Ready to Stream IPTV on Your Firestick?
+            </h2>
+            <p
+              style={{ color: "#fff", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
+            >
+              Join thousands of Canadians already enjoying Maple4K. Try it free for 24
+              hours — no credit card required. Questions? Email{" "}
+              <a
+                href="mailto:help@maple4k.ca"
+                style={{ color: "#E8041F", textDecoration: "none" }}
+              >
+                help@maple4k.ca
+              </a>
+              .
+            </p>
+            <div
+              style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: 16 }}
+            >
+              <a
+                href="/ca/pricing"
+                style={{
+                  background: "#E8041F",
+                  color: "#ffffff",
+                  padding: "16px 40px",
+                  borderRadius: 12,
+                  fontWeight: 700,
+                  display: "inline-block",
+                  textDecoration: "none",
+                }}
+              >
+                Get Your Maple4K Plan →
+              </a>
+              <a
+                href="/ca/free-trial"
+                style={{
+                  border: "2px solid #F96E5B",
+                  color: "#E8041F",
+                  padding: "16px 40px",
+                  borderRadius: 12,
+                  fontWeight: 700,
+                  display: "inline-block",
+                  textDecoration: "none",
+                }}
+              >
+                Try 24h Free
+              </a>
+            </div>
+          </div>
+        </section>
+      
+        {/* SEO Internal Links */}
+        <section style={{ padding: "48px 16px" }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <p style={{ textAlign: "center", color: "#fff", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
+              <a href="/ca/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Toronto</a>
+              <a href="/ca/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
+              <a href="/ca/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Montreal</a>
+              <a href="/ca/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Calgary</a>
+              <a href="/ca/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
+              <a href="/ca/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+              <a href="/ca/pricing" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+              <a href="/ca/free-trial" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
+              <a href="/ca/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>Channel List</a>
+            </div>
+          </div>
+        </section>
+      <ExtraSections path="/ca/iptv-firestick-canada" />
+      </main>
+    </>
+  );
+}

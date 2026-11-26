@@ -1,10 +1,10 @@
 import type { SeoPageData } from "./types";
 
-const FR = "/fr";
+const FR = "/ca/fr";
 
 export const french: SeoPageData[] = [
   {
-    path: "/fr",
+    path: "/ca/fr",
     cluster: "fr",
     kind: "hub",
     lang: "fr-CA",
@@ -21,7 +21,7 @@ export const french: SeoPageData[] = [
       {
         h2: "Pourquoi choisir un IPTV canadien",
         bullets: [
-          "Chaînes canadiennes et sportives : hockey, CFL, soccer et plus — voir [IPTV Québec](/iptv-quebec)",
+          "Chaînes canadiennes et sportives : hockey, CFL, soccer et plus — voir [IPTV Québec](/ca/iptv-quebec)",
           "Contenu en français et en anglais dans la même application",
           "Aucun contrat, aucun équipement obligatoire : Fire Stick, téléviseur intelligent, téléphone ou ordinateur",
           "Prix transparents en dollars américains (USD) — voir [l'abonnement IPTV](/fr/abonnement-iptv-canada)",
@@ -40,13 +40,13 @@ export const french: SeoPageData[] = [
       "/fr/lecteur-iptv-canada",
       "/fr/liste-m3u-iptv",
       "/fr/iptv-ne-fonctionne-plus",
-      "/iptv-quebec",
-      "/iptv-montreal",
+      "/ca/iptv-quebec",
+      "/ca/iptv-montreal",
     ],
     faqs: [
-      { q: "Maple4K offre-t-il du support en français?", a: "Oui. Vous pouvez écrire à l'équipe par WhatsApp, Telegram ou courriel via la [page de contact](/contact)." },
+      { q: "Maple4K offre-t-il du support en français?", a: "Oui. Vous pouvez écrire à l'équipe par WhatsApp, Telegram ou courriel via la [page de contact](/ca/contact)." },
       { q: "Quel est le prix d'un abonnement IPTV au Canada?", a: "Dès 9 $ pour un mois et 49 $ pour 12 mois avec une connexion. Détails sur la page [abonnement IPTV](/fr/abonnement-iptv-canada)." },
-      { q: "Puis-je essayer avant d'acheter?", a: "Oui, un [essai gratuit de 24 heures](/free-trial) est offert, sans carte de crédit." },
+      { q: "Puis-je essayer avant d'acheter?", a: "Oui, un [essai gratuit de 24 heures](/ca/free-trial) est offert, sans carte de crédit." },
       { q: "Sur quels appareils fonctionne l'IPTV?", a: "Fire Stick, Android TV, Apple TV, téléviseurs Samsung et LG, téléphones, tablettes et ordinateurs. Voir [installer IPTV](/fr/installer-iptv-canada)." },
     ],
     alt: [{ lang: "en-CA", path: "/" }],
@@ -83,7 +83,7 @@ export const french: SeoPageData[] = [
       },
       {
         h2: "Le meilleur rapport qualité-prix",
-        paras: ["Le forfait de 12 mois à 49 $ revient à environ 4,08 $ par mois, et le forfait de 6 mois à 39 $ à 6,50 $ par mois. Consultez notre page [abonnement IPTV](/fr/abonnement-iptv-canada) pour tous les tarifs, ou la [version anglaise](/best-iptv-canada) de ce comparatif."],
+        paras: ["Le forfait de 12 mois à 49 $ revient à environ 4,08 $ par mois, et le forfait de 6 mois à 39 $ à 6,50 $ par mois. Consultez notre page [abonnement IPTV](/fr/abonnement-iptv-canada) pour tous les tarifs, ou la [version anglaise](/ca/best-iptv-canada) de ce comparatif."],
       },
       {
         h2: "Fiabilité et légalité",
@@ -91,15 +91,15 @@ export const french: SeoPageData[] = [
       },
     ],
     faqs: [
-      { q: "Quel est le meilleur IPTV au Canada?", a: "Celui qui réussit vos tests d'essai : stabilité, chaînes, support et prix. Maple4K offre 50 000+ chaînes, la 4K et un [essai gratuit de 24 h](/free-trial)." },
-      { q: "Comment savoir si un IPTV est fiable?", a: "Vérifiez qu'il offre un essai, des prix clairs, un support réel et de vrais avis. Voir nos [avis clients](/reviews)." },
+      { q: "Quel est le meilleur IPTV au Canada?", a: "Celui qui réussit vos tests d'essai : stabilité, chaînes, support et prix. Maple4K offre 50 000+ chaînes, la 4K et un [essai gratuit de 24 h](/ca/free-trial)." },
+      { q: "Comment savoir si un IPTV est fiable?", a: "Vérifiez qu'il offre un essai, des prix clairs, un support réel et de vrais avis. Voir nos [avis clients](/ca/reviews)." },
       { q: "Quel IPTV a le meilleur rapport qualité-prix?", a: "Les forfaits longs, comme 12 mois à 49 $, réduisent le coût mensuel à environ 4,08 $." },
       { q: "Existe-t-il un comparatif IPTV indépendant?", a: "Nous publions notre propre méthode d'évaluation; croisez-la avec des sources externes comme les [discussions Reddit](/blog/best-iptv-canada-reddit)." },
-      { q: "Quel service IPTV choisir au Québec?", a: "Consultez [IPTV Québec](/iptv-quebec) pour les chaînes et équipes locales." },
+      { q: "Quel service IPTV choisir au Québec?", a: "Consultez [IPTV Québec](/ca/iptv-quebec) pour les chaînes et équipes locales." },
     ],
-    related: ["/best-iptv-canada", "/iptv-quebec"],
+    related: ["/ca/best-iptv-canada", "/ca/iptv-quebec"],
     aliases: ["/meilleur-iptv", "/meilleure-iptv", "/le-meilleur-iptv", "/meilleur-service-iptv", "/comparatif-iptv", "/iptv-fiable", "/meilleur-ip-tv"],
-    alt: [{ lang: "en-CA", path: "/best-iptv-canada" }],
+    alt: [{ lang: "en-CA", path: "/ca/best-iptv-canada" }],
     ctaTitle: "Testez le meilleur IPTV gratuitement",
     ctaText: "Essai de 24 heures, sans carte de crédit.",
   },
@@ -129,14 +129,14 @@ export const french: SeoPageData[] = [
             ["12 mois", "49 $", "89 $"],
           ],
         },
-        note: "Jusqu'à 10 connexions — voir la page [forfaits et prix](/pricing) (en anglais).",
+        note: "Jusqu'à 10 connexions — voir la page [forfaits et prix](/ca/pricing) (en anglais).",
       },
       {
         h2: "IPTV pas cher : faites attention aux pièges",
         bullets: [
           "Méfiez-vous des offres « à vie » : [pourquoi elles sont risquées](/iptv-lifetime-subscription-canada)",
           "Exigez un essai gratuit avant de payer",
-          "Vérifiez le support et les conditions de remboursement — voir la [politique de remboursement](/refund-policy)",
+          "Vérifiez le support et les conditions de remboursement — voir la [politique de remboursement](/ca/refund-policy)",
         ],
       },
       {
@@ -146,14 +146,14 @@ export const french: SeoPageData[] = [
     ],
     faqs: [
       { q: "Combien coûte un abonnement IPTV au Canada?", a: "Chez Maple4K : 9 $ pour un mois, 29 $ pour trois, 39 $ pour six et 49 $ pour douze mois (une connexion)." },
-      { q: "Y a-t-il un essai gratuit?", a: "Oui, [24 heures gratuites](/free-trial), sans carte de crédit." },
+      { q: "Y a-t-il un essai gratuit?", a: "Oui, [24 heures gratuites](/ca/free-trial), sans carte de crédit." },
       { q: "Existe-t-il un IPTV à vie?", a: "Nous n'en vendons pas. Les offres à vie sont risquées; un forfait de 12 mois est plus fiable. Voir [IPTV à vie](/iptv-lifetime-subscription-canada)." },
       { q: "Puis-je regarder sur plusieurs appareils?", a: "Oui avec un forfait à plusieurs connexions. Chaque connexion permet un flux simultané." },
       { q: "Comment recevoir mes identifiants?", a: "Par courriel et WhatsApp en quelques minutes après votre commande." },
     ],
-    related: ["/iptv-subscription", "/pricing"],
+    related: ["/ca/iptv-subscription", "/ca/pricing"],
     aliases: ["/abonnement-iptv", "/abonnementiptv", "/iptv-prix", "/iptv-pas-cher", "/prix-iptv-canada"],
-    alt: [{ lang: "en-CA", path: "/iptv-subscription" }],
+    alt: [{ lang: "en-CA", path: "/ca/iptv-subscription" }],
     ctaTitle: "Commencez avec l'essai gratuit de 24 h",
     ctaText: "Aucune carte de crédit, aucun contrat.",
   },
@@ -182,8 +182,8 @@ export const french: SeoPageData[] = [
       {
         h2: "Comment choisir un fournisseur responsable",
         bullets: [
-          "Conditions d'utilisation et politique de remboursement publiées — voir nos [conditions](/terms-of-service)",
-          "Coordonnées et support réels — [contactez-nous](/contact)",
+          "Conditions d'utilisation et politique de remboursement publiées — voir nos [conditions](/ca/terms-of-service)",
+          "Coordonnées et support réels — [contactez-nous](/ca/contact)",
           "Aucune promesse irréaliste comme « à vie » ou « gratuit pour toujours »",
           "Essai gratuit officiel plutôt que des listes publiques — voir [listes M3U gratuites](/fr/liste-m3u-iptv)",
         ],
@@ -195,7 +195,7 @@ export const french: SeoPageData[] = [
       { q: "Quelle est la différence entre IPTV légal et illégal?", a: "Un service légal paie les droits des contenus qu'il diffuse et opère comme une vraie entreprise avec support et conditions." },
       { q: "Où lire la version anglaise?", a: "Voir [Is IPTV legal in Canada?](/blog/is-iptv-legal-canada)." },
     ],
-    related: ["/blog/is-iptv-legal-canada", "/disclaimer"],
+    related: ["/blog/is-iptv-legal-canada", "/ca/disclaimer"],
     aliases: ["/iptv-legal", "/iptv-legal-canada", "/iptv-legale", "/iptv-legal-au-canada"],
     alt: [{ lang: "en-CA", path: "/blog/is-iptv-legal-canada" }],
     datePublished: "2026-09-26",
@@ -222,10 +222,10 @@ export const french: SeoPageData[] = [
         table: {
           head: ["Appareil", "Application", "Guide"],
           rows: [
-            ["Fire Stick / Fire TV", "TiviMate ou Smarters Pro", "[Fire Stick](/iptv-firestick-canada)"],
+            ["Fire Stick / Fire TV", "TiviMate ou Smarters Pro", "[Fire Stick](/ca/iptv-firestick-canada)"],
             ["Téléviseur Samsung", "Smarters Player Lite / Smart IPTV", "[Samsung](/iptv-samsung-tv-canada)"],
             ["Smart TV LG", "Nanomid / Smarters Lite", "[LG](/iptv-lg-tv-canada)"],
-            ["iPhone / iPad", "IPTV Smarters Pro", "[iOS](/iptv-ios-canada)"],
+            ["iPhone / iPad", "IPTV Smarters Pro", "[iOS](/ca/iptv-ios-canada)"],
             ["Apple TV", "iPlayTV", "[Apple TV](/iplaytv-apple-tv-canada)"],
             ["PC / Mac", "Smarters Pro ou VLC", "[PC et Mac](/iptv-smarters-pro-pc-mac-canada)"],
             ["Chromecast", "TiviMate ou diffusion depuis le téléphone", "[Chromecast](/iptv-chromecast-google-tv-canada)"],
@@ -236,7 +236,7 @@ export const french: SeoPageData[] = [
       {
         h2: "Étapes communes à tous les appareils",
         bullets: [
-          "Obtenez vos identifiants avec l'[essai gratuit de 24 h](/free-trial)",
+          "Obtenez vos identifiants avec l'[essai gratuit de 24 h](/ca/free-trial)",
           "Installez l'application depuis la boutique officielle de votre appareil",
           "Choisissez « Xtream Codes » et saisissez les trois champs sans espace",
           "Patientez pendant le chargement, puis ajoutez le guide horaire (EPG)",
@@ -250,7 +250,7 @@ export const french: SeoPageData[] = [
     steps: {
       h2: "Installer IPTV en 4 étapes",
       items: [
-        { title: "Obtenez vos identifiants", body: "Demandez l'[essai gratuit](/free-trial) : adresse du serveur, nom d'utilisateur et mot de passe arrivent en quelques minutes." },
+        { title: "Obtenez vos identifiants", body: "Demandez l'[essai gratuit](/ca/free-trial) : adresse du serveur, nom d'utilisateur et mot de passe arrivent en quelques minutes." },
         { title: "Installez l'application", body: "Utilisez TiviMate, IPTV Smarters Pro ou l'application indiquée dans le tableau pour votre appareil." },
         { title: "Connectez-vous avec Xtream Codes", body: "Saisissez les trois champs exactement comme reçus." },
         { title: "Activez le guide", body: "Actualisez l'EPG dans les paramètres pour voir la programmation." },
@@ -259,13 +259,13 @@ export const french: SeoPageData[] = [
     faqs: [
       { q: "Comment installer l'IPTV sur Samsung?", a: "Utilisez Smarters Player Lite ou Smart IPTV depuis la boutique du téléviseur, puis entrez vos identifiants. Voir [IPTV Samsung](/iptv-samsung-tv-canada)." },
       { q: "Comment regarder l'IPTV sur PC?", a: "Installez IPTV Smarters Pro pour Windows ou utilisez VLC avec un lien M3U." },
-      { q: "IPTV sur iPhone : quelle application?", a: "IPTV Smarters Pro ou iPlayTV, disponibles sur l'App Store. Voir [IPTV iPhone](/iptv-ios-canada)." },
-      { q: "IPTV sur Fire Stick : est-ce facile?", a: "Oui, environ cinq minutes avec TiviMate. Voir [TiviMate sur Fire Stick](/tivimate-firestick-canada)." },
+      { q: "IPTV sur iPhone : quelle application?", a: "IPTV Smarters Pro ou iPlayTV, disponibles sur l'App Store. Voir [IPTV iPhone](/ca/iptv-ios-canada)." },
+      { q: "IPTV sur Fire Stick : est-ce facile?", a: "Oui, environ cinq minutes avec TiviMate. Voir [TiviMate sur Fire Stick](/ca/tivimate-firestick-canada)." },
       { q: "Puis-je utiliser l'IPTV sur PS5?", a: "Il n'existe pas d'application IPTV courante sur PS5; branchez un Fire Stick ou un boîtier Android en HDMI." },
     ],
-    related: ["/how-it-works", "/iptv-devices"],
+    related: ["/ca/how-it-works", "/ca/iptv-devices"],
     aliases: ["/installer-iptv", "/iptv-sur-pc", "/iptv-pour-pc", "/iptv-sur-samsung", "/iptv-sur-fire-stick", "/iptv-sur-iphone", "/iptv-sur-smart-tv", "/iptv-sur-apple-tv"],
-    alt: [{ lang: "en-CA", path: "/how-it-works" }],
+    alt: [{ lang: "en-CA", path: "/ca/how-it-works" }],
     ctaTitle: "Installez et testez gratuitement",
     ctaText: "24 heures d'essai, identifiants en quelques minutes.",
   },
@@ -289,7 +289,7 @@ export const french: SeoPageData[] = [
         table: {
           head: ["Lecteur", "Idéal pour", "Guide"],
           rows: [
-            ["TiviMate", "Fire Stick, Android TV", "[TiviMate](/tivimate-canada)"],
+            ["TiviMate", "Fire Stick, Android TV", "[TiviMate](/ca/tivimate-canada)"],
             ["IPTV Smarters Pro", "Téléphones, tablettes", "[Smarters Pro](/iptv-smarters-pro-canada)"],
             ["XCIPTV", "Android, personnalisable", "[XCIPTV](/xciptv-canada)"],
             ["iPlayTV", "Apple TV, iPhone", "[iPlayTV](/iplaytv-apple-tv-canada)"],
@@ -299,7 +299,7 @@ export const french: SeoPageData[] = [
       },
       {
         h2: "Un lecteur n'est pas un fournisseur",
-        paras: ["Un lecteur IPTV n'offre aucune chaîne par lui-même : il affiche celles de votre abonnement. Découvrez notre [comparatif complet des applications](/best-iptv-apps-canada) et le [centre des lecteurs IPTV](/iptv-player)."],
+        paras: ["Un lecteur IPTV n'offre aucune chaîne par lui-même : il affiche celles de votre abonnement. Découvrez notre [comparatif complet des applications](/best-iptv-apps-canada) et le [centre des lecteurs IPTV](/ca/iptv-player)."],
       },
     ],
     faqs: [
@@ -308,9 +308,9 @@ export const french: SeoPageData[] = [
       { q: "IPTV Smarters Pro est-il gratuit?", a: "L'application est gratuite; l'abonnement IPTV est distinct. Voir [abonnement IPTV](/fr/abonnement-iptv-canada)." },
       { q: "Qu'est-ce qu'un lecteur M3U?", a: "Un lecteur qui lit une liste de chaînes au format M3U, comme VLC. Voir [liste M3U IPTV](/fr/liste-m3u-iptv)." },
     ],
-    related: ["/iptv-player", "/best-iptv-apps-canada"],
+    related: ["/ca/iptv-player", "/best-iptv-apps-canada"],
     aliases: ["/lecteur-iptv", "/meilleur-lecteur-iptv", "/lecteur-m3u"],
-    alt: [{ lang: "en-CA", path: "/iptv-player" }],
+    alt: [{ lang: "en-CA", path: "/ca/iptv-player" }],
     ctaTitle: "Essayez votre lecteur avec un vrai abonnement",
     ctaText: "24 heures d'essai gratuit.",
   },
@@ -334,7 +334,7 @@ export const french: SeoPageData[] = [
         bullets: [
           "VLC : Média → Ouvrir un flux réseau → collez le lien",
           "Application IPTV : « Ajouter une liste » ou « URL M3U »",
-          "Préférez Xtream Codes lorsque c'est possible : le guide et les films se chargent automatiquement — voir [Xtream Codes](/xtream-iptv-canada)",
+          "Préférez Xtream Codes lorsque c'est possible : le guide et les films se chargent automatiquement — voir [Xtream Codes](/ca/xtream-iptv-canada)",
         ],
       },
       {
@@ -343,7 +343,7 @@ export const french: SeoPageData[] = [
       },
       {
         h2: "Alternative sûre",
-        paras: ["Obtenez un lien M3U et des identifiants Xtream avec l'[essai gratuit de 24 heures](/free-trial). Vous pouvez aussi installer un [lecteur IPTV](/fr/lecteur-iptv-canada) adapté à votre appareil."],
+        paras: ["Obtenez un lien M3U et des identifiants Xtream avec l'[essai gratuit de 24 heures](/ca/free-trial). Vous pouvez aussi installer un [lecteur IPTV](/fr/lecteur-iptv-canada) adapté à votre appareil."],
       },
     ],
     faqs: [
@@ -380,28 +380,28 @@ export const french: SeoPageData[] = [
           "Saccades : Ethernet, Wi-Fi 5 GHz, décodeur matériel dans l'application — voir [fix IPTV buffering](/blog/fix-iptv-buffering-canada)",
           "« Identifiants invalides » : vérifiez les espaces, http:// et le numéro de port; confirmez que l'abonnement est actif",
           "Écran vide : actualisez la liste ou l'EPG, puis redémarrez l'application",
-          "Trop d'appareils : chaque connexion permet un seul flux — voir les [forfaits](/pricing)",
+          "Trop d'appareils : chaque connexion permet un seul flux — voir les [forfaits](/ca/pricing)",
         ],
       },
       {
         h2: "IPTV Smarters Pro introuvable sur Google Play ou ne marche pas sur Samsung",
         paras: [
-          "Certaines applications ne sont pas listées dans toutes les régions ou sur tous les modèles. Essayez [Smarters Player Lite](/smarters-player-lite-canada) sur les téléviseurs Samsung, ou [Smart IPTV](/smart-iptv). Sur Fire Stick, suivez le guide [Downloader](/blog/iptv-downloader-app-guide-canada). Vérifiez aussi que le micrologiciel du téléviseur est à jour.",
+          "Certaines applications ne sont pas listées dans toutes les régions ou sur tous les modèles. Essayez [Smarters Player Lite](/smarters-player-lite-canada) sur les téléviseurs Samsung, ou [Smart IPTV](/ca/smart-iptv). Sur Fire Stick, suivez le guide [Downloader](/blog/iptv-downloader-app-guide-canada). Vérifiez aussi que le micrologiciel du téléviseur est à jour.",
         ],
       },
       {
         h2: "Le service est-il bloqué?",
-        paras: ["Si aucune chaîne ne fonctionne sur plusieurs appareils, écrivez à l'[équipe de support](/contact) avec le modèle de l'appareil, l'application utilisée et l'heure du problème."],
+        paras: ["Si aucune chaîne ne fonctionne sur plusieurs appareils, écrivez à l'[équipe de support](/ca/contact) avec le modèle de l'appareil, l'application utilisée et l'heure du problème."],
       },
     ],
     faqs: [
       { q: "Pourquoi mon IPTV ne fonctionne plus?", a: "Wi-Fi faible, cache saturé, identifiants incorrects ou abonnement expiré sont les causes les plus fréquentes." },
       { q: "IPTV Smarters Pro est introuvable sur Google Play : que faire?", a: "Essayez la version Lite ou installez-la avec Downloader depuis le site officiel du développeur. Voir [Smarters Lite](/smarters-player-lite-canada)." },
       { q: "Mon IPTV est bloqué sur ma TV Samsung", a: "Mettez à jour le téléviseur, réinstallez l'application et resaisissez les identifiants. Consultez [IPTV Samsung](/iptv-samsung-tv-canada)." },
-      { q: "Comment éviter les coupures pendant les matchs?", a: "Utilisez Ethernet et un appareil performant. Voir [Fire Stick](/iptv-firestick-canada)." },
-      { q: "Qui contacter en cas de problème?", a: "L'équipe Maple4K par WhatsApp, Telegram ou courriel via la [page de contact](/contact)." },
+      { q: "Comment éviter les coupures pendant les matchs?", a: "Utilisez Ethernet et un appareil performant. Voir [Fire Stick](/ca/iptv-firestick-canada)." },
+      { q: "Qui contacter en cas de problème?", a: "L'équipe Maple4K par WhatsApp, Telegram ou courriel via la [page de contact](/ca/contact)." },
     ],
-    related: ["/blog/fix-iptv-buffering-canada", "/contact"],
+    related: ["/blog/fix-iptv-buffering-canada", "/ca/contact"],
     aliases: ["/iptv-ne-fonctionne-plus", "/iptv-bloque", "/iptv-coupure", "/iptv-saccade"],
     alt: [{ lang: "en-CA", path: "/blog/fix-iptv-buffering-canada" }],
     datePublished: "2026-09-26",

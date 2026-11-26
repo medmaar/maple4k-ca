@@ -2,7 +2,7 @@ import type { Section } from "./types";
 
 export const depthDevices: Record<string, Section[]> = {
   // ─────────── devices ───────────
-  "/iptv-mac-canada": [
+  "/ca/iptv-mac-canada": [
     {
       h2: "Mac-specific tips for smooth IPTV",
       paras: [
@@ -16,7 +16,7 @@ export const depthDevices: Record<string, Section[]> = {
         "Do not save the login in a browser-based player on a shared computer",
         "Sign out of apps when you finish on a work or family Mac",
         "Never paste your Xtream login into unknown websites — see [web player safety](/iptv-web-player-canada)",
-        "Ask [Maple4K support](/contact) to reset credentials if you think they were exposed",
+        "Ask [Maple4K support](/ca/contact) to reset credentials if you think they were exposed",
       ],
     },
   ],
@@ -39,7 +39,7 @@ export const depthDevices: Record<string, Section[]> = {
           ["Guide", "Full EPG", "Often limited"],
         ],
       },
-      paras: ["If you own an older Chromecast, weigh the cost of a [Fire Stick](/iptv-firestick-canada) against the convenience of casting."],
+      paras: ["If you own an older Chromecast, weigh the cost of a [Fire Stick](/ca/iptv-firestick-canada) against the convenience of casting."],
     },
   ],
   "/iptv-hisense-vidaa-canada": [
@@ -58,7 +58,7 @@ export const depthDevices: Record<string, Section[]> = {
         "Set the TV to switch to the HDMI input automatically",
         "Keep the TV's own apps for Netflix and YouTube if you like them",
       ],
-      paras: ["See [Fire Stick IPTV setup](/iptv-firestick-canada) or compare devices in the [IPTV devices hub](/iptv-devices)."],
+      paras: ["See [Fire Stick IPTV setup](/ca/iptv-firestick-canada) or compare devices in the [IPTV devices hub](/ca/iptv-devices)."],
     },
   ],
   "/iptv-nvidia-shield-canada": [
@@ -117,7 +117,7 @@ export const depthDevices: Record<string, Section[]> = {
         "Install TiviMate or IPTV Smarters Pro from Google Play",
         "Turn off unused home-screen recommendations to free memory",
         "Use Ethernet through a compatible adapter if Wi-Fi is weak",
-        "Test with a [free Maple4K trial](/free-trial) before committing",
+        "Test with a [free Maple4K trial](/ca/free-trial) before committing",
       ],
     },
   ],
@@ -142,12 +142,12 @@ export const depthDevices: Record<string, Section[]> = {
           ["Dozens of pre-installed apps", "No", "Signals a locked or low-quality box"],
         ],
       },
-      paras: ["Ready to test? Try Maple4K on any of these boxes with the [free trial](/free-trial)."],
+      paras: ["Ready to test? Try Maple4K on any of these boxes with the [free trial](/ca/free-trial)."],
     },
   ],
 
   // ─────────── boxes ───────────
-  "/formuler-box-canada": [
+  "/ca/formuler-box-canada": [
     {
       h2: "Buying a Formuler box in Canada",
       paras: [
@@ -165,7 +165,7 @@ export const depthDevices: Record<string, Section[]> = {
         "Attach a USB drive if you plan to record, and format it through the box",
         "Save your Maple4K login somewhere safe in case you need to reset the box",
       ],
-      paras: ["Detailed portal steps are in the [MyTVOnline guide](/mytvonline-canada)."],
+      paras: ["Detailed portal steps are in the [MyTVOnline guide](/ca/mytvonline-canada)."],
     },
   ],
   "/formuler-z8-pro-canada": [
@@ -202,7 +202,7 @@ export const depthDevices: Record<string, Section[]> = {
         "Leave plenty of free space — a single 4K game can be very large",
         "Schedule recordings from the guide rather than manually starting them",
       ],
-      paras: ["Read our [Formuler box overview](/formuler-box-canada) for the other models in the range."],
+      paras: ["Read our [Formuler box overview](/ca/formuler-box-canada) for the other models in the range."],
     },
   ],
   "/mag-322-canada": [
@@ -224,10 +224,10 @@ export const depthDevices: Record<string, Section[]> = {
           ["Screen blank after update", "Factory reset the box and re-enter the portal"],
         ],
       },
-      paras: ["For upgrades see [MAG 524](/mag-524-canada) or [Formuler boxes](/formuler-box-canada)."],
+      paras: ["For upgrades see [MAG 524](/ca/mag-524-canada) or [Formuler boxes](/ca/formuler-box-canada)."],
     },
   ],
-  "/mag-524-canada": [
+  "/ca/mag-524-canada": [
     {
       h2: "Why choose a MAG 524",
       paras: [
@@ -245,7 +245,7 @@ export const depthDevices: Record<string, Section[]> = {
       ],
     },
   ],
-  "/mag-254-canada": [
+  "/ca/mag-254-canada": [
     {
       h2: "How old is too old?",
       paras: [
@@ -280,11 +280,11 @@ export const depthDevices: Record<string, Section[]> = {
         "1080p TV or bedroom set: an older MAG in good condition is fine",
         "4K TV in the living room: choose a 524-class model",
         "Multiple TVs: consider one box per TV, all registered on the same subscription with enough connections",
-        "Not sure? Message [support](/contact) with your model and TV and we will advise",
+        "Not sure? Message [support](/ca/contact) with your model and TV and we will advise",
       ],
     },
   ],
-  "/dreamlink-box-canada": [
+  "/ca/dreamlink-box-canada": [
     {
       h2: "What to ask before buying a Dreamlink box",
       paras: [
@@ -299,11 +299,11 @@ export const depthDevices: Record<string, Section[]> = {
         "Confirm the date and time on the box are correct — wrong time can break streams",
         "Re-enter the portal or Xtream details carefully",
         "Reboot the box and router",
-        "Send [support](/contact) the model number if problems persist",
+        "Send [support](/ca/contact) the model number if problems persist",
       ],
     },
   ],
-  "/buzztv-canada": [
+  "/ca/buzztv-canada": [
     {
       h2: "Living with a BuzzTV box",
       paras: [
@@ -337,11 +337,11 @@ export const depthDevices: Record<string, Section[]> = {
         "Check whether Android mode is available and enabled",
         "Enter the portal or Xtream details exactly",
         "Update firmware where offered",
-        "Ask [Maple4K support](/contact) which setup fits your version",
+        "Ask [Maple4K support](/ca/contact) which setup fits your version",
       ],
     },
   ],
-  "/king365tv-canada": [
+  "/ca/king365tv-canada": [
     {
       h2: "Boxes tied to one service: what are your options?",
       paras: [
@@ -352,9 +352,9 @@ export const depthDevices: Record<string, Section[]> = {
     {
       h2: "Independent options that keep you flexible",
       bullets: [
-        "[Fire Stick 4K](/iptv-firestick-canada) — inexpensive and works with any provider",
+        "[Fire Stick 4K](/ca/iptv-firestick-canada) — inexpensive and works with any provider",
         "[Android TV box](/best-android-tv-box-for-iptv-canada) — most flexible",
-        "[Formuler](/formuler-box-canada) — dedicated IPTV experience with open portals",
+        "[Formuler](/ca/formuler-box-canada) — dedicated IPTV experience with open portals",
         "[Smart TV apps](/iptv-smart-tv-canada) — no extra hardware if your TV supports them",
       ],
     },

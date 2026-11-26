@@ -15,7 +15,7 @@ export default function Footer() {
             </p>
             <p style={{ marginTop: 16, fontSize: 13 }}>
               <strong style={{ color: "rgba(255,255,255,0.7)" }}>Contact:</strong>{" "}
-              <Link href="/contact" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>support@maple4k.ca</Link>
+              <Link href="/ca/contact" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>support@maple4k.ca</Link>
             </p>
           </div>
 
@@ -24,11 +24,11 @@ export default function Footer() {
             <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 20, marginTop: 0 }}>Service</h4>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
-                { label: "Pricing", href: "/pricing" },
-                { label: "Channel List", href: "/channels-list" },
-                { label: "Free Trial", href: "/free-trial" },
-                { label: "Referral Program", href: "/referral" },
-                { label: "Reseller", href: "/reseller" },
+                { label: "Pricing", href: "/ca/pricing" },
+                { label: "Channel List", href: "/ca/channels-list" },
+                { label: "Free Trial", href: "/ca/free-trial" },
+                { label: "Referral Program", href: "/ca/referral" },
+                { label: "Reseller", href: "/ca/reseller" },
               ].map(l => (
                 <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}
                   onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
@@ -45,7 +45,7 @@ export default function Footer() {
             <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 20, marginTop: 0 }}>Guides</h4>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
-                { label: "Fire Stick Setup", href: "/iptv-firestick-canada" },
+                { label: "Fire Stick Setup", href: "/ca/iptv-firestick-canada" },
                 { label: "Apple TV Setup", href: "/iptv-apple-tv-canada" },
                 { label: "Android TV Setup", href: "/iptv-android-tv-canada" },
                 { label: "Smart TV Setup", href: "/iptv-smart-tv-canada" },
@@ -53,7 +53,7 @@ export default function Footer() {
                 { label: "Best IPTV Apps", href: "/best-iptv-apps-canada" },
                 { label: "Best IPTV for Sports", href: "/best-iptv-for-sports-canada" },
                 { label: "VLC, M3U & Kodi Guide", href: "/blog/iptv-vlc-m3u-kodi-guide-canada" },
-                { label: "Blog", href: "/blog" },
+                { label: "Blog", href: "/ca/blog" },
               ].map(l => (
                 <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}
                   onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
@@ -70,15 +70,15 @@ export default function Footer() {
             <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 20, marginTop: 0 }}>Explore</h4>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
-                { label: "What Is IPTV?", href: "/what-is-iptv" },
-                { label: "IPTV Devices", href: "/iptv-devices" },
-                { label: "IPTV Players & Apps", href: "/iptv-player" },
+                { label: "What Is IPTV?", href: "/ca/what-is-iptv" },
+                { label: "IPTV Devices", href: "/ca/iptv-devices" },
+                { label: "IPTV Players & Apps", href: "/ca/iptv-player" },
                 { label: "IPTV Set-Top Boxes", href: "/iptv-set-top-box" },
-                { label: "IPTV by City", href: "/iptv-cities" },
-                { label: "Canadian IPTV", href: "/canadian-iptv" },
-                { label: "IPTV Alternatives", href: "/iptv-alternatives" },
-                { label: "IPTV en français", href: "/fr" },
-                { label: "About Maple4K", href: "/about" },
+                { label: "IPTV by City", href: "/ca/iptv-cities" },
+                { label: "Canadian IPTV", href: "/ca/canadian-iptv" },
+                { label: "IPTV Alternatives", href: "/ca/iptv-alternatives" },
+                { label: "IPTV en français", href: "/ca/fr" },
+                { label: "About Maple4K", href: "/ca/about" },
               ].map(l => (
                 <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}
                   onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
@@ -95,11 +95,11 @@ export default function Footer() {
             <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 20, marginTop: 0 }}>Legal</h4>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
-                { label: "Privacy Policy", href: "/privacy-policy" },
-                { label: "Terms of Service", href: "/terms-of-service" },
-                { label: "Refund Policy", href: "/refund-policy" },
-                { label: "DMCA", href: "/dmca" },
-                { label: "Disclaimer", href: "/disclaimer" },
+                { label: "Privacy Policy", href: "/ca/privacy-policy" },
+                { label: "Terms of Service", href: "/ca/terms-of-service" },
+                { label: "Refund Policy", href: "/ca/refund-policy" },
+                { label: "DMCA", href: "/ca/dmca" },
+                { label: "Disclaimer", href: "/ca/disclaimer" },
               ].map(l => (
                 <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}
                   onMouseEnter={e => (e.currentTarget.style.color = "#fff")}

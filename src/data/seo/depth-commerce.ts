@@ -2,12 +2,12 @@ import type { Section } from "./types";
 
 export const depthCommerce: Record<string, Section[]> = {
   // ─────────── buying cluster ───────────
-  "/buy-iptv-canada": [
+  "/ca/buy-iptv-canada": [
     {
       h2: "What happens after you order",
       paras: [
         "Once you choose a plan and submit your details, the team sets up your account and sends your login by email and WhatsApp, usually within minutes. You receive a server URL, username and password (Xtream Codes), and if you use a portal box, a portal address linked to your MAC. Keep the message somewhere safe — you will need it if you reinstall an app or change devices.",
-        "Then choose an app for your device. Fire Stick and Android TV owners usually pick TiviMate; phone and tablet users pick IPTV Smarters Pro. Our [device guides](/iptv-devices) show exactly which to use, and support can walk you through it on WhatsApp if you get stuck.",
+        "Then choose an app for your device. Fire Stick and Android TV owners usually pick TiviMate; phone and tablet users pick IPTV Smarters Pro. Our [device guides](/ca/iptv-devices) show exactly which to use, and support can walk you through it on WhatsApp if you get stuck.",
       ],
     },
     {
@@ -18,12 +18,12 @@ export const depthCommerce: Record<string, Section[]> = {
           ["Want to try after the free trial", "1 month", "Lowest commitment"],
           ["Follow one hockey or football season", "6 months", "Covers most of a season at a lower monthly cost"],
           ["Are sure you will keep it", "12 months", "Lowest effective monthly cost"],
-          ["Have a big household", "Multi-connection plan", "Several TVs at once — see [pricing](/pricing)"],
+          ["Have a big household", "Multi-connection plan", "Several TVs at once — see [pricing](/ca/pricing)"],
         ],
       },
     },
   ],
-  "/cheap-iptv-canada": [
+  "/ca/cheap-iptv-canada": [
     {
       h2: "Where the savings come from",
       paras: [
@@ -34,15 +34,15 @@ export const depthCommerce: Record<string, Section[]> = {
     {
       h2: "Cost-saving checklist",
       bullets: [
-        "Start with the [free trial](/free-trial) — never pay to test",
+        "Start with the [free trial](/ca/free-trial) — never pay to test",
         "Choose a 6 or 12-month plan once you are happy",
         "Share connections wisely: match the connection count to real simultaneous use",
         "Use the free version of players like IPTV Smarters Pro or TiviMate before paying for extras",
-        "Refer friends through the [referral programme](/referral) for extra time",
+        "Refer friends through the [referral programme](/ca/referral) for extra time",
       ],
     },
   ],
-  "/iptv-price-canada": [
+  "/ca/iptv-price-canada": [
     {
       h2: "Understanding connections and plan length",
       paras: [
@@ -58,7 +58,7 @@ export const depthCommerce: Record<string, Section[]> = {
           ["Single viewer", "12 months, 1 connection", "$49"],
           ["Couple, two rooms", "12 months, 2 connections", "$89"],
           ["Family of four", "12 months, 4 connections", "$180"],
-          ["Large household or shared home", "12 months, 6–10 connections", "See [pricing](/pricing)"],
+          ["Large household or shared home", "12 months, 6–10 connections", "See [pricing](/ca/pricing)"],
         ],
       },
       paras: ["Compare with cable in [IPTV vs cable in Canada](/blog/iptv-vs-cable-canada)."],
@@ -79,11 +79,11 @@ export const depthCommerce: Record<string, Section[]> = {
         "What is your refund policy if the service does not work on my device?",
         "Which apps do you support and do you help with setup?",
         "How do you handle outages during major events?",
-        "Is there a written policy on privacy and what data you keep? See [Maple4K's privacy policy](/privacy-policy)",
+        "Is there a written policy on privacy and what data you keep? See [Maple4K's privacy policy](/ca/privacy-policy)",
       ],
     },
   ],
-  "/premium-iptv-canada": [
+  "/ca/premium-iptv-canada": [
     {
       h2: "What separates premium IPTV from the rest",
       paras: [
@@ -98,7 +98,7 @@ export const depthCommerce: Record<string, Section[]> = {
         "Wire the device to your router where you can",
         "Use a TV with HDR and HEVC support",
         "Choose a plan with enough connections so no one is kicked off mid-game",
-        "Check our [4K IPTV](/iptv-4k) page for stream details",
+        "Check our [4K IPTV](/ca/iptv-4k) page for stream details",
       ],
     },
   ],
@@ -115,10 +115,10 @@ export const depthCommerce: Record<string, Section[]> = {
       bullets: [
         "Keep screenshots of your order and messages",
         "Test the service now rather than assuming it will last",
-        "Have a backup — take advantage of a [free trial](/free-trial) with a provider that runs on recurring plans",
+        "Have a backup — take advantage of a [free trial](/ca/free-trial) with a provider that runs on recurring plans",
         "Do not buy further 'top-ups' from the same seller without proof of reliability",
       ],
-      paras: ["More buying advice: [buy IPTV in Canada](/buy-iptv-canada) and [avoid marketplace pitfalls](/blog/iptv-amazon-ebay-aliexpress-canada)."],
+      paras: ["More buying advice: [buy IPTV in Canada](/ca/buy-iptv-canada) and [avoid marketplace pitfalls](/blog/iptv-amazon-ebay-aliexpress-canada)."],
     },
   ],
   "/top-iptv-providers-canada": [
@@ -137,7 +137,7 @@ export const depthCommerce: Record<string, Section[]> = {
         "Whether the service was tested on your kind of device",
         "What happens after the trial: pricing, renewals and refunds",
       ],
-      paras: ["Cross-check with independent [reviews](/reviews), the [Reddit roundup](/blog/best-iptv-canada-reddit) and our [providers comparison](/iptv-providers-canada)."],
+      paras: ["Cross-check with independent [reviews](/ca/reviews), the [Reddit roundup](/blog/best-iptv-canada-reddit) and our [providers comparison](/ca/iptv-providers-canada)."],
     },
   ],
   "/best-iptv-for-firestick-canada": [
@@ -161,7 +161,7 @@ export const depthCommerce: Record<string, Section[]> = {
   ],
 
   // ─────────── content & audience ───────────
-  "/canadian-iptv": [
+  "/ca/canadian-iptv": [
     {
       h2: "Canadian content that matters to viewers",
       paras: [
@@ -177,7 +177,7 @@ export const depthCommerce: Record<string, Section[]> = {
         "Videotron (Québec): fibre and cable plans both work well",
         "Rural and satellite internet: test at different times of day and see [IPTV vs satellite](/blog/iptv-vs-satellite-canada)",
       ],
-      paras: ["Not sure which city guide fits? See all of them in the [IPTV city guides](/iptv-cities)."],
+      paras: ["Not sure which city guide fits? See all of them in the [IPTV city guides](/ca/iptv-cities)."],
     },
   ],
   "/international-iptv-channels-canada": [
@@ -197,7 +197,7 @@ export const depthCommerce: Record<string, Section[]> = {
         "Ask support for a shortlist of channels for your language",
         "Check the EPG language settings if programme titles look wrong",
       ],
-      paras: ["For Canadian channels, see [Canadian IPTV](/canadian-iptv)."],
+      paras: ["For Canadian channels, see [Canadian IPTV](/ca/canadian-iptv)."],
     },
   ],
   "/iptv-vod-movies-series-canada": [
@@ -220,7 +220,7 @@ export const depthCommerce: Record<string, Section[]> = {
   ],
 
   // ─────────── sports ───────────
-  "/iptv-ufc-canada": [
+  "/ca/iptv-ufc-canada": [
     {
       h2: "Preparing for fight night",
       paras: [
@@ -235,11 +235,11 @@ export const depthCommerce: Record<string, Section[]> = {
         "Player set to hardware decoding",
         "Reminder set in the guide",
         "Second connection available if two people want to watch in different rooms",
-        "[Support](/contact) contact ready in case something goes wrong",
+        "[Support](/ca/contact) contact ready in case something goes wrong",
       ],
     },
   ],
-  "/iptv-soccer-canada": [
+  "/ca/iptv-soccer-canada": [
     {
       h2: "Following soccer across time zones",
       paras: [
@@ -250,9 +250,9 @@ export const depthCommerce: Record<string, Section[]> = {
     {
       h2: "Local Canadian soccer",
       bullets: [
-        "Toronto FC and the Canadian national teams: see [IPTV Toronto](/iptv-toronto)",
-        "Vancouver Whitecaps: see [IPTV Vancouver](/iptv-vancouver)",
-        "CF Montréal: see [IPTV Montréal](/iptv-montreal)",
+        "Toronto FC and the Canadian national teams: see [IPTV Toronto](/ca/iptv-toronto)",
+        "Vancouver Whitecaps: see [IPTV Vancouver](/ca/iptv-vancouver)",
+        "CF Montréal: see [IPTV Montréal](/ca/iptv-montreal)",
         "For all sports at a glance: [best IPTV for sports](/best-iptv-for-sports-canada)",
       ],
     },

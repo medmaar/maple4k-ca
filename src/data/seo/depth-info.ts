@@ -2,7 +2,7 @@ import type { Section } from "./types";
 
 export const depthInfo: Record<string, Section[]> = {
   // ─────────── learn / blog ───────────
-  "/what-is-iptv": [
+  "/ca/what-is-iptv": [
     {
       h2: "The pieces of an IPTV system",
       paras: [
@@ -27,7 +27,7 @@ export const depthInfo: Record<string, Section[]> = {
       bullets: [
         "EPG — the electronic programme guide, a TV listings grid",
         "M3U — a playlist file of channel links; see [what M3U is](/blog/what-is-m3u-iptv-canada)",
-        "Xtream Codes — a login of server URL, username and password; see the [Xtream guide](/xtream-iptv-canada)",
+        "Xtream Codes — a login of server URL, username and password; see the [Xtream guide](/ca/xtream-iptv-canada)",
         "Portal / MAC — a box-based login used by MAG boxes; see [MAG box guide](/iptv-mag-box-canada)",
         "H.265 / HEVC — a video codec that makes 4K possible at lower bitrates",
         "Connection — one simultaneous stream allowed by your plan",
@@ -42,7 +42,7 @@ export const depthInfo: Record<string, Section[]> = {
     {
       h2: "Is IPTV right for you?",
       paras: [
-        "IPTV suits people who want more choice than a cable bundle, watch sports or international channels, or want to use multiple devices. It may not suit anyone with an unreliable internet connection or who wants a completely managed, one-box experience from a single provider. If you are unsure, the simplest test is a free trial: it costs nothing and shows you the quality on your own connection. Start yours on the [free trial page](/free-trial).",
+        "IPTV suits people who want more choice than a cable bundle, watch sports or international channels, or want to use multiple devices. It may not suit anyone with an unreliable internet connection or who wants a completely managed, one-box experience from a single provider. If you are unsure, the simplest test is a free trial: it costs nothing and shows you the quality on your own connection. Start yours on the [free trial page](/ca/free-trial).",
       ],
     },
   ],
@@ -97,7 +97,7 @@ export const depthInfo: Record<string, Section[]> = {
     {
       h2: "Device-specific advice",
       bullets: [
-        "Fire Stick: clear cache, use an Ethernet adapter, avoid Lite for 4K — see [Fire Stick guide](/iptv-firestick-canada)",
+        "Fire Stick: clear cache, use an Ethernet adapter, avoid Lite for 4K — see [Fire Stick guide](/ca/iptv-firestick-canada)",
         "Smart TV: reduce playlist size, update firmware, try a plug-in device — see [Smart TV guide](/iptv-smart-tv-canada)",
         "Android box: hardware decoding, Ethernet, remove unused apps — see [best Android TV box](/best-android-tv-box-for-iptv-canada)",
         "Phone or tablet: close background apps and keep the battery saver off",
@@ -158,7 +158,7 @@ export const depthInfo: Record<string, Section[]> = {
         "Use an official free trial with a provider that has clear contact details",
         "Load the playlist in your own app — never into an unknown website",
         "Avoid downloading 'IPTV apps' from links in forum posts",
-        "Read independent [reviews](/reviews) before you subscribe",
+        "Read independent [reviews](/ca/reviews) before you subscribe",
         "Keep your device and apps updated",
       ],
     },
@@ -201,21 +201,21 @@ export const depthInfo: Record<string, Section[]> = {
         "Would you like to avoid a long contract?",
         "Do you need TV to work during an internet outage?",
       ],
-      paras: ["If you answer yes to the first four, try IPTV with the [free trial](/free-trial)."],
+      paras: ["If you answer yes to the first four, try IPTV with the [free trial](/ca/free-trial)."],
     },
   ],
 
   // ─────────── hubs ───────────
-  "/iptv-cities": [
+  "/ca/iptv-cities": [
     {
       h2: "Why local matters even though IPTV works everywhere",
       paras: [
         "IPTV is delivered over the internet, so it does not change with your postal code. What does change is the team you follow, the internet provider you use and the local news and programming you care about. City guides bring those details together so you can see at a glance whether the channels you watch are there and what setup tips apply on your ISP.",
-        "If your city is not listed, use the closest guide or [IPTV near me](/iptv-near-me). The setup is identical from coast to coast.",
+        "If your city is not listed, use the closest guide or [IPTV near me](/ca/iptv-near-me). The setup is identical from coast to coast.",
       ],
     },
   ],
-  "/iptv-devices": [
+  "/ca/iptv-devices": [
     {
       h2: "How to pick your first IPTV device",
       paras: [
@@ -224,7 +224,7 @@ export const depthInfo: Record<string, Section[]> = {
       ],
     },
   ],
-  "/iptv-player": [
+  "/ca/iptv-player": [
     {
       h2: "Player features that actually matter",
       bullets: [
@@ -249,7 +249,7 @@ export const depthInfo: Record<string, Section[]> = {
       ],
     },
   ],
-  "/iptv-alternatives": [
+  "/ca/iptv-alternatives": [
     {
       h2: "Why comparing beats guessing",
       paras: [

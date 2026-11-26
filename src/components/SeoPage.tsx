@@ -95,7 +95,7 @@ export default function SeoPage({ page: p }: { page: SeoPageData }) {
         description: p.description,
         image: `${SITE}/og-image.jpg`,
         inLanguage: p.lang ?? "en-CA",
-        author: { "@type": "Person", name: "Alex Tremblay", url: `${SITE}/about` },
+        author: { "@type": "Person", name: "Alex Tremblay", url: `${SITE}/ca/about` },
         publisher: { "@type": "Organization", name: "Maple4K", url: SITE, logo: { "@type": "ImageObject", url: `${SITE}/favicon.svg` } },
         datePublished: published,
         dateModified: modified,
@@ -166,8 +166,8 @@ export default function SeoPage({ page: p }: { page: SeoPageData }) {
               {fr ? "Mis à jour le" : "Updated"} {new Date(modified + "T12:00:00Z").toLocaleDateString(fr ? "fr-CA" : "en-CA", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })} · {fr ? "Équipe Maple4K" : "Maple4K support team"}
             </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-              <Link href="/free-trial" className="btn-red">{ctaTrial}</Link>
-              <Link href="/pricing" className="btn-outline">{ctaPlans}</Link>
+              <Link href="/ca/free-trial" className="btn-red">{ctaTrial}</Link>
+              <Link href="/ca/pricing" className="btn-outline">{ctaPlans}</Link>
             </div>
           </div>
         </section>
@@ -323,8 +323,8 @@ export default function SeoPage({ page: p }: { page: SeoPageData }) {
             <h2 style={{ fontSize: "clamp(26px, 3.5vw, 42px)", fontWeight: 900, marginBottom: 20 }}>{p.ctaTitle}</h2>
             <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 15, lineHeight: 1.7, marginBottom: 36 }}>{p.ctaText}</p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/free-trial" className="btn-red">{ctaTrial}</Link>
-              <Link href="/pricing" className="btn-outline">{ctaPlans}</Link>
+              <Link href="/ca/free-trial" className="btn-red">{ctaTrial}</Link>
+              <Link href="/ca/pricing" className="btn-outline">{ctaPlans}</Link>
             </div>
             {p.notAffiliated && (
               <p style={{ marginTop: 28, fontSize: 12, color: "rgba(255,255,255,0.3)", lineHeight: 1.6 }}>

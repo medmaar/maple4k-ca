@@ -7,29 +7,29 @@ const SITE = "https://maple4k.ca";
 // Older pages that do not ship their own BreadcrumbList JSON-LD get an automatic trail here.
 // (New SEO pages and the rest of the site emit their own, so they are not listed — this
 // avoids duplicate BreadcrumbList blocks.)
-const CITY_PARENT = "/iptv-cities";
+const CITY_PARENT = "/ca/iptv-cities";
 const PARENTS: Record<string, string> = {
-  "/iptv-calgary": CITY_PARENT, "/iptv-edmonton": CITY_PARENT, "/iptv-halifax": CITY_PARENT,
-  "/iptv-hamilton": CITY_PARENT, "/iptv-london-ontario": CITY_PARENT, "/iptv-montreal": CITY_PARENT,
-  "/iptv-near-me": CITY_PARENT, "/iptv-ottawa": CITY_PARENT, "/iptv-quebec": CITY_PARENT,
-  "/iptv-vancouver": CITY_PARENT, "/iptv-victoria": CITY_PARENT, "/iptv-winnipeg": CITY_PARENT,
-  "/iptv-box": "/iptv-set-top-box",
-  "/blog/iptv-smarters-pro-canada": "/blog",
-  "/about": "",
-  "/free-trial": "",
-  "/iptv-providers-canada": "/best-iptv-canada",
+  "/ca/iptv-calgary": CITY_PARENT, "/ca/iptv-edmonton": CITY_PARENT, "/ca/iptv-halifax": CITY_PARENT,
+  "/ca/iptv-hamilton": CITY_PARENT, "/ca/iptv-london-ontario": CITY_PARENT, "/ca/iptv-montreal": CITY_PARENT,
+  "/ca/iptv-near-me": CITY_PARENT, "/ca/iptv-ottawa": CITY_PARENT, "/ca/iptv-quebec": CITY_PARENT,
+  "/ca/iptv-vancouver": CITY_PARENT, "/ca/iptv-victoria": CITY_PARENT, "/ca/iptv-winnipeg": CITY_PARENT,
+  "/ca/iptv-box": "/iptv-set-top-box",
+  "/blog/iptv-smarters-pro-canada": "/ca/blog",
+  "/ca/about": "",
+  "/ca/free-trial": "",
+  "/ca/iptv-providers-canada": "/ca/best-iptv-canada",
 };
 
 const NAMES: Record<string, string> = {
-  "/about": "About Maple4K",
-  "/best-iptv-canada": "Best IPTV Canada",
-  "/iptv-providers-canada": "IPTV Providers Canada",
-  "/free-trial": "Free Trial",
-  "/iptv-cities": "IPTV by City",
+  "/ca/about": "About Maple4K",
+  "/ca/best-iptv-canada": "Best IPTV Canada",
+  "/ca/iptv-providers-canada": "IPTV Providers Canada",
+  "/ca/free-trial": "Free Trial",
+  "/ca/iptv-cities": "IPTV by City",
   "/iptv-set-top-box": "IPTV Set-Top Boxes",
-  "/iptv-box": "IPTV Box",
-  "/blog": "Blog",
-  "/iptv-near-me": "IPTV Near Me",
+  "/ca/iptv-box": "IPTV Box",
+  "/ca/blog": "Blog",
+  "/ca/iptv-near-me": "IPTV Near Me",
   "/blog/iptv-smarters-pro-canada": "IPTV Smarters Pro Tutorial",
 };
 
@@ -47,10 +47,11 @@ function label(path: string): string {
 
 function trailFor(path: string): { name: string; item: string }[] | null {
   const trail: { name: string; item: string }[] = [{ name: "Home", item: SITE }];
-  if (path.startsWith("/pricing/")) {
-    trail.push({ name: "Pricing", item: SITE + "/pricing" });
+  const pricingBase = path.startsWith("/ca/pricing/") ? "/ca/pricing/" : path.startsWith("/pricing/") ? "/pricing/" : null;
+  if (pricingBase) {
+    trail.push({ name: "Pricing", item: SITE + "/ca/pricing" });
     // /pricing/3-devices/6-months → skip the page-less "/pricing/3-devices" level
-    const parts = path.split("/").filter(Boolean).slice(1);
+    const parts = path.slice(pricingBase.length).split("/").filter(Boolean);
     const name = parts.length === 2 ? `${label("/" + parts[0])} – ${label("/" + parts[1])}` : label(path);
     trail.push({ name, item: SITE + path });
     return trail;

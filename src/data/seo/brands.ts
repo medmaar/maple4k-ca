@@ -1,4 +1,5 @@
 import type { Faq, SeoPageData } from "./types";
+import { caPath } from "./ca-routes";
 
 type Brand = {
   slug: string;
@@ -13,11 +14,11 @@ type Brand = {
 };
 
 function brandPage(b: Brand): SeoPageData {
-  const path = `/${b.slug}-alternative`;
+  const path = caPath(`/${b.slug}-alternative`);
   return {
     path,
     cluster: "alt",
-    hub: "/iptv-alternatives",
+    hub: "/ca/iptv-alternatives",
     kind: "brand",
     label: `${b.name} alternative`,
     blurb: b.blurb,
@@ -35,26 +36,26 @@ function brandPage(b: Brand): SeoPageData {
       },
       {
         h2: `How to compare ${b.name} with any IPTV service`,
-        paras: [`Use the same five-point test on ${b.name} and on Maple4K: free trial, price shown up front, support reply speed, stability on a live game at peak time, and compatibility with your device. The full checklist is on our [IPTV alternatives page](/iptv-alternatives); Maple4K's side of it is a free 24-hour trial, published prices from $9 (see [pricing](/pricing)), WhatsApp/Telegram/email support and 4K H.265 streams.`],
+        paras: [`Use the same five-point test on ${b.name} and on Maple4K: free trial, price shown up front, support reply speed, stability on a live game at peak time, and compatibility with your device. The full checklist is on our [IPTV alternatives page](/ca/iptv-alternatives); Maple4K's side of it is a free 24-hour trial, published prices from $9 (see [pricing](/ca/pricing)), WhatsApp/Telegram/email support and 4K H.265 streams.`],
       },
       {
         h2: "Switching to Maple4K in 5 minutes",
         bullets: [
-          "Keep your device and your player app — [TiviMate](/tivimate-canada), [IPTV Smarters Pro](/iptv-smarters-pro-canada) or [XCIPTV](/xciptv-canada) all work",
-          "[Request the free trial](/free-trial) and receive Xtream Codes details",
+          "Keep your device and your player app — [TiviMate](/ca/tivimate-canada), [IPTV Smarters Pro](/iptv-smarters-pro-canada) or [XCIPTV](/xciptv-canada) all work",
+          "[Request the free trial](/ca/free-trial) and receive Xtream Codes details",
           "Add them as a new playlist next to your existing one and compare side by side",
-          "Read [reviews](/reviews) and [best IPTV in Canada](/best-iptv-canada) for independent context",
+          "Read [reviews](/ca/reviews) and [best IPTV in Canada](/ca/best-iptv-canada) for independent context",
         ],
       },
     ],
     faqs: [
       { q: `Is Maple4K affiliated with ${b.name}?`, a: `No. Maple4K is an independent Canadian IPTV service. ${b.name} is a separate name and we have no relationship with it.` },
-      { q: `Can I use my ${b.name} login in Maple4K or vice versa?`, a: "No. Logins are specific to each service. You will receive separate Xtream Codes details for Maple4K after starting the [free trial](/free-trial)." },
+      { q: `Can I use my ${b.name} login in Maple4K or vice versa?`, a: "No. Logins are specific to each service. You will receive separate Xtream Codes details for Maple4K after starting the [free trial](/ca/free-trial)." },
       ...b.extraFaq,
-      { q: "Which apps work with Maple4K?", a: "Any player that supports Xtream Codes or M3U, including TiviMate, IPTV Smarters Pro and XCIPTV. See the [IPTV player hub](/iptv-player)." },
-      { q: "How much does Maple4K cost?", a: "$9 for one month, $29 for three, $39 for six and $49 for twelve months on one connection. See [pricing](/pricing)." },
+      { q: "Which apps work with Maple4K?", a: "Any player that supports Xtream Codes or M3U, including TiviMate, IPTV Smarters Pro and XCIPTV. See the [IPTV player hub](/ca/iptv-player)." },
+      { q: "How much does Maple4K cost?", a: "$9 for one month, $29 for three, $39 for six and $49 for twelve months on one connection. See [pricing](/ca/pricing)." },
     ],
-    related: ["/best-iptv-canada", "/iptv-providers-canada", "/top-iptv-providers-canada"],
+    related: ["/ca/best-iptv-canada", "/ca/iptv-providers-canada", "/top-iptv-providers-canada"],
     aliases: [`/${b.slug}`],
     ctaTitle: `Compare ${b.name}-Style IPTV with Maple4K Free`,
     ctaText: "24-hour trial. No card. See stability, channels and support for yourself.",
@@ -70,7 +71,7 @@ export const brandDefs: Brand[] = [
     blurb: "Searching Diablo IPTV? Compare Canadian options",
     focus: "Searches for Diablo IPTV tend to combine the name with 'app', 'login' and 'subscription', which suggests people want to know how it works and what it costs. Whatever service you choose, get pricing in writing, ask which apps are supported and test a live sports channel during a busy evening before paying for anything long-term.",
     extraFaq: [
-      { q: "Is there a Diablo IPTV app I need to install?", a: "Services with a brand name usually work with standard players using Xtream Codes or M3U. With Maple4K you use any standard player — see the [player hub](/iptv-player)." },
+      { q: "Is there a Diablo IPTV app I need to install?", a: "Services with a brand name usually work with standard players using Xtream Codes or M3U. With Maple4K you use any standard player — see the [player hub](/ca/iptv-player)." },
       { q: "Diablo IPTV or IPTV Diablo — are they the same thing?", a: "Word order varies in searches; both refer to the same name. Maple4K is unrelated to either spelling." },
     ],
   },
@@ -137,7 +138,7 @@ export const brandDefs: Brand[] = [
     focus: "Flix IPTV searches often mention 'player', which points to a common confusion between a service and a player app. A player only displays channels; you need a service that provides them. Confirm which one you actually need before paying.",
     extraFaq: [
       { q: "Is Flix IPTV a player or a provider?", a: "The name is used in both contexts by different websites. Check the site to confirm. Maple4K is a provider that works with any standard player." },
-      { q: "FlixIPTV vs Flix IPTV Player?", a: "Different searches for possibly different things. See our [IPTV player hub](/iptv-player) to choose a player." },
+      { q: "FlixIPTV vs Flix IPTV Player?", a: "Different searches for possibly different things. See our [IPTV player hub](/ca/iptv-player) to choose a player." },
     ],
   },
   {
@@ -147,7 +148,7 @@ export const brandDefs: Brand[] = [
     blurb: "Searching AtlasPro? Compare IPTV options",
     focus: "AtlasPro is typically searched with 'iptv', 'ott' and even iPhone-specific phrases, so people want to know which devices are supported. Before choosing any service, confirm it supports the device you own — iPhone, Fire Stick, Apple TV or smart TV — and that a free trial covers it.",
     extraFaq: [
-      { q: "Does Maple4K work on iPhone?", a: "Yes, through apps like IPTV Smarters Pro. See [IPTV on iPhone & iPad](/iptv-ios-canada)." },
+      { q: "Does Maple4K work on iPhone?", a: "Yes, through apps like IPTV Smarters Pro. See [IPTV on iPhone & iPad](/ca/iptv-ios-canada)." },
       { q: "AtlasPro vs Atlas Pro IPTV?", a: "Spelling variants of the same search. Maple4K is unrelated to either." },
     ],
   },

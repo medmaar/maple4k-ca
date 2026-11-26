@@ -1,0 +1,196 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { seoPages } from "@/data/seo";
+import SimpleFaq from "@/components/SimpleFaq";
+import ExtraSections from "@/components/ExtraSections";
+
+export const metadata: Metadata = {
+  title: { absolute: "IPTV Blog Canada — Guides, Reviews & Setup | Maple4K" },
+  description:
+    "Read Maple4K's IPTV blog. Expert guides on setup, legality, pricing comparisons, player reviews, and the best 4K IPTV services in Canada for 2026.",
+  keywords: "Maple4K blog, IPTV guide Canada 2026, best IPTV Canada review, iptv blog canada, iptv guides",
+  alternates: { canonical: "https://maple4k.ca/ca/blog" },
+  openGraph: {
+    title: "Maple4K Blog | IPTV Guides, Reviews & News – Canada",
+    description: "Read Maple4K's IPTV blog. Expert guides on setup, legality, pricing comparisons, and player reviews for the best 4K IPTV in Canada.",
+    url: "https://maple4k.ca/ca/blog",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K IPTV Blog Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
+};
+
+const posts = [
+  {
+    slug: "best-iptv-canada-2026",
+    title: "10 Best IPTV Providers in Canada for 2026 (Tested & Ranked)",
+    excerpt: "We tested and ranked the top 10 IPTV providers available in Canada for 2026. Maple4K takes the #1 spot — find out why.",
+    date: "2026-01-10",
+    readTime: "8 min read",
+    tag: "Reviews",
+  },
+  {
+    slug: "is-iptv-legal-canada",
+    title: "Is IPTV Legal in Canada in 2026? (Honest Answer)",
+    excerpt: "A clear breakdown of Canadian IPTV laws, CRTC regulations, and what it means for consumers who want to use IPTV services.",
+    date: "2026-02-05",
+    readTime: "5 min read",
+    tag: "Legal",
+  },
+  {
+    slug: "iptv-vs-cable-canada",
+    title: "IPTV vs Cable in Canada 2026 – Is It Worth Switching?",
+    excerpt: "A detailed cost and feature comparison between IPTV and cable TV in Canada. Spoiler: the savings are significant.",
+    date: "2026-02-20",
+    readTime: "6 min read",
+    tag: "Comparison",
+  },
+  {
+    slug: "best-iptv-player-canada",
+    title: "Best IPTV Player Apps for Canada in 2026",
+    excerpt: "TiviMate, IPTV Smarters Pro, GSE Smart IPTV, or Perfect Player? We tested all four with a real Maple4K subscription.",
+    date: "2026-04-01",
+    readTime: "5 min read",
+    tag: "Guide",
+  },
+  {
+    slug: "best-iptv-for-hockey-canada-2026",
+    title: "Best IPTV for Hockey in Canada 2026 — Watch NHL Free",
+    excerpt: "Every NHL game, all TSN and Sportsnet feeds, zero blackouts. The complete guide to watching hockey on IPTV in Canada.",
+    date: "2026-04-15",
+    readTime: "6 min read",
+    tag: "Sports",
+  },
+  {
+    slug: "iptv-firestick-canada",
+    title: "Install IPTV on Firestick Canada (2026 Step-by-Step)",
+    excerpt: "The complete guide to installing Maple4K on Amazon Fire Stick, Fire Stick 4K, and Fire Stick Lite in Canada.",
+    date: "2026-05-01",
+    readTime: "5 min read",
+    tag: "Guide",
+  },
+  {
+    slug: "iptv-smarters-pro-canada",
+    title: "IPTV Smarters Pro Canada 2026 — Full Setup Tutorial",
+    excerpt: "Step-by-step IPTV Smarters Pro setup for iPhone, Android, Fire Stick, and Smart TV, with a real Maple4K subscription.",
+    date: "2026-05-10",
+    readTime: "6 min read",
+    tag: "Guide",
+  },
+  {
+    slug: "what-is-m3u-iptv-canada",
+    title: "What Is an M3U Playlist? IPTV M3U Explained (2026)",
+    excerpt: "A plain-English guide to M3U playlists, how they work with IPTV, and which apps support them.",
+    date: "2026-06-10",
+    readTime: "4 min read",
+    tag: "Guide",
+  },
+  {
+    slug: "best-iptv-canada-reddit",
+    title: "Best IPTV in Canada According to Reddit (2026)",
+    excerpt: "What Reddit discussion threads actually say makes a good IPTV service in Canada, and the red flags to watch for.",
+    date: "2026-06-15",
+    readTime: "5 min read",
+    tag: "Reviews",
+  },
+  {
+    slug: "iptv-vlc-m3u-kodi-guide-canada",
+    title: "IPTV with VLC, M3U & Kodi in Canada (2026 Guide)",
+    excerpt: "How to use your Maple4K subscription with VLC, an M3U playlist, or Kodi — step-by-step setup, troubleshooting, and when to use a dedicated app instead.",
+    date: "2026-09-20",
+    readTime: "6 min read",
+    tag: "Guide",
+  },
+];
+
+type BlogCard = { slug: string; href?: string; title: string; excerpt: string; date: string; readTime: string; tag: string };
+const seoPosts: BlogCard[] = seoPages
+  .filter(p => p.kind === "blog")
+  .map(p => ({ slug: p.path, href: p.path, title: p.h1, excerpt: p.description, date: p.datePublished ?? "2026-09-26", readTime: "6 min read", tag: "Guide" }));
+const allPosts: BlogCard[] = [...posts, ...seoPosts];
+
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Maple4K Blog",
+  "url": "https://maple4k.ca/ca/blog",
+  "description": "IPTV guides, player reviews, and streaming tips for Canada.",
+  "publisher": {"@type":"Organization","name":"Maple4K","url":"https://maple4k.ca"}
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/ca/blog"}
+  ]
+};
+export default function BlogPage() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+    <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
+      <section style={{ padding: "48px 16px 32px" }}>
+        <div style={{ maxWidth: 680, margin: "0 auto" }}>
+          <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", textAlign: "center" }}>
+            <span style={{ display: "inline-block", background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#E8041F", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, marginBottom: 20 }}>
+              Maple4K Blog
+            </span>
+            <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 16 }}>
+              Maple4K Guides &amp; Reviews
+            </h1>
+            <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 14 }}>
+              Expert articles on IPTV setup, legality, pricing, and the best Canadian IPTV services for 2026.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section style={{ padding: "60px 16px 100px", background: "transparent" }}>
+        <div style={{ maxWidth: 860, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: 24 }}>
+          {allPosts.map((post) => (
+            <Link
+              key={post.slug}
+              href={post.href ?? `/blog/${post.slug}`}
+              style={{ textDecoration: "none", display: "block" }}
+            >
+              <article
+                style={{
+                  background: "rgba(255,255,255,0.05)",
+                  border: "1px solid rgba(255,255,255,0.08)",
+                  borderRadius: 20,
+                  padding: "28px 24px",
+                  height: "100%",
+                  cursor: "pointer",
+                  transition: "border-color 0.2s",
+                }}
+              >
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+                  <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.25)", color: "#E8041F", fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999 }}>
+                    {post.tag}
+                  </span>
+                  <span style={{ color: "#fff", fontSize: 12 }}>{post.readTime}</span>
+                </div>
+                <h2 style={{ fontWeight: 800, fontSize: 18, lineHeight: 1.4, color: "#fff", marginBottom: 12 }}>
+                  {post.title}
+                </h2>
+                <p style={{ color: "#fff", fontSize: 14, lineHeight: 1.7, marginBottom: 16 }}>
+                  {post.excerpt}
+                </p>
+                <time dateTime={post.date} style={{ color: "#fff", fontSize: 12 }}>
+                  {new Date(post.date).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" })}
+                </time>
+              </article>
+            </Link>
+          ))}
+        </div>
+      </section>
+      <SimpleFaq title="IPTV Blog \u2014 FAQ" items={[{"q": "What topics does the Maple4K blog cover?", "a": "Setup guides for TiviMate and IPTV Smarters Pro, device tutorials, legality explainers, cost comparisons and sports viewing guides for Canada."}, {"q": "Where should I start if I'm new to IPTV?", "a": "Read What Is IPTV? then follow a device guide for your Fire Stick, smart TV or phone."}, {"q": "How often is the blog updated?", "a": "Guides are reviewed regularly and carry a visible last-updated date."}, {"q": "Can I try IPTV before reading everything?", "a": "Yes. Start a free 24-hour trial and follow the setup guide for your device."}]} />
+      <ExtraSections path="/ca/blog" />
+      </main>
+    </>
+  );
+}

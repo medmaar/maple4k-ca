@@ -36,7 +36,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
-    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/blog"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/ca/blog"},
     {"@type":"ListItem","position":3,"name":"Best IPTV for Hockey Canada 2026","item":"https://maple4k.ca/blog/best-iptv-for-hockey-canada-2026"}
   ]
 };
@@ -64,7 +64,7 @@ export default function BestIPTVHockeyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ background: "#0C0F1A", color: "#fff", minHeight: "100vh" }}>
         <section style={{ maxWidth: 800, margin: "0 auto", padding: "80px 16px 60px" }}>
-          <Link href="/blog" style={{ color: "#3F9AAE", fontSize: 14, textDecoration: "none", fontWeight: 600 }}>← Back to Blog</Link>
+          <Link href="/ca/blog" style={{ color: "#3F9AAE", fontSize: 14, textDecoration: "none", fontWeight: 600 }}>← Back to Blog</Link>
           <div style={{ marginTop: 24, marginBottom: 16 }}>
             <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#E8041F", fontSize: 12, fontWeight: 700, padding: "4px 12px", borderRadius: 999, textTransform: "uppercase" as const }}>
               🏒 Hockey · IPTV Canada · April 2026
@@ -159,16 +159,16 @@ export default function BestIPTVHockeyPage() {
           <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 16, padding: 32, textAlign: "center", marginBottom: 40 }}>
             <h2 style={{ fontSize: "1.4rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Watch Hockey on Maple4K — Free 24h Trial</h2>
             <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 24, lineHeight: 1.7 }}>No credit card. All TSN and Sportsnet feeds. Test during a live game before subscribing.</p>
-            <Link href="/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Free Trial →</Link>
+            <Link href="/ca/free-trial" style={{ background: "#E8041F", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Free Trial →</Link>
           </div>
 
           <div style={{ background: "rgba(63,154,174,0.06)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "20px 24px" }}>
             <p style={{ fontWeight: 700, marginBottom: 12, fontSize: 15 }}>Related Guides</p>
             <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 14 }}>
               <Link href="/best-iptv-for-sports-canada" style={{ color: "#E8041F", textDecoration: "underline" }}>Best IPTV for Sports Canada — NHL, NFL, UFC &amp; More</Link>
-              <Link href="/iptv-4k" style={{ color: "#E8041F", textDecoration: "underline" }}>4K IPTV Canada — True Ultra HD Streaming</Link>
-              <Link href="/iptv-subscription" style={{ color: "#E8041F", textDecoration: "underline" }}>IPTV Subscription Canada — Plans from $9/Month</Link>
-              <Link href="/best-iptv-canada" style={{ color: "#E8041F", textDecoration: "underline" }}>Best IPTV Canada 2026 — Full Comparison</Link>
+              <Link href="/ca/iptv-4k" style={{ color: "#E8041F", textDecoration: "underline" }}>4K IPTV Canada — True Ultra HD Streaming</Link>
+              <Link href="/ca/iptv-subscription" style={{ color: "#E8041F", textDecoration: "underline" }}>IPTV Subscription Canada — Plans from $9/Month</Link>
+              <Link href="/ca/best-iptv-canada" style={{ color: "#E8041F", textDecoration: "underline" }}>Best IPTV Canada 2026 — Full Comparison</Link>
             </div>
           </div>
         </section>

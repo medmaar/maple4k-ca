@@ -1,0 +1,214 @@
+import type { Metadata } from "next";
+import ExtraSections from "@/components/ExtraSections";
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Set Up IPTV on Android in Canada",
+  description: "Step-by-step guide to install and configure IPTV on any Android phone or tablet in Canada with Maple4K.",
+  step: [
+    { "@type": "HowToStep", position: 1, name: "Subscribe & Get Credentials", text: "Choose a Maple4K plan and contact us via WhatsApp, Telegram, or email. Credentials arrive within minutes." },
+    { "@type": "HowToStep", position: 2, name: "Allow Unknown Sources", text: "Go to Settings > Security and enable 'Install Unknown Apps' on your Android device." },
+    { "@type": "HowToStep", position: 3, name: "Download the IPTV App", text: "Download the APK file provided or install our recommended app from the Google Play Store." },
+    { "@type": "HowToStep", position: 4, name: "Enter Your Credentials", text: "Open the app, enter the server URL, username, and password sent to you, then tap Connect." },
+    { "@type": "HowToStep", position: 5, name: "Watch Anywhere in Canada", text: "Your full channel list and VOD library load instantly. Stream on Wi-Fi or mobile data." },
+  ],
+};
+
+export const metadata: Metadata = {
+  title: { absolute: "IPTV on Android Canada 2026 — Phone & Tablet Setup" },
+  description:
+    "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Free trial.",
+  keywords: "IPTV Android Canada, IPTV Android phone Canada, IPTV Android tablet Canada, best IPTV app Android Canada, iptv android, android iptv player, iptv smarters android",
+  alternates: { canonical: "https://maple4k.ca/ca/iptv-android-canada" },
+  openGraph: {
+    title: "IPTV Android Canada | Maple4K – Best 4K IPTV Canada",
+    description: "Stream IPTV on your Android phone or tablet in Canada with Maple4K. 50,000+ channels + Netflix, HD & 4K quality, NHL, TSN, CTV and more. Free trial.",
+    url: "https://maple4k.ca/ca/iptv-android-canada",
+    type: "website",
+    siteName: "Maple4K",
+    locale: "en_CA",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Maple4K – Best 4K IPTV Canada" }],
+  },
+  twitter: { card: "summary_large_image" },
+};
+
+const steps = [
+  { step: "1", title: "Subscribe & Get Credentials", desc: "Choose a plan and contact us via WhatsApp, Telegram, or email. Credentials arrive within minutes." },
+  { step: "2", title: "Allow Unknown Sources", desc: "Go to Settings > Security and enable 'Install Unknown Apps' so you can sideload our IPTV app." },
+  { step: "3", title: "Download the IPTV App", desc: "Download the APK file we send you, or find our recommended app on the Google Play Store." },
+  { step: "4", title: "Enter Your Credentials", desc: "Open the app, enter the server URL, username, and password we sent, and tap Connect." },
+  { step: "5", title: "Watch Anywhere in Canada", desc: "Your full channel list and VOD library load instantly. Stream on the go over Wi-Fi or mobile data." },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  { q: "Which IPTV app is best for Android?", a: "We recommend IPTV Smarters Pro or TiviMate for the best experience. Both support Xtream Codes and offer excellent EPG integration." },
+  { q: "Is the IPTV app on the Google Play Store?", a: "Some of our recommended apps are on the Play Store. Others may require APK sideloading — we provide a safe, virus-free download link." },
+  { q: "How much data does IPTV use on Android?", a: "SD streams use roughly 700 MB/hour, HD uses 1.5–3 GB/hour. We recommend Wi-Fi for extended sessions." },
+  { q: "Can I use IPTV on two Android phones at once?", a: "Yes — with a 2-device or higher plan, you can stream on multiple devices simultaneously, including two Android phones." },
+  ].map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
+    { "@type": "ListItem", position: 2, name: "IPTV Android Canada", item: "https://maple4k.ca/ca/iptv-android-canada" },
+  ],
+};
+
+export default function IPTVAndroidPage() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+    <main className="bg-transparent min-h-screen">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
+        <div className="max-w-3xl mx-auto">
+          <div className="inline-block bg-[#F96E5B] text-white text-xs px-3 py-1 rounded-full mb-4 font-bold uppercase tracking-wider">
+            Android Phone · Android Tablet
+          </div>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+            IPTV for <span className="text-[#F96E5B]">Android Canada</span>
+          </h1>
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+            Watch Canadian TV on any Android phone or tablet. Live sports, news, and
+            50,000+ channels + Netflix wherever you are — on Wi-Fi or 5G.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/ca/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+              Get Free Trial
+            </a>
+            <a href="/ca/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+              View Pricing
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Compatible devices */}
+      <section className="py-12 px-4 bg-transparent">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-xl font-bold mb-6 text-white">Works on All Android Devices</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {["Samsung Galaxy (all models)", "Google Pixel", "OnePlus", "Xiaomi", "Motorola", "LG Android Phones", "Sony Xperia", "Any Android 5.0+"].map((d) => (
+              <span key={d} className="bg-gray-800 border border-gray-700 px-4 py-2 rounded-full text-sm text-white">
+                {d}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Setup guide */}
+      <section className="py-20 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">
+            How to Set Up IPTV on <span className="text-[#F96E5B]">Android</span>
+          </h2>
+          <p className="text-center text-white mb-12">5 minutes to full access on any Android device.</p>
+          <div className="space-y-6">
+            {steps.map((s) => (
+              <div key={s.step} className="flex gap-5 bg-transparent rounded-2xl p-6 border border-gray-800">
+                <div className="flex-shrink-0 w-10 h-10 bg-[#F96E5B] rounded-full flex items-center justify-center font-extrabold text-white">
+                  {s.step}
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-1">{s.title}</h3>
+                  <p className="text-white text-sm">{s.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="py-20 px-4 bg-transparent">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-10">
+            IPTV Designed for <span className="text-[#F96E5B]">Android Users</span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { title: "Any App You Want", desc: "Android supports the widest range of IPTV apps. Use IPTV Smarters Pro, TiviMate, GSE IPTV, or our dedicated app — your choice." },
+              { title: "Cast to Your TV", desc: "Use Chromecast built-in to cast any channel or movie from your Android phone to your big screen TV instantly." },
+              { title: "5G Ready", desc: "Our adaptive streaming works perfectly on 5G connections. Enjoy HD live sports without buffering on mobile data." },
+              { title: "Picture in Picture", desc: "Android's PiP mode lets you watch live TV in a floating window while using other apps on your phone." },
+            ].map((f) => (
+              <div key={f.title} className="bg-transparent rounded-2xl p-6 border border-gray-800">
+                <h3 className="font-bold text-lg mb-2">{f.title}</h3>
+                <p className="text-white text-sm">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-10">
+            Android IPTV <span className="text-[#F96E5B]">FAQ</span>
+          </h2>
+          <div className="space-y-6">
+            {[
+              { q: "Which IPTV app is best for Android?", a: "We recommend IPTV Smarters Pro or TiviMate for the best experience. Both support Xtream Codes and offer excellent EPG integration." },
+              { q: "Is the IPTV app on the Google Play Store?", a: "Some of our recommended apps are on the Play Store. Others may require APK sideloading — we provide a safe, virus-free download link." },
+              { q: "How much data does IPTV use on Android?", a: "SD streams use roughly 700 MB/hour, HD uses 1.5–3 GB/hour. We recommend Wi-Fi for extended sessions." },
+              { q: "Can I use IPTV on two Android phones at once?", a: "Yes — with a 2-device or higher plan, you can stream on multiple devices simultaneously, including two Android phones." },
+            ].map((item) => (
+              <div key={item.q} className="bg-transparent rounded-xl p-6 border border-gray-800">
+                <h3 className="font-bold text-lg mb-3 text-[#F96E5B]">{item.q}</h3>
+                <p className="text-white text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 px-4 bg-gradient-to-r from-red-900 to-gray-900 text-center">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4">Start Watching on Your Android Today</h2>
+          <p className="text-white mb-8">Try it free for 24 hours — no credit card required.</p>
+          <a href="/ca/free-trial" className="inline-block bg-[#F96E5B] hover:bg-[#F96E5B] text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors">
+            Get Free Trial
+          </a>
+        </div>
+      </section>
+    
+        {/* SEO Internal Links */}
+        <section style={{ padding: "48px 16px" }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <p style={{ textAlign: "center", color: "#fff", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
+              <a href="/ca/iptv-toronto" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Toronto</a>
+              <a href="/ca/iptv-vancouver" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
+              <a href="/ca/iptv-montreal" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Montreal</a>
+              <a href="/ca/iptv-calgary" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Calgary</a>
+              <a href="/ca/iptv-ottawa" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
+              <a href="/ca/iptv-edmonton" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+              <a href="/ca/pricing" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
+              <a href="/ca/free-trial" style={{ background: "#E8041F", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
+              <a href="/ca/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>Channel List</a>
+            </div>
+          </div>
+        </section>
+      <ExtraSections path="/ca/iptv-android-canada" />
+      </main>
+    </>
+  );
+}

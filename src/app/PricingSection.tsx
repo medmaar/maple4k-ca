@@ -38,7 +38,7 @@ const durationSlug: Record<Duration, string> = {
 
 function orderHref(devices: number, dur: Duration): string {
   if (devices === 1) {
-    return { "1 Month": "/pricing/1-month", "3 Months": "/pricing/3-months", "6 Months": "/pricing/6-months", "1 Year": "/pricing/12-months" }[dur];
+    return { "1 Month": "/ca/pricing/1-month", "3 Months": "/ca/pricing/3-months", "6 Months": "/ca/pricing/6-months", "1 Year": "/ca/pricing/12-months" }[dur];
   }
   return `/pricing/${devices}-devices/${durationSlug[dur]}`;
 }

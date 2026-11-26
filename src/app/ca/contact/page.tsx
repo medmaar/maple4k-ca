@@ -1,0 +1,109 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import SimpleFaq from "@/components/SimpleFaq";
+import ExtraSections from "@/components/ExtraSections";
+
+export const metadata: Metadata = {
+  title: { absolute: "Contact Maple4K IPTV Support Canada — WhatsApp 24/7" },
+  description: "Contact Maple4K via live chat, WhatsApp, or email. 4K streaming support team available 24/7 in English and French.",
+  keywords: "iptv customer service, iptv support canada, contact maple4k, iptv help, iptv smarters customer service, iptv support, iptv help canada",
+  alternates: { canonical: "https://maple4k.ca/ca/contact" },
+  openGraph: { title: "Contact Maple4K IPTV Support Canada — WhatsApp 24/7", description: "Contact Maple4K via live chat, WhatsApp, or email. 4K streaming support team available 24/7 in English and French.", url: "https://maple4k.ca/ca/contact", type: "website", siteName: "Maple4K", locale: "en_CA", images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Contact Maple4K IPTV Support Canada — WhatsApp 24/7 – Maple4K" }] },
+  twitter: { card: "summary_large_image", title: "Contact Maple4K IPTV Support Canada — WhatsApp 24/7", description: "Contact Maple4K via live chat, WhatsApp, or email. 4K streaming support team available 24/7 in English and French.", images: ["/og-image.jpg"] },
+};
+
+const channels = [
+  {
+    name: "WhatsApp Live Chat",
+    desc: "Fastest response. Chat with our 4K streaming team — typically under 5 minutes.",
+    action: "Start Live Chat",
+    href: "/link/wa",
+    bg: "bg-[#25D366]",
+    detail: "Response time: < 5 min",
+  },
+  {
+    name: "Email",
+    desc: "For technical questions, 4K device issues, or detailed inquiries.",
+    action: "Send an Email",
+    href: "mailto:help@maple4k.ca",
+    bg: "bg-[#F5C518]",
+    detail: "help@maple4k.ca",
+  },
+];
+
+
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Maple4K",
+  "url": "https://maple4k.ca/ca/contact",
+  "description": "Contact Maple4K IPTV Canada support team 24/7 via WhatsApp, email or live chat."
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://maple4k.ca"},
+    {"@type":"ListItem","position":2,"name":"Contact","item":"https://maple4k.ca/ca/contact"}
+  ]
+};
+export default function ContactPage() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+    <main className="bg-gray-950 text-white min-h-screen py-20 px-4">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          Contact <span className="text-blue-500">Us</span>
+        </h1>
+        <p className="text-gray-400 text-lg mb-12">
+          Our 4K streaming support team is available 24/7 in English and French.
+          Choose the channel that works best for you.
+        </p>
+
+        <div className="flex flex-col gap-6 mb-16">
+          {channels.map((c) => (
+            <div key={c.name} className="bg-gray-900 rounded-2xl p-6 border border-gray-800 flex flex-col sm:flex-row sm:items-center gap-5">
+              <div className="flex-1">
+                <h2 className="text-xl font-bold mb-1">{c.name}</h2>
+                <p className="text-gray-400 text-sm mb-1">{c.desc}</p>
+                <p className="text-gray-500 text-xs">{c.detail}</p>
+              </div>
+              <Link
+                href={c.href}
+                className={`${c.bg} text-gray-900 font-bold px-6 py-3 rounded-xl text-sm text-center whitespace-nowrap hover:brightness-110 transition shrink-0`}
+              >
+                {c.action}
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 mb-12">
+          <h2 className="text-2xl font-bold mb-6">Response Times</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
+            <div>
+              <div className="text-3xl font-extrabold text-green-400 mb-1">&lt; 5 min</div>
+              <div className="text-gray-400 text-sm">WhatsApp Live Chat<br />During business hours</div>
+            </div>
+            <div>
+              <div className="text-3xl font-extrabold text-yellow-400 mb-1">&lt; 2 hrs</div>
+              <div className="text-gray-400 text-sm">Email<br />All hours</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+          <h3 className="text-lg font-bold mb-2">Your Privacy</h3>
+          <p className="text-gray-400 text-sm">
+            We value your privacy. When you use WhatsApp Live Chat, your phone number is only used to contact you. We never share your information with third parties.
+          </p>
+        </div>
+      </div>
+      <SimpleFaq title="Contact & Support \u2014 FAQ" items={[{"q": "How do I contact Maple4K support?", "a": "Message the team on WhatsApp, use live chat or email support@maple4k.ca. Support is available 24/7 in English and French."}, {"q": "How fast will I receive my login after ordering?", "a": "Login details are normally sent by email and WhatsApp within minutes of your order or free-trial request."}, {"q": "What should I include when I report a problem?", "a": "Tell us your device model, the app you use, the channel affected and the time it happened so we can help quickly."}, {"q": "Can I get help with setup?", "a": "Yes. Message support and we will walk you through installing TiviMate, IPTV Smarters Pro or another player on your device."}]} />
+      <ExtraSections path="/ca/contact" />
+      </main>
+    </>
+  );
+}

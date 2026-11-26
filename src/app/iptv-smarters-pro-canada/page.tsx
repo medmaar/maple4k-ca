@@ -123,8 +123,8 @@ export default function SmartersProCanadaPage() {
               IPTV Smarters Pro is the most-downloaded IPTV player in Canada — free, and available on nearly every device. Pair it with Maple4K for 50,000+ live channels in true 4K. This guide shows you the exact setup, step by step.
             </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-              <Link href="/free-trial" className="btn-red">▶ Get Maple4K Free Trial</Link>
-              <Link href="/pricing" className="btn-outline">View Plans →</Link>
+              <Link href="/ca/free-trial" className="btn-red">▶ Get Maple4K Free Trial</Link>
+              <Link href="/ca/pricing" className="btn-outline">View Plans →</Link>
             </div>
           </div>
         </section>
@@ -240,12 +240,12 @@ export default function SmartersProCanadaPage() {
               Free 24H trial — no credit card. Get credentials in minutes and start streaming 50,000+ channels in 4K on IPTV Smarters Pro.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/free-trial" className="btn-red">▶ Free Trial 24H</Link>
-              <Link href="/pricing" className="btn-outline">View Plans →</Link>
+              <Link href="/ca/free-trial" className="btn-red">▶ Free Trial 24H</Link>
+              <Link href="/ca/pricing" className="btn-outline">View Plans →</Link>
             </div>
             <p style={{ marginTop: 28, fontSize: 13, color: "rgba(255,255,255,0.3)" }}>
               Also:{" "}
-              <Link href="/tivimate-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>TiviMate Canada</Link>{" · "}
+              <Link href="/ca/tivimate-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>TiviMate Canada</Link>{" · "}
               <Link href="/best-iptv-apps-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>All IPTV Player Apps</Link>{" · "}
               <Link href="/blog/iptv-smarters-pro-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>Full Smarters Pro Guide (Blog)</Link>
             </p>

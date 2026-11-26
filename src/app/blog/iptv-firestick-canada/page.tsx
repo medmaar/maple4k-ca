@@ -119,7 +119,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
-    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/blog"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/ca/blog"},
     {"@type":"ListItem","position":3,"name":"Iptv Firestick Canada","item":"https://maple4k.ca/blog/iptv-firestick-canada"}
   ]
 };
@@ -242,10 +242,10 @@ export default function IPTVFirestickBlogPost() {
             within minutes and walk you through setup if needed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-white px-8 py-3 rounded-xl font-bold transition-colors">
+            <a href="/ca/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-white px-8 py-3 rounded-xl font-bold transition-colors">
               Get Free Trial
             </a>
-            <a href="/iptv-firestick-canada" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors">
+            <a href="/ca/iptv-firestick-canada" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors">
               Firestick Plans
             </a>
           </div>
@@ -255,9 +255,9 @@ export default function IPTVFirestickBlogPost() {
           <div style={{ marginTop: 40, padding: "24px 28px", background: "rgba(63,154,174,0.06)", borderRadius: 12, border: "1px solid rgba(255,255,255,0.08)" }}>
             <p style={{ fontWeight: 700, marginBottom: 12, fontSize: 15 }}>Related Guides</p>
             <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 14 }}>
-              <a href="/best-iptv-canada" style={{ color: "#E8041F", textDecoration: "underline", fontWeight: 500 }}>best IPTV Canada</a>
-              <a href="/iptv-4k" style={{ color: "#E8041F", textDecoration: "underline", fontWeight: 500 }}>4K IPTV streaming</a>
-              <a href="/iptv-subscription" style={{ color: "#E8041F", textDecoration: "underline", fontWeight: 500 }}>IPTV subscription</a>
+              <a href="/ca/best-iptv-canada" style={{ color: "#E8041F", textDecoration: "underline", fontWeight: 500 }}>best IPTV Canada</a>
+              <a href="/ca/iptv-4k" style={{ color: "#E8041F", textDecoration: "underline", fontWeight: 500 }}>4K IPTV streaming</a>
+              <a href="/ca/iptv-subscription" style={{ color: "#E8041F", textDecoration: "underline", fontWeight: 500 }}>IPTV subscription</a>
             </div>
           </div>
           </article>

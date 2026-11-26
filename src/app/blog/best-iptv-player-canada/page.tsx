@@ -27,7 +27,7 @@ const articleSchema = {
   description: "Compare the best IPTV player apps for Canadian users in 2026 — TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player.",
   datePublished: "2026-01-15",
   dateModified: "2026-04-30",
-  "author": { "@type": "Person", "name": "Alex Tremblay", "url": "https://maple4k.ca/about" },
+  "author": { "@type": "Person", "name": "Alex Tremblay", "url": "https://maple4k.ca/ca/about" },
   publisher: {
     "@type": "Organization",
     name: "Maple4K",
@@ -77,7 +77,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Maple4K","item":"https://maple4k.ca"},
-    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/blog"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maple4k.ca/ca/blog"},
     {"@type":"ListItem","position":3,"name":"Best Iptv Player Canada","item":"https://maple4k.ca/blog/best-iptv-player-canada"}
   ]
 };
@@ -125,7 +125,7 @@ export default function BestIPTVPlayerCanadaPage() {
         <section style={{ padding: "40px 16px 20px", background: "#0E1120" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
             <p style={{ color: "#fff", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
-              All four players below are fully compatible with <Link href="/pricing" style={{ color: "#E8041F", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link>. They support M3U playlists and Xtream Codes — the two formats we provide. Whether you&apos;re on a Firestick, Android TV box, or iPhone, one of these will work perfectly for you.
+              All four players below are fully compatible with <Link href="/ca/pricing" style={{ color: "#E8041F", textDecoration: "none", fontWeight: 600 }}>Maple4K plans</Link>. They support M3U playlists and Xtream Codes — the two formats we provide. Whether you&apos;re on a Firestick, Android TV box, or iPhone, one of these will work perfectly for you.
             </p>
             <p style={{ color: "#fff", fontSize: 15, lineHeight: 1.8 }}>
               We tested each player with a real Maple4K subscription, evaluating channel loading speed, EPG accuracy, UI responsiveness, and overall stability on Canadian connections.
@@ -187,9 +187,9 @@ export default function BestIPTVPlayerCanadaPage() {
               If you&apos;re on an iPhone or Apple TV, go with <strong style={{ color: "#fff" }}>GSE Smart IPTV</strong> or <strong style={{ color: "#fff" }}>IPTV Smarters Pro</strong>. Both work flawlessly with Maple4K credentials.
             </p>
             <p style={{ color: "#fff", fontSize: 15, lineHeight: 1.8, marginBottom: 32 }}>
-              All players listed above are compatible with <Link href="/iptv-firestick-canada" style={{ color: "#E8041F", textDecoration: "none" }}>Firestick</Link>, <Link href="/iptv-android-tv-canada" style={{ color: "#E8041F", textDecoration: "none" }}>Android TV</Link>, and <Link href="/iptv-apple-tv-canada" style={{ color: "#E8041F", textDecoration: "none" }}>Apple TV</Link> setups. Once you have your player, all you need is a <Link href="/pricing" style={{ color: "#E8041F", textDecoration: "none" }}>Maple4K plan</Link> to get started.
+              All players listed above are compatible with <Link href="/ca/iptv-firestick-canada" style={{ color: "#E8041F", textDecoration: "none" }}>Firestick</Link>, <Link href="/iptv-android-tv-canada" style={{ color: "#E8041F", textDecoration: "none" }}>Android TV</Link>, and <Link href="/iptv-apple-tv-canada" style={{ color: "#E8041F", textDecoration: "none" }}>Apple TV</Link> setups. Once you have your player, all you need is a <Link href="/ca/pricing" style={{ color: "#E8041F", textDecoration: "none" }}>Maple4K plan</Link> to get started.
             </p>
-            <Link href="/pricing" style={{ background: "#E8041F", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/ca/pricing" style={{ background: "#E8041F", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               View Maple4K Plans →
             </Link>
           </div>

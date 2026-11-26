@@ -69,8 +69,8 @@ export default function BestIptvForSportsPage() {
               Every TSN and Sportsnet feed. Every NHL, NFL, NBA and CFL game. Plus UFC, soccer, Eurosport, beIN Sports and Sky Sports — all streamed in True 4K Ultra HD from $9/month.
             </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-              <Link href="/free-trial" className="btn-red">▶ Free Trial 24H</Link>
-              <Link href="/pricing" className="btn-outline">View Plans →</Link>
+              <Link href="/ca/free-trial" className="btn-red">▶ Free Trial 24H</Link>
+              <Link href="/ca/pricing" className="btn-outline">View Plans →</Link>
             </div>
           </div>
         </section>
@@ -106,7 +106,7 @@ export default function BestIptvForSportsPage() {
               Cable sports packages force you to bundle channels you don&apos;t watch just to get the ones you do. Maple4K includes every Canadian sports network and the major international ones — beIN Sports, Eurosport, Sky Sports — in a single subscription, streamed in noticeably sharper 4K Ultra HD than standard cable HD.
             </p>
             <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 15, lineHeight: 1.7 }}>
-              There are no regional blackouts on TSN or Sportsnet feeds, no separate pay-per-view charges for UFC cards, and no long-term contract — just live sports on any device, from a Fire Stick in your living room to your phone on the go. See our full <Link href="/iptv-firestick-canada" style={{ color: red, textDecoration: "underline" }}>Fire Stick setup guide</Link> or <Link href="/tivimate-canada" style={{ color: red, textDecoration: "underline" }}>TiviMate guide</Link> to get streaming in minutes.
+              There are no regional blackouts on TSN or Sportsnet feeds, no separate pay-per-view charges for UFC cards, and no long-term contract — just live sports on any device, from a Fire Stick in your living room to your phone on the go. See our full <Link href="/ca/iptv-firestick-canada" style={{ color: red, textDecoration: "underline" }}>Fire Stick setup guide</Link> or <Link href="/ca/tivimate-canada" style={{ color: red, textDecoration: "underline" }}>TiviMate guide</Link> to get streaming in minutes.
             </p>
           </div>
         </section>
@@ -119,12 +119,12 @@ export default function BestIptvForSportsPage() {
               Whether you&apos;re cheering on the Maple Leafs in Toronto, the Canucks in Vancouver, the Canadiens in Montreal, or the Oilers in Edmonton, Maple4K carries every regional feed so you never miss a local broadcast.
             </p>
             <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>
-              City guides: <Link href="/iptv-toronto" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Toronto</Link> ·{" "}
-              <Link href="/iptv-vancouver" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Vancouver</Link> ·{" "}
-              <Link href="/iptv-montreal" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Montreal</Link> ·{" "}
-              <Link href="/iptv-edmonton" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Edmonton</Link> ·{" "}
-              <Link href="/iptv-calgary" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Calgary</Link> ·{" "}
-              <Link href="/iptv-ottawa" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Ottawa</Link>
+              City guides: <Link href="/ca/iptv-toronto" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Toronto</Link> ·{" "}
+              <Link href="/ca/iptv-vancouver" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Vancouver</Link> ·{" "}
+              <Link href="/ca/iptv-montreal" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Montreal</Link> ·{" "}
+              <Link href="/ca/iptv-edmonton" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Edmonton</Link> ·{" "}
+              <Link href="/ca/iptv-calgary" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Calgary</Link> ·{" "}
+              <Link href="/ca/iptv-ottawa" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Ottawa</Link>
             </p>
           </div>
         </section>
@@ -152,11 +152,11 @@ export default function BestIptvForSportsPage() {
             <h2 style={{ fontSize: "clamp(26px, 3.5vw, 42px)", fontWeight: 900, marginBottom: 20 }}>Never Miss a Game — Try Maple4K Free</h2>
             <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 15, lineHeight: 1.7, marginBottom: 36 }}>No credit card for trial. Setup in minutes on any device. All sports channels included from $9/month.</p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/free-trial" className="btn-red">▶ Free Trial 24H</Link>
-              <Link href="/pricing" className="btn-outline">Subscribe →</Link>
+              <Link href="/ca/free-trial" className="btn-red">▶ Free Trial 24H</Link>
+              <Link href="/ca/pricing" className="btn-outline">Subscribe →</Link>
             </div>
             <p style={{ marginTop: 24, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
-              See also: <Link href="/blog/best-iptv-for-hockey-canada-2026" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>Best IPTV for Hockey</Link> · <Link href="/channels-list" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>Full Channel List</Link>
+              See also: <Link href="/blog/best-iptv-for-hockey-canada-2026" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>Best IPTV for Hockey</Link> · <Link href="/ca/channels-list" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "underline" }}>Full Channel List</Link>
             </p>
           </div>
         </section>

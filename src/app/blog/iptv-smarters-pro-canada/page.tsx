@@ -26,7 +26,7 @@ const articleSchema = {
   description: "How to set up IPTV Smarters Pro in Canada on iPhone, Android, Fire Stick, and Smart TV. Step-by-step tutorial for Maple4K subscribers.",
   datePublished: "2026-01-10",
   dateModified: "2026-05-23",
-  author: { "@type": "Person", name: "Alex Tremblay", url: "https://maple4k.ca/about" },
+  author: { "@type": "Person", name: "Alex Tremblay", url: "https://maple4k.ca/ca/about" },
   publisher: { "@type": "Organization", name: "Maple4K", url: "https://maple4k.ca" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://maple4k.ca/blog/iptv-smarters-pro-canada" },
 };
@@ -94,7 +94,7 @@ export default function IPTVSmartersProPage() {
         <section style={{ background: bg, padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 820, margin: "0 auto" }}>
             <div style={{ display: "flex", gap: 10, marginBottom: 20, alignItems: "center" }}>
-              <Link href="/blog" style={{ color: "rgba(255,255,255,0.4)", fontSize: 13, textDecoration: "none" }}>Blog</Link>
+              <Link href="/ca/blog" style={{ color: "rgba(255,255,255,0.4)", fontSize: 13, textDecoration: "none" }}>Blog</Link>
               <span style={{ color: "rgba(255,255,255,0.2)" }}>›</span>
               <span style={{ color: "rgba(255,255,255,0.6)", fontSize: 13 }}>IPTV Smarters Pro Canada</span>
             </div>
@@ -217,14 +217,14 @@ export default function IPTVSmartersProPage() {
               Get your Maple4K credentials and start using IPTV Smarters Pro in minutes. Free 24H trial — no credit card required.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/free-trial" className="btn-red">▶ Free Trial 24H</Link>
-              <Link href="/pricing" className="btn-outline">View Plans →</Link>
+              <Link href="/ca/free-trial" className="btn-red">▶ Free Trial 24H</Link>
+              <Link href="/ca/pricing" className="btn-outline">View Plans →</Link>
             </div>
             <p style={{ marginTop: 32, fontSize: 13, color: "rgba(255,255,255,0.3)" }}>
               Related:{" "}
               <Link href="/blog/best-iptv-player-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>Best IPTV Player Canada</Link>{" · "}
-              <Link href="/iptv-firestick-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>IPTV Fire Stick Canada</Link>{" · "}
-              <Link href="/iptv-android-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>IPTV Android Canada</Link>
+              <Link href="/ca/iptv-firestick-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>IPTV Fire Stick Canada</Link>{" · "}
+              <Link href="/ca/iptv-android-canada" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "underline" }}>IPTV Android Canada</Link>
             </p>
           </div>
         </section>

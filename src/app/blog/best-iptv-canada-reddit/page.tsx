@@ -26,7 +26,7 @@ const articleSchema = {
   headline: "Best IPTV in Canada According to Reddit (2026 Roundup)",
   description: "What Reddit threads actually say makes a good IPTV service in Canada, and what to look for.",
   image: "https://maple4k.ca/og-image.jpg",
-  author: { "@type": "Person", name: "Alex Tremblay", url: "https://maple4k.ca/about" },
+  author: { "@type": "Person", name: "Alex Tremblay", url: "https://maple4k.ca/ca/about" },
   publisher: {
     "@type": "Organization",
     name: "Maple4K",
@@ -59,7 +59,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://maple4k.ca" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://maple4k.ca/blog" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://maple4k.ca/ca/blog" },
     { "@type": "ListItem", position: 3, name: "Best IPTV Canada Reddit", item: "https://maple4k.ca/blog/best-iptv-canada-reddit" },
   ],
 };
@@ -138,8 +138,8 @@ export default function BestIptvRedditPage() {
           </section>
 
           <div style={{ marginTop: 48, display: "flex", gap: 16, flexWrap: "wrap" }}>
-            <Link href="/free-trial" className="btn-red">▶ Try Maple4K Free for 24H</Link>
-            <Link href="/best-iptv-canada" className="btn-outline">See Full Comparison →</Link>
+            <Link href="/ca/free-trial" className="btn-red">▶ Try Maple4K Free for 24H</Link>
+            <Link href="/ca/best-iptv-canada" className="btn-outline">See Full Comparison →</Link>
           </div>
         </article>
       <ExtraSections path="/blog/best-iptv-canada-reddit" />
